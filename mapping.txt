@@ -1,0 +1,4 @@
+http://www.phrack.com/issues.html?issue=49&id=14#article readings/phrack_stack_smashing.mhtml
+https://cloud.google.com/security/security-design/ readings/google_infra_sec.mhtml
+https://cloud.google.com/security/ readings/google_sec.mhtml
+https://www.ftc.gov/news-events/blogs/techftc/2016/03/time-rethink-mandatory-password-changes readings/password_changes.mhtml

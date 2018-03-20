@@ -1,0 +1,1030 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-questions/5
+Subject: Questions for lecture 5 - 6.858
+Date: Wed, 20 Mar 2018 22:58:02 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--yiQ85iwcn7HtXKqCfjAc0ornOGDdDc2MsnYRc1uNVh----"
+
+------MultipartBoundary--yiQ85iwcn7HtXKqCfjAc0ornOGDdDc2MsnYRc1uNVh----
+Content-Type: text/html
+Content-ID: <frame-32857-3bb51462-26e7-469d-9295-b232ec2419c2@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-questions/5
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Questions for lecture 5 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Questions for lecture 5 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text">It looks like OKWS is a bit old? (I'm guess=
+ing 2004/2005?) I was wondering whether this is currently still being used.
+
+Is this paper advocating creating separate database instances for each serv=
+ice? Or just creating a bunch of collections/tables in the same database in=
+stance, but creating different set of permissions for each service?
+
+</pre></li>
+
+<li><pre class=3D"student-text">What is the purpose of okld calling fork?</=
+pre></li>
+
+<li><pre class=3D"student-text">"Another shortcoming of OKWS is that an adv=
+ersary
+who compromises an OKWS service can gain access to
+in-memory state belonging to other users. Developers
+might protect against this attack by encrypting cache entries
+with a private key stored in an HTTP cookie on the
+client=E2=80=99s machine. Encryption cannot protect against an
+adversary who can compromise and passively monitor a
+Web server"
+
+Could you explain why encryption cannot protect a OKWS service
+from an adversary who can passively monitor a web server? What
+does it mean "to passively monitor a web server"? is it the
+same as MITM?
+</pre></li>
+
+<li><pre class=3D"student-text">1. Can you go over figure 1 and figure 2 in=
+ the paper in the class? </pre></li>
+
+<li><pre class=3D"student-text">1. In the introduction, it states that "few=
+ practical isolation schemes exist aside from running different services on=
+ different machines". Do different machines in this case include separate V=
+Ms on the same server?=20
+
+2. Why allow a web server to interact with php knowing that php has signifi=
+cant design flaws? Wouldn't it be better for Apache users if the compatibil=
+ity were terminated?
+
+3. The databases used for testing are encrypted using SHA-1. How might the =
+results or database format change if a different hash function was used?=20
+
+ </pre></li>
+
+<li><pre class=3D"student-text">1. This relates to something said in the pa=
+per and something said in lecture. They mention that Python and Perl are sa=
+fer languages than the C++ you have to use to create a OKWS application. I =
+wonder why these languages are safer (has there just been a lot of evaluati=
+on of how they treat memory structures). I also wonder why "safe" libraries=
+ cannot be implemented in C/C++ or if they are, why they aren't used. Would=
+ these safe libraries reduce performance?
+
+2. Today, are the other web services mentioned here structured more like OK=
+WS, or have those projects taken different routes to secure their cores?=20
+</pre></li>
+
+<li><pre class=3D"student-text">1. What exactly is an os-level jail and how=
+ does it work?
+2. To reduce the total number of of messages, services send log updates in =
+batches, flushing their log buffers as they become full and at regularly sc=
+heduled intervals. Doesn't this mean it is possible to lose logs if a servi=
+ce becomes compromised, which would reduce security because it makes it mor=
+e difficult to see what happened?
+3. Do all the requests go through a single okd? Wouldn't that make it a bot=
+tle neck? Would it be possible to have multiple okds?</pre></li>
+
+<li><pre class=3D"student-text">6.858 - Question
+
+Since this paper was written before 2011, have newer, safer technologies fo=
+r
+web services been made? It seems that JS is a favorite for web development
+</pre></li>
+
+<li><pre class=3D"student-text">Are commonly used web frameworks, such as D=
+jango or Node.js, also subject to attacks such as buffer overflow in the co=
+de used to implement their respective Python or JavaScript interpreters? Fr=
+om my experience in industry, nobody seems to fear these attacks to the poi=
+nt where they will create their web applications in hyper-secure C++ OKWS.
+</pre></li>
+
+<li><pre class=3D"student-text">Are the ideas presented in this paper more =
+common practice now e.g. does OKWS
+have other users or are there other web servers that implement similar prot=
+ections?</pre></li>
+
+<li><pre class=3D"student-text">Are there any currently supported web serve=
+rs which have implemented the principles introduced in the article?</pre></=
+li>
+
+<li><pre class=3D"student-text">Are there any web services today (other tha=
+t OKCupid) that follow the extremely modular architecture of OKWS?  Is it i=
+nherently more secure to have all services run on separate servers or are s=
+uch vulnerabilities avoidable in modern systems where different services ru=
+n on the same server?
+</pre></li>
+
+<li><pre class=3D"student-text">As a design, does Apache actually enable be=
+tter performance? It seems that OKWS uses fewer processes than Apache for e=
+xample. But which part of the designs make this happen?</pre></li>
+
+<li><pre class=3D"student-text">At the end of 6.2, it mentions a common bug=
+ in the core libraries. Which bug is it talking about and how much does it =
+impact the security of OKWS?</pre></li>
+
+<li><pre class=3D"student-text">Can OKWS interoperate with application code=
+ written in other languages, or pre-existing code that does not use OKWS?
+</pre></li>
+
+<li><pre class=3D"student-text">Could you elaborate more on how OKWS serves=
+ static content? Particularly, why it
+is safe for OKWS to make requests to static-content distribution web server=
+s?
+</pre></li>
+
+<li><pre class=3D"student-text">Could you explain Figure 2, specifically OK=
+WS? All processes are supposed to be isolated, but from the figure it seems=
+ that process 1 is compromised, and subsequently the attacker gains access =
+to user 1's search history (following the example), but not user 1's inbox.=
+ Then, it seems to be showing that the attacker also gains access to user 2=
+'s search history, but I assumed that would be constrained to another proce=
+ss. What am I missing?</pre></li>
+
+<li><pre class=3D"student-text">Danny Tang
+data1013
+2/20/18
+
+Lecture 5
+
+How effective exactly is OKWS at mitigating DoS attacks? I know it can be h=
+arder to DoS
+since OKWS separates out services, but I feel like an attack on even one se=
+rvice could
+potentially be just as bad as an attack on the entire system. Maybe this is=
+ dependent on
+the number of services for a web application, but I don't really have a sen=
+se of that
+number.</pre></li>
+
+<li><pre class=3D"student-text">Do you know if this is still used by OkCupi=
+d?</pre></li>
+
+<li><pre class=3D"student-text">Does OKWS warn developers or make them awar=
+e that they are using unsafe
+programming techniques (not using the provided "safe" string classes)=20
+even though OKWS allows it?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Does any real-life system implement the str=
+ict isolation strategy? When is it necessary to do so?
+
+</pre></li>
+
+<li><pre class=3D"student-text">Does the database encrypt its communication=
+ with the users? If not, is it possible for the adversary to steal the toke=
+n via eavesdropping? </pre></li>
+
+<li><pre class=3D"student-text">Does the use of Restful APIs in most of tod=
+ay=E2=80=99s web services help in making developer made RPCs more secure?</=
+pre></li>
+
+<li><pre class=3D"student-text">Even if an adversary got control of one of =
+these tokens, how would they send
+RPCs to the server proxy machine? Do you have to be on the same network to
+send RPCs?
+</pre></li>
+
+<li><pre class=3D"student-text">Have there been any attacks on websites bui=
+lt on OKWS?</pre></li>
+
+<li><pre class=3D"student-text">How are RPC restrictions set? Is the system=
+ designer in charge of choosing the RPC query restrictions, or does OKWS do=
+ this? How can OKWS detect what restrictions would be more appropriate?
+</pre></li>
+
+<li><pre class=3D"student-text">How can OKWS make sure the servers it is ru=
+nning on is secure?
+</pre></li>
+
+<li><pre class=3D"student-text">How common has adoption of OKWS or similar =
+systems been in real-life web-services? If it hasn=E2=80=99t been common, t=
+hen why not? </pre></li>
+
+<li><pre class=3D"student-text">How commonly is OKWS used in practice?
+The paper talks about "privilege escalation attacks" - what are some exampl=
+es of these attacks?</pre></li>
+
+<li><pre class=3D"student-text">How does OKWS protect against XSS attacks?<=
+/pre></li>
+
+<li><pre class=3D"student-text">How does process isolation help defend OKWS=
+ against DoS attacks?</pre></li>
+
+<li><pre class=3D"student-text">How does the OKWS system extend to single s=
+ervices that themselves use multiple processes --- say such as a Map-Reduce=
+ service that accesses a large HDFS file system? Do each of the child proce=
+sses have separate priveledges/have to authenticate to each other? Do you h=
+ave to spin up new processes each time a new job is issued?
+</pre></li>
+
+<li><pre class=3D"student-text">How easily can such proposed "wrapper" syst=
+ems be incorporated into existing systems such as those running Apache? Doe=
+s such integration require a lot of customization and modification to exist=
+ing code?=20
+</pre></li>
+
+<li><pre class=3D"student-text">How is the 20-byte authentication token gen=
+erated? Is it unique every time a web service wants to access the database =
+proxy? Is there an expiry to it?
+
+How does this web server serve any dynamic content? It mentions separating =
+static and dynamic content and using different machines to serve them from.=
+ It also mentions that upon startup, all of the required templates are cach=
+ed and parsed and sent over to individual services and that these are NEVER=
+ updated for security reasons. How does this work then for dynamic content?=
+</pre></li>
+
+<li><pre class=3D"student-text">How is the latency of OKWS also faster than=
+ other web server architectures? It seems like there are quite a few guards=
+ and separations between services/databases/logging. Requests are sent by R=
+PC and access tokens need to be checked. It seems like it would be much slo=
+wer than services and databases that don't have this strict separation. </p=
+re></li>
+
+<li><pre class=3D"student-text">How limiting are the RPC calls vs having fu=
+ll access to a database?
+</pre></li>
+
+<li><pre class=3D"student-text">How many of the security and isolation conc=
+epts introduced in OKWS are still
+used in modern dynamic web server frameworks? =20
+</pre></li>
+
+<li><pre class=3D"student-text">How many web developers currently use OKWS?=
+</pre></li>
+
+<li><pre class=3D"student-text">How scalable is OKWS for large applications=
+ (like those on the scale of Google's service), especially when there are m=
+any servers/databases?</pre></li>
+
+<li><pre class=3D"student-text">How would OKWS be considered in today's ter=
+ms? There are a lot more attacks
+now, and it feels like privilege separation isn't enough, although it does=
+=20
+help a lot. </pre></li>
+
+<li><pre class=3D"student-text">How would OKWS performance fare if the proc=
+ess pool wasn't limited to be "small"?</pre></li>
+
+<li><pre class=3D"student-text">I can imagine use cases where the user woul=
+d actually want to control how a database is accessed(for example, when mul=
+tiple requests come in, some requests to databases can be coalesced). In th=
+e paper, this is automatically handled by the framework, in which they prov=
+ided their own scheduler etc.. Wouldn't the framework be limiting in this c=
+ase? For example, when one developer has better scheduling algorithms and w=
+ants to implement those as the scheduler. Apparently, simply switching the =
+algorithm backend defeats the purpose of having a secure framework.</pre></=
+li>
+
+<li><pre class=3D"student-text">I hear about many companies and businesses =
+using cloud database services for their web services to hand off the securi=
+ty concerns to a third-party. Do you think that=E2=80=99s a good trend from=
+ the security standpoint?</pre></li>
+
+<li><pre class=3D"student-text">I read most of the questions and answers fr=
+om the previous years, so I don't have any real questions.=20
+
+One thing I found amusing was this line: "... Capriccio=EF=BF=BDs authors[3=
+4] argue that threads can achieve the same performance as events in the con=
+text of Web servers, while providing programmers with a more intuitive inte=
+rface."
+
+Having dealt with asynchronity in JavaScript, I can't imagine how threads c=
+an be more intuitive to use than events?</pre></li>
+
+<li><pre class=3D"student-text">I read the other student questions and answ=
+ers and saw that OKWS is not used today outside of OkCupid (though its prin=
+ciples are), but are any of the services compared to OKWS in this paper cur=
+rently used? I believe Apache is, but what about the others?
+</pre></li>
+
+<li><pre class=3D"student-text">I understand that the modular design of OKW=
+S is an improvement over systems with almost no access control, but is ther=
+e any concept of temporality to access tokens? Otherwise, someone who gets =
+access to the token will always have access to the data that the token gran=
+ts permissions for?</pre></li>
+
+<li><pre class=3D"student-text">I'm confused that it says both "Each servic=
+e runs as a unique non-privileged user" and "Each Web service runs as a sep=
+arate process". I get why treating every client or HTTP request as a separa=
+te user doesn't work, but what would be considered a "service" with securit=
+y implications other than the web services?</pre></li>
+
+<li><pre class=3D"student-text">I've seen "daemon" pop up in other software=
+. What exactly is the role
+of a daemon?
+</pre></li>
+
+<li><pre class=3D"student-text">If Flash, Zeus, OKWS, and a bunch of other =
+web servers have been shown to be better than Apache, how come I've only ev=
+er heard of Apache? I may be just wrong in assuming it's one of the most po=
+pular ones, or maybe Apache has improved a lot since then?
+</pre></li>
+
+<li><pre class=3D"student-text">If OKWS provides such a large security bene=
+fit, why is not popular among the developer community?
+</pre></li>
+
+<li><pre class=3D"student-text">If all accesses to a database are pipelined=
+ through a single asynchoronous RPC channel, can this cause congestion and =
+degraded performance at the expense of simplicity? What advantages to secur=
+ity does a single channel provide?</pre></li>
+
+<li><pre class=3D"student-text">In section 2.1, the author goes out of his =
+way to mention Denial of Service Attacks and why they are a problem with Ap=
+ache, but the paper's only mentions of DoS attacks in relation to OKWS sugg=
+est that much of the responsibility of preventing the attacks remains on th=
+e user. Which aspects of OKWS help to prevent DoS attacks?</pre></li>
+
+<li><pre class=3D"student-text">In section 3.1 the paper describes some gui=
+delines for how to set up the server, how much does OKWS's security rely on=
+ following those guidelines?</pre></li>
+
+<li><pre class=3D"student-text">In section 5.3, how was OKWS able to achiev=
+e such a dramatic increase in the
+amount of traffic that a single machine can handle? I would expect the isol=
+ated
+and RPC-based design of OKWS to impose some additional overhead.
+</pre></li>
+
+<li><pre class=3D"student-text">In section 5.4 the paper tells how static a=
+nd dynamic content services are outsourced to different machines that are n=
+ot part of OKWS. The paper tells how static content services can be kept is=
+olated, but doesn't address dynamic content. It seems like dynamic content =
+may have a need to access information about other users, so I was wondering=
+ if servicing dynamic content introduces a potential security vulnerability=
+?
+</pre></li>
+
+<li><pre class=3D"student-text">In table 1, why are all the services in the=
+ same chroot jail, along with okld and okd?  Shouldn't they be in different=
+ jails to ensure isolation?  Or is that just achieved using the unique UID =
+/ GID for each service? =20
+</pre></li>
+
+<li><pre class=3D"student-text">In the description of okld, the paper state=
+s that one reason okld would run as a superuser is in order to bind to priv=
+ileged TCP ports. What reasons to web servers have other than this for runn=
+ing as a superuser if doing so leads to so many vulnerabilities?</pre></li>
+
+<li><pre class=3D"student-text">Is OKWS's design still relevant/in-use in m=
+odern web applications (aside from OKCupid)?=20
+
+If you had to speculate, how might you compare OKWS's architecture to a mas=
+sive service like AWS.
+</pre></li>
+
+<li><pre class=3D"student-text">Is running a single process per service rea=
+lly viable on a large website today? The performance tests that OKWS did ha=
+d 500-2,000 concurrent clients, but that seems like a small number for a po=
+pular, modern site. If one process per service becomes prohibitively slow, =
+(how) could OKWS be adapted to scale securely?</pre></li>
+
+<li><pre class=3D"student-text">Is the purpose of pubd simply to isolate se=
+rvices from the file directory of the web server?
+</pre></li>
+
+<li><pre class=3D"student-text">Is there other security systems that has ou=
+tcompeting value than OKWS or what is OKWS=E2=80=99s most valuable aspect?<=
+/pre></li>
+
+<li><pre class=3D"student-text">It is my understandign that the OKWS was de=
+ployed at okcupid.com when it was still being developed. Given OKWS was wri=
+tten in C++, how was the author sure that his designs lacks flaws? In gener=
+al, how does one test his own code for holes in security?
+
+</pre></li>
+
+<li><pre class=3D"student-text">It seems to me that the gist of this system=
+ is that services are separated as
+much as possible, and each service has the least possible set of permission=
+s
+given to it. Was this particularly innovative back then? These *practices* =
+seem
+like they should be fairly common nowadays...</pre></li>
+
+<li><pre class=3D"student-text">Lecture 5 (Question About Paper)
+
+How popular is OKWS today? Is it used in modern web services?
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 5 Submitted Question
+
+Is there a scheme for client verification when database access tokens are a=
+ssigned? Could an attacker manage to obtain
+significant access privileges by subverting that procedure?</pre></li>
+
+<li><pre class=3D"student-text">Lecture 5: My OKWS Question
+
+The author concludes that it is more important for OKWS to have a better de=
+sign
+(over more correct implementation) based off of attackers' exploits histori=
+cally.
+I find that this framework and Google's (which do seem to focus more on des=
+ign
+than brute strength of advanced implementations) insightful.
+
+On that note, what is the general direction of the field of security at the=
+ moment?
+Are security system developers focused more on developing stronger systems =
+technologically
+or on weaving existing technologies together in a better way? I imagine its=
+ both occur
+simultaneously, but is one found to be more effective at the moment?
+
+Thank you!
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 5: Priviledge Seperation
+2/21/18
+
+They mention that OKWS doesn't directly read HTML "templates" but instead c=
+aches  and ships them to other processes, never updating them. Is it then p=
+ossible for these caches to be poisoned, and in doing so compromise the oth=
+er processes that they are sent to?</pre></li>
+
+<li><pre class=3D"student-text">Many of the principles here seem rather obv=
+ious--like isolating processes or restricting access and permissions. Did O=
+KWS present a lot of novel concepts that weren't widely used before? Compar=
+ed to present day systems, are these principles still used today, or have t=
+here been further improvements?</pre></li>
+
+<li><pre class=3D"student-text">OKWS assumes that the code programmers writ=
+e for services is inherently buggy and prone to vulnerabilities. Does it al=
+so assume the same for the code for OKWS? Is that the reason why the OKWS s=
+ystem core is separated into okld, okd, and oklogd components so that poten=
+tial vulnerabilities can be separated as much as possible? </pre></li>
+
+<li><pre class=3D"student-text">OKWS didn't become popular. The last releas=
+e happened in 2011. New websites use safer program languages and frameworks=
+. OKWS also can't easily apply to existing websites. Does this work show up=
+ at a completely wrong time? </pre></li>
+
+<li><pre class=3D"student-text">OKWS ensures service isolation by running e=
+ach service on a separate process. But this does not ensure user isolation,=
+ so a user could compromise all user data on a given service by compromisin=
+g the process running the service. Is there a way to ensure user isolation =
+as well (maybe using processes) that would limit the damage to only the giv=
+en user, but without spawning thousands of processes?
+
+P.S. Just curious, does the OK Web Service (OKWS) name have anything to do =
+with OKCupid, since OKWS was used as the underlying service for OKCupid.com=
+?
+</pre></li>
+
+<li><pre class=3D"student-text">OKWS implements runtime checks to ensure th=
+at SQL queries are properly escaped. Given the prevalence and severity of t=
+hese attacks, why are these checks not standard in all database libraries? =
+The author claims to be able to enforce these checks at compile time in a f=
+uture version. How would one implement such a check?
+</pre></li>
+
+<li><pre class=3D"student-text">OKWS sounds like a very powerful tool, but =
+the fact that it's so high level goes against many modern trends such as fu=
+ll stack dev using the same language on both front- and back- ends.
+So, to what extent has OKWS been realistically successful so far, given the=
+ modern design beliefs?</pre></li>
+
+<li><pre class=3D"student-text">Paper Question 5:
+
+
+Privilege separation on Apache by running a separate process for each reque=
+st is difficult, since Unix makes it hard for non-root users to manipulate =
+UIDs. How is this able to be efficiently implemented? I would imagine that =
+processing each request under a separate process would have a significant i=
+mpact on server performance.
+</pre></li>
+
+<li><pre class=3D"student-text">Q: Since its development, has OKWS remained=
+ secure and widely-used? What sort of vulnerabilities have been found/explo=
+ited since this paper, and what other toolkits have replaced/competed with =
+OKWS?</pre></li>
+
+<li><pre class=3D"student-text">Question about Paper:
+
+Are there scalable designs that do some form of 1 process - 1 user separati=
+on (Figure 2-d) that have been designed in recent history?</pre></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 5 Questions
+
+Why is this system not in practice? Are there additional capabilities that =
+are lost besides convenience to the developer that come with all the partit=
+ioning and restrictions of privilege?</pre></li>
+
+<li><pre class=3D"student-text">SQ5
+
+OKWS makes it a point to prevent compromisation of unrelated
+services once one service has been compromised.  Specifically,
+they mention that an attacker cannot use an exploit in a
+service such as search to then gain access to a service
+such as subscriptions as an example.  Are there any measures
+in OKWS that would additionally make "more important"
+services especially less susceptible to attacks?</pre></li>
+
+<li><pre class=3D"student-text">Section 5.4 talks about how OKWS's deployme=
+nt separated their static and dynamic content. they say that they serve sta=
+tic content from leased servers at some place where the bandwidth is cheap.=
+ How does this work in practice? Do they include the urls of these static f=
+iles in the HTML/template of their website?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Solid paper! It was interesting to see name=
+s like Frans Kaashoek, Robert Morris, and Russ Cox in the acknowledgements =
+section.
+
+The security benefits section on process isolation and privilege separation=
+ talked in passing about making "stronger DoS guarantees by adapting 'defen=
+sive programming" techniques," and gave an example of "compiling rate-contr=
+ol mechanisms into network services."
+
+Could you describe defensive programming, and how this/these techniques cou=
+ld ameliorate DoS issues?
+</pre></li>
+
+<li><pre class=3D"student-text">Some web libraries allow you to autogenerat=
+e APIs for accessing dbs and such based on schemas and data you want to exp=
+ose. Can OKWS be put on top of such a library to say prevent all API method=
+s that have writes to be accessed through RPCs. In general, how does OKWS i=
+nterface with libraries that expose the methods its services would use in r=
+egards to permissions? Obviously it can't modify its permissions, but can i=
+t create subgroups/filter permissions without requiring changes to the unde=
+rlying API?
+</pre></li>
+
+<li><pre class=3D"student-text">The OKWS paper seems to be mostly focused o=
+n the threat model which involves attackers gaining access to system resour=
+ces via remote code execution. To that end, they espouse a kind of process =
+virtualization (i.e "process isolation" in which one Unix process is launch=
+ed per service). Given that the virtualization isn't happening at a deeper =
+level, what stops an attacker from attempting to compromise lower-level det=
+ails about the operating system and then searching the presumably unencrypt=
+ed memory?
+</pre></li>
+
+<li><pre class=3D"student-text">The OKWS security architecture seems like a=
+ miniature version of Google's security architecture as discussed in Lectur=
+e 2. However, Google situates each service in a separate virtual machine ra=
+ther than using simple process isolation as OKWS does. What is the security=
+ advantage of giving each logical process its own separate operating system=
+ (thus adding overhead)? And why is this tradeoff more appealing to Google =
+today than to the author of OKWS back in 2004?</pre></li>
+
+<li><pre class=3D"student-text">The dependency graphs for the Flash and OKW=
+S architectures are the same, but the paper mentions that OKWS differs in t=
+hat its process pool size is independent of the number of concurrent HTTP c=
+onnections. Why is it better to be independent of the number of connections=
+? Could being dependent not benefit us when there are few?</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions Flash as a web server ar=
+chitecture that is popular, and could be modified to have the same privileg=
+ing scheme as OKWS. However,
+Adobe noted that Flash will no longer be updated and maintained as per some=
+ years from now and some sites have already been deprecating the
+use of Flash, due to its antiquity and security vulnerabilities. Given that=
+ security continues to rise in prominence,=20
+what technologies could be the Flash of web security, ubiquitous and a corn=
+erstone for future web applications?</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that OKWS improves on th=
+ings like security, performance. However, it doesn't mention many things th=
+at OKWS is bad at- there is one section, but it seems like the problems are=
+n't that major and many can be avoided with good coding practices and bette=
+r maintanance of OKWS. If that's the case, why hasn't there been mass adopt=
+ion? Or are the shortcomings worse than I first thought.
+</pre></li>
+
+<li><pre class=3D"student-text">The paper says Flash is worse, performance-=
+wise, than OKWS because Flash's # of processes scales with the # of connect=
+ions.=20
+
+The paper says:=20
+
+"For Flash [3], each process in P is associated with a particular
+service: for each pi, there exists sj such that (pi,sj) is a
+dependency. The size of the process pool P is determined
+by the number of concurrent active HTTP sessions; each
+process pi serves only one of these connections."
+
+It is inconceivable to me that a web server could be viable if it creates a=
+ new process for every request. My macbook pro has 4 cores, which could at =
+most spawn 8 processes (I can't remember the name of the technology, but it=
+ basically fools your core into thinking it's two cores and can run two pro=
+cesses, I think IBM or Intel did it anyways...). Let's say at scale I can g=
+et a Macbook Pro for 500$. So 8 cores for 500$. Say my website services 1M =
+users daily. That's a requirement of 1000 cores or 1M users*500$/8cores =3D=
+ 62.5 million$. That's an eggregious amount of money to pay for hardware to=
+ support 1M users.=20
+
+Where am I wrong in my logic?</pre></li>
+
+<li><pre class=3D"student-text">The paper seems to focus on SQL injection, =
+buffer overrun, and other sort of attacks, but aren=E2=80=99t XSS JavaScrip=
+t attacks also a huge issue with lots of web services? How do they deal wit=
+h those types of attacks with this system?</pre></li>
+
+<li><pre class=3D"student-text">The paper sort of glosses over SQL injectio=
+n attacks. Checking that all parameters are appropriately escaped, among ot=
+hers, doesn't seem to fully prevent these sort of attacks. Is this a reason=
+able thing for them to gloss over/is a solved problem at this point? They a=
+lso didn't really talk much about what other "checks" they performed. What =
+kinds of checks would this encompass?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper states: "Apache=E2=80=99s securit=
+y worsens considerably when compiled
+with popular modules that enable dynamically-generated
+content such as PHP."  Does this mean that bugs in PHP are used to compromi=
+se Apache?  Is this the fault of Apache or PHP? How would Apache prevent ag=
+ainst bugs from outside sources from compromising its security?
+</pre></li>
+
+<li><pre class=3D"student-text">The reading states that one who can adversa=
+rily get into an OKWS service can gain access to in-memory state belonging =
+to other users; how is this connection made?=20
+</pre></li>
+
+<li><pre class=3D"student-text">The text says =E2=80=9CEach service runs as=
+ a unique non-privileged user.=E2=80=9D  But don=E2=80=99t different servic=
+es need different permissions, access, etc?  How is this dealt with? </pre>=
+</li>
+
+<li><pre class=3D"student-text">This OKWS system is currently limited to th=
+ose who code in C++. Is this
+common web server coding practice, or will this not be useful until
+other languages are supported?</pre></li>
+
+<li><pre class=3D"student-text">This article suggests creation of a new web=
+ site based on OKWS in order to benefit from its heightened security. If I =
+was interested in updating an existing web service, what parts of the servi=
+ce will have to be rewritten? Would I have to reorganize the code for servi=
+ces or redesign the database layout?</pre></li>
+
+<li><pre class=3D"student-text">This paper seems uncharacteristically verbo=
+se in describing the implementation
+compared to most systems papers I've read. It lists everything from the exa=
+ct
+directory paths of configuration files to the exact sequence of syscalls
+executed by processes. Is this a consequence of the venue it was published =
+in
+(ATEC '04) or when it was published, or something else?
+</pre></li>
+
+<li><pre class=3D"student-text">To what extent does the need for the securi=
+ty measures presented go away if we
+were to write everything in safer languages? It seems like so much of our f=
+ocus
+so far has been on C/C++ and PHP being particularly vulnerable, and often
+"write it in another language" is a valid solution.
+
+Would we still need an OKWS-style security protocol if we were to write
+everything in, say, Go?
+</pre></li>
+
+<li><pre class=3D"student-text">Using an RPC protocol to interact with the =
+database proxies seems like a good idea since it constrains attackers to in=
+teract with the database in a limited way. I was wondering, however, to wha=
+t extent does a developer working with OKWS have control over the RPC proto=
+col defined for communication with a database proxy?
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">Was the OKWS adopted by other projects othe=
+r than OKCupid, and if so was it well received?</pre></li>
+
+<li><pre class=3D"student-text">Websites using OKWS leave dynamic content t=
+o other existing web servers as an explicit design decision. Is this sepera=
+tion still necessary today?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Were most of the vulnerabilities in PHP fou=
+nd through attacks
+or was it that most these vulnerbailities were attempted to be
+patched due to internal findings?  Further, some of these patches
+seemed to cause additional problems in the fix attempts; did these
+tend to be hasty fixes then that were sore patch jobs?</pre></li>
+
+<li><pre class=3D"student-text">What are the advantages of using the Flash =
+architecture over the OKWS architecture? The paper states that both have th=
+e same isolation properties, so what else distinguishes them? I imagine the=
+re is some design tradeoff here, as otherwise the Flash architecture probab=
+ly wouldn't exist in the first place.
+As a haiku:
+Why use this system
+Over Flash, when the two are
+Equally secure?</pre></li>
+
+<li><pre class=3D"student-text">What does chroot/chrooted mean?</pre></li>
+
+<li><pre class=3D"student-text">What does it mean for a process to be chroo=
+ted? Is this related to the OS jail?</pre></li>
+
+<li><pre class=3D"student-text">What does it mean to confine a process to a=
+n OS-level jail directory? Also, how do the principles presented in this pa=
+per translate to a more modern approach (e.g. microservices)?
+</pre></li>
+
+<li><pre class=3D"student-text">What does the paper mean when it says "The =
+administrator should allocate two
+new UID/GID pairs for okd and oklogd"? Is this a concept created by OKWebse=
+rver, or are these things in Linux that can be created by a user?</pre></li=
+>
+
+<li><pre class=3D"student-text">What if the database runs at the same machi=
+ne with web services?
+Since the services run at their own jail directories and as unique
+non-proviledged users, what the purpose is to separate the database
+in other machines? </pre></li>
+
+<li><pre class=3D"student-text">What is a jail directory?
+</pre></li>
+
+<li><pre class=3D"student-text">What is an OS-level jail? How does it hide =
+sensitive files?</pre></li>
+
+<li><pre class=3D"student-text">What is an example of an RPC protocol?</pre=
+></li>
+
+<li><pre class=3D"student-text">What performance limitations does a single =
+threaded web service present? Is it more vulnerable to DoS?
+</pre></li>
+
+<li><pre class=3D"student-text">What stops an attacker, having compromised =
+one OKWS service, from
+using it to serve malicious client-side code to every user of that
+service, and having that code masquerade as the user to access all the
+other services on the same domain and steal all data that users can
+access about themselves?  (For instance, a compromise of the "search
+engine" service would allow me to serve javascript that scrapes users'
+profile pages and calendars). Is this just substantially more effort
+than stealing data using a compromised server process would have been?
+</pre></li>
+
+<li><pre class=3D"student-text">What's the difference between static and dy=
+namic content? Doesn't limiting to static content significantly reduce the =
+usage to OKWS?
+</pre></li>
+
+<li><pre class=3D"student-text">What's the worst that could happen if one s=
+ervice in OKWS were to leak its 20-byte database proxy authentication token=
+?
+
+The service that leaked its key would be giving access to the set of databa=
+se RPCs normally reserved for it.  This could allow other services to do su=
+bmit queries to the database that it wouldn't otherwise be allowed to.  Not=
+e that this doesn't mean arbitrary queries will be possible, just that the =
+subset of queries allowed will be widened to those offered by the leaky pro=
+cess as well.</pre></li>
+
+<li><pre class=3D"student-text">While OKWS prevents different services runn=
+ing on a webserver from maliciously affecting other ones, is there anything=
+ that prevents a service from taking up too much computing power and affect=
+ing the performance of the entire webserver? </pre></li>
+
+<li><pre class=3D"student-text">Why are database request filters better imp=
+lemented as a proxy on top of a database server? Don't most modern database=
+s support filters of this kind out of the box?
+</pre></li>
+
+<li><pre class=3D"student-text">Why do services share the same chroot jail =
+dir? Wouldn't it be safer to create a separate chroot jail dir for each ser=
+vice?
+
+Section 5.4 says "OKWS has no reason to support keep-alive connections", do=
+es that mean supporting keep-alive connections is a security risk? If so, w=
+hy?
+</pre></li>
+
+<li><pre class=3D"student-text">Why does OKWS choose to isolate services ra=
+ther than users?
+It could be possible, instead of assigning one process per
+service, to instead assign one process per set of users.=20
+This way, the effect on the user population might be smaller.</pre></li>
+
+<li><pre class=3D"student-text">Why does OKWS not opt for the 'strict' grap=
+h of security dependencies? They argue that this approach is not scalable, =
+but it still seems that process-based isolation is far less secure than use=
+r-based isolation. There are often efficient ways (at least in languages li=
+ke Go) to yield idle processes and wake them on an event (i.e. the idle use=
+r is sending new requests). Furthermore, a web service with tens of thousan=
+ds of users would likely need lots of computational resources to handle the=
+ir requests, and the resources required to handle these requests would dwar=
+f the resources needed to maintain the idle processes. Am I underestimating=
+ the resources required to have these idle user processes?</pre></li>
+
+<li><pre class=3D"student-text">Why does okld request a new HTTP connection=
+ from oklogd? I thought oklogd was just for launching, so it seems more nat=
+ural for okld to send the request to okd instead.</pre></li>
+
+<li><pre class=3D"student-text">Why is not there more low level security le=
+vels implemented rather than more higher level OKWS for example?
+</pre></li>
+
+<li><pre class=3D"student-text">With all of its security holes, why is Apac=
+he so widely used?
+</pre></li>
+
+<li><pre class=3D"student-text">Your advisee mentions that he was able to g=
+et the OkCupid team to adopt his framework. How often does that happen and =
+how did you manage it? I feel like it often takes much longer for academic =
+research to be used in industry.
+</pre></li>
+
+<li><pre class=3D"student-text">sq5.txt
+
+John C. Mclaughlin
+2/21/2018
+
+How do you ensure that developers maintain proper seperation of prviliges b=
+etween the webservices? A monolithic webservice wouldn't benefit from all t=
+he protections a federated set of services as described in the paper would,=
+ but a monolithic web service is more intuitive to developers.
+
+</pre></li>
+
+<li><pre class=3D"student-text">=EF=BB=BFIn the design section of this pape=
+r, it says that =E2=80=9CThroughout, we assume a cluster of Web servers and=
+ database machines connected by a fast, firewalled LAN.=E2=80=9D I am wonde=
+ring how extreme the security downfalls can get if this assumption is not t=
+rue (i.e. people are using a slower, potentially not firewalled LAN due to =
+lack of access to such a resource). How could attackers sneak in?</pre></li=
+>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--yiQ85iwcn7HtXKqCfjAc0ornOGDdDc2MsnYRc1uNVh------

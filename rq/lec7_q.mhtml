@@ -1,0 +1,1024 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-questions/7
+Subject: Questions for lecture 7 - 6.858
+Date: Wed, 20 Mar 2018 22:58:33 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--gIeHA1hOekl9Ro48vKYFCdLFMFasSwWd7WpRtKhCjt----"
+
+------MultipartBoundary--gIeHA1hOekl9Ro48vKYFCdLFMFasSwWd7WpRtKhCjt----
+Content-Type: text/html
+Content-ID: <frame-32863-867e4686-0f52-4d5b-ad51-803e38912d55@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-questions/7
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Questions for lecture 7 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Questions for lecture 7 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text">"This access is subject to the same constra=
+ints that apply to other JavaScript access, with no net effect on network s=
+ecurity." (2.2)
+
+What are these constraints?
+</pre></li>
+
+<li><pre class=3D"student-text">Is native client implementing in modern sys=
+tems (since the paper is from 2009)? If not, what are some of the modern se=
+curity features used for sandboxing code run from a browser?</pre></li>
+
+<li><pre class=3D"student-text">It seems that the "reliable disassembly" is=
+ really a lot to ask from arbitrary
+systems. From wikipedia, it says that Google has deprecated NaCl for WebAss=
+embly.
+
+As JS becomes more optimized and engines like V8, do we really need to chan=
+ge
+the entire web infrastructure to also support web assembly?
+</pre></li>
+
+<li><pre class=3D"student-text"> 1. Does the browser require root priviledg=
+es to set up the sandbox? How are the segement registers set if not? If it =
+does, is it safe to allow native client to be compatible with many browsers=
+ instead of just Chrome, which the authors would trust to implement privile=
+ge separation?=20
+
+ 2. Is NativeClient (or today WebAssembly) used by advertisement-delivered =
+blockchain miners? Are there techniques for limiting how much processor res=
+ources a sandbox uses, even though the purpose of this specific sandbox is =
+speed?=20
+</pre></li>
+
+<li><pre class=3D"student-text">"In addition to the inner and outer sandbox=
+, the system design
+also incorporates CPU and NaCl module black-lists. These
+mechanisms will allow us to incorporate layers of protection
+based on our confidence in the robustness of the various
+components and our understanding of how to achieve the
+best balance between performance, flexibility and security."
+
+Does each NaCl module come with a blacklist or are the users of NaCl
+expected to come up with the blacklist by themselves? If the latter
+is true, how can NaCl expect them do know what they can or cannot trust?
+</pre></li>
+
+<li><pre class=3D"student-text"># Paper Qn 7
+
+How secure is NaCl? In particular, it seems that the Inter-Module Communica=
+tion interface (IMC) + NPAPI are most vulnerable since they have very compl=
+ex code. Is the dual-layer sandbox model sufficient? </pre></li>
+
+<li><pre class=3D"student-text">- In 3.5.1, they state that Native Client s=
+upports an =E2=80=9Cinsecure =E2=80=98debug=E2=80=99 mode=E2=80=9D =E2=80=
+=94 what is the point of the debug mode having addition file-system interac=
+tions, which in turns makes it insecure? Is it to test if certain parts mis=
+takenly have access to files they shouldn=E2=80=99t?
+
+- What is proof-carrying code? And how does it relate to software fault iso=
+lation (which I understood to be what we refer to as simply =E2=80=9Cisolat=
+ion=E2=80=9D in class)?
+
+- What are the advantages and disadvantages of using a VM vs. a sandbox (in=
+ this context of safely executing 3rd party / untrusted native code, as wel=
+l as more generally)?</pre></li>
+
+<li><pre class=3D"student-text">1) What does the "trampoline" and "springbo=
+ard" terminology mean in the context of this paper?
+
+2) I'm familiar with denial-of-service attacks in the context of web securi=
+ty, however what does it mean in the context of CPUs?
+
+3) In demonstrating the correctness of maintaining control flow integrity, =
+the paper lets S be the set of instructions addresses from the list StartAd=
+dr. I am not entirely sure what the list StartAddr actually contains. The c=
+omment wasn't very helpful.
+</pre></li>
+
+<li><pre class=3D"student-text">1. In Figure 1, the browser is considered a=
+ trusted source though it can also be compromised if web apps are not appro=
+priately sandboxed and it is compromised. Is it outside of NaCl's scope to =
+protect against the native code a compromised browser might run?=20
+
+2. Does "x86 segmented memory" mean that the memory blocks are in the NaCl =
+OS are constrained to the same size? So Nacl is not OS portable? If so, doe=
+s this mean that some instructions in an application might be allowed on so=
+me OSes but not others?=20
+
+3. Can you explain how the inner sandbox can both isolate the native module=
+ from the OS's defects and allow the native module to use the native OS?=20
+
+4. Why is Javascript considered the security standard they hope to achieve?=
+ </pre></li>
+
+<li><pre class=3D"student-text">1. What does the paper mean by 0 mod 32 bou=
+ndary? In section 3.1 in case 3 how does the instruction being 0 mod 32 imp=
+lies that it will be in S? Also what is TextLimit?</pre></li>
+
+<li><pre class=3D"student-text">1. What is the main idea behind the way 803=
+86 segments work?
+2. If files can be shared between trusted and untrusted modules, could a bu=
+g in a trusted module inadvertedly cause a vulnerability by passing a file =
+to an untrusted module that it shouldn't have access to?
+</pre></li>
+
+<li><pre class=3D"student-text">6.858 - NaCl
+
+What other considerations must be made when considering the safety for a we=
+bsite?
+For example, this paper mentions a secure and trusted database, but what co=
+nsiderations
+are there for potentially malicious/dangerous data files (e.g. corrupted im=
+ages, etc.)
+</pre></li>
+
+<li><pre class=3D"student-text">6.858 Lecture 7 Question
+
+How are trust models regarded as a valid measure by the security community?=
+ It seems strange that Microsoft would rely on such a model for a large com=
+plex
+system. Are they still helpful in conjunction with other measures?</pre></l=
+i>
+
+<li><pre class=3D"student-text">Adversaries can attack the NaCl inner and o=
+uter sandboxes through different mechanisms (2.3 outlines some ways), are p=
+ossible attacks on the two sandboxes really disjoint? The types of attacks =
+that the outer sandbox were less clear to me (as opposed to the inner sandb=
+ox, which the paper described in greater detail).
+</pre></li>
+
+<li><pre class=3D"student-text">Although this paper discusses cool sandboxi=
+ng ideas, it still seems outdated. What is the state of art right now for s=
+andboxing?
+</pre></li>
+
+<li><pre class=3D"student-text">Are there any browsers or current software =
+that uses NaCl or
+something very similar?
+</pre></li>
+
+<li><pre class=3D"student-text">Are there any security concerns in trusting=
+ 'trusted NaCl' services to provide a
+secure implementation for non-NaCl access to features such as disk access?
+Particularly because these services have access to the IMC shared memory.
+</pre></li>
+
+<li><pre class=3D"student-text">As far as I understood it, the outer soundb=
+ox protects at process boundaries, so if you escape the inner sandbox you c=
+an affect "trusted" code of the same process.  What type of damage can be c=
+aused by code that can escape the inner sandbox but not the outer sandbox?=
+=20
+</pre></li>
+
+<li><pre class=3D"student-text">Because NaCl disallows many features of unt=
+rusted binaries, it seems that it wouldn't=20
+be compatible with many existing native client applications. How useful is =
+this sandbox
+if it would end up rejecting most existing native client applications, not =
+allowing
+them to be run at all?</pre></li>
+
+<li><pre class=3D"student-text">By refraining the native code from using an=
+y system calls and a lot of x86 instructions, does that mean the code is al=
+so unable to save files, cookies, or run other applications to local machin=
+e?</pre></li>
+
+<li><pre class=3D"student-text">Checking that all the instructions executed=
+ lie within a given binary seems to be a pretty good method to avoid loss o=
+f control flow to an adversary.
+Why is this technique not more broadly used in other contexts? This is the =
+first time I'd heard about something like this.
+</pre></li>
+
+<li><pre class=3D"student-text">Danny Tang
+data1013
+2/27/18
+
+Lecture 7
+
+In this paper, performance measurements were made without the outer sandbox=
+. Have tests been made with it,
+and if so, how does that impact the performance of NaCl?</pre></li>
+
+<li><pre class=3D"student-text">Does Safari and Firefox implement any softw=
+are isolation mechanisms like NaCl? I know that Chrome uses asm.js.</pre></=
+li>
+
+<li><pre class=3D"student-text">Does the outer sandbox provide more protect=
+ion or functionality than
+the inner one, or is it just there in case the inner one fails somehow?
+The paper suggests that the inner sandbox is very robust, and the performan=
+ce
+section seems to imply there's a reasonable overhead for the outer one.</pr=
+e></li>
+
+<li><pre class=3D"student-text">First, it's not clear to me how much of a p=
+roblem the communication between native and web apps currently is. Many app=
+s -
+ranging from dropbox to github - have built interfaces that, once installed=
+, do allow for a nice integration; for more specific
+scenarios - such as use of devices and so on - one can still use websockets=
+ and similar tech to get around. Moreover, the paper emphasizes
+how no need of 'pop-up' is needed in NaCl - but it seems that users would r=
+ather prefer knowing that web apps are somehow able to
+cross the line into native lands. So my question is - what's the real need =
+for NaCl?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Given that x86 segmented memory is not comm=
+only used, I would have expected that
+Intel would devoted less effort to optimizing it. Yet, if this mode were sl=
+ower
+NaCl should have come out worse in the performance evaluation. Is segemente=
+d
+memory actually just as fast?
+</pre></li>
+
+<li><pre class=3D"student-text">How do trampolines and springboards make co=
+ntrol flow transfer secure?
+All their tests of performance are on different hardware (dual-core MBP, qu=
+ad-core  Linux..). Why?
+
+</pre></li>
+
+<li><pre class=3D"student-text">How does NaCl's security model compare with=
+ more recent methods of executing native code in a browser, such as asm.js =
+or WebAssembly?
+</pre></li>
+
+<li><pre class=3D"student-text">How does memory segmentation happen (the re=
+ading referenced using 80386
+segmented memory and CISC software fault isolation)? What is a CISC softwar=
+e
+fault, and how does isolating it work?=20
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">How does the Voronoi tessellation run faste=
+r in NaCl than as a normal executable? What overhead is there in a Linux ex=
+ecutable that is left out of NaCl?=20
+</pre></li>
+
+<li><pre class=3D"student-text">How does the outer sandbox work? The paper =
+doesn't go into much detail, only saying that it works similarly to previou=
+s work.
+</pre></li>
+
+<li><pre class=3D"student-text">How exactly are the blacklists and whitelis=
+ts used in NaCl and what determines what goes on each?</pre></li>
+
+<li><pre class=3D"student-text">How much care needs to be taken to ensure t=
+hat all indirect jumps align to the 32 byte boundaries? When assembling a b=
+inary, what is used to align the jumps?
+</pre></li>
+
+<li><pre class=3D"student-text">How much is the CPU overhead introduced by =
+Native Client?
+</pre></li>
+
+<li><pre class=3D"student-text">How widely adopted is NaCl? I see websites =
+using ActiveX occasionally, but have never seen anything related to Native =
+Client.
+</pre></li>
+
+<li><pre class=3D"student-text">How would one run a multi-thread computatio=
+n using NaCl? They say that it is not possible to create new processes so w=
+ould each thread need to be in its own sandbox?
+</pre></li>
+
+<li><pre class=3D"student-text">I am curious how the outer sandbox differs =
+from the inner sandbox. I think we want an outer sandbox because of potenti=
+al bugs in the inner sandbox. But the outer sandbox sandbox is not perfect =
+as well. So does having multiple number of sandboxes decrease potential ris=
+ks and make attacking harder?</pre></li>
+
+<li><pre class=3D"student-text">I don't have specific questions about this =
+"containerization" approach, but I'd be interested to find how this approac=
+h can/can't work on the mobile devices' browsers.
+  </pre></li>
+
+<li><pre class=3D"student-text">I don't quite understand how the checker wo=
+rks? Does it work
+during the loading time of binary executable? So there is no
+compiler inside the NaCl? If it is possible for NaCl to include=20
+a compiler and each time it can compile codes? </pre></li>
+
+<li><pre class=3D"student-text">I saw from other student questions that NaC=
+l is not the avenue of choice for
+high-performance browser applications today. Are things like
+[GLSL](https://en.wikipedia.org/wiki/OpenGL_Shading_Language) with
+[WebGL](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) what's
+commonly used instead? What is best practice today?
+</pre></li>
+
+<li><pre class=3D"student-text">I see that the outer sandbox is meant to be=
+ a second defense in case the inner sandbox is compromised, but wouldn't a =
+break in the inner sandbox mean that the outer sandbox could be broken as w=
+ell (using the same exploit)?
+</pre></li>
+
+<li><pre class=3D"student-text">I would generally like to know more details=
+ about the IMC and how an attacker might try to exploit the IMC communicati=
+ons interface.</pre></li>
+
+<li><pre class=3D"student-text">I'm curious why NaCl is necessarily "useful=
+", in the sense that since it requires a standalone compiler toolchain(as f=
+ar as I understand, the compiler will be responsible to make all instructio=
+ns 32-aligned). If a standalone compiler is required anyways, why not trans=
+port source code directly? Wouldn't source code level static analysis easie=
+r to reasonable about for a programmer, and more portable for different mac=
+hine types? Is it because binary code allows more language support than fix=
+ing a source language? But it seems like a language will need compiler supp=
+ort anyways in order to be used by NaCl. Basically I'm imagining transferin=
+g C/C++ code like JS, and have the browser validate and compile the code(wh=
+ich binary can be stored locally, with some kind of caching policy). </pre>=
+</li>
+
+<li><pre class=3D"student-text">I'm not clear on what a whitelist entails w=
+ith NaCl. Does this mean that
+whatever is whitelisted is automatically considered a trusted source, even =
+if
+it's browser side?
+</pre></li>
+
+<li><pre class=3D"student-text">I'm unclear on exactly how the instruction =
+re-alignment is happening. Are we
+just padding each instruction and re-defining them?
+</pre></li>
+
+<li><pre class=3D"student-text">IN what cases would you use NaCl rather tha=
+n capsicum?
+</pre></li>
+
+<li><pre class=3D"student-text">If the untusted code only has access to it'=
+s own address space, what is the concern around hardware exceptions that ma=
+kes it important that the sandboxed code not have access to it? Why is term=
+inating the process a better solution?</pre></li>
+
+<li><pre class=3D"student-text">If the x86 instructions are variable-length=
+ (1-15 bytes), then how does NaCl align all the instructions to 32-bit boun=
+daries (since they are not all 4 bytes)? Does it pad each instruction with =
+0s until it reaches a multiple of 4 bytes? In that case, won't it still be =
+possible to jump into the middle of an instruction if the instruction in qu=
+estion is longer than 4 bytes? In that case, it seems imply truncating jump=
+ addresses to be multiples of 4 bytes won't completely remove the security =
+vulnerability of jumping to the middle of an instruction.=20
+</pre></li>
+
+<li><pre class=3D"student-text">In section 3.1 (Inner Sandbox), the paper s=
+ays "Apart from facilitating control sandboxing, exlcuding ret also prevent=
+s a vulnerability due to a race condition if the return address were checke=
+d on the stack". I was confused about this. How would a race condition by c=
+hecking the return address cause a vulernability?=20
+</pre></li>
+
+<li><pre class=3D"student-text">In section 6.2, the authors state that they=
+ "made a deliberate choice against virtualization, as it is generally incon=
+sistent with" their goals of OS neutrality, browser neutrality, and peak na=
+tive performance - I don't quite understand how virtualization is inconsist=
+ent with OS neutrality and browser neutrality. (Do OS and browser neutralit=
+y just refer to compatibility of Native Client with different operating sys=
+tems and browsers?) </pre></li>
+
+<li><pre class=3D"student-text">In the list of disallowed on page 5, one of=
+ the items includes far calls, but on the next page they state that the far=
+ call command is what is used to transfer control. Is the far call command =
+on a modified version of the normal fixed address calls in assembly?</pre><=
+/li>
+
+<li><pre class=3D"student-text">In the subsection on inner sandbox implemen=
+tation, the paper states that "excluding `ret` also prevents a vulnerabilit=
+y due to a race condition if the return address were checked on the stack."
+
+I don't think I understand this. Would love an explanation!
+</pre></li>
+
+<li><pre class=3D"student-text">Is NaCl an alternative to Java Web Apps? Ho=
+w does Java run untrusted binaries securely? </pre></li>
+
+<li><pre class=3D"student-text">Is NaCl still in use? How does it compare t=
+o the upcoming webassembly standard?
+</pre></li>
+
+<li><pre class=3D"student-text">Is it possible for a malicious plugin to ta=
+ke advantage of the Native Client plugin?
+</pre></li>
+
+<li><pre class=3D"student-text">Is it possible to nest a nacl sandbox insid=
+e another nacl sandbox?
+
+</pre></li>
+
+<li><pre class=3D"student-text">Is self-modifying code common for native ap=
+plications, and how much of a limitation is it that Native Client does not =
+allow for self-modifying code?</pre></li>
+
+<li><pre class=3D"student-text">Isn't NaCl a bad abbreviation because it al=
+so means salt?</pre></li>
+
+<li><pre class=3D"student-text">It seems like a lot of the security relies =
+on being able to disassemble the binaries that it is given. Last time I wor=
+ked with disassemblers (in a beginner reverse engineering class), it seemed=
+ like disassemblers weren't all that great and there's quite a bit of code =
+that can't be fully disassembled. How does NaCl deal with this?</pre></li>
+
+<li><pre class=3D"student-text">It seems like any new system introduces new=
+ set of bugs. How do researchers test that there's actually a net benefit?
+</pre></li>
+
+<li><pre class=3D"student-text">It seems like this is more-or-less a direct=
+ precursor to Web Assembly. Does the sandboxing required for WebAssembly ta=
+ke any dramatically different steps than NaCl to ensure the security of exe=
+cuted code?</pre></li>
+
+<li><pre class=3D"student-text">It seems like vunerabilites in NaCl itself =
+would serve as the main point of failure. I see they have made some guarant=
+ee proofs about particular design aspects of their system, but is there a m=
+ore comphrensive way to ensure that they aren't forgetting to check some av=
+enue for attack? Thoughts from my reseaerch in formal verification are maki=
+gn me think about this.</pre></li>
+
+<li><pre class=3D"student-text">It sounds like a good idea - we could go wa=
+y beyond java script, and programmers would be able to write pluggins for d=
+evices such as U2F. Why is not a common technique in modern browsers?</pre>=
+</li>
+
+<li><pre class=3D"student-text">It's mentioned in the paper that NaCl has c=
+omplete access to the OS System Call interface and the user trusts it to no=
+t be abusive. Doesn't this lead to opportunities for phishing for hackers,
+where they give you sometihng that looks like NaCl, but is actually their o=
+wn version which can take control of your computer? How does NaCl combat th=
+at?
+
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 6 (Question About Paper)
+
+Page 5: I don't understand what they do to ensure that all indirect branche=
+s target an instruction identified during disassembly. How does ensuring th=
+at all targets of an indirect branch are aligned mod 32 guarantee that all =
+indirect brances target an instruction identified during disassembly? What =
+if the target is 0xFFFE0? This target is aligned mod 32 but might be outsid=
+e the address space of the binary, so there might be no instruction there.
+
+Page 5: Why is it necessary to constrain executable text to a zero-based ad=
+dress range, sized to a multiple of 4K bytes (nacljmp)?
+
+Page 5: What is the CS segment?
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 6: Software Fault Isolation
+2/28/18
+
+The paper mentions that the IMC communication interface is a possible venue=
+ that an attacker might target. However, even though the IMC can be used by=
+ trusted and untrusted sources, it only directly interfaces outside the box=
+es (eg with the browser, and after the native code has been checked/service=
+ runtime). How then would attackers target the IMC, assuming that neither t=
+he browser or inner box has been breached?</pre></li>
+
+<li><pre class=3D"student-text">Lecture 7: My Native Client Question
+
+After reading the paper, the author makes it sounds like the outer sandbox =
+is simply
+redundant, but two boxes are better than one. Is that the case, or could yo=
+u please
+speak more to the benefits of the outer sandbox? Does the outer sandbox als=
+o offer
+different protection than the inner one?
+
+Thank you!
+</pre></li>
+
+<li><pre class=3D"student-text">NaCl seems to put some trust in the JavaScr=
+ipt as it lets it handle network connections within a NaCl module. Is JavaS=
+cript actually that secure? Why is it the case that there's no effect on ne=
+twork security with that?</pre></li>
+
+<li><pre class=3D"student-text">Naming something the same thing as salt (Na=
+Cl aka Sodium Chloride) is kind of strange. How limiting is it for NaCl to =
+only be on 32 bits? If it was possible to be in 64 bit would that significa=
+ntly increase the performance of Chrome?</pre></li>
+
+<li><pre class=3D"student-text">Native Client exploits complicated 32-bit x=
+86-specific mechanisms (segmented addressing) that don't even generalize to=
+ 64-bit x86. Would there be a simpler way to implement Native Client today =
+using hardware-assisted virtualization?</pre></li>
+
+<li><pre class=3D"student-text">Native client is unable to support hardware=
+ exceptions - does this provide any significant amount of security concerns=
+ or is this issue not as important as the rest raised in the paper?
+</pre></li>
+
+<li><pre class=3D"student-text">Question about Paper:
+
+What are usually the biggest vulnerabilities in sandboxing software?</pre><=
+/li>
+
+<li><pre class=3D"student-text">Question: Are the performance concerns maki=
+ng NaCl useful still relevant? I can't think of any web apps I've used wher=
+e it's been necessary as it seems like most computationally intensive softw=
+are is packaged as a desktop application.</pre></li>
+
+<li><pre class=3D"student-text">Question: Do the constraints for NaCl binar=
+ies constrain application functionality? Is there any tradeoff being made (=
+besides performance in checking) to disallowing certain patterns?</pre></li=
+>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 7 Questions
+
+Why does the NaCl container need full access to OS call interface? Is there=
+ a way to execute high performance code without full OS access?
+
+</pre></li>
+
+<li><pre class=3D"student-text">Reading this paper made me feel a little un=
+comfortable. The proof that the system works is a mathematical one, but the=
+re might implementation bugs that invalidate it. I am also concerned about =
+the 7 contraints imposed on untrusted binaries -- how do we know these are =
+enough and that no binary that follows the constrains are dangerous? The pa=
+per only tests the performance of the system, but there are no "security te=
+sts". There really isn't any guarantee of its own security (e.g. if it has =
+coding bugs), and it has access to the entire OS system call interface, so =
+if compromised, can be very dangerous.
+
+How does the security community react to this kind of "trust that my system=
+ is bug free" systems?</pre></li>
+
+<li><pre class=3D"student-text">Since Chrome has implemented NaCL, have the=
+re been any hacks that use vulnerabilities found in NaCl?</pre></li>
+
+<li><pre class=3D"student-text">Since instructions can be different lengths=
+, it was confusing to me how NaCl check the instruction length.  In the pap=
+er they use the pseudocode function =E2=80=98InstLength()=E2=80=99 but what=
+ does this do? How do they ensure there won=E2=80=99t be a bug in computing=
+ the instruction length (as in the lecture question)? </pre></li>
+
+<li><pre class=3D"student-text">Since the IMC service allows communication =
+between trusted and untrusted modules, could an adversary potentially do a =
+man-in-the-middle attack in this communication channel and corrupt the brow=
+ser/NaCL?
+</pre></li>
+
+<li><pre class=3D"student-text">Since the sandbox doesn't allow for some va=
+lid x86 instructions, such as instructions that modify the code and instruc=
+tions that overlap, this affects the transparency of NaCl. If such instruct=
+ions were common in x86 web code that is required for sites to work properl=
+y, the user might get used to disabling the NaCl environment on many sites.=
+ One way an attacker could exploit this is to deliberately put such instruc=
+tions in malicious code to prompt the user to to disable NaCl. I realize th=
+at it's not exactly fair to hold NaCl accountable for when the user disable=
+s it, but the fact remains that if a security extension significantly impac=
+ts the convenience of the user, it's not likely to be very effective.=20
+
+How common are these x86 instructions in code that is seen in the wild? How=
+ common would NaCl encounter a safe piece of x86 code that it would disallo=
+w due to this instruction limitation?</pre></li>
+
+<li><pre class=3D"student-text">So they keep talking about "trampoline" cal=
+l gates and "springboard" return gates, but I found it unclear to which par=
+ts they were referring because they never used the terms consistently.  Is =
+the return gate the indirect jump sequence talked about for return implemen=
+tation?  Or are these other modules that weren't talked abou in detail?
+</pre></li>
+
+<li><pre class=3D"student-text">Suppose an adversary discovers a bug in NaC=
+l where the checker incorrectly determines the length of a particular x86 i=
+nstruction. How could an adversary exploit this to escape the inner sandbox=
+?
+
+In section 2.1 the authors mention that "with reliable disassembly as a too=
+l, our validator can then insure that the executable includes only the subs=
+et of legal instructions, disallowing unsafe machine instructions."  Given =
+a situation where the checker in the inner sandbox for NaCl incorrectly det=
+ermines the length of a particular x86 instruction, this base assumption wo=
+uld be invalid and an attacker would be able "sneak" security defects into =
+the x86 code, potentially allowing them to execute instructions outside of =
+the legal subset thereby breaking the sandbox.</pre></li>
+
+<li><pre class=3D"student-text">The NaCl authors modified gcc, etc. to crea=
+te a tool chain that will produce NaCl-compliant binaries. How does the web=
+ browser check that the binary is really NaCl-compatible? Does it have to d=
+etermine all reachable instructions and verify their alignment and allowabi=
+lity?</pre></li>
+
+<li><pre class=3D"student-text">The NaCl runtime only accepts modules that =
+conform to its rules.  This includes having data integrity, reliable disass=
+embly, safe instructions, and control flow integrity.  To what extent does =
+this make coding the application more challenging?  I could imagine a progr=
+ammer writing a program, only to find out after compiling and attempting to=
+ test the program, it fails because it did not conform to the rules.  It se=
+ems in order to write code that conforms, the programmer must have extensiv=
+e knowledge on the assembly generated.
+</pre></li>
+
+<li><pre class=3D"student-text">The author talks about generating test prog=
+ram by essentially sampling instructions at random. This approach sounds re=
+ally curious to me. Is it normal in security-related software testing? How =
+good of a coverage can this random method achieve? Is any provable in this =
+scheme (e.g. 1-epsilon of all test cases can be covered on average by O(f(e=
+psilon)) of test cases)?=20
+</pre></li>
+
+<li><pre class=3D"student-text">The authors mention they believe that a san=
+dbox can provide better security than process boundaries. Could you explain=
+ what process boundaries are and how sandboxing differs? I am led to unders=
+tand that the advantage of sandboxing here is that untrusted code (if verif=
+ied and sandboxed) can be run in the same process as trusted code -- is thi=
+s unachievable with process boundaries?</pre></li>
+
+<li><pre class=3D"student-text">The authors note that "we constrain x86 pre=
+fix usage to only allow known useful instructions.  Empirically we have fou=
+nd that this eliminates certain denial-of-service vulnerabilities related t=
+o CPU errate"
+
+What kind of DoS vulnerabilities are they talking about?  I thought that Do=
+S was simply overloading a processor with too much computation - are there =
+more specific DoS vulnerabilities that exist, and are associated with speci=
+fic x86 instructions?
+</pre></li>
+
+<li><pre class=3D"student-text">The inner sandbox implementation section di=
+scusses the size of the validator. Why is it's small size so important to N=
+aCl? Is it because the inner and outer sandbox must reside in a single 32-b=
+it address space making space more important? Or is there some other design=
+ consideration I am missing?</pre></li>
+
+<li><pre class=3D"student-text">The lecture question supposes that the chec=
+ker in NaCl has a bug in it. Would this bug not be caught by NaCl's testing=
+ (as detailed in section 3.1) with "random instruction generation as well a=
+s exhaustive enumeration of valid x86 instructions"? Or were they testing f=
+or different bugs?</pre></li>
+
+<li><pre class=3D"student-text">The paper describes some constraints on NaC=
+l binaries that make reliable disassembly possible, in Table 1, and I'm con=
+fused about the interpretations of C5, C6, and C7.
+
+As a result of C5, is it possible for an accepted binary to have some strin=
+g of bits that can be interpreted as an instruction, but overlaps a 32-byte=
+ boundary (like a bit string reading "add 1 2" across a boundary)? Is this =
+string of bits just not considered an instruction for the purposes of the a=
+nalysis, or is the binary rejected?
+
+In C6 and C7, what does "valid instruction" mean? Are they defining "valid =
+instructions" as those reachable by fall-through disassembly? Or are they u=
+sing "valid instruction" to mean "any x86 instruction," and instead restric=
+ting where strings of bits corresponding to x86 instructions show up in the=
+ binary?
+
+And finally, how are these constraints enforced and checked? The authors me=
+ntion that the constraints make reliable disassembly possible, and so they =
+can't be checked by the validator in Figure 3, which is applied after diass=
+embly.
+
+In a compact haiku form:
+
+Some things that vex me:
+C5, C6, C7.
+Could you clarify?</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that NaCl only supports =
+32-bit operating systems, what considerations would have to be taken if a s=
+ystem were 64-bit instead of 32-bit? 	</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that hardware exceptions=
+ are not handled, but did not exactly explain what NaCl does in this case, =
+merely mentionning that it "risks abrupt termination". How does the runtime=
+ NaCL deal with exceptions then ?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that the inner sandbox d=
+etects practices in x86 code such as 'self-modifying code' and 'overlapping=
+ instructions'. What's an example of self-modifying code? How can instructi=
+ons overlap?</pre></li>
+
+<li><pre class=3D"student-text">The paper notes that constraints C1 through=
+ C6 are needed to make disassembly reliable. What sorts of situations or co=
+de cause disassembly to be unreliable? Does unreliable disassembly also imp=
+ly that some instructions may be hidden to the disassembler?=20
+</pre></li>
+
+<li><pre class=3D"student-text">The paper referenced the difference between=
+ a plugin and a module via the image library example. I am curious if they =
+can create a semi-trusted version that is capable of reading specific data =
+and how that would work since it could access out of sandbox bounds memory?=
+ I assume if you can define a rule for what memory is accessible then it co=
+uld read from it.
+
+Also as a follow on to the lecture question, wouldn't simply padding the sa=
+ndbox provide a solution for that. In the case that a couple instructions c=
+ould be incorrectly parsed, it would still provide protection because the s=
+andbox would be resistant to a couple miscalculations.
+</pre></li>
+
+<li><pre class=3D"student-text">The paper says that "The first 4 KB (of a N=
+aCl application) is read and write
+protected to detect NULL pointers". Why is this region read and write prote=
+cted? Is there a problem with NULL pointers? Can they be used to somehow de=
+feat the security of the sandbox?</pre></li>
+
+<li><pre class=3D"student-text">The paper says: "In addition to the inner a=
+nd outer sandbox, the system design also incorporates CPU and NaCl module b=
+lack-lists." What is a CPU or NaCl module black-list?</pre></li>
+
+<li><pre class=3D"student-text">The performance tests using user time seem =
+skewed. Doesn't using timers in general and specifically simply using user =
+time and not system + user time skew results and produce potentially inaccu=
+racies? And as a result, aren't there better ways to benchmark performance?
+</pre></li>
+
+<li><pre class=3D"student-text">The reason why NaCL claims it excludes rets=
+ is because it prevents a vulnerability due to a race condition if the retu=
+rn address were checked on the stack. What race condition are they referrin=
+g to and how does it come about?
+</pre></li>
+
+<li><pre class=3D"student-text">There seems to be a lot of padding and wast=
+ed space for NaCl binaries (i.e. hlt instructions to the nearest page) - wh=
+y does it still run so fast?</pre></li>
+
+<li><pre class=3D"student-text">They state "the springboard is used by the =
+trusted runtime to transfer control to an arbitrary untrusted address"
+
+I presume springboard tests that the address it hands over is well aligned?=
+ Otherwise if untrusted code could insert
+an arbitrary untrusted return address into the spring board we would run in=
+to trouble.
+</pre></li>
+
+<li><pre class=3D"student-text">This paper was published in 2009. Is NaCl o=
+utdated?
+</pre></li>
+
+<li><pre class=3D"student-text">What does  "trampoline" code mean?
+</pre></li>
+
+<li><pre class=3D"student-text">What exactly are x86 prefixes and how can t=
+hey cause issues as described in this paper?=20
+</pre></li>
+
+<li><pre class=3D"student-text">What exactly does the outer sandbox do? Wha=
+t are segments/segmentation?
+</pre></li>
+
+<li><pre class=3D"student-text">What exactly is a runtime? The more of the =
+Wikipedia page I read, the more confused I get.</pre></li>
+
+<li><pre class=3D"student-text">What is an "indirect" jmp or call instructi=
+on?</pre></li>
+
+<li><pre class=3D"student-text">What is x86 segmented memory, and how can i=
+t be used "to constrain both data and instruction memory references"?
+
+Why are 64-bit architectures not supported?
+
+</pre></li>
+
+<li><pre class=3D"student-text">What would happen if a hacker executed a bu=
+ffer overflow on NaCL using x86 instructions?</pre></li>
+
+<li><pre class=3D"student-text">What's they're plan for convincing people t=
+hat NaCl is a trusted browser extension?</pre></li>
+
+<li><pre class=3D"student-text">When referring to the project internally, w=
+as it called the "Native Client System" or the "Salt System"?
+</pre></li>
+
+<li><pre class=3D"student-text">When would you use the SRPC and when would =
+you use the NPAPI?</pre></li>
+
+<li><pre class=3D"student-text">Where do you draw the line between trusted =
+and untrusted code?</pre></li>
+
+<li><pre class=3D"student-text">Why do the instructions need to be 32-byte =
+aligned? How does this protect the springboard?</pre></li>
+
+<li><pre class=3D"student-text">Why does NaCL check that the target of an i=
+ndirect branch is assigned to mod 32? I thought instructions have variable =
+length?
+</pre></li>
+
+<li><pre class=3D"student-text">Why is it challenging to support languages =
+such as Java?</pre></li>
+
+<li><pre class=3D"student-text">Why is the 64-bit executable model not supp=
+orted by NaCl?</pre></li>
+
+<li><pre class=3D"student-text">Why is there a need for an outer sandbox if=
+ the inner sandbox doesn=E2=80=99t allow running of untrusted code? Also wh=
+at are known attacks against this system?</pre></li>
+
+<li><pre class=3D"student-text">Why must the binary address start at 0? It =
+doesn't seem like that's a necessary requirement.</pre></li>
+
+<li><pre class=3D"student-text">Why would application potentially run *fast=
+er* as a NaCl application? Like Voronoi from the paper?
+</pre></li>
+
+<li><pre class=3D"student-text">Would it be that hard to look for illegal i=
+nstructions at every offset?</pre></li>
+
+<li><pre class=3D"student-text">Would the consequences of a vulnerability i=
+n NaCl be greater than the consequences of a vulnerability in a normal brow=
+ser system? Since NaCl allows a process to run native code it seems that an=
+ exploit that broke the safety features of NaCl would be able to do more da=
+mage.
+</pre></li>
+
+<li><pre class=3D"student-text">question: why hasn't NaCl been widely used =
+for running native code in browsers?</pre></li>
+
+<li><pre class=3D"student-text">sq7
+
+How would such a set of alignment and structural rules be
+implemented?  I imagine that if the NaCl was running
+instructions that already did not adhere to these rules
+then certain complications would arise resulting in errors
+in the program.</pre></li>
+
+<li><pre class=3D"student-text">=EF=BF=BD=EF=BF=BDDoes the outer sandbox pr=
+ovide any additional protection besides adding another layer to NaCl? That =
+is, does it protect against different system calls than the inner sandbox o=
+r is it a just a separate barrier in case the inner sandbox is compromised?=
+ If an adversary could compromise the inner sandbox what exactly does the o=
+uter sandbox do that would protect the user?</pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--gIeHA1hOekl9Ro48vKYFCdLFMFasSwWd7WpRtKhCjt------

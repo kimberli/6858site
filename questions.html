@@ -1,0 +1,953 @@
+
+<HTML>
+<HEAD>
+<TITLE>
+6.858 / Spring 2018
+
+/ Paper Reading Questions
+
+</TITLE>
+<META HTTP-EQUIV="pragma" CONTENT="no-cache">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script type="text/javascript">
+    var submit_base = "../../../rq/";
+
+    function autofill_email() {
+        var spans = document.getElementsByTagName("span");
+        for (i = 0; i < spans.length; i++) {
+            if (spans[i].className != "email_autofill")
+                continue;
+            spans[i].innerHTML = spans[i].innerHTML.replace(/ at /, "@");
+        }
+    }
+
+    function parse_query() {
+        var parts = location.search.substr(1).split("&");
+        var query = {};
+
+        for (var i = 0; i < parts.length; i++) {
+            var variable, value;
+            var index = parts[i].indexOf("=");
+            if (index < 0) {
+                variable = decodeURIComponent(parts[i]);
+                value = "";
+            } else {
+                variable = decodeURIComponent(parts[i].substr(0, index));
+                value = decodeURIComponent(parts[i].substr(index + 1));
+            }
+            query[variable] = value;
+        }
+        return query;
+    }
+
+    function init_questions(query) {
+        var questions = document.getElementById('questions');
+        if (!questions)
+            return;
+
+        var id = query["q"];
+        if (id) {
+            var qlist = questions.getElementsByTagName('div');
+            for (var i = 0; i < qlist.length; i++) {
+                if (qlist[i].id != id) {
+                    questions.removeChild(qlist[i]);
+                    i--;
+                } else if (query["lec"]) {
+                    // Append the lecture number if we have it.
+                    var p = document.createElement("p");
+                    var b = document.createElement("b");
+                    if ("textContent" in b)
+                        b.textContent = "Lecture " + query["lec"];
+                    else
+                        b.innerText = "Lecture " + query["lec"];
+                    p.appendChild(b);
+                    qlist[i].insertBefore(p, qlist[i].firstChild);
+                }
+            }
+        }
+
+        if (query["lec"]) {
+            var lecnum = parseInt(query["lec"], 10);
+            var p = document.getElementById('submit-links');
+            if (p) {
+                p.style.visibility = 'visible';
+                p.style.position = 'static';
+            }
+
+            var qlink = document.getElementById('question-view-link');
+            if (qlink) {
+                qlink.href = submit_base + "lec" + lecnum + "_q.mhtml";
+            }
+
+            var alink = document.getElementById('answer-view-link');
+            if (alink) {
+                alink.href = submit_base + "lec" + lecnum + "_ans.mhtml";
+            }
+        }
+    }
+
+    function date_to_txt(d) {
+	var month = ["jan", "feb", "mar", "apr", "may", "jun",
+		     "jul", "aug", "sep", "oct", "nov", "dec"];
+	return month[d.getMonth()] + ' ' + d.getDate();
+    }
+
+    function find_date_txt(t) {
+	var els = document.getElementsByTagName('font');
+	for (var i = 0; i < els.length; i++) {
+	    if (els[i].className == "date" && els[i].innerHTML == t)
+		return els[i];
+	}
+	return null;
+    }
+
+    function highlight_date() {
+	var d = new Date();
+        if (d.getFullYear() != 2018) {
+            return;
+        }
+
+	for (var fwd = 0; fwd < 3; fwd++) {
+	    var t = date_to_txt(d);
+	    var e = find_date_txt(t);
+	    if (e) {
+		e.parentNode.style.border = '2px solid blue';
+		break;
+	    }
+	    d.setTime(d.getTime() + 24*60*60*1000);
+	}
+    }
+
+    function page_onload() {
+        var query = parse_query();
+        autofill_email();
+        init_questions(query);
+        highlight_date();
+    }
+</script>
+
+</HEAD>
+
+<BODY BGCOLOR=#ffffff TEXT=#000000 onLoad="page_onload()">
+
+<TABLE cols="3" WIDTH="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<!-- Header row -->
+<tr height="40px">
+ <td colspan=3>
+ <table  width="100%" height="40px" border=0 cellspacing=0 cellpadding=0>
+ <tbody>
+   <tr>
+    <td bgcolor="#000000">
+      <div align="left" style="padding-left:58px; padding-top: 2px;">
+      <font style="font-size: 28px; color: #ffffff">
+	<a name="top">
+         <b>6.858</b>: Computer Systems Security
+	</a>
+      </font>
+      </div>
+    </td>
+
+    <td bgcolor="#8a0a0a" halign="center" valign="center" width="250px">
+     <div align="center" style="padding-top: 2px; padding-bottom: 4px;">
+     <font style="font-size: 28px; color: #ffffff">
+      Spring <b>2018</b>
+     </font>
+     </div>
+    </td>
+  </tr>
+ </tbody>
+ </table>
+ </td>
+</tr>
+
+<!-- horiz line -->
+<tr>
+<td colspan="3" height="5px" bgcolor="#8a0a0a">
+</td>
+</tr>
+
+<tr>
+<!-- Menu -->
+<td bgcolor="#8a0a0a" valign="top" width="180px">
+ <table cols=2 rows=1 border=0 cellspacing=0 cellpadding=0 width="100%" height="100%">
+  <tbody>
+   <tr>
+   <td valign="top">
+   <table cols=1 rows=1 border=0 cellspacing=0 cellpadding=0 width="100%">
+    <tbody>
+      <tr><td><div class="menuHead">
+         <A HREF="index.html" class="menuItem">Home</A>
+      </div></td></tr>
+      <tr><td><div class="menuHead">
+         <A HREF="general.html" class="menuItem">General information</A><BR>
+      </div></td></tr>
+      <tr><td><div class="menuHead">
+         <A HREF="schedule.html" class="menuItem">Schedule</A><br>
+      </div></td></tr>
+      <tr><td><div class="menuHead">
+         <a href="reference.html" class="menuItem">Reference materials</a><br>
+      </div></td></tr>
+      <tr><td><div class="menuHead">
+         <a href="https://piazza.com/mit/spring2018/6858" class="menuItem">Piazza discussion</a><br>
+      </div></td></tr>
+      <tr><td><div class="menuHead">
+         <a href="labs/handin.html" class="menuItem">Submission</a><br>
+      </div></td></tr>
+      <tr><td><div class="menuHead">
+         <a href="quiz.html" class="menuItem">Quizzes</a><br>
+      </div></td></tr>
+      <tr><td><div class="menuHead">
+         <a class="menuItem">Labs</a><br>
+         <a href="labs/lab1.html" class="menuItem">1</a>
+         <a href="labs/lab2.html" class="menuItem">2</a>
+         <a href="labs/lab3.html" class="menuItem">3</a>
+         <a href="http://css.csail.mit.edu/6.858/2018/labs/lab4.html" class="menuItem">4</a>
+         <a href="labs/lab5.html" class="menuItem">5</a>
+      </div></td></tr>
+      <tr><td><div class="menuHead">
+         <a href="http://ist.mit.edu/network/rules" class="menuItem">MIT network rules</a>
+      </div></td></tr>
+      <tr><td><div class="menuHead">
+         <a href="projects.html" class="menuItem">Final projects</a><br>
+      </div></td></tr>
+      <tr><td><div class="menuHead">
+         <a href="http://css.csail.mit.edu/6.858/2017/" class="menuItem">2017 class materials</a><br>
+      </div></td></tr>
+      <tr><td><div class="menuHead">
+         <a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/"><img alt="Creative Commons License" style="border-width:0" src="cc-by.png" /></a>
+      </div></td></tr>
+    </tbody>
+   </table>
+   </td>
+
+   <td width="3px" bgcolor="#8a0a0a">
+   </td>
+   </tr>
+  </tbody>
+ </table>
+</td>
+<!-- End Menu -->
+
+<td colspan="2">
+
+<table border=0 cellspacing=0 cellpadding=0 width="100%" height="100%" >
+<tr><td style="padding-left:10px; padding-right:10px; padding-top: 10px; padding-bottom: 10px" valign="top" align="left">
+
+
+<!-- Begin Page Content -->
+
+
+<!--
+    To add a new question, just put in within a <div> tag, give it
+    some identifier (i.e., 'id="qXX"'), and then add it to the questions
+    array variable below.  To link directly to the question, just use a
+    link to 'questions.html?q=qXX'.
+ -->
+
+<h1>
+Paper Reading Questions
+</h1>
+
+<a name="top"></a>
+<p>
+For each paper, your assignment is two-fold.  Before lecture:
+
+<ul>
+<li>Submit your answer for each lecture's paper question via the
+    <a href="labs/handin.html">submission web site</a> in a file named
+    <code>lec<var>n</var>.txt</code>, and
+<li>Submit your own question about the paper (e.g., what you find most confusing about
+    the paper or the paper's general context/problem) in a file named
+    <code>sq<var>n</var>.txt</code>.
+    You cannot
+    use the question below.  To the extent possible, during lecture we will try to
+    answer these questions.  Below, we have included the questions we've received
+    from students in past years (when available), along with answers to those
+    questions, in case you find it helpful.
+</ul>
+
+<p id="submit-links" style="visibility:hidden; position:fixed">
+    Once you submit your own question and answer (or after the deadline
+    has passed), you can view the
+    <a href="questions.html" id="question-view-link">questions</a>
+    and
+    <a href="questions.html" id="answer-view-link">answers</a>
+    that other students submitted.
+</p>
+
+</p>
+
+<div id="questions">
+
+  <div class="questionbox">
+    <p>
+    <b>Warning:</b> You must have Javascript enabled to view a specific question.
+    </p>
+  </div>
+
+  <div id="q-baggy" class="questionbox">
+    <p>
+    Suppose <tt>slot_size</tt> is set to 16 bytes.
+    Consider the following code snippet:
+
+    <pre>
+      char *p = malloc(256);
+      char *q = p + 256;
+      char ch = *q;
+    </pre>
+
+    <p>
+    Explain whether or not baggy bounds checking will raise an exception
+    at the dereference of <tt>q</tt>.
+  </div>
+
+  <div id="q-xfi" class="questionbox">
+    <p>
+    Suppose a program has a buffer overflow vulnerability which allows
+    an attacker to overwrite a function pointer on the stack (which is
+    invoked shortly after the buffer is overflowed). Explain whether or not
+    an attacker is able to exploit the vulnerability if the same program is run
+    under XFI.
+  </div>
+
+  <div id="q-okws" class="questionbox">
+    <p>
+    What's the worst that could happen if one service in OKWS were to leak
+    its 20-byte database proxy authentication token?
+  </div>
+
+  <div id="q-keykos" class="questionbox">
+    <p>
+    Would a Unix application running in the Unix environment described
+    in the KeyKOS paper (i.e., KeyNIX) be susceptible to the confused
+    deputy problem?  Explain.
+  </div>
+
+  <div id="q-javastack" class="questionbox">
+    <p>
+    What are the principals that Java uses for access control?
+    </p>
+  </div>
+
+  <div id="q-javastatic" class="questionbox">
+    <p>
+    List possible causes of false negatives (missed vulnerabilities)
+    and false positives (reported problems that are not vulnerabilities)
+    in the system described by the paper.
+    </p>
+  </div>
+
+  <div id="q-frame" class="questionbox">
+    <p>
+    Is the descendant policy just as secure as the child policy
+    for frame navigation?  Either explain why it is so, or describe
+    a concrete counter-example.
+    </p>
+  </div>
+
+  <div id="q-forcehttps" class="questionbox">
+    <p>
+    Suppose that a web application developer wants to avoid the security
+    pitfalls described in the ForceHTTPS paper.  The developer uses HTTPS
+    for the application's entire site, and marks all of the application's
+    cookies as "Secure".  If the developer makes no mistakes in doing so,
+    are there still reasons to use ForceHTTPS?  Explain why not, or provide
+    examples of specific attacks that ForceHTTPS would prevent.
+  </div>
+
+  <div id="q-kerberos" class="questionbox">
+    <p>
+    What is the worst that could happen if the private key of a user is
+    stolen (i.e., becomes known to an adversary)?  Similarly, what is
+    the worst that could happen if the private key of a service is
+    stolen?  How should the compromised user or service recover?  Think
+    about possible vulnerabilities in the recovery process if the user
+    or service key is known to an adversary.
+    </p>
+  </div>
+
+  <div id="q-timing" class="questionbox">
+    <p>
+    What are some other situations where an adversary may be able
+    to learn confidential information by timing certain operations?
+    Propose some ideas for how an application developer might mitigate
+    such vulnerabilities.
+    </p>
+  </div>
+
+  <div id="q-tcg-linux" class="questionbox">
+    <p>
+    Could an adversary compromise a server running the system proposed
+    in the paper without being detected?
+    </p>
+  </div>
+
+  <div id="q-bitlocker" class="questionbox">
+    <p>
+    Suppose an adversary steals a laptop that uses BitLocker disk encryption.
+    In BitLocker's design, Windows has a key to decrypt the contents of
+    the drive.
+    <ol>
+      <li>What prevents the adversary from extracting this key from Windows?
+      <li>If the adversary cannot extract the key, what prevents him or her
+	  from simply using Windows to access files?
+    </ol>
+    </p>
+  </div>
+
+  <div id="q-resin" class="questionbox">
+    <p>
+    Sketch out the Resin filter and policy objects that would be needed to
+    avoid cross-site scripting attacks through user profiles in <tt>zoobar</tt>.
+    Assume that you have a PHP function to strip out JavaScript.
+    </p>
+  </div>
+
+  <div id="q-tor" class="questionbox">
+    <p>
+    What are the technical risks and benefits of running an onion router
+    Tor node (i.e., not just a client) on your machine?
+    </p>
+  </div>
+
+  <div id="q-stuxnet" class="questionbox">
+    <p>
+    Do you think a worm similar to Stuxnet could be designed to compromise
+    Linux machines?  What aspects of Linux or Windows design do you think
+    make worms easier or harder to write?
+    </p>
+  </div>
+
+  <div id="q-vanish" class="questionbox">
+    <p>
+    What factors control the precision with which Vanish can make data
+    unreadable after exactly time T?
+    </p>
+  </div>
+
+  <div id="q-dealloc" class="questionbox">
+    <p>
+    In Table 1, what causes the secure deallocation lifetime to be
+    noticeably larger (for some applications) than the ideal lifetime?
+    </p>
+  </div>
+
+  <div id="q-backtracker" class="questionbox">
+    <p>
+    <!-- If a system administrator does not run Backtracker, how could they find
+	 the attacker's entry point?  When is it possible to do so, and when is
+	 Backtracker required? -->
+    How could an adversary circumvent Backtracker, so that an administrator
+    cannot pinpoint the initial intrusion point?
+    </p>
+  </div>
+
+  <div id="q-traceback" class="questionbox">
+    <p>
+    How does the proposed system deal with an adversary that tries to
+    frame someone else for the denial-of-service attack by marking the
+    attack packets they send in some way?
+    </p>
+  </div>
+
+  <div id="q-captchas" class="questionbox">
+    <p>
+    Given that CAPTCHAs can be solved quite cheaply, do you think that
+    open web sites should continue using CAPTCHAs, switch to some other
+    mechanism, or not use any mechanism at all (e.g., if you believe
+    any mechanism will be cheap to break, like CAPTCHAs)?  Explain your
+    reasoning.
+    </p>
+  </div>
+
+  <div id="q-xss" class="questionbox">
+    <p>
+    A browser cross-site scripting filter is a common client-side XSS
+    prevention mechanism built into many modern browsers. Here's
+    a brief description of what it does, in the words of Adam Barth,
+    one of the creators of such filters, XSS Auditor: "Basically,
+    the filter checks each script before it executes to see whether
+    the script appears in the request that generated the page.  If it
+    finds a match, it blocks the script from executing.  [...]". Do
+    you think such a filter may be effective at detecting DOM-based
+    (entirely client-side) cross-site scripting? Please explain.
+    </p>
+  </div>
+
+  <div id="q-static-scripting" class="questionbox">
+    <p>
+    The paper only mentions one potential false positives arising because
+    of the use of regular expression. Explain why it is indeed a false
+    positive.
+    </p>
+  </div>
+
+  <div id="q-gatekeeper" class="questionbox">
+    <p>
+    Why is it necessary to treat innerHTML field assignments in a special
+    way in the Gatekeeper analysis?
+    </p>
+  </div>
+
+  <div id="q-object-views" class="questionbox">
+    <p>
+    Security and performance are often at odds in computer systems. Do you feel that object views is a performant 
+    enough mechanism for everyday use?
+    </p>
+  </div>
+
+  <div id="q-slammer" class="questionbox">
+    <p>
+    What are some of the disadvantages of fast-propagating worms?
+    </p>
+  </div>
+
+  <div id="q-virus" class="questionbox">
+    <p>
+      The paper discusses the possibility of using memory scanning to deal with the problems of obfuscation, encryption, and polymorphism. While memory scanning will enable signature-based detection, do you see any drawbacks of this approach?
+    </p>
+  </div>
+
+  <div id="q-nozzle" class="questionbox">
+    <p>
+      JavaScript malware often uses a variety of environment detection techniques. One such technique is to check the version of the browser, plugins such as Adobe Acrobat or Flash, operating system, etc. before delivering an exploit deliberately designed for that platform and environment configuration, as illustrated by the pseudocode below. 
+<pre>
+if(browser-is-ie-6 && adober-flash-version==10.1){
+  heap_spray();
+}
+</pre>
+This leads to more reliable, successful exploits for the attacker. Do you see how this pattern may lead to false negatives in a runtime detector?
+    </p>
+  </div>
+
+  <div id="q-android" class="questionbox">
+    <p>
+      The paper mentions that typical Android applications execute on top of
+      a Java virtual machine.  What is the role of Java in ensuring overall
+      security?
+    </p>
+  </div>
+
+  <div id="q-taintdroid" class="questionbox">
+    <p>
+      Would it be reasonable to run TaintDroid to track what data
+      applications may be exfiltrating from your phone at all times?
+      Would it be reasonable to use TaintDroid to enforce policies like
+      ``no application can send my IMEI to the Internet''?  Explain why
+      or why not, and what changes would be needed to make TaintDroid
+      applicable, if not.
+    </p>
+  </div>
+
+
+  <div id="q-repriv" class="questionbox">
+    <p>
+      While privacy seems to be one clear benefit of client-side personalization, what are some of the disadvantages of it?
+    </p>
+  </div>
+
+  <div id="q-identity" class="questionbox">
+    <p>
+      What are the disadvantages of using a human-readable, pseudonymous
+      identifier for the user within a federated identity system,
+      instead of a crypto key or a long string of hexadecimal numbers?
+    </p>
+  </div>
+
+  <div id="q-spam" class="questionbox">
+    <p>
+      How could the operators of the spam value chain, studied in this
+      paper, make it more difficult to repeat such studies in the future?
+    </p>
+  </div>
+
+  <div id="q-usable" class="questionbox">
+    <p>
+      After reading this paper, propose some ideas for how you might improve
+      the usability of securely accessing WebSIS (<tt>http://student.mit.edu</tt>).
+    </p>
+  </div>
+
+  <div id="q-trinc" class="questionbox">
+    <p>
+      Suppose you are building an online multi-person game.  You are
+      worried that a player can cheat in various ways by modifying
+      the game software, since it runs on the player's own computer,
+      or sending arbitrary network messages to your game server.
+      What security properties could you get by using TrInc in your
+      game (e.g., a trinket comes in the box when you buy a game)?
+      What security problems cannot be solved with TrInc?
+    </p>
+  </div>
+
+  <div id="q-capsicum" class="questionbox">
+    <p>
+      The authors of the Capsicum paper describe several strategies
+      for how to use Capsicum in several applications (Section 4).
+      How would you recommend using Capsicum in the different components
+      of OKWS?  Are there features missing from Capsicum that would have
+      made it easier to build OKWS?
+    </p>
+  </div>
+
+  <div id="q-websec" class="questionbox">
+    <p>
+      Suppose you are helping the developers of a complex web site at
+      http://bitdiddle.com/ to evaluate their security.  This web site
+      uses an HTTP cookie to authenticate users.  The site developers
+      are worried an adversary might steal the cookie from one of the
+      visitors to the site, and use that cookie to impersonate the
+      victim visitor.
+    </p>
+
+    <p>
+      What should the developers look at in order to determine if
+      a user's cookie can be stolen by an adversary?  In other words,
+      what kinds of adversaries might be able to steal the cookie of one
+      of the visitors to http://bitdiddle.com/, what goes "wrong"
+      to allow the adversary to obtain the cookie, and how might the
+      developers prevent it?
+    </p>
+
+    <p>
+      <i>Note:</i> an exhaustive answer might be quite long, so you
+      can stop after about 5 substantially-different issues that the
+      developers have to consider.
+    </p>
+  </div>
+
+  <div id="q-jsenforce" class="questionbox">
+    <p>
+      Why is it important to prevent access to scope objects?
+    </p>
+  </div>
+
+  <div id="q-nacl" class="questionbox">
+    <p>
+      Suppose an adversary discovers a bug in NaCl where the checker
+      incorrectly determines the length of a particular x86 instruction.
+      How could an adversary exploit this to escape the inner sandbox?
+    </p>
+  </div>
+
+  <div id="q-u2f" class="questionbox">
+    <p>
+      Two-factor Authentication (2FA) is commonly used to authenticate
+      users. For example, MIT allows as a second factor a code sent via an SMS
+      message to the user's cell phone.  The FIDO standard describes a 2FA
+      scheme using a USB dongle.  Which scheme is more secure? Which scheme is
+      more user friendly?
+    </p>
+  </div>
+
+  <div id="q-passwords" class="questionbox">
+    <p>
+      Based on the different schemes described in the paper, what do
+      you think would be a reasonable choice for authenticating users in
+      the following scenarios, and what trade-offs would you have to make:
+
+      <ol>
+        <li>Logging in to a public Athena machine in a cluster.
+        <li>Checking your balance on a bank's web site via HTTPS from a private laptop.
+        <li>Accessing Facebook from an Internet cafe.
+        <li>Withdrawing cash from an ATM.
+      </ol>
+    </p>
+  </div>
+
+  <div id="q-oauth" class="questionbox">
+    <p>
+      Which of the vulnerabilities described in this paper (A1 through A5)
+      do you think could have been found with some kind of automated tool
+      (such as fuzzing or program analysis) and what might such a tool
+      look like?
+    </p>
+  </div>
+
+  <div id="q-koi" class="questionbox">
+    <p>
+      Think about other applications that you run on your mobile phone.
+      How might you apply Koi's techniques to help ensure privacy in
+      these other applications?  What other techniques could be useful?
+    </p>
+  </div>
+
+  <div id="q-sybilrank" class="questionbox">
+    <p>
+      Could large email providers, such as GMail, Yahoo Mail, or
+      Hotmail, use ideas from SybilLimit to better detect spam email?
+      What assumptions would they need to check?
+    </p>
+  </div>
+
+  <div id="q-kint" class="questionbox">
+    <p>
+      First, ignoring range metadata, what constraint would KINT generate
+      for the <tt>count</tt> variable in the code from Figure 3?
+    </p>
+
+    <p>
+      Second, how can you simplify the snippet of code in Figure 1 using
+      the NaN integers as described in Section 7?
+    </p>
+  </div>
+
+  <div id="q-tcpip" class="questionbox">
+    <p>
+      Steve Bellovin's ``A Look Back'' paper was published in 2004,
+      over 10 years ago (and the paper itself is a retrospective on
+      his earlier paper from 1989).  Which of the security problems in
+      the TCP/IP protocol suite described in Steve Bellovin's paper are
+      still relevant today?
+    </p>
+  </div>
+
+  <div id="q-django" class="questionbox">
+    <p>
+      After you have read about Django's security mechanisms, think
+      back to ``The Tangled Web''.  What security pitfalls still remain
+      for developers using Django?  Could you extend Django to help
+      developers avoid those pitfalls, in a style similar to Django's
+      existing protections?
+    </p>
+  </div>
+
+  <div id="q-private-browsing" class="questionbox">
+    <p>
+      For the different parts of the browser state shown in Tables 1-3,
+      what are the security implications of a "yes"?  Consider both of
+      the two threat models that the authors put forward for private
+      browsing.
+    </p>
+  </div>
+
+  <div id="q-dropbox" class="questionbox">
+    <p>
+      What do Dropbox developers gain from the obfuscation measures
+      described in the paper?  Could they have made it impossible for
+      the authors to perform this kind of reverse-engineering?
+    </p>
+  </div>
+
+  <div id="q-cryptdb" class="questionbox">
+    <p>
+      Consider the following query:
+    </p>
+
+    <p>
+      <pre>  SELECT SUM(GREATEST(salary, 100)) FROM employees;</pre>
+    </p>
+
+    <p>
+      The <tt>GREATEST(a, b)</tt> function returns the larger
+      of <tt>a</tt> and <tt>b</tt>, so the above query returns
+      the sum of all salaries in the <tt>employees</tt> table,
+      rounding up any salaries below 100 to 100.
+    </p>
+
+    <p>
+      How could CryptDB rewrite this query to execute over
+      encrypted data, using the encryption schemes described
+      in the paper?
+    </p>
+  </div>
+
+  <div id="q-brop" class="questionbox">
+    <p>
+      For a BROP attack to succeed, the server must not rerandomize canaries
+      after crashing. Suppose that, after a server crashes, it creates
+      a new canary by SHA1-hashing the current gettimeofday() value. Is
+      this new scheme secure?
+    </p>
+  </div>
+
+  <div id="q-klee" class="questionbox">
+    <p>
+      KLEE uses a satisfiability (SAT/SMT) solver to implement symbolic
+      execution.  What would go wrong if KLEE did not use a SAT/SMT solver,
+      and instead tried all branches?  What would go wrong if KLEE just
+      guessed randomly about what a symbolic value could be?
+    </p>
+  </div>
+
+  <div id="q-urweb" class="questionbox">
+    <p>
+      What kinds of security vulnerabilities are still possible in an
+      Ur/Web application?  One approach might be to keep the OWASP
+      Top-10 list in mind as you are reading the Ur/Web paper, and
+      consider whether Ur/Web's features can eliminate certain classes
+      of bugs, or whether it's still possible to have vulnerabilities.
+    </p>
+
+    <p>
+      A note from the paper author: this paper is a draft of a camera-ready
+      conference paper, and if you have any bug reports or suggestions about
+      the paper, the author (Adam Chlipala, adamc@csail.mit.edu) would
+      appreciate your feedback!
+    </p>
+  </div>
+
+  <div id="q-medsw" class="questionbox">
+    <p>
+      Security engineering classes often focus on technological mechanisms
+      such as cryptography or programming techniques (i.e., controls) to
+      prevent security problems, but safety and biomedical engineering
+      classes tend to focus on risk management to balance risks and
+      benefits.  Consider the situation of requiring fast emergency access
+      to control an implanted medical device that must also remain secure.
+      If the overarching goal is patient safety, how might your choice
+      of security mechanisms differ from traditional computing contexts?
+      How do we achieve both safety and security while balancing risks
+      and benefits that ensure patient safety?
+    </p>
+  </div>
+
+  <div id="q-haven" class="questionbox">
+    <p>
+      In Haven, can the untrusted operating system remap a virtual
+      page of an enclave to a physical memory page that the operating
+      system controls without the enclave noticing?  (Explain briefly
+      your answer.)
+    </p>
+  </div>
+
+  <div id="q-ryoan" class="questionbox">
+    <p>
+      Can the untrusted operating system remap a virtual page of an
+      enclave to a physical memory page that the operating system controls
+      without the enclave noticing?  (Explain your answer briefly.)
+    </p>
+  </div>
+
+  <div id="q-exe" class="questionbox">
+    <p>
+      Each time EXE adds a branch constraint it
+      queries STP to check that there exists at least one solution for the
+      current path's constraints.  What would go wrong if EXE did not use STP,
+      and instead tried all branches?  What would go wrong if EXE randomly
+      selected a branch to check?
+    </p>
+  </div>
+
+  <div id="q-lab4" class="questionbox"> 
+    <p>
+      Read over the lab 4 assignment and tells us what we should cover that would help you most.
+      That is, what question do you have about lab 4?
+    </p>
+  </div>
+
+  <div id="q-google" class="questionbox">
+    <p>
+      As you are reading this paper, think about what attacks Google is
+      trying to prevent with each of the security measures described in
+      this document.  Submit a list of potential attacks that Google is
+      worried about, approximately 1 per subsection in the document.
+    </p>
+  </div>
+
+  <div id="q-cloudterm" class="questionbox">
+    <p>
+      Suppose an adversary compromises the insecure operating system
+      running on a user's desktop computer, and when the user tries
+      to launch their secure document editor using Cloud Terminal,
+      the adversary opens their look-alike document editor instead.
+      How can a user determine that they are interacting with a ``fake''
+      application and not the real secure document editor?  What prevents
+      the adversary from fooling the user?
+    </p>
+  </div>
+
+  <div id="q-email" class="questionbox">
+    <p>
+      As you are reading the paper on secure messaging schemes, try to
+      figure out: how does email stack up against the proposed criteria
+      for messaging?  How hard would it be to adopt the techniques used
+      in the various messaging systems to improve email security?  What
+      makes email different, if anything?
+    </p>
+  </div>
+
+  <div id="q-ios" class="questionbox">
+    <p>
+      Ben Bitdiddle has an iOS device that he uses to keep track of
+      confidential notes.  What are the different attack scenarios that
+      Apple considers where an adversary tries to obtain Ben's notes, and
+      what part of the iOS security architecture prevents those attacks?
+    </p>
+  </div>
+
+</div>
+
+<style>
+  div.responsebox {
+    margin: 1pc 4% 0pc 4%;
+    padding: 0.5pc 0.5pc 0.5pc 0.5pc;
+    background-color: #e0e0ff;
+    border: 1px dashed red;
+  }
+
+  pre.responsepre {
+    white-space: pre-wrap;
+  }
+</style>
+
+<div id="responses">
+</div>
+
+<script src="jquery-3.2.1.min.js"></script>
+<script src="handlebars.min.js"></script>
+
+<script id="lec-template" type="text/x-handlebars-template">
+  <div class="lecture-responses">
+    <h2>Questions and answers for lecture {{lecnum}} from past years</h2>
+
+    {{#each responses}}
+      <div class="responsebox"><pre class="responsepre">{{this}}</pre></div>
+    {{/each}}
+  </div>
+</script>
+
+<script>
+var query = parse_query();
+lecname = query['q'];
+lecnum = query['lec'];
+
+// Skip the "q-" part.
+lecname = lecname.substring(2);
+
+lec_template = Handlebars.compile($("#lec-template").html());
+
+$.ajax("responses/" + lecname + ".json").done(function (data) {
+  responses = lec_template({lecnum: lecnum, responses: data});
+  $("#responses").append(responses);
+});
+</script>
+
+<!-- End Page Content -->
+
+</td></tr>
+
+<tr bgcolor="#999999" height="20px">
+<td style="padding-left:10px; padding-top: 10px; padding-bottom: 10px">
+<font style="font-size: 12px;">
+<p>Questions or comments regarding 6.858?  Send e-mail to the course staff at
+<A HREF="mailto:6858-staff@lists.csail.mit.edu"><I>6858-staff@lists.csail.mit.edu</I></A>.
+
+<p><B><A HREF="questions.html#top">Top</A></B> //
+<B><A HREF="index.html">6.858 home</A></B> // 
+<i>Last updated Wednesday, 28-Feb-2018 11:14:53 EST</i>
+</font>
+</td></tr>
+</table>
+
+</td>
+
+</tr>
+</tbody>
+</table>
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,969 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-questions/9
+Subject: Questions for lecture 9 - 6.858
+Date: Wed, 20 Mar 2018 22:58:48 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--0RWl7DbbRSxIG0G6mVRzMu7Gov5goxD9sXWHd2jXAN----"
+
+------MultipartBoundary--0RWl7DbbRSxIG0G6mVRzMu7Gov5goxD9sXWHd2jXAN----
+Content-Type: text/html
+Content-ID: <frame-32866-59b5c646-bc05-4dc5-a5c6-c648ee20e9f6@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-questions/9
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Questions for lecture 9 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Questions for lecture 9 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text">Does AMD do something similar to Intel SGX?
+
+What are the shadow states used for? What impact does maintaining them have=
+ on performance?
+</pre></li>
+
+<li><pre class=3D"student-text">The section on dynamic memory allocation sa=
+ys that SGX does not allow enclave pages to be added after creation. Howeve=
+r, SGX provides the EADD instruction which is supposed to add pages of memo=
+ry. Isn=E2=80=99t this a contradiction?</pre></li>
+
+<li><pre class=3D"student-text">"The OTP enclave can now store the pre-shar=
+ed key using the sealing process described in [2]. As described in this pap=
+er, the OTP pre-shared key can be encrypted and stored with a key that is o=
+nly known to the OTP enclave executing on the same platform that initiated =
+the OTP provisioning process."
+	- How do you have a key that's only known to the OTP enclave? You have to =
+set up the enclave, so you'll have to pass the key in from somewhere. How i=
+s it protected everywhere?</pre></li>
+
+<li><pre class=3D"student-text">"To prevent rollback attacks on page-in, th=
+e hardware keeps a version number
+for the page in EPC."
+
+How does a rollback attack work? A quick Google search couldn't clarify.
+</pre></li>
+
+<li><pre class=3D"student-text">"To prevent the host from exploiting the ap=
+plication, for example by allowing two
+threads to concurrently acquire a mutex, the shield implements a form of us=
+er-level
+scheduling."
+
+What does it mean by "user-level scheduling"? Also, what are the examples o=
+f
+exploits that attackers can do by having two threads concurrently acquire
+a mutex?
+</pre></li>
+
+<li><pre class=3D"student-text">1. Haven's approach seemed to be "let's jus=
+t stuff the entire application into an enclave." Is there a future where e.=
+g. every container is run inside its own enclave? What are the performance =
+overheads like for running multiple enclaves on the same machine?
+
+2. I've read a bit about CSAIL's Sanctum. How to Sanctum and SGX relate, an=
+d what deficiencies is Sanctum looking to improve upon compared to SGX?
+</pre></li>
+
+<li><pre class=3D"student-text">1. How can the untrusted interface control =
+policy for virtual resources if the host OS still must be asked for memory =
+allocation?</pre></li>
+
+<li><pre class=3D"student-text">6.858 Lecture 9 Question
+
+How does Drawbridge manage to allow for execution of arbitrary binaries whi=
+le only providing a subset of system calls? Are each of the other calls emu=
+lated, or are only
+a small subset generally used in applications?</pre></li>
+
+<li><pre class=3D"student-text">6858 - Haven
+
+It seems that the thread model can be varied in terms of who might be attac=
+king who.
+The big question is - is there a set of some "trusted" portions of our arch=
+itecture
+(instructions, main OS, etc.) or are there are also frameworks that protect=
+ against
+when almost everything is to be distrusted (including the enclave, which co=
+uld
+try to maliciously attack other memory sections)?
+</pre></li>
+
+<li><pre class=3D"student-text">Are there any examples of big hacks or data=
+ leaks that Haven would have prevented?
+</pre></li>
+
+<li><pre class=3D"student-text">As sandboxing is statement to essentially b=
+e the inverse of SGX, is possible to use them together and are they ever us=
+ed together or is there no need to use them together?</pre></li>
+
+<li><pre class=3D"student-text">Attestation seems to be very skimmed over -=
+ what exactly is included in the report that proves that an enclave was ins=
+tantiated properly on a platform?
+</pre></li>
+
+<li><pre class=3D"student-text">Can you explain the difference between the =
+enclave and the picoprocess? Does the picoprocess ever limit the performanc=
+e of the enclave, and vice versa?</pre></li>
+
+<li><pre class=3D"student-text">Could you explain a little more how SGX is =
+implemented (particularly with
+respect to privileged code: OS, hypervisor, etc.)?
+</pre></li>
+
+<li><pre class=3D"student-text">Could you go into more detail about how the=
+ use of the LibOS protects the enclave from malicious input from the Host? =
+The paper mentions that the LibOS helps mitigate malicious (erroneous) resp=
+onses by the host. Does this just mean that the LibOS handles "hardware exc=
+eptions" on the part of the binary?Is there no better lightweight way to do=
+ this? On a similar note, why did they choose Windows 8? They mention they =
+didn't want to handle the complexities of child processes, but in general a=
+ren't many enclaves running in the cloud on a Unix system?
+
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">Danny Tang
+data1013
+3/5/18
+
+Lecture 9
+
+Haven is based around trying to protect code from a malicious OS. How do us=
+ers "get"
+a malicious OS?</pre></li>
+
+<li><pre class=3D"student-text">Does Windows Azure use Haven currently? It =
+seems like it's in planning, but not
+yet implemented:
+https://azure.microsoft.com/en-us/blog/introducing-azure-confidential-compu=
+ting/
+These guarantees seem like they would provide a huge competitive advantage =
+over GCP.
+</pre></li>
+
+<li><pre class=3D"student-text">Does this method guarantee that the softwar=
+e can't do
+malicious operations to the system? And how do the users
+*trust* the cloud providers they implement the right=20
+enclave if the users don't fully trust cloud providers? </pre></li>
+
+<li><pre class=3D"student-text">Even with shielded execution, since the clo=
+ud provider manages the resources used by the program, what is the worst th=
+ing a cloud provider could do with a side channel attack?
+</pre></li>
+
+<li><pre class=3D"student-text">Has SGX been broken by the Meltdown and Spe=
+ctre vulnerabilities?
+</pre></li>
+
+<li><pre class=3D"student-text">Has SGX been implemented on hardware on any=
+ Intel processors yet? Would it be
+potentially vulnerable to the recent vulnerabilities announced that affect
+Intel hardware?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Has the prototype for Haven been further de=
+veloped into a more robust engine?
+</pre></li>
+
+<li><pre class=3D"student-text">Have there been any recent developments reg=
+arding Intel's licensing of SGX or
+other competitors that have more reasonable licensing restrictions?
+</pre></li>
+
+<li><pre class=3D"student-text">Haven was written in 2014, has there been a=
+ny major movements to integrate it (or similar ideas) into common cloud pro=
+vider services (like Amazon)? Is Intel SGX hardware expensive?
+</pre></li>
+
+<li><pre class=3D"student-text">Haven's threat model allows for DoS attacks=
+ from the host. Is there any way to defend against these attacks?
+</pre></li>
+
+<li><pre class=3D"student-text">How available are legacy API's that are pac=
+kaged inside the enclave? I wonder also if there are restrictions on how th=
+ey would be used as well when trying to implement this without an old licen=
+se of something like that.</pre></li>
+
+<li><pre class=3D"student-text">How can Haven ensure that the processor is =
+being run by an enclave program and not the OS? How does is the mode of the=
+ processor set / restricted / verified?
+</pre></li>
+
+<li><pre class=3D"student-text">How can Haven prevent storage rollback atta=
+cks?
+</pre></li>
+
+<li><pre class=3D"student-text">How can you write code for your software th=
+at works as CPU logic?
+</pre></li>
+
+<li><pre class=3D"student-text">How difficult is it to crack the encryption=
+ for data written to memory? I'm assuming the host OS could stop the execut=
+ion of the user code and read the encrypted contents from the memory.
+
+</pre></li>
+
+<li><pre class=3D"student-text">How does Intel SGX protect sensitive data? =
+Why can't a server call EADD without calling EEXTEND?</pre></li>
+
+<li><pre class=3D"student-text">How does SGX ensure that the adversary cann=
+ot simulate an Intel processor running the protected enclave and thereby ci=
+rcumvent the hardware protections? If the solution is that the processor cr=
+yptographically signs the "measurements", then doesn't Intel expose itself =
+to a huge risk by storing its private key in every processor it ships?</pre=
+></li>
+
+<li><pre class=3D"student-text">How does intel SGX compete with Microsoft's=
+ implementation of hypervisor enclaves?  It seems as though a 'trustlet' is=
+ more(/actually) usable and even contains more features than Intel's offeri=
+ng.</pre></li>
+
+<li><pre class=3D"student-text">How does the recent Spectre vulnerability a=
+ffect the security of Intel SGX? Does it make applications running under Ha=
+ven subject to any loss of confidentiality and integrity?
+</pre></li>
+
+<li><pre class=3D"student-text">How frequently does the priveleged code of =
+the cloud server become compromised?</pre></li>
+
+<li><pre class=3D"student-text">How is the measurement and attestation impl=
+emented in SGX? What does it have to do to know that the initialization was=
+ done properly?</pre></li>
+
+<li><pre class=3D"student-text">How often do Iago attacks actually happen? =
+Is this mainly just a problem for cloud providers with maybe a malicious em=
+ployee?</pre></li>
+
+<li><pre class=3D"student-text">How realistic is the assumption that hardwa=
+re/CPU can be trusted in cloud platform? Is there a way to also protect aga=
+inst this (e.g. by allowing the code to only run on a "verified" version of=
+ hardware/CPU)?=20
+</pre></li>
+
+<li><pre class=3D"student-text">How reasonable in the real world is the har=
+dware assumption that the processor is implemented correctly and adversarie=
+s cannot extract secrets residing within it?</pre></li>
+
+<li><pre class=3D"student-text">How widespread is the Haven protocol today?=
+ Are there further advances in
+isolation / mutual distrust?=20
+</pre></li>
+
+<li><pre class=3D"student-text">How would an adversary go about executing a=
+n Iago attack? Would he/she have to take physical control of the server tha=
+t is running the client's code?</pre></li>
+
+<li><pre class=3D"student-text">I am still confused on how this can stop a =
+malicious OS who has access to memory. It seems like things are encrypted, =
+but it seems that you can either read the private key, because it is stored=
+ in hardware or you can overwrite the encrypted data and recompute whatever=
+ measurement and store that. Can you clarify how SGX stops these attacks?</=
+pre></li>
+
+<li><pre class=3D"student-text">I don't fully understand the fundamental di=
+stinction between sielded exectuation and sandboxing. I see where the text =
+explains the difference being inverses (protecting code from the host vs pr=
+otecting host from the code). However, why is such a distinction even neces=
+sary? I always felt like sandoxing was about code isolation (no matter in w=
+hat direction)? =20
+</pre></li>
+
+<li><pre class=3D"student-text">I don't quite understand the threat model: =
+Would the system still be secure if the cloud provider did not use Intel SG=
+X hardware, but some other custom fake malicious hardware? If yes, how can =
+that work, or if no, what's the point of not having to trust the cloud prov=
+ider?
+</pre></li>
+
+<li><pre class=3D"student-text">I don't think I understand the concept of a=
+ compromised operating system. If one has a compromised operating system, d=
+oes this affect only that persons individual computer or is it possible for=
+ a compromised operating system to affect computers outside of the system a=
+s well? How much damage can a compromised operating system cost?</pre></li>
+
+<li><pre class=3D"student-text">I don=E2=80=99t quite understand how old ap=
+plications that have no knowledge of SGX are made secure=E2=80=94that part =
+of the paper/its implementation was a bit complicated/confusing to me.</pre=
+></li>
+
+<li><pre class=3D"student-text">I understand the the EPC is encrypted and i=
+ntegrity-protected.
+This prevents the adversary (OS) to access the data in the enclave.
+I'm not sure what prevents the OS to spy on the encryption process and stea=
+l
+the secrets in order to access the internal states of the enclave.
+</pre></li>
+
+<li><pre class=3D"student-text">I would like to know more about how SGX is =
+performing the operations that it does. The Haven paper states that, =E2=80=
+=9CFor example, SGX isolates self-contained sequences of x86 instructions (=
+typically, individual modules or functions) that are aware of the SGX prote=
+ction model and are explicitly written to defend against threats outside th=
+e enclave, that do not handle faults or exceptions, and do not interact wit=
+h the OS.=E2=80=9D A brief explanation of how this happens would be helpful=
+.</pre></li>
+
+<li><pre class=3D"student-text">I'm a bit confused on SGX (and this paper a=
+s a whole I suppose). Does SGX occupy a virtual address space? If so, how d=
+oes it get allocated and encrypted?
+</pre></li>
+
+<li><pre class=3D"student-text">I'm a little confused as to why there is an=
+ untrusted runtime inside the picoprocess. If it is untrusted and its job i=
+s to load the shield, and create the enclave, how can the shield and all th=
+e code inside the enclave be trusted?</pre></li>
+
+<li><pre class=3D"student-text">I'm confused by how software can protect ag=
+ainst hardware in the way it is proposed.  It sounds like the threat model =
+acknowledges DoS attacks, but strives to point out how Haven can help trust=
+ed software operate on an untrusted server / OS and how it can detect physi=
+cal .  If the hardware is corrupt, why can't the hardware just modify the a=
+pplication code itself?  Even if it's encrypted, it seems to me as though i=
+t could still be corrupted.
+</pre></li>
+
+<li><pre class=3D"student-text">I'm curious if something similar is availab=
+le for any GPUs. Taking into account their rapidly growing popularity for p=
+erforming sensitive computations, the topic seems to be quite relevant. </p=
+re></li>
+
+<li><pre class=3D"student-text">If the cloud host doesn't have any access t=
+o the state of
+the internal process, how does it restore the internal=20
+process's state when required?
+</pre></li>
+
+<li><pre class=3D"student-text">If the enclave is protected by hardware, ca=
+n the application that *created* the enclave access or modify the enclave i=
+n any way? For example, once an enclave is created, can it be disabled? Wil=
+l someone who compromised the application that created the enclave be able =
+to compromise the enclave?
+</pre></li>
+
+<li><pre class=3D"student-text">In Haven, if the shield module detects bugg=
+y behavior and shuts down, how does it "turn back on"? What verification pr=
+ocess is there to check that the host is no longer buggy and is safe again?=
+</pre></li>
+
+<li><pre class=3D"student-text">In Section 4.3, the author mentions that vi=
+rtual address regions for enclaves always start at 0 to allow the enclave t=
+o handle NULL pointer dereferences. Why is this the case? If they didn't do=
+ this, why would it allow a malicious OS to map pages there?</pre></li>
+
+<li><pre class=3D"student-text">In the Secure one-time password example, af=
+ter the user create a new account and securely request a new pre-shared key=
+, the pre-shared key should be stored on the disk so the plugin can work no=
+rmally when the user restart the browser, right? How to prevent malicious s=
+oftware to read the shared key from disk? What kind of damage can it cause?=
+</pre></li>
+
+<li><pre class=3D"student-text">In the beginning of the Haven paper, they m=
+entioned having the need to protect against internal attacks such as the Sn=
+owden leak, janitorial staff theft, and malicious software engineers leakin=
+g data. I still don=E2=80=99t see how their proposed system helps in many o=
+f these cases: wouldn=E2=80=99t a software engineer with access to specific=
+ client data still be able to leak it?</pre></li>
+
+<li><pre class=3D"student-text">Innoovative Instructions:
+The paper discusses creating a secure channel from an enclave to a remote s=
+erver. This seems like a rather difficult process to secure given a goal of=
+ SGX is to protect against even privileged attackers. Is this similar in co=
+ncept to TLS where even an attacker viewing the network could not view the =
+channel data? If so, does this then imply SGX leaves the door open for side=
+ channel attacks since all of the enclave actions can be detected from outs=
+ide since they must share the processor with code outside the enclave?
+
+Haven:
+In section 4.1, it is mentioned that a malicious host may attempt to expose=
+ vulnerabilities in an application by altering timings. How does libOS deal=
+ with this considering libOS can also be in part controlled by the host it'=
+s running on? It is touched on in the Threads and synchronization section, =
+however it is not completely clear how the host cannot still alter the timi=
+ng of the shielded process. The paper later says a fix is in a newer versio=
+n of SGX (right before section 5.5). What is this fix?</pre></li>
+
+<li><pre class=3D"student-text">Innovative Instructions:
+Is an enclave similar to a critical section (the tool used for concurrency)=
+? Are there overlaps in the technologies/tools used for security and concur=
+rency, since their agendas sometimes overlap?
+
+Haven:
+Are there any cases in which we may not want 100% shielded execution (i.e. =
+when we want some sharing between the enclave and the OS)? If so, how can S=
+GX be modified to allow this? Or, is it not the right tool to use in this c=
+ase =E2=80=94 would we prefer another method, like sandboxing?
+Also, how is shielded execution the =E2=80=9Cinverse of sandboxing=E2=80=9D=
+?</pre></li>
+
+<li><pre class=3D"student-text">Is Haven adopted by Microsoft=E2=80=99s clo=
+ud service like Azure? Do other companies like Google and Amazon, who also =
+offer cloud services, have done similar researches?</pre></li>
+
+<li><pre class=3D"student-text">Is Haven currently being used in any enterp=
+rise applications?
+</pre></li>
+
+<li><pre class=3D"student-text">Is Haven widely utilized in the cloud compu=
+ting industry today?</pre></li>
+
+<li><pre class=3D"student-text">Is Intel's SGX included in all processors? =
+I don't understand how Haven is useful if a malicious cloud computing compa=
+ny can just use chips that don't have these hardware protections in place.
+</pre></li>
+
+<li><pre class=3D"student-text">Is SGX limited exclusively to Windows machi=
+nes, or do most OSs use intel
+processers?</pre></li>
+
+<li><pre class=3D"student-text">Is SGX really practical right now? I know t=
+here is a lot of paper about it, but I rarely hear people actually using it=
+.</pre></li>
+
+<li><pre class=3D"student-text">Is SGX used outside of Intel, or even at In=
+tel itself? Is it a practical method of mitigating attacks?</pre></li>
+
+<li><pre class=3D"student-text">Is a hypervisor just a Virtual Machine Moni=
+tor? Or are there differences between hypervisors and VMMs?</pre></li>
+
+<li><pre class=3D"student-text">Is it possible for an application to find t=
+he encryption keys that SGX uses to then decrypt an enclave?</pre></li>
+
+<li><pre class=3D"student-text">Is there a scale limit or other limits now =
+for a code to be ran in Haven.</pre></li>
+
+<li><pre class=3D"student-text">Is this kind of project intended to be used=
+ with infrastructure-as-a-service services like Google App Engine or OpenSh=
+ift? Those projects would benefit from isolation from tampering in the envi=
+ronment, and would probably include some kind of virtualization or sandboxi=
+ng as well.
+</pre></li>
+
+<li><pre class=3D"student-text">It seems counter-intuitive that a system li=
+ke Haven is even possible. Perhaps I misread some section of the paper, but=
+ if a piece of code is running as root, can't it read anywhere in memory? D=
+oes a system like SGX override the privileges of the root user?</pre></li>
+
+<li><pre class=3D"student-text">Lecture 9 (Question About Paper)
+
+It seems like Haven would add lots of overhead to a program, affecting its =
+performance. That said, how often is a system like Haven used in the real w=
+orld? Is the performance cost worth the increase in security?
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 9: Intel SGX
+3/7/18
+
+Reading this paper, it seems as if Haven offers a way to use Intel SGX that=
+ guarantees the confidentiality and integrity of data, but performance (wit=
+h respect to memory) seems to make this rather unusable in practice. Since =
+this was published in 2014, and there has been so many concerns with protec=
+ting data, has there been any successful attempts to use Intel SGX in pract=
+ice, and in what applications?</pre></li>
+
+<li><pre class=3D"student-text">Lecture 9: My Haven Question
+
+In the Haven paper, the author mentions that the "CPUID" instruction is not=
+ permitted
+in enclaves because a VM could trap and emulate it, yet he then states that=
+ emulation
+is impossible because the enclave's registers are not visible to the hyperv=
+isor. In
+that case, why is the "CPUID" instruction not permitted?
+
+Thank you!
+</pre></li>
+
+<li><pre class=3D"student-text">One thing that I find interesting is except=
+ion handling. Many are useful and generally part of libraries which then ru=
+n kernel code. Would it be possible in haven to trust kernels by storing a =
+hash of certain methods and then asking a method we may want to trust to su=
+pply its hash. So that way haven can run supported applications without hav=
+ing to keep the entire external libs in binary form or even load it into it=
+s enclaves if it knows it is provided in the OS?
+</pre></li>
+
+<li><pre class=3D"student-text">Q: It seems that one must trust the host ha=
+rdware to have SGX, right? In particular, it seems that
+a clever attacker (host) might be able to "emulate" an "SGX" and act as if =
+his hardware was indeed
+within the specifications. If that's the case, how can anyone ever be able =
+to say that his code
+in the 'cloud' is ever safe?
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">Question about Haven Paper
+
+What types of side channel attacks (i.e. cache leaks) are possible on this =
+security model/have been done successfully?</pre></li>
+
+<li><pre class=3D"student-text">Question: I've heard that iPhones have a "S=
+ecure Enclave" chip where private keys can be stored, etc. Is this a simila=
+r concept to Intel SGX or is it only similar in that it results in an encla=
+ve, since it seems that Intel SGX is built into the standard CPU while the =
+iPhone's Secure Enclave is a separate chip? Additionally, do other devices =
+such as Android phones or computers have Secure Enclave-like chips or do th=
+ey rely on things like SGX?</pre></li>
+
+<li><pre class=3D"student-text">Question: In the Intel SGX background secti=
+on, it says "SGX mediates page mappings at enclave setup and maintains
+shadow state for each page." What is shadow state and why is it important? =
+(Google searching didn't help me with this)
+</pre></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 9 Questions
+
+How does SGX fair against hardware bugs like Spectre and Meltdown?</pre></l=
+i>
+
+<li><pre class=3D"student-text">SGX feels very open to side channel attacks=
+ such as power consumption and
+cache timing. The authors chose to ignore side channels in their analysis.
+Is this smart? should they be considered separately for organization, or wo=
+uld
+it be smarter to bake defenses for major side channels directly into the
+module?
+</pre></li>
+
+<li><pre class=3D"student-text">SGX prevents rollback attacks on page-in by=
+ keeping and tracking a version number for EPC pages. What are rollback att=
+acks on page-in? How can a version number help?</pre></li>
+
+<li><pre class=3D"student-text">SGX seems like a relatively recent developm=
+ent. What recent trends in security justified the development of better HW =
+security by the biggest chipmaker of GP CPU ?
+</pre></li>
+
+<li><pre class=3D"student-text">Section 5.4 in haven suggests that SGX does=
+n't=20
+include certain exception causes that might reveal information about
+the host configuration to protect the host, which includes
+faulting address/access type. However,
+newer versions do reveal these clauses. Did Intel decide to slightly
+weaken the security of SGX for it's original intended purpose, to support
+Haven? Or have they decided that certain exceptions like=20
+faulting address is safe to provide to the enclave?</pre></li>
+
+<li><pre class=3D"student-text">Since implementation of Haven, have signifi=
+cant performance decreases been
+experienced in software using the new SGX as opposed to old software, or is=
+ the
+performance of software running on each system equivalent?
+</pre></li>
+
+<li><pre class=3D"student-text">Since its introduction, have any exploits b=
+een found that allow private data to be leaked from enclaves protected with=
+ SGX?</pre></li>
+
+<li><pre class=3D"student-text">So LibOS does not operate on kernel mode, b=
+ut it can perform a lot of actions and has system_call implementations that=
+ usually require kernel mode?
+</pre></li>
+
+<li><pre class=3D"student-text">The Haven paper mentions that "After an exp=
+licit exit, control resumes outside
+the enclave at an address chosen by the enclave;", and that a wrapper funct=
+ion
+can be placed at this chosen address to do clean-up work after an enclave e=
+xit.
+Since this address is outside the enclave, how does Haven prevent the OS fr=
+om
+tampering with the code stored at this chosen address?
+</pre></li>
+
+<li><pre class=3D"student-text">The authors exclude software-based isolatio=
+ns mechanisms because they're vulnerable to simple hardware attacks -- what=
+ sorts of attacks are these?</pre></li>
+
+<li><pre class=3D"student-text">The paper glosses over the use of the secur=
+e hardware authenticator.  How are these devices secure from attacks that t=
+he software is not?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions starting the virtual add=
+ress region of an enclave at zero to prevent the OS from arbitrarily lining=
+ up virtual memory with null pointers. I assume only the corresponding encl=
+aved code can read that memory at all, so null pointers in the enclaved cod=
+e are the concern, but what does a malicious OS gain from causing enclaved =
+code to access some point in its own memory?</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that apart from adversar=
+ies that control the processor, Haven and SGX are secure for protecting cod=
+e from malicious OS's.
+Given the fact that companies like Intel are creating the processors, how d=
+o we trust that Intel isn't maliciously modifying processors/
+are there mechanisms that protect against attackers controlling the process=
+ors? </pre></li>
+
+<li><pre class=3D"student-text">The paper states that when reducing permiss=
+ions or removing pages also requires hardware must help ensure TLB shootdow=
+n. What exactly are they referring to when they say TLB shootdown? I know t=
+hat TLB is the CPU access control that protects the enclave data, but I=E2=
+=80=99m not sure how that exactly works or what TLB shootdown is.</pre></li=
+>
+
+<li><pre class=3D"student-text">The paper talks about how a Merkle tree is =
+used to protect the integrity of the disk. What is a Merkle tree?</pre></li=
+>
+
+<li><pre class=3D"student-text">The root of trust appears to be Intel. Are =
+there trusted computation schemes where you do not have to trust the hardwa=
+re manufacturer?
+</pre></li>
+
+<li><pre class=3D"student-text">The security policy of Haven isn't entirely=
+ clear to me. Doesn't the OS need to be able to interrupt some processes? H=
+ow does the process claim to preserve its integrity in that case?=20
+</pre></li>
+
+<li><pre class=3D"student-text">There seems to be a lot of redundant progra=
+mming that needs to happen to make Haven work (e.g., an entire additional O=
+S library). While I see the need for it give the current architecture of co=
+mputers, it hints to me that if this idea of securing guest code from the h=
+ost is to become mainstream, the computer architecture needs to change. In =
+my mind, then the host OS would be much more light weight (not providing th=
+ings like filesystems and thread management) while the guest will have to p=
+rovide an auxiliary OS library implementing the missing components. Then th=
+e auxiliary OS can be open-source, allowing its users to test it before usi=
+ng it. This would overall reduce the amount of code being used and the time=
+ wasted doing redundant compulations.=20
+
+Is there any research along these lines, or are the legacy OS giants so wid=
+ely used that a different architecture would just be infeasible?  </pre></l=
+i>
+
+<li><pre class=3D"student-text">There was one key thing missing from these =
+papers: a good diagram of how all these obscure things fit together. (The b=
+ootloader, the libOS, the shield, the bubble, the drawbridge, picoprocess, =
+host OS ...) It was difficult to marshal the information into a uniform und=
+erstanding of the system.
+
+Additionally, I don't see why the shield is needed since everything inside =
+the enclave is already considered secure. Also, why are some operations exc=
+luded from operation within the enclave, again, because the enclave is secu=
+re that shouldn't matter, yes?
+
+</pre></li>
+
+<li><pre class=3D"student-text">They tried to minimize the line of codes in=
+ their system, but they also used LibOS that has millions of lines of code.=
+ Doesn't it compromise their attempt to minimize bugs?</pre></li>
+
+<li><pre class=3D"student-text">This sounds like a great solution and one t=
+hat seems beneficial for OS's to enable by default to protect applications =
+from vulnerabilities in the OS code. Why isn't this done by default? Are th=
+ere limitations to this approach past what was discussed in the Haven paper=
+? Also do most Intel processors support SGX or is it only available on sele=
+ct processors?
+</pre></li>
+
+<li><pre class=3D"student-text">Though memory is encrypted, when the instru=
+ctions are passed to the processor there must be some degree of transparenc=
+y in order for legacy programs to run on this system. Can the OS simply rec=
+ord the instructions and memory values passed to the system to get an idea =
+of what the code is doing?</pre></li>
+
+<li><pre class=3D"student-text">What are rollback attacks? The paper states=
+ "To prevent rollback attacks on page-in, the hardware keeps a version numb=
+er for the page in EPC."
+
+The paper states that SGX requires the OS to follow a hardware-verified pro=
+tocol to ensure that TLB shootdown occurs when evicting a page. What kind o=
+f attack was this designed to prevent? One where the host OS can purposeful=
+ly not invalidate one process's TLB, and cause it to read something bad?
+
+The paper also alludes to an attack where a host OS can allow two concurren=
+t threads to acquire a mutex. My understanding is that mutexes are proven t=
+o provide mutual exclusion of threads, regardless of thread interleaving, s=
+o what kind of attack is this?
+
+In a compact, haiku form:
+
+Rollback, TLB,
+Bypassed mutex? What are these
+attacks Haven stops?</pre></li>
+
+<li><pre class=3D"student-text">What happens if the cloud provider takes ou=
+t a hard disk and takes a look at the physical memory region itself? Does S=
+GX provide security against it?
+</pre></li>
+
+<li><pre class=3D"student-text">What is a picoprocess?
+
+</pre></li>
+
+<li><pre class=3D"student-text">What is a rollback attack? This is mentione=
+d in section 3.1 (Memory protection), where the authors state "To prevent r=
+ollback attacks on page-in, the hardware keeps a version number for the pag=
+e in EPC"
+</pre></li>
+
+<li><pre class=3D"student-text">What is the FAT32 filesystem and why did th=
+ey choose to use this?
+</pre></li>
+
+<li><pre class=3D"student-text">What major improvements have been made in a=
+chieving shielded execution of unmodified legacy applications since Haven?<=
+/pre></li>
+
+<li><pre class=3D"student-text">What real life cloud services use haven? Ar=
+e there better ways of guarding against a malicious host OS? The methods de=
+scribed in the paper seem pretty manual: "testing, inspecting off line", "c=
+areful defensive costing and exhaustive validation"
+</pre></li>
+
+<li><pre class=3D"student-text">What sorts of real attacks/discovered vulne=
+rbilities motivated SGX and Haven?</pre></li>
+
+<li><pre class=3D"student-text">When describing the mechanisms for memory p=
+rotection, the haven paper states that "To prevent rollback attacks on page=
+-in, the hardware keeps a
+version number for the page in EPC." How does the version number prevent ro=
+llback attacks and what type of rollback attack are they protecting against=
+?
+
+</pre></li>
+
+<li><pre class=3D"student-text">When the OS opens up space in the EPC by st=
+oring the contents in
+an encrypted buffer somewhere in main memory, is that buffer not vulnerable=
+?
+</pre></li>
+
+<li><pre class=3D"student-text">While the enclave needs to prove to the ser=
+ver that the enclave is correctly setup, it seems like the channel needs to=
+ be secured on the server end to. While TLS does this, are the security gua=
+rantees similar to the secure enclave? It seems intuitively that the latter=
+ is more secure.
+
+How much are SGX's and Haven actually used in practice? What are the kinds =
+of leaks that have been found and how detrimental have they been to its ado=
+ption.
+</pre></li>
+
+<li><pre class=3D"student-text">Who has access to the pre-shared key?  Is a=
+n attacker were able to get access to the key by stealing a user=E2=80=99s =
+machine, for example, is this a vulnerability for SGX? </pre></li>
+
+<li><pre class=3D"student-text">Why "innovative" instructions? Is there any=
+ further reasoning than branding? Seems more like "isolated" to me.
+</pre></li>
+
+<li><pre class=3D"student-text">Why is the secure source of random numbers =
+necessary in Haven?
+</pre></li>
+
+<li><pre class=3D"student-text">Why was the chosen enclave implementation d=
+one with the chosen commodity OS as Windows? Are there existing enclaves th=
+at use linux as the commodity OS?
+</pre></li>
+
+<li><pre class=3D"student-text">Would Meltdown be able to circumvent SGX pr=
+otections?
+</pre></li>
+
+<li><pre class=3D"student-text">sq9
+
+I know that many websites use cookies as a way of keeping
+user credentials for a session, so can cookies act as=20
+automated one-time passwords?</pre></li>
+
+<li><pre class=3D"student-text">sq9.txt
+
+John McLaughlin
+March 7, 2018
+
+How can you take measurements (cryptographic hashes) of the data contained =
+within the enclave, since that will change as the application continues to =
+run. Is it only the code that receives that benefit? If so, how do you dist=
+inguish between data that should change within the enclave during processin=
+g and data (like certificates or keys) that should not change at all?</pre>=
+</li>
+
+<li><pre class=3D"student-text">=EF=BB=BFWhy did they do an evaluation of a=
+ version of Haven without using SGX? I did not see anything in the article =
+about the advantages of this, but I may have missed something. In which cas=
+es would the version of Haven without SGX be better?</pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--0RWl7DbbRSxIG0G6mVRzMu7Gov5goxD9sXWHd2jXAN------

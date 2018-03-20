@@ -1,0 +1,1467 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-answers/4
+Subject: Answers for lecture 4 - 6.858
+Date: Wed, 20 Mar 2018 22:57:53 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--2EIbJzf3eqjAjn8Xd2pijgUniXA3lLa6NZ6mP0sRwe----"
+
+------MultipartBoundary--2EIbJzf3eqjAjn8Xd2pijgUniXA3lLa6NZ6mP0sRwe----
+Content-Type: text/html
+Content-ID: <frame-32855-28552959-60a6-440f-a28d-2bbb4caf5dcf@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-answers/4
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Answers for lecture 4 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Answers for lecture 4 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text">
+Yes, it will raise an exception. Adding 256 to the pointer changes the 9th =
+bit in the address (the 9th bit corresponds to 2^8). When performing xor be=
+tween q and p and then right shifting by log_2(256) =3D 8, the least signif=
+icant bit remaining (or some bit following it), will be nonzero, resulting =
+in an exception.</pre></li>
+
+<li><pre class=3D"student-text">Baggy bounds &amp;will* raise an exception =
+at the dereference of q
+Here's the key phrase from the paper that explains this:
+We handle out-of-bounds pointers within slot size/2 bytes from the original=
+ object as follows. First, we mark out-of-bounds pointers to prevent them f=
+rom being dereferenced.
+
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 4
+
+Suppose slot_size is set to 16 bytes. Consider the following code snippet:
+
+      char *p =3D malloc(256);
+      char *q =3D p + 256;
+      char ch =3D *q;
+   =20
+
+Explain whether or not baggy bounds checking will raise an exception at the=
+ dereference of q.
+
+Baggy bounds will not raise an exception since the out-of-bound pointer is =
+within half slot size of the allocated memory. Baggy bound will subtract on=
+e slot size from q when it is dereferenced and that lies within the allocat=
+ed memory.
+</pre></li>
+
+<li><pre class=3D"student-text">This should raise an exception at the deref=
+erence of q, since it is out of bounds of both the object and the baggy bou=
+nds. The most significant bit is set to 1, which should prevent us from der=
+eferencing q (though the pointer q can exist).
+</pre></li>
+
+<li><pre class=3D"student-text"> Suppose slot_size is set to 16 bytes. Cons=
+ider the following code snippet:
+
+      char *p =3D malloc(256);
+      char *q =3D p + 256;
+      char ch =3D *q;
+   =20
+
+Explain whether or not baggy bounds checking will raise an exception at the=
+ dereference of q.=20
+
+Baggy Bounds checking will raise an exception at the dereference of q becau=
+se when we add 256 to the pointer p, we exceed the allocated memory which i=
+s slot aligned. However, if we allocated 254, it wouldn't raise an exceptio=
+n because 254 is not slot aligned.=20
+
+</pre></li>
+
+<li><pre class=3D"student-text"> The baggy bounds checking will not raise a=
+n exception at the dereference of q
+ because it uses out-of-bounds tagged pointers which have 13 bits offset. T=
+he
+ bits can count slot or allocation size multiples, and thus increase the su=
+pported
+ out-of-bound range to at least 2^16 bytes (&gt; 256 bytes) above or below =
+an allocation.</pre></li>
+
+<li><pre class=3D"student-text"># Lecture Question 4
+# Rayden Y. Chia
+
+
+
+A. 	We will have 256/16 =3D 16 slots set to log_2(256) =3D 8.
+
+=20
+	Setting char *q =3D p + 256 will not yield an error initially since this i=
+s less=20
+	than slot_size/2 of the region allocated to p. However the out-of-bounds b=
+it will=20
+	be set (which enables hardware protection) preventing a dereference of q.=
+=20
+	Hence the line: char ch =3D *q, will raise an exception (since the out-of-=
+bounds=20
+	bit is set).
+
+ The baggy bounds checking will raise an exception when q is dereferenced.=
+=20
+
+</pre></li>
+
+<li><pre class=3D"student-text">## Lecture 4 Question: Baggy Bounds
+---------------------------------------------------------------------------=
+-
+Suppose slot_size is set to 16 bytes. Consider the following code snippet:
+```c
+      char *p =3D malloc(256);
+      char *q =3D p + 256;
+      char ch =3D *q;
+```
+Explain whether or not baggy bounds checking will raise an exception at
+the dereference of q.
+---------------------------------------------------------------------------=
+-
+
+* Align allocation sizes to powers of 2
+* Align addresses to slot_size boundaries
+
+Given:
+(p=CB=86p')&gt;&gt;table[p&gt;&gt;log2(slot_size)] =3D=3D 0
+Size =3D 256 =3D 1.0000.0000
+q =3D p + 256
+
+Say:
+p =3D 16 =3D 0.0001.0000
+
+Therefore:
+
+tb[1] =3D log2(size) =3D 8
+q =3D 0.0001.0000 + 1.0000.0000 =3D 1.0001.0000
+
+xorpq =3D p^q =3D 0.0001.0000^1.0001.0000 =3D 1.0000.0000
+
+(p^q)&gt;&gt;tb[(p&gt;&gt;log2(16))] =3D&gt; (p^q)&gt;&gt;tb[(p&gt;&gt;4)] =
+=3D&gt; (p^q)&gt;&gt;tb[1]
+
+1.0000.0000 &gt;&gt; 8 =3D 1
+
+1 =3D=3D 0
+
+=3D&gt; Check **will** raise exception upon dereferencing q.
+</pre></li>
+
+<li><pre class=3D"student-text">256 is a power of 2 so 256 bytes will be al=
+located. q* is still within the baggy bounds of 256, so the check will not =
+raise an exception at the dereference of q.
+</pre></li>
+
+<li><pre class=3D"student-text">6.858 Lecture 4
+
+When we create the in invalid pointer q, baggy bounds will notice that this
+q is out of range of the array p and flip q's highest-order bit, sending it
+into higher memory (out of range of the entire memory). When q gets deferen=
+ced,
+it will throw an exception because it is now out of normal memory.
+</pre></li>
+
+<li><pre class=3D"student-text">A system architecture was not specified, bu=
+t since we are using slot_size, I am going to assume a 32-bit architecture =
+(as 64-bit does not use slot_size). p + 256 is within slot_size/2 of the ob=
+ject. As a result, the most significant bit will be written as a 1 by the i=
+nstrumentation and the hardware will prevent dereferences of this pointer.
+</pre></li>
+
+<li><pre class=3D"student-text">An exception will be raised if we go half a=
+ slot size (16/2 =3D 8 bytes) over the power-of-2 allocation size (2^8 =3D =
+256 bytes).=20
+
+char *p =3D malloc(256); #this means that we allocate 256 bytes for p
+char *q =3D p + 256; #the value of q is the address of p + 256
+char ch =3D *q; #the address of ch is the value of q, which is 256 after th=
+e address of p
+
+When we dereference q, it means we access the actual stuff stored in memory=
+ at that address. However, since q is within slot size/2 of p, baggy bounds=
+ should have marked this as an out-of-bounds pointer to prevent it from der=
+eferenced (Section 2.4). So we should get an exception.</pre></li>
+
+<li><pre class=3D"student-text">An exception will be raised when q is deref=
+erenced. The allocated region is not padded as 256 is a power of 2 and is g=
+reater than the slot_size. During the pointer arithmetic in line 2, the mos=
+t significant bit of q is set to 1 to indicate that it is out of bounds. Th=
+is will cause for the dereference on the third line to generate a segmentat=
+ion fault.
+</pre></li>
+
+<li><pre class=3D"student-text">An exception would be rasied. We allocate 2=
+56 bytes for 'p' and 'q' is at an offset of 256 from 'p'. So 'q' is out of =
+bounds, but it's
+still within half a slot, so it's marked as out-of-bounds and attempting to=
+ dereference it returns an exception.</pre></li>
+
+<li><pre class=3D"student-text">Answer to Baggy Bounds Question - Ajinkya N=
+ene
+
+1. In this case, we will have 256/16 =3D 16 slots set to log_2(256) =3D 8.
+
+Setting char *q =3D p + 256, will not yield an error initially since this i=
+s within &lt;=3D slot_size/2 of the region allocated to p. But, the out of =
+bounds bit will be set, which enables hardware protection, preventing a der=
+eference of q. Thus, the line: char ch =3D *q, will raise an exception as t=
+he OOB bit is set.
+
+So, baggy bounds checking will raise an exception when q is dereferenced. <=
+/pre></li>
+
+<li><pre class=3D"student-text">Answer: The baggy bounds checking will thro=
+w an exception here. What happens is that the pointer to q is at 0x256, whi=
+ch is 4 bytes past the end of the allocated memory for p because it starts =
+at 0x0, so the q pointer is marked to prevent it from being dereferenced. M=
+ore detail about this is mentioned in section 2.4.
+</pre></li>
+
+<li><pre class=3D"student-text">As far as I am aware, Baggy Bounds would co=
+rrectly raise an exception
+at the dereference of q, as log2(size(lookup(p))) is 1 less than
+log2(size(lookup(q))).
+</pre></li>
+
+<li><pre class=3D"student-text">As we can see here, q is definitely outside=
+ of the acceptable range of pointers. This particular example would allocat=
+e exactly 256 bytes (it does not pad it since it equals a power of two), an=
+d the slot size would line up perfectly with the edges of this space.
+
+As a result, the pointer would be illegal to the baggy bounds checker (we m=
+ark the pointer as an illegal location when we calculate it's location), an=
+d the pointer would fail the in_bounds assertion at dereference since it is=
+ a marked pointer.
+
+In reality, this check would be much better caught statically since we are =
+GUARANTEED to overflow a buffer with these three lines of code :)
+</pre></li>
+
+<li><pre class=3D"student-text">Baggy Bounds Checking will raise an excepti=
+on for the dereference of q. This is because
+- Baggy bounds checking will allocate a power of 2 (256 is already a power =
+of 2), so it will allocate exactly 256 bytes.
+- 256 is already a multiple of slot_size (which is 16), so everything is fi=
+ne.
+- q =3D p+256 is outside the bounds, so the bound check will fail and the h=
+ighest bit will be set.
+- When q is dereferenced (as an out-of-bounds pointer), the hardware will r=
+aise an exception since user space has been limited to the bottom half of t=
+he address space (0 to 2^31-1).
+</pre></li>
+
+<li><pre class=3D"student-text">Baggy bound can handle out-of-bounds pointe=
+rs within slot_size/2 from the original object. Since q is within this limi=
+t from the original object, baggy bounds will not throw an exception.
+</pre></li>
+
+<li><pre class=3D"student-text">Baggy bound will raise an exception because=
+ it doesn't allow two objects to be in the same slot. The variable ch will =
+be pointing to the last memory address allocated to p, making them in the s=
+ame slot.
+
+</pre></li>
+
+<li><pre class=3D"student-text">Baggy bounds checking will first store the =
+bounds of p when p is malloc'ed. It will then see that the pointer q is der=
+ived from pointer p. However, q is outside of the bounds of p (since p was =
+malloc'ed=20
+to be 256 bytes, but q is trying to point to a byte 256 past p). Therefore,=
+ q will be marked=20
+out-of-bounds to prevent a dereference, so an error will be thrown when we =
+try to dereference q.</pre></li>
+
+<li><pre class=3D"student-text">Baggy bounds checking will mark q as out-of=
+-bounds by setting its high bit. The dereference will automatically cause a=
+ hardware interrupt, triggering the slow path check which will show q to be=
+ out of bounds. This will lead to an exception.</pre></li>
+
+<li><pre class=3D"student-text">Baggy bounds checking will not raise an exc=
+eption at the dereference of q, because it does not check pointer dereferen=
+ces. However, there are checks for pointer arithmetic, so the second line (=
+char *q =3D p + 256;) would be checked, and if it was determined to be an i=
+llegal out-of-bounds pointer (some out-of-bounds are allowed so long as the=
+ pointer ends up back in-bounds), then baggy bounds would raise an exceptio=
+n.</pre></li>
+
+<li><pre class=3D"student-text">Baggy bounds checking will raise an excepti=
+on at q's dereference. 256 is a power of two greater than the slot size, so=
+ the allocation bounds for the object pointed to by p will also be 256. The=
+n, q will be outside the allocation bounds, and so the dereference will rai=
+se an exception.</pre></li>
+
+<li><pre class=3D"student-text">Baggy bounds checking will raise an excepti=
+on at the dereference of q
+p allocates 256 bytes, which is a factor of 2. Baggy bounds always allocate=
+s space that is a factor of two. This means that there is no padding after =
+the object bounds, aka object bounds is the same as allocation bounds.
+q points to one byte after p, which means that it is now pointing to a diff=
+erent object, which will cause an exception when it is dereferenced.
+</pre></li>
+
+<li><pre class=3D"student-text">Baggy bounds checking will raise an excepti=
+on at the dereference of q because it is out of bounds of the allocation of=
+ p, which means that=20
+the most significant bit in the pointer will be a one, and dereferencing th=
+is pointer will then result in an exception. It will not cause
+an error when in the slowPath function because it is out of bounds by less =
+than half a slot.</pre></li>
+
+<li><pre class=3D"student-text">Baggy bounds checking will raise an excepti=
+on at the dereference of q.</pre></li>
+
+<li><pre class=3D"student-text">Baggy bounds checking will raise an excepti=
+on at the dereference of q. Although q is legal to exist by baggy bounds ch=
+ecking (as an out-of-bounds pointer), when dereferenced it will raise an ex=
+ception because it is one byte past the 256 (2^8) bytes of memory that were=
+ allocated for p.</pre></li>
+
+<li><pre class=3D"student-text">Baggy bounds checking will raise an excepti=
+on at the dereference of q. This is because q is located outside the baggy =
+bounds of the array allocated at p. Baggy bounds works by allocating bounds=
+ at powers of 2 so that lookups are easier and takes less data.
+</pre></li>
+
+<li><pre class=3D"student-text">Baggy bounds checking will raise an excepti=
+on here. Following the code provided in page 3...
+
+size =3D 256 (the nearest power of 2, grabbed from the table)
+base =3D p &amp; ~(256-1)
+
+q&gt;=3Dbase &amp;&amp; q-base&lt;256
+
+In this question, p=3Dbase, and since q-p=3D256, it will fail the 2nd AND c=
+heck, resulting in an exception.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Baggy bounds checking will raise an excepti=
+on in this case because adding 256 to p will modify more than log2(256) bit=
+s, so a handler will be invoked when q is dereferenced and see that q is st=
+ill out of bounds so it will raise an exception.
+</pre></li>
+
+<li><pre class=3D"student-text">Baggy bounds checking will raise an excepti=
+on since q points to the beginning of the 17th slot after the 16 slots allo=
+cated for p.
+</pre></li>
+
+<li><pre class=3D"student-text">Baggy bounds checking will raise an excepti=
+on.
+The array size is 256 bytes which is already a power of 2. And it's greater=
+ than the slot_size which is 16. So there is no padding to this array.=20
+The dereference of an out-of-bound pointer are allowed only if the pointer =
+points to the padding area. So dereference of p+256 is illegal.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Baggy bounds checking will raise an excepti=
+on. It allows out of bounds pointers so the second operation is valid, but =
+it does not allow you to dereference out of bounds pointers. So the derefer=
+ence of q would raise an exception.
+</pre></li>
+
+<li><pre class=3D"student-text">Baggy bounds checking will raise an excepti=
+on. It permits benign out of bounds accesses to the memory padding after an=
+ object, however this object terminates at a factor of the slot_size.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Baggy bounds checking will raise an excepti=
+on. The allocated size is 256 (power of two). char *q =3D p + 256 does not =
+raise an error since it points to less than half a slot size over 256 (the =
+baggy bound). The OOB bit is set, however, so char ch =3D *q will trigger a=
+n exception.
+</pre></li>
+
+<li><pre class=3D"student-text">Baggy bounds checking will raise an excepti=
+on. q will be out of bounds because it is past the allocated amount, and so=
+, after attempting the pointer arithmetic in the second line and realizing =
+that q is out of bounds, the pointer is marked as out of bounds and returne=
+d. Then, when attempting to dereference the pointer, an exception will be r=
+aised (Section 3.3). </pre></li>
+
+<li><pre class=3D"student-text">Baggy bounds checking will result in an exc=
+eption.  (p^q)&gt;&gt;table[p&gt;&gt;4]
+=3D (p^(p+256))&gt;&gt;log2(256) will not be 0, as p+256 will differ from p=
+ in
+bits higher than the 8th bit.  Thus, q will have its high bit flipped
+to mark it out of bounds, resulting in an exception from the memory
+protection mechanisms.
+</pre></li>
+
+<li><pre class=3D"student-text">Baggy bounds will not raise an exception at=
+ q. This is because q is at the offset of 256  from p. This is still within=
+ the baggy bounds and so there will be no error raised when this value is d=
+ereferenced.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Baggy bounds will not raise an exception at=
+ the dereference of q. This is because the baggy bounds for p is size 256 s=
+ince 256 is a power of 2. Therefore, accessing 256 bytes for q is stil with=
+in the baggy bounds. </pre></li>
+
+<li><pre class=3D"student-text">Baggy bounds will raise an exception at the=
+ dereference of q, I believe. While baggy bounds supports the pointer since=
+ it's within slot_size/2, it does not support dereferencing of the pointer.=
+</pre></li>
+
+<li><pre class=3D"student-text">Baggy bounds will raise an exception when d=
+ereferencing q because the pointer q doesn't point to the same object p doe=
+s, because 256 bytes were alloced for p, and q is p+256. More specifically,=
+ q and p differ in their nine least significant bits, which is more than lo=
+gs(256).
+</pre></li>
+
+<li><pre class=3D"student-text">Baggy bounds will return an error when p is=
+ dereferenced.
+
+When the pointer p is initialized, the baggy bounds checker would store e =
+=3D 8 as the log2(size) of the allocation. Suppose p is allocated at the ad=
+dress 0x7fe573402970.=20
+
+The pointer q =3D p + 256 points to 0x7fe573402a70.=20
+
+The binary representation of p^q =3D 0b1100000000, which is 768 in decimal.
+
+Since the size of the allocation was 256, the size stored in the table is 8=
+.=20
+
+The check that baggy bounds performs in if (p^q) &gt;&gt; 8 =3D=3D 0.=20
+Since (p^q) &gt;&gt; 8 =3D 0b11, which is 3, the check fails.
+
+This is correct, since the valid addresses for this allocation are only p t=
+hrough p + 255.</pre></li>
+
+<li><pre class=3D"student-text">Baggy bounds will throw an exception at the=
+ dereference of `q`. Since `p`'s size is a power of 2 and its allocation si=
+ze is not rounded up, `q`'s access to the byte after `p`'s allocated space =
+will not access extra, benign pad memory. Though standard C allows for the =
+accessing of the byte past the end of an array, baggy bounds does not as th=
+is rounding of an array of size N to size N+1 could lead to an allocation t=
+wice the size if N is a power of 2, as is common.
+</pre></li>
+
+<li><pre class=3D"student-text">Baggy bounds would indeed raise an exceptio=
+n at the proposed dereference of q.
+At memory allocation, p will be aligned with the 16 byte slots used by bagg=
+y.
+Adding 256 to the pointer p will return a pointer q that points to the
+first byte after the allocated memory.
+Since 256 is a multiple of 16, the allocated memory aligns perfectly with s=
+lot size,
+so q will point outside of the last slot assigned to the p allocation.
+</pre></li>
+
+<li><pre class=3D"student-text">Baggy bounds would not throw an exception b=
+ecause baggy bounds can only handle out of bounds errors where the out of b=
+ounds is within 1/2 the size of the slot (in this case 16). In this example=
+, q is just outside the bounds and thus within half the slot size (within 8=
+ bytes) so baggy bounds will not throw an exception.
+
+</pre></li>
+
+<li><pre class=3D"student-text">Because q is not pointing to a valid locati=
+on in the array, it will throw an error when dereferenced.
+</pre></li>
+
+<li><pre class=3D"student-text">C standard allows for accesses one more tha=
+n the allocated area for a given buffer. In this case, q is referring to th=
+e byte right after the allocated 256 for p. This wouldn=E2=80=99t raise an =
+exception in C standards.
+
+However, Baggy bounds uses inherent padding to restrict slot sizes to power=
+s of 2.Hence, allowing one more than the allocated size would move the slot=
+ size up by a power of two, creating a massive wastage of space. As a resul=
+t, Baggy bounds will raise an error in this case.</pre></li>
+
+<li><pre class=3D"student-text">Code to study:
+      char *p =3D malloc(256);
+      char *q =3D p + 256;
+      char ch =3D *q;
+
+Baggy bounds checking WILL raise an exception at the dereference of q. The =
+slot size for baggy bounds is 16, and malloc yields 16 slots of size 16 .. =
+no padding is performed since the above memory is divisible perfectly into =
+16 slots.  Thus, the third line in the above code dereferences out of bound=
+s and triggers an exception.  If an attempt had been made to dereference me=
+mory more than slot_size/2 away from the buffer, an error would have been r=
+aised instead.
+</pre></li>
+
+<li><pre class=3D"student-text">Danny Tang
+
+data1013
+
+2/16/18
+
+
+
+Lecture 4
+
+Question: Suppose slot_size is set to 16 bytes. Consider the following code=
+ snippet:
+
+      char *p =3D malloc(256);
+      char *q =3D p + 256;
+      char ch =3D *q;
+   =20
+Explain whether or not baggy bounds checking will raise an exception at the=
+ dereference of q.
+
+Answer:
+
+Baggy bounds checking will raise an exception at the dereference of q. Ther=
+e are 256 bytes allocated
+for p's object, so q will be 1 byte beyond the allocated bounds. While ther=
+e is no error because
+this is less than half a slot beyond the bounds, there will still be an exc=
+eption since q cannot be
+dereferenced.</pre></li>
+
+<li><pre class=3D"student-text">First, note that 256 is a power of 2, so th=
+ere will not be any extra space allocated to allow for padding. Here, the a=
+ccess is within slot_size/2 bytes away from the object, and so baggy bounds=
+ checking will subtract slot_size to get a legal pointer.</pre></li>
+
+<li><pre class=3D"student-text">I believe that baggy bounds would raise an =
+exception. This is because
+q is derived from p which was allocated 256 bytes. q overflows p by 1
+and the slot size is 16 bytes. Since 256 is divisible by 16, there is
+no padding. This means that when p is overflowed by any number of bytes,
+it would bleed into the next object in the table. Baggy bounds only
+flags dereferences of out of bounds objects and q is dereferencing
+an out of bounds address.
+</pre></li>
+
+<li><pre class=3D"student-text">I believe that this action will raise an ex=
+ception. We allocate memory of size 256. 256 is a power of 2, so this is th=
+e actual size of the object. So, the last valid pointer to the object is p =
++ 255. Baggy bounds allows us to create the OOB pointer q, since it is only=
+ 1 byte over the object bounds (this would be valid up till 8 bytes over th=
+e object bounds - slot_size/2). However, when we try to deference this poin=
+ter in the last line, baggy bounds checking would raise an exception.
+</pre></li>
+
+<li><pre class=3D"student-text">I do not think baggy bounds checking will r=
+aise an exception at the dereference of q
+because the 2nd operation (char *q =3D p + 256;) might be treated as creati=
+ng a new pointer, instead of performing pointer arithmetic on an existing p=
+ointer. If that is the case, this pointer would not correspond to the same =
+row in the bounds table as p.
+
+The authors use memory protection hardware to prevent dereferences of out-o=
+f-bound pointers by setting the most significant bit of the address to 1 wh=
+en a pointer fails the bounds check, and then restricting the program to th=
+e lower half of the address space. So the question of whether or not baggy =
+bounds checking will raise an exception at the dereference of q comes down =
+to whether the most significant bit of q gets set because it fails a bounds=
+ check after the 2nd line. The authors write that "the referent object appr=
+oach performs bounds checks on pointer arithmetic. It uses the source point=
+er to lookup the bounds in the table, performs the operation, and checks if=
+ the destination pointer remains in bounds." Given this explanation, it see=
+ms like the system would not set the most significant bit because it sees t=
+his operation as creating a new pointer, instead of performing pointer arit=
+hmetic on an existing pointer. Furthermore, since q points to an address ou=
+tside of the space allocated to p, so it would correspond to a different li=
+ne in the bounds table.
+
+However, a line in the future work section makes me think that they would h=
+andle the case above. In the limitations section, they write "Arithmetic on=
+ integers holding addresses is unchecked." This makes me think that since i=
+n this line q* is also a pointer, they would catch the mistake, but I am no=
+t clear on how the system handles it.
+</pre></li>
+
+<li><pre class=3D"student-text">I think baggy bounds checking will raise an=
+ exception because in Section 3.3 "Checks", it says that regarding the retu=
+rned pointer, once marked as out-of-bounds - "any attempt to dereference th=
+e returned pointer will trigger an exception".</pre></li>
+
+<li><pre class=3D"student-text">I think if the system is not a 64 bit archi=
+tecture, baggy bounds will not raise an exception at the derefernce of q.=
+=20
+Since the regular version of baggy bounds can check up to slot_size/2 above=
+ or below a given out of bounds pointer,
+ and the slot size in this case is 16 bytes, the out of bounds pointer *q w=
+ill be only 1 byte below the boundries of the=20
+ allocated 256 bytes that p* points to (while slot_size/2 =3D 8 bytes in th=
+is case). This means baggy bounds will check=20
+ above and find this allocated memory and be able to subtract the slot size=
+ from *q to end with a pointer within the=20
+ allocated memory's bounds. Baggy bounds will also not raise an exception f=
+or 64 bit architectures since the range
+ above and below that is supported is even larger and it will probably be m=
+ore effcient too since there is no memory lookup.</pre></li>
+
+<li><pre class=3D"student-text">I think this won't raise an exception but I=
+'m not sure. The first line of code allocates 256 bytes. Since the slot siz=
+e is 16, there are 256/16 =3D 16 slots each set to log2(256) =3D 8.=20
+
+What I'm not sure about is whether the second line is an in bounds or out o=
+f bounds reference since 256 is exactly the allocation size. If it is an in=
+ bounds reference, then the third line won't raise an exception. But if it =
+is an out of bounds reference (but still within half of the slot size so al=
+lowed), then the out of bounds bit is set in q, which would result in an ex=
+ception at the dereference of q.</pre></li>
+
+<li><pre class=3D"student-text">If I have understood the reading correctly:=
+ The implementation can handle out-of-bounds pointers within slot-size/2 by=
+tes from the original object. So, *q would be within 8 bytes from the origi=
+nal object, which means that the baggy bounds implementation would prevent =
+the dereferencing of q (since it is out-of-bounds, but not over slot-size/2=
+ out of bounds).
+</pre></li>
+
+<li><pre class=3D"student-text">Ignoring the lower log(256) =3D 8 bits of t=
+he addresses, the prefixes of p and q differ by one bit so an exception wil=
+l be raised when q is dereferenced.=20
+</pre></li>
+
+<li><pre class=3D"student-text">In section 3.3 Checks, it says they add che=
+cks for each pointer arithmetic operation. This means the second line of th=
+e snippet will be checked. This check will invoke the slowPath handler, whi=
+ch will find that the result is out of bounds, but not by more than half a =
+slot (16/2 =3D 8, but *q is only out of bounds by 1). Thus, slowPath will m=
+ark the result out-of-bounds and return it. They say "any attempt to derefe=
+rence the returned pointer will trigger an exception", so line 3 of the cod=
+e snippet will raise an exception.
+</pre></li>
+
+<li><pre class=3D"student-text">In this example, p points to an allocated r=
+egion of 256 bytes (which is a power of 2). There are 256/16 =3D 16 bounds =
+table entries set to log2(256) =3D 8. Meanwhile, q points at a region immed=
+iately after the allocated space for p, exactly after the baggy bounds boun=
+dary but not more than half a slot away, so no error is raised but the high=
+ order OOB bit for q is set. Then, in the third line's attempt to dereferen=
+ce q, an error is raised.
+</pre></li>
+
+<li><pre class=3D"student-text">It should detect an exception. First notice=
+ that the dereference is out of bounds by one element, which is within half=
+ slot size. This means that when the pointer is first created(i.e. by addin=
+g 256 the the array base), no exception will be thrown. Then, the calculate=
+d pointer will be marked as out of bounds(by pointer tagging). On the defer=
+ence, an exception will be thrown since out of bounds pointers will be mapp=
+ed to an inaccessible memory page, and any memory access will raise a hardw=
+are exception(which I imagine will be processed by a custom handler of the =
+framework). </pre></li>
+
+<li><pre class=3D"student-text">It will not raise an exception because the =
+memory allocator leaves slot_size/2 bytes of padding past the end of an all=
+ocated object. 'q' points to 1 bytes paste the end of 'p', so no exception =
+is raised.</pre></li>
+
+<li><pre class=3D"student-text">It will not raise an exception since the po=
+inter is still within half a slot-size of the allocated bounds
+</pre></li>
+
+<li><pre class=3D"student-text">It will raise an exception because q is out=
+ of bounds by 1 byte. Pointers that are out of bounds by slot_size / 2 whic=
+h is 8 bytes here will cause an exception.
+</pre></li>
+
+<li><pre class=3D"student-text">It will raise an exeception since 256 is al=
+ready a power of 2. Hence, no padding will be applied to the array, and the=
+ dereferenced pointer will be considered out of bounds.
+
+</pre></li>
+
+<li><pre class=3D"student-text">It will throw an error. In this case there =
+isn=E2=80=99t extra allocation space because the size p is exactly a power =
+of 2.  The bounds check looks at 1) whether q &gt;=3D base, which will be f=
+ine since it is but also 2) whether q - base &lt; size. This second check w=
+ill fail because q - base =3D size (256). </pre></li>
+
+<li><pre class=3D"student-text">Jeanie Pearson
+Lecture 4 Reading Question Answer
+
+It will raise an exception to the derefence of q because on the second line=
+ q becomes an out of bounds pointer. No exception is raised there because i=
+t is possible that more pointer arithmetic could bring it back in bounds. I=
+nstead, it gets marked as out of bounds. Then on the next line we attempt t=
+o dereference it, at which point we see that it is marked as out-of-bounds =
+and we raise an exception.</pre></li>
+
+<li><pre class=3D"student-text">Jun Wan 991032935
+
+Baggy bounds checking will raise an exception at the dereference of q.
+
+p's size is 256, which is exactly a power of two. So baggy bounds checking =
+will make sure that any pointer is within 16 slots of p. q is on the 17th s=
+lot and will be reported as an exception. </pre></li>
+
+<li><pre class=3D"student-text">Lec. 4
+
+I wasn't certain if we always round-up when the object size it self if alre=
+ady a power of 2
+or if we only round up in the case that it is not a power of 2; I have made=
+ the assumption
+that we always pad to the nearest power of 2, including the object size its=
+elf.
+
+Suppose slot_size is set to 16 bytes.
+  char *p =3D malloc(256);  //256 bytes are allocated -- already a power of=
+ 2.
+			  //256/16 =3D 16 bounds table entries
+  char *q =3D p + 256;      //This is past p's object size, and past the ba=
+ggy
+			  // baggy bounds size by more than 8 (16/2).
+  char ch =3D *q;           // This raises an exception.</pre></li>
+
+<li><pre class=3D"student-text">Lecture 4
+
+Baggy bounds will raise an exception. According to section 2.4 this referen=
+ce is still within the provided limit for=20
+out-of-bounds pointers (slot_size/2), but out-of-bounds pointers are explic=
+itly marked in order to prevent dereferencing.
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 4
+
+John C. McLaughlin
+2/20/2018
+
+Suppose slot_size is set to 16 bytes. Consider the following code snippet:
+
+      char *p =3D malloc(256);
+      char *q =3D p + 256;
+      char ch =3D *q;
+   =20
+Explain whether or not baggy bounds checking will raise an exception at the=
+ dereference of q.
+
+
+char *p =3D malloc(256)  :: Since 256 is a power of two, 256 bytes are allo=
+cated
+	Range limit will be set as log_2(256)  =3D 8
+	With a slot size of 16, we have 256/16 =3D 16 table entries that are set t=
+o the range limit of 8
+
+char *q =3D p + 256; 	:: p + 256 puts the pointer one byte off the range of=
+ pointer p, but less than half a slot away, so the out of bounds bit is set=
+, but no exception.
+
+char ch =3D *q; :: Since the OOB bit is set, this dereference will trigger =
+an exception. </pre></li>
+
+<li><pre class=3D"student-text">Lecture 4
+
+Suppose slot_size is set to 16 bytes. Consider the following code snippet:
+
+      char *p =3D malloc(256);
+      char *q =3D p + 256;
+      char ch =3D *q;
+   =20
+Explain whether or not baggy bounds checking will raise an exception at the=
+=20
+dereference of q.
+
+Baggy bounds checking will raise an error. The malloc will add an entry to
+the bounds table, and when q is dereferenced, it will see that the=20
+allocated memory at p has size 256 (in log2 base) and that q is out of=20
+these bounds.</pre></li>
+
+<li><pre class=3D"student-text">Lecture 4
+
+Suppose slot_size is set to 16 bytes. Consider the following code snippet:
+
+      char *p =3D malloc(256);
+      char *q =3D p + 256;
+      char ch =3D *q;
+   =20
+Explain whether or not baggy bounds checking will raise an exception at the=
+ dereference of q.
+
+The baggy bounds checking will identify q as an out-of-bounds pointer, beca=
+use it points outside of the allocated bounds 8 =3D log2(256), but it won't=
+ raise the exception, because q will point to less than a slot_size/2 frame=
+ from the original object.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 4 (Answer to Paper Question)
+
+Question:
+
+Suppose slot_size is set to 16 bytes. Consider the following code snippet:
+
+      char *p =3D malloc(256);
+      char *q =3D p + 256;
+      char ch =3D *q;
+
+Explain whether or not baggy bounds checking will raise an exception at the=
+ dereference of q.
+
+
+Answer:
+Baggy bounds checking pads and aligns objects to powers of two. Since p poi=
+nts to an object of size 256 bytes, which is a power of two, Baggy Bounds w=
+ill not add any padding to it. Therefore, the address (p + 256) will be out=
+ of bounds, which means baggy bounds will raise an exception at the derefer=
+ence of (p + 256).
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 4: Baggy Bounds Checking Reading Qu=
+estion
+
+Looking at the code snipppet, the pointer "*p" is set equal to the memory a=
+ddress at which
+256 bytes are allocated in memory. It then sets the pointer "*q" equal to t=
+he location in
+memory just outside of the memory allocated for "*p". It then sets a charac=
+ter variable
+"ch" equal to the value stored in address "*q", which we believe to be unin=
+itialized given
+our knowledge of only the code snippet and nothing outside of it.
+
+From this, baggy bounds checking would not raise an exception because it ha=
+s functionality
+that would handle a case like this one. If a pointer, such as "*q", is abov=
+e or below some
+allocated memory, such as the memory allocated for "*p", by less then half =
+of some given
+slot_size (which in this case is half of 16 bytes, or 8 bytes), baggy bound=
+s checking
+correctly adjusts the out of bounds pointer to point at the object that "*p=
+" is pointing
+to. We know that this would work because "*q" is 1 byte outside of the obje=
+ct pointed to
+by "*p".
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 4: Buffer Overflow
+2/20/18
+
+      char *p =3D malloc(256);
+      char *q =3D p + 256;
+      char ch =3D *q;
+Explain whether or not baggy bounds checking will raise an exception at the=
+ dereference of q.
+
+No, baggy bounds will not raise an exception because even though the progra=
+m will use p source pointer to lookup bounds and see that q destination poi=
+nter is not pointing to the same object, it will only be marked and not act=
+ually raise an exception as future pointer arithemtic might not necessarily=
+ be out of bounds.</pre></li>
+
+<li><pre class=3D"student-text">Maybe I'm missing something, but the derefe=
+rence of q is just getting the 256th element of the array so it shouldn't t=
+hrow an exception, even though nothing has been put in the array yet.=20
+</pre></li>
+
+<li><pre class=3D"student-text">No exception. An exception is raised only i=
+f q lies pass 16/2 =3D 8 bytes of the power of 2 &gt;=3D the allocation siz=
+e from p. Since it is exactly the allocation size away from p, there is not=
+ exception raised.</pre></li>
+
+<li><pre class=3D"student-text">No, it will not because there is a lg(alloc=
+ation_size) room for error beyond the size of the buffer. Since 256 is the =
+size of the buffer and lg(256) =3D 8, the dereferenced pointer isn't far en=
+ough away from the start of the array.</pre></li>
+
+<li><pre class=3D"student-text">No, it would not throw an out of bounds exc=
+eption since the pointer is within slot_size/2 of the array, which baggy bo=
+unds allows for (I think=E2=80=A6I=E2=80=99m confused about this and my que=
+stion is about this exact point).=20
+</pre></li>
+
+<li><pre class=3D"student-text">No, q was initialized to point to the byte =
+after the array allocated in the first line. Had p been incremented by 256 =
+and dereferenced, it would have thrown an error.</pre></li>
+
+<li><pre class=3D"student-text">No, this will not raise exception. In fact,=
+ it is expressly allowed by the C standard. "If both the pointer operand an=
+d the result point to elements of the same array object, or one past the la=
+st element of the array object, the evaluation shall not produce an overflo=
+w" in http://c0x.coding-guidelines.com/6.5.6.html .  </pre></li>
+
+<li><pre class=3D"student-text">No, this would not pass the baggy bounds ch=
+eck due to padding length
+</pre></li>
+
+<li><pre class=3D"student-text">Since we allocate 256 bytes to p and q =3D =
+p + 256, q is out-of-bounds by 1 byte. When a pointer is out-of-bounds by l=
+ess than slot_size/2 (8 bytes in this case), the memory protection hardware=
+ marks the pointer to prevent its dereferences, so the dereference of q wil=
+l raise an exception.</pre></li>
+
+<li><pre class=3D"student-text">Suppose slot_size is set to 16 bytes. Consi=
+der the following code snippet:
+
+      char *p =3D malloc(256);
+      char *q =3D p + 256;
+      char ch =3D *q;
+
+The above code will not raise an exception at the dereference of q since q =
+exists within the allocation bounds for p.
+</pre></li>
+
+<li><pre class=3D"student-text">Suppose slot_size is set to 16 bytes. Consi=
+der the following code snippet:
+
+      char *p =3D malloc(256);
+      char *q =3D p + 256;
+      char ch =3D *q;
+   =20
+Explain whether or not baggy bounds checking will raise an exception at the=
+ dereference of q.
+---------------------------------------------------------------------------=
+-------------------
+
+Nope!  Since q is only out-of-bounds by a single byte and the memory region=
+s are tracked on 16-byte intervals, baggy bounds checking would not catch t=
+his out-of-bounds read.</pre></li>
+
+<li><pre class=3D"student-text">Suppose slot_size is set to 16 bytes. Consi=
+der the following code snippet:
+
+      char *p =3D malloc(256);
+      char *q =3D p + 256;
+      char ch =3D *q;
+   =20
+
+Explain whether or not baggy bounds checking will raise an exception at the=
+ dereference of q.=20
+
+Yes, an exception will be raised.
+
+log_2(slot_size) =3D 4
+
+When malloc is called, it allocates a size of log_2(256) =3D 8 to its posit=
+ion (p&gt;&gt;4) in the bounds table. The line=20
+      char *q =3D p + 256;
+means that p and q differ at the 8th bit, so =20
+      (p^q)&gt;&gt;8 !=3D 0
+so q will be marked as out of bounds.
+
+Since it is out of bounds by 1 byte, however, if it wasn't being dereferenc=
+ed, q would not raise any exceptions.</pre></li>
+
+<li><pre class=3D"student-text">Suppose slot_size is set to 16 bytes. Consi=
+der the following code snippet:
+
+      char *p =3D malloc(256);
+      char *q =3D p + 256;
+      char ch =3D *q;
+   =20
+Explain whether or not baggy bounds checking will raise an exception at the=
+ dereference of q.
+
+-----
+
+The buffer fits neatly into 16 16-byte slots, so no padding is needed and t=
+he allocation size is 256.
+The pointer arithmetic adds 256 to p, which puts it right over the allocate=
+d size,
+so baggy bounds should raise an exception when q is dereferenced in the thi=
+rd line.
+
+</pre></li>
+
+<li><pre class=3D"student-text">Suppose slot_size is set to 16 bytes. Consi=
+der the following code snippet:
+
+      char *p =3D malloc(256);
+      char *q =3D p + 256;
+      char ch =3D *q;
+   =20
+Explain whether or not baggy bounds checking will raise an exception at the=
+ dereference of q.
+
+No because *q and ch refer to the padding space for p, and are not out of b=
+ounds. </pre></li>
+
+<li><pre class=3D"student-text">The baggy bounds checking should not raise =
+an exception. This is because according to section 2.1 the bounds informati=
+on table should be updated on allocation of the object, even though the sta=
+rting slot_size is set to 16 bytes.</pre></li>
+
+<li><pre class=3D"student-text">The baggy bounds checking will not raise an=
+ exception. According to section 3.3, in this case the "slowPath" function =
+would be called. However, since the out-of-bounds pointer is within slot_si=
+ze/2 =3D 8 bytes, the a pointer to the original object can be recovered and=
+ returned.</pre></li>
+
+<li><pre class=3D"student-text">The paper says that C standard allows out o=
+f bounds=20
+pointers to arrays 1 past the end of the array. Since=20
+*q =3D p + 256 which is 1 element past the end of the
+array, I don't believe it will error given the baggy
+bound policy on out of bounds pointers.</pre></li>
+
+<li><pre class=3D"student-text">The slot size is set to 16 bytes, and the f=
+irst line of code calls for a memory allocation of 256 bytes. This correspo=
+nds to a memory size that is a power of 2, and is equal to 16 slots. Since =
+the object bounds are already aligned to the slots, there is no padding nec=
+essary to fit allocation bounds. In the code snippet, p will point to the b=
+eginning of the 256-byte memory section allocated for an object, and q will=
+ point to the byte immediately following this allocated memory. There is no=
+ padding after the object, so the address pointed to by q will be out of bo=
+unds by one byte. But our slot size is 16 bytes, so this out-of-bounds poin=
+ter q is within half of a slot size from the original object. Section 2.4 i=
+ndicates that such out-of-bounds pointers are marked for prevention against=
+ dereferencing, and memory protection hardware then enforces that the marke=
+d pointers are not dereferenced. Hence, baggy bounds will trigger an except=
+ion at the dereference of q. Section 3.3 suggests that if q were to be out =
+of bounds by more than half of the slot size (and was being dereferenced fo=
+r modification), baggy bounds would signal an error.</pre></li>
+
+<li><pre class=3D"student-text">There will be an exception. p allocates 256=
+ slots from 0 to 255, but q resides outside of the memory allocated for p.
+</pre></li>
+
+<li><pre class=3D"student-text">This is permitted in baggy bounds checking =
+because they allow access to the memory padding right after an object.</pre=
+></li>
+
+<li><pre class=3D"student-text">This will raise an exception. Because Baggy=
+ Bound Checking
+detects out-of-bounds pointers within slot_size/2 bytes from
+the original object. Since in this case, slot_size is 16 bytes.
+The dereference of q will be prevented. </pre></li>
+
+<li><pre class=3D"student-text">This would cause an exception because baggy=
+ does not support using the
+one byte past legally, even though C is ok with it. It will get marked as=
+=20
+being out of bounds, and so a dereference at the end will be caught and
+not allowed.</pre></li>
+
+<li><pre class=3D"student-text">This would raise an exception. Since p is m=
+alloc'd to a size of 256 bytes, which
+is a power of 2, the allocated space would be exactly equal to 256.  Theref=
+ore,
+by adding 256 to the pointer and dereferencing it, you're going 1 byte beyo=
+nd
+the bounds and therefore causing baggy bounds checking to raise an exceptio=
+n.
+</pre></li>
+
+<li><pre class=3D"student-text">To check for baggy bounds, we have 3 crucia=
+l steps. We take the nearest power of 2 for malloc, which in this case is t=
+he value 256, so 256 bytes are allocated. In the next line, the access is n=
+ot ok because it is exactly 1 out of bounds of the allocated space. When q =
+is dereferenced it will raise an exception because the out of bounds bit is=
+ set.
+</pre></li>
+
+<li><pre class=3D"student-text">We allocate 256 bytes, but this is a power =
+of 2 so there is not additional baggy bounds. q looks at a location 256 byt=
+es after, which is just out the memory bounds of the allocated space. There=
+ will be no error thrown from doing p+256 because it is still within the sl=
+ot_size/2 =3D 8 bounds of the allocated memory. However, this means that de=
+allocating will throw an exception. </pre></li>
+
+<li><pre class=3D"student-text">When dereferencing q, the pointer is out-of=
+-bounds. Baggy bounds does not allow out-of-bounds pointers like the C stan=
+dard, which allows one element past the end of an array. In this solution o=
+ut-of-bounds pointers are marked to prevent them from being dereferenced. B=
+ut in this case the original pointer p will be recovered because q is less =
+than slot_size/2 outside the original object. No exception will be raised.<=
+/pre></li>
+
+<li><pre class=3D"student-text">Yes it will raise an exception there.
+
+The malloc call allocates a buffer with allocation size 256. Therefore, q =
+=3D p +
+256 would result in a pointer that is outside the allocation boundary of th=
+e
+buffer. Therefore Baggy would mark the pointer as out-of-bound by setting t=
+he
+highest bit in the pointer address. Therefore, dereferencing the pointer la=
+ter
+would result in a page fault exception.
+</pre></li>
+
+<li><pre class=3D"student-text">Yes it will raise an exception. At the firs=
+t line (allocation), the bounds checking will keep track of the (log of the=
+) size allocated to p. At the second line, the program will check bounds an=
+d realize that q is out-of-bounds, and mark it as an out-of-bounds pointer =
+and prevent it from being dereferenced in the third line.</pre></li>
+
+<li><pre class=3D"student-text">Yes, an exception will be raised.
+
+Baggy Bounds cares about in/out of bounds relative to the allocation rather=
+ than the object. One way a ptr will be marked out of bounds is if it passe=
+s outside its allocated range (e.g. ptr to a byte after the last element of=
+ an object's allocation). So we want to know the relationship between objec=
+t size and (a multiple of the) slot size.
+
+In this example, the object size is 256 bytes, while the slot size is 16 by=
+tes. This means the object will take up 256/ 16 =3D 16 slots exactly. Thus,=
+ there will be no padding at the end of the object to fill to the end of it=
+s last slot. So, q will indeed point to the first byte outside the object a=
+llocated for p, meaning q's highest bit will be set on the arithmetic opera=
+tion. So, the dereference of q will cause an exception (as q points to user=
+ space intentionally restricted by Baggy Bounds for this purpose).
+</pre></li>
+
+<li><pre class=3D"student-text">Yes, baggy bounds check will raise an excep=
+tion at the dereference of q.
+When the second line is executed, pointer q is marked as out-of-bounds (i.e=
+. its highest bit is set to 1), but since it is only out of bounds by 1 (wh=
+ich is less than slot_size/2), no exception is raised yet. When the third l=
+ine is executed, no instrumentation code is active, but the system relies o=
+n memory protection hardware, which raises an exception if the highest bit =
+of the pointer is set.
+</pre></li>
+
+<li><pre class=3D"student-text">Yes, baggy bounds checking should catch tha=
+t issue because the allocation is
+exactly a power of two and is a multiple of 16.
+</pre></li>
+
+<li><pre class=3D"student-text">Yes, baggy bounds checking will raise an ex=
+ception because a pointer is being dereferenced out of the bounds of which =
+it was allocated. Also described in Section 2.4, where some standards allow=
+ out-of-bounds pointers to one element past the end of an array, the baggy =
+bounds system does not because adding one byte can double the allocated siz=
+e can double the allocation size. (In this example, the allocation size is =
+256, a power of 2.)
+</pre></li>
+
+<li><pre class=3D"student-text">Yes, baggy bounds checking will raise an ex=
+ception. On a 32-bit system, the
+buffer will take up 17 slots such that it has slot_size/2 padding on each s=
+ide.
+Each address in the padding will have its most significant bit set to 1, wh=
+ich
+will cause memory protection hardware to throw an exception if a padding
+address is dereferenced.  In this case, we try to dereference a pointer one
+byte beyond the buffer bounds, which will cause such an exception to occur.
+
+On a 64-bit system, the supported out-of-bounds range is larger than
+slot_size/2, but the attempted dereference will still be tagged and an erro=
+r
+will be thrown upon the attempted dereference.
+</pre></li>
+
+<li><pre class=3D"student-text">Yes, baggy bounds checking will raise an ex=
+ception. This is becase malloc() allocated 256 bytes, which is a power of t=
+wo, so it is aligned to slot boundaries. After increasing p by 256, it poin=
+ts one byte outside of this area. Thus, the code will see that p is not wit=
+hin the allocation size in the bounds table differ and an exception will be=
+ raised (by shifting p^p' by e).</pre></li>
+
+<li><pre class=3D"student-text">Yes, baggy bounds will raise an exception. =
+An allocation size of 256 bytes corresponds to exactly 16 slots. Incrementi=
+ng a pointer to the start of this allocation by 256 will go past these 16 s=
+lots into the next slot. At this point, it is within slot_size/2 of the ori=
+ginal object and baggy bounds will use hardware features to indicate it sho=
+uldn't be dereferenced.</pre></li>
+
+<li><pre class=3D"student-text">Yes, baggy bounds would raise an exception =
+on q being dereferenced because p and q differ by 12 significant bits, and =
+e =3D log2(sizeof(p)) =3D 8. Since p and q differ by more than the e =3D 8 =
+least significant bits, the q pointer is out of bounds.
+</pre></li>
+
+<li><pre class=3D"student-text">Yes, it will raise an exception. In this ca=
+se, q refferences the first bit after the end of the buffer, which is valid=
+ for pointer arithemtics but invalid for derefferencing. Although some boun=
+d checkings algorithms allow that by appending 1 byte, baggy does not allow=
+ that.</pre></li>
+
+<li><pre class=3D"student-text">Yes, it will raise an exception. Whenever t=
+here is pointer arithmetic, the resulting pointer is checked to make sure t=
+hat it is not out of bounds of the memory allocated for the original object=
+. In this case, q now points to outside of the object, so Baggy will mark i=
+t as out of bounds and prevent it from being dereferenced.</pre></li>
+
+<li><pre class=3D"student-text">Yes, it would raise an exception at the der=
+eference of q.=20
+
+We detect that q is outside of the bounds of p, and upon dereference (not
+assignment), raise an exception. More particularly, we detect that q is out=
+side
+the bounds of p by noting that the addresses of q and p are more or less
+completely different (more than e "digits" different).=20
+</pre></li>
+
+<li><pre class=3D"student-text">Yes, the baggy bounds checking will raise a=
+n exception at the dereference of q.  256 is a power of 2, so as a result, =
+q resides past the end of the alloted space the baggy bounds allows for a p=
+ointer to point to, and raises an exception. =20
+</pre></li>
+
+<li><pre class=3D"student-text">Yes, the baggy bounds checking would raise =
+an exception for the dereference of q. Baggy bounds checking raises an exce=
+ption when pointers reference outside of their allocation bounds. In this s=
+ituation the allocation bounds and the object bounds are the same size, so =
+the exception would be raised.
+</pre></li>
+
+<li><pre class=3D"student-text">Yes, this will cause a failure.
+There is no baggy bound since 256 is an exact power of 2.
+Since we're access 256 bytes more, which is &gt;(16/2) bytes, it the arithm=
+etic expression will cause the OBB flag to be set.
+The dereferencing will then cause an error.</pre></li>
+
+<li><pre class=3D"student-text">Yes, this will raise an exception.  First, =
+note that the size of the allocated object (256) will be stored in the tabl=
+e referenced in figure 3, in the slot given by table[p &gt;&gt; log_of_slot=
+_size] (per the errata).  Note as well that 256 =3D 2**8.
+
+Then, we can observe that the result of the optimized bounds checking will =
+NOT be zero:  The expression (p^p') will evaluate to the binary representat=
+ion of 256, as the two values will differ only in that bit.  When this is r=
+ight-shifted bit-wise by log_2(size), the end result will be the binary rep=
+resentation of 1.
+
+Intuitively, because we have allocated a size which is a power of two (and =
+a multiple of the slot size), there is no padding allocated, and the object=
+ / allocation bounds are identical.
+</pre></li>
+
+<li><pre class=3D"student-text">```
+char *p =3D malloc(256);
+char *q =3D p + 256;
+char ch =3D *q;
+```
+
+Section 3.3 states that " ... and we do not check pointer dereferences",
+but the pointer arithmetic will involve an out-of-bounds check.
+
+Which will take the form:
+
+```
+size =3D 1 &lt;&lt; table[p&gt;&gt;16]
+# size =3D 256
+base =3D p &amp; ~(size-1)
+# base =3D p
+q &gt;=3D base &amp;&amp; q - base &lt; size
+# true &amp;&amp; false
+```
+
+So on the aritmetic operation `q` will be marked out of bounds.
+This is actually a special case since the malloc size is a power
+of two, if it would have been `malloc(255)` and `q =3D p+255` then
+baggy bound checking would be unable to detect that `q` is out=20
+of bounds, due to the padding.
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">`p` is a pointer to the beginning of what w=
+e can view as a `char[256]`. Because this object has a size that's already =
+a power of 2, no extra padding is added to the allocation. `q` is created b=
+y arithmetic from `p`, so it's assumed to be a pointer to the same object (=
+the `char[256]`). `q` points beyond the bounds of this object, so it will b=
+e marked as an out of bounds pointer. Since `q` neither points to the objec=
+t or padding associated with it, dereferencing it will cause an exception.<=
+/pre></li>
+
+<li><pre class=3D"student-text">char *p =3D malloc(256);
+char *q =3D p + 256;
+char ch =3D *q;
+
+Accessing the byte right after the allocated memory will not trigger an exc=
+eption because there is padding allocated there and C compiler will think i=
+t is ok to access the memory.
+</pre></li>
+
+<li><pre class=3D"student-text">char *p =3D malloc(256);
+char *q =3D p + 256;
+char ch =3D *q;
+
+Let's assume p's allocation begins at 0x0.=20
+p looks something like: 0b 0000 0000 0000 0000 (0)
+then q looks something like: 0b 0000 0001 0000 0000 (256)
+
+log_2(256) =3D 8. If we shift both p and q 8 bits to the right, they're not=
+ equivalent, or to precisely use the logic presented in the paper if we XOR=
+, p and q, we get ...1 0000 0000 and then we shift (&gt;&gt;8), we get ...1=
+ !=3D 0. Thus the check fails.=20
+
+From a less pragmatic standpoint, q lies outside the bounds of p's allocati=
+on so we expect it to fail the check.
+</pre></li>
+
+<li><pre class=3D"student-text">malloc probably needs meta-data to store th=
+ings such as the
+size of the block and the address of the next block.
+So, we need 256 + epsilon bytes to store it.
+Therefore, Baggy bounds will allocate 512 bytes and will
+not raise an exception at the dereference of q.
+</pre></li>
+
+<li><pre class=3D"student-text">table[p &gt;&gt; log_slot_size] will evalua=
+te to 8. And p ^ q will differ outside the
+last 8 bits, resulting in Baggy bounds checking throwing an exception.</pre=
+></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--2EIbJzf3eqjAjn8Xd2pijgUniXA3lLa6NZ6mP0sRwe------

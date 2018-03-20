@@ -1,0 +1,1061 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-questions/10
+Subject: Questions for lecture 10 - 6.858
+Date: Wed, 20 Mar 2018 22:59:02 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--MNCEIQ2pBGPrADMCxO19i5Fe5lNMdMFIuKxIIZ33Z4----"
+
+------MultipartBoundary--MNCEIQ2pBGPrADMCxO19i5Fe5lNMdMFIuKxIIZ33Z4----
+Content-Type: text/html
+Content-ID: <frame-32869-c5a82df7-2a19-483c-b5db-ca2d8f118b71@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-questions/10
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Questions for lecture 10 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Questions for lecture 10 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text">Is it possible to implement software sandbo=
+xing on mobile devices similar to the techniques implemented in personal co=
+mputers?</pre></li>
+
+<li><pre class=3D"student-text">So, what I got from the paper was that the =
+Apple code reviewers only look for "obvious bugs or other problems" when re=
+viewing an app for publishing, but the only thing deterring people from cre=
+ating malicious apps is the fact that they're "identifiable." (under App Se=
+curity, App code signing, 2nd paragraph)
+
+I was just looking at the Apple Developer Program, and it looks like you on=
+ly need an Apple ID and a credit card to create an account, and to create a=
+n Apple ID, you only really need basic personal info (name, address, phone =
+number) and an email address.
+
+Couldn't someone create a junk email address, then create an Apple ID with =
+fake information, then create an Apple Developer Program account with that =
+Apple ID and, say, illegally-obtained credit card info, and then publish a =
+malicious app? Is there some other form of protection in this process that =
+I'm missing?=20
+
+</pre></li>
+
+<li><pre class=3D"student-text">"The note's contents are encrypted using AE=
+S-GCM. New records are created in Core Data and CloudKit to store the&nbsp;=
+encrypted note, tag, and initialization vector, and the original note recor=
+ds are&nbsp;deleted; the encrypted data isn't written in place."
+
+Didn't quite get the significance of not writing in-place. Are there known =
+issues in doing so?</pre></li>
+
+<li><pre class=3D"student-text">"Touch&nbsp;ID security
+The resulting map of nodes is stored without any identity
+information in an encrypted format that can only be read by the Secure Encl=
+ave,
+and is never sent to Apple or backed up to iCloud or iTunes."
+
+What does it mean by "without any identity information"? If it means withou=
+t labeling whose fingerprint the map is associated to, I am not sure how th=
+is step is useful because I think each iOS device can have only one user. P=
+lus, the mapping is already
+lossy so the attacker wouldn't be able to use it to construct the user's ac=
+tual
+fingerprint anyway?
+
+"iOS supports six-digit, four-digit, and arbitrary-length alphanumeric
+passcodes. In addition to unlocking the device, a passcode provides entropy=
+ for certain encryption keys. [...] The stronger the user passcode is, the =
+stronger the encryption key becomes. Touch&nbsp;ID and Face&nbsp;ID can be =
+used to enhance this equation by enabling
+the&nbsp;user to establish a much stronger passcode than would otherwise be
+practical."
+
+What if the user only uses passcodes and sets very weak passcodes? Would hi=
+s data
+be less secure? Is this a good design decision?
+</pre></li>
+
+<li><pre class=3D"student-text">- What is the purpose of DFU mode? Why not =
+skip it and go directly to recovery mode?
+
+- Why doesn=E2=80=99t iTunes also download only the components required to =
+complete an update (like OTA does)? Is it because it is fast enough already=
+?
+
+- How is Touch/Face ID considered a second factor (page 11)? Isn=E2=80=99t =
+it the only factor?
+
+- On page 14, are the keys in the diagram only accessible by Secure Enclave=
+? Or, are only the ones with blue locks exclusive to Secure Enclave?
+
+- Touch ID and Face ID information is stored in Secure Enclave - is passcod=
+e information stored there too?</pre></li>
+
+<li><pre class=3D"student-text">1. Can you please go over the figure on pag=
+e 4 and connect it with the sections we read?</pre></li>
+
+<li><pre class=3D"student-text">1. Not being able to revert back to old ver=
+sions is problematic right? I remember when spectre and meltdown were annou=
+nced, patches for linux didn't go well with nvidia drivers and rendered scr=
+eens unusable, we had to revert back to the previous version. Couldn't some=
+thing like this happen for iphones?
+
+2. With frequent camera usage for faceid, this becomes a power problem, whi=
+ch doesn't seem to be worth the tradeoff of having this slight convience. C=
+ommericially is this convience that important? Also I was wondering what yo=
+ur opinions on the value of facid is? I personally don't see any use for it=
+ and poses a step back in security if anything.</pre></li>
+
+<li><pre class=3D"student-text">1. The article makes some claims that FaceI=
+d is a good biometric measure, and even has fewer collisions in a populatio=
+n than TouchId, but it seems fairly easy to unlock someone's device by poin=
+ting it towards an "attentive" photo of them. So, would you recommend facia=
+l recognition as a security mechanism in this use case?
+
+</pre></li>
+
+<li><pre class=3D"student-text">A lot of the security measures described re=
+ly on cryptographic keys. We haven't been taught about keys explicitly in t=
+his class, so we currently have to take Apple's word that they are using it=
+ correctly and that they are highly secure. Will we be covering how cryptog=
+raphic keys work, or is there some good, concise resources to learn more ab=
+out them?</pre></li>
+
+<li><pre class=3D"student-text">Apple appears to have thought through their=
+ security solution very thoroughly; how does iOS security compare to Androi=
+d security?
+Does Google have a harder time maintaining a secure product than Apple?</pr=
+e></li>
+
+<li><pre class=3D"student-text">Apple boasts about the secure boot chain an=
+d how it helps "ensure that the lowest levels of software aren=E2=80=99t ta=
+mpered with", but it seems that jailbreaking an iPhone is well known and co=
+mmon.  How does jailbreaking get around these protections and ultimately al=
+low other 3rd party apps and functions to work on the device?
+</pre></li>
+
+<li><pre class=3D"student-text">Apple claims that Face ID is very secure (1=
+/1,000,000 chance of false positive) except for children or look-alike sibl=
+ings, but I=E2=80=99ve seen some hack videos that seem to be able to fake a=
+ face. What do people in the security world think of Face ID? </pre></li>
+
+<li><pre class=3D"student-text">Apple claims that FaceID is more secure - h=
+owever I've seen articles about Apple thinking that Chinese women who look =
+nothing alike are the same person. Is this a general problem for population=
+s that Apple might not have had enough training data for?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Apple limit's the use of Write+Execute page=
+s to Apple only application.
+This is to prevent applications from JIT'ing code, but this also is
+quite a resiriction on the ecosystem. Is there are fundamental security
+reason for why Apple didn't opt for sandboxing or in the style of Native Cl=
+ient
+or eBPF in the kernel?
+
+</pre></li>
+
+<li><pre class=3D"student-text">Apple mentions anti-replay services. I am g=
+enerally familiar with replay attacks which are simply replaying a valid ac=
+tion but for malicious intent. I am aware generally incrementing ids are us=
+ed to prevent replays (because the messages are encrypted the adversary can=
+t find a larger id). Does apple do the same? And how does the encryption wo=
+rk because the device is same for the interaction...
+</pre></li>
+
+<li><pre class=3D"student-text">Apple says that it's sandboxing "prevents a=
+pps from gathering or modifying information stored by other apps". How do s=
+ecurity people view app-monitoring apps like Onavo, that gather and sell da=
+ta about other apps' usage (like resources)? Is there any effort to make ap=
+ps "totally unaware" of other processes running on the machine outside thei=
+r sandbox?
+</pre></li>
+
+<li><pre class=3D"student-text">Apple serves as the root trust-authority fo=
+r many applications. What would happen if an attacker could sign arbitrary =
+software as Apple?
+</pre></li>
+
+<li><pre class=3D"student-text">Apple signs the bootloading code and iOS re=
+sets itself if the code's signature doesn't match. So, how does JailBreak w=
+ork then?</pre></li>
+
+<li><pre class=3D"student-text">Apple took care in defending against face d=
+etection spoofing by training neural networks to detect digital and physica=
+l spoofs. However, nothing is mentioned about fingerprint spoofing, which m=
+akes me still question the security of TouchID being used in place of a pas=
+scode. Instead of using TouchID as a way to expedite the unlocking process,=
+ why not use it as a second factor?</pre></li>
+
+<li><pre class=3D"student-text">Are there any parts of the core of Apple's =
+devices (in terms of software) that are not made by Apple? It seems like th=
+ey control the entire ecosystem, which seems like a good plan for security,=
+ so I was wondering if there was any point at which they use software that =
+they did not develop in-house? (Besides at the application level)
+</pre></li>
+
+<li><pre class=3D"student-text">As is the case with the google paper, I'm s=
+till unsure about why Apple goes in so much detail about their security inf=
+rastructure. What is the advantage in doing so?
+</pre></li>
+
+<li><pre class=3D"student-text">Attack: Somebody steals Ben's phone, takes =
+it apart, and tries to remove the memeory chip and put it on another device=
+ to read it.
+Mitigation: The UID crytographically ties data to a particular device.
+
+Attack: Somebody steals Ben's phone, takes it apart, and tries to hook it u=
+p to a different fingerprint scanner in order to unlock the phone.
+Mitigation: There is a shared key between the secure enclave and the touch =
+ID sensor such that only the original touch ID sensor can be used.
+
+Attack: If Ben's secure notes app is touch ID protected, then an attacker w=
+ho knows the passcode could add their fingerprint and use it to access the =
+confidential notes.
+Mitigation: Apple allows apps to not allow touchID if the fingerprint list =
+has changed since the last login.
+
+Attack: An attacker creates a malicious app that, if downloaded, would some=
+how be able to access the confidential notes.
+Mitigation: There are a lot of them. App developrs are required to register=
+ with Apple. Apps are run in their own sandboxes and can only access their =
+own files.
+
+Attack: An attacker creates a malicious version of the confidential notes a=
+pp used.
+Mitigation: Apps must be signed.</pre></li>
+
+<li><pre class=3D"student-text">Because each secure enclave UID is generate=
+d independently
+on each device, does that mean that Apple cannot access=20
+information on a device requiring secure enclave UID for
+access?
+</pre></li>
+
+<li><pre class=3D"student-text">Can the adversary unlock an iPhone X using =
+the user's photo or by positioning it in front of the user while the user i=
+s asleep?</pre></li>
+
+<li><pre class=3D"student-text">Danny Tang
+data1013
+3/10/18
+
+Lecture 10
+
+If Apple approves of an App Creator through their system, but they create a=
+ malicious app anyways and release it, is there
+further action taken (eg. legal) than simply shutting down the app and revo=
+king their privileges to add apps to the store?</pre></li>
+
+<li><pre class=3D"student-text">Do jailbreaking bugs demonstrate the subver=
+sions of most of these security measures? Do they atleast break the verifie=
+d bootloader section of the white paper, or are they more limited
+in scope?</pre></li>
+
+<li><pre class=3D"student-text">Does Apple have any recent protections agai=
+nst jailbreaking a device?</pre></li>
+
+<li><pre class=3D"student-text">Does Apple provided iOS devices with the op=
+tion to wipe data remotely (as long as internet connection is still maintai=
+ned)? It seems like a good security step to include as well, for example in=
+ cases where Ben accidentally leaves his iPhone somewhere in a public area.=
+</pre></li>
+
+<li><pre class=3D"student-text">Does iOS compete or collaborate with Androi=
+d in developing its security architecture?</pre></li>
+
+<li><pre class=3D"student-text">Does the hardware level encryption prevent =
+users from upgrading between phones or copying a backup to a new phone with=
+ out loosing phone/app data? It seems like all the security data may have t=
+o be re-setup, but what of other data stored in the enclave?</pre></li>
+
+<li><pre class=3D"student-text">From my understanding the UID is generated =
+within the hardware instead of a manufacturing process(so that basically no=
+ entity should know the exact UID without somehow reverse engineering the h=
+ardware). So how does this work in general? Specifically, I can imagine tha=
+t some source of randomness must be taken into account.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Given such strong security, how does Apple =
+allow for a user to recover forgotten passwords in cases where they did not=
+ set a FaceID or TouchID?</pre></li>
+
+<li><pre class=3D"student-text">Has Apple published anything more in-depth =
+about its Secure Enclave? I'm curious to see how it compares to Intel's enc=
+lave that we discussed in class.</pre></li>
+
+<li><pre class=3D"student-text">Have there been any recent exploits with iO=
+S security? Other than the weakness with the face recognition, I've been le=
+d to believe that iOS is pretty secure.</pre></li>
+
+<li><pre class=3D"student-text">How are alternate versions of ios loaded du=
+ring DFU mode (for jailbreaks, for example)?
+</pre></li>
+
+<li><pre class=3D"student-text">How are any device security mechanisms effe=
+ctive if an sufficiently-motivated attacker has physical access to the devi=
+ce? (e.g. for awhile, the FBI was unable to unlock a San Bernardino shooter=
+'s iPhone.) Couldn't the FBI have (e.g.) disassembled the iPhone and physic=
+ally examined the storage in order to access the data/any necessary encrypt=
+ion keys?
+</pre></li>
+
+<li><pre class=3D"student-text">How did iOS jailbreaking work?  Do these se=
+curity measures protect from this?
+</pre></li>
+
+<li><pre class=3D"student-text">How does Android device security compare to=
+ iOS?
+</pre></li>
+
+<li><pre class=3D"student-text">How does Apple check application code in a =
+scalable manner?
+</pre></li>
+
+<li><pre class=3D"student-text">How does Apple check whether third party ap=
+ps are actually secure? It seems unlikely that if there's an application ru=
+nning third party ads as a revenue model, that Apple can check its veracity=
+. Even YouTube had a problem with some ads using the users for cryptomining=
+.
+</pre></li>
+
+<li><pre class=3D"student-text">How does Apple ensure its iTunes update ser=
+ver won't be=20
+compromised? If the server is compromised, will the iOS
+device be attacked? Or installed a malicious system? </pre></li>
+
+<li><pre class=3D"student-text">How does apple handle security on the algor=
+ithms used for face and touchID. Both of these seem like they should be pro=
+ne to adversarial examples, more so than passcodes where there is a single =
+exact answer. Does apple do testing beyond the normal testing to ensure tha=
+t a 3d mask of a person, or someone who looks similar cannot unlock the pho=
+ne, because this would seem to make all the encryption moot since someone c=
+ould just  pass a fake face to the faceID and still get access?</pre></li>
+
+<li><pre class=3D"student-text">How does face ID protect against using a ma=
+sk?
+</pre></li>
+
+<li><pre class=3D"student-text">How does iOS jailbreaking work -- which par=
+ts of the security architecture does it target?</pre></li>
+
+<li><pre class=3D"student-text">How does the antireplay feature of the secu=
+re enclave work?
+</pre></li>
+
+<li><pre class=3D"student-text">How does the concept of iOS "Jailbreaking" =
+fit within these schemes? I would
+imagine it must involve breaking some of the code-signing security mechanis=
+ms,
+albeit with the consent of the end user.=20
+</pre></li>
+
+<li><pre class=3D"student-text">How much does all of the added layers of en=
+cryption affect performance of
+accessing files, especially if these files are protected under layers of
+encryption usering a hierarchy of keys?
+</pre></li>
+
+<li><pre class=3D"student-text">How much of the app checking process is aut=
+omated and how easy is it to automate this? If not, it seems like a number =
+of bugs can be introduced via manual inspection or something semi-automated=
+.
+
+Is address space randomization sufficient? I thought there were known attac=
+ks on it.</pre></li>
+
+<li><pre class=3D"student-text">How secure has Face ID been in practice? I'=
+ve heard numerous stories of unlocks that make me skeptical of the 1 in 1,0=
+00,000 unlock chance claim. Are there practical ways to spoof Face ID using=
+, for example, 3D printing?</pre></li>
+
+<li><pre class=3D"student-text">How thorough is Apple's vetting process for=
+ App Store apps?</pre></li>
+
+<li><pre class=3D"student-text">I assume getting the processor to read some=
+ arbitrary key rather than Apple's public key from ROM would give an attack=
+er control over the boot chain - is this prevented by anything other than p=
+rohibitive physical difficulty?</pre></li>
+
+<li><pre class=3D"student-text">I didn't quite follow the discussion of Fac=
+e ID diagnostics. How does this
+process work? When users opt to send diagnostics in, it says they can look
+through each image and select which ones to send to Apple. Would this possi=
+bly
+allow an attacker to obtain a device and run a controlled diagnostics proce=
+ss
+that led to them gaining future access to the device?
+</pre></li>
+
+<li><pre class=3D"student-text">I feel like this paper was a bit vague abou=
+t how it was handling jailbroken
+devices, only claiming that the data is still hardware encrypted. Why does
+Apple feel the need to mention jailbroken devices at all? How often do
+Apple or other large companies consider improper device usage in their
+security plan?</pre></li>
+
+<li><pre class=3D"student-text">I saw recently that some foreign contractin=
+g company has claimed they can unlock any iOS device. In your opinion, what=
+ would be the most vulnerable component of Apple's security scheme? That is=
+, if you were the lead for a penetration testing team, what security compon=
+ent would you target first, and why?
+</pre></li>
+
+<li><pre class=3D"student-text">I'm confused about all the different types =
+of keys used in the data protection section (class keys, data protection ke=
+ys, file keys?). Which of these encryption schemes are asymmetric (public/p=
+rivate) and which are symmetric?</pre></li>
+
+<li><pre class=3D"student-text">If keyboard apps don't allow access to the =
+network at all, how do predictive keyboards gather data to train and improv=
+e their models?
+</pre></li>
+
+<li><pre class=3D"student-text">If the data is automatically wiped after 10=
+ incorrect tries, can't a malicious user destroy your data by entering 10 i=
+ncorrect passwords into your device?
+</pre></li>
+
+<li><pre class=3D"student-text">If the iPhone BootROM ensures that only App=
+le signed software can run, how do people jailbreak their iPhones?
+
+</pre></li>
+
+<li><pre class=3D"student-text">In order to enable security, IOS sacrifices=
+ a lot of flexibility and user control. What tradeoffs are okay to make for=
+ the sake of security?</pre></li>
+
+<li><pre class=3D"student-text">In the iOS security paper it says:
+
+The probability that a random person in the population
+could look at your iPhone X and unlock it using Face
+ID is approximately 1 in 1,000,000 (versus
+1 in 50,000 for Touch ID).
+
+First off, is touch ID secure if 1/50,000 people can effortlessly unlock yo=
+ur
+phone? The "unsecure" android patterns still have 389,112 possible patterns
+you can draw.
+</pre></li>
+
+<li><pre class=3D"student-text">Is one of the larger benefits that Apple co=
+ntrols their product (all their hardware and software) that they can enforc=
+e much stronger security factors? (they can make certain assumptions about =
+the security of various components?)
+</pre></li>
+
+<li><pre class=3D"student-text">Is the secure enclave designed exclusively =
+for cryptographic and security
+functions? While I don't expect it to have a huge amount of computation
+power, having a seperate processor that's presumably usually inactive
+seems a little wasteful.</pre></li>
+
+<li><pre class=3D"student-text">Is there a way to modify a backup and then =
+load it into the phone?
+How easy is it to access effaceable storage?
+</pre></li>
+
+<li><pre class=3D"student-text">Is there some way for apple to use 2FA to m=
+ake their devices even more secure?
+</pre></li>
+
+<li><pre class=3D"student-text">It seems that Apple chooses strict App isol=
+ation to protect security. Does this restrict interprocess communication am=
+ong apps that may want to achieve some level of sharing?=20
+</pre></li>
+
+<li><pre class=3D"student-text">It seems that touch/face ID aren't secure i=
+f the phone is never turned off. Someone could use a dead/sleeping person t=
+o unlock the phone. I can't think of a solution that gets rid of this probl=
+em without removing the accessibilities of these kinds of user authenticati=
+on. Do you know if there are any ways around this?</pre></li>
+
+<li><pre class=3D"student-text">I=E2=80=99ve heard a lot of controversy abo=
+ut fooling the new face ID. Also it seems like for a phone, adversaries pri=
+marily care about wiping the phone, resetting it and then re-selling it. Ho=
+w does the security measures prevent against that?</pre></li>
+
+<li><pre class=3D"student-text">Lecture 10 (Question About Paper)
+
+It seems like the secure boot chain relies on an attacker not being able to=
+ know the Apple Root CA private key. Otherwise, an attacker might be able t=
+o get users to download malicious software updates that pass all the secure=
+ boot chain checks. What does Apple do to prevent this private key from bei=
+ng disclosed?
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 10: Client Device Security
+3/12/18
+
+Apple tries to make its device secure by often relying on a chain of trust,=
+ eg often with the secure enclave or the Apple authorization server. The se=
+cure enclave does seem isolated/secure, though its still a little unclear t=
+o me how Apple ensures it's properly updated, aside from a "personalized so=
+ftware update process." Though the mention how the Apple authorization serv=
+er has many checks regarding the time, identity, and content of update pack=
+ages and also signed and authorized update packages, are there still vulner=
+ablitiles regarding the passage of said data over this unsecure network?</p=
+re></li>
+
+<li><pre class=3D"student-text">Lecture 10: My iOS Security Question
+
+How exactly does Apple's address space layout randomization work? I am a bi=
+t confused on how exactly
+the addresses of stored data can be shuffled at random and managed in a way=
+ that would allow the
+system to execute properly, and then be efficient on top of that.
+
+Thank you!
+</pre></li>
+
+<li><pre class=3D"student-text">Older phones were notorious for allowing co=
+mpromize via the baseband procesor,
+but it seems that iPhones at least now isolate this proccess from accessing=
+ the
+devices main memory. When did this transition happen? And is this protectio=
+n
+also common on other devices (like Android)?
+</pre></li>
+
+<li><pre class=3D"student-text">On page 7, third paragraph, there is mentio=
+n of an integrity tree to prevent replay of security critical Secure Enclav=
+e memory. What is an integrity tree, and what makes it a good choice to pre=
+vent this type of replay?
+</pre></li>
+
+<li><pre class=3D"student-text">On pg.24, Apple talks about how Safari's Ja=
+vaScript JIT compiler uses similar protection to the stack as when iOS runs=
+ 3rd party apps. How much damage can this compiler do related to things we'=
+ve seen before like buffer overflows/making system calls, etc?
+</pre></li>
+
+<li><pre class=3D"student-text">One attack scenario is for the adversary to=
+ tamper with the boot code - Apple defends against this through verifying t=
+he entire chain of trust to ensure all hardware/software has been signed by=
+ Apple. Another scenario is for the attacker to guess the password - Apple =
+helps lower the possibility of this by implementing limited tries, and allo=
+wing the option for the user to enable TouchID/FaceID. To further ensure th=
+e safety of the user=E2=80=99s notes data, Apple has encryption and data pr=
+otection features built in.</pre></li>
+
+<li><pre class=3D"student-text">One of the most intriguing part of the docu=
+ment is FaceID and TouchID. In particular,
+I was impressed to know that the probability of 1 in one million was calcul=
+ated for FaceID -
+the first question, of course, is how they calculated this?. They also ment=
+ion an API that
+simply returns a boolean that confirms that FaceID or TouchID was correctly=
+ identified. Wouldn't
+simply tapping in in the connection and setting up an arbitrary boolean suf=
+fice to corrupt the system then?
+</pre></li>
+
+<li><pre class=3D"student-text">Overall, how is how does iOS vs Android sec=
+urity compare for mobile devices? Is one regarded as a clear better choice =
+security-wise?</pre></li>
+
+<li><pre class=3D"student-text">Paper mentions "MDM" ("Escrow keybag is use=
+d for iTunes syncing and MDM") -- what is MDM?</pre></li>
+
+<li><pre class=3D"student-text">Question about Paper:
+
+Do custom keyboards have to be signed as well? Sandboxing them seems like a=
+ good way to protect the typing data, but also looks like an attack vector.
+</pre></li>
+
+<li><pre class=3D"student-text">Question about Paper:
+
+Since this is a recent issue, I was wondering if there is information on ho=
+w Apple is preventing
+side-channel attacks such as meltdown/spectre?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Question: What is jailbreaking an iOS devic=
+e and how is it not prohibited by their security measures?</pre></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 10 Questions
+
+What is the process for screening apps from valid developers before allowin=
+g them to be on the Apple Store?
+
+Is there any checks in place to help users from granting excessive permissi=
+ons to an app?</pre></li>
+
+<li><pre class=3D"student-text">Regarding NSFileProtectionNone, the paper s=
+ays "Since all the keys needed to
+decrypt files in this class are stored on the device, the encryption only
+affords the benefit of fast remote wipe." How does this protection class af=
+ford
+the benefit of fast remote wipe?
+</pre></li>
+
+<li><pre class=3D"student-text">Since a secure boot chain is employed to bo=
+ot apple devices, would unofficial software modifications render a device u=
+seless?
+</pre></li>
+
+<li><pre class=3D"student-text">So the paper talks about Apple encoding the=
+ device's unique ID and device
+group ID - it feels like maybe the manufacturer can mess with this if they
+tried. How hard or possible is it to actually just try and get the keys fro=
+m
+the encoded chip?=20
+
+I don't know too much about the process about how the keys are encoded into
+the chip. </pre></li>
+
+<li><pre class=3D"student-text">So, Apple mentioned the following, "Convers=
+ely, if Face=EF=BF=BDID fails to
+recognize you, but the match quality is higher than a certain threshold and=
+ you
+immediately follow the failure by entering your passcode, Face=EF=BF=BDID t=
+akes another
+capture and augments its enrolled Face=EF=BF=BDID data with the newly calcu=
+lated
+mathematical representation."  Depending on the threshold, does this mean t=
+hat a sibling with a similar face and/or a friend could then slow augment t=
+he phone's data to include their face, eventually allowing for a user to un=
+lock it?  I'm imaging the threshold must be high to avoid this case, though=
+, but at the same time, Apple mentions that they can register your face in =
+many common cases that might be an issue.</pre></li>
+
+<li><pre class=3D"student-text">The Data Protection classes seem to serve a=
+ similar function to capabilities but are implemented differently. Is there=
+ a reason the file protections weren't implemented with capabilities?=20
+</pre></li>
+
+<li><pre class=3D"student-text">The article states that "The probability th=
+at a random person in the population could look at your iPhone X and unlock=
+ it using Face&nbsp;ID is approximately 1 in 1,000,000 (versus 1 in 50,000 =
+for Touch&nbsp;ID)."  We've been hearing for a while that having a random a=
+lphanumeric password (including specials) below 8 characters long is no lon=
+ger acceptable due to the fact that computers are fast enough to quickly en=
+umerate the space.  Conversely, picking a random 6-digit *number* would yie=
+ld a similar 1 in 1,000,000 chance of a random guess catching it.  When com=
+paring Face/TouchID to the equivalent random password, it seems to clearly =
+be insufficient for properly securing a system.
+
+Finally, my question is this: how did Apple come to the 1/50k and 1/1mil nu=
+mbers for their login capabilities and how realistic are these numbers?  </=
+pre></li>
+
+<li><pre class=3D"student-text">The article touched on how neural networks =
+are used for FaceID after combining the image with high precision depth inf=
+ormation. Given the fact that the image must be signed by the device ID are=
+ adversarial examples in deep learning (where single pixel perturbation are=
+ made to adversary alter NN outputs) a concern to the apple security system=
+?
+</pre></li>
+
+<li><pre class=3D"student-text">The document doesn cover any threats and pr=
+otection measures regarding the cloud part of Apple ecosystem. Despite devi=
+ce-level encryption, I'm sure there're some potential attack vectors which =
+can be associated with the cloud. https://www.elcomsoft.com/PR/epb_180208_e=
+n.pdf Apple website covers this topic very briefly. https://support.apple.c=
+om/en-us/HT202303. Are there any other insights available?
+
+There is a lot of regular hype in press announcing that iOS is not that sec=
+ure and it creates a dichotomy between the comprehensive security measures =
+of probably one of the most secure OS in the world and the noise about its =
+weaknesses. https://www.forbes.com/sites/thomasbrewster/2018/02/26/governme=
+nt-can-access-any-apple-iphone-cellebrite/#61a37299667a There're even some =
+offers which exist on the market which claim data exfiltration capabilities=
+. https://www.elcomsoft.com/PR/eift_180220_en.pdf.=20
+
+Can you elaborate please on these topics?</pre></li>
+
+<li><pre class=3D"student-text">The file data protection details was a litt=
+le confusing, and I=E2=80=99m not clear of the details when keys are wrappe=
+d and unwrapped, especially when talking about ephemeral keys.</pre></li>
+
+<li><pre class=3D"student-text">The key hierarchy seems useful for access c=
+ontrol and dividing files based on their security needs. However, why are p=
+er file keys necessary? Why could the hardware use the same metadata key to=
+ encrypt the files themselves as needed? In the current system if one can g=
+ain the metadata key then they can already access all keys, so this does no=
+t seem to decrease security. In summary the current system seems to have a =
+shared key as the weakest link, so why not just use this shared key?</pre><=
+/li>
+
+<li><pre class=3D"student-text">The paper discusses data protection using a=
+ concept they called "per file keys", in which they separated different dat=
+a into classes that have differing levels of security.  It seems to me that=
+ this is a form of privilege separation, but what type of threat model is t=
+his helping to protect/secure against?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions "Data Protection allows =
+the device to respond to common events such as incoming phone calls, but al=
+so enables a high level of encryption for user data." Does needing to servi=
+ce phone calls mean that some extra work had to be done in designing Data P=
+rotection? Are there phone-call-based attacks?
+
+In a compact, haiku form:
+Phone-call-based attacks?
+How do "common events" make
+encryption tricky?</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that if a file is cloned=
+ in the Apple File System, each half of the clone gets a new key to write i=
+ncoming writes, while the old data is still protected by the old key. What =
+is the rationale behind this in terms of performance and security? It seems=
+ simpler to implement a copy by re-encrypting the file with a new key.=20
+</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that when updating via i=
+Tunes, the entire iOS is downloaded, while when updating over the air, only=
+ a differential part is updated.
+
+What is the point of downloading the entire iOS application, if it's possib=
+le to upgrade just by installing a differential part? Is it more secure to =
+download the entire OS?</pre></li>
+
+<li><pre class=3D"student-text">The paper talks about how the UID and GID a=
+re securely protected. What kind of attack
+would an adversary be able to launch if they were able to read the UID and/=
+or GID?</pre></li>
+
+<li><pre class=3D"student-text">The support that iOS has for crypto operati=
+ons is really great, but one thing that seemed to be glossed over was the e=
+xtended trust that Apple gives their own apps. They specify clearly that al=
+l 'third-party' apps are sandboxed, but this sort of implies that Apple app=
+s are not sandboxed to the same degree. While there are certainly many good=
+ reasons for doing this, it seems like it would still greatly increase the =
+attack surface of the device, since if an app that is signed by Apple (and =
+perhaps not restricted to the same sandbox as third-party software), could =
+have a bug or could be compromised by the attacker, who would then be able =
+to modify the system as a more privileged app.=20
+
+Since the attacker still cannot change the executable due to code signing, =
+this would be more along the lines of a return to libc attack, but instead =
+of libc it's a privileged Apple app. The only thing that Apple seems to do =
+to protect against this is to use ASLR, but since there are many Apple-deve=
+loped apps that are likely to be in user-space, this may not be enough.
+
+Is this 'return to Apple code' attack an issue? Or does Apple assume that t=
+heir sandboxing technique is robust enough to protect against this?</pre></=
+li>
+
+<li><pre class=3D"student-text">They didn't seem to address the touch/Face =
+ID impersonation issue in depth. 1 in 50000 for touch is not that much. I w=
+onder how easy it would be to impersonate someone's fingerprint...</pre></l=
+i>
+
+<li><pre class=3D"student-text">Two questions:
+1) Suppose an attacker had possession of a valid Apple certificate, which t=
+hey could use to sign iOS updates, for instance.  To what extent does this =
+break the hardware security features (e.g., UID hidden in the secure enclav=
+e)?  Said differently, is it trivial for Apple to crack their own phones?
+2) Maybe this is too broad, but how does jail-breaking an iPhone work, gene=
+rally?
+</pre></li>
+
+<li><pre class=3D"student-text">What are some creative ways hackers have ha=
+cked into iOS recently?
+</pre></li>
+
+<li><pre class=3D"student-text">What component of the security architecture=
+ does a typical Jailbreak exploit
+target (or historically, what have they targeted, and has Apple introduced
+security features specifically to protect against these exploits)?
+</pre></li>
+
+<li><pre class=3D"student-text">What does it mean by "this keybag are assym=
+etric"?=20
+</pre></li>
+
+<li><pre class=3D"student-text">What does jailbreaking an iPhone imply for =
+these security measures? </pre></li>
+
+<li><pre class=3D"student-text">What exactly is the Secure Enclave (what do=
+es it mean by coprocessor) and how does it make the iOS device more secure?=
+</pre></li>
+
+<li><pre class=3D"student-text">What is a lossy process?
+</pre></li>
+
+<li><pre class=3D"student-text">What is an antireplay counter(mentioned for=
+ FaceID and TouchID? Is it to prevent people from reading the FaceID data? =
+How is it implemented?
+</pre></li>
+
+<li><pre class=3D"student-text">What is the difference between the class pr=
+otections "After first unlock" and "When unlocked"?</pre></li>
+
+<li><pre class=3D"student-text">What is the random anti-replay value (nonce=
+)? The paper says it prevents an
+attacker from saving the server's response, but how does it prevent that, a=
+nd if
+you had the server's response how could you tamper with a device or otherwi=
+se
+alter the system software?
+</pre></li>
+
+<li><pre class=3D"student-text">What is the weakest link in the chain of tr=
+ust?
+</pre></li>
+
+<li><pre class=3D"student-text">What steps does Apple take to prevent attac=
+ks from the inside - i.e., by a malicious security engineer who installs a =
+backdoor? How do they reduce the amount of trust needed in engineers while =
+still allowing engineers to build, maintain, and patch critical systems?</p=
+re></li>
+
+<li><pre class=3D"student-text">What was Apple's specific technical rationa=
+le for rejecting the FBI's request to unlock the phone in the San Bernardin=
+o attack case?
+</pre></li>
+
+<li><pre class=3D"student-text">When companies post security white papers, =
+are they actually using the architechtures described, or are these architec=
+htures used in the past?</pre></li>
+
+<li><pre class=3D"student-text">When people "crack" their iphone, what secu=
+rity flaw(s) in iOS are they taking advantage of?
+</pre></li>
+
+<li><pre class=3D"student-text">Where does jailbreaking squeeze between all=
+ of the security policies that Apple has put in place? I believe it's done =
+through DFU mode sometimes, but I don't know much about it.
+</pre></li>
+
+<li><pre class=3D"student-text">Why 156 hours? (page 8)
+</pre></li>
+
+<li><pre class=3D"student-text">Why does Apple release extensive documentat=
+ion about their system security? Doesn't this give hackers potentially usef=
+ul information? </pre></li>
+
+<li><pre class=3D"student-text">Why does the "Protected Unless Open" class =
+require asymmetric/public key cryptography? I'm not sure I understood this.=
+</pre></li>
+
+<li><pre class=3D"student-text">Why doesn't Apple force IOS upgrades like W=
+indows 10 does automatic updates? It seems like this upgrade-by-choice leav=
+es the most ignorant people most vulnerable to attacks.</pre></li>
+
+<li><pre class=3D"student-text">Why is it safe for iOS to use SHA-1 in its =
+architecture if SHA-1 was broken last year?
+</pre></li>
+
+<li><pre class=3D"student-text">With the additional caveat provided below (=
+that siblings, twins and younger individuals are excluded from the target g=
+roup of users), can it really be expected that Face ID will help in making =
+the phones more secure?
+
+=E2=80=9CWith Face&nbsp;ID, the probability of a false match
+is different for twins and siblings that look like you as well as among chi=
+ldren
+under the age of 13, because their distinct facial features may not have
+fully developed. If you=E2=80=99re concerned about this, Apple recommends u=
+sing a
+passcode to authenticate.=E2=80=9D
+
+</pre></li>
+
+<li><pre class=3D"student-text">Would Apple Employers have special privileg=
+es that can bypass some of the security measures such as having the power t=
+o sign codes and stuff?</pre></li>
+
+<li><pre class=3D"student-text">iOS initially came with no explicit filesys=
+tem. Now it tries to add cloud file system called Files. But it's still har=
+d to for example use pdf readers to modify pdfs on iCloud. How to upgrade t=
+he file permission policy to support natural access to files? What kind to =
+adversary it may introduce?</pre></li>
+
+<li><pre class=3D"student-text">sq10
+
+The keybag seems to be some wrapper on device storage that
+provides additional protection.  How does the keybag
+differ from the keychains that already encrypt files</pre></li>
+
+<li><pre class=3D"student-text">sq10.txt
+
+John McLaughlin
+March 12, 2018
+
+How would Apple's security model change for attackers with physical access =
+and more sophisticated instruments to look at the hardware? For instance an=
+ attacker with an electron microscope. Would the secure enclave and on devi=
+ce keys resist introspection?
+
+</pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--MNCEIQ2pBGPrADMCxO19i5Fe5lNMdMFIuKxIIZ33Z4------

@@ -1,0 +1,1059 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-questions/11
+Subject: Questions for lecture 11 - 6.858
+Date: Wed, 20 Mar 2018 22:59:17 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--CqdTxTWXG4un7RXcjS2AfK0oHgMXKqqBgqEvsXaLHh----"
+
+------MultipartBoundary--CqdTxTWXG4un7RXcjS2AfK0oHgMXKqqBgqEvsXaLHh----
+Content-Type: text/html
+Content-ID: <frame-32871-4f3babca-bd78-4b5d-9790-17c3fba31152@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-questions/11
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Questions for lecture 11 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Questions for lecture 11 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text">How are software updates handled securely i=
+n android?</pre></li>
+
+<li><pre class=3D"student-text"></pre></li>
+
+<li><pre class=3D"student-text">" The PendingIntent object is simply a refe=
+rence pointer
+that can pass to another application, say, via ICC. The recipient
+application can modify the original intent by filling in unspecified
+address and data fields and specify when the action is invoked. The
+invocation itself causes an RPC with the original application, in
+which the ICC executes with all its permissions"
+
+So does the ICC have no way of realizing that the modified intent is going
+to invoke something that violate what is specified by the permission labels=
+?
+Also, has this issue been addressed by Google?
+</pre></li>
+
+<li><pre class=3D"student-text">"Android=E2=80=99s permission label model o=
+nly restricts access to components and
+doesn=E2=80=99t currently provide information flow guarantees, such as in d=
+omain type
+enforcement."
+
+What is domain type enforcement?
+</pre></li>
+
+<li><pre class=3D"student-text">"Any application can access components that=
+ aren=E2=80=99t explicitly assigned an access permission" - I find that ver=
+y surprising. The paper gives "functionality and ease of development" as a =
+reason for doing it that way. Broadly, how common is it for third-party app=
+s to share components? Are more components likely to be public than private=
+?</pre></li>
+
+<li><pre class=3D"student-text">- What exactly is a jailbreak? Searching on=
+line gives answers like being able to download/install code that you should=
+ not be able to, but is it more general than that (just being able to do an=
+ything outside of what was intended to be allowed)?
+
+- The default policy specification is to allow access - why have this polic=
+y instead of the default being to deny access? Wouldn=E2=80=99t that be saf=
+er (even if it is more for the developer to think about if they do not care=
+)?
+
+- In general, is privacy a concern related to security or under security (i=
+.e. is it its own thing, or encompassed in security concerns)?
+
+- The base security system (MAC model) seems simple, and then they added se=
+veral refinements. What does Android security look like today? Have they cr=
+eated a new system and incorporated these refinements (wouldn=E2=80=99t suc=
+h a holistic system be better than a base and a ton of additional refinemen=
+ts)?
+
+- Why are delegation mechanisms diverging from the MAC model? Is it because=
+ they are part of the DAC model?</pre></li>
+
+<li><pre class=3D"student-text">1. If all inter-component communication is =
+happening on a world readable/writable file, what prevents an attacker from=
+ listening in and gaining information about all the applications and proces=
+ses running on the phone?
+2. How exactly does the reference monitor provide mandatory access control =
+enforcement of applications access to components?
+3. How is the uniqueness of permissions maintained? Would it be possible fo=
+r one app to define/grant permissions that allow unintended access to anoth=
+er application's components that have the same permissions defined? (I am s=
+ure the developers thought of this, I am just not sure how it works)
+
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">1. The paper mentions that Android was an o=
+pportunity to escape the legacy security mistakes of the past, but Android =
+ultimately runs on Linux. Is there something special about the "embedded" k=
+ernel that makes it more secure?
+
+2. In Android, the user can't run as root unless they jail break the phone.=
+ Is there anyway for the user to recover from accidentally installing a mal=
+icious application (and accidentally agreeing to malicious permissions)?
+
+3. In relation to the paper question, is each application running in a java=
+ sandbox, or is java just used as a compilation tool and all apps actually =
+run on the same JVM? I'm not sure about my answer.
+</pre></li>
+
+<li><pre class=3D"student-text">1. Why does Android allow applications to l=
+isten for arbitrary intent strings? Is this still the case today?
+
+2. How has the security model been extended to deal with native (non-Java) =
+apps?</pre></li>
+
+<li><pre class=3D"student-text">6.858 - Android Security
+
+- This paper seems very focused on software-level security. Does Android pr=
+ovide
+  hardware level protections (e.g. encrypting the data if the chip is broke=
+ into,
+  ensuring that the OS is verifiable much like iOS does).
+- How does android verify that a third party app is allowed to use device s=
+pecific
+  API's (e.g camera, etc.)?
+</pre></li>
+
+<li><pre class=3D"student-text">Android allows for certain applications lik=
+e the keyboard or accessibility services like screen readers to have much m=
+ore uncontrolled interactions with other applications. It seems like Androi=
+d just kind of gives up when it comes to these services and presents the us=
+er with a dialog warning them of what this application can do. Meanwhile, i=
+OS took a much more controlled approach of, for example, ensuring that keyb=
+oards are run in a sandbox that can't connect to the internet or otherwise =
+expose user's keystrokes. Is this difference in approach based on some unde=
+rlying difference in the approach to security of these two operating system=
+s? Otherwise, why wouldn't Android add similar functionality?
+</pre></li>
+
+<li><pre class=3D"student-text">Android applications are implemented as com=
+ponents without a single entry point. Is there a specific reason to do that=
+? Is there any way to bypass the Java middle layer and run arbitrary assemb=
+ly code on an Android phone?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Android is generally know for being a lot m=
+ore flexible for app developers. Does this ever lead to more security risks=
+? I would have thought so but I hear a lot more about apple security issues=
+ than android.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Android security doesn't seem to have anyth=
+ing tied to hardware...Does the extra hadware layer that apple has contribu=
+te significantly more to security?
+</pre></li>
+
+<li><pre class=3D"student-text">Android sounds terrifically insecure. Have =
+they made steps since this paper to improve?=20
+Additionally, how can phone operating systems be loaded to computers? Would=
+ that hinder computer functionality as we know it today?</pre></li>
+
+<li><pre class=3D"student-text">Are all applications ran under the JVM? Or =
+are there root applications that
+run "natively"? Rather, is it still possible to get buffer overflows somewh=
+ere
+on the device, or does everything being ran on the JVM prevent this?
+</pre></li>
+
+<li><pre class=3D"student-text">Are service hooks simply developer written =
+security checks? Does exporting security control to individual app develope=
+rs expose the OS as a whole? Or is there no downside to doing this as a sin=
+gle apps vulnerability cannot affect other apps due to sandboxing?</pre></l=
+i>
+
+<li><pre class=3D"student-text">Are the permission labels just security by =
+obscurity? If my app is open-source, can't somebody just look and see the l=
+abels for each component and add those labels to the permission list of the=
+ir component so that they can access it? I could use signature permissions =
+to restrict any applications not authored by me from accessing my component=
+s, but what if I want some, but not necessarily all, other apps to have acc=
+ess to a component of mine?</pre></li>
+
+<li><pre class=3D"student-text">Are there any benefits to building Android =
+on top of Linux other than not having to rebuild an OS and filesystem from =
+scratch?
+</pre></li>
+
+<li><pre class=3D"student-text">Are we also seeing the use modularity or th=
+is structure of android system in other systems?</pre></li>
+
+<li><pre class=3D"student-text">Can the delegated permissions be subject to=
+ replay attacks or is that guarded
+against with some version of timestamping?=20
+
+Do Android devices have a level of hardware security similar to Apple's har=
+dware
+security (Aka keys encoded in chips, etc), or does it depend a lot on softw=
+are
+security?=20
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">Can you explain how service hooks work?  Th=
+e document explains how they provide "greater flexibility when defining acc=
+ess policy" but that they "move policy into the application code, which can=
+ cloud application security."  I'm confused by how they can add security, i=
+s is "clouding" application security necessarily a bad thing?
+</pre></li>
+
+<li><pre class=3D"student-text">Could the issues with security policies bei=
+ng expressed in code,
+rather than in the manifest, be resolved by performing static analysis
+on programs to derive a complete description of the security policy?
+</pre></li>
+
+<li><pre class=3D"student-text">Currently, which OS is considered more secu=
+re iOS or Android?
+</pre></li>
+
+<li><pre class=3D"student-text">Danny Tang
+data1013
+3/14/18
+
+Lecture 11
+
+This paper mentions that before, getting a grasp on Android's security mode=
+l was difficult because of how all
+of its parts are implemented. Are there some general guidelines now (9 year=
+s later) or other improvements to
+making Android security more understandable to those who want to build apps=
+ on it?</pre></li>
+
+<li><pre class=3D"student-text">Do android developers find the API to be co=
+nstraining? Are there any features that it lacks for the sake of security? =
+</pre></li>
+
+<li><pre class=3D"student-text">Do android devices provide a secure boot ch=
+ain and encryption of data as seen with Apple devices, or is this all mainl=
+y hardware based and left to the maker of the device instead?
+</pre></li>
+
+<li><pre class=3D"student-text">Do components within the same application h=
+ave the same isolation from each
+other as components in different applications?  Components communicate via
+intents, and intents are sent over ICC and controlled by permission labels.=
+ Both
+individual components and whole applications can have permission labels. I'=
+m
+mostly confused about what it means for a component to be "private" -- does=
+ this
+make it private to other components in the same application as well?  Would=
+n't
+that make it useless, if it can't communicate with any other component?
+</pre></li>
+
+<li><pre class=3D"student-text">Do modern android devices do key signing/si=
+milar techniques to ensure that the OS running on the phone is not broken o=
+r hacked. Do they do something similar to android with the extra encryption=
+ middle layer chip?</pre></li>
+
+<li><pre class=3D"student-text">Do updates of android update permissions on=
+ system and app files? If so, is it the application developer's responsibil=
+ity to handle changes ot existing installations if this occurs?
+</pre></li>
+
+<li><pre class=3D"student-text">Does the ICC and Android Middleware protect=
+ users from standard linux vulnerabilities, or do they simple act as a mean=
+s of privelege separation?</pre></li>
+
+<li><pre class=3D"student-text">From the reading, it seems like Android put=
+s more of the pressure of security on the application developer than iOS. I=
+s this design
+decision a good idea given the likelihood of slow adoption of security meas=
+ures in application development? Is this forced by
+the less stringent enforcements made/possible on Android as opposed to iOS?=
+ Also, does Google have a document for Android akin to Apple's=20
+for iOS that gives reasons for all its security decisions?</pre></li>
+
+<li><pre class=3D"student-text">Has basic Android security architecture cha=
+nged in the past decade as the
+platform has matured?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Have there been any large changes to Androi=
+d security design since the paper was published 9 years ago?</pre></li>
+
+<li><pre class=3D"student-text">How are access permission labels set? It se=
+ems like they are written in plain text in the manifest file. If so, wouldn=
+'t it be possible for another application to simply include that permission=
+ label in their manifest file as well to gain access to the broadcast inten=
+t?
+</pre></li>
+
+<li><pre class=3D"student-text">How are permission labels delegated?</pre><=
+/li>
+
+<li><pre class=3D"student-text">How does having non-custom hardware like Ap=
+ple increase Android's risk of attack? How do the security engineers take c=
+are of it?
+</pre></li>
+
+<li><pre class=3D"student-text">How does making a component private improve=
+ security over access permissions? Is it mainly that marking a component as=
+ private allows the developer to not have to worry about how other applicat=
+ions can access particular permissions?
+
+The manifest file defines the security policy for an application and accomp=
+anies every application package -- is this manifest file stored anywhere on=
+ hardware and is it not potentially compromisable?
+
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">How does security on Android compare to tha=
+t of iOS?</pre></li>
+
+<li><pre class=3D"student-text">How does the access permission label system=
+ work? What prevents applications from arbitrarily claiming labels, do the =
+receipients compare against the permission label
+table per-client? If so, how does this work in cases where there may not be=
+ clearly defined other applications to interact with? Is this more a system=
+ of voluntary
+deescalation on the developers part?</pre></li>
+
+<li><pre class=3D"student-text">How much has Android's changing security po=
+sture affected what we've read about today, and is this really the most rel=
+evant paper on the topic?  That is to say, this information was published i=
+n 2009, which was around the Cupcake/Donut/Eclair era.  Have the changes to=
+ the runtime environment (Dalvik -&gt; ART, Android Lollipop), permissions =
+model (Android Marshmallow), HAL interface (Android Oreo), or any of the ot=
+her myriad changes over the past decade made this reading obsolete?</pre></=
+li>
+
+<li><pre class=3D"student-text">I am uncertain how Android provides app iso=
+lation. According to my understanding of the paper, each application's proc=
+esses run under a separate UID in Linux. And the kernel basically uses thes=
+e UIDs to enforces isolation. Is it correct?
+</pre></li>
+
+<li><pre class=3D"student-text">I asked this question for the last paper an=
+d was told to hold onto it since we were reading about Android next.
+Overall, how is how does iOS vs Android security compare for mobile devices=
+? The security strategies seem much different based on the papers (ex. like=
+ Apple's focus on security down to the hardware level), but is one regarded=
+ as a clear better choice security-wise? Or are there certain things that A=
+ndroid does better than iOS and that iOS does better than Android?</pre></l=
+i>
+
+<li><pre class=3D"student-text">I don't understand permission protection le=
+vels supposed to be used. What stops malicious code from saying it's normal=
+?
+
+</pre></li>
+
+<li><pre class=3D"student-text">I have read the student questions from prev=
+ious years and currently don't have any questions.</pre></li>
+
+<li><pre class=3D"student-text">I know a lot of Android devices use pattern=
+ passcodes to unlock them. How secure are they relative to alphanumeric pas=
+scodes or touch/face id?</pre></li>
+
+<li><pre class=3D"student-text">I noticed that this paper was greatly diffe=
+rent than the iOS one, especially since it's related back to one of the fir=
+st verisons of Android, and it came out of Pennsylvania State University, n=
+ot from Google directly.  I know in terms of the Application Architecture, =
+many of what was said still holds true, but has the overall security archit=
+ecture changed greatly, now that we are also 9 years out from this paper?  =
+Android has for example added the ability to toggle certain permissions and=
+ has become stricter with regards to their PlayStore App policies, but I wo=
+nder if overall, their Security Architecture has or hasn't changed?  Also, =
+does security vary different for each OEM--since Samsung has Knox for examp=
+le, and unlocking the bootloader + rooting is easier on some Android device=
+s than others?</pre></li>
+
+<li><pre class=3D"student-text">I think Android nowadays adapts a different=
+ Java model(something other than traditional JVM) --- I believe they compil=
+e it to some sort of machine code during installation of the softare? Is th=
+e simple label assignment still the main permission control method?</pre></=
+li>
+
+<li><pre class=3D"student-text">I understand that pending intents allow oth=
+er applications to fill in missing fields. How does this help with security=
+ though? I'm not sure I fully understand the example they give in the paper=
+.
+
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">I'm curious as to why Google chose to make =
+the default for component access permissions open, rather than private. Was=
+ there a specific reason for this, or just a security oversight?</pre></li>
+
+<li><pre class=3D"student-text">I'm not sure i understand the design decisi=
+on of using the Android middleware ICC. Doesn't that open possible exploits=
+ if an issue is found in that code? Why not just use linux sockets and comm=
+unicate through them with RPCs ?
+</pre></li>
+
+<li><pre class=3D"student-text">I'm still a bit confused on how jail breaki=
+ng on iphones work and I'm curious to learn more. I understand that android=
+ circumvents it by isolating applications from each other and the base
+code for android so users can't exploit one application or system from anot=
+her, but why doesn't Apple do something similar so their phones couldn't be=
+ jailbroken?
+</pre></li>
+
+<li><pre class=3D"student-text">I'm sure there are design tradeoffs between=
+ the iOS and Android architectures. If you were looking to, now in 2018, de=
+sign the next generation of mobile OS's, which architectural pattern would =
+you find more attractive, and why?
+</pre></li>
+
+<li><pre class=3D"student-text">If I need to write a very performant app in=
+ Java, what are my options? How would I be able to get the performance of C=
+ in writing an android application?</pre></li>
+
+<li><pre class=3D"student-text">If android recommends that all security-awa=
+re developers explicitly define components to be private, why is that not a=
+lways the default behavior?
+</pre></li>
+
+<li><pre class=3D"student-text">If the permissions labels are kept as strin=
+gs, what's
+stopping attackers from giving themselves the appropriate
+permission labels to get whatever permissions they want
+in an application?</pre></li>
+
+<li><pre class=3D"student-text">In general, Apple seems to follow the secre=
+tive/closed-off philosophy of security while Android seems to follow the op=
+en source philosophy. Obviously, there are benefits to both. I personally f=
+eel that it=E2=80=99s better for less tech-savvy people to get iPhones sinc=
+e they offer more out-of-the-package security protections while Android is =
+more customizable but also much easier to make unsecure. Would you agree?</=
+pre></li>
+
+<li><pre class=3D"student-text">In terms of the broadcast intent permission=
+s, Android apparentl allows developers to set access permission labels. The=
+ example they used is that only applications with perm.FRIEND_NEAR can aces=
+s it. But they couldn't an application just randomly (or intentionally) hav=
+e this perm and mess everything up? Similarly, what if two applications hav=
+e similar permission namings?</pre></li>
+
+<li><pre class=3D"student-text">In the iOS paper they mentioned the securit=
+y around software updates (cryptographic signing, no down-grading to less s=
+ecure versions).  Does Android provide the same kind of security around upd=
+ates?  If not, isn=E2=80=99t that a pretty big vulnerability?  </pre></li>
+
+<li><pre class=3D"student-text">In the paper it mentions that URI permissio=
+ns and pending intents diverge from Android's MAC model -- since the releas=
+e of this paper have they figured out a way to implement something similar =
+that is more closely aligned with the MAC model?</pre></li>
+
+<li><pre class=3D"student-text">Is android considered more secure than iOS?
+</pre></li>
+
+<li><pre class=3D"student-text">Is it possible for an Android appliation to=
+ work around the Protected API
+permission check. Specifically, lets say I am application A and I have perm=
+issions to
+for read and write ICC commonds with components in application B. If applic=
+ation B has
+already gained user permission to access the protected Camera API, can't
+application A call application B to capture an image in its app, and then
+application A can subsequently call application B's components to view the
+photo. This would all happen on application A, (capturing and viewing and
+image), without users permissions set to allow the camera on application A,=
+ the
+user only set the camera permision on application B.
+</pre></li>
+
+<li><pre class=3D"student-text">Is it possible to impose any code reviews o=
+r checks on the Application code itself so as to not break the underlying A=
+ndroid hardware? I felt most of the paper focussed on separating the applic=
+ation components and protecting the data, but I wasn=E2=80=99t sure how the=
+y ensure sandboxing so as to make sure Android system itself wasn=E2=80=99t=
+ affected.</pre></li>
+
+<li><pre class=3D"student-text">Is there a security advantage to requiring =
+apps to run in Java, as opposed to the traditional model where apps run as =
+machine code (presumably compiled from a high-level language)?
+</pre></li>
+
+<li><pre class=3D"student-text">Is there a way to change the permission lab=
+els at install time?
+</pre></li>
+
+<li><pre class=3D"student-text">Is there access control on permission label=
+s? </pre></li>
+
+<li><pre class=3D"student-text">Is there any sort of screening process for =
+Android applications like there is for iOS applications? Or does the job of=
+ deciding if an app is potentially malicious or not fall to the user?
+</pre></li>
+
+<li><pre class=3D"student-text">Is there any way to explicitly prevent apps=
+ from communicating with each other on Android? It seems that by default, a=
+ny application can subscribe to implicitly open permissions. In addition, i=
+f you create a perm.FRIEND_NEAR label in your app, you can also snoop notif=
+ications from FriendTracker - the user might not know what perm.FRIEND_NEAR=
+ means and click 'yes' to any permissions dialogue.=20
+</pre></li>
+
+<li><pre class=3D"student-text">It is not particularly clear to me how "act=
+ions" are significantly safer than, say, SQL. The paper
+describes how strings are used to make requests across multiple components =
+- but this seems=20
+to be considerably similar to the type of code that would allow us to do, f=
+or instance, some kind of
+injection. Is this avoided through mediation of ICC and a number of permiss=
+ions?
+</pre></li>
+
+<li><pre class=3D"student-text">It seems like operating systems designed fo=
+r phones like iOS and Android have reasonable practices in place to sandbox=
+ third-party apps and prevent them from messing with each other as well as =
+the system. Is there a reason these practices haven't carried over to deskt=
+op operating systems (unless maybe the new Windows version with the tiles h=
+as something similar)?
+</pre></li>
+
+<li><pre class=3D"student-text">It seems to me that security on both iOS an=
+d Android is significantly improved over desktop computers, with the impedi=
+ment of less configurability and flexibility in what you can do with the de=
+vice. Have there been proposals or moves towards making desktop operating s=
+ystems more similar to mobile OSes, or has this not been so much the case o=
+ut of an assumption that desktop OSes will remain in the domain of "experts=
+" that won't, for example, install obvious malware?</pre></li>
+
+<li><pre class=3D"student-text">It seems weird that a company like Google w=
+ho seems to be extremely security focused (from the paper we read earlier) =
+that Android enables so many permissions by default. Why has this not been =
+changed?
+</pre></li>
+
+<li><pre class=3D"student-text">It's much easier to get an Android applicat=
+ion into the app store than an iOS one. Has this hurt Android in any way? W=
+hat exactly does this extra limitation in the iOS app store prevent?
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 11 (Question About Paper)
+
+Do Android applications suffer any performance limitations by running on to=
+p of a Java virtual machine? It seems like applications can be made faster =
+in iOS since iPhone applications can be written in C/C++.
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 11: Android Security
+3/14/18
+
+This paper talks quite a bit about how the architecture is set up to isolat=
+e components and regulate communication between them and access to resource=
+s. However, how are these permissions and communication protected? Is it si=
+milar to how iOS works with encryption and very careful storage of keys? Bu=
+t key management should be a lot more difficult in that Android doesn't mak=
+e their own hardware like iOS does.</pre></li>
+
+<li><pre class=3D"student-text">Lecture 11: My Android Security Question
+
+Why did Android choose to operate under implicitly open components? I under=
+stand that this makes app
+development much simpler, but leaves the door open for an enormous amount o=
+f exploits and poorly
+coded applications that put the user's device and data in danger. Why was t=
+hat system design worth
+it when Android systems were developed?
+
+Thank you!
+</pre></li>
+
+<li><pre class=3D"student-text">One cool thing about this component setup i=
+s interaction between components. Something I am curious of is handling mis=
+matching permissions. Say App 1 needs App 2 to do something but App 1 has m=
+ore permissions than App 2. Like say App 2 generates some cool type of file=
+ given a directory. But App 2 doesn't have access to this directory. Does A=
+ndroid support permissions passing or would App 1 have to handle that istua=
+tion itself say by copying the files over or something.
+</pre></li>
+
+<li><pre class=3D"student-text">Phones have evolved a lot over the past dec=
+ade. Has the focus in mobile security remained on permissions over the deca=
+de?
+</pre></li>
+
+<li><pre class=3D"student-text">Question about Paper:
+
+The article shows that Android development leads a lot of security decision=
+s in the hands of users. Is there an analysis on how easy it is to break in=
+to Android applications compared to iOS (some sort of general statistic)?
+</pre></li>
+
+<li><pre class=3D"student-text">Question: There are different variants of t=
+he same version of Android based on provider (ie Samsung TouchWiz vs "vanil=
+la" Android on Google phones). These obviously change the UI, but do they a=
+lso change things which impact security? Are there any phones with more sec=
+ure versions of Android than others? </pre></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 11
+
+How accurate is this model in typical user-modified OSes that can replace t=
+he default Android setup on a device (like LineageOS)?</pre></li>
+
+<li><pre class=3D"student-text">Seeing as Android's middleware prevents pro=
+gramming flaws from affecting the entire system, yet other mobile operating=
+ systems like iOS can be jail broken because they do not have this same mid=
+dleware, what are the major downfalls to this design? Why doesn't Apple als=
+o run each process as it's own user identity?
+</pre></li>
+
+<li><pre class=3D"student-text">Since Android doesn't enforce any Hardware =
+security requirements, how well other phone manifactures (like Samsung) sec=
+ure their hardware and how does it compare to Apple?</pre></li>
+
+<li><pre class=3D"student-text">Since permission strings aren't unique and =
+the ICC system just checks whether two components have a permission string =
+in common among their container of permission strings:
+
+Would it be possible for a malicious application developer to assign a brut=
+e force combination of like 2^12 randomly generated permission strings in a=
+n effort to send intents to another application?
+</pre></li>
+
+<li><pre class=3D"student-text">Since the Android operating system is not i=
+ntegrated with the actual hardware of the devices it runs=20
+on, does this make Android inherently less secure than iOS, which is design=
+ed to integrate with
+Apple's hardware?
+</pre></li>
+
+<li><pre class=3D"student-text">Since the Permission Labels for an app are =
+assigned by the app's developer, and they consist of simple strings, what s=
+tops a developer from guessing the permission labels from other application=
+ components and interacting with them?
+</pre></li>
+
+<li><pre class=3D"student-text">Since this paper was written in 2009, what =
+developments  have been made in Android security? Have any of these policie=
+s resulted in flaws or led to security attacks?</pre></li>
+
+<li><pre class=3D"student-text">So this article describes how to isolate th=
+e permissions between application on android platform. How does android ver=
+ify apps in the first place? Say I download an app like tinyscan that conve=
+rts photos into pdfs. I would grant it access to my photo library since it =
+is required. However it shouldn't have access to it all the time, only when=
+ I am using the app. And, what prevents the app from somemhow accessing all=
+ my photos and storing it on their server somewhere?
+
+So the two security concerns I have are how is an app verified before it is=
+ allowed to be available for download? How is data stored in apps I give ac=
+cess to after I am done using the app? Are the permissions reset and the da=
+ta is protected or once I give it access, it has access even after my phone=
+ is locked?
+
+</pre></li>
+
+<li><pre class=3D"student-text">So... some friends and I are really confuse=
+d about what exactly the Android middleware is.=20
+
+Is the JVM the middleware? Part of the middleware? Is the middleware compri=
+sed of other stuff written in Java, executing in the JVM?=20
+
+Help :(
+</pre></li>
+
+<li><pre class=3D"student-text">Some sources cite the large number of diffe=
+rent manufactures of Android phones -- with some being very low cost -- as =
+a reason for Android's higher number of reported vulnerabilities vs IOS, si=
+nce its hard to synchronize everyone to make the same hardware guarantees/p=
+atches. Is this true?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Take the example of an app that needs to ac=
+cess the microphone and the internet - how would you manage security for su=
+ch an app (e.g., only record when I want it to, and only send audio to a sp=
+ecific web service)?  Are you restricted to doing something in the applicat=
+ion code, as discussed in the Service Hooks section?  Would all of that be =
+broken if the component itself was compromised?
+</pre></li>
+
+<li><pre class=3D"student-text">The Android paper mentions that Android ach=
+ieves much better application-level security than iOS and that the browser =
+vulnerability affected iOS but not Android. From the iOS paper, it seemed t=
+hat iOS had excellent security and was extremely hard to break into. How do=
+es Android have better security then? Is it just better isolation between a=
+pps?
+</pre></li>
+
+<li><pre class=3D"student-text">The Android talks about how instead of expl=
+icitly giving an address,
+developers can specify implicit names and let Android determine the best
+component to send it to. How would it do this? They even describe later in
+the paper how for things like public vs private that developers should be e=
+xplicit.
+Why would you ever use this implicit feature?
+</pre></li>
+
+<li><pre class=3D"student-text">The access permission label as far as I can=
+ see in the paper is just a string. In their example app, it was "perm.FRIE=
+ND_NEAR". Lets say that I look on Github and see some Android apps permissi=
+ons string, or find it some other way. Can't I just copy it into my app and=
+ then have access permission to some resource in this app?=20
+</pre></li>
+
+<li><pre class=3D"student-text">The basic MAC model is deviated from in a l=
+arge number of ways. Might a
+capabilities-based security system similar to capsicum have a simpler to
+understand and implement security model? Especially since URI permissions
+use something like them anyways.</pre></li>
+
+<li><pre class=3D"student-text">The iOS security architecture seems to focu=
+s on restricting arbitrary applications to a sandbox, while Android securit=
+y seems to focus on forcing applications to have a certain structure. Seein=
+g as one of the main selling-points of Android is to be highly configurable=
+. Does restricting the structure of applications prevent some features an a=
+pplication might want to have? It seems like this tension would likely lead=
+ to bugs in this security plan...</pre></li>
+
+<li><pre class=3D"student-text">The iOS security paper spent a decent amoun=
+t of time focusing on defense against
+Kernel exploits, even introducing a secure enclave for sensitive data. Does
+Android provide any defenses against such exploits?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper describes =E2=80=9Csignature=E2=
+=80=9D permissions as those "granted only to applications signed by the sam=
+e developer key as the package defining the permission" - what does this me=
+an? Is this saying that applications can only access other applications tha=
+t were signed (aka developed) by the same developer?</pre></li>
+
+<li><pre class=3D"student-text">The paper is very hard to read &amp; unders=
+tand whether the statements made there are still relevant. I found the offi=
+cial guide being much more of help in understanding the Android security mo=
+del and mechanisms. https://source.android.com/security/
+
+</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions jail-breaking of iOS dev=
+ices. Does this still happen with either Android or iOS, and what are commo=
+n vulnerabilities that these techniques exploit?</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that "all ICC occurs via=
+ an I/O control command on a special device node, /dev/binder," and that it=
+ is world readable and writable. What exactly is the role of /dev/binder, a=
+nd why does everyone need to access it? Does it store the information that'=
+s being communicated between two applications? If that's the case, is it po=
+ssible that a bug in the ICC APIs could let an app tamper with communicatio=
+n between two other apps, by overwriting some communications?
+
+In a compact, haiku form:
+
+/dev/binder
+World readable, writable.
+Why is it like that?</pre></li>
+
+<li><pre class=3D"student-text">The paper was published in 2009. Have there=
+ been major updates to the way Android applications are implemented from th=
+e viewpoint of security?</pre></li>
+
+<li><pre class=3D"student-text">This article focuses much more on the progr=
+amming model aspects of phone
+security, than the iPhone white paper did. Do current Android devices also =
+have
+similarly in depth security precautions?
+</pre></li>
+
+<li><pre class=3D"student-text">This article was published in 2009. Are the=
+ updates to the Android Security model in the past 8 years not significant?=
+</pre></li>
+
+<li><pre class=3D"student-text">This is related to the recent lecture on SG=
+X --=20
+It would have been great if we had heard from Srini/his students on their w=
+ork on SGX.
+They seemed to have released a detailed analysis on SGX recently, and have =
+attempted at formally proving it.
+http://people.csail.mit.edu/devadas/ has details.
+Specifically, https://eprint.iacr.org/2017/565.pdf and https://eprint.iacr.=
+org/2016/086.pdf
+It would have been good to get their overview after having been introduced =
+to it, mixing a broader overview of nuances involved vs. diving into some o=
+f its tech-specifics.</pre></li>
+
+<li><pre class=3D"student-text">This isn't entirely related to the paper, b=
+ut more about how Android implements its authentication, if it wanted to im=
+plement an equivalent feature such as facial recognition. iOs implements a =
+large portion of its security via a "Secure Enclave." Does Android have an =
+equivalent sort of "Secure Enclave" build into the kernel?
+</pre></li>
+
+<li><pre class=3D"student-text">This paper as well as Lab 2 seem to lend th=
+emselves towards building more of a microservices oriented system. Is secur=
+ity a big reason that microservices are on the rise besides just developer =
+productivity?</pre></li>
+
+<li><pre class=3D"student-text">This paper does really focus on Apps sandbo=
+xing and inter-component
+communications. Does Android have any plan that ensures even the=20
+system is compromised, the user's data is still secure? Just like
+what iOS does?</pre></li>
+
+<li><pre class=3D"student-text">This paper is from 2009, how much of it is =
+still applicable as of 2018?
+</pre></li>
+
+<li><pre class=3D"student-text">What steps are taken to ensure that the lin=
+ux system at the base of the Android stack is not compromised? Is the Andro=
+id system vulnerable to the same attacks that a unix-like desktop system is=
+ vulnerable to, or are there extra measures taken? </pre></li>
+
+<li><pre class=3D"student-text">What thought goes into choosing a middlewar=
+e layer like Java? It's a private platform, so wouldn't that create a (poss=
+ibly dangerous) third party trusted entity of Oracle?
+</pre></li>
+
+<li><pre class=3D"student-text">Which security design has shown to be bette=
+r, Android or iOS?</pre></li>
+
+<li><pre class=3D"student-text">Why aren't components private by default? W=
+ouldn't this make it easier to avoid mistakes in securing applications?</pr=
+e></li>
+
+<li><pre class=3D"student-text">Why do they give commands and labels for th=
+e ICC in string form rather than something with a smaller set of allowed va=
+lues that can be more easily checked? It seems like there might be a more r=
+easonable subset of strings that actually correspond to desired actions. An=
+d for the labels, requiring the developers to come up with names requires a=
+ broader understanding of what other components might be running to not hav=
+e overlapping names.=20
+ </pre></li>
+
+<li><pre class=3D"student-text">Why do we choose to focus on physical contr=
+ol with iOS but malicious software with Android?
+</pre></li>
+
+<li><pre class=3D"student-text">Why does Apple vet apps more than Android? =
+What have been the pros and cons of Android's choice?</pre></li>
+
+<li><pre class=3D"student-text">Why is the Android ecosystem so lax on firm=
+ware updates? There have been many
+serious exploits for Android that have been revealed, and patched, but some=
+ of
+these updates sure take their sweet time to appear on people's phones. Are
+OEMs completely incapable of pushing out these updates?</pre></li>
+
+<li><pre class=3D"student-text">Why is the default for app components to be=
+ public instead of private? This
+seems odd and counterintuitive to the idea of helping inexperienced
+developers with security. It kind of seems like Android is trusting
+developers maybe more than they should, particularly compared to Apple's
+model we just read.</pre></li>
+
+<li><pre class=3D"student-text">Why was Java the choice of language for dev=
+eloping Android, and were there other languages that were also being strong=
+ly considered?</pre></li>
+
+<li><pre class=3D"student-text">With Android's Intent model, it seems that =
+any application can register for common intent types such as view an image.=
+ Thus, an unsophisticated user may install a malware that, through handling=
+ intents, access much of the user's data. Particularly because Android apps=
+ do not need to go through a central distribution platform as iOS App Store=
+ and can be installed directly from apk file, are there ways to prevent thi=
+s problem?=20
+</pre></li>
+
+<li><pre class=3D"student-text">sp11
+
+The paper mentions that if a developer does not assign
+access permission of a target activity, the default is=20
+that any Android application can access.  Is there any
+benefit to this model versus a default of no Android
+application can access other than just ease of programming?</pre></li>
+
+<li><pre class=3D"student-text">sq11.txt
+
+John C. Mclaughlin
+March 14 2018
+
+Since Java is generally considered a memory safe language, is it easier for=
+ attackers to target logic bugs in the implemenation of the security polici=
+es, or still look for memory corruption type bugs?
+
+</pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--CqdTxTWXG4un7RXcjS2AfK0oHgMXKqqBgqEvsXaLHh------

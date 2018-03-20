@@ -13,3 +13,5 @@ done < "$filename"
 
 echo "replacing questions.html"
 sed -i "" "s@questions.html%3F@questions.html?@g" css.csail.mit.edu/6.858/2018/*.html
+
+cp questions.html css.csail.mit.edu/6.858/2018/questions.html

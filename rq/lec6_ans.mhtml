@@ -1,0 +1,1774 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-answers/6
+Subject: Answers for lecture 6 - 6.858
+Date: Wed, 20 Mar 2018 22:58:21 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--jMVdNgvYbR5FsmW4W2molHyfj6puQWPrkDczbtMggT----"
+
+------MultipartBoundary--jMVdNgvYbR5FsmW4W2molHyfj6puQWPrkDczbtMggT----
+Content-Type: text/html
+Content-ID: <frame-32861-155b432a-359e-4f93-ab6b-92dc40ef1041@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-answers/6
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Answers for lecture 6 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Answers for lecture 6 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text"></pre></li>
+
+<li><pre class=3D"student-text">
+Lecture 6
+
+The authors of the Capsicum paper describe several strategies for how to us=
+e Capsicum in several applications (Section 4). How would you recommend usi=
+ng Capsicum in the different components of OKWS? Are there features missing=
+ from Capsicum that would have made it easier to build OKWS?
+
+
+I would recommend using Capsicum to augment the existing privilege separati=
+on in the system, which is mainly acheived by running each process separate=
+ly, and in its own chroot jail. However, as the paper mentioned, chroot onl=
+y offers filesystem protection, and no protection against weakly configured=
+ DAC on the sysctl and PID namespaces. Since the system is already somewhat=
+ separated, we could use Capsicum sandboxes in addition to chroot. I'm don'=
+t think this has much effect on the functionality of OKWS, but it might aff=
+ect the okd service. Okd won't have access to the global file name space, b=
+ut I don't think it does anyways because of the chroot jail. However, only =
+certain system calls are allowed by Capsicum, so that might affect what okd=
+/other services can do. Besides this restricted ability to do system calls,=
+ I'm not sure what else is missing from Capsicum that could help in buildin=
+g OKWS.
+</pre></li>
+
+<li><pre class=3D"student-text">Capsicum could be used to implement privile=
+ge separation in OKWS. Using Capsicum, different components of OKWS could b=
+e kept isolated from each other so that if one is compromised, others can s=
+till be safe.</pre></li>
+
+<li><pre class=3D"student-text">You start okld in the global namespace (bec=
+ause it needs to access port 80). After accessing port 80, we run cap_enter=
+ to convert to capability mode.=20
+
+Then when we spawn the other processes (pubd, okd, oklogd), they'll all by =
+default have restricted capabilities. We can restrict them even further bas=
+ed on what exactly they need.=20
+</pre></li>
+
+<li><pre class=3D"student-text"># Lecture 6
+-----------------------------------------------------
+
+The authors of the Capsicum paper describe several strategies for
+how to use Capsicum in several applications (Section 4). How would
+you recommend using Capsicum in the different components of OKWS?
+Are there features missing from Capsicum that would have made it
+easier to build OKWS?
+
+----------------------------------------------------
+
+Capsicum seems to aim to provide a framework for developers to be able to m=
+ore
+efficiently implement sandboxed programs. Additionally, capsicum also allow=
+s
+developers to create this sandboxes without using calls like `chroot` that =
+may
+require root privileges. I would recommend using Capsicum in OKWS to restri=
+ct
+privileges even further. For instance, they could launch okld, bind to port=
+ 80,
+then remove all sudo privileges and replace all of the chroot jails with Ca=
+psicum
+(or linux variant) sandboxes for each of the processes.
+</pre></li>
+
+<li><pre class=3D"student-text">- The overall design for OKWS would remain =
+more or less same.
+- Capsicum libraries can be used to add additional features like not allowi=
+ng ../ access
+- Capsicum does not require root privileges to enforce its libraries. This =
+would have been handy to use in the ld daemon which sets up all the permiss=
+ions and capabilities. That's a single point of failure if taken over, sinc=
+e it runs as root (although on a registered port).
+
+- Capsicum talks of enforcing system level capabilities. Application level =
+capability/privileges are not supported in a way. It would have been conven=
+eint if, for instance, capsicum had token management capabilities for authe=
+ntication between service calls, it would have helped in OKWS' seamless des=
+ign.</pre></li>
+
+<li><pre class=3D"student-text">6.858 Lecture 6
+
+Some benefits and ways that OKWS could take from capsicum:
+  - Use cap_enter for virtual memory mappings and specialized privileges
+    - Enforces no shared memories/global accesses
+    - Enforces no global paths if the service is not superuser
+    - Enforces certain prvileges based on file descriptors
+    - Enforces compartmentalization
+  - Check prvileges using CAP_{PRIVILEGE} to enforce above
+</pre></li>
+
+<li><pre class=3D"student-text">A major component of OKWS is priviledge sep=
+aration. This goal can be mostly implemented via Capsicum. However, we'd st=
+ill need the database proxies in OKWS because Capsicum only sets capabiliti=
+es on user data, but proxies provide a much stricter restriction.=20
+</pre></li>
+
+<li><pre class=3D"student-text">All OKWS services are restricted to RPC-bas=
+ed communication--not fd or shared memory communication, so those services =
+should be modified to use the full libcapsicum API. User-services, however,=
+ could be exposed to the cap_enter call to optionally further compartmental=
+ize their functionalities that don't warrant full service-level separation.
+</pre></li>
+
+<li><pre class=3D"student-text">Answer to Paper Question:
+
+Access rights for data services can be restricted using Capsicum. For examp=
+le, we can use it to force worker processes to only have access to a set of=
+ file descriptors to work with, enforcing the chroot-jail applied to the wo=
+rking directory. Using this, you could also enforce that Fds have only read=
+ bit sets, preventing some form of data corruption.=20
+
+A programming language where capability access control is inherent would ma=
+ke enforcement easier for access control in OKWS. There is no such language=
+ in Capsicum</pre></li>
+
+<li><pre class=3D"student-text">As described in section 4.1 OKWS applicatio=
+ns could be modified directly to use cap_enter since there appears to be th=
+e lowest incurred overhead in this case.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Both Capsicum and okws attempt to create a =
+more fine grained access priviledge system so that users with low priviledg=
+es can't access data with a higher priviledge.
+Because of this, capsicum seems to provide a natural platform for the devel=
+opment of okws. Capability modeprovides the sandbox necessary for separatin=
+g
+different web services and ensure they don't have access to each other's da=
+ta. Moreover, capabilities are a good abstraction for ensuring attackers th=
+at adquired
+an access token cannot perform higher level actions with it, similar to how=
+ the API abstraction achieves this in okws.
+</pre></li>
+
+<li><pre class=3D"student-text">Capsicum capabilities can be used to enforc=
+e isolation and make sure processes only have access to the information the=
+y really need- the main goals of OKWS. Capsicum capabilities are more stric=
+t than file descriptors, so they can better enforce that processes are only=
+ accessing files that they are allowed to. Capsicum can also be used to com=
+partmentalize and isolate processes by submitting different file descriptor=
+s that correspond to different capabilities. This creates tightly constrain=
+ed sandboxes for each process that can be split up.=20
+
+One feature that may be missing is the ability to make RPC to different dat=
+abases. Capsicum is more concerned about security within an OS, but OKWS ne=
+eds to handle different databases on different machines.</pre></li>
+
+<li><pre class=3D"student-text">Capsicum could be used as an alternative to=
+ process isolation in OKWS, because it would provide isolation for differen=
+t logical components without the need for different OS processes.
+</pre></li>
+
+<li><pre class=3D"student-text">Capsicum could be used to eliminate unneces=
+sary rights in okd and pubd. In particular, defining capabilities via Capsi=
+cum for okd further reinforces the policy that okd ought to only be able to=
+ access a handful of known services. Similarly, defining capabilities for p=
+ubd protects against potential administrator mistakes - for example, even i=
+f the administrator were to mistakenly set the template directory tree as r=
+ead-write, if Capsicum is properly used then pubd will still not be vulnera=
+ble. This corresponds to choice (2) of section 4. </pre></li>
+
+<li><pre class=3D"student-text">Capsicum could have been used to sandbox ea=
+ch of the components of OKWS. This would add even more protection to each c=
+omponent.
+</pre></li>
+
+<li><pre class=3D"student-text">Capsicum implements one way of sandboxing, =
+which is one of the themes of OKWS (separation of processes). Thus, each mo=
+dule in OKWS can be implemented as one sandbox of Capsicum.=20
+
+Capsicum does not harden RPC, which is extensively used in OKWS. Specifical=
+ly, the Capsicum paper describes  "Capsicum does not provide or enforce the=
+ use of a specific Interface Description Language (IDL), as existing compar=
+tmentalised or privilege-separated applications have their own, often hand-=
+coded, RPC marshalling already." Having a unified and secure RPC IDL within=
+ Capsicum can free developers of OKWS from worries of developing an IDL fro=
+m scratch.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Capsicum sandboxing is useful for jailing t=
+he application. The .. restriction is also valuable for the php libraries t=
+o prevent access. OKWS could then instead of changing permissions itself, p=
+ass around capabilities for its workers. Capsicum could really help OKWS if=
+ it had an infrastructure for creating less privileged processes off a runn=
+ing process by allowing the intersection of capabilities. The sandboxing in=
+ general is fairly valuable and simplifies a lot of the work in OKWS.
+</pre></li>
+
+<li><pre class=3D"student-text">Capsicum would allow for having okld enter =
+into capability mode using cap_enter() after binding to port 80, and all th=
+e subsequent processes spawned by okld would then inherit this capability m=
+ode.  This is desirable for a number of reasons - For instance, although pu=
+bd has read-only access to static files, this still enables broad rights (e=
+.g., operations on metadata) as noted in section 2.2 of the capsicum paper.
+</pre></li>
+
+<li><pre class=3D"student-text">Capsicum would be an effective tool for OKW=
+S to use to enforce privilege separation of the various processes, as well =
+as specify the capabilities of each process with respect to the file system=
+ and IO devices.=20
+
+Capsicum could improve efficiency of OKWS by allowing services to run in di=
+fferent processes with the same user id, and enforcing the restricted acces=
+s to files by encoding the permissions of each process in the file descript=
+ors.
+
+A feature that would make OKWS development a lot easier would be sandboxing=
+ within a single process. This way, even though a service runs in a single =
+process, the service could serve many users while still maintaining isolati=
+on between different users. </pre></li>
+
+<li><pre class=3D"student-text">Capsicum would be effective in secureing ok=
+ws in places where the permissions for certain actiions could result in pot=
+ential security flaws. In particular process isolation would be a good loca=
+tion to limit potential bugs.
+</pre></li>
+
+<li><pre class=3D"student-text">Capsicum would eliminate the need for using=
+ chroot in OKWS. Capsicum also has an integrated RPC system that would redu=
+ce the implementation concerns for someome trying to implement OKWS. I'm a =
+little confused about the message passing mechanisms in Capsicum. OKWS has =
+many different components that interact with each other. How would OKWS sen=
+d information from the database to the service? Is it high level enough to =
+enable a developer to plug in any data source they want? </pre></li>
+
+<li><pre class=3D"student-text">Capsicum would improve the design of OKWS. =
+By using libcapsicum in order to sandbox the different processes discussed,=
+ the extra layer of protection provided by OKWS would be easier. OKWS used =
+RPC and a rule based system in order to only allow certain communications a=
+nd database queries depending on a processes needs. Capsicum has this funct=
+ionality inherently since processes can be treated as file descriptors in o=
+rder to limit interprocess communication and database access control could =
+be handled in a similar manner. Though filtering database queries would sti=
+ll be handled by OKWS, controlling what database are accessible could be ha=
+ndled by Capsicum if database frontends are separate processes. In section =
+4, modification model 2 would work well for adapting OKWS since there is al=
+ready an idea of process isolation built in, but the access control portion=
+ of creating seperate processes and having them communicate could be added =
+by using Capsicum sandboxes.</pre></li>
+
+<li><pre class=3D"student-text">Capsicum's method of wrapping file descript=
+ors could easily be used to enforce
+restricted access to various I/O in the different components of OKWS. For
+example, pubd could be limited to read only on templates, oklogd read-write=
+ on
+the log files, etc. In addition, OKWS would no longer need to rely on chroo=
+t to
+jail proccesses. One thing that Capsicum doesn't do that might be helpful t=
+o
+OKWS is to provide a consistent RPC interface, but as mentioned in the pape=
+r,
+this is an intentional design choice since the authors of compartmentalised
+systems likely have already come up with an interface.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Capsicum=E2=80=99s key idea is that it prov=
+ides a sandboxing API that can help better separate applications. The capab=
+ilities that it provides could be used by OKWS to create partitions and run=
+ their services independently. I imagine that OKWS would tap into Capsicum=
+=E2=80=99s capability mode.</pre></li>
+
+<li><pre class=3D"student-text">Danny Tang
+
+data1013
+
+2/23/18
+
+
+
+Lecture 6
+
+Question:
+
+The authors of the Capsicum paper describe several strategies for how to us=
+e Capsicum in several applications (Section 4). How would you recommend usi=
+ng Capsicum in the different components of OKWS? Are there features missing=
+ from Capsicum that would have made it easier to build OKWS?
+
+Answer:
+
+The components of OKWS are pubd, okd, okld, and oklogd.
+
+I would use the first strategy, using cap_enter directly, with oklogd. This=
+ is because the strategy is
+supposed to work well with applications with a simple structure - oklogd's =
+role is basically to just
+log data, which falls under the recommended requirements.
+
+I would use the second strategy, using cap_enter to reinforce applications =
+with existing privilege
+separation, with pubd and okd. This is because these two components already=
+ involve compartmentalizing
+information and access between different web services - pubd separates out =
+read access to configuration
+files and HTML templates, while okd routes requests to the different servic=
+es.
+
+I would use the third strategy, modifying the application to use the full l=
+ibcapsicum API, with okld.
+This is because this strategy provides the strongest protection, which I th=
+ink would be good for okld
+to have since it is responsible for launching and relaunching the web servi=
+ces in the first place. Good
+security in the intial setup should propagate to when we're actually using =
+the rest of OKWS.
+
+I believe that the idea of sandboxing and the general concept of capabiliti=
+es would have helped in
+building OKWS, since the goal of OKWS was to limit the access to data that =
+each individual service in the
+overall application had. Capabilities are very similar, and seem to encompa=
+ss this idea.</pre></li>
+
+<li><pre class=3D"student-text">Each component of OKWS could be given a dif=
+ferent set of capabilities using Capsicum. OKWS already tries for privilege=
+ separation and compartmentalisation of each component, which is in line wi=
+th the goals of Capsicum and the intended use, so it would be logical to us=
+e Capsicum to restrict some of the OKWS processes access to files and also =
+to sandbox processes. However, Capsicum seems to lack a way to place restri=
+ctions on what can be done with a file once access to it is granted, so OKW=
+S would still need to implement dbproxy to control access to the databases.=
+ Additionally, Capsicum has no system in place for monitoring the isolated =
+processes or starting them up so okld and oklogd would still have to be imp=
+lemented.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Each service in OKWS is already chrooted in=
+to a particular directory so that it can only access files there or through=
+ RPCs to, e.g., database proxies. We could replace the chroot which sets a =
+certain directory as the root for a service with a capability through Capsi=
+cum that gives the same directory as the capability (wrapped file descripto=
+r) to that service. As noted in the Capsicum paper, using chroot alone "suf=
+fers significant sandboxing weakness (for example, permitting full access t=
+o the System V shared memory as well as all operations on passed file descr=
+iptors)". By swapping this for a capability, we have the same guarantees in=
+ terms of which files can be accessed, and we remove these "sandboxing weak=
+nesses". By using `lc_limitfd` we can also change which capabilities are gr=
+anted if some services should, e.g., only have read access.
+One of the other issues with OKWS is that chroot requires running as root; =
+using a capability instead, as described above, does not. Thus, no process =
+will need to be root if switching to capabilities (okld needs to bind to po=
+rt 80, which does require root, but then it can drop root privileges immedi=
+ately after).
+This method should require minimal code changes but have the security benef=
+its of 1) no process with root privilege (for very long, at least) and 2) g=
+reater privilege reduction than chroot.</pre></li>
+
+<li><pre class=3D"student-text">First, it's important to notice that OKWS a=
+lready implements many of Capsicum's ideas: although not making explicit us=
+e of 'capabilities',
+OKWS does have a considerably similar system set up in the way it handles R=
+PCs, for example. Hence, I believe that applying Capsicum to=20
+OKWS would not make much of a difference in a high-level setting (in a mach=
+inte-to-machine level); rather, it would be useful within a
+single machine itself: one could compartimentalize applications within mach=
+ines (in a fashion that should be very similar to that=20
+described for the implementation for chromium), minimizing even more the da=
+mage that happens when a given machine is compromised. Depending
+on the context of the application, it might be even possible to isolate RPC=
+ calls that occur within a given machine to the db, such that=20
+we can guarantee even more the principle of least privileges. I think that =
+this is a very important missing feature that would have made=20
+OKWS considerably more secure.
+</pre></li>
+
+<li><pre class=3D"student-text">For OKWS, Capsicum=E2=80=99s sandboxing mec=
+hanisms could be used to assign different privileges to different services =
+(avoiding the need for server processes to be chroot-ed).  However it requi=
+res the elimination of global namespaces which may make OKWS difficult to b=
+uild; though it=E2=80=99s hard to control access to variables in the global=
+ namespace, allowing a limited number may make it easier for OKWS. </pre></=
+li>
+
+<li><pre class=3D"student-text">For okld, Capsicum might not be the best fi=
+t since okld starts other processes in OKWS and Capsicum would pass capabil=
+ity mode features to all of them. Furthermore, okld needs superuser privile=
+ges which capability mode would not provide. Most other modules would defin=
+itely benefit from sandboxing in capability mode.=20
+
+Features that would make Capsicum easier to build for OKWS are protections =
+for TCP connections as opposed to just filesystem protections.</pre></li>
+
+<li><pre class=3D"student-text">For pubd and oklogd, I'd like to use capabi=
+lity mode because
+they only interact with certain directories. For okd, it's
+better to use capability mode because it also works with
+certain type processes. But for svc and dbproxy, libcapsicum
+might be better because different services and database proxies
+work with different resources, it's necessary to specify the
+privilege for each service or proxy. For okld, I don't know if
+it's necessary to put it in the sandbox because it's designed to
+run with super user privilege, then it can manage each part of
+okws. But we can certainly put okld in the sandbox with libcapsicum.
+Features like auto privilege specification would be very helpful.
+As far as I know, the capability mode specifies a minimal=20
+privilege set. Maybe something like auto privilege specification
+would allow programmers not having to deal with libcapsicum.</pre></li>
+
+<li><pre class=3D"student-text">For the following answer, I will refer to t=
+hree approaches presented in Capsicum as [aproach n]
+
+Since pubd uses only ambient privileges, it's easily handed by [approach 1]=
+.
+
+Since okd is a simple program that routes requests to services, but need pr=
+evilege to listen on incoming connections, it will be most efficient to enh=
+ance with [approach 2]. This is because resources(socket connections) are n=
+ot acquired beforehand but during the duration of the running program.
+
+The launcher okld will need to launch new services(at the begining or after=
+ a crash), create new socket etc. It's best to reimplement with whole Capsi=
+cum API([approach 3]).=20
+
+For the database component, since it can decide all its resources beforehan=
+d, [approach 1] would suffice.
+
+Now the question is how individual service should adapt to the Capsicum mod=
+el. From the OKWS paper, individual services does not need to be implemente=
+d in raw C(for instance, I believe an instructor mentioned on piazza that a=
+ python interface were available). One easy way is to wrap the entrance of =
+all such services with [approach 1]. This seems reasonable since in OKWS no=
+ne of the services really need any new permission once launched anyways(sin=
+ce OKWS is already a compartmentalized model). But it might be beneficial i=
+f Capscium can provide higher level language bindings. Note that this might=
+ not be trivial, since for higher level languages, most of the file operati=
+ons are built-in primitives and so hijacking those primitives will require =
+manual adjustments to the higher level language itself.</pre></li>
+
+<li><pre class=3D"student-text">For the most part, OKWS has a well sandboxe=
+d design that transfers filesystem/network privileges to services only wher=
+e necessary. We can use Capsicum for the more vulnerable parts of the syste=
+m.
+
+okld has previously run with root privileges, which are necessary to gain a=
+ccess to Port 80. To integrate cap, we receive the file descriptors for Por=
+t 80 first and then drop the root privileges by launching cap. In addition,=
+ while okld must set metadata/permissions for service executables before ru=
+nning, it need not modify them. Therefore, write privileges can be revoked.
+
+The individual web services can also recieve fine grained tuning with cap; =
+we can set the capabilities of the services only to what it requires - whil=
+e chrooting fixes most write privileges, adding additional requirements to =
+database RPC calls makes the system more secure to intrusion.=20
+
+Some features that Capsicum are missing is good debugging tools - building =
+distributed systems is inherently a challenge, and bugs such as the compres=
+sion level bug in gzip are difficult to catch. Adding cap to OKWS would req=
+uire lots of programming time.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Having already been implemented with compar=
+tmentalisation in mind, OKWS can=20
+easily be modified the same way Chromium was, by adding cap_enter to reinfo=
+rce
+the sandboxes that each OKWS service lies in (svc1, svc2, svc3, etc.)
+In fact, oklogd and pubd can also benefit from the gain in security obtaine=
+d
+with the call the cap_enter.
+</pre></li>
+
+<li><pre class=3D"student-text">How would you recommend using Capsicum in t=
+he different components of OKWS?
+
+- okld: With Capsicum, it could first bind to port 80 and drop its capabili=
+ties so it does not
+need to run as root the entire time.
+- okd: Two colliding processes with different capabilities can reace to act=
+ively rearrange
+a tree so that the check for access right always passes. In this case, Caps=
+icum could prevent
+okd from allowing the remote client to access to path it should not access.
+- oklogd: We can use Capsicum to restrict its capabilities to append only.
+- pubd: We can use Capsicum to restrict its capabilities to read only after=
+ it has
+acquired the public HTML templates.
+
+Are there features missing from Capsicum that would have made it easier to =
+build OKWS?
+Maybe I haven't completely understood the paper but I don't think Capsicum =
+could help okd construct
+its dispatch table upon startup securely which is a functionality that woul=
+d be nice to have.
+</pre></li>
+
+<li><pre class=3D"student-text">How would you recommend using Capsicum in t=
+he different components of OKWS?=20
+
+As OKWS's design already takes isolation and privelege separation into acco=
+unt, the main advantage of using Capsicum could be to reinforce the sandbox=
+es of existing privelege separation in OKWS. The root process in OKWS is ok=
+ld, and it normally runs as superuser, but with Capsicum, okld's priveleges=
+ could be limited after it binds to its priveleged port (the held file desc=
+riptor would be kept as a capability... the okld process would now be sandb=
+oxed, but the port capability would have leaked into the sandbox). At runti=
+me, okld launches services -- with OKWS without Capsicum, the launcher need=
+s to be in root to sandbox these launched services; however with Capsicum, =
+okld would not necessarily need to be in root. So Capsicum would help tight=
+en any security vulnerabilities due to okld being root in OKWS.
+
+Capsicum could be used to similarly reinforce the sandboxes of the okd, pub=
+d, oklogd, and the svc processes. The okd process could be put into capabil=
+ity mode where its capabilities could be specified to include listening on =
+the port to which okld had bound. Services in OKWS are chrooted to a remote=
+ jail directory and lack priveleges to access the file system; Capsicum wou=
+ld reinforce this by denying all access to global namespaces.=20
+
+Are there features missing from Capsicum that would have made it easier to =
+build OKWS?
+
+I find Capsicum and OKWS very similar in what they intend to achieve in ter=
+ms of privelege separation. The ideas behind capability-based isolation in =
+Capsicum seem to already be implemented to some degree in OKWS (passing fil=
+e descriptors, message RPCs). OKWS also contains databases as components an=
+d use database proxies. Perhaps features specific to sandboxing database pr=
+oxies could have made it easier to build OKWS. </pre></li>
+
+<li><pre class=3D"student-text">How would you recommend using Capsicum in t=
+he different components of OKWS? Are there features missing from Capsicum t=
+hat would have made it easier to build OKWS?
+
+Capsicum can enforce priviledge separation with its capabilities. It could =
+manage the relations between okld, oklogd, pubd, svc and okd.
+It doesn't have features (root) which is safer because it forces every func=
+tion to specify what capabilities they require, reducing the=20
+effects of ambient access.
+</pre></li>
+
+<li><pre class=3D"student-text">I would reccomend using strategy 2 "Use cap=
+_enter to reinforce the sandboxes of applications with existing privelege s=
+eparation or compartmentalization." Capability mode can be used to reinforc=
+e the existings sandboxing that was built into OKWS. </pre></li>
+
+<li><pre class=3D"student-text">I would recommend using approach 2 for OKWS=
+. Since OKWS already performs compartmentalisation, we can simply use Capsi=
+cum's cap_enter to reinforce the sandboxes and privilege separation of OKWS=
+. The capabilities of Capsicum can be used to enforce access control of OKW=
+S, in a more secure way than just doing chroot. Since Capsicum is built on =
+file descriptors, but OKWS relies on RPCs between each of its different com=
+ponents, maybe if Capsicum supported capabilities built on RPCs directly th=
+at would have made it easier to build OKWS, since OKWS use RPCs as a messag=
+e-passing primitive as opposed to file descriptors.
+</pre></li>
+
+<li><pre class=3D"student-text">I would recommend using cap_enter to reinfo=
+rce the sandboxes of the different components of OKWS, since they have exis=
+ting privilege separation or compartmentalisation. Features in Capsicum tha=
+t would make it easier to build OKWS would be having specific functions all=
+owing processes to be chrooted.</pre></li>
+
+<li><pre class=3D"student-text">I would recommend using capsicum to sandbox=
+ processes spawned in OKWS, enabling stricter isolation. The use of capabil=
+ity modes enforces specific access rules and prevents lapses in access cont=
+rol. If capsicum provided 'proofs of isolation' or included a runtime tool =
+to detect violations of compartmentalization would make verification of OKW=
+Ss' security guarantees easier to enforce for a developer.
+</pre></li>
+
+<li><pre class=3D"student-text">I would recommend using libcapsicum to sand=
+box each different proxy servers and services. The steps are described in s=
+ection 4 with using cap_enter and the api. In each component, using cap_ent=
+er would allow localality of the file and reduce the damage when one machin=
+e is compromised. Another additional feature to make it easier to build for=
+ OKWS is that it can add a ultimate restricted priviledge access on okd to =
+further unsure no other source can threatens its security.=20
+
+</pre></li>
+
+<li><pre class=3D"student-text">If OKWS were to use Capsicum, presumably `o=
+kld` would use libcapsicum to launch
+the other processes with only the limited capabilities that they needed. Th=
+us
+for instance, logd would get the capability to write to the log directory, =
+but
+non of the other processes would have any write permissions at all.
+
+It does not seem that Capsicum has the ability to restrict processes to app=
+end
+but not truncate files. This would be useful in OKWS to be absolutely certa=
+in
+that any attacker would be unable to eliminate the logs of their activity.
+</pre></li>
+
+<li><pre class=3D"student-text">In OKWS, each of the components can be more=
+ strictly sandboxed by using Capsicum's cap_enter once they do not need sup=
+eruser privileges. Almost all of the components of an OKWS system (okd, okl=
+ogd, pubd, and services) do not need such privileges at all, except for okl=
+d, which only needs to bind to a privileged TCP port and can enter capabili=
+ty mode after that. All of the file descriptors used to communicate between=
+ the OKWS components can also be replaced by Capsicum capabilities, set wit=
+h appropriate permissions.</pre></li>
+
+<li><pre class=3D"student-text">In OKWS, instead of chrooting all services =
+to a remote jail directory, it could
+use Capsicum to give each process even more limited access privileges than
+reading shared libraries upon startup and dumping core upon abnormal
+termination. Capsicum could restrict access to System V shared memory and t=
+he
+network. With Capsicum, okld would also not have to be run as superuser.
+
+Each web service could also be given more limited privileges with Capsicum
+instead of the protections currently offered just by different users (DAC) =
+and
+separate processes. With Capsicum, each process could be run as the same us=
+er if
+they all lacked the capability to access the global namespace. As a previou=
+s
+year's question said, a compromised service without this capability couldn'=
+t
+kill other processes by the same user.
+
+Capsicum doesn't have features to restrict access to different parts of the=
+=20
+application depending on the external user. This feature would have made it
+easier to build OKWS.
+</pre></li>
+
+<li><pre class=3D"student-text">In OKWS, okld (the launcher daemon) is in c=
+harge of launching all the OKWS processes. In=20
+particular, to launch the web service, it passes three file descriptors to =
+the web service
+it launches. This fits well with the Capsicum model, since the passed file =
+descriptors
+relate to the capabilities assigned by Capsicum. To incorporate Capsicum in=
+to OKWS, we can=20
+use call cap_enter on okld in order to place all the processes spawned by o=
+kld in=20
+capability mode. Although Capsicum works for file descriptors, it does not =
+provide protections
+for databases, which are present in the OKWS system. Therefore, we would ne=
+ed to add some
+database functionality to Capsicum in order to make it easier to build OKWS=
+.</pre></li>
+
+<li><pre class=3D"student-text">In OKWS, they mention that the server proce=
+sses should be chrooted, restricting access to that directory for certain u=
+sers. Capsicum could be used here in place of chroot to further reinforce t=
+his privilege separation. We also want to isolate okld as root to connect t=
+o the port, and restrict writing to oklogd so that the log can't be tampere=
+d with. If Capsicum had a better way to verify or allow service requests de=
+pending on capabilities, this could make building OKWS easier, since a majo=
+r part of OKWS was the different database queries that were isolated based =
+on the user privilege. </pre></li>
+
+<li><pre class=3D"student-text">In file-facing components, like `oklogd` an=
+d `pubd`, the processes can do
+`cap_enter` after acquiring the necessary file descriptors (i.e. the log fi=
+le
+descriptor for `logd`, and the template file descriptors for `pubd`). In th=
+e
+case of `pubd`, `lc_limitfd` can be used to further lock down the permissio=
+ns on
+the read-only template file descriptors.
+
+In `okld`, Capsicum can be used to ensure that the process can only operate=
+ on
+child processes that it launches, and won't be able to inadvertently affect
+other processes on the system.
+
+In `okd`, `cap_enter` can be invoked after opening the potentially privileg=
+ed
+server port. This prevents further inadvertent access with elevated privile=
+ge.
+</pre></li>
+
+<li><pre class=3D"student-text">It seems tha capsicum would be perfect for =
+enforcing isolation policies on services in OKWS. </pre></li>
+
+<li><pre class=3D"student-text">I=E2=80=99m still a bit confused as to why =
+we need to add Capsicum to OKWS and don=E2=80=99t know what the right answe=
+rs to these questions are, even after I read both papers. Doesn=E2=80=99t O=
+KWS already have the mechanism to separate vulnerable components from secur=
+ity sensitive components? I thought the whole point of using OKWS was so th=
+at programmers can easily achieve privilege separations in their web servic=
+es by using simple API calls. Since OKWS implements multiple processes, are=
+ we trying to use Capsicum at the processes level inside OKWS for added sec=
+urities?</pre></li>
+
+<li><pre class=3D"student-text">Jun Wan 991032935
+
+Sandboxing is useful in=20
+1. Programs that deal with network input.
+2. Programs that alter / manipulate datas or files in a complex way.
+3. Programs that need to be very careful with privilege.
+
+And in OKWS, okld, oklogd and especially pubd falls into the above categori=
+es. Also, we can use capsicum in the database components of OKWS to control=
+ access.
+
+One limitation of capsicum is that it works by only allowing operations on =
+existing open FDs. We need some other mechanisms to control what FDs can be=
+ opened.</pre></li>
+
+<li><pre class=3D"student-text">Lecture 6 (Answer to Paper Question)
+
+Question:
+
+The authors of the Capsicum paper describe several strategies for how to us=
+e Capsicum in several applications (Section 4). How would you recommend usi=
+ng Capsicum in the different components of OKWS? Are there features missing=
+ from Capsicum that would have made it easier to build OKWS?
+
+
+Answer:
+
+okld (OK launcher daemon): Calls cap_enter() so all descendant processes ru=
+n in capability mode. This way descendant processes will be denied access t=
+o global namespaces such as the filesystem and PID namespaces. Then launche=
+s custom-built services and relanches them should they crash using pdfork()=
+, limiting the capabilities of each service as much as possible
+okd (OK dispatcher): Launches okd from okld with limited capabilities. okd =
+just needs write capability for an output pipe.
+pubd: Launches pubd from okld with limited capabilities. pubd would need to=
+ have read capability for configuration files and HTML template files store=
+d on disk.
+oklogd: Launches oklogd from okld with limited capabilities. oklogd just ne=
+eds write capability for an output pipe.
+
+Launch all site specific services and databases from okld.
+
+I haven't worked enough with Capsicum so at this moment I can't think of an=
+y features that are missing that would make it easier to build OKWS.
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 6 Lecture Question
+
+Capsicum could be useful for limiting privileges of various components of O=
+KWS after initialization. This could include limiting OKLD's ability to alt=
+er binary
+permissions, reinforcing the chroot of various components and making it tri=
+vial to protect from "/../" paths, and even allowing further isolation of r=
+isky functionality
+(ie. processing incoming messages versus performing fetches). Providing a m=
+echanism for safely setting PID/UID without privilege escalation is likely =
+a complex problem,
+but would allow for easy implementation without significant changes to OKWS=
+.</pre></li>
+
+<li><pre class=3D"student-text">Lecture 6 Reading Questions=20
+
+
+I think using cap_enter to reinforce the sandboxes of applications with exi=
+sting
+privileges would work well with OKWS, since OKWS was already designed with =
+this
+separation of privilege in mind. For example, we could give each "service" =
+in
+OKWS a different file descriptor that would allow it different privileges; =
+this
+way even if an attacker compromises a service they would not be able to get=
+ to
+the entirety of the system. I think special attention should probably be gi=
+ven=20
+to okld, since that is the root process in the OKWS system. I'm not sure if
+there are missing things that would make it easier to build OKWS.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 6: Capabilities
+2/26/18
+
+The authors of the Capsicum paper describe several strategies for how to us=
+e Capsicum in several applications (Section 4). How would you recommend usi=
+ng Capsicum in the different components of OKWS? Are there features missing=
+ from Capsicum that would have made it easier to build OKWS?
+
+In OKWS, each service is separate has its own set of independent access pri=
+vileges. Similarily, to incorporate capsicum into this design, we will havr=
+ a separate sandbox and therefore separate capabilities for each service. R=
+estricted permissions have already been designed for OKWS, but now we can m=
+ake them even more granular with capabilties. </pre></li>
+
+<li><pre class=3D"student-text">Lecture 6: Capsicum Reading Question
+
+I would recommend Capsicum's second or third approach. Their second approac=
+h involves using
+"cap_enter" to reinforce existing application sandboxes with existing compa=
+rtmentalization.
+This would allow OKWS to further strengthen their existing sandbox architec=
+ture without many
+development or runtime costs. I would recommend this approach if OKWS is si=
+mply interested
+in boosting their sandbox capabilities but does not want to reduce their pe=
+rformance rates.
+However, if OKWS wants significantly stronger security protection and does =
+not mind
+sacrificing performance for it, then I would recommend Capsicum's third app=
+roach, in which
+the application is modified to use the full "libcapsicum" API.
+
+Given OKWS's focus on isolation from a "I expect attacks to happen, and sim=
+ply want to reduce
+the damage that any attack could do" perspective, I would expect them to go=
+ with Capsicum's
+second approach, and not give up performance and further development time.
+</pre></li>
+
+<li><pre class=3D"student-text">OKWS associates a single process with each =
+individual service. OKWS could use capsicum to sandbox each process so that=
+ an attacker could not compromise one service to access the information of =
+another service. I'm not entirely sure what features missing from Capsicum =
+that would make it easier to build OKWS...=20
+</pre></li>
+
+<li><pre class=3D"student-text">OKWS can benefit from using Capsicum to wra=
+p around the services it launches as root. Services like okld, pubd, oklogd=
+, and okd can be set to have particular privileges on the system based on t=
+he system files they need to access. Further, as okd is launching requested=
+ services those services can be launched with reduced capability mode to pr=
+event access to sensitive files on the system. Over all the OKWS service ca=
+n use capsicum when communicating between the different processes and servi=
+ces that comprise the modular system.</pre></li>
+
+<li><pre class=3D"student-text">OKWS conveniently already isolates code and=
+ performs privilege separation, but one could use Capsicum's libcapsicum to=
+ reinforce the security and privelege separation of OKWS's existing sandbox=
+es.  As Capsicum is capabilities-focused, one could use Capsicum to help se=
+t capabilities of the different OKWS components from parent elements that a=
+ren't necessarily root.
+- okld: could start with root privileges then be sandboxed to lose capabili=
+ty of listening to port 80 once it launches okd
+- okd: could be given the capability of listening to port 80 without having=
+ root privileges
+- pubd: underprileged user sandboxed and given read-only capability in its =
+chrooted directory
+- oklogd: underprivileged user sandboxed
+- svc: sandboxed, strictly limited to only the capabilities each individual=
+ service needs (privilege separation)
+
+
+I'm not sure what is being asked by the question "Are there features missin=
+g from Capsicum that would have made it easier to build OKWS?"  I found the=
+ Capsicum paper to be very confusing and hard to understand how it could be=
+ used to help other existing applications, other than that it allows sandbo=
+xing w/o being root.
+</pre></li>
+
+<li><pre class=3D"student-text">OKWS could use Capsicum to improve/simplify=
+ the launcher daemon okld. This way, the launching process might be simplif=
+ied using the capabilities and sandboxing mechanism from Capsicum.</pre></l=
+i>
+
+<li><pre class=3D"student-text">OKWS distributes security across multiple m=
+achines, but these machines still run multiple programs. The primary exampl=
+e I can think of is the proxy for the database servers, where Capsicum coul=
+d provide different filesystem capabilities to the database process and the=
+ proxy in order to prevent programming errors in the proxy overtly affectin=
+g the _filesystem_ rather than just its interactions with the rest of the s=
+ystem. Essentially, this would allow OKWS to sandbox the proxy processes to=
+ only have access to files they should, and malicious requests (if firewall=
+ somehow breaks down) or other incorrectly-accessed file descriptors would =
+not affect the integrity of the file system (as much--assumes perfect desig=
+n which is fairly impossible).
+
+Capsicum could also increase the integrity of the global processes like okl=
+d, which could be exploited pretty heavily if vulnerabilities are found. In=
+stead of having general root privileges, okld could be sandboxed to only ma=
+nage the sub-processes, and have no access to OS configurations, etc.
+</pre></li>
+
+<li><pre class=3D"student-text">OKWS essentially separates out the data and=
+ the code associated with it such that a particular service can only access=
+ its corresponding segments of data via a database proxy. Capsicum effectiv=
+ely achieves the same via extensions to file descriptors. However, its not =
+entirely clear that all the data associated with a particular service lies =
+in the same file. Therefore, if Capsicum was to be used for OKWS, some addi=
+tional logic needs to go into the proxy creation that creates apprpropriate=
+ capabilities for each file that don't conflict with other services that mi=
+ght overlap with a subset of those files.
+</pre></li>
+
+<li><pre class=3D"student-text">OKWS forces services to be put in chroot ja=
+ils, which can be done using the Capsicum sandboxing methods. By using the =
+cap_enter to convert
+processes into capability mode, services would not need to be put in sepera=
+te chroot jails. This also applies to the components of=20
+OKWS themselves, that is, okld, okd, oklogd, and pubd do not need to be rel=
+egated to a chrooted directory so that they function with
+the correct access rights to files. Instead they can make use of capabiliti=
+es so that only particular functions can be done
+per binary.</pre></li>
+
+<li><pre class=3D"student-text">OKWS has a large emphasis on keeping proces=
+ses seperate. Capsicum could be uuseful in helping OKWS do this by utilizin=
+g its sanboxing and privledging tools, dhclient and cap_enter. One thing it=
+ might be missing for OKWS would be a better integration between user inter=
+face and security.
+</pre></li>
+
+<li><pre class=3D"student-text">OKWS is a very good candidate to be impleme=
+nted using libcapsicum. The different services managed by okd can be easily=
+ created with the appropriate capabilities using cap_enter. Other helpful f=
+eatures might have been better hiding of the RPC marshalling/un-marshalling=
+. For example, with gzip using libcapsicum adds 16% to the source code (sma=
+ll, but not trivial). Also better debugging tools.
+</pre></li>
+
+<li><pre class=3D"student-text">OKWS previously used processes for isolatio=
+n. We can use capabilities in the second mentioned usage example of the pap=
+er to reinforce sandboxing.
+
+Instead of chroot, we can use capabilities to wrap over the file descriptor=
+ for certain directories with the correct access rights. Furthermore, we ca=
+n pass capabilities around for various file accesses and HTTP requests.
+
+Unfortunately, I can't think of anything missing that would make OKWS easie=
+r to build.</pre></li>
+
+<li><pre class=3D"student-text">OKWS uses chroots to isolate its different =
+processes and control file system access. Capsicum directly compares itself=
+ to chroots and shows the benefits over them so it would make sense for OKW=
+S to instead run its different processes inside sandboxes. OKWS could also =
+uses Capsicum to drop permissions after initialization of different service=
+s (for example okld just needs initial privilages to listen on port 80)
+</pre></li>
+
+<li><pre class=3D"student-text">OKWS uses input. We could put this input ha=
+ndling into the sandbox. Also, we could turn on capability mode so that dif=
+ferent services can talk to the DB proxy. Using capability mode means that =
+we cannot open files by full path name and there is no longer a need for ch=
+root. It would be useful for OKWS if capsicum could connect to TCP/UDP addr=
+esses/ports from sandbox. </pre></li>
+
+<li><pre class=3D"student-text">OKWS uses serveral mechanisms to attempt to=
+ sandbox its server processes, including chrooting and running as an unpriv=
+eleged user. These sort of restrictions could be implemented using capsicum=
+.
+Capsicum relies primarily on message-passing, so while OKWS could adapt its=
+ event based architecture to use only text based inputs, additional support=
+ event based architectures would simplify integration of capiscum into OKWS=
+.
+
+</pre></li>
+
+<li><pre class=3D"student-text">OKWS was already designed with privilege se=
+paration in mind, so method 2 described in the paper ('use cap_enter to rei=
+nforce the sandboxes of applications with existing privilege separation') s=
+eems like the best strategy.=20
+
+One thing that OKWS uses that Capsicum doesn't address seems to be the use =
+of RPCs for making calls to the database. Perhaps OKWS could rephrase inter=
+actions with databases as file descriptors, but that seems like a lot of wo=
+rk and not a very elegant solution. Perhaps Capsicum could be extended to s=
+upport RPC such that OKWS applications wouldn't depend on the authenticatio=
+n token to perform actions to a database.
+</pre></li>
+
+<li><pre class=3D"student-text">OKWS was designed and built with based on p=
+rivilege separation and isolation of its different modules. However, the sa=
+ndboxing of OKWS could be improved with capability mode from capsicum. Caps=
+icum could be modified/improved in a similar way to dhclient and Chromium i=
+n the paper, where cap_enter gets used to reinforce the existing separation=
+/isolation of OKWS.
+
+I'm not sure about missing features from Capsicum.</pre></li>
+
+<li><pre class=3D"student-text">OKWS would benefit greatly from Capsicum, b=
+ecause it already has the capability-aware modular structure required to ge=
+t most out of Capsicum.
+Each of OKWS's could run in capability mode, with restricted capabilities a=
+s follows:
+- pubd only needs read access to the templates it serves
+- okd only needs access to port 80 and communication to the services
+- oklogd only needs to receive logging statements from the other components=
+ and write access to the logs
+- okld, however, needs the union of all capabilites, because in order to la=
+unch a process with certain capabilities, the parent needs to have at least=
+ all the capabilities that the child process should have. This might be pro=
+blematic, and make okld an interesting target, but fortunately, okld does n=
+ot communicate with the outside.
+A missing feature in Capsicum which would have made OKWS simpler to build w=
+ould be support for capabilities for user-defined RPC interfaces on a per-m=
+ethod granularity.
+</pre></li>
+
+<li><pre class=3D"student-text">One component of OKWs is to chroot all serv=
+ices to a remote jail directory. This simple with Capsicum, since all these=
+ services can simply be run with different capabilities, and tailored to th=
+eir access needs.
+
+Also because OKWS uses an RPC interface between Web service and database, t=
+he call can be wrapped in a capability, and given the privilege level that =
+a service requires.=20
+
+I=E2=80=99m not sure if Capsicum easily allows for different services in a =
+web server to run as unique users (perhaps using the setuid command).=20
+
+Also it seems like their procedure of only passing file descriptors makes i=
+t harder to run each service as a separate process, since referencing data =
+with paths isn=E2=80=99t allowed in this model, making having separate proc=
+esses more challenging. </pre></li>
+
+<li><pre class=3D"student-text">One way of potentially interfacing the 2 pi=
+eces of software may be to utilize Capsicum's method of direct system call =
+manipulations of kernel objects in file descriptors with OKWS. Capsicum als=
+o provides additional ways of isolating privileges of certain users, pages,=
+ etc, (as does OKWS), such that there are less potential areas for attacker=
+s to take advantage of. OKWS also assigns one Unix process per service, and=
+ much of Capsicum extends the UNIX APIs by adding a layer on top. By more r=
+igorously isolating, and effectively controlling credentials of users, we c=
+an better prevent unwanted read and write attempts. For more effective inte=
+rfacing, it seems unclear whether Capsicum has much logging action happenin=
+g, so that may have to be included to work better with OKWS.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Portions of the global filesystem namespace=
+ can be delegated to sandboxed processes by making okd spawn each worker pr=
+ocess svc_i with an open file descriptor list to the resources it needs (su=
+ch as the file descriptor to the socket connection with the client, directo=
+ry being served, etc.) with cap_enter(). The worker process is sequestered =
+to the file descriptor list it was passed. This strengthens the chroot-jail=
+ applied to the runtime working directory.
+
+In addition, the data services can be run with Capsicum and have its access=
+ rights restricted to a set of least privileges. For example, the file desc=
+riptors passed to authentication web services should only have read bits se=
+t in order to prevent overwriting of the database. Services that need write=
+ privileges should have their scope reduced to the set of data that is expe=
+cted/allowed to be modified.
+
+A capability system-centric programming language would have made it easier =
+to build OKWS. A language run-time in which references and code verificatio=
+n don=E2=80=99t just provide implementation hiding (but also allow the appl=
+ication structure to be mapped directly to protection policies) would enabl=
+e the programmer to better enforce the access control policy.</pre></li>
+
+<li><pre class=3D"student-text">Question: The authors of the Capsicum paper=
+ describe several strategies for how to use Capsicum in several application=
+s (Section 4). How would you recommend using Capsicum in the different comp=
+onents of OKWS? Are there features missing from Capsicum that would have ma=
+de it easier to build OKWS?
+
+OKWS can be treated as multiple processes: daemon, logger, services, and pr=
+oxy databases, which makes using Capsicum pretty viable. First of all you c=
+an sandbox OKWS entirely so it does not have access to other parts of the f=
+ile system such as the real database. You could also sandbox each process s=
+uch as only allow logger to have write access, or proxy database to only ha=
+ve read access. For services, I think that OKWS already has a method of usi=
+ng tokens to authenticate already restrict privileges, but it may be easy e=
+nough to encapsulate services so it doesn't modify anything else. Opening c=
+onnections might be done similar to how they describe dhclient. Hmm, not sp=
+ecific to OKWS, but this is a system that is more complicated than the othe=
+rs, so a way ensure correctness could allow this Capsicum layer to be easie=
+r to implement.</pre></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 6
+
+The authors of the Capsicum paper describe several strategies for how to us=
+e=20
+Capsicum in several applications (Section 4). How would you recommend using=
+=20
+Capsicum in the different components of OKWS? Are there features missing fr=
+om=20
+Capsicum that would have made it easier to build OKWS?
+
+Capsicum could be used to implement OKWS using the Capsicum primitives and=
+=20
+sandboxing capabilities. Each service being run by OKWS could be run in=20
+capability mode in order to tie the procvess with a credential flag and=20
+restrict it to a specific name space and access control. Other pieces of OK=
+WS
+could be augmented with Capsicum primitives in a manner similar to tcpdump =
+to
+sandbox the process and give it access to only a predetermined set of actio=
+ns.=20
+The okd could be set up this way since it will only ever map urls to servic=
+es=20
+and pass on messages to those services. I'm not sure if there are Capsicum=
+=20
+protocols which check access to other machines, like the database in an OKW=
+S
+system.</pre></li>
+
+<li><pre class=3D"student-text">Since OKWS already has a significant degree=
+ of modularity, the best way of
+implementing Capsicum to OKWS would likely be to use cap_enter to reinforce
+the preexisting module isolation (i.e. using the second proposed approach
+in Section 4). OKWS mentions that their design is vulnerable in the
+scenario where an attacker compromises an OKWS service and gains access to
+in-memory state belonging to other users. Capsicum should be able to
+prevent such an attack by creating a sandbox for each user-- so that OKWS
+not only has one process per service, but also additional separation
+between each user's interaction with each service.
+
+OKWS would have been easier to build and the RPC interface would likely
+have been significantly less complex had the developers had access to
+Capsicum.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Since OKWS already has process isolation, C=
+apsicum could help by
+compatmentalizing the processes in OKWS and assigning capabilities. The okl=
+d
+should be set in capability mode because the okld descendants can all inher=
+it
+these capabilities. =20
+</pre></li>
+
+<li><pre class=3D"student-text">Since OKWS is already extremely compartment=
+alized, utilizing Capsicum is already pretty simple - Capsicum will simply =
+add more concrete checks to privileges of segmented applications. Once it b=
+inds to port 80 to listen to incoming HTTP requests, the okld process can c=
+all cap_enter so all of the spawned processes also enter capability mode. E=
+ach child process can request the permissions needed, such as the pubd proc=
+ess receiving access to the template directory - in this setting, Capsicum =
+will enforce that pubd only has access to the template directory. Using cap=
+ability-wrapped file descriptors for message passing in OKWS will also help=
+ enforce sandboxing and segmentation.
+</pre></li>
+
+<li><pre class=3D"student-text">Since OKWS is already very much based aroun=
+d the idea of capabilities, transitioning it to use something like Capsicum=
+ seems a wise choice. Instead of having a bulky process of chrooting servic=
+es to jail directories, OKWS could use capabilities to sandbox the differen=
+t services. okld in particular would not need to run as root at start; it c=
+ould be conferred capabilities which allow it to accomplish its tasks. Furt=
+hermore, using capabilities instead of passing around file descriptors will=
+ prevent compromised services from doing anything other than their intended=
+ use on the files they are permitted to access.
+
+</pre></li>
+
+<li><pre class=3D"student-text">Since OKWS is designed to optimize security=
+, I would recommend using the full libcapsicum API because it offers the st=
+rongest protection. Features missing from Capsicum that would help with OKW=
+S would include network-related features, including handling requests from =
+clients and making sure they cannot access private content.</pre></li>
+
+<li><pre class=3D"student-text">The OKWS pubd component can use method 1 - =
+use cap_enter directly to convert it into a capability mode process - becau=
+se pubd only reads template files in the application, parses and caches the=
+ templates, and ships the parsed representations over RPC. This is a simple=
+ structure that method 1 easily handles.=20
+
+Similarly, oklogd can use method 1 as well - it only needs to receive batch=
+es of log updates from services and run as an unprivileged user to write to=
+ local log files. The structure of oklogd is simple enough for method 1 to =
+handle.
+
+The okd component can use method 2 - use cap_enter to reinforce existing sa=
+ndboxes with privilege separation. okd has a more complicated structure tha=
+n oklogd and pubd because it needs to look up file paths in its dispatch ta=
+ble, access oklogd to log certain error messages (404, 500), read the OKWS =
+configuration file (/etc/okws_config) listen for HTTP connections and reque=
+sts, etc. These privileges can be enforced by capabilities, and because okd=
+ is already setup to inherit file descriptors, method 2 can be applied.
+
+Finally, okld would probably need to use method 3. okld calls fork which re=
+lies on global namespaces, so libcapsicum would be able to fork processes f=
+or okld.</pre></li>
+
+<li><pre class=3D"student-text">The OKWS setup currently requires one maste=
+r process to be in charge of
+everything else, specifically okld. Capsicum's Kernel changes means that
+no one process needs to have control of everything, so it could in theory
+make OKWS more secure, because okld wouldn't need to have access to all
+parts of the database and everything in order to give it to the other
+processes. This way, if okld is broken into, the system isn't totally
+destoyed</pre></li>
+
+<li><pre class=3D"student-text">The authors of the Capsicum paper describe =
+several strategies for how to use Capsicum in several applications (Section=
+ 4). How would you recommend using Capsicum in the different components of =
+OKWS?=20
+Are there features missing from Capsicum that would have made it easier to =
+build OKWS?
+
+Capsicum provides APIs for privilege separation, that would make separating=
+ the ability and access of each service in OKWS easier. It also provides sa=
+ndboxing, which might allow unrelated processes to more securely operate on=
+ the same machine, reducing the need for multiple machines that might be un=
+der-used. =20
+An additional feature that Capsicum could add is message passing between ma=
+chines, not just processes. Currently, Capsicum assumes the processes and t=
+he protected data/files are on the same machine and treats message passing =
+between processes as local and different from the IO requests it might rece=
+ive. </pre></li>
+
+<li><pre class=3D"student-text">The authors of the Capsicum paper describe =
+several strategies for how to use Capsicum in several applications (Section=
+ 4). How would you recommend using Capsicum in the different components of =
+OKWS? Are there features missing from Capsicum that would have made it easi=
+er to build OKWS?
+
+I reccomend the creator of OKWS integrate the full libcapsicum API into the=
+ implementation. Capsicum provides a simple way for the creator of OKWS to =
+sandbox processes and manage permissions. There are features missing from C=
+apsicum that would have made it easier to build OKWS. For instance, Capsicu=
+m may have included a pre-packaged distribution with template code for buil=
+ding out a web server, thereby lightening the load on the creator of OKWS.<=
+/pre></li>
+
+<li><pre class=3D"student-text">The authors of the Capsicum paper describe =
+several strategies for how to use Capsicum in several applications (Section=
+ 4). How would you recommend using Capsicum in the different components of =
+OKWS? Are there features missing from Capsicum that would have made it easi=
+er to build OKWS?
+
+----------
+
+It would probably be best to use Capsicum to 'reinforce' the
+existing sandboxes of OKWS similar to how the authors in the
+paper update dhclient and Chromium. It seems like there is
+some message-passing mechanism in place so you can use
+cap_enter to further restrict the file access of the different
+services launched in OKWS. It would be easier to implement OKWS
+if Capsicum had a feature that could not only restrict file access
+but certain types of function calls so you could easily configure
+the subset of RPCs that each service can use.</pre></li>
+
+<li><pre class=3D"student-text">The authors of the Capsicum paper describe =
+several strategies for how to use Capsicum in several applications (Section=
+ 4). How would you recommend using Capsicum in the different components of =
+OKWS? Are there features missing from Capsicum that would have made it easi=
+er to build OKWS?
+
+1. I think, services in the architecture of OKWS are greatly designed for a=
+pplying compartmentalisation using Capsicum sandboxing capabilities. It sho=
+uld be pretty straighforward to explicitely define what files and addresses=
+ can be accessed by a specific process.=20
+2. OKD in OKWS has to establish arbitrary http connections and it'd be usef=
+ul to have an ability to pass a new capability into a sandboxed process.=20
+3. Another thing mentioned in the video is how sandboxed processes can iter=
+act with the external environment to signal errors or other critical events=
+. E.g. a dbproxy process should have an ability to signal okld in case a co=
+nnection with a database is lost.  </pre></li>
+
+<li><pre class=3D"student-text">The authors of the Capsicum paper describe =
+several strategies for how to use Capsicum in several applications (Section=
+ 4). How would you recommend using Capsicum in the different components of =
+OKWS? Are there features missing from Capsicum that would have made it easi=
+er to build OKWS?
+
+OKWS would probably use strategy 2, since it already champions the principl=
+e of least privilege. okld would start as root to bind to port 80 and then =
+reduce its privileges since it doesn't do anything else that needs root pri=
+vilege. Each of okd, pubd, oklogd and all services would run in their own s=
+andboxes. Since it already jails processes to a subdirectory, directly call=
+ing cap_enter will probably be enough to enforce privilege seperation witho=
+ut the use of using unique uid/gid pairs.=20
+
+It seems that a big problem with Capsicum is that asks the application deve=
+loper to create a separate version of the application to run on OSes with C=
+apsicum. Whereas the current implementation of OKWS works on both Linux and=
+ FreeBSD, the modified version would no longer run on Linux.</pre></li>
+
+<li><pre class=3D"student-text">The authors of the Capsicum paper describe =
+several strategies for how to use Capsicum in several applications (Section=
+ 4). How would you recommend using Capsicum in the different components of =
+OKWS? Are there features missing from Capsicum that would have made it easi=
+er to build OKWS?
+In places where accessing any part of files is necessary, Capsicum can be u=
+sed to do so with file descriptors.  Additionally, most of what okld needs =
+to do can be used with Capsicum, minus potentially listening on port 80.  D=
+oing so would allow for okld to be used without needing root privileges.  F=
+urther, OKWS is already considering isolation which makes it easier to empl=
+oy Capsicum.  The same existing privilege separation and hten be extended w=
+ith further constraints from file descriptors and the sandboxing environmen=
+t.  Therefore, interactions between service, okld, pubd, and more would be =
+acquired through message passing.  Allowing the use of Capsicum and conside=
+ring being able to listen onto ports would enable for it to be easier to us=
+e with OKWS.  Further, having a specific setup for logging would also help =
+make implementation for OKWS easier.</pre></li>
+
+<li><pre class=3D"student-text">The authors of the Capsicum paper describe =
+several strategies for how to use Capsicum in several applications (Section=
+ 4). How would you recommend using Capsicum in the different components of =
+OKWS? Are there features missing from Capsicum that would have made it easi=
+er to build OKWS?=20
+
+
+
+The goal would be to rewrite each component of OKWS to replace chroot with =
+cap_enter. This would ensure that an adversary cannot exploit potential vul=
+nerabilities in chroot cannot use to gain acess to other namespaces or even=
+ full system privileges. Implementation-wise, OKWS would give full permissi=
+ons to okld, then pass down only necessary permissions to each service. Giv=
+en that OKWS was designed with PoLP already in mind, refactoring should be =
+simple. We would only need to replace chroot with cap_enter. Primitives for=
+ multithreading would make life easier upon implementing OKWS.
+</pre></li>
+
+<li><pre class=3D"student-text">The authors of the Capsicum paper describe =
+several strategies for how to use Capsicum in several applications (Section=
+ 4). How would you recommend using Capsicum in the different components of =
+OKWS? Are there features missing from Capsicum that would have made it easi=
+er to build OKWS?=20
+
+
+We can sandbox the different components of OKWS, okld, okd, pubd, and oklog=
+d with Capsicum. Okld, the launcher daemon should use the cap_enter mode so=
+ that the services are isolated even more. Okd should use tcp_dump so the p=
+riveleges are reduced.
+If Capsicum had some analytics tool that lets you create a mapping of syste=
+m and figure out what to sandbox, that would have made building OKWS easier=
+. Some sort of tool that can map all the dependencies between services and =
+components.=20
+</pre></li>
+
+<li><pre class=3D"student-text">The easier method would be to use their the=
+ secod method mentionned in the paper (Use cap enter to reinforce the sandb=
+oxes of applications with existing privilege separation or compartmentalisa=
+tion) given that OKWS was designed with an emphasis on compartmentalization=
+.The only feature that comes to mind is the ability to listen on restricted=
+ ports for non-root applications. This way, none of the components in okws =
+would need to be root. =20
+</pre></li>
+
+<li><pre class=3D"student-text">The most "sandboxable" processes in OKWS ar=
+e okld, odlogd, and okd.
+I believe that they can all be improved by using cap_enter to reinforce
+the privledge separation; I don't think that using the full libcapsicum
+API is necessary.</pre></li>
+
+<li><pre class=3D"student-text">The second approach (cap_enter to reinforce=
+ sandbox) would probably be best, since OKWS is already designed as a syste=
+m of modules with well-defined access requirements. As a large-scale web ap=
+plication, the runtime costs of approach 3 are likel to be unattractive.
+
+Capsicum doesn't seem to have any built-in cryptographic/identity verificat=
+ion capability, which in OKWS's case would need to be implemented to preven=
+t spoofing by malicious code running on the same physical machine.</pre></l=
+i>
+
+<li><pre class=3D"student-text">There are a few different ways to incorpora=
+te Capsicum into your application:
+
+- Convert existing processes with ambient privilege into a capability mode =
+process (works well for applications with a simple structure)
+
+- Reinforce sandboxes of applications that already have privilege separatio=
+n or compartmentalization (used for applications with a more complex struct=
+ure)
+
+- Modify the application to use the full Capsicum API (this is the most sec=
+ure, but has the most development and run-time costs)
+
+
+As my understanding is that OKWS does not use sandboxing, the second adapti=
+on would not work for OKWS. Therefore, we could use the first method for th=
+e simpler components of OKWS, and the third for those we can invest the tim=
+e in for more protection.
+
+Some features that may be missing from Capsicum are web development-specifi=
+c features, to help with specific web-related concerns that arise in buildi=
+ng web services (which OKWS is for).</pre></li>
+
+<li><pre class=3D"student-text">To use Capsicum in the different components=
+ of OKWS you need to figure out where to split it based on what capabilitie=
+s the components need. You could try to run Capsicum on each of the compone=
+nts of OKWS without splitting them as they are currently compartmentalized =
+like that.  In order to make it easier to build OKWS using Capsicum it coul=
+d also include support for secure RPCs between the different processes beca=
+use if I understand right Capsicum works with IPCs (intra process rather th=
+an inter process). </pre></li>
+
+<li><pre class=3D"student-text">Using capabilities could be used to greatly=
+ simplify the implementation of OKWS, especially since it is already design=
+ed with the principles of privilege seperation in mind. OKWS achieves isola=
+tion by splitting up logically different services into different process to=
+ limit how much they can interfere with each other. Services are chrooted i=
+nto remote jails such that "each process has just enough access privileges =
+to read shared libraries upon startup and to dump core upon abnormal termin=
+ation. The services otherwise never access the file system and lack the pri=
+vileges to do so." However, capabilities could be used to achieve the same =
+level of security and isolation by just creating each service process with =
+its own set of capabilities. Furthermore, this might actually increase secu=
+rity because, as explained by the authors of the Capsicum paper, "chroot li=
+mits only file system access, and switching credentials offers poor protect=
+ion against weak or incorrectly configured DAC protections on the sysctl an=
+d PID namespaces." Therefore we could use Capsicum to further limit the ser=
+vices' access to ports and other types of permissions by wrapping those res=
+ources in file descriptors and restricting access to them using capabilitie=
+s. Furthermore, Capsicum could be used to limit capabilities of oklogd so t=
+hat it can only write to the log file and read messages from other processe=
+s, rather than having general file system access.</pre></li>
+
+<li><pre class=3D"student-text">Using capsicum, okld would open its socket =
+connections using capabilities, as well as using a capability to read /etc/=
+okws config. Then when okld starts okd, the demultiplexing daemon, it can g=
+ive it only the capability for the server side of the sockets as well as et=
+c/ows_config, so okd only has access to the minimum resources necessary.
+
+To write to a log file, perhaps oklogd can be given a capability to write t=
+o the necessary log file (differently than what oklogd actually does, which=
+ is write via a socket). Pubd should be given a capability to the directory=
+ containing the files it needs, and any subprocesses should likewise be giv=
+en the minimum capabilities necessary.
+
+One thing capsicum lacks is the ability to access specific parts of a file,=
+ it simply gives the capability for a process to read an entire file or non=
+e of it at all. For example, the okweb database process will have the capab=
+ility to read an entire database file, so okwebserver will need to implemen=
+t additional security restrictions to prevent a given service from being ab=
+le to read a part of a database that it's not supposed to.</pre></li>
+
+<li><pre class=3D"student-text">We can use Capsicum to sandbox the differen=
+t services and processes in OKWS. Like with compartmentalization of gzip =
+=EF=BF=BD when working with capabilities, is there a better way to sandbox =
+applications most frequently used in pipelines? This could be explored furt=
+her with regards to OKWS.
+</pre></li>
+
+<li><pre class=3D"student-text">We could use Capsicum inside OKWS by basica=
+lly giving each component different capabilities that allowed it to perform=
+ its job. Capsicum is slightly too simple to be used to implement OKWS. By =
+setting up more complex communications, it'd be a better choice.
+</pre></li>
+
+<li><pre class=3D"student-text">We could use Capsicum to implement OKWS's c=
+ompartmentalization. Particularly, we
+could use it to compartmentalize the separate components of the application
+layer as well as limit application access to the database by introducing
+specific capabilities to the database proxy. More OKWS-specific API calls i=
+n
+Capsicum could be useful, but they are likely not general enough to warrant
+Capsicum functonality.
+</pre></li>
+
+<li><pre class=3D"student-text">When using Capsicum in OKWS, one can use ca=
+p_enter in okld to further the privilege separation between the individual =
+services. Specifically, capsicum  can further secure the privileges of the =
+oklogd process so that it can not access the log files. If Capsicum had a s=
+trong method for debugging distributed processes, it could make implementin=
+g OKWS easier.</pre></li>
+
+<li><pre class=3D"student-text">Whenever OKWS spawns a service (i.e new pro=
+cess), place it in its own sandbox. As the paper suggests, one could use `c=
+ap_enter` to reinforce the already existing compartments in OKWS.
+
+As far as I'm aware, it would be fairly straighforward to directly integrat=
+e Capsicum into OKWS -- I don't believe there are any features *missing* fr=
+om Capsicum that would have made it easier to build OKWS.
+</pre></li>
+
+<li><pre class=3D"student-text">Whereas OKWS uses a full-privilege okld to =
+chroot oklogd, pubd, and the web services, Capsicum can get rid of the sing=
+le point of vulnerability by providing the isolation without chroots. OKWS =
+could also use cap_enter to reinforce the existing isolations provided by t=
+he chroot model. We can also use Capsicum in OKWS's database model by turni=
+ng the read from the database into a file descriptor, rather than a direct =
+connection to the database proxy.
+</pre></li>
+
+<li><pre class=3D"student-text">Why is FreeBSD the only OS using Capsicum? =
+ It seems like it has low-enough overhead to at least allow it to be includ=
+ed as an opt-in for other popular OSes?  Or are there similar capabilities-=
+based system in place elsewhere that I'm just not aware of?</pre></li>
+
+<li><pre class=3D"student-text">You could modify the okld launcher daemon t=
+o use cap_enter because the services inherit their file descriptors -- whic=
+h align with capabilities -- from okld. OKWS chroots all services to a remo=
+te jail directory in an attempt at sandboxing, but it seems that chroot suf=
+fers weaknesses when compared to Capsicum. Capsicum only deals with file de=
+scriptors, so a way to implement database access control would have make it=
+ easier to build OKWS.</pre></li>
+
+<li><pre class=3D"student-text">You could use Capsicum in the okd component=
+ of OKWS to sandbox the requests coming in. You could also use do cap_enter=
+() for each service when accessing the database proxies.</pre></li>
+
+<li><pre class=3D"student-text">You could use Capsicum's capabilities for s=
+pecifying access to the sockets created in okd. Also, okd could create capa=
+bilities for the services to access whatever data they need to access to fu=
+rther enforce sandboxing and pass those along to the services.
+</pre></li>
+
+<li><pre class=3D"student-text">Zach Miller
+Lecture 6
+
+
+OKWS gives each service it's own process. These processes could be sandboxe=
+d using capabilities, specifically by using cap_enter.
+
+The okld uses a runtime jail directory. This could be sandboxed using capab=
+ilities as well.
+
+pubd could have its own capabilities as well so that the end result of not =
+directly reading large HTML blocks is achived.=20
+</pre></li>
+
+<li><pre class=3D"student-text">capsicum could have been used for OKWSs sol=
+ution for unintended data disclosure thorugh sandboxing.=20
+</pre></li>
+
+<li><pre class=3D"student-text">lec6.txt
+
+John McLaughlin
+February 26th 2018
+
+The authors of the Capsicum paper describe several strategies for how to us=
+e Capsicum in several applications (Section 4). How would you recommend usi=
+ng Capsicum in the different components of OKWS? Are there features missing=
+ from Capsicum that would have made it easier to build OKWS?
+***************************************************************************=
+***************************************************************************=
+*********
+
+The best way to use Capsicum with OKWS would likely be to use the cap_enter=
+ to supplement the security mechanisms already in place within OKWS. Since =
+OKWS is already distributed by design, Capsicum would act as a stronger enf=
+orcement of limited privileges for each component in OKWS. This includes ho=
+w each component interacts with the overall filesystem and more importantly=
+ how the components talk to one another.=20
+
+This is similar to the way the paper describes how chromium and dhclient wa=
+s adapted to run using Capsicum.
+
+Capsicum covers most of the least privilege process seperation, but doesn't=
+ completely cover a per user authorization of the system. The capabilities =
+they describe don't authorize access to data on per user basis like we saw =
+in the OKWS. Thus in the event that a service was compromised that still ha=
+d the capability to query the database, Capsicum wouldn't make a difference=
+. </pre></li>
+
+<li><pre class=3D"student-text">okld
+Separate okld into
+1: Reading configuration files and setting up + launching daemon
+2: Launcher for services
+okd
+Separate okd into
+1: REPUB
+2: RELAUNCH
+
+oklogd
+Can be run as an underprivileged user using capsicum.
+
+pubd
+Can reduce privileges to be read-only.
+</pre></li>
+
+<li><pre class=3D"student-text">okld can use cap_enter directly. Because it=
+ initialize all the services and restart them when encountering a crash. Af=
+ter starting all the services, we can change ambient privilege into a capab=
+ility mode. The okld should have just right privilege to restart all the se=
+rvices.
+
+okd can use cap_enter to reinforce the sandbox, because it already has priv=
+ilege separation.=20
+
+oklogd can use cap_enter directly. Because it has a simple structure and ne=
+eds few privilege.=20
+
+pubd can use cap_enter to reinforce the sandbox.
+
+Services can either use cap_enter or build with libcapsicum to get better s=
+ecurity.=20
+
+---
+
+libcapsicum does not support adding privilege. The privilege of a process d=
+epends on the files it opened before cap_enter. When we need to add a new s=
+ervice to okws, we probably need to restart the whole okws.=20
+</pre></li>
+
+<li><pre class=3D"student-text">oklogd can use cap_enter directly since it =
+is just aggregating all log messages. pubd and okd can use cap_enter to rei=
+nforce their sandboxes but while keeping latency low. okld should use the l=
+ibcapsicum API in order to get the strongest protection.
+</pre></li>
+
+<li><pre class=3D"student-text">=EF=BB=BFCapiscum can be used to control wh=
+at files OKWS services are able to access via file descriptors. This acts a=
+s a cleaner way to control permissions for services. In particular, okld ca=
+n use this method to grant permissions to oklogd and okd. Oklogd for exampl=
+e would be granted permission to write to a file but not read any other fil=
+es.=20
+
+It would be helpful if Capisum allowed for some special access to file syst=
+ems for certain operations. For example, a common operation is DNS resoluti=
+on (such as in tcpdump) and it seems cumbersome to have to create a daemon =
+for each of these tasks.
+</pre></li>
+
+<li><pre class=3D"student-text">=EF=BB=BFIt would be easier to use if you c=
+ould use the libcapsicum library directly to avoid extra overhead.</pre></l=
+i>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--jMVdNgvYbR5FsmW4W2molHyfj6puQWPrkDczbtMggT------

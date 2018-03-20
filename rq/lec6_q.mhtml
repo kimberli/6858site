@@ -1,0 +1,1015 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-questions/6
+Subject: Questions for lecture 6 - 6.858
+Date: Wed, 20 Mar 2018 22:58:17 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--CMZ66fLC4G4hY0Yk1s5EXZUZFkvfFrjNFx7U8KAiPw----"
+
+------MultipartBoundary--CMZ66fLC4G4hY0Yk1s5EXZUZFkvfFrjNFx7U8KAiPw----
+Content-Type: text/html
+Content-ID: <frame-32860-6506f35a-bf8c-42e5-927f-ffd73b994a64@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-questions/6
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Questions for lecture 6 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Questions for lecture 6 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text">Are the features of capsicum implemented in=
+ modern operating systems? If not, how do modern operating systems achieve =
+security guarantees such as privilege separation?</pre></li>
+
+<li><pre class=3D"student-text">How exactly is a capability different from =
+privilege?=20
+</pre></li>
+
+<li><pre class=3D"student-text">"File descriptors already have some propert=
+ies of capabilities:
+they are unforgeable tokens of authority, and
+can be inherited by a child process or passed between
+processes that share an IPC channel."
+
+Why are file descriptors unforgeable?
+
+"libcapsicum=E2=80=99s fdlist (file descriptor list) abstraction
+allows complex, layered applications to declare capabilities
+to be passed into sandboxes, in effect providing
+a sandbox template mechanism"
+
+Where does fdlist live? How do Capsicum ensure that the list
+doesn't get modified by an attacker?
+</pre></li>
+
+<li><pre class=3D"student-text">*at system calls disallow path containing "=
+..". Capsicum says this is a conservative design, but is there every really=
+ a good reason to allow a typical user of a security conscious application =
+to access paths upstream?
+
+</pre></li>
+
+<li><pre class=3D"student-text">1. How do you integrate an existing system =
+with Capsicum? Is it a tool that needs to be installed?=20
+
+2. How are benchmark sets determined? Are they typical use cases or use cas=
+es that represent the extreme conditions the system might be placed under?=
+=20
+ </pre></li>
+
+<li><pre class=3D"student-text">1. Is it possible for capability mode to vi=
+olate with the file descriptor, either by accidents or malicious attacks? F=
+or example, if a file is read-only, is it possible for us to gain write acc=
+ess via capsicum?
+
+2. Capsicum looks really good. Are there applications where capsicum might =
+not be a good choice?</pre></li>
+
+<li><pre class=3D"student-text">1. Why are file descriptors unforgeable tok=
+ens of authority?=20
+2. How close is this to using VMs? As in, what does VMs do for isolation th=
+at is
+beyond Capsicum's ability? There's obviously the separate processes vs.
+completely "separate" machines thing, but is there anything beyond that?=20
+</pre></li>
+
+<li><pre class=3D"student-text">1. Why exactly is packet parsing code "hist=
+orically fragile"? Similarly, why are compression/decompression routines "r=
+isky"?
+2. Each service in the OKWS framework is implemented as a single-threaded, =
+event-driven process. OKWS achieves isolation by splitting up logically dif=
+ferent services into different process to limit how much they can interfere=
+ with each other. On the other hand, Capsicum achieves isolation by giving =
+each process its own set of capabilities. However, these two approaches cou=
+ld be used in conjunction with one another to achieve more fine-tuned prive=
+lage control. What, if anything, prevents OKWS services from running in mul=
+tiple processes?
+3. Instead of creating a new user for each server process, as is done in OK=
+WS, could capabilities be used to achieve the same level of security and is=
+olation by just creating different processes with different capabilities?
+
+</pre></li>
+
+<li><pre class=3D"student-text">6.858 LEcture 6 - Capcisum
+
+It seems that Capcisum is using file descriptor capabilities and privilege =
+checking
+already built into the computers (e.g. privilege checking between kernel an=
+d user).
+Why is it that UNIX/other systems not already built with the tools that cap=
+cisum
+is offering?
+</pre></li>
+
+<li><pre class=3D"student-text">Are there any specific OS-level requirement=
+s for integrating applications with
+Capsicum?
+</pre></li>
+
+<li><pre class=3D"student-text">Are there other capability-based privelege =
+management systems for operating
+systems, and how do they differ/how are they similar to Capsicum?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Are there ways to integrate systems using s=
+hared memory besides file descriptors to use capsicum easily?
+</pre></li>
+
+<li><pre class=3D"student-text">As far as I understand, Capsicum allows you=
+ to create new sandboxes that are capability based (rather than privilege b=
+ased) from parent directories that are not root.  Children can only have up=
+ to the same number of capabilities, or fewer, of its parent directory.  Is=
+ there anything else that Capsicum brings to the table that I missed in the=
+ paper?  I found it pretty confusing to understand what the takeaways were.=
+  If that's the case, what benefits are there to allowing any directory to =
+create sandboxes rather than just the root directory?
+</pre></li>
+
+<li><pre class=3D"student-text">Based on the discussion about gzip, they me=
+ntioned that they saw an increase in efficiency which allowed them to reali=
+ze that the implementation was wrong. Yet these are relatively easy example=
+s and it just so happened that they were able to catch these bug. In a larg=
+er system, it seems like it would require a lot of reasoning about the syst=
+em, and be extremely difficult to implement properly. Are there easier ways=
+ to ensure correctness?</pre></li>
+
+<li><pre class=3D"student-text">Can a child process have more rights than t=
+he parent process? How are rights inherited?</pre></li>
+
+<li><pre class=3D"student-text">Capabilities only seem to wrap file descrip=
+tors, so what is preventing a programmer from simply missing the creation o=
+f a particular file descriptor and then using it (unprotected) throughout t=
+he rest of the application? Does libcapsicum completely prevent sandboxed a=
+pplications from accessing normal system calls to prevent this? Or is it a =
+responsibility left to the programmer?
+</pre></li>
+
+<li><pre class=3D"student-text">Capabilities seem good for limiting functio=
+nality because their implementation is additive. But does Capsicum add shor=
+t cuts to make it easier to write in longer capabilities lists for more pri=
+viliged processes. They mention they have 60 or so possible masks (which th=
+ough less than MAC systems) is sizable.
+
+Another question I have is on a compromised applications. If a compromised =
+applications can read/write the fds doesnt that give it a lot of power. Or =
+does capsicum specifically treat fds as different via the Kernel and protec=
+t those operations.
+</pre></li>
+
+<li><pre class=3D"student-text">Capsicum extends the kernel primitives by s=
+upporting compartmentalization of capabilities. It seems like the increase =
+in supported capabilities would result in a greater amount of message passi=
+ng from process to process. Is this extra computational difference signific=
+ant in practice?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Capsicum seems like a really straightforwar=
+d model that is very
+application-friendly in terms of adoption. Has it been ported to any other
+operating system?
+</pre></li>
+
+<li><pre class=3D"student-text">Danny Tang
+data1013
+2/23/18
+
+Lecture 6
+
+The paper describes file descriptors and capabilities as unforgable. Why ar=
+e
+they unforgable?
+</pre></li>
+
+<li><pre class=3D"student-text">Do Macs still use the MAC OS X Seatbelt fra=
+mework for creating sandboxes? Has there been a push toward adopting open s=
+ource frameworks instead of proprietary capability/sandbox solutions?
+</pre></li>
+
+<li><pre class=3D"student-text">Do vulnerabilities arise from the fact that=
+ the program re-creates capabilities each time it is started?=20
+</pre></li>
+
+<li><pre class=3D"student-text">From reading this paper, it seems like capa=
+bilities are a logical choice for ensuring security. Are there competing me=
+thodologies (i.e. security techniques that are not based on a capability mo=
+del)  that offer the same simplicity and security benefits as Capsicum?</pr=
+e></li>
+
+<li><pre class=3D"student-text">Has chromium implemented any of the suggest=
+ed changes brought up by capsicum?</pre></li>
+
+<li><pre class=3D"student-text">How are capabilities implemented as file de=
+scriptors in Capsicum? I thought file descriptors were just small integers =
+in Unix (stdin=3D0, stdout=3D1, stderr=3D2, and higher numbers are used for=
+ files, pipes, ports, network devices, external devices, etc). How are capa=
+bilities "unforgeable tokens of authority" (section 1), if they are just in=
+tegers? Or are capabilities just not integers?
+</pre></li>
+
+<li><pre class=3D"student-text">How are file descriptors and capabilities d=
+ifferent, and why did the authors choose to extend file descriptors to incl=
+ude a capability type?
+</pre></li>
+
+<li><pre class=3D"student-text">How can Capsicum be utilized in a higher le=
+vel language/interface?=20
+
+It's mentioned in the paper that "Capsicum does not provide or enforce the =
+use of a specific Interface De- scription Language (IDL),". I'm curious the=
+n how does Capsicum use different IDLs' ? How does ther user specifiy the I=
+DL he/she is going to use? Do the user plugin the IPC channel a custom pars=
+er for example?</pre></li>
+
+<li><pre class=3D"student-text">How does Capsicum ensure that the capabilit=
+ies are not forgeable?</pre></li>
+
+<li><pre class=3D"student-text">How does Capsicum mitigate security flaws w=
+ithin their own code?
+</pre></li>
+
+<li><pre class=3D"student-text">How does windows handle permissions, what a=
+re ACL and SIDs, and how are they used to sandbox? This was glossed over ve=
+ry quickly, without context in section 5.1 of the Capsicum paper?
+</pre></li>
+
+<li><pre class=3D"student-text">How is a new system call, `cap_enter`, impl=
+emented/created?
+</pre></li>
+
+<li><pre class=3D"student-text">How is it possible to modify a large applic=
+ation to use Capsicum? It's pretty low level and has a high degree of granu=
+larity configurable by the user.</pre></li>
+
+<li><pre class=3D"student-text">How is the security of an OS kernel maintai=
+ned? How are kernel extensions run in a secure way such that the operation =
+of the kernel or other kernel extensions are not affected? Could a maliciou=
+s kernel extension overwrite the permissions encoded by Capsicum?</pre></li=
+>
+
+<li><pre class=3D"student-text">How robust is libcapsicum to programmer err=
+or? Specifically, what does is mean to marshal and un-marshal RPCs -- which=
+ seems to be some overhead of incoporating libcapsicum? If the programmer d=
+oes not do this properly, it is easy to compromise the security?
+</pre></li>
+
+<li><pre class=3D"student-text">I am confused about how Capsicum was exactl=
+y applied to Chromium. The paper mentions that Google Chromium already impl=
+ements a lot of the processes that Capsicum wants to implement, but I=E2=80=
+=99d like to know in more detail about the existing support for Capsicum an=
+d how Capsicum can be applied to a web browser.</pre></li>
+
+<li><pre class=3D"student-text">I didn't quite understand the relationship =
+between capabilities and capability mode. Does cabalility mode employ capab=
+ilities to ensure sandboxing?
+Or are they independent features that accomplish each its own task?
+</pre></li>
+
+<li><pre class=3D"student-text">I don't really understand what sandboxing a=
+n application means. What is the granularity to which you go to sandbox the=
+ application? Do sandbox each process? What is defined as a process? Do you=
+ sandbox every process or just the user launched ones? And what does sandbo=
+xing entail?</pre></li>
+
+<li><pre class=3D"student-text">I don't think I fully understood how capsic=
+um capabilities are different from privilege separation. There was a notion=
+ of message passing between as if the system was a distributed system vs th=
+e system sharing a common address space. I believe they still intended for =
+the system to be on one machine. So what exactly is the difference they wer=
+e refering to?</pre></li>
+
+<li><pre class=3D"student-text">I had a hard time understanding the differe=
+nce between Capsicum capabilities and the OS privileges that we typically r=
+efer to as capabilities. Is it that the Capsicum capabilities are a file de=
+scriptor, wrapped in the OS privileges (so essentially the file descriptor =
++ capabilities)? Is it that OS privileges are for processes, while Capsicum=
+ capabilities provide more granular access control and are for files?
+
+Also, what is the difference between working in capability mode vs. using =
+=E2=80=98libcapsicum=E2=80=99?</pre></li>
+
+<li><pre class=3D"student-text">I just want to double check that I understa=
+nd both papers. In OKWS the processes run in their own chroot environments.=
+ Would integrating Capsicum essentially make this process an inherent part =
+of sandboxing since the files a process needs access could simply be marked=
+ as allowed through the file descriptor capabilities interface?</pre></li>
+
+<li><pre class=3D"student-text">I noticed the performance overhead of capsi=
+cum is non-trivial. Are the security benefits of capsicum worth the perform=
+ance overhead in practicality? </pre></li>
+
+<li><pre class=3D"student-text">I'm a bit confused as to how the gzip compr=
+ession level bug could happen, and could also occur without the compiler no=
+ticing. I'm guessing previously the compression level was set in a shared a=
+ddress space, but sandboxing gzip split the memory into several parts. Woul=
+d the sandboxed compression thread no longer notice that the variable doesn=
+'t exist in the intended location?
+</pre></li>
+
+<li><pre class=3D"student-text">I'm confused about what the implementation =
+of Capsicum actually looks like.
+Does development always have to include completely rewriting applications
+to use Capsicum? How much protection does Capsicum offer systems which have
+been built utilizing Capsicum when they are running non-Capsicum
+applications or processes?
+</pre></li>
+
+<li><pre class=3D"student-text">I'm having a hard time understanding the di=
+fference between DAC and capabilities. I see that capabilities are wrappers=
+ around file descriptors and DAC describes rights regarding a specific file=
+, and that DAC addresses users while capabilities address processes, but is=
+ the difference deeper than that? If not, why can't capabilities be impleme=
+nted by having processes with the same capabilities run as the same user?
+</pre></li>
+
+<li><pre class=3D"student-text">I'm still a little confused on how exactly =
+capabilities differ from file descriptors. If I understand correctly, file =
+descriptors can be wrapped with capabilities to indicate what permissions d=
+ifferent processes have. Isn't the capability just like a table indicating =
+the permissions? Can't we just use the file descriptors themselves then and=
+ check against a table to see what processes have permissions rather than w=
+rapping it? What does the capability add?</pre></li>
+
+<li><pre class=3D"student-text">I'm still confused as to what a sandbox act=
+ually does.  Do this mean that it provides isolation to certin areas in the=
+ program, so it is a completely secure system?
+</pre></li>
+
+<li><pre class=3D"student-text">I'm still unclear about how the runtime lin=
+ker works. The paper says that the application is linked against the regula=
+r C library and has access to the C runtime. I guess what i'm wondering is =
+what prevents the buffer overflows. Is it mainly the limitation of differen=
+t syscalls that some application can do?
+</pre></li>
+
+<li><pre class=3D"student-text">If Capsicum doesn't enforce the use of a sp=
+ecific IDL and that is up to specific
+applications themselves, if there is a vulnerability in their RPC marshalli=
+ng
+will Capsicum be able to handle it or would that just fall through?
+</pre></li>
+
+<li><pre class=3D"student-text">In 2.2, the paper says that "A single direc=
+tory capability that only enforces
+containment by preventing =E2=80=9C..=E2=80=9D lookup on the root
+of a subtree operates correctly; however, two colluding
+sandboxes (or a single sandbox with two capabilities) can
+race to actively rearrange a tree so that the check always
+succeeds, allowing escape from a delegated subset."=20
+
+If there is already protection to read files, wouldn't there also be protec=
+tion to prevent writing files? Especially protecting against altering the f=
+ilesystem? </pre></li>
+
+<li><pre class=3D"student-text">In describing the '..' restriction for capa=
+bilities, the author mentions that it prevents a subtle problem similar to =
+historic chroot vulnerabilities. What are are some examples of those chroot=
+ vulnerabilities? Are they mostly related to race conditions?</pre></li>
+
+<li><pre class=3D"student-text">In section 2, it says Mac OS X also uses ca=
+pabilities in addition to privileges=20
+(am I understanding correctly?), so similarly to FreeBSD? How is it differe=
+nt?
+
+Why is Capsicum not more widespread?
+</pre></li>
+
+<li><pre class=3D"student-text">In section 2.2 of the paper, the authors me=
+ntion a vulnerability in chroots where two colluding sandboxes can work tog=
+ether to escape by causing a race. How exactly does this work?
+</pre></li>
+
+<li><pre class=3D"student-text">In section 4, the paper describes three mod=
+els that programmers can use for their applications. I don't quite understa=
+nd how one would pick between methods 2 and 3 - does method 2 only use cap_=
+enter and not libcapsicum? Are those not linked? Would libcapsicum work for=
+ an application that does not already have existing sandboxes?</pre></li>
+
+<li><pre class=3D"student-text">In section 5, there are six different sandb=
+oxing attempts listed. Has
+It seems like Capsicum is intended to replace all of them; have they been
+successful, or is some hybrid of Capsicum and the other technologies
+being used today?</pre></li>
+
+<li><pre class=3D"student-text">In section 5.1, the paper states that on Wi=
+ndows google chromium uses DAC to create sandboxes. Why do they uses DAC on=
+ windows but not on Mac os and linux? Is it not possible on windows?
+</pre></li>
+
+<li><pre class=3D"student-text">In the paper, it mentions that Capsicum's a=
+rchitectore provides "fast paths" of direct system call manipulations of ke=
+rnel objects through the FD, which lets us have native UNIX performances fo=
+r certain critical operations. I'm a little confused what it is referring t=
+o when it says it allows for this native UNIX performance "while leaving th=
+e door open to techniques such as message-passing system calls" - what othe=
+r techniques are there and when are they more desirable?
+</pre></li>
+
+<li><pre class=3D"student-text">In the paper, it says Capsicum is efficient=
+ compared to other
+sandboxing mechanism. But I don't quite get that. What's the
+main cost if we put process in the sandbox? And why Capsicum
+is better?</pre></li>
+
+<li><pre class=3D"student-text">In the past questions and answers for this =
+paper, I see that Capsicum is part of FreeBSD. But what is FreeBSD? I know =
+it's an OS, but what are its advantages over others and is it used much?</p=
+re></li>
+
+<li><pre class=3D"student-text">Is Capsicum still used in Chromium?
+</pre></li>
+
+<li><pre class=3D"student-text">Is Capsicum used in industry nowadays? If n=
+ot, what are some of the reasons it has not been adopted?
+</pre></li>
+
+<li><pre class=3D"student-text">Is there any way for capsicum to predict wh=
+at processes will need what kinds of file descriptors from code or do all f=
+ile descriptors need to be entered manually?
+</pre></li>
+
+<li><pre class=3D"student-text">It seems that capsicum's implementation all=
+ows for a gradual transition to its use, with the possibility of wrapping o=
+ld applications with some basic calls to capsicum. But I'm wodering, how wi=
+dely adopted is it at this point? Has the use of libcapsicum from the groun=
+d up picked up?
+</pre></li>
+
+<li><pre class=3D"student-text">It seems that the process abstraction by it=
+self has limitations as a sandbox tool. Although capabilities extend this t=
+o be even more secure, what are limitations of capabilities?</pre></li>
+
+<li><pre class=3D"student-text">It's not clear to me how using openat vs us=
+ing open makes a difference. From a security point of view, I think that
+a compromised application that is able to use openat can easily scan any gi=
+ven machine and have the same accesses and=20
+privileges than a open would have (a given attacker would easily find the d=
+irectory from which the index is being served,
+and then it's just a matter of emulating the behavior of open). So the ques=
+tion is: is there any security advantage for using
+openat instead of open?
+</pre></li>
+
+<li><pre class=3D"student-text">Its seems the addition of Capsicum to incre=
+ase security in a web application requires an overhaul in the structure of =
+an application's codebase. Is there a case where access to a system resourc=
+e would require different levels of privilege to the same resource? Imagine=
+ a service calling system resource that eventually access a resource on the=
+ system. They web service itself uses the lowest privileges but the process=
+ spawned from a system call needs higher privileges to the same resource.  =
+The spawned process cannot run as a higher privileged user.  Would this pot=
+ential trickle into more separation of resources based on the web service d=
+esign?</pre></li>
+
+<li><pre class=3D"student-text">I=E2=80=99m still a bit confused as to why =
+we need to add Capsicum to OKWS even after I read both papers. I felt like =
+they were built for different purposes, OKWS provides APIs for building sec=
+ure web platforms easily, whereas Capsicum can be integrated to application=
+s to address vulnerabilities at the processes level?</pre></li>
+
+<li><pre class=3D"student-text">Just some terminology,
+How is a jail different from a sandbox? Rather, is a jail a type of sandbox=
+?
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 6 (Question About Paper)
+
+Suppose a process running with limited capabilities wants to execute a syst=
+em call. The paper says "many system calls and capability constraints are a=
+pplied at the point of implementation of kernel services, rather than simpl=
+y filtering system calls." Does this mean they modified the kernel source c=
+ode that implements the system call so that it checks capabilities? If so, =
+how does the process's capabilities get passed to the system call?
+
+Do processes have their own file descriptor, just like files and directorie=
+s (since processes also have capabilities)?
+
+What is the capability-aware run-time linker for?
+
+I think it's hard to get a good sense of the workings of Capsicum without w=
+orking with it on a small project. Will we use Capsicum in one of the labs?=
+ I also feel like the paper assumed lots of knowledge about UNIX, so there =
+were several parts that I found difficult to understand.
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 6 Question
+
+It was mentioned that DAC is largely weakened by the growing prevalence of =
+single user computing environment. Are there still contexts within those en=
+vironments
+that make DAC remain a useful security protocol?</pre></li>
+
+<li><pre class=3D"student-text">Lecture 6: Capabilities
+2/26/18
+
+The reading mentions that there are around 60 possible mask rights on each =
+capability. Is it true that a capabilty's mask right is similar to a extend=
+ed, more granular form of permissions, and they chose around 60 permissions=
+ that would be commonly used? So essentially capiscum is providing more gra=
+nular set of permissions while also isolating processes? </pre></li>
+
+<li><pre class=3D"student-text">Lecture 6: My Capsicum Question
+
+Don't Capsicum's debugging limitations open it up to even more potential vu=
+lnerabilities that it is
+by nature unable to properly test for and predict? I say this because I fee=
+l like a lack of debugging
+capabilities makes fixes and patches more obscure, and can still leave hole=
+s in the system that
+developers are not able to properly examine.=20
+
+Thank you!
+</pre></li>
+
+<li><pre class=3D"student-text">My first impression of capabilities as desc=
+ribed in the paper is that they are improvements to the existing Unix API, =
+reducing the privileges of different API calls and removing vulnerabilities=
+ (like the ".." chroot problem) that never should have been there in the fi=
+rst place. What exactly are capabilities beyond just an extended, more secu=
+re API?
+</pre></li>
+
+<li><pre class=3D"student-text">Question about Paper:
+
+Using Capsicum:
+- enables any process to create a new sandbox (even a sandbox can create a =
+sandbox)
+- enables fine-grained control of access to resources (if they map to FDs -=
+ e.g. files, network sockets, processes)
+Are there any more non-obvious advantages to using Capsicum?</pre></li>
+
+<li><pre class=3D"student-text">Question on overhead: Section 6 of this pap=
+er says that "application authors
+who have already begun to adopt compartmentalisation are willing to accept
+significant overhead for mixed security return". Is that really true? It
+seems like from the last few papers (like the buffer overflow ones) that
+people are only willing to improve security if it doesn't cause a significa=
+nt
+performance drop. Is security just usually a low-priority for most
+developers?</pre></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 6
+
+What is the result of a system which switches over to Capsicum API calls, b=
+ut accidentally
+misses a few of the depricated clib calls? Would this undermine the whole C=
+apsicum system
+or would Capsicum still be able to detect that there was a breach in protoc=
+ol?
+
+Are there significant performance losses if we used Capsisum APIs everywher=
+e, even in=20
+simple systems that do not need sandboxing? If not, what is to stop the com=
+plete=20
+replacement of clib with libcapsicum?</pre></li>
+
+<li><pre class=3D"student-text">Sandboxing was mentioned a lot, but I still=
+ don't fully understand it. Can you explain the high-level takeaways?
+</pre></li>
+
+<li><pre class=3D"student-text">Sec 4 mentions that adapting Capsicum is di=
+fficult because programmers should ``adopting a distributed system programm=
+ing style''. What does this mean? I think distributed systems are multiple =
+processes running on multiple CPUs or servers. If we add a sandbox to each =
+process, then we are done. So why is adding sandbox special for distributed=
+ systems? </pre></li>
+
+<li><pre class=3D"student-text">Section 2.2 of the paper describes some res=
+trictions on the type of paths that can be=20
+passed to a file descriptor. I don't quite understand the restriction that =
+was placed=20
+on the ".." path, specifically the line "however, two colluding sandboxes (=
+or a single=20
+sandbox with two capabilities) can race to actively rearrange a tree so tha=
+t the check=20
+always succeeds, allowing escape from a delegated subset." Does this mean t=
+hat even
+with the restriction on passing in "..", two 'colluding' sandboxes would st=
+ill be able=20
+to retrace the directory file structure?</pre></li>
+
+<li><pre class=3D"student-text">Segragation of application functionalities =
+for further isolation looks like a very challenging task. May be this quest=
+ion is more related to Lec #5, but I'd be glad to learn if there any availa=
+ble frameworks/practices which can help developers to design their solution=
+s with effective isolation in their mind?    </pre></li>
+
+<li><pre class=3D"student-text">So I understand that applications like Chro=
+mium or gzip might benefit from compartmentalization, but what about other =
+userland non-system applications like a terminal emulator or an image edito=
+r? I agree that it makes sense for applications to follow certain constrain=
+ts if one wishes to explicitly specify the capabilities of a program, but t=
+his seems like a pain to implement for non-system-critical applications.
+</pre></li>
+
+<li><pre class=3D"student-text">The Capsicum paper was extremely difficult =
+to digest. Every few sentences I had to open new tabs to look up obscure fu=
+nction calls in BSD or unknown acronyms. A background paper or supplemental=
+ reading on additional things we should know before diving into Capsicum wo=
+uld be helpful. I haven't had an issue with any of the past papers, but my =
+knowledge was definitively lacking for this paper, making the read very dif=
+ficult. Besides my personal lack of understanding, I don't see how Capsicum=
+ is relevant, having been written in 2010. I don't see any whopping improve=
+ments to basic isolation and sandboxing techniques. How is the paper an imp=
+rovement to that status quo? Or better phrased, what is the status quo befo=
+re this paper? And how did Capsicum change it?</pre></li>
+
+<li><pre class=3D"student-text">The authors of the Capsicum paper describe =
+several strategies for how to use Capsicum in several applications (Section=
+ 4). How would you recommend using Capsicum in the different components of =
+OKWS? Are there features missing from Capsicum that would have made it easi=
+er to build OKWS?
+
+It would be nice for OKWS to use capabilities to enforce permissions on thi=
+ngs such as the incoming HTTP connections which are currently (as far as I =
+can tell) kept track of by simply passing file descriptors around.  Perhaps=
+ building in some way to make capabilities-based database queries on top of=
+ everything else Capsicum provides would have make OKWS easier to build?  O=
+verall it seems as though Capsicum as it is would have made construction of=
+ OKWS significantly easier.</pre></li>
+
+<li><pre class=3D"student-text">The paper defines capabilities as "unforgea=
+ble tokens of authority", but it seems that they are implemented as just pl=
+ain integers, so would it be possible to guess or brute force capabilities?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper is hard to read and parse and exp=
+ects the reader to be quite familiar with UNIX system calls. I just wanted =
+to make sure I understand in simple words what Capsicum actually does:
+
+1. It changes the UNIX kernel to recognize the capability bit and prevent a=
+ccesses to namespaces it does not have right to.
+2. libcapsicum provides functions that allow processes with capabilities se=
+t to access files/directories they do have the right to.
+
+ </pre></li>
+
+<li><pre class=3D"student-text">The paper mentioned that Capsicum (and lots=
+ of distributed debugging tools) hasn=E2=80=99t been extended to debuggers =
+like gdb. How do people debug large distributed systems? Is it just =E2=80=
+=9Creally hard=E2=80=9D or are there a set of best practices/tools used?</p=
+re></li>
+
+<li><pre class=3D"student-text">The paper mentions that main() can use lcs_=
+get() to get information about its sandboxing, and have diverging behavior =
+depending on whether it's running in a sandbox or not. What are some exampl=
+es of applications that would find this useful or necessary? I'm sure there=
+ are, but I can't think of any off the top of my head.
+In a compact, haiku form:
+If I can see when
+I'm sandboxed and when I'm not,
+How does this help me?</pre></li>
+
+<li><pre class=3D"student-text">The paper says that "OS infrastructure to s=
+upport applications using seccomp is
+minimal", which implies that Capsicum is better supported by FreeBSD than
+seccomp is supported by Linux. Is that because seccomp has to be set up usi=
+ng
+assembly code, like the paper says Chromium did? Wikipedia says Firefox and=
+ Tor
+both use seccomp. Mozilla's wiki on seccomp says that in seccomp "secure mo=
+de"
+you can't use malloc() -- is this the type of undue burden the authors are
+referring to?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper seems to describe capabilities as=
+ controlling access to two things: file descriptors and namespaces. I under=
+stand that a capability wraps around a file descriptor and grants permissio=
+n to read from that file descriptor, but how does a capability allow access=
+ to a namespace? Does a programmer have to explicitly know the namespace th=
+eir process needs to access and open a capability to it?</pre></li>
+
+<li><pre class=3D"student-text">The paper states that one of the hardest th=
+ings to deal with when it comes to Capsicum is the code complexity it bring=
+s and how it's hard to maintain. However, in section 4.1, they explain that=
+ the changes to tcpdump are relatively straightforward. Is there a reason f=
+or tcpdump being easy to change? Also, are there plans to permenantly chang=
+e tcpdump to use Capsicum?
+</pre></li>
+
+<li><pre class=3D"student-text">The performance evaluation of Capsicum seem=
+ed to focus on it's effect on runtime, but didn't really mention the effect=
+ it has on system resources so I was wondering what effect it has? It seems=
+ like there would be some memory overhead, is this overhead substantial?
+</pre></li>
+
+<li><pre class=3D"student-text">The reading mentions a subtle problem with =
+chroot vulnerability where two colluding sandboxes can race to actively rea=
+rrange a tree so that the check for ".." always succeeds. I don't understan=
+d why actively rearranging a tree will allow the check to pass and how two =
+sandboxes can collude.
+</pre></li>
+
+<li><pre class=3D"student-text">This passage "ELF headers normally contain =
+a hard-coded path to the run-time linker to be used with the binary. We exe=
+cute the Capsicum-aware run-time linker directly, eliminating this dependen=
+cy on the global file system namespace." was a bit confusing - what are ELF=
+ headers and the referenced run-time linker that Capsicum replaces?</pre></=
+li>
+
+<li><pre class=3D"student-text">To what extent has Capsicum been adopted in=
+ modern operating systems? What significant alternative capability models h=
+ave been developed since this paper?</pre></li>
+
+<li><pre class=3D"student-text">Were any of the example systems updated to =
+use Capsicum or were the implementations solely used as a proof of concept?=
+</pre></li>
+
+<li><pre class=3D"student-text">What are some of the barriers to frameworks=
+ like Capsicum being implemented on Unix machines?
+</pre></li>
+
+<li><pre class=3D"student-text">What are the assumptions on the security gu=
+arantees Capsicum provides? It seems to me that:
+- Guarantees provided to app developers: sandbox can operate only on open F=
+Ds.
+- Implications depend on how app developer partitions application and FDs.
+- User/admin does not get any direct guarantees from Capsicum.
+- Guarantees assume no bugs in the OS kernel (which is a lot of code), and =
+that the Capsicum developers caught all ways to access a resource not via F=
+Ds.
+Are there any more assumptions on the guarantees?</pre></li>
+
+<li><pre class=3D"student-text">What does it mean when they talk about the =
+dual coding issue with MAC systems? Why does security policy have to be exp=
+ressed separately from code?</pre></li>
+
+<li><pre class=3D"student-text">What happens differently when cap_enter is =
+called vs chroot?</pre></li>
+
+<li><pre class=3D"student-text">What is a file descriptor, exactly, and how=
+ does it differ from a socket?  Forgive the naive question, I'm still a bit=
+ fuzzy on the topic, and it comes up a lot in the Capsicum paper.  I assume=
+ this corresponds to the `fd' variable that is passed around in http.c, whi=
+ch seems like a quasi-pointer to a file, but it is an integer, not a file p=
+ath or address in memory.  At times it sounds like a stream of information =
+(e.g., a port), but how is that different from a socket?
+</pre></li>
+
+<li><pre class=3D"student-text">What is a formal definition of the =E2=80=
+=98global namespace=E2=80=99?=20
+</pre></li>
+
+<li><pre class=3D"student-text">What is an example of an OS privilege vs ho=
+w capabilities achieve more? I'm not sure I follow this.
+
+The paper mentions how the ".." restriction might still have a problem with=
+ two colluding sandboxes that actively rearrange the tree so that the conta=
+inment check might still pass despite changes to files. How exactly does th=
+is work?
+</pre></li>
+
+<li><pre class=3D"student-text">What is the chroot vulnerability that the a=
+uthors are referring to?=20
+"The ".." restriction is a conservative design, and prevents a subtle probl=
+em similar to historic chroot vulnerabilities."
+</pre></li>
+
+<li><pre class=3D"student-text">What is the current consensus on capabilite=
+s in light of the increasing
+incidence of side channel attacks (like Spectre/Meltdown)? It seems like a
+system that used them would have to worry far more about these sorts of att=
+acks
+because extremely critical secrets would now be scattered across a lot more
+places.
+</pre></li>
+
+<li><pre class=3D"student-text">What is the dependency on the global file n=
+amespace?
+</pre></li>
+
+<li><pre class=3D"student-text">What is the difference between priveleges a=
+nd capabilities? Are priveleges specific to processes, while capabilities a=
+re specific to objects / file descriptors?</pre></li>
+
+<li><pre class=3D"student-text">What is the most commonly used system for h=
+andling privileges? Are capabilities systems now more popular than MAC/DAC?=
+</pre></li>
+
+<li><pre class=3D"student-text">What is the relationship between UNIX sysca=
+lls and libc functions? Is one implemented with the other?</pre></li>
+
+<li><pre class=3D"student-text">What is the role of a kernel in this OS? It=
+ seems to differ between OS.=20
+</pre></li>
+
+<li><pre class=3D"student-text">When a program isn't actually built with is=
+olcation in mind, what leads to the performance downfalls when making use o=
+f Capsicum?  Is it due to the intricacies of implementing Capsicum?</pre></=
+li>
+
+<li><pre class=3D"student-text">When are MAC-based frameworks of sandboxing=
+ used versus DAC-based frameworks?</pre></li>
+
+<li><pre class=3D"student-text">Where is the most runtime overhead located =
+typically?</pre></li>
+
+<li><pre class=3D"student-text">Why does have seperate OS processes mean th=
+at the processes are "sandboxed"? (I don't understand operating systems ver=
+y well...) Are the proccesses not able to interact with each other or the s=
+ame memory?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Why have the authors decided to do developm=
+ent of Capsicum on FreeBSD as opposed to a more commonly used system like a=
+ Linux distribution?</pre></li>
+
+<li><pre class=3D"student-text">Why haven't more operating systems adopted =
+Capsicum style systems?
+</pre></li>
+
+<li><pre class=3D"student-text">Why is it advantageous to use capabilities =
+as opposed to the file descriptor by itself?</pre></li>
+
+<li><pre class=3D"student-text">sq6.txt
+
+John McLaughlin
+February 26th 2018
+
+Could Capsicum be used to help defeat kernel level exploitation? As Capsicu=
+m wraps a lot of the system call interface, could they filter out based on =
+signature or heuristic, inputs that looked to be malicious in nature?=20
+</pre></li>
+
+<li><pre class=3D"student-text">=EF=BB=BFHow widely used is capsicum in the=
+ industry? For instance, in somewhere like the Silicon Valley, have most of=
+ the large tech companies adopted it?</pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--CMZ66fLC4G4hY0Yk1s5EXZUZFkvfFrjNFx7U8KAiPw------

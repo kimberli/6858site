@@ -1,0 +1,1449 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-answers/7
+Subject: Answers for lecture 7 - 6.858
+Date: Wed, 20 Mar 2018 22:58:39 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--UXvKp98AwbaLABqHeiKs7PYqhuPkULl5YJhUG47B2J----"
+
+------MultipartBoundary--UXvKp98AwbaLABqHeiKs7PYqhuPkULl5YJhUG47B2J----
+Content-Type: text/html
+Content-ID: <frame-32864-49b26134-ec97-4274-9ac7-d9e01d952e5f@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-answers/7
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Answers for lecture 7 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Answers for lecture 7 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text">
+Lecture 7
+
+Suppose an adversary discovers a bug in NaCl where the checker incorrectly =
+determines the length of a particular x86 instruction. How could an adversa=
+ry exploit this to escape the inner sandbox?
+
+An adversary can use this fact to fool the 0 mod 32 boundary. If the instru=
+ction is at the last of S then the sandbox will think that the instruction =
+is in S but it can extend out of S.</pre></li>
+
+<li><pre class=3D"student-text">
+Lecture 7
+
+Suppose an adversary discovers a bug in NaCl where the checker incorrectly =
+determines the length of a particular x86 instruction. How could an adversa=
+ry exploit this to escape the inner sandbox?
+
+In the paper in section 3.3 (Service Runtime), it describes how the correct=
+ alignment of instructions is what secures the springboard reutrns. This is=
+ the mechanism that allows trusted code to jump to untrusted code. If an ad=
+versary found a bug that allowed them to exploit this alignment checking, t=
+hey could jump to some untrusted code whenever they wanted, which compromis=
+es the promises of the inner sandbox.
+</pre></li>
+
+<li><pre class=3D"student-text">The adversary could exploit the bug by inse=
+rting the x86 instruction that NaCl incorrectly guesses the length of outsi=
+de the memory space of NaCl. From there, the adversary could overwrite memo=
+ry in the system that NaCl normally would disallow. Such a memory overwrite=
+ can be used to trigger system calls on parts of the operating system that =
+browser code should not have access to.</pre></li>
+
+<li><pre class=3D"student-text">The instruction could be misinterpreted. If=
+ the static checker doesn't catch this issue, then the adversary might be a=
+ble to execute a forbidden x86 instruction and theoretically escape the inn=
+er sandbox.
+
+</pre></li>
+
+<li><pre class=3D"student-text">This would subvert NaCl range-checking. For=
+ the particular instruction, an adversary could force the remaining bytes i=
+n the instruction to refer to an instruction enabling escape from the sandb=
+ox.
+</pre></li>
+
+<li><pre class=3D"student-text">"Suppose an adversary discovers a bug in Na=
+Cl where the checker incorrectly determines the length of a particular x86 =
+instruction."
+
+An adversary could potentially exploit this by including a forbidden instru=
+ction of the appropriate length to escape the inner sandbox, as the instruc=
+tion would be permitted to execute w/in the process without being detected =
+as a "forbidden" instruction.  However, if it tried to exit the process it =
+would be caught by the outer sandbox.
+</pre></li>
+
+<li><pre class=3D"student-text"># Lecture 7
+------------------------------------
+Suppose an adversary discovers a bug in NaCl where the checker
+incorrectly determines the length of a particular x86 instruction.
+How could an adversary exploit this to escape the inner sandbox?
+-------------------------------------
+
+My understanding is that x86 has variable encoding sizes for different
+instructions, with the largest being 32 bytes. Before execution, the inner
+sandbox enumerates and checks all reachable instructions based on a fall-th=
+rough
+disassembly which assumes knowing proper instruction sizes in order to know=
+ the
+start of next instructions. Control flow jumps need also be aligned, becaus=
+e
+if we let control flow jump to arbitrary places in the code, control could =
+jump
+to hidden instructions where say a safe instruction is stored from byte x t=
+o
+x + 4, but an unsafe instruction could begin at byte x+2. Therefore, NaCl m=
+akes
+it so jumps can only go to bytes that are equivalent mode 32. This ensures =
+that
+jumps land at instructions that have already been enumerated and vetted.
+
+But, if we can not assume that we know the length of instructions reliably,=
+ then
+all bets are off. Our enumeration of instructions could possibly check wron=
+g
+instructions and miss others, allowing unconstrained arbitrary code executi=
+on.
+This in turn also breaks guarantees about address space reachability, as it=
+ also
+assumes being able to read instruction lengths properly. From this point, a=
+n
+adversary could run arbitrary code, possibly invoking sys calls and or elev=
+ating
+permissions.
+</pre></li>
+
+<li><pre class=3D"student-text">#Lecture Ans 7
+
+Depending on where the offset is in a x86 instruction stream, one can get u=
+nexpectedly useful instructions out.
+
+If the checker incorrectly computes the length of an x86 instruction, then =
+the attacker can exploit this. Suppose the checker computes wrong_len(i) as=
+ the (wrong) length of instruction i at address [a]. The attacker could wri=
+te assembly code at address [a + wrong_len(i)] that passes all the checks a=
+nd seems harmless to the checker. This disassembly is what the NaCl checker=
+ would perceive given the erroneous instruction length.=20
+
+However when the code is executed, the next instruction after instruction i=
+ would be at address [a + actual_len(i)]. Since the attacker carefully craf=
+ted his code such that the instructions at (and after) [a + actual_len(i)] =
+execute something useful, such as invoking a syscall or attempting to jump =
+out of the sandbox.</pre></li>
+
+<li><pre class=3D"student-text">6.858 - NaCl
+
+if the instruction is longer than what it specifies, then an attacker could
+insert code with many of these instructions, and the end instructions would
+not be verified by the checker, which means that these instructions/code wo=
+uld
+have effectively "escaped" the inner sandbox
+</pre></li>
+
+<li><pre class=3D"student-text">6.858 Lecture 7 Lecture Question
+
+Such an instruction would interfere with C5 byte alignment. Since an attack=
+er can craft aribtrary code to run in the sandbox, it is possible that they=
+ could write a program
+that would appear valid to the verifier. They could then then jump to a mis=
+aligned block within the untrusted code base and execute instructions that =
+would
+otherwise be prohibited.</pre></li>
+
+<li><pre class=3D"student-text">Adversary could provide an instruction that=
+ jumps out of the bounds of S.
+</pre></li>
+
+<li><pre class=3D"student-text">Adversary may be able to reach the IP by fa=
+lling through from the particular instruction whose length was incorrectly =
+determined and executing system calls to escape the sandbox.</pre></li>
+
+<li><pre class=3D"student-text">Alignment is used in NaCl in order to disas=
+semble the code in order to make sure that only safe machine instructions a=
+re present in the executable. If the checker incorrectly determines alignme=
+nt, then the disassembly would be off and some reachable instruction may no=
+t be checked by the validator to make sure it is safe. An adversary could s=
+martly position an unsafe instruction that allows escaping the inner sandbo=
+x based on this incorrect length determining bug.
+
+</pre></li>
+
+<li><pre class=3D"student-text">An adversary can exploit this by using a bu=
+ffer overflow in his x86 instruction.</pre></li>
+
+<li><pre class=3D"student-text">An adversary could place this x86 instructi=
+on followed by instructions such as ret that would allow the program to esc=
+ape the sandbox. Some care will need to be taken by the attacker to ensure =
+that when analyzed with the incorrect length, no invalid instructions will =
+be found, but as long as the static check passes, the actual code can be ar=
+bitrary unchecked native code.
+</pre></li>
+
+<li><pre class=3D"student-text">As an example, suppose the checker determin=
+es the length of WEIRD_BUT_INNOCENT_INSTR() to be 4y, when the length of al=
+l instructions here is really y each. In reality, SYSCALL1() will be execut=
+ed after WEIRD_... instead of ADD() by the browser.=20
+
+IP is currently at WEIRD_BUT_INNOCENT_INSTR():
+
+	WEIRD_BUT_INNOCENT_INSTR()
+	SYSCALL1(...)
+	SYSCALL2(...)
+	SYSCALL3(...)
+	=3D=3D=3D
+	ADD() (some innocent code)
+
+The checker assumes the WEIRD_BUT_INNOCENT_INSTR() code is good to go, and =
+directly skips towards checking the ADD() instruction next, instead of chec=
+king and disallowing the system calls. The system calls pretty much grant t=
+he adversary to perform whatever system operation it pleases.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Because the inner sandbox uses segmented me=
+mory to constrain data and
+instruction memory references, an incorrectly calculated length during
+range checks means a hacker could gain access to the instruction memory
+references, possibly executing instructions that the inner sandbox prevents=
+.
+
+</pre></li>
+
+<li><pre class=3D"student-text">By knowing that the disassembler/checker wi=
+ll get the length of an instruction wrong, an attacker can generate code th=
+at, when disassembled along the incorrect boundary (and propagating onward)=
+ appears allowable, but when disassembled along its true instruction bounda=
+ries is actually malicious. The attacker can then use "unsafe" instructions=
+ (syscall, int, lds, ret) to jump to the springboard code and manipulate co=
+ntrol registers.</pre></li>
+
+<li><pre class=3D"student-text">Danny Tang
+
+data1013
+
+2/27/18
+
+
+
+Lecture 7
+
+Question:
+
+Suppose an adversary discovers a bug in NaCl where the checker incorrectly =
+determines the length of a particular x86 instruction. How could an adversa=
+ry exploit this to escape the inner sandbox?
+
+Answer:
+
+Normally, NaCl disallows certain instructions that are deemed "unsafe." If =
+the bug described were to exist, then an adversary could
+come up with a string that would take advantage of this bug to run the disa=
+llowed instructions. For example, they could perfectly
+offset the instructions in the string so that they run after the checker in=
+correctly counts the length of the previous instruction.
+These instructions (eg. ret) could allow the adversary to escape the inner =
+sandbox.</pre></li>
+
+<li><pre class=3D"student-text">From Figure.3, we know the checker will det=
+ermine if each
+IP is allowed based on the instruction length. So if the=20
+checker incorrectly determines the length of a particular
+instruction, we can utilize this to add some "invalid" addresses
+to JumpTargets. And then we can use jump or call function=20
+to jump to the address that may have libc function because
+those addresses are now in JumpTargets and are treat valid.</pre></li>
+
+<li><pre class=3D"student-text">Has this caught on anywhere outside of Chro=
+me?  Also it looks like it's currently only available for apps on ChromeOS?=
+  I suppose that, even though the overhead is slight, it's still more than =
+most developers are willing to stomach.  A point of writing a piece of soft=
+ware in pure x86 is achieving the highest efficiency possible.  I can see t=
+hat being inconvenient when paired with having to run in a more expensive e=
+nvironment.</pre></li>
+
+<li><pre class=3D"student-text">I think the adversary could then use this a=
+dditional length granted or removed to shift the values stored at other mem=
+ory locations. This shift could change the address locations that were orig=
+inally deemed safe, and potentially turn them into unsafe system calls that=
+ could derail the state of the program. This would be harder to implement t=
+han regular stack overflow techniques, but would still give the ability for=
+ well crafted values to be hidden as safe ones, and only be shifted on exec=
+ution of the program where the x86 instruction takes up more or less space =
+in memory.</pre></li>
+
+<li><pre class=3D"student-text">I think this would cause a problem in case =
+3 of their proof that the validator works. They would not correctly align t=
+he computer address to be 0 mod 32, so it wouldn't necessarily be in S beca=
+use it would be straddling a 0 mod 32 boundary. Then, if the address is not=
+ in S where S is all the addresses that are checked, it could be an address=
+ outside of the inner sandbox. </pre></li>
+
+<li><pre class=3D"student-text">If InstLength(IP) returns the wrong length,=
+ then the instruction pointer (IP) is incremented by an incorrect amount, a=
+nd can lead to a bad jump target being added to the list of JumpTargets. Th=
+is would then allow an instruction further down to jump to the bad jump tar=
+get, which would allow the adversary to take control over the program.</pre=
+></li>
+
+<li><pre class=3D"student-text">If NaCl doesn't correctly determine the len=
+gth of the instruction, the  attacker would be able to perform a relative j=
+ump to the location he/she are not supped to access. Thus, albeit very diff=
+icult, it is possible to print sensetive information, corrupt data or perfo=
+rm a return-to-libc attacks. What makes it difficult is that the jumps are =
+relative.</pre></li>
+
+<li><pre class=3D"student-text">If NaCl gets its length detection wrong, th=
+en a program could well be jumping into the middle of a long instruction wh=
+ich could decode to a syscall which can execute random instructions.</pre><=
+/li>
+
+<li><pre class=3D"student-text">If NaCl has a bug that incorrectly determin=
+es the lenght of an instruction then the proof that any instruction branch =
+in a memory segment S only leads to another instruction in memory segment S=
+ no longer holds. Thus, an attacker can write code to exit the NaCl applica=
+tion's memory segment.
+
+For example, an attacker could learn the address of a system call (such as =
+unlink) and then use the jmp assembly command to move execution to that add=
+ress, filling the stack beforehand with the necessary arguments. This defea=
+ts the exclusion of the syscall command from the NaCl architecture.
+
+</pre></li>
+
+<li><pre class=3D"student-text">If NaCl incorrectly determined the length o=
+f an x86 instruction, then an attacker
+could possibly structure their code in such a way such that:
+
+- NaCl reads one set of instructions using the incorrect length.
+- the instructions are different with the incorrect length.
+
+This would involve some padding or redundant inputs for this to work, but
+potentially there could be instructions which are not validated properly by=
+ NaCl.</pre></li>
+
+<li><pre class=3D"student-text">If NaCl incorrectly determines the length o=
+f a particular
+x86 instruction, then an adversary could use this offset
+to include code that would allow them to call return without
+having NaCl detect the return instruction.
+</pre></li>
+
+<li><pre class=3D"student-text">If NaCl incorrectly determines the length o=
+f a particular instruction, it would add an offset to the following instruc=
+tions, therefore changing them.  An adversary could craft instructions that=
+ with the offset appear harmless and pass NaCl=E2=80=99s tests, but when ac=
+tually executed could be prohibited/malicious code. </pre></li>
+
+<li><pre class=3D"student-text">If NaCl incorrectly determines the length o=
+f a particular x86 instruction, adversary can escape the sandbox by providi=
+ng the jump instruction that goes outside the sandbox. It happens because, =
+in this situation, theorem that S contains all addresses that can be reache=
+d from an instruction with address in S (where S is the set of instructions=
+ addresses from the list StartAddr) is no longer true. Therefore, there can=
+ be a jump instruction at some offset that won't be checked/validated by Na=
+Cl.
+</pre></li>
+
+<li><pre class=3D"student-text">If NaCl incorrectly determines the length o=
+f an x86 instruction, say underestimates, the attacker could make an instru=
+ction that's longer than expected, and then right after the believed end, p=
+ut a jmp instruction to where they want (using the args to their big instru=
+ction).
+</pre></li>
+
+<li><pre class=3D"student-text">If NaCl underestimates the instruction size=
+, an adversary could use the spare space in the instruction to insert a sys=
+tem call that wold trigger the system to exit the sandbox.
+</pre></li>
+
+<li><pre class=3D"student-text">If Native Client misidentified the length o=
+f an x86 instruction, it would potentially allow jumps to instructions that=
+ it does not screen. Because x86 instructions are variable-length and can p=
+otentially overlap, the attacker could hide an illegal instruction overlapp=
+ing with a sequence of instructions that appears legal to Native Client. Th=
+en, at runtime, the attacker's code could jump to the illegal instruction t=
+o make a system call, change the segment registers, or otherwise escape the=
+ sandbox.</pre></li>
+
+<li><pre class=3D"student-text">If an adversary discovered a bug in which c=
+heckers incorrectly determined the lengths of x86 instructions, this could =
+break the instruction alignment condition, allowing the springboard to be i=
+nvoked by untrused code. This could allow the adversary to jump immediately=
+ to a syscall without the springboard cleaning up to restore the native-cod=
+e threading environment, allowing a syscall to be invoked by untrusted code=
+, escaping the inner sandbox.
+</pre></li>
+
+<li><pre class=3D"student-text">If an adversary discovered such a bug, they=
+ could exploit it to escape the inner sandbox by invalidating the padding o=
+f the instructions and overflowing commands outside of the expected address=
+ space.</pre></li>
+
+<li><pre class=3D"student-text">If an adversary discovers a bug in NaCl whe=
+re the checker gets an instruction length wrong, he could escape the inner =
+sandbox by allowing a normally forbidden instruction such as syscall to exe=
+cute. Additionally he could exploit this bug to execute a jump to somewhere=
+ else if the checker isn't reliably verfiying the length of the jump instru=
+ction. </pre></li>
+
+<li><pre class=3D"student-text">If an adversary discovers a bug in NaCl whe=
+re the checker incorrectly determines the length of a particular x86 instru=
+ction, then we could have a scenario where the checker incorrectly determin=
+es a longer length of a given x86 instruction and reads in malicious code t=
+hat allows an adversary to escape the inner sandbox.=20
+</pre></li>
+
+<li><pre class=3D"student-text">If an adversary discovers a bug in the NaCl=
+ checker for a particular x86 instruction, the adversary can find a way to =
+escape the forced
+32 byte alignment, which could lead the adversary to construct instructions=
+ such that they can set a jump instruction to an unsecured
+section by overlapping a 32-byte boundary, effectively escaping the inner s=
+andbox.</pre></li>
+
+<li><pre class=3D"student-text">If an adversary found a bug in NaCl where t=
+he checker incorrectly determined the length of a x86 instruction, the adve=
+rsary could use this bug to call unsafe instructions that would access an a=
+ddress that was not meant to be accessible due to the inner sandbox and thu=
+s would allow the adversary to escape the inner sandbox.</pre></li>
+
+<li><pre class=3D"student-text">If an instruction length is determined inco=
+rrectly, the adversary could place some garbage code at the actual next ins=
+truction place. However, since NaCl wouldn=E2=80=99t see consider that as a=
+ valid instruction address to which control can be transferred, it will not=
+ check whether that instruction is valid or not. It would check two surroun=
+d =E2=80=9Cvalid addresses=E2=80=9D and as long as the attacker ensures tha=
+t those point to proper instructions, he/she should be able to get the prog=
+ram to crash atleast via this exploit.</pre></li>
+
+<li><pre class=3D"student-text">If it incorrectly determines the length, it=
+ wouldn't be able to verify the program to check if the opcodes only jump t=
+o the beginning of an instruction recognized by the disassembly. This could=
+ mean that we jump to the middle of an instruction stream and execute execv=
+e or something that NaCl previously disallowed. Since X86 instructions can =
+carry prefixes that can alter the operation, if the verifier doesn't work, =
+then there could be ways to jump to instruction sequences that break you fr=
+om the sandbox. </pre></li>
+
+<li><pre class=3D"student-text">If it were to happen that the NaCl checker =
+incorrectly determined the length of a particular x86 instruction, and it a=
+llowed an IP with length bigger than allowed, it might be possible that an =
+adversary can use that to add a harmful instruction to the "JumpTargets" (f=
+rom Figure 3) and thus escape the inner sandbox with the use of a system ca=
+ll not normally allowed in the inner sandbox. </pre></li>
+
+<li><pre class=3D"student-text">If the NaCl checker cannot determine the le=
+ngth of an x86 instruction, then the inner sandbox's static analysis is eff=
+ectively broken. It means the checker cannot properly determine the start a=
+nd end of an instruction, nor how to disassemble the code. The adversary co=
+uld sneak self-modifying code and overlapping instructions out of alignment=
+ into the binary to escape the inner sandbox.
+</pre></li>
+
+<li><pre class=3D"student-text">If the NaCl checker incorrectlly determined=
+ the length of a particular instruction, an adversary could make the instru=
+ction do something that the checker would usually prohibit, but instead sta=
+y undetected. This could include something like loading or storing data out=
+side of the sandbox, or target an instruction not in the disassembly.  This=
+ would ultimately allow the adversary to escape the inner sandbox.
+</pre></li>
+
+<li><pre class=3D"student-text">If the NaCl checker incorrectly determines =
+the length of a particular x86 instruction, an adversary could exploit this=
+ to spoof the length of their executable such that they place an instructio=
+n that is able to jump out of the sandbox. For example, they might be able =
+to spoof that a "invalid" jump instruction is actually in the JumpTargets l=
+ist.
+</pre></li>
+
+<li><pre class=3D"student-text">If the NaCl checker incorrectly determines =
+the length of some x86 instruction, then the checker's list of instruction =
+addresses would likely be different from the instructions that will actuall=
+y be executed. Indeed, after the checker comes across this bad instruction,=
+ the values that the checker's IP takes would be misaligned (at least tempo=
+rarily) from the values that the program counter would take if the program =
+were run. Then, an adversary could craft a binary that contains unsafe inst=
+ructions, but passes the NaCl validator because the bad instruction makes t=
+he checker think that the binary consists of valid instructions. This binar=
+y can let the adversary escape the inner sandbox.</pre></li>
+
+<li><pre class=3D"student-text">If the adversary discovers a bug in NaCl wh=
+ere the checker makes a mistake in the length of a particular x86 instructi=
+on, the adversary can then use that to tamper with the alignment. Instructi=
+ons are aligned to 4 byte boundaries, but if the length of the instruction =
+is miscalculated, then that instructions (or the ones that follow) could be=
+ misaligned, allowing the adversary to jump to the middle of an instruction=
+, thus executing an instruction that doesn't actually exist in the original=
+ instruction set and thus would not be checked by NaCl for safety. The new =
+unsafe instruction (that starts in the middle of another instruction) can b=
+e used by the attacker to code for malicious opcodes that would otherwise b=
+e unallowed by NaCl, perhaps instructions that change the segment states, a=
+llowing the code to jump outside the preordained 256 MB space.
+</pre></li>
+
+<li><pre class=3D"student-text">If the check incorrectly determines the len=
+gth of an x86 instruction, then it is possible for that instruction to cont=
+ain and execute prohibited code such as system calls. This could be used to=
+ escape the inner sandbox.
+</pre></li>
+
+<li><pre class=3D"student-text">If the checker doesn't correctly determine =
+the length of an x86 instruction, then it's possible that the binary contai=
+ns an instruction that overlaps with the 32-byte boundary. Without alignmen=
+t, it's possible that the program could jump to the middle of a long instru=
+ction which encodes a jump to escape the inner sandbox.</pre></li>
+
+<li><pre class=3D"student-text">If the checker incorrectly determined the l=
+ength of an instruction, it could
+reach an instruction address outside of S (pg. 5). Instruction addresses
+outside of S would not be checked for whether they call/jmp to an invalid
+address, so the adversary could exit the sandbox and execute other code out=
+side
+of S.
+</pre></li>
+
+<li><pre class=3D"student-text">If the checker incorrectly determined the l=
+ength of an instruction. It woul not sandbox all of the untrusted code in t=
+he inner box. The attacker may exploit this by referencing other system cal=
+ls that are not normally allowed in the sandbox and steal data. </pre></li>
+
+<li><pre class=3D"student-text">If the checker incorrectly determined the l=
+ength of an x86 instruction, thus splitting it in the middle, then it may n=
+ot detect if the instruction is actually one of those that are blacklisted,=
+ which could allow the program to use instructions not usually permitted by=
+ NaCl.</pre></li>
+
+<li><pre class=3D"student-text">If the checker incorrectly determines the l=
+ength of a particular x86
+instruction, an attacker could hide another instruction unaligned to the
+checked boundary that allows the untrusted code to escape the inner sandbox
+(since the inner sandbox is only maintained by static validation of
+instructions on a 32-bit boundary). =20
+</pre></li>
+
+<li><pre class=3D"student-text">If the checker incorrectly determines the l=
+ength of an instruction (but interprets that the operation itself is allowe=
+d), an adversary could supply illegal arguments to the operation for use by=
+ the outer sandbox (which handles mediation of system calls at the process =
+boundary). This effectively bypasses the inner sandbox and allows the adver=
+sary to form a system call with the appropriate arguments.</pre></li>
+
+<li><pre class=3D"student-text">If the checker incorrectly determines the l=
+ength of an instruction it may leave room for additional instructions in th=
+e bytes that the checker assumes belongs to the instruction that it misdete=
+rmined the length of, allowing the attacker room to include a jump outside =
+of the sandbox in their code and have it not be caught by the checker.
+</pre></li>
+
+<li><pre class=3D"student-text">If the checker incorrectly determines the l=
+ength of an x86 instruction an adversary might be able to pass in the incor=
+rectly determined x86 instruction along with a carefully selected disallowe=
+d instruction, which will go unnoticed by the checker, but able to jump out=
+ of the inner sandbox at runtime.
+
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">If the checker incorrectly determines the l=
+ength of an x86 instruction, it could potentially allow for instructions to=
+ cross the 32 byte barrier. Then, you could jump to the middle of an "instr=
+uction" and execute something that Native Client is supposed to forbid, suc=
+h as syscall opcodes.</pre></li>
+
+<li><pre class=3D"student-text">If the checker incorrectly determines the l=
+ength of an x86 instruction, the instruction in question can be chopped off=
+ resulting in an entirely different instruction to be called. An attacker c=
+an learn the pattern of miscalculated instruction lengths and use it to str=
+ucture input that will result in a malicious instruction.
+</pre></li>
+
+<li><pre class=3D"student-text">If the checker incorrectly determins the le=
+ngth of a particular x86 instruction, we can get the pseudocode (Figure 3) =
+to completely skip checking one (or multiple) instructions that are illegal=
+ (and run arbitrary code).
+
+For example, let's say we can convince the InstLength(IP) call to return th=
+at this particular instruction was 1024 bytes. Then, we can include 1024 by=
+tes of real instructions (that will be run by the machine) that aren't chec=
+ked for being disallowed or overlap. A simple return-to-libc call (or any a=
+rbitrary command call) could work here.
+
+Of course, InstLength(IP) probably wouldn't be off by too many bytes, but t=
+hen it just becomes a challenge of how much damage can be done in as few by=
+tes as possible!
+</pre></li>
+
+<li><pre class=3D"student-text">If the checker misidentifies the length of =
+an instruction as shorter than it actually is, than one could cause the unt=
+rusted code to overflow past the end of the inner sandbox's text segment. T=
+he checker would think the code takes up less space than it actually does, =
+so one could contruct a stream using this instruction to overflow out of th=
+e untrusted module's text segment.=20
+Another way to utilize missized instructions is to bypass nacljmp. Since th=
+is breaks down into two instructions ('and' to mask, and 'jmp' to jump to t=
+he masked address) one could bypass the mask instruction and therefore jmp =
+to an invalid indirect branch destination.
+If an untrusted module can overflow it's supposed bounds, it can therefore =
+access the trusted outer sandbox since they are contained in the same proce=
+ss</pre></li>
+
+<li><pre class=3D"student-text">If the checker thinks that the length of th=
+e instruction is longer than=20
+it is, it might be possible to use the unaccounted bytes in addition to
+the next instruction in order to make a system call to jump out of the=20
+inner sandbox.</pre></li>
+
+<li><pre class=3D"student-text">If the checker thought the instruction was =
+shorter than it actually is, the attacker could position other instructions=
+ at the location the IP would=20
+jump to, thereby gaining control over the program. The attacker could then =
+execute arbitrary system calls.
+</pre></li>
+
+<li><pre class=3D"student-text">If the inner sandbox misreads the length of=
+ the x86 instruction as longer than it actually is, we can inject code to j=
+ump out of the inner standbox.
+</pre></li>
+
+<li><pre class=3D"student-text">If the instruction checker incorrectly dete=
+rmines the length of a particular instruction, the adversary could embed a =
+jump instruction in the the instruction whose length is incorrectly determi=
+ned. So the checker cannot tell that the illegal jump instruction is in the=
+ code. The jump instruction would then be executed to escape the sandbox wh=
+en the program executes.=20
+</pre></li>
+
+<li><pre class=3D"student-text">If the length of an instruction is incorrec=
+t, it might be incorrectly aligned. NaCl looks at every instruction reachab=
+le in the code (going through all of the branches) to make sure that every =
+reachable instruction is valid (e.g. not one of the syscalls that they disa=
+lllow). By only jumping to properly-aligned instructions, NaCl knows they'v=
+e identified and validated all instructions ahead of time. An improperly al=
+igned instruction sneaking in might let you jump somewhere other than the b=
+eginning of the instruction, and the suffix of the instruction from this po=
+int on might be another instruction but one that is normally forbidden by N=
+aCl. In this way an attacker could try to sneak in a syscall that the sandb=
+ox would usually not allow.</pre></li>
+
+<li><pre class=3D"student-text">If the length of the instruction is incorre=
+ct then the adversary could use this falsify calls to the static analyzer a=
+nd possibly directly confirm that the rules have been passed -- thereby exi=
+ting the inner sandbox.
+</pre></li>
+
+<li><pre class=3D"student-text">If the sandbox misjudges the sizes and isn'=
+t babysitting certain addresses,
+it misunderstands where the call can possibly jump to, so that means
+the program could jump to places it shouldn't be allowed to.</pre></li>
+
+<li><pre class=3D"student-text">If the verifier assumed that an instruction=
+ was a different length than it actually is, then we could perhaps construc=
+t code where, using the verifier-assumed length the instruction is aligned =
+properly, thus allowing us to jump to that instruction within the sandbox. =
+Once we jump to that instruction, two things could happen.
+    1. If the verifier-assumed length is less than the actual length then t=
+his instruction straddles the boundry. We could place a disallowed instruct=
+ion after this boundry point (it wouldn't be decoded correctly because the =
+verifier is decoding instructions with an incorrect offset) and this disall=
+owed instruction could allow us to break the sandbox.
+    2. If the verifier-assumed length is greater than the actual length, th=
+en we have space between the end of the instruction and the boundry where w=
+e could place a disallowed instruction. This instruction would not be seen =
+by the verifier but would be executed at run time. This instruction could h=
+elp us break out of the sandbox.
+</pre></li>
+
+<li><pre class=3D"student-text">If there is a bug in NaCl where the checker=
+ incorrectly determines the length of a particular x86 instruction, an adve=
+rsary could exploit this by crafting the x86 instruction, along with instru=
+ctions stored before or after it in the code segment, such that the checker=
+ would not detect an overlapping 32-byte boundary fault in the binary. From=
+ the checker's point of view, the particular x86 instruction (and instructi=
+ons following it in the code segment) would be aligned along the 32-byte bo=
+undaries. However, if the particular x86 instruction was of a different len=
+gth than what satisfied the checker's alignment check, then its length coul=
+d skew how subsequent instructions are stored in the code segment. Then, wh=
+en the binary executes, since jumps can only happen at the beginning of the=
+ 32-byte-multiple addresses, there is a possibility that a jump to the begi=
+nning of an instruction (in the checker's point of view) would actually be =
+a jump into the middle of some long-byte instruction. This could be further=
+ exploited so that the resulting instruction could be decoded as a jump to =
+break out of the inner sandbox.</pre></li>
+
+<li><pre class=3D"student-text">If there is a bug where the checker incorre=
+ctly determines the length of an instruction, the adversary can place unsaf=
+e instructions on the stack to be executed.=20
+</pre></li>
+
+<li><pre class=3D"student-text">If there was a NaCl checker bug which incor=
+rectly determined the length
+of some x86 instruction, then some instructions might overlap a
+32-byte boundary. This might allow for some blacklisted instructions
+to be used, and thus break out of the sandbox.</pre></li>
+
+<li><pre class=3D"student-text">In NaCl, the inner sandbox's purpose is for=
+ binary validation. Thus, if there is a bug that where the checker determin=
+es that a particular instruction has the wrong length,=20
+we can actually exploit that by giving the NaCl checker malicious instructi=
+ons (for example, a ret), just offset by a certain number of bits. Say for =
+example we want to feed the checker 2 instructions
+that the checker would usually catch:
+
+BADD BADD
+
+and say the checker sees the instruction GOOD as 2 characters only. Then we=
+ can feed in
+
+GOOD BADD BADD AA
+
+and the checker would see
+
+GO ODBA DDBA DDAA
+
+which doesn't have anything malicious!
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">In figure 3, we see a pseudocode of how NaC=
+l would verify that all the indirect jmps go to legal addresses within the =
+TextLimit range. However, if somehow we could make that checker think that =
+InstLength(IP) would make the updated IP be within bounds, the checker woul=
+d confirm that the code is valid, but in fact, once it runs, it would attem=
+pt to jump to an address outside the allocated space by the sandboxing proc=
+ess.=20
+</pre></li>
+
+<li><pre class=3D"student-text">In part 1 of the construction of the NaCl v=
+alidator, the adversary will be able to exploit this bug since the set S of=
+ instruction addresses from StartAddr will be incorrect, since IP will be i=
+ncorrectly incremented in 'IP +=3D InstLength(IP)', and subsequently 'Start=
+Addr[icount++]=3DIP' will store the incorrect IP value. The adversary can t=
+hen subsequently attack the control flow integrity of the program to escape=
+ the inner sandbox.</pre></li>
+
+<li><pre class=3D"student-text">Instructions are checked at the next addres=
+s of INSTRUCTION_ADDR+LENGTH_OF_INSTRUCTION. If the NaCl checker thinks the=
+ length of a particular x86 instruction is different, an adversary can writ=
+e some assembly code at the real end address of the instruction that doesn=
+=E2=80=99t get checked by NaCl. NaCl will check the fake =E2=80=9Cnext inst=
+ruction=E2=80=9D using the bad length and think that means the real next in=
+struction passed. However, the OS will execute the  instruction as is and t=
+hen after that start executing the real next instruction. The attacker coul=
+d make the unchecked continuation code JMP from the sandbox.</pre></li>
+
+<li><pre class=3D"student-text">It might be the case that the verifier got =
+a wrong length for a given instruction - if this does happen,
+then one can exploit this defect by having malicious code with just the app=
+ropriate length to be executed (using the right offset to complete the size=
+ that the verifier got wrong)
+and potentially, allow control to get out of the inner sandbox. This is pos=
+sible because in that case,
+the piece of code (containing malicious code within it) passes the verifier=
+ and is hence allowed execution.=20
+
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 6: Software Fault Isolation
+2/28/18
+
+Suppose an adversary discovers a bug in NaCl where the checker incorrectly =
+determines the length of a particular x86 instruction. How could an adversa=
+ry exploit this to escape the inner sandbox?
+
+They can take advantage of the nacljmp function, as that relies on accurate=
+ indentification of length and location of address. If this is no longer ga=
+runteed, then in turn they can no longer claim that jmp from any address wi=
+thin the inner sandbox is contained to addresses in the inner sandbox.</pre=
+></li>
+
+<li><pre class=3D"student-text">Lecture 7
+
+If the instruction length is not correctly determined, the defense mechanis=
+m=20
+presented in case 1 falls short and the adversary can escape the sandbox.
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 7
+Suppose an adversary discovers a bug in NaCl where the checker incorrectly =
+determines
+the length of a particular x86 instruction. How could an adversary exploit =
+this to escape the inner sandbox?
+
+If the checker incorrectly determines the length of a particular x86 instru=
+ction the attacker can use the instruction
+to cause further instructions to be misdecoded (x86 variable instruction en=
+coding, is a lovely feature) and thereby
+hide malicous instructions behind benign decodings.`
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 7 (Answer to Paper Question)
+
+Question:
+
+Suppose an adversary discovers a bug in NaCl where the checker incorrectly =
+determines the length of a particular x86 instruction. How could an adversa=
+ry exploit this to escape the inner sandbox?
+
+
+Answer:
+
+If the checker incorrectly determines the length of an x86 instruction, the=
+n an adversary might be able to engineer a binary that passes NaCl's checks=
+ but actually executes malicious instructions (e.g. a system call).
+
+For example, suppose "SYSCALL" is a malicious 2-byte long instruction that =
+does a system call (e.g. "0f 05"), and "AND $0xffffffe0, %eax" is 3-byte lo=
+ng instruction that ands %eax with 0xffffffe0 and stores the result in %eax=
+ (e.g. "83 e0 e0"). If NaCl incorrectly determines that "AND $0xffffffe0, %=
+eax" is 5 bytes long, we can trick NaCl into verifying the following progra=
+m, even though it performs an illegal system call.
+
+83 e0 e0 : AND $0xffffffe0, %eax
+0f 05.   : SYSCALL
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 7 Reading Question
+
+Suppose the checker in NaCl incorrectly determines the length of a particul=
+ar
+x86 instruction. Then, when the NaCl validator proceeds through to the
+fall-through address, an incorrect number of bytes would be added to the IP=
+. In
+certain cases, this could possibly cause the IP to escape out of the inner
+sandbox.=20
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 7: Native Client Reading Question
+
+An adversary could exploit this by adding malicious code past the instructi=
+on length that
+the checker is aware of, and then enable themselves to trampoline out of th=
+e inner sandbox
+and into a more vulnerable and dangerous part of the system, such as desira=
+ble areas in
+memory, etc.
+</pre></li>
+
+<li><pre class=3D"student-text">NaCl uses text length to make sure instruct=
+ion jumps fall within the sandbox space. So the advantage here is you could=
+ reference data outside the sandbox and jump to instructions out of the san=
+dbox. However, this is only useful if it assumes the instruction is longer =
+than it actually is for an attacker. If not, it simply doesn't allow the co=
+de to run in the sandbox properly.
+</pre></li>
+
+<li><pre class=3D"student-text">NaCl's constrains code execution to stay wi=
+thin the inner sandbox by using a validator to make sure that control flow =
+stays within the sandbox and that no unsafe instructions are called. The va=
+lidator goes through the binaries and builds up a list of start addresses f=
+or instructions, S. The authors argue that S contains all addresses that ca=
+n be reached from an instruction with address in S. They prove this theorem=
+ by considering 3 cases, the first of which argues that if an "IP is reache=
+d by falling through from A", then  "that IP is InstAddr(A) + InstLength(A)=
+. But this address would have been in S from part 1 of the construction. Co=
+ntradiction." However, if the checker incorrectly determines the list of an=
+ x86 instruction, then the proof for case 1 no longer holds, and we can hav=
+e an instruction reachable from S that is not checked by the validator. If =
+an attacker knows that the checker incorrectly determines the length of a p=
+articular instruction, they could put an illegal instruction immediately af=
+ter it, such that it gets called when falling through from instruction A. T=
+his illegal instruction could be a system call, which means that the attack=
+er would have escaped the inner sandbox.
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">One can simply take in such an instruction =
+"A", and carefully craft a sequence of following instructions. The instruct=
+ions that follow can contain a syscall or interupt, which essentially "brea=
+ks" the inner sandbox. The attacker will need to make sure that the followi=
+ng instructions will be interpreted as legal structure given that the valid=
+ator counts "A"'s length wrong. Note that this method will require some cra=
+fting, espectially to satisfy the 32-aligned requirement, and that the wron=
+gly interpreted following sequence does not contain any illegal instruction=
+.=20
+
+A probably better way is to embed a call to "mprotect" in the sequence(whic=
+h is short, finite length of instruction instead of potentially arbitrary s=
+hellcode). The "mprotect" can mark the binary itself as writable. Then, a l=
+oad instruction can load arbitrary shellcode from .data section into the .t=
+ext section, thereby gaining arbitrary shellcode injection.</pre></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 7
+
+Suppose an adversary discovers a bug in NaCl where the checker incorrectly =
+determines the length of a particular x86 instruction. How could an adversa=
+ry exploit this to escape the inner sandbox?
+
+If the adversary can find a way to avoid the x86 static analysis checks, th=
+ey can use overlapping instructions to make illegal calls which will go unc=
+hecked by the static analyzer such as load/store, ret, lds, or syscall.</pr=
+e></li>
+
+<li><pre class=3D"student-text">Some of the constraints that NaCl places on=
+ untrusted binaries depend on NaCl being able to
+correctly detect the length of x86 instructions - for example, constraint C=
+5 from table 1
+requires that the binary contains no instructions that overlap a 32-byte bo=
+undary. If=20
+NaCl cannot correctly determine length, an adversary can construct inputs t=
+hat overlap
+the 32-byte boundaries, and the jmp instructions will not be executed corre=
+ctly. This could
+allow the adversary to escape the inner sandbox.</pre></li>
+
+<li><pre class=3D"student-text">Something similar to a buffer overflow coul=
+d happen if the inner sandbox doesn't correctly calculate memory constraint=
+s. An attacker could use the bug to overflow code in to another data struct=
+re and run the malicious code. </pre></li>
+
+<li><pre class=3D"student-text">Suppose an adversary discovers a bug in NaC=
+l where the checker incorrectly determines the length of a particular x86 i=
+nstruction. How could an adversary exploit this to escape the inner sandbox=
+?
+
+If NaCl improperly checks instruction length, an attacker could potentially=
+ use a blocked instruction posing as a legimitate instruction. Alternativel=
+y, the attacker can create overlapping instructions that crash the machine =
+and maybe even elevate privileges.
+</pre></li>
+
+<li><pre class=3D"student-text">Suppose an adversary discovers a bug in NaC=
+l where the checker incorrectly determines the length of a particular x86 i=
+nstruction. How could an adversary exploit this to escape the inner sandbox=
+?
+
+The attacker could craft the untrusted x86 code such that NaCl would fail t=
+o detect illegal
+instructions because of its inability to perform a reliable disassembly.</p=
+re></li>
+
+<li><pre class=3D"student-text">Suppose an adversary discovers a bug in NaC=
+l where the checker incorrectly determines the length of a particular x86 i=
+nstruction. How could an adversary exploit this to escape the inner sandbox=
+?
+
+There are 7 constraints for NaCl binaries. Constraint 5 says the binary con=
+tains no instructions overlapping a 32-byte boundary. We can break that con=
+straint. The paper contains a proof by contradiction that only instructions=
+ in a set of addresses, S, can be reached from instructions in S. Case 3 of=
+ the proof syas: IP is reached by an indirect transfer from an in- structio=
+n at A in S. Since the instruction at A is an indirect call or jump, any ex=
+ecution of A always immediately follows the execution of an and. After the =
+and the computed address is aligned 0 mod 32. Since no instruction can stra=
+ddle a 0 mod 32 boundary, every 0 mod 32 address in [0, TextLimit) must be =
+in S. Hence IP is in S. Contradiction. An instruction can now straddle a 0 =
+mod 32 boundary becasue the checker incorrectly determined the length of an=
+ x86 instruction, so we can perform a jump outside the sandboxed area.</pre=
+></li>
+
+<li><pre class=3D"student-text">Suppose an adversary discovers a bug in NaC=
+l where the checker incorrectly determines the length of a particular x86 i=
+nstruction. How could an adversary exploit this to escape the inner sandbox=
+?
+
+--------
+
+If the length of the instruction is incorrect, the next IP will be incorrec=
+t since it is determined by IP + InstLength(IP) according to the pseudocode=
+ in Figure 3.
+This new IP can get added to the JumpTargets list and since it is still wit=
+hin the TextLimit, could potentially jump in the middle of an instruction.
+An adversary could figure out the error in the length and structure their c=
+ode
+such that the new target is the address of a disallowed instruction such as=
+ syscall or ret.</pre></li>
+
+<li><pre class=3D"student-text">Suppose an adversary discovers a bug in NaC=
+l where the checker incorrectly determines the length of a particular x86 i=
+nstruction. How could an adversary exploit this to escape the inner sandbox=
+?
+
+I think the most appropriate strategy would to access the area where "trust=
+ed" pieces of code can be executed. Theoretically, we can somehow use a "tr=
+ampoline" far call instruction to escape the inner sandbox.=20
+
+</pre></li>
+
+<li><pre class=3D"student-text">Suppose an adversary discovers a bug in NaC=
+l where the checker incorrectly determines the length of a particular x86 i=
+nstruction. How could an adversary exploit this to escape the inner sandbox=
+?
+
+The check explictly checks that certain x86 instructions are not allowed so=
+ if a checker incorrectly determines the length of an instruction, it might=
+ think that a disallowed opcode is another opcode and consequently allow it=
+ to be executed. If it is a syscall or a ret to somewhere outside of the in=
+ner sandbox, the adversary can get out of the inner sandbox. It could also =
+be the other way around where the argument is interpreted differently from =
+intended and as a result it executes on an address outside of the sandbox. =
+</pre></li>
+
+<li><pre class=3D"student-text">Suppose an adversary discovers a bug in NaC=
+l where the checker incorrectly determines the length of a particular x86 i=
+nstruction. How could an adversary exploit this to escape the inner sandbox=
+?
+An adversary could exploit this based this by jumping to another part of th=
+e memory addresses.  In doing this, because an NaCl checked incorrectly det=
+ermined the length of a particular x86 instruction, the NaCl checker would =
+check the instruction at the improper address--so long as this address's co=
+de was valid, this would pass.  Then, when actually going to execute the ne=
+xt instruction, NaCl would look at the address that comes after the instruc=
+tion's actual length; the code here could then enable the user to exit the =
+inner sandbox or change permissions (or even perform a syscall), allowing f=
+or the exiting of the inner sandbox.</pre></li>
+
+<li><pre class=3D"student-text">Suppose an adversary discovers a bug in NaC=
+l where the checker incorrectly determines the length of a particular x86 i=
+nstruction. How could an adversary exploit this to escape the inner sandbox=
+?
+If the instruction is longer than the determined length, then the sub-instr=
+uction that bleeds into the next memory block could make a disallowed call =
+to data or instructions outside of the allowed space. </pre></li>
+
+<li><pre class=3D"student-text">Suppose an adversary discovers a bug in NaC=
+l where the checker incorrectly determines the length of a particular x86 i=
+nstruction. How could an adversary exploit this to escape the inner sandbox=
+?=20
+
+An adversary could overwrite instructions for the parent thread or outer sa=
+ndbox. This instruction could be used to launch the untrusted code outside =
+the inner sandbox removing the constraints imposed on the system. Then the =
+native code would have access to resources on the system.</pre></li>
+
+<li><pre class=3D"student-text">Suppose an adversary discovers a bug in NaC=
+l where the checker incorrectly determines the length of a particular x86 i=
+nstruction. How could an adversary exploit this to escape the inner sandbox=
+?=20
+
+NaCl's proof of containment relies on the theorem that any instruction from=
+ S can only reach another instruction in S. However, if there is a bug and =
+the size of S is incorrect, it might think that part of the trusted trampol=
+ining code is part of S (note that this section of the code immediately pre=
+ceeds the untrusted code). Instructions from the adversary's code can jump =
+to an instruction in this trusted section and since the trusted code contai=
+ns forbidden instructions, the adversary can use them to escape the sandbox=
+.</pre></li>
+
+<li><pre class=3D"student-text">Suppose the adversary is able to convince t=
+he checker that an instruction A is longer than it really is. In the pseudo=
+-code given in Figure 3, the IP will then overshoot the bounds of instructi=
+on A (IP +=3D InstLength(IP)). In this "overshot" area of memory, the adver=
+sary could place a jmp or call instruction, which would not be picked up on=
+ by the validator, and could be used to escape the inner sandbox
+</pre></li>
+
+<li><pre class=3D"student-text">Suppose there is an instruction i of length=
+ b for which the NaCl checker thinks it is of length b-1. If the attacker f=
+inds a malicious sequence of instructions which is NaCl-safe when prefixed =
+with the last byte of i, the attacker can execute malicious code.
+</pre></li>
+
+<li><pre class=3D"student-text">The NaCl validator works by checking to mak=
+e sure the instructions are the correct
+size (32 bit). This ensures that any jump instruction made within the sandb=
+ox
+only calls another instruction within the sandbox. However, if this validat=
+or does
+not run correctly, there is no guarantee that only instructions within the =
+sandbox can
+be called. So an adversary could use this to jump to an address outside the=
+ sandbox.=20
+</pre></li>
+
+<li><pre class=3D"student-text">The adversary could create a program where =
+the checker and the actual x86 machine are inconsistent with each other abo=
+ut which parts of the binary are instructions and which parts are data. The=
+n the attacker could disguise malicious instructions which would be interpr=
+eted as data by the checker.
+</pre></li>
+
+<li><pre class=3D"student-text">The adversary could exploit an incorrectly =
+determined x86 instruction length by reaching an IP that is equal to the ad=
+dress of that instruction + the length of that instruction. This IP would b=
+e in the set of verified instruction start addresses, but would be an incor=
+rect start address because the instruction length was incorrectly determine=
+d. Therefore, the adversary could put something at that verified (but incor=
+rect) address and jump to that address. The list of verified jump targets i=
+s a subset of the verified start addresses.</pre></li>
+
+<li><pre class=3D"student-text">The adversary could insert the incorrectly =
+dissembled x86 instruction to hide an opcode that's supposed to be disallow=
+ed by NaCl. This works by tricking NaCl to dissembling with a different byt=
+e offset, so that NaCl thinks that the start of the dangerous instructions =
+are part of secondary bytes of safe instructions.
+</pre></li>
+
+<li><pre class=3D"student-text">The adversary could place malicious instruc=
+tions right after the wrongly parsed
+instruction. If carefully chosen it may be possible to make them appear to =
+NaCl
+to be a different sequence of permitted instructions (because it would be
+indexing into the middle of instructions).
+</pre></li>
+
+<li><pre class=3D"student-text">The adversary could put a long instruction =
+that overwrites other instructions and just put a jmp instruction at the be=
+ginning to their inserted code and then they will be able to do whatever th=
+ey want.</pre></li>
+
+<li><pre class=3D"student-text">The adversary could then try to jump to the=
+ middle of the instruction that perhaps invokes a syscall (if the checker t=
+hinks the instruction is shorter) or add their own syscall instruction (if =
+the checker thinks the instruction is longer) and could then escape the inn=
+er sandbox.</pre></li>
+
+<li><pre class=3D"student-text">The adversary could use this bug to execute=
+ a jump to some address not in S. In particular, if InstLength(IP) has some=
+ bug, then some erroneous address may be added to JumpTargets. This address=
+ may, for example, be at TextLimit, which is not in the range [0:TextLimit)=
+. </pre></li>
+
+<li><pre class=3D"student-text">The adversary could write code including th=
+at particular x86 instruction followed by other malicious instructions. The=
+se instructions would normally be considered unsafe by the NaCl checker, bu=
+t because the checker incorrectly calculated the length of that particular =
+x86 instruction, the following instructions would be misaligned. Thus, thes=
+e malicious unsafe instructions would remain undetected.</pre></li>
+
+<li><pre class=3D"student-text">The attacker can construct a sequence of in=
+structions which is considered safe by the inner sandbox because of incorre=
+ct disassembling.These instructions may actually trigger system calls and c=
+ompromise the system. </pre></li>
+
+<li><pre class=3D"student-text">The attacker can then bypass the instructio=
+n length validation and jump to an instruction that may not be normally all=
+owed.=20
+</pre></li>
+
+<li><pre class=3D"student-text">The attacker could exploit this bug by writ=
+ing code outside of the =E2=80=9Cbad length=E2=80=9D. Then, when the checke=
+r goes to check the x86 instruction, it will only check those instructions =
+inside the length. This means that a potential exploit could be outside of =
+the length. A hacker could use this to execute a sys call or jump outside o=
+f the sandbox or access data.=20
+</pre></li>
+
+<li><pre class=3D"student-text">The aversary could include instructions aft=
+er the length that the checker believes the length should be.=20
+</pre></li>
+
+<li><pre class=3D"student-text">The checker will validate the program based=
+ on what it believes to be the
+correct instruction lengths, while the processor will run the code with the
+actual instruction lengths. So, an attacker could write illegal code that b=
+roke
+out of the sanbox (e.g. by calling a syscall the sandbox would normally
+disallow), and offset the entire program using the instruction with an
+incorrect length. If the malicious code were then carefully padded with
+essentially no-op instructions that, when misaligned by the difference betw=
+een
+the real and checked length of the buggy instruction, passed the validation
+process, then NaCl would allow the malicious program to execute and break o=
+ut
+of the sandbox.
+</pre></li>
+
+<li><pre class=3D"student-text">The inner sandbox relies on executable text=
+ being constrained to a zero-based address range sized to a multiple of 4K =
+bytes. This may cause an instruction to saddle the 0 mod 32 boundary, viola=
+ting the third part of the proof laid out in section 3.1, so the sandbox is=
+ vulnerable to possibly a libc attack.</pre></li>
+
+<li><pre class=3D"student-text">The instruction reading would be off by a c=
+ertain number of bits, so an adversary could make the instructions such tha=
+t the offset leads to the computer executing malicous instructions.
+</pre></li>
+
+<li><pre class=3D"student-text">The proof of the theorem in section 3.1 wou=
+ld not be valid, since the instruction could reach an IP address by 'fallin=
+g through' from the instruction. Case 1 of the proof in 3.1 says that InstA=
+ddr(A) + InstLength(A) being reachable from A means that this address is in=
+ S, but if the length was incorrectly determined than the code could reach =
+an instruction that is not in S. </pre></li>
+
+<li><pre class=3D"student-text">They would attack the following portion of =
+the threat model inner sandbox: binary validation. By finding a bug that in=
+correctly determines the length of an x86 instruction, the attacker could c=
+reate a program that has instructions that force some sort of miscalculatio=
+n of IP that allows the attacker to take control of the control flow of NaC=
+l and execute malicious code. </pre></li>
+
+<li><pre class=3D"student-text">This is a huge problem. The adversary can e=
+xploit this to write harmful instructions against the rule yet remain undet=
+ected.
+
+For example, suppose the checker computes bad_len(I) as the length of a cer=
+tain instruction I at address A. The NaCl checker would believe that the ne=
+xt instruction is at A + bad_len(I). If the adversary is an expert in x86, =
+he could easily write assembly code at address A + bad_len(I) that passes a=
+ll the checks and seems harmless. However, when the code is executed, the n=
+ext instruction after instruction I would be at address A + real_len(I). An=
+d the adversary carefully crafted his code such that this instruction do so=
+mething useful, like jumping outside the sandbox, or a syscall.</pre></li>
+
+<li><pre class=3D"student-text">This is worst-case: a natively-running NaCl=
+ module could escape its sandbox.
+
+A properly-functioning NaCl validator is required for ensuring the constrai=
+nts on NaCl binaries. A malfunctioning validator precludes reliable disasse=
+mbly, meaning a binary could include illegal instructions. These illegal in=
+structions could make indirect jumps to arbitrary locations within the proc=
+ess, make syscalls to the OS, edit its segment registers, etc. Basically, a=
+ buggy validator could allow the sandboxed native code to break free from i=
+ts sandbox.
+
+The only remaining trick would be to hide the desired instructions "interle=
+aved" with NaCl-legal instructions following the mishandled instruction. Th=
+is shouldn't be too difficult, using either a guess-and-check by-hand appro=
+ach, or writing a companion metaprogramming tool to automate the process.
+</pre></li>
+
+<li><pre class=3D"student-text">Using the extra space we have from the inco=
+rrectly computed length, we could
+make a system call to change segments to execute code outside of the innter
+sandbox.
+</pre></li>
+
+<li><pre class=3D"student-text">With an incorrect checker, it may be possib=
+le that the untrusted application disassembles unreliably, allowing a theor=
+etically disallowed instruction to slip through. Instruction disassembly ma=
+y be offset such that an operation like syscall or ld will not be detected =
+in static analysis but will be run during execution.
+</pre></li>
+
+<li><pre class=3D"student-text">With incorrectly computed instruction lengt=
+hs, it is possible that most of the validation check is broken. This means =
+that after checking the first IP, we can get out of the Part 1 check (instr=
+uction length computed as a huge value). Then in Part 2, as long as the fir=
+st IP is not a direct jump or call, then we get out of Part 2 as well. Ther=
+efore there is not much that the adversary is necessarily required to do. H=
+e just needs to make sure that the first instruction is correct.
+
+Alternatively, assuming that instruction lengths computed are not ridiculou=
+sly off, the adversary can also just put a jump/call instruction at an IP t=
+hat does not correspond to any of the ones in StartAddr.</pre></li>
+
+<li><pre class=3D"student-text">You can exploit this by using the offset re=
+ading frame to make unsafe system instructions out of legal (safe) instruct=
+ions that can be read normally by the assembler as well as the safety disas=
+sembler. </pre></li>
+
+<li><pre class=3D"student-text">Zach Miller
+Lecture 7
+
+
+It is of utmost importance that the NaCl validator gets the length of all i=
+nstructions right. Having an instruction incorrectly sized would break the =
+proof of security of the address space completly. That being said a potenti=
+al exploit using the fact that the NaCl validator doesn't correctly size an=
+ instruction is as follows:
+
+Given that NaCl thinks the incorrectly sized instruction is larger, you cou=
+ld design code so that when the validator does fall through on this instruc=
+tion it misses some other instruction like a jmp. If NaCl thinks the instru=
+ction is smaller than it is, you put the jmp instruction at the end of the =
+incorrectly size instruction. Then because you can jmp to instructions with=
+in the starting address space, and this jmp instruction wasn't seen by the =
+validator, you could have the code jmp to this instruction which could then=
+ send the program out of the sandbox.=20
+</pre></li>
+
+<li><pre class=3D"student-text">lec7
+
+If a bug exists that incorrectly determines the length of
+an x86 instruction, the adversary could write in a system
+call that the NaCl normally does not contain in the binary,
+such as a jmp or ret, which could then lead elsewhere in
+memory</pre></li>
+
+<li><pre class=3D"student-text">x86 has variable length instructions and in=
+correctly determining the length of an instruction may lead to NaCl running=
+ only a substring of the instruction. Sometimes this substring could be 0x8=
+0 or something similar which can allow an adversary to escape the inner san=
+dbox.</pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--UXvKp98AwbaLABqHeiKs7PYqhuPkULl5YJhUG47B2J------

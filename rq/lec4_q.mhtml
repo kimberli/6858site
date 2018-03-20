@@ -1,0 +1,1201 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-questions/4
+Subject: Questions for lecture 4 - 6.858
+Date: Wed, 20 Mar 2018 22:57:49 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--qiYxNM5wgRVMI8vsyCU99D2U69ePtGAhZkHl2M2xlu----"
+
+------MultipartBoundary--qiYxNM5wgRVMI8vsyCU99D2U69ePtGAhZkHl2M2xlu----
+Content-Type: text/html
+Content-ID: <frame-32854-2aeb78b1-8a24-4dd7-a876-4fe5071a76d6@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-questions/4
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Questions for lecture 4 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Questions for lecture 4 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text">Have there been any attempts to handle "dan=
+gling pointers"? (7)=20
+
+What are some other examples of "equally tasteless uses" for harmless out-o=
+f-bounds pointers? (referencing 2.4, 3rd paragraph)
+</pre></li>
+
+<li><pre class=3D"student-text">This method forces all memory allocations t=
+o be aligned to a power of 2 in addition to using extra memory in the looku=
+p table by only storing 1 entry per slot. Isn=E2=80=99t all this extra memo=
+ry overhead bad for performance? How is this method able to achieve such go=
+od performance relative to other methods when it still uses memory so ineff=
+iciently?</pre></li>
+
+<li><pre class=3D"student-text">"Note that baggy bounds checking permits be=
+nign out-of-bounds
+accesses to the memory padding after an object. This does not
+compromise security because these accesses cannot write or read
+other objects."
+
+How do they make it not readable/writeable?
+
+"They cannot be exploited for typical attacks such as (a) overwriting a
+return address, function pointer or other security critical
+data; or (b) reading sensitive information from another
+object, such as a password."
+
+How can there be sensitive information in the padding?
+</pre></li>
+
+<li><pre class=3D"student-text">"The other direction is harder because we m=
+ust avoid raising a hardware exception when uninstrumented code dereference=
+s a tagged pointer" --
+how is hardware used to recognize and prevent dereferencing of tagged point=
+ers?</pre></li>
+
+<li><pre class=3D"student-text">"Unsafe function arguments are problematic =
+because
+padding and aligning them would violate the calling convention.
+Instead, we copy them on function entry to appropriately
+aligned and padded local variables and we
+change all references to use the copies."
+
+This is what I was wondering about while starting to read this paper,
+and this answer is not very satisfying. This copying seems like a lot of
+overhead for any time I want to call a function. Is this baggy-bounds
+checking only really good for if you're only passing around pointers,
+and less useful if you're often passing around variables? Is this a
+barrier to usefulness in general, or in C do you normally not pass
+variables around anyway?</pre></li>
+
+<li><pre class=3D"student-text"># Paper Question 4
+# Rayden Y. Chia
+
+Do baggy bound schemes that prevent out-of-bounds space from being confined=
+ to (-slot_size/2 &lt;=3D x &lt;=3D slot_size/2) exist?</pre></li>
+
+<li><pre class=3D"student-text">(As a preface to my question, I think I sho=
+uld mention that this paper was pretty incomprehensible for me, so please e=
+xcuse it if it=E2=80=99s not a great question.)=20
+
+I googled buddy memory allocation and while I still don=E2=80=99t really ge=
+t it, I kind of understand that it=E2=80=99s a way to divide memory into ha=
+lves (with some power-of-two sizing) so that memory requests are fulfilled =
+faster. How does this actually work with the baggy bounds checker? Let=E2=
+=80=99s says I malloc(n), does the buddy allocator split memory somehow to =
+get n1 and n2? What=E2=80=99s actually inside n1 and n2? Why do you need 2 =
+and now just 1?</pre></li>
+
+<li><pre class=3D"student-text">1.	What happens if you re-assign a pointer =
+to point to a different buffer on the stack? (This is related to the lectur=
+e assignment question.)
+2.	What do the authors mean when they say they "copy" unsafe function argum=
+ents on function entry? Do they copy entire arrays?
+</pre></li>
+
+<li><pre class=3D"student-text">1. Why is the support for out-of-bounds lim=
+ited to slot_size/2 on either side of the object? If you have a pointer 3*s=
+lot_size/4 separation above the object and if you add slot_size, wouldn't i=
+t land in the object?</pre></li>
+
+<li><pre class=3D"student-text">1. Why would a library be distributed in bi=
+nary rather than normally? When using libraries downloaded as binaries, how=
+ does one check against malicious code inside?
+
+2. What suite of C/C++ code is used to perform statistical analysis or as b=
+enchmarks?=20
+
+3. Why is it ok that they tested their new system against a server they als=
+o built rather than a standardized server used in production?
+
+</pre></li>
+
+<li><pre class=3D"student-text">6.858 - Question for Lecture 4
+
+Do systems exist that do not already pad allocated arrays with extra memory
+(that would not be compatible with baggy bounds checking?)
+</pre></li>
+
+<li><pre class=3D"student-text">After decades of buffer overflow attacks be=
+ing known to everyone, why is not there much simpler solutions found?
+</pre></li>
+
+<li><pre class=3D"student-text">Are the any situations in which baggy bound=
+s checking will fail to return an error when it should have?
+</pre></li>
+
+<li><pre class=3D"student-text">Aside from being able to recover a pointer =
+to the referent object, is there any reasoning for why the out-of-bounds ma=
+rking threshold is set to half the slot size beyond the object bounds? What=
+ would the disadvantages of a smaller threshold be?</pre></li>
+
+<li><pre class=3D"student-text">At least based on the 6.172 malloc project,=
+ the buddy system is not very space nor time efficient. The baggy bounds co=
+nstraint that allocations must be powers of 2 seems to be similarly space i=
+nefficient. Do memory allocators typically use the binary buddy system, and=
+ if not then does the paper give a fair analysis of the performance of the =
+baggy bounds checking system?
+</pre></li>
+
+<li><pre class=3D"student-text">Baggy bound focuses on effiency, which alig=
+ns with what many C programmers desire. Why isn't baggy bound used in pract=
+ice?
+
+</pre></li>
+
+<li><pre class=3D"student-text">Baggy bounds can handle OOP withing slot_si=
+ze/2 from the original=20
+object by adding or substracting slot_size and retrieve the original
+object.
+Could it handle more (like 3*slot_size/2) by simply adding or substracting
+twice slot_size?
+</pre></li>
+
+<li><pre class=3D"student-text">Because pointers tend to be aligned to mult=
+iples of 16 for 32-bit architectures, are there approaches that store some =
+size information within the first 4 bits of the pointer for small enough al=
+locations? Or is this not that great of an idea?</pre></li>
+
+<li><pre class=3D"student-text">Danny Tang
+data1013
+2/16/18
+
+Lecture 4
+
+This paper is almost a decade old (2009). Was this method of bounds checkin=
+g actually deployed?
+More generally, what is the criteria for research in security methods like =
+this to actually be
+put to use in real applications (I assume there is a lot of research in sim=
+ilar topics/using
+different methods).</pre></li>
+
+<li><pre class=3D"student-text">Do all the objects have the same allocation=
+ bounds? Or they can=20
+have different allocation bounds? If they have the same ones,
+and the padding to small object would be very costly?</pre></li>
+
+<li><pre class=3D"student-text">Do out-of-bounds errors exist in other lang=
+uages or are they just an issue in C/C++ (the only languages mentioned in t=
+he paper)? If it is mostly only an issue with those languages, is there a b=
+enefit to allowing them or was it just an oversite when the languages were =
+designed?
+</pre></li>
+
+<li><pre class=3D"student-text">Does this implementation produce compile-ti=
+me errors? Or does it simply insert checks in unsafer pointer arithmetic op=
+erations that would eventually lead to runtime errors?</pre></li>
+
+<li><pre class=3D"student-text">Does this method limit the amount of memory=
+ that can be used? I might be confused but it seems like they are using som=
+e of every memory address to do their check.</pre></li>
+
+<li><pre class=3D"student-text">Doesn't alligning data to powers of 2 by pa=
+dding the allocations cause a good deal of internal fragmentation? Couldn't=
+ the space wasted by the padding be greater than the amount you would alloc=
+ate to store an object size based bounds table for some distributions of al=
+locations?
+</pre></li>
+
+<li><pre class=3D"student-text">For allocations that are large compared to =
+the slot size, will there be many consecutive entries in the bounds table c=
+orresponding to the same allocation? For example, if the slot size is 16 by=
+tes, and I call malloc(1024), will there will be 1024/16 =3D 64 entries in =
+the bounds table for that allocation, each recording that it has size 2^(10=
+)? Also, since baggy bounds checking "permits benign out-of-bound accesses =
+to the memory padding after an object," does this mean that users get garba=
+ge values (but not exceptions) if they access outside of object bounds, but=
+ not allocation bounds (e.g. if I do p =3D malloc(1025); x =3D *(p + 1026))=
+?
+
+The paper also mentions "other equally tasteless uses" of illegal but harml=
+ess out-of-bounds pointers. What are some examples?</pre></li>
+
+<li><pre class=3D"student-text">From my reading of the article it seems lik=
+e bounds checking is done in part by marking out-of-bounds pointers by sett=
+ing the MSB to 1. However, could one not just unset this bit if they know t=
+his functionality is in use? After doing this they would be able to derefer=
+ence pointers in the padded region beyond an objects actual allocation. Thi=
+s memory is zeroed according to the paper, but is there a possible exploit =
+given the attacker has access to this memory? I would think there is a reas=
+on they protect against dereferences of pointers to padding, but I do not k=
+now what it is.</pre></li>
+
+<li><pre class=3D"student-text">Given that baggy bound checks and many othe=
+r bound checking techniques mentionned in the performance harm performance,=
+ as it consumes signifcant amounts of memory, what are other options left t=
+o protect against buffer overflows without hindering the performance too mu=
+ch?
+
+</pre></li>
+
+<li><pre class=3D"student-text">Have there been more recent optimizations f=
+or bounds checking in C?</pre></li>
+
+<li><pre class=3D"student-text">How could an attacker exploit the behavior =
+of baggy bounds instrumentation to waste system memory?
+</pre></li>
+
+<li><pre class=3D"student-text">How do the library function wrappers (memcp=
+y, etc.) protect against stack overflow? One way is to copy data byte by by=
+te but that would be incredibly inefficient.=20
+</pre></li>
+
+<li><pre class=3D"student-text">How do we determine whether or not an out-o=
+f-bounds pointer is illegal? Do we just allow for some wiggle room for the =
+pointer to leave and return in our implementation of our checks?
+
+Also, the paper referred to instrumented vs. uninstrumented libraries - wha=
+t are they and how are they different? A quick Google search tells me that =
+instrumentation has to do with monitoring code (progress, performance, etc.=
+), but I would like to understand this more.</pre></li>
+
+<li><pre class=3D"student-text">How do you know whether an out-of-bounds po=
+inter is "harmless" and choose to "recover" it to point back to the nearest=
+ object? Is it just that any pointer not accessed after it goes out of boun=
+ds is "harmless", and "recovering" it is just a bookkeeping method?
+</pre></li>
+
+<li><pre class=3D"student-text">How does baggy bounds protect the allocatio=
+n bounds table itself?  Could an attacker feasibly mess with the allocation=
+ bounds and then proceed to overflow buffers as they wished w/o triggering =
+these checks?
+</pre></li>
+
+<li><pre class=3D"student-text">How does it work with structures? Is it con=
+sidered 1 object or are the subobjects considered separate objects? I can s=
+ee how people would use pointer manipulations inside structures, yet that c=
+ould lead to buffer overflows within the objects.</pre></li>
+
+<li><pre class=3D"student-text">How does the slot_size/2 wiggle room work f=
+or baggy bounds checking? And why is it useful (especially when the pointer=
+ negative relative to the base of the array)?=20
+
+What if 2 arrays are adjacent in memory and so the slot_size/2 correction m=
+isdirects 1 pointer to another?
+
+Also is there a more clear explanation/diagrammatic explanation of baggy bo=
+unds checking=E2=80=94this paper kind of lost me in some parts.</pre></li>
+
+<li><pre class=3D"student-text">How have out of bounds errors been exploite=
+d in the past?</pre></li>
+
+<li><pre class=3D"student-text">How is slot size determined for different p=
+rograms?</pre></li>
+
+<li><pre class=3D"student-text">How is slot_size determined?</pre></li>
+
+<li><pre class=3D"student-text">How needed is a backwards-compatible bounds=
+ checker nowadays and is there a modern backwards-compatible defense that a=
+ddresses the limitations of baggy bounds?</pre></li>
+
+<li><pre class=3D"student-text">How often are security improvements such as=
+ this actually implemented in
+industry? Especially in cases like this, where it seems like it would be ve=
+ry
+useful, but it does not necessarily address a pressing security issue (e.g.
+SHA-1).
+</pre></li>
+
+<li><pre class=3D"student-text">How often is baggy bounds used? (it seems i=
+nefficient in terms of space)
+</pre></li>
+
+<li><pre class=3D"student-text">How universally is baggy bounds implemented=
+ on various CPUs?
+</pre></li>
+
+<li><pre class=3D"student-text">How widely used are any forms of bounds che=
+cking for C and C++ programs? Do many systems actually use either of buggy =
+bounds checking or splay trees?
+</pre></li>
+
+<li><pre class=3D"student-text">How would the slot_size paramter be tuned? =
+It seems like=20
+one would have to manually binary search for an optimal=20
+slot size for every different kind of program.</pre></li>
+
+<li><pre class=3D"student-text">How would you do binary multiplication of p=
+^p' in C? What is a good resource to refresh on binary arithmetic with poin=
+ters in C?=20
+</pre></li>
+
+<li><pre class=3D"student-text">I am confused about the mapping scheme pres=
+enting in section 5.1. They say
+"with 5 address bits used for the bounds, we need to map 32 different addre=
+ss
+regions to the same memory." Why do we need so many mappings?
+</pre></li>
+
+<li><pre class=3D"student-text">I am confused about the purpose of slot_siz=
+e. Is this related to log2(alloc_size)?  What is the effect of having large=
+r or smaller slot_size=E2=80=99s? </pre></li>
+
+<li><pre class=3D"student-text">I am confused as to how the support for out=
+-of-bounds pointers works.  Baggy bounds checking makes sure that nothing g=
+oes beyond the next highest power of two for the requested allocated space.=
+  However, pointers one element past the end are allowed?  So baggy bounds =
+actually does this as well, and using the question as an example, a pointer=
+ to p + 256 is allowed because it is the first element past the alloted spa=
+ce?
+</pre></li>
+
+<li><pre class=3D"student-text">I don't fully understand why only pointers =
+within slot_size/2 of the object can be handled as opposed to slot_size.</p=
+re></li>
+
+<li><pre class=3D"student-text">I don't really understand how this program =
+is backwards compatible. They say something about
+applying baggy bounds directly to binaries. It isn't clear to me how someon=
+e designs a program
+that can interpret binaries and edit them appropriately. Is there a standar=
+d way to identify
+what a pointer looks like in machine code?
+</pre></li>
+
+<li><pre class=3D"student-text">I don=E2=80=99t follow the whole explanatio=
+n in section 2.4 on out-of-bounds pointers.What do they even mean (an examp=
+le might help)? The explanation mentioned marking them to prevent dereferen=
+ces via setting of the most significant bit. I=E2=80=99m not sure why this =
+helps or what=E2=80=99s special about the most significant bit.
+
+I understand why this restricts it to the lower half of the address space, =
+but won=E2=80=99t this conflict with some other address in use? How can mer=
+ely clearing the bit get back the original pointer (how do you know if it w=
+as set or not in the first place?</pre></li>
+
+<li><pre class=3D"student-text">I had questions about the space waste trade=
+off of using baggy, but I read the older questions and my question was answ=
+ered.
+
+I have a more basic question about the relationship between the slot_size a=
+nd the actual size of objects.
+
+Suppose out slot_size is 16. Then log_2(16) =3D 4
+
+Suppose we have a buffer at p =3D 0xa00 of size 256 bytes=20
+so it goes from 0xa00 to 0xaff (or 0b101000000000 to 0b101011111111)
+
+Since this object spans multiple slots, will each slot contain the log_2(si=
+ze) of the object?
+
+i.e., (assuming all other slots are empty) will the bounds table will look =
+like:
+
+(address bin) | 0b10011111 | 0b10100000 | 0b10100001 | 0b10100002 | ... | 0=
+b10101111 | 0b10110000=20
+(address hex) | 0x9f       | 0xa0       | 0xa1       | 0xa2       | ... | 0=
+xaf       | 0xb0      =20
+(value dec)   | 32         | 8          | 8          | 8          | ... | 8=
+          | 32        =20
+                             ^ start of buffer                            ^=
+ end of buffer</pre></li>
+
+<li><pre class=3D"student-text">I read the first question from previous yea=
+rs. For reference, here it is:
+
+"On Sat, Feb 18, 2017 at 10:50 PM, Anonymous wrote:
+&gt; I still don't fully understand why it is ok that baggy bounds pad and =
+align objects to powers of two. For example, if the object takes (2^N + 1) =
+bytes, baggy bounds will allocate 2^(N+1), which means that out-of-bounds a=
+ccess until 2^(N+1) are permitted?"
+
+and the response
+
+"You are correct as to what Baggy would do.
+
+Whether it's OK or not depends on the definition of "OK".  From a
+safety perspective, this seems safe.  From a performance perspective,
+this wastes some memory, but makes the in-bounds check really
+efficient.  But perhaps if an application developer has lots of
+allocations of 2^N+epsilon, and their application is really
+memory-limited (to the extent they can't spare 2x memory), and the
+developer can't change the application to have more 2^N-friendly
+allocations, then Baggy wouldn't be a good choice for that
+application.
+
+Nickolai."
+
+I don't understand the reasoning behind this -- wouldn't this be
+a performant, yet unsafe approximation rather than a safe, but
+inefficient optimization? Permitting accesses up to 2^(N + 1) would
+ignore many unsafe accesses (i.e all the accesses from 2^N + 1 to
+2^(N + 1)).
+</pre></li>
+
+<li><pre class=3D"student-text">I think I understood what the system does w=
+ith heap memory, but I'm not sure if I understood what exactly it does to s=
+tack variables. I'm assuming it creates a little buddy allocation area for =
+each function frame, is this correct? But this seems to be even more wastef=
+ul than it is on the stack, because unused slots on a stackframe buddy allo=
+cation area can never be used by future allocations, contrary to the heap.
+Consider the following example: A function has two local variables:
+char a[1025];
+int* p;
+The array a will occupy 2048 bytes, and for p, we need a buddy which is aga=
+in 2048 bytes, so the size of this stackframe will be 4096 bytes, which is =
+almost 4x more than without using the technique.
+On the heap, this would not be so bad, because the buddy in which p is stor=
+ed could be split into smaller buddies and be used for further allocations,=
+ but it seems that on the stack, that's not possible, so these 2048-4 bytes=
+ are definitely wasted.
+And moreover, if the stack pointer is not aligned to a 2048-byte boundary o=
+n function entry, we have to waste even more stack memory.
+Is my reasoning correct in that the situation is really so bad?
+</pre></li>
+
+<li><pre class=3D"student-text">I was confused by the statement "we do not =
+check pointer dereferences." in 3.3. Does it mean that the proposed method =
+won't apply any checks for the operation "char ch =3D *q;"?
+</pre></li>
+
+<li><pre class=3D"student-text">I'm confused about how out-of-bound pointer=
+s can come back in bounds - the paper mentions this several times. Is it be=
+cause if the pointer is out-of-bounds, that's okay as long as it doesn't ch=
+ange anything?=20
+
+Is there a way to make certain stack registers non-writable?=20
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">I'm confused about the purpose of the base =
+in the explicit baggy bounds check.
+The paper says that it is a pointer to the start of the allocation and defi=
+nes it
+as base =3D p &amp; ~(size-1). Doesn't p point to the start of the allocati=
+on though?
+What exactly is the bitwise op doing here?</pre></li>
+
+<li><pre class=3D"student-text">I'm confused about the vulnerabilities boun=
+ds checking is supposed to protect. Is Baggy Bounds Checking meant protect =
+against exploits in the code inadvertently created by the program authors (=
+e.g. they created an out-of-bounds bug that could lead to a vulnerability)?=
+ Or is it meant to make the program's memory unreadable or unwriteable by o=
+ther malicious applications. </pre></li>
+
+<li><pre class=3D"student-text">I'm confused about why this is efficient. I=
+s it because we're comparing O(logn) bits? What does this solve that stack =
+canaries don't. Wouldn't storing the bounds table be more expensive than se=
+tting a stack canary?</pre></li>
+
+<li><pre class=3D"student-text">I'm confused by what the paper means in sec=
+tion 2.4 when it talks about 'support' for OOB pointers. It states that the=
+ir system "handles" OOB pointers a certain distance away. Am I right is thi=
+nking that the system they describes here turns an OOB pointer that is slot=
+_size/2 away from the object into a valid pointer for the object?
+
+If this is the case, what purpose does it serve? Doesn't this kind of handl=
+ing hide a mistake in the code? Wouldn't an exception be better. On the oth=
+er hand, if that pointer was being used for other arithmatic, as suggested =
+in the paper, doesn't this handling mess up the arithmatic computation?
+</pre></li>
+
+<li><pre class=3D"student-text">I'm having a hard time understanding this p=
+aper, and I'm unsure about the reading question. This might be a dumb quest=
+ion, and I think I could figure it out if I go through the bounds check/opt=
+imized bounds check code included in the paper. But what I want to know is =
+whether the second line of the reading question is an in bounds or out of b=
+ounds reference since 256 is exactly equal to the allocation size.</pre></l=
+i>
+
+<li><pre class=3D"student-text">I'm not really sure I understand the idea o=
+f slot_size intuitively. Is slot_size the smallest an array is allowed to b=
+e in baggy bounds checking? And if so, is that because otherwise in the loo=
+kup table there would have to be two entries in one byte, since two arrays =
+would map to the same place?
+</pre></li>
+
+<li><pre class=3D"student-text">I'm slightly confused on the aligning. I ga=
+ther from the reading that they:
+* Align allocation sizes to a power of 2
+* Align addresses to slot_size boundaries (i.e. a multiple of slot_size)
+
+The efficient bounds check basically checks that no bits other than the e
+least significant bits change, where e is log2(allocated size). Doesn't thi=
+s
+also mean that the pointers also need to be aligned based on the size of th=
+e=20
+allocation? In other words, do addresses need to be aligned by the size (
+address % size =3D 0 ), or just by any power of 2?
+</pre></li>
+
+<li><pre class=3D"student-text">If an object would be stored, with padding,=
+ in an area smaller thanm a slot size, would it be given extra padding to e=
+xtend the full slot size, since nothing else can be added in that space. Al=
+so, aFigure 4 seems to suggest that between objects theer is always an empt=
+y slot. Is this always the case or not?</pre></li>
+
+<li><pre class=3D"student-text">If baggy bounds also expands allocation bou=
+nds for local variables on the stack, does this have a significant performa=
+nce impact when entering and returning from functions?</pre></li>
+
+<li><pre class=3D"student-text">If we did not care about OOB pointer access=
+es, would I be correct to say that we can throw an exception for any overfl=
+owing accesses? Get pointer, get size, and then check?</pre></li>
+
+<li><pre class=3D"student-text">In 5.1 Size Tagging, it says that they can =
+present a maximal allocation of 2^32 by interpreting the 0 bit pattern as a=
+ll bits set. Wouldn't this be 2^31 instead? Since five 1 bits is 2^5-1 =3D =
+31, not 32.
+
+Also, if the tagged pointer only uses 5 bits for size, why does the out-of-=
+bounds pointer use 8 zero bits instead of 5? It seems that if they used 3 l=
+ess bits they would have more bits to use in the offset for the out-of-boun=
+ds tagged pointer.
+</pre></li>
+
+<li><pre class=3D"student-text">In Section 4.2 they mention that baggy boun=
+ds checking was unable to detect one of the buffer overflows. Could baggy b=
+ounds checking be combined with another method to potentially detect this t=
+ype of exploit, or would that significantly change the structure/performanc=
+e? How do other systems prevent the overflow of an array inside a structure=
+ from overwriting a pointer inside the same structure?</pre></li>
+
+<li><pre class=3D"student-text">In one of the previous-year answers, you me=
+ntion that Baggy can handle heap overflows, whereas other stack-focused tec=
+hniques cannot. =20
+
+Given that you cannot overwrite return addresses on the stack, what are the=
+ concerns / possible exploits related to heap overflows? =20
+
+As a secondary / related question, are heap overflows viewed as an equally =
+important security risk as stack overflows?  If they are, is something like=
+ Baggy as `must have' for security purposes?
+</pre></li>
+
+<li><pre class=3D"student-text">In practice, how commonly is the baggy boun=
+d checking used compared to the explicit bound checking?</pre></li>
+
+<li><pre class=3D"student-text">In practice, how true is the assumption tha=
+t legal out-of-bounds
+pointers fall within slot_size/2 bytes of the allocated region?
+</pre></li>
+
+<li><pre class=3D"student-text">In section 7 of the paper, the authors deta=
+il some of the limitations of their systems. It seems that for a solution l=
+ike this there will always be some code that will be accidentally broken. D=
+oes baggy bounds simply break this code and hope that the programmer unders=
+tands that it was broken or does it present warnings or errors to the user =
+to warn them of this? If the system is not capable of detecting when it mig=
+ht break code (such as the pointer to integer back to pointer), then isn't =
+it possible that it will introduce vulnerabilities in the program's logic m=
+uch more severe than a buffer overflow?
+</pre></li>
+
+<li><pre class=3D"student-text">In the "Limitations and Future Work" sectio=
+n, they mention that their work could only be applied to software that was =
+readily portable to the Windows toolchain.  I assume, judging by the abstra=
+ctness of the algorithm, that baggy bounds checking in general would be fea=
+sible on any system.  Is this restriction only in place because their PoC c=
+ode relied on the Windows toolchain, or is there something architectural th=
+at I'm missing? =20
+
+Also, as a side question, is this actually in use anywhere (prominent) toda=
+y?  If not, why?  Is the marginal overhead too much or have we, as an indus=
+try, moved away from these softer heuristic-based defenses?</pre></li>
+
+<li><pre class=3D"student-text">In the arithmetic to the left of figure 3, =
+I don't understand why we need to do p &amp; ~(size-1). Shouldn't p already=
+ point to the base?
+
+I also didn't understand the parts of the paper that had to do with out of =
+bounds local checks. Aka if it's out of bonds within a factor of size/2. Sh=
+oudln't we only care that it's out of bounds or not, a boolean condition.
+
+This is a sentence taken directly from the paper:
+Therefore, instrumented code can perform checks as normal when accessing me=
+mory allociated in a library, but checking is effectively disabled for thes=
+e accesses.=20
+
+The sentence contradicts itself and I'm confused. </pre></li>
+
+<li><pre class=3D"student-text">In the fourth paragraph of section 2.4, I d=
+idn't understand how/why setting the most significant bit prevents derefere=
+ncing and what purpose restricting the address space serves. Will you ever =
+run out of space if you restrict the program address space?
+</pre></li>
+
+<li><pre class=3D"student-text">In the nuances between c and c++: c has wha=
+t feels like many instances of static declaration of memory. How would dyna=
+mic memory allocation and baggy bounds checking interact? (For example, if =
+you were to use new or dynamically allocate sizes for variables, would that=
+ help bypass many exploits?)
+</pre></li>
+
+<li><pre class=3D"student-text">Is Baggy a solution that's meant to be runn=
+ing within production environment? Or
+mostly during dev and test phases? It seems that there could potentially be=
+ a
+large memory overhead.
+</pre></li>
+
+<li><pre class=3D"student-text">Is baggy bounds checking used in practice?<=
+/pre></li>
+
+<li><pre class=3D"student-text">Is baggy bounds checking, or any sort of dy=
+namic bounds checking, used commonly in industry? It seems as though all dy=
+namic solutions have limitations that still leave open the possibility of m=
+any potential flaws in code, while also taking performance hits of at best =
+ten percent that would not be worth the cost in non-critical code. Wouldn't=
+ more thorough static solutions be better-suited to the task?</pre></li>
+
+<li><pre class=3D"student-text">Is the "baggy bounds" method actually addin=
+g padding to the end of pointers or is it implicitly assumed that malloc al=
+ready does this and baggy bounds is just taking advantage of that fact?</pr=
+e></li>
+
+<li><pre class=3D"student-text">Is there more way to decrease the memory ne=
+eded while still have acceptable time performance?</pre></li>
+
+<li><pre class=3D"student-text">It appears that the authors double the memo=
+ry allocation in order to provide loose bounds that are convenient to check=
+ mathematically using logs. Would it be possible to increase the size by so=
+me fractional power of two in order to reduce memory usage? i.e. a 1000 byt=
+e array would allocate 1024 + log(1024) bytes of memory
+</pre></li>
+
+<li><pre class=3D"student-text">It seems that baggy bounds relies on log ba=
+se 2 memory allocation chunks. Does baggy bounds easily translate to system=
+s that might use other methods of memory allocation?</pre></li>
+
+<li><pre class=3D"student-text">It sounds like out of bounds pointers will =
+be mapped to the nearest allocated memory available, but does this still re=
+spect scope and which pieces of allocated memory a particular piece of code=
+ should have access too? Or in C is all of the memory allocated to a partic=
+ular program availabel to the entire progam? I'm wondering if all allocated=
+ memory for a particular program is fair game to be accessed at any time.</=
+pre></li>
+
+<li><pre class=3D"student-text">It was mentioned in the paper that baggy bo=
+unds checking does not prevent "benign" accesses to the padding on data str=
+uctures. Because this padding could contain data from previous allocations,=
+ the padding has to be cleared on each allocation. On the heap, this could =
+be handled using virtual memory tricks. However, it seems like this could b=
+e very expensive on the stack, where allocation and deallocation potentiall=
+y occur in a tight loop. Is this a problem in practice?</pre></li>
+
+<li><pre class=3D"student-text">It's not totally clear to me why accessing =
+out-of-bounds memory that is not within objects a problem for security. Sho=
+uld this be because of potential data that was not garbage collected and he=
+nce might be read by attackers? If not, what should be other security issue=
+s, if the code is not being executed/read from, and if it is going to be ov=
+erwritten if the memory in that location is not tagged as being used?
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 4 (Question About Paper)
+
+
+Suppose we have the following program running Baggy Bounds checking with sl=
+ot_size=3D16 (this code was taken from Quiz 1, 2013).
+
+(We assume that p and q are allocated right after each other)
+
+1. char *p, *q;
+2. char *a, *b, *c, *d, *e, *f;
+3.
+4. p =3D malloc(48);
+5. q =3D malloc(16);
+6.
+7. a =3D p + 46;
+8. b =3D a + 10;
+9. *b =3D =E2=80=99\0=E2=80=99;
+10. c =3D b + 10;
+11. d =3D c + 10;
+
+According to the quiz answers, this program will throw a "baggy bounds exce=
+ption" at line 11 because the value of d is 76 bytes beyond p, which is mor=
+e than half a slot size (8 bytes) over the power-of-2 allocation size for p=
+ (64 bytes).
+
+But isn't (p + 76) a valid address for q (see memory below)? Why would Bagg=
+y Bounds throw an exception if (p + 76) contains valid data?
+
+(Suppose the heap starts at 0x00)
+q: 0x40 - 0x4F (16 bytes)
+p: 0x00 - 0x3F (64 bytes)
+
+Follow up:
+- How does baggy bounds detect a pointer is X bytes beyond a specific objec=
+t? How does it associate a pointer to a base object?
+- If Baggy Bounds actually doesn't throw an exception on line 11, is the an=
+swer to the quiz incorrect?
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 4: Buffer Overflow
+2/20/18
+
+They mention that they use static analysis to determine "unsafe" local vari=
+ables, meaning they are either indexed unsafely or whose address is taken. =
+I'm assuming that "address is taken" means we can use gdb or equivalent to =
+get the address of the variable, but what does it mean to be indexed unsafe=
+ly?</pre></li>
+
+<li><pre class=3D"student-text">Lecture 4: My Baggy Bounds Checking Questio=
+n
+
+In section 4.2 (Effectiveness) of the paper, the authors mention that there=
+ is a
+benchmark suite of buffer overflow test cases used to measure the effective=
+ness
+of systems agains buffer overflow attacks.
+
+Are 18 test cases really enough to verify a system against any type of buff=
+er
+overflow attack? Are buffer overflows simply pretty standardized in terms o=
+f
+possible attacker approaches? And what systems perform best in the field or
+against this benchmark suite (baggy bounds prevented 17 of the 18, do any
+other systems do better)?
+
+Thank you!
+</pre></li>
+
+<li><pre class=3D"student-text">Maybe I'm a bit fuzzy with how system archi=
+tecture/hardware works, but why does setting the most significant bit to a =
+1 in the pointer force the hardware to fail when dereferencing it? And how =
+exactly does it fail? It is the normal segfault?
+
+</pre></li>
+
+<li><pre class=3D"student-text">Padding each allocation to the next power o=
+f two seems like a lot of wasted space. Would a similar system that pads ea=
+ch allocation to the next multiple of 64 be just as efficient? The table wo=
+uld have to be larger, but the size of the fixed block could be a tunable p=
+arameter (i.e. pad to the next multiple of 128 or 256 to save room).</pre><=
+/li>
+
+<li><pre class=3D"student-text">Post-spectre, is it necessary to prevent sp=
+eculation beyond the bounds check in
+this case? It seems like the subsequent exception should be sufficient prev=
+ent
+any damage, but people thought the same thing about Meltdown at first too..=
+.
+</pre></li>
+
+<li><pre class=3D"student-text">Question about Paper - Ajinkya Nene
+
+Are there other baggy bound design paradigms that prevent the out of bounds=
+ space from being restricted to +- slot_size/2?
+
+</pre></li>
+
+<li><pre class=3D"student-text">Question:=20
+
+I'm not sure I totally understood what was going on with the half-slot chec=
+k: if a pointer ends up out-of-bounds after a pointer arithmetic operation =
+but within half a slot, and the preceding/following slots are allocated/con=
+tain objects in them, then how does the system know to recover the original=
+ referent object from the out-of-bounds pointer, which is now pointing to a=
+ slot containing an object? (This may also be a simple C question but I am =
+unfamiliar with the C memory allocation and access system)</pre></li>
+
+<li><pre class=3D"student-text">Question: This question is regarding the se=
+ction 3.3 "Checks". I was wondering if the way that the out-of-bounds point=
+ers are set to 0, and are all stored in the same place in virtual memory co=
+uld leak some information about the program's memory? I'm not totally sure =
+what attack could be done here but I'm interested in the impact of this des=
+ign choice.
+</pre></li>
+
+<li><pre class=3D"student-text">Question: Why do we need to check that (cha=
+r *) p' + sizeof(*p') - 1 is within the bounds to prevent a subsequent acce=
+ss to *p' from crossing the allocation bounds? I don't understand why this =
+check would mean a subsequent access would cross the allocation bounds and =
+why such a subsequent check wouldn't be caught by the first bounds check th=
+at already occurs.</pre></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 4
+
+So this system relies on the assumptions of extra space in the allocator
+and pointer? Can this system be abstracted more independently to work
+in systems that do not have these assumptions?</pre></li>
+
+<li><pre class=3D"student-text">Reader Question 4
+
+For what reason would programers use pointers arbitrarily far from the allo=
+cation region. Particularly the case when the authors
+encountered a pointer 2^16 bytes beyond the region.
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">Testing
+</pre></li>
+
+<li><pre class=3D"student-text">The Baggy approach for 64-bit architectures=
+ allows for the bounds size information to be stored in the unused pointer =
+bits, instead of in a separate array as in the 32-bit approach. In practice=
+, although it is hard to compare 64- and 32-bit performance, does this resu=
+lt in better performance relative to existing methods (such as the fat poin=
+ter approach and their 32-bit buddy approach)? I'm confused by their benchm=
+ark reporting--which systems do 'Buddy', 'Baggy', and 'Tag' refer to?
+</pre></li>
+
+<li><pre class=3D"student-text">The C standard seems to be slow in adding s=
+ecurity features. From C99 to C11, they finally remove `gets` and introduce=
+ a safe alternative `gets_s`. When will pointer checks be introduced into t=
+he standard? Will these features be provided in IDE's for debug only?=20
+</pre></li>
+
+<li><pre class=3D"student-text">The article states that "Attacks that explo=
+it out-of-bounds errors in C and C++ continue to be a serious security prob=
+lem." Are there any statistics on this? Do most systems that have these vul=
+nerabilities use any form of bounds checking? Several other methods of doin=
+g bounds checking (though certainly all with their own drawbacks, including=
+ extra memory and time requirements) are mentioned in the paper. If out-of-=
+bounds errors are such a serious security issue, what's still missing to so=
+lve this? Do existing approaches not cover enough of the cases (e.g. baggy =
+bounds "cannot protect from memory errors in subobjects such as structure f=
+ields") or are they just too slow/memory hungry to be used in practice?</pr=
+e></li>
+
+<li><pre class=3D"student-text">The authors describe the difficulties in ho=
+isting whole checks out of loops, because static analysis can be hard (runt=
+ime may not ever try to access the end of the out of bounds loop). Is there=
+ any work on probabilistic analysis? For example, not guaranteeing that a p=
+rogram is 100% secure, but based on the current runtime pattern (or histori=
+c behavior) it has a chance of crashing with probability less than eps. Per=
+haps this goes against the idea of security (guarding against the improbabl=
+e).
+</pre></li>
+
+<li><pre class=3D"student-text">The baggy bound checking algorithm envorces=
+ the allocation bounds, what was the original point of keeping the padding =
+space in previous methods? is this assumption dependent on the hardware arc=
+hitecture used?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions allocation bounds multip=
+le times. Later it points out it uses the binary logarithm of allocation si=
+ze to efficiently check if a pointer access if valid. My question is what i=
+f the allocation size is not a clean power of 2. Say it's size 47 and the a=
+ctual size of the array is 38. I'm confused in this case because rounding u=
+p or down doesn't quite solve the issue. Either requests to indices 36 and =
+37 are rejected or there can be out of bounds accesses. Is there a way bagg=
+y bounds deals with this? Or are there some constraints on the size of the =
+allocation bounds?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions giving confidence to poi=
+nters, i.e. if we have checked a pointer previously then we don't have to c=
+heck it again.=20
+
+I am assuming that a pointer is trusted if and only if the pointer has not =
+been changed after the last check. And for each pointer, we maintain a bit =
+to store this information. Is it the case in practice?</pre></li>
+
+<li><pre class=3D"student-text">The paper states that "We handle out-of-bou=
+nds pointers within slot_size/2 bytes from the original=20
+object as follows" (on page 4 underneath figure 4). I don't quite understan=
+d why this approach=20
+(described after that sentence) only handles out-of-bounds pointers within =
+slot_size/2 bytes.</pre></li>
+
+<li><pre class=3D"student-text">The paper states they reserve 1/16th of the=
+ address space for the table. "Since pages are allocated to the table on de=
+mand, this increases memory utilization by only 6.25%"
+
+
+What does pages being allocated on demand have to do with it? I see that 1/=
+16 =3D 6.25%, but how does on demand page allocation affect the author's ca=
+lculation of their system increasing memory usage by 6.25%?</pre></li>
+
+<li><pre class=3D"student-text">The paper talks a bit about the challenge t=
+o "recover a pointer to the referent object from the out-of-bounds pointer.=
+" Why is this a necessary/beneficial function?
+
+My first thought was that it allows calling `free` with any pointer associa=
+ted with an object, but the documentation I'm reading states that "the beha=
+vior [of free] is undefined if the value of ptr does not equal a value retu=
+rned earlier by malloc."
+
+So, I'm unclear on why recoving the underlying object is necessary/valuable=
+.
+</pre></li>
+
+<li><pre class=3D"student-text">They note that baggy bound-checking only ha=
+s a performance penalty=20
+of about 8% (only..., that's like using a last-gen cpu).
+
+They also mention that they use static allocation to hoist or allide
+bounds-checking. What I did not find a mention of is the percentage=20
+of eliminated bounds-checking / the performance cost without static
+analysis. Any intuition on how much static-analysis can help here?
+
+(Also I find their disdain for pseudo base-one indexing amusing)
+
+</pre></li>
+
+<li><pre class=3D"student-text">This paper was written using baggy bounds a=
+s a plugin for Microsoft Phoenix on Windows. Has it been expanded to suppor=
+t/been adopted by users of other architectures?
+</pre></li>
+
+<li><pre class=3D"student-text">What does it mean for the baggy bounds chec=
+king method to be "backwards compatible"?
+What are binary buddy allocators?
+</pre></li>
+
+<li><pre class=3D"student-text">What does the following excerpt mean?=20
+
+"Like previous bounds checking solutions [19, 30, 15], we do not support pa=
+ssing an out-of-bounds pointer to uninstrumented code. However, this case i=
+s rare. Previous work [30] did not encounter this case in several million l=
+ines of code."
+
+Specifically, what does the author mean by "passing an out-of-bounds pointe=
+r to uninstrumented code"? What if that happens? Would that crash the syste=
+m, or go undetected (and unprotected)?=20
+</pre></li>
+
+<li><pre class=3D"student-text">What happens if you use your own memory all=
+ocation system that doesn't allocate memory in powers of 2?</pre></li>
+
+<li><pre class=3D"student-text">What happens when an object has an allocate=
+d size larger than slot size - does it occupy more than one slot? Or is slo=
+t size chosen to be larger than all the objects?</pre></li>
+
+<li><pre class=3D"student-text">What if out of bounds pointers that is more=
+ than half the slot size is used for arithmetic? It seems like the slot siz=
+e is set to a relatively small number, so I'm curious about the usefulness =
+of supporting a small offset out of bounds arithmetic but not out of bounds=
+ arithmetic in general. Also, what if a pointer is constructed out of no wh=
+ere(i.e. casted to from an int). Is this considered an illformed program si=
+nce it does not typecheck strictly?</pre></li>
+
+<li><pre class=3D"student-text">What specific examples are defects that wou=
+ld be missed by static analysis
+techniques or cause false alarms? (Related works section).
+</pre></li>
+
+<li><pre class=3D"student-text">What was the importance of the most signifi=
+cant digit and how was this digit determined?  Was this just determined vis=
+ible normal sign figs?</pre></li>
+
+<li><pre class=3D"student-text">What would need to be changed in this imple=
+mentation to make baggy bounds
+checking compatible with Unix-based operating systems instead of just Micro=
+soft
+Windows?=20
+</pre></li>
+
+<li><pre class=3D"student-text">While I don=E2=80=99t have a specific quest=
+ion, I think it would be helpful to step through an example of baggy bounds=
+, particularly focusing on how it handles out-of-bounds pointers, the infor=
+mation in section 2.4.</pre></li>
+
+<li><pre class=3D"student-text">Why do fat pointers break backward compabil=
+ity? Wouldn't it be possible to just recompile the source code similar to h=
+ow it is done for baggy words to obtain a executable that is correct?
+</pre></li>
+
+<li><pre class=3D"student-text">Why do pointers in 64-bit architectures hav=
+e "spare" bits? Isn't it a 64-bit address space?</pre></li>
+
+<li><pre class=3D"student-text">Why does baggy bounds only throw errors on =
+pointers more than half a slot in order for it to raise an error. The argum=
+ent seems to be that most of the time, valid OOB pointers are within slot/2=
+ from the bottom and top boundaries. To me this seems arbitrary and not sur=
+e how useful this. One example I can think of is in the paper, if you calcu=
+lating char* p, p+a-b, where a &gt; slot_size/2, it might throw an error.</=
+pre></li>
+
+<li><pre class=3D"student-text">Why don't the augmented pointers from 2.4 (=
+which set the most significant bit and place the pointer in illegal space) =
+cause problems in other pointer arithmetic? They don't appear to be convert=
+ed back to their original pointers every time they are referenced, so subtr=
+acting an illegal pointer from a legal pointer, for example, would result i=
+n a really funky location...
+</pre></li>
+
+<li><pre class=3D"student-text">baggy doesn't seem to protect against buffe=
+r overflows that overwrite up the stack...is that correct?
+</pre></li>
+
+<li><pre class=3D"student-text">sq4.txt
+
+Why does slot size / 2 work as a heuristic for the out of bounds marking? D=
+oes that really cover only the cases where there might be a legitimate use =
+of an out of bound pointer?</pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--qiYxNM5wgRVMI8vsyCU99D2U69ePtGAhZkHl2M2xlu------

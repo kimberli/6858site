@@ -1,0 +1,2281 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-answers/3
+Subject: Answers for lecture 3 - 6.858
+Date: Wed, 20 Mar 2018 22:57:40 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--ikkgIkqVy5b1vYPKH36XsnRyk18Fc3B5LPsW3jqhug----"
+
+------MultipartBoundary--ikkgIkqVy5b1vYPKH36XsnRyk18Fc3B5LPsW3jqhug----
+Content-Type: text/html
+Content-ID: <frame-32852-ef5245e7-3c80-449c-9f8c-976590f8bb3e@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-answers/3
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Answers for lecture 3 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Answers for lecture 3 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text">	As far as which scheme is more user friend=
+ly, it seems pretty clear that SMS is ahead in that sense. Most people will=
+ always have their phone on them, so they do not have to carry anything add=
+itional for 2FA with SMS, only their phone which is likely sitting in their=
+ pocket. Users also don't particularly want to be thinking about security. =
+So asking them to carry a USB dongle specifically for that reason is less o=
+ptimal. With USB they'd also have to be checking if they are required to sh=
+ow 'user presence' in which case they'd have to click the button on the don=
+gle instead of entering the code that was sent to them via SMS and being lo=
+gged in. Lastly, I think a big point is the fact that these days, we are lo=
+gging into accounts on devices like phones and tablets that do not have USB=
+ ports.
+
+	As for which scheme is more secure, I would probably argue that the USB do=
+ngle is better for that but I'm not entirely conviced. While I don't know m=
+uch about SMS, I lean towards the USB dongle being more secure because with=
+ that scheme, we know that everything is local on the hardware. The vulnera=
+bilities lie with MITMs primarily, and other methods were the site requesti=
+ng authentication is involved. So the easiest way to gain access would be t=
+o physically retrieve the dongle, which would work great because the dongle=
+ has no notion of a user. For the SMS scheme, there is more involved. Since=
+ there is no real piece of hardware used for authentication, it is simply a=
+ code sent via SMS. I imagine there could be a way to intercept said messag=
+es and then they would have access. Of course, the attacker would have to b=
+e quick as those codes usually don't have a very long life-span, and would =
+also have to make sure they weren't used by the user already. At first I wa=
+s thinking that SMS would be more secure, as it also shared the physical vu=
+lnerability of the phone being obtained by an attacker, with the exception =
+that most people use passwords on their phones. The extra passwords on the =
+phone would give another small layer of protection, however, I began to thi=
+nk that it might be possible to just remove the SIM card and place it in a =
+phone that is unlocked, then request authentication so that the SMS code ca=
+n be sent to a phone where it can be viewed. I'm not entirely sure if that =
+is the way that works, however. So, I am leaning towards the idea that the =
+USB dongle scheme would be more secure than SMS.
+</pre></li>
+
+<li><pre class=3D"student-text">
+Lecture 3
+
+Two-factor Authentication (2FA) is commonly used to authenticate users. For=
+ example, MIT allows as a second factor a code sent via an SMS message to t=
+he user's cell phone. The FIDO standard describes a 2FA scheme using a USB =
+dongle. Which scheme is more secure? Which scheme is more user friendly?
+
+I think the USB dongle is more secure since it doesnot interacts with any o=
+ther system via the internet or telecom service. So it is much harder for a=
+ malware to attack your dongle than your phone.=20
+The SMS scheme is more user-friendly since almost everyone has a phone thes=
+e days that they carry with themselves anyway whereas the dongle would be s=
+omething they'll need to explicitly take care of and is easier to lose.</pr=
+e></li>
+
+<li><pre class=3D"student-text">I wouldn't say either is more secure than t=
+he other. I think it would be equally easy for someone to sneak a peak at s=
+omeone's phone or steal a USB dongle (I don't think people would pay *as* m=
+uch attention to the dongle compared to their phone, so it'd be easier to s=
+teal. However, sneaking a glance at a phone's lock screen isn't usually ver=
+y hard...)
+
+The cellphone scheme is a lot more user friendly. I would definitely not wa=
+nt to carry a dongle around... I'd lose it :/
+</pre></li>
+
+<li><pre class=3D"student-text">In my opinion, the SMS message version is m=
+ore user friendly. I personally always have my phone on me and am used to c=
+arrying around my phone whereas having to carry around a USB dongle would b=
+e much less convenient and I am more likely to lose it or forget it. Howeve=
+r, the USB dongle is more secure. This is because it requires a physical "t=
+est of user presence" whereas a hacker could feasible hack into a cell phon=
+e from afar. The bar for MITM attacks is also very high the case of the USB=
+ dongle because the attacker would have to be able to get a cert for the ac=
+tual origin name issues by a valid CA and the browser doesn't support Chann=
+ellDs.</pre></li>
+
+<li><pre class=3D"student-text">Lec 3 (User Authentication) Question: Which=
+ scheme (2FA with SMS message code or with USB dongle) is more secure? Whic=
+h is more user friendly?
+
+The USB dongle 2FA seems more more secure than the MIT 2FA with SMS message=
+ code for a variety of reasons. There is the check that the U2F device had =
+issued the Key Handle before signing any message. Also, the U2F device has =
+the benefit of physical isolation. Finally, the USB dongle has protection a=
+gainst several MITM attacks which the paper discusses. I'm not sure what pr=
+otections the SMS message code has, but it seems more susceptible to MITM a=
+ttacks.
+
+I think that the USB dongle is more user friendly in a lot of ways too. Sur=
+e, it is a pain if the user loses their dongle, but the U2F dongles are des=
+igned to work without setup on a computer, and can reduce the need for a co=
+mplicated password, instead using a shorter PIN code.
+</pre></li>
+
+<li><pre class=3D"student-text">Two-factor Authentication (2FA) is commonly=
+ used to authenticate users. For example, MIT allows as a second factor a c=
+ode sent via an SMS message to the user's cell phone. The FIDO standard des=
+cribes a 2FA scheme using a USB dongle. Which scheme is more secure? Which =
+scheme is more user friendly?
+
+Using a code sent to SMS can definitely be more secure, especially if the p=
+hone is equipped with more security features such as a pin that requires un=
+locking. I=E2=80=99d argue the USB dongle is less secure because anyone can=
+ just take it and use it on your laptop. However, the usb dongle is definit=
+ely more user friendly because all you need to do is plug it in. For sms co=
+des, you actually need to enter the code into the browser, which takes time=
+ and effort.
+</pre></li>
+
+<li><pre class=3D"student-text">Comparing the two schemes, the 2FA scheme u=
+sing a USB dongle is by far more secure, whereas I would argue that the cel=
+l phone SMS message is more user friendly.
+Most students already have phones that can get SMS messages, so obtaining a=
+nd maintaining a USB dongle would be additional work whereas using the SMS
+messages would be hardly any different from what they are used to. However,=
+ by being a message over the network, SMS can be vulnerable to adversaries
+listening for the messages, whereas the USB dongle is directly physically c=
+onnected to the machines needing to access the resources.=20
+
+One side note regarding the security of the second factor scheme that MIT u=
+ses, it is possible to access resources behind a two factor wall using one
+device. By accessing the internet on your cell phone, and attempting to acc=
+ess MIT resources, one can input the email and password associated with the=
+ir
+account and then request an SMS message to use the cell phone as the second=
+ factor authentication. This bypasses 2FA completely and makes the SMS mess=
+aging
+scheme that much less secure than a USB dongle.</pre></li>
+
+<li><pre class=3D"student-text"># Reading Assignment L3
+# Rayden Y. Chia
+
+Two-factor Authentication (2FA) is commonly used to authenticate users. For=
+ example, MIT allows as a second factor a code sent via an SMS message to t=
+he user's cell phone. The FIDO standard describes a 2FA scheme using a USB =
+dongle. Which scheme is more secure? Which scheme is more user friendly?
+
+Traditional OTP (using SMS) has limitations:
+- Users need to type codes during their login process.
+- Manufacturers often possess the seed value of the tokens.
+- There is administrative overhead resulting from having to set up and prov=
+ision devices for users.
+- It requires the storage of secrets on servers, providing a single point o=
+f attack.
+
+The FIDO standard solves some of the abovementioned problems:
+- The user never has to type a code, instead he just inserts the USB key an=
+d touches a button.
+- Enterprises can configure their own encryption secrets on a USB key, whic=
+h means no one else ever sees those secrets.
+- OTPs generated by a USB key are significantly longer than those requiring=
+ user input (32 characters vs 6 or 8 characters) which translates to a high=
+er level of security
+- USB keys allow enrollment by the user, which reduces administrative overh=
+ead.
+- It is easy to implement with any existing website with no client software=
+ needed.
+- FIDO uniquely offers a token prefix that can be used for identity, simpli=
+fying enrollment and user experience through the Open Authentication standa=
+rd.
+
+It is obvious then that in both cases, the FIDO standard using a USB dongle=
+ is more secure and user-friendly. However, it requires the user to always =
+carry his USB dongle with him, so the reduced risk is transferred from the =
+server to the user.</pre></li>
+
+<li><pre class=3D"student-text">1. 2FA scheme using USB dongle is more secu=
+re than SMS.
+2. SMS is more user friendly because you don't need to care about extra dev=
+ices.</pre></li>
+
+<li><pre class=3D"student-text">1. A username and password, along with some=
+ form of local authentication (fingerprint, duo, ...) like the UAF protocol=
+ described in the paper. The trade offs are that it will take users somewha=
+t longer to log in, but it will stop someone who knows someone else's usern=
+ame and password from logging in as them. It will also require users to kee=
+p on them some form of additional authentication.
+
+2. A username and password, plus some credentials on the user's laptop. Thi=
+s will require the user to go through some additional steps anytime they ac=
+cess their account from a new machine, but so long as those steps are also =
+secure (could be some form of 2-factor authentication) then the device will=
+ be trusted. This will limit the user's access to their account, and also s=
+till leave them vulnerable if someone steals their laptop and their passwor=
+d.
+
+3. This would be a good use for a U2F authentication system because the net=
+work will have no way of trusting the machine the user is on and the user w=
+ill not necessarily be able to trust the network unless something like U2F =
+is used. The tradeoff is that it requires the user to keep a physical devic=
+e on them for access, which they could easily lose or forget and then be bl=
+ocked out of accessing the site.
+
+4. This would be a good use for the UAF protocol because the user is physic=
+ally there and the ATM can be outfitted with the hardware to properly verif=
+y the user's identity using both their credit card and another form of iden=
+tifier. The tradeoff is that if the ATM hardware isn't reliable enough the =
+user may be locked out and unable to withdraw money from their account.
+</pre></li>
+
+<li><pre class=3D"student-text">1. Password. Students often use Athena mach=
+ines, and we might not expect them to carry around a U2F device all the tim=
+e.
+
+2. UAF protocol. Since it is a private laptop, it is unlikely for other peo=
+ple to gain access to a user's laptop (for a prolonged period), and the aut=
+hentication mechanism does not need to be as strong. An unauthorized user v=
+iewing the bank balance also does not directly harm the user. Hence, we can=
+ tradeoff authentication strength for convenience.
+
+3. U2F protocol. A password might be risky since it is easy for a keylogger=
+ to record the password, or for a hacker to obtain the password over the ne=
+twork (if the connection is not https). UAF protocol is also inappropriate =
+since another user can easily access the device once the user leaves, and w=
+e want strong authentication.
+
+4. U2F protocol. Withdrawing cash is an important operation and the user mu=
+st be properly authenticated before allowing cash to be withdrawn. U2F prot=
+ocol a strong authentication mechanism which makes it difficult for hackers=
+ to withdraw cash of other users.</pre></li>
+
+<li><pre class=3D"student-text">2FA scheme using a USB dongle is more secur=
+e than 2FA scheme using sms. It happens because, to break the fircst scheme=
+, it is needed to have a physical access to the device, while 2nd one only =
+requires to know the content of the message that can be intercepted over th=
+e network or seen on the user's screen for example. I worked at Google and =
+they use 2FA scheme with a USB dongle because it is more secure.
+On the other hand, using a USB dongle is less user friendly for users as it=
+ requires them to always carry extra device with them and make sure they do=
+n't lose it.
+</pre></li>
+
+<li><pre class=3D"student-text">2FA through the user's cell phone is more u=
+ser-friendly, because most people have their phones readily available, wher=
+eas a USB dongle would be one more thing that the user would need to carry =
+around, not lose, and stick into his/her computer.
+
+The USB dongle is probably more secure, especially if it stores the keys on=
+ board, because it's not susceptible to the user's phone being hacked or to=
+ a weak design of data encryption in the Key Handle.</pre></li>
+
+<li><pre class=3D"student-text">2FA with a USB dongle is less secure than a=
+ SMS message, because a stolen dongle is easier for an attacker to use than=
+ a stolen phone, which is presumably password protected. However, the dongl=
+e is more user-friendly, as it enables users to access applications even wh=
+en they do not have their phone is out of battery.
+</pre></li>
+
+<li><pre class=3D"student-text">6.858 Lecture
+Kelvin Lu
+
+Which one is more secure?
+
+I have little information on how secure MIT's 2FA SMS system is, but I woul=
+d assume
+that it is less secure than the Dongle system presented, as users without D=
+UO
+will have potentially unencrypted SMS texts sent to their phones, which can=
+ be
+tapped by MITM attacks to get them. Other attacks MIT's 2FA system seems vu=
+lnerable
+to would be phones that spoof as the target user's phone, then getting the =
+SMS
+texts as well.
+
+Which one is user friendly?
+
+Probably MIT's 2FA system, as the dongle system requires that users have an=
+other
+device, whereas most people already own a phone.
+</pre></li>
+
+<li><pre class=3D"student-text">6.858 Lecture 3 Question - Collin Fijalkovi=
+ch
+
+While SMS is more user friendly, USB authentication is more secure. Users w=
+ill tend to carry a mobile phone, but may not be inclined to carry another =
+device.
+their credit card information was used to gain control over their Verizon a=
+ccount, which then allowed the attackers to transfer their
+phone number. Although this was used for the purpose of verifying large cre=
+dit card purchases, it could easily be used to subvert
+the two factor authentication process.
+
+Arguably there are scenarios where SMS is more secure. In cases where a mac=
+hine is compromised, attackers may be able to compromise a USB device,
+whereas they would only gain the one login access due to the separation of =
+mobile device and machine. That said, SMS drastically increases
+the possible routes of attack, and allows for social engineering which does=
+ not involve user interaction.</pre></li>
+
+<li><pre class=3D"student-text">A 2FA scheme that utilizes a USB dongle ins=
+tead of SMS messages is more secure. This is because there are more opportu=
+nities for a hacker to get your SMS code, whether it be through phishing, m=
+alware, or even SMS interception. For the USB dongle, there are still threa=
+ts from malware, but not if the software is part of the OS itself instead o=
+f being a user program, as outlined in the FIDO paper. There are even prote=
+ctions put in place, using counters, to detect if a USB dongle has been clo=
+ned in most cases. However, doing 2-factor authentification through SMS mes=
+sages is much more user-friendly, because most people always have their cel=
+lphone on them, but may not necessarily have a special USB dongle on them a=
+t all times.
+</pre></li>
+
+<li><pre class=3D"student-text">A U2F device is more secure than Duo becaus=
+e it is used only for one purpose and is a more simple system to analyze an=
+d defend, while a phone is orders of magnitude more complex and not as many=
+ guarantees can be made about its security.
+
+However, Duo is more user-friendly because the user doesn't have to carry a=
+nything new around. Most people always carry a phone and are used to instal=
+ling utility apps.
+</pre></li>
+
+<li><pre class=3D"student-text">A USB dongle is more secure since it relies=
+ on something physical people have as opposed
+to access to an SMS sent to a phone number, which is vulnerable to a number=
+ of security
+problems like: the T Mobile incident where people could sign up for other p=
+eople's phone
+ numbers (and thus get their SMS messages without having the users physical=
+ phone), people
+ who share SMS messages across multiple devices with software (mirroring SM=
+S messages to a
+ laptop or service like PushBullet) will mean someone could obtain one of m=
+any devices to
+ authenticate SMS with.
+
+However, I think it is conceivable that a password protected phone that doe=
+sn't share
+SMS in anyway and whose notifications are blocked without the password coul=
+d be safer
+than the USB dongle excluding any vulnerabilities in SMS traffic in general=
+ that I'm not aware of.
+
+The SMS messages are more convenient because users always will more easily =
+bring their
+phones everywhere than they will bring an extra USB dongle everywhere. Also=
+, SMS sharing
+services across devices can make it even more convenient for a User to get =
+the SMS code
+without even needing their phone.
+</pre></li>
+
+<li><pre class=3D"student-text">A USB dongle is more secure than SMS codes =
+for several reasons: First,
+SMS codes rely on the questionable security of the underlying phone
+network.  Second, a smartphone on which a user installs random apps
+and games is more likely to become compromised than a USB dongle used
+solely for authentication.  Third, if a user is accustomed to
+receiving SMS codes from many services, they can potentially be
+tricked into providing codes to the wrong sites; an attacker can set
+up a website where they ask users to enter an SMS code, and then
+impersonate the user to another site and prompt that site to send the
+user a code, which they enter into the evil site so the attacker can
+enter it into the good site and gain access.
+
+SMS codes are more user-friendly in that they don't require the user
+to carry another piece of hardware, but less user-friendly in that
+users may need to unlock their phones and check their texts to sign
+in, rather than just plugging in a dongle and pressing a button.
+</pre></li>
+
+<li><pre class=3D"student-text">A USB dongle is more secure than an SMS mes=
+sage because it is possible for there to be multiple ways to access SMS mes=
+sages (such as me viewing my texts on my computer). Also, people might leav=
+e their phone plugged in somewhere and you can often see the message on the=
+ lock screen of the phone.
+
+Although the text message is less secure, it is a lot more user friendly be=
+cause people only have to remember their phones, which they are likely to a=
+lready be carrying on them whereas requiring a person to have a USB dongle =
+with them on top of their normal stuff would be more annoying for a user.</=
+pre></li>
+
+<li><pre class=3D"student-text">A USB dongle is probably more secure since =
+the only real way to compromise it is to physically get the device. However=
+, it's also less user-friendly. People always have their phones on hand, ho=
+wever carrying a USB device around is an additional effort which most users=
+ probably don't want to make. </pre></li>
+
+<li><pre class=3D"student-text">A verification code sent as an SMS message =
+is convenient because most people with mobile phones carry them at all time=
+s. However, insofar as this second factor is supposed to guarantee the user=
+'s identity by way of the presence of the mobile phone, an SMS code falls s=
+hort. SMS messages are sent in cleartext and can be intercepted, or an atta=
+cker can clone the carrier identifying information on a phone so that she r=
+eceives the user's SMS messages. In contrast, the FIDO/U2F protocol makes c=
+ryptographic guarantees that the second factor is physically present on the=
+ client device. However, this comes with the inconvenient requirement that =
+a user carries a special USB key at all times. Moreover, an attacker can st=
+eal the USB key, gaining access to all the user's accounts while leaving th=
+e user completely locked out.</pre></li>
+
+<li><pre class=3D"student-text">Based on my reading, it seems that MIT's 2F=
+A and FIDO's standard are very similar in terms of how security and user fr=
+iendliness are provided. However, FIDO's standard requires a special U2F de=
+vice (the USB). That might be an inconvenience, but it also certifies that =
+the device doing the signature send to is safe. Therefore FIDO's version is=
+ more secure but less user friendly.</pre></li>
+
+<li><pre class=3D"student-text">Based on the different schemes described in=
+ the paper, what do you think would be a reasonable choice for authenticati=
+ng users in the following scenarios, and what trade-offs would you have to =
+make:
+
+1. Logging in to a public Athena machine in a cluster.
+Username and password, perhaps some two-factor authentication like DUO. MIT=
+ students are already set up with DUO so this change wouldn't be difficult =
+for users to adapt to.
+
+2. Checking your balance on a bank's web site via HTTPS from a private lapt=
+op.
+Username and password. A two-factor authentication device like the U2F woul=
+d work well in this senario because it's convenient for the user leave thei=
+r U2F device in their laptop, and so this method would provide additional s=
+ecurity without additional hassle.
+
+3. Accessing Facebook from an Internet cafe.
+Internet cafes are pretty susceptible to MITM attacks, so there's a chance =
+of your username and password getting stolen. However, unless Facebook requ=
+ires additional security measures in every login scenario, I'm not sure how=
+ added authentication at Internet cafes would help.
+
+4. Withdrawing cash from an ATM.
+Biometrics, such as fingerprint scanners or facial recognition, in addition=
+ to the current debit card and pin would be a reasonable choice for authent=
+icating users in this scenario. However, the ATM will have to store many us=
+er's credentials because it's not a like a phone, which only has one owner.=
+=20
+
+</pre></li>
+
+<li><pre class=3D"student-text">Both schemes have pros and cons, and withou=
+t knowing the details of MIT=E2=80=99s duo authentication, I would say both=
+ 2FA methods are appropriate in the right situation. The FIDO 2FA has the a=
+dvantage that you can create accounts on a variety of different online serv=
+ices, so if your device fell into the wrong hands, an attacker wouldn=E2=80=
+=99t immediately be able to know which site to compromise. This is less tru=
+e for duo authentication, which is MIT specific. On the other hand, the rel=
+iance of using the origin in FIDO seems risky, and opens up the a greater p=
+ossibility of origin-based exploits. And both seem to be relatively user fr=
+iendly. After setting up duo authentication, and downloading the app, it is=
+ pretty user friendly. FIDO also seems user friendly once someone is past t=
+he initial set up since there are multiple ways to authenticate yourself. M=
+IT=E2=80=99s might be more user-friendly based on the fact that you are mor=
+e likely to have your phone with you than a usb.</pre></li>
+
+<li><pre class=3D"student-text">Danny Tang
+
+data1013
+
+2/13/18
+
+
+
+Lecture 3
+
+Question: Two-factor Authentication (2FA) is commonly used to authenticate =
+users. For example, MIT allows as a second factor a code sent via an SMS me=
+ssage to the user's cell phone. The FIDO standard describes a 2FA scheme us=
+ing a USB dongle. Which scheme is more secure? Which scheme is more user fr=
+iendly?
+
+Answer:
+
+The 2FA scheme described by the FIDO standard is more secure - the USB dong=
+le created for this was meant to be used solely for this purpose. It featur=
+es additional security features that a phone may not have, including protec=
+tion against man in the middle attacks, proof of physical presence during r=
+egistration, and "attestation" key-pairs for verifying a dongle's genuity.
+
+The cell phone scheme is more user friendly, as it does not require a user =
+to carry around an additional item with them that they otherwise would not =
+have.</pre></li>
+
+<li><pre class=3D"student-text">Given known vulnerabilities in the protocol=
+ that carries SMS messages, an attacker can theoretically intercept them; t=
+his makes SMS 2FA less secure than FIDO U2F. I would argue that FIDO with a=
+ USB key is also more user-friendly because a user can simply put the key i=
+n his computer when they want to authenticate, though one could say that pe=
+ople are less likely to habitually use a FIDO USB key because it is one mor=
+e thing to carry around, configure, and learn how to use for the first time=
+.
+</pre></li>
+
+<li><pre class=3D"student-text">I am inclined to think that the FIDO scheme=
+ is more secure, since it is backed by hardware in addition to software, wh=
+ereas it may be easier for someone to intercept a text message.
+
+However, I think being able to get a text message is far more convenient to=
+ the user than having to carry a USB device around, so users are more likel=
+y to opt-in to the text message option.</pre></li>
+
+<li><pre class=3D"student-text">I believe second factor authentication usin=
+g SMS is safer than U2F protocol.
+This is because if someone steals the usb, then they compromise all the acc=
+ounts
+attached with the usb as the usb has no way of knowing who is pressing the =
+button.=20
+But in the case of the phone, people can set up different types of security=
+ such as=20
+finger print on their phone so that even if their phone is stolen, someone =
+can=EF=BF=BDt open it and see the messages.
+But the U2F protocol can be safer if its authenticates its user before lett=
+ing them press the button.=20
+The U2F protocol is more user friendly as it serves a single keychain and m=
+akes it easy to share passwords with others (i.e spouse).=20
+Ultimately, the U2F protocol could also be embedded in phones.=20
+</pre></li>
+
+<li><pre class=3D"student-text">I believe that the 2FA scheme using the don=
+gle is more secure. When using a cell phone you have to assume that the pho=
+ne or phone number has not been compromised --- and that the message is act=
+ually going to the right person. Additionally, texting the number and input=
+ting it is not a physical process that has to happen, which was one of the =
+key points of the "touch" part of the FIDO U2f device.
+
+
+On the other hand, the code sent to the cell phone is more user friendly. T=
+his way you don't run the risk of forgetting your USB dongle, or worse leav=
+ing it in indefinitely and taking up one of your rare Mac USB ports.
+</pre></li>
+
+<li><pre class=3D"student-text">I believe that the SMS system is more user-=
+friendly and the U2F system appears more secure.
+
+Right now, the SMS system seems more user-friendly because it doesn't add a=
+nything new to the user's standard security procedures. Most users carry ar=
+ound a phone, most users have good enough reception to always receive SMS m=
+essages around a computer, and receiving SMS messages is a standard thing a=
+t this point. On the other hand, the U2F is a whole new device that the use=
+r would have to carry around. Users might forget it or lose it. The article=
+ claims that losing a U2F device isn't a complete compromise of security bu=
+t it does definitely impact availability, both through the user not being a=
+ble to immediately activate, and having to obtain a new device and set it u=
+p.=20
+
+I could see the U2F becoming more user-friendly than the current system if =
+it is incorporated into existing devices, as the plan appears to be. So, th=
+e device would be inside a phone or computer and you could just press a but=
+ton there to have the functionality. In this situation, the authentication =
+would be faster than waiting for and entering and SMS message, and, as the =
+article claims, would allow bfor shorter passwords than are currently the s=
+tandard today.=20
+
+As for security, I think that the U2F is more secure. The most glaring issu=
+e with the SMS method is that SMS messages can be tapped into so a sophisti=
+cated adversary could listen for those. Additionally, SMS message security =
+depends on the security of the application that handles SMS messages in the=
+ phone. If this application is compromised, these authentication messages a=
+re compromised. In the U2F, the device isn't really smart, so we don't have=
+ to trust it. I wonder if there would be issues with software U2F implement=
+ations since we would have to place more trust on the signing authorities, =
+and perhaps be more careful with the cloning issue.=20
+</pre></li>
+
+<li><pre class=3D"student-text">I believe the FIDO U2F standard is more sec=
+ure than SMS. SMS 2FA can be subverted via social engineering at the career=
+-side, and phone malware that may read users text messages. FIDO U2F has po=
+tential other attack vectors, but they are harder to exploit. I believe for=
+ frequent use FIDO U2F is more user friendly (a tap), but for less frequent=
+ use SMS enables a basic level of 2FA without requiring the user to own usb=
+ dongle or fear losing one.=20
+</pre></li>
+
+<li><pre class=3D"student-text">I find the SMS message more user friendly. =
+Most people who have a computer already own a cell phone, so no additional =
+hardware setup is required. I imagine that logging in would be faster with =
+a USB device than waiting for and subsequently entering an SMS code, but si=
+nce the difference is only a few seconds, I don't think it would be enough =
+to merit acquiring a USB device and keeping it either plugged into one's co=
+mputer at all times or at least nearby (and if it isn't already plugged in,=
+ then the login process will probably be even slower overall). However, I c=
+ould imagine that if every website that I needed to log in to required some=
+ form of 2FA, then using a USB device might become more convenient.
+
+I'm not sure which method is more secure. A USB dongle might be easier to s=
+teal than a phone, and it might take longer before the user noticed it was =
+missing. Additionally, a phone usually has some further locking mechanism (=
+e.g. a PIN or swipe pattern) which is needed to unlock it; a USB dongle pro=
+bably lacks this. I would thus expect that a phone might be more secure if =
+the main threat is theft and subsequent use of the physical device. I think=
+ there are also things that a USB device would do better than a phone; one =
+example is that your phone is uniquely identified by your phone number, to =
+which the SMS is sent. Thus multiple services that you access using SMS for=
+ 2FA can identify you as the same user; this isn't possible with the unique=
+ keypair system described in the FIDO document.</pre></li>
+
+<li><pre class=3D"student-text">I think U2F is probably more secure. A text=
+ message could possibly be intercepted, while U2F might also require a fing=
+erprint.
+
+U2F is probably also more user friendly by a bit, it's easier to just press=
+ a button than to check your text messages.
+</pre></li>
+
+<li><pre class=3D"student-text">I think that 2FA using a USB dongle is more=
+ secure than 2FA using SMS messages because an SMS message could be interce=
+pted if an attacker got access to your phone number. Using the physical USB=
+ dongle that requires the user to activate the device ensures that only the=
+ user is asking for authentication. The 2FA with SMS messages is more user =
+friendly because users usually have their phones at hand. This scheme doesn=
+'t require users to purchase a USB dongle and to carry it around whenever t=
+hey want to access certain browser apps.</pre></li>
+
+<li><pre class=3D"student-text">I think that 2FA with a USB dongle is both =
+more secure and more user friendly.
+An sms code could be intercepted while it's being sent, read by an app on y=
+our phone, or you could be phished to enter it into a fake site. It could t=
+hen be entered by an attacker to log in as you. These are all basically man=
+ in the middle attacks, and the U2F scheme mostly protects against them.
+It is also more user friendly because it is very fast and intuitive. Copyin=
+g a code from in a text message onto a website is slow and allows for typos=
+. Simply tapping on a usb dongle that you keep with you (or even keep perma=
+nently in your computer) is much simpler.
+For the MIT 2FA, I think the Duo app is the most user friendly of the avail=
+able options because it's similarly fast to tap approve on a notification. =
+However, I don't know how it works internally, so I can't say if it's more =
+secure than U2F (I would guess that it's not).</pre></li>
+
+<li><pre class=3D"student-text">I think that the FIDO standard is more secu=
+re, but the MIT 2FA scheme might be more userfriendly.
+The MIT user can be compromised in many ways, for example: 1) An attacker s=
+teal the MIT student's phone. 2) Text messages show up on the lock screen. =
+3) Attackers can pretend to be the user to the cell phone service company a=
+nd switch numbers (I think this has happened before)
+
+</pre></li>
+
+<li><pre class=3D"student-text">I think the 2FA USB dongle scheme is more s=
+ecure since you have a dongle
+that is solely used for the purposes of authentication, with way fewer
+additional exploit channels than a phone may have. For example, if your=20
+phone is running some sort of software with a vulnerability, then an=20
+attacker could potentially create an exploit to bypass the 2FA.=20
+
+However, I would say that the cell phone 2FA scheme is more user-friendly,
+since these days most people carry a phone with them constantly and this sc=
+heme
+does not require users to carry anything more.
+</pre></li>
+
+<li><pre class=3D"student-text">I think the FIDO standard is more secure be=
+cause there are fewer avenues of attack. An attacker has more ways to compr=
+omise a device when the device is used for multiple purposes. Because the U=
+2F would exist on a flash drive for only that specific purpose, making sure=
+ the U2F is untampered with is an easier problem.
+
+On the other hand, MIT=EF=BF=BDs use of cellphones for the 2nd authenticati=
+on factor is more user friendly as most people already have their phone wit=
+h them at all times, so they do not need to keep track of another device.
+
+</pre></li>
+
+<li><pre class=3D"student-text">I would argue that sending an SMS to the us=
+er is more secure - a USB dongle can be stolen easily. There are ways to in=
+tercept SMS messages as well, but they are more technologically advanced th=
+an simply stealing a U2F device. I would also argue that sending an SMS is =
+more user-friendly, especially in a time where people are attached to their=
+ phones. Carrying around another device solely for 2FA seems like an unreal=
+istic expectation.
+
+</pre></li>
+
+<li><pre class=3D"student-text">I'll say the scheme with the USB dongle is =
+more secure. It may be possible to obtain someone's text messages without t=
+heir permission, since they go through a third-party (a phone company), but=
+ the 2FA scheme relies on keys that are exchanged directly between machine =
+and USB device.
+
+The text message scheme is slightly more user-friendly, since it doesn't re=
+quire a user to buy a separate device and utlizes a device that the user wi=
+ll use for other activities anyways -- such as talking or browsing the web.=
+</pre></li>
+
+<li><pre class=3D"student-text">In my view, each scheme has its advantages =
+and disadvantages when it comes to security and user friendliness.
+
+The SMS message could be seen as more secure than the USB dongle which seem=
+s to require a simple button press. If the USB dongle was physically compro=
+mised, an attacker could simply press the button to generate the security c=
+redentials, whereas a phone may require a passcode, facial recognition, or =
+other security feature to access. At the same time, it would be easier for =
+an attacker to compromise a mobile phone and access its content remotely th=
+an the USB dongle.
+
+As far as user friendliness goes, I dislike the idea of needing to carry ar=
+ound a USB dongle with me everywhere I go. The active part of the device, h=
+owever, is more user-friendly, as a button press is easier than unlocking m=
+y phone and typing in the 6- to 8-digit code I'm expected to remember.</pre=
+></li>
+
+<li><pre class=3D"student-text">It is possible to receive and send messages=
+ from one phone as if it were from another, so perhaps using a certified us=
+b dongle is more secure. However, most people already have cell phones, so =
+it is more of a bother to have to acquire a usb dongle. That being said, it=
+ seems that once you have a usb dongle it is easier to just tap that than t=
+o have to receive, read, and relay an SMS message.</pre></li>
+
+<li><pre class=3D"student-text">Jun Wan 991032935
+
+I think the FIDO scheme is more secure. The adversary might still break int=
+o a MIT account without access to the user's phone. After all, the second-f=
+actor password is a six digit number and might be guessed after a hundred t=
+housand trials. However, it is impossible to pass a U2F authentication with=
+out the U2F token.
+
+In terms of convenience, both scheme has their own advantages. MIT's scheme=
+ use your phone as the second-factor device so that users don't have to car=
+ry a token. For the U2F scheme, user only need to remember a four digit pas=
+sword. Personally, I think MIT's scheme is more user-friendly. It is easy t=
+o remember a password, but carrying a USB device all the time can be troubl=
+esome.</pre></li>
+
+<li><pre class=3D"student-text">Lec3
+
+The scheme proposed by FIDO is more secure because the U2F
+device has a concept of origin.  The U2F device also needs
+to be activated (via a button) and would be used specifically
+for security purposes.  A phone, in contrast, is not origin
+specific and easier to spoof.
+
+The phone is a more user-friendly scheme as most people own
+a cell phone and thus do not need to purchase anything
+additional.  The cell phone is also not origin specific,
+and can be used to authenticate wherever.</pre></li>
+
+<li><pre class=3D"student-text">Lec3 --- Allan dos Santos Costa
+
+As they describe in the paper, the USB scheme is more secure - since bypass=
+ing the system
+means getting access to the content in the USB, which implies some sort of =
+physical=20
+proximity (this means that the attacker would either have to access the USB=
+ through
+acessing a machine that the USB will be plugged, or will have to steal the =
+USB itself).=20
+However, as they mention in the paper, this is a major user experience prob=
+lem as of now:
+many OSes can't promptly accept USB data, and the very fact that the person=
+ will have to=20
+carry an USB is already an obstacle for user friendliness. The SMS set up, =
+on the other hand,
+only requires a cell phone (which the user don't have to 'remember' about, =
+since he/she most
+likely will already carry it with him/her). However, sending the SMS requir=
+es that data=20
+flows across a network - which opens a whole new set of potential attacks.=
+=20
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 3
+
+---------------------------------------------------------------------------=
+--
+Two-factor Authentication (2FA) is commonly used to authenticate users.
+For example, MIT allows as a second factor a code sent via an SMS message
+to the user's cell phone. The FIDO standard describes a 2FA scheme using
+a USB dongle. Which scheme is more secure? Which scheme is more user friend=
+ly?
+---------------------------------------------------------------------------=
+--
+
+As for security, I can say that the SMS message is the less secure method. =
+At
+one point I was using a service where I could basically read my texts on my
+laptop. Whenever I hit one of MIT's 2FA walls, the code would just pop up a=
+s a
+text message on the same device. Although, this method is more user friendl=
+y. A
+user (especially my age) is very likely to have their phone (or a device ge=
+tting
+SMS messages) on their person at any given time.
+
+The U2F method has many additional perks that the SMS method does not. In
+addition to a stronger password, U2F also gives you better protection again=
+st
+MITM attacks since the keys hash the origin as well. The device itself uses
+public/private keys and uses cryptographically secure keys which can not be
+brute forced. In fact, the U2F keys also use a 4-digit pin or could possibl=
+y be
+build to use other data such as biometrics to add another layer of security=
+ on
+top of a classical physical key.
+
+However, introducing a new software system into the mix opens the
+possibility of new bugs. The paper touches on a few types of attacks malwar=
+e on
+a user's machine could execute.
+
+In terms of the UX of the U2F key, I think there is something to be said of
+physical keys. Physical keys have a much better track record throughout hum=
+an
+history than user generated passwords do in their short history. While ther=
+e is
+definitely a huge bootstrapping issue in getting enough keys out in the wor=
+ld,
+the cost of such devices should be small. While physical keys also have sec=
+urity
+pitfalls, I believe they are easier and more intuitive to reason about.
+
+Since currently very few internet users have U2F keys, the SMS 2FA is defin=
+itely
+the more user friendly and easily bootstrappable option. Although, this opt=
+ion
+is not the most secure option, it still has increased security compared to
+a  regular user-supplied password system without a 2nd factor.
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 3
+
+Two-factor Authentication (2FA) is commonly used to authenticate users. For=
+ example, MIT allows as a second factor a code sent via an SMS message to t=
+he user's cell phone. The FIDO standard describes a 2FA scheme using a USB =
+dongle. Which scheme is more secure? Which scheme is more user friendly?
+
+---------
+
+It's hard for me to say with is secure.  Without knowing a lot about phone =
+security, I want to say it's less secure.  Phone numbers can change, be los=
+t or acquired by new people, and thus they would receive the message.  Also=
+, people often leave their cell phones unsecured, and in the modern age, th=
+e phone could be both the accessing device (using a browsing app) and the s=
+econd form of authentication.  That being said, users can at least lock the=
+ir phones, but the dongle has no such option, and so once it is acquired th=
+ere are no additonal barriers to having the second factor.
+
+For many people, the phone will seem more user friendly, as they usually ha=
+ve it on them anyways to do many other tasks throughout the day.  On the ot=
+her hand, while rare, there may be situations where you're on a machine tha=
+t has network but you have no cell signal or wifi to get the second factor =
+through.  Personally, my phone sucks, so I've found the yubikey (also usabl=
+e with MIT 2FA) to be more convenient.
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 3 (Answer to Paper Question)
+Jorge Troncoso
+
+Question:
+Two-factor Authentication (2FA) is commonly used to authenticate users. For=
+ example, MIT allows as a second factor a code sent via an SMS message to t=
+he user's cell phone. The FIDO standard describes a 2FA scheme using a USB =
+dongle. Which scheme is more secure? Which scheme is more user friendly?
+
+Answer:
+The UTF standard is more secure because the USB dongle and the origin servi=
+ce participate in the authentication process. With 2FA, only the origin ser=
+vice participates in the authentication processs. 2FA is simply another ver=
+ification step where data is sent to the origin service. No device on the c=
+lient side participates in the authentication process. The client just send=
+s data to the service.
+
+For example, 2FA has no way of detecting clones because the 2FA client has =
+no way of keeping track of how many times it has interacted with the origin=
+ service. This is because the 2FA client doesn't interact with the origin s=
+ervice directly.
+
+Although the U2F scheme is more secure, I think 2FA is more user friendly b=
+ecause we all carry mobile devices that we can use to perform 2FA.</pre></l=
+i>
+
+<li><pre class=3D"student-text">Lecture 3 - Ajinkya Nene
+
+The USB dongle scheme is more secure as it is hardware-backed rather than s=
+oftware-backed. This makes a hack more unlikely to occur. Yet, the SMS vers=
+ion is more user-friendly since it allows for seamless 2FA usage, many peop=
+le have SMS notifications integrated into their computers. Thus, the usage =
+between software vs hardwarde-backed 2FA should be made dependent on the ne=
+ed for security of that application. </pre></li>
+
+<li><pre class=3D"student-text">Lecture 3: Two-Factor Authentication Readin=
+g Question
+
+Security - I believe that technically, both systems seem comparable, so to =
+differentiate the systems I would like to evaluate
+each one in practice. MIT's cellphone approach lets anyone with access to a=
+ user's cellphone login to their account once they
+figure out the user's password. The USB device is similar, but has the adde=
+d benefit of also requiring the device used to belong
+to the same user, which gives it an advantage over MIT's cellphone approach=
+. With all of this considered, I would say that
+the USB system has better security.
+
+User Friendly - In terms of user friendly-ness, MIT's cellphone approach is=
+ good because it makes use of a device that most
+people already have, are familiar with, and will always carry around. In ad=
+dition, a cellphone has many other purposes, meaning
+that the burden of carrying around this device is alleviated because it has=
+ use outside of this singular situation. The USB
+approach requires people to carry around a smaller device that is more easi=
+ly lost and has no added value outside of login
+situations. In addition, although simple, the USB interface is new and so w=
+ould require user adoption and adaption, acting as
+at least another small barrier to entry. Both approaches can be achieved wi=
+th a handful of clicks from each device, making
+them comparable in terms of physical effort. With all of this considered, I=
+ would say that MIT's cellphone approach is more user
+friendly.
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 3: User Authentication
+2/14/18
+
+Two-factor Authentication (2FA) is commonly used to authenticate users. For=
+ example, MIT allows as a second factor a code sent via an SMS message to t=
+he user's cell phone. The FIDO standard describes a 2FA scheme using a USB =
+dongle. Which scheme is more secure? Which scheme is more user friendly?
+
+Secure:=20
+USB dongle is more secure. This is because the USB itself can be assumed to=
+ be completely secure; all the usb is doing is storing and wrapping a secre=
+t key, and the secret key is stored on the secure element. In contrast, pho=
+nes can be much more easily compromised as they are connected to multiple n=
+etworks and often have minimal defense.=20
+
+User Friendly:
+The SMS system is more user friendly. This is because most users already ha=
+ve phones, whereas users will have to buy a dedicated USB dongle for user a=
+uthentication.</pre></li>
+
+<li><pre class=3D"student-text">MIT=E2=80=99s 2-factor authentication schem=
+e seems more user-friendly than the USB dongle, and also easier to get peop=
+le to adopt. The issue with the USB is that it=E2=80=99s an extra piece of =
+hardware to carry around that I imagine would be easier to lose, whereas mo=
+st people are already used to carrying around their phones. It also seems l=
+ess secure because you just have to tap it to authenticate. With the MIT 2F=
+A I need to enter my phone pin or use my fingerprint to accept the push not=
+ification it sends me =E2=80=94 so even if I lost my phone or someone got i=
+t they wouldn=E2=80=99t immediately be able to authenticate from it.  </pre=
+></li>
+
+<li><pre class=3D"student-text">MIT=E2=80=99s 2FA via Duo or SMS on mobile =
+phone assumes that everyone has easy access to a mobile phone, which may no=
+t be true. Additionally, it assumes that the mobile device is secure and no=
+t easily =E2=80=9Chackable=E2=80=9D. Because different mobile phones have d=
+ifferent levels of security, some phones could be much more easily hacked t=
+han others. I also feel that someone could steal a phone and easily guess t=
+he password. On the other hand, MIT students generally have their phones mo=
+re handy than some USB, and it=E2=80=99s a bit annoying to have a USB stuck=
+ in their laptops all the time (especially if you have one of the new MacBo=
+oks that don=E2=80=99t have USB ports). It also seems like it could be much=
+ easier to steal a USB device than a phone - I=E2=80=99m much more likely t=
+o notice my phone missing due to my reliance on it. I personally feel that =
+the SMS/mobile app method is more user friendly and more secure, but it dep=
+ends on the population you=E2=80=99re creating the security system for.</pr=
+e></li>
+
+<li><pre class=3D"student-text">Nichole Clarke
+6.858
+Lecture 3 Question
+Two-factor Authentication (2FA) is commonly used to authenticate users. For=
+ example, MIT allows as a second factor a code sent via an SMS message to t=
+he user's cell phone. The FIDO standard describes a 2FA scheme using a USB =
+dongle. Which scheme is more secure? Which scheme is more user friendly?
+The USB dongle is the more secure scheme than a second factor code sent via=
+ SMS message.  The SMS message can be intercepted, either through SIM card =
+hijacking or faking cell phone towers that intercept text messages.  Furthe=
+r, a phone number change can be spoofed, making it appear that the user cha=
+nged networks, allowing for texts to one number to be intercepted.  In the =
+case of the USB Dongle, this generally involves having physical access to t=
+he dongle and cannot be done remotely.
+I think the question of being more user friendly somewhat depends on the us=
+er.  On the one hand, if most of the authentication is being done on a lapt=
+op/desktop computer, then having the USB dongle can be more user friendly. =
+ This simply, then, requires pressing a button on the dongle instead of nee=
+ding to pull up a new device or have another device on hand to complete the=
+ login.  If a phone is dead, for example, then making use of an SMS Message=
+ or the DUO app won=EF=BF=BDt work; further, this can lock a user out of th=
+eir account.  On the other hand, when a web app being run of a mobile devic=
+e requires authentication, then using a mobile device if more user friendly=
+ (especially when it involves making actions on a push notification).  Assu=
+ming that most actions that require authentication are originating from an =
+app run a desktop/laptop, the use of a USB dongle is more user-friendly.
+</pre></li>
+
+<li><pre class=3D"student-text">Not sure which one is more secure...perhaps=
+ the SMS messaging is more secure since someone would have to physically st=
+eal your phone to obtain the texted code. Sim cards and phones are easily d=
+isabled though the service provider. When using a USB dongle, it is possibl=
+e that the dongle is stolen and then used as a key. It is also possible to =
+intercept the authentification process between the user and the origin.=20
+
+I think that sending a code via SMS message is more user friendly since mos=
+t people always have their phones with them 24/7 whereas a small USB dongle=
+ is much easier to lose.=20
+
+</pre></li>
+
+<li><pre class=3D"student-text">On paper, a separate USB dongle seems secur=
+e. But it adds layers of failure.=20
+It seems more secure since phone-based SMS apps are probably easier to medd=
+le with and hijack. However, having another device will add to the unit-eco=
+nomics of the whole product, and will additionally require custom-made soft=
+ware being shipped out (such as code to storing the keys (or a "wrapped ver=
+sion" of it) on the device). Such custom software can in itself end up bein=
+g buggily implemented, adding to the possible routes to failure.
+
+An SMS-based two factor system definitely is more user-friendly, given a us=
+er is spared the inconvenience of carrying around an additional device.</pr=
+e></li>
+
+<li><pre class=3D"student-text">Q: Two-factor Authentication (2FA) is commo=
+nly used to authenticate users. For example, MIT allows as a second factor =
+a code sent via an SMS message to the user's cell phone.
+   The FIDO standard describes a 2FA scheme using a USB dongle. Which schem=
+e is more secure? Which scheme is more user friendly?
+
+The FIDO standard is more secure since it relies on a secure enclave to sto=
+re the authentication token/private key and requires an action to proof tha=
+t the user is presented
+at the device. Whereas SMS messages have many issues, as an example the use=
+rs phone number could be redirected, or a malicous app could phish the mess=
+age from the users device.
+Which off the two methods is more user-friendly is up to personal taste. I =
+carry my usb dongle on my key and find it less annoying than waiting for an=
+ SMS to be delivered,
+but for other users it could be an issue. Also problematic is 2FA if the ph=
+one itself is the device, since current solution only have limited support =
+for mobile devices.
+
+</pre></li>
+
+<li><pre class=3D"student-text">Question Two-factor Authentication (2FA) is=
+ commonly used to authenticate users. For example, MIT allows as a second f=
+actor a code sent via an SMS message to the user's cell phone. The FIDO sta=
+ndard describes a 2FA scheme using a USB dongle. Which scheme is more secur=
+e? Which scheme is more user friendly?
+
+FIDO is more secure because in both cases you require a username and passwo=
+rd. However, in the case where a phone or USB gets lost, someone else can u=
+se the phone but not the USB. Usually phones will display texts sent to it,=
+ and thus you may see the code. If someone has the USB, they are not able t=
+o use it with their device because of a mismatched origin. Furthermore, hav=
+ing the USB would not give any indication of who's it belongs to as opposed=
+ to a phone which is very easy to easy whos it belongs to.=20
+
+In terms of user friendliness, the initial process of FIDO standard might b=
+e difficult in the sense that it is not as obvious to initially set up. Hav=
+ing an SMS text is relatively easier to implement and understand as people =
+are constantly using their phones. On the other hand using the USB dongle i=
+s extremely easy once you know what to do to verify (just tapping the USB).=
+ In that sense, the USB is more user friendly as you can save the time of r=
+eading a text and typing the code in. </pre></li>
+
+<li><pre class=3D"student-text">Question:
+
+Two-factor Authentication (2FA) is commonly used to authenticate users. For=
+ example, MIT allows as a second factor a code sent via an SMS message to t=
+he user's cell phone. The FIDO standard describes a 2FA scheme using a USB =
+dongle. Which scheme is more secure? Which scheme is more user friendly?=20
+
+Answer:
+
+I would think that the FIDO scheme is more secure because the USB is an iso=
+lated device with the sole purpose of acting as a keychain to verify a user=
+'s identity. The cell phone scheme seems less secure because cell phones ha=
+ve many processes running on them, thus it is more likely that malicious so=
+ftware can compromise the 2nd Factor. Additionally cell phones inately have=
+ more value than USB. This means that cell phones are more likely to be sto=
+len. This robbery could be unrelated to 2FA, but it would still cause some =
+reduction in accessibility for a duration of time.
+
+In terms of user friendliness, both schemes seem to be fairly easy to use. =
+The cell phone is probably more user friendly though because people are mor=
+e likely to carry their phone with them everywhere.
+</pre></li>
+
+<li><pre class=3D"student-text">Question: Two-factor Authentication (2FA) i=
+s commonly used to authenticate
+users. For example, MIT allows as a second factor a code sent via an SMS me=
+ssage
+to the user's cell phone. The FIDO standard describes a 2FA scheme using a =
+USB
+dongle. Which scheme is more secure? Which scheme is more user friendly?
+
+Answer: The USB-dongle scheme is more secure, as a dedicated hardware devic=
+e is
+far simpler and runs far fewer softwares than a full-fledged cell-phone, an=
+d
+would therefore have a much smaller attack surface. However, the cell phone
+scheme would be more user-friendly, as in that case the user would not have=
+ to
+carry around a separate device.
+</pre></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 3
+
+Two-factor Authentication (2FA) is commonly used to authenticate users.=20
+For example, MIT allows as a second factor a code sent via an SMS message=
+=20
+to the user's cell phone. The FIDO standard describes a 2FA scheme using=20
+a USB dongle. Which scheme is more secure? Which scheme is more user=20
+friendly?
+
+The second factor identification with text is easier because there is no=20
+registration process that must take place in order to initialize texting
+of login codes.
+
+The 2FA scheme is more secure because it uses a hash of the origin and=20
+public-private key encryption to verify communication and approvals. The
+text messages, however, could be intercepted or spoofed by a MITM.</pre></l=
+i>
+
+<li><pre class=3D"student-text">SMS-based 2FA approaches are less secure th=
+an dedicated hardware (e.g. USB dongles). Since text messages are sent over=
+ a cell network, if a phone connects to a fake cell tower, the message can =
+be intercepted; USB dongles more adequately test the condition of "somethin=
+g you have". However, phone-based 2FA is more user friendly, since users ar=
+e more likely to have their cell phones on them when logging in.
+
+Dedicated mobile apps like Google Authenticator or Duo are more secure than=
+ SMS and come with the usability benefit of being available on your mobile =
+phone.
+</pre></li>
+
+<li><pre class=3D"student-text">Sending a second factor code via SMS allows=
+ for various attacks. You can attempt to break the encrpytion used by GSM a=
+nd intercept the message. Someone within the network operator also has the =
+potential to intercept the message. Furthermore, it is very easy to make ap=
+ps that read SMS messages and it is possible that a malicious app could be =
+forwarding your two factor authentication codes to an attacker. In contrast=
+ the USB dongle keeps its secret in hardware and does not need to transmit =
+this secret over the network. This makes it more secure as it requires a ph=
+ysical (and therefore higher cost) attack to break this form of authenticat=
+ion.
+
+However, this scheme is much less user friendly. If a user forgets her devi=
+ce at home, then she will not be able to log in to any of her accounts. Fur=
+thermore, if she loses her device entirely she will need to recover her acc=
+ount in other ways. If these recovery mechanisms are less secure then the a=
+dditional security gained by using a usb dongle is lost. In contrast most u=
+sers are less likely to leave their phone at home and if they lose their ph=
+one they can buy a new phone and set it up with their cell carrier.
+</pre></li>
+
+<li><pre class=3D"student-text">The 2FA scheme that sends a text message is=
+ more user friendly because this
+enables users to login to their accounts on their mobile devices, whereas m=
+ost
+phones don't support direct USB connection.
+However, the USB dongle is more secure because if a phone has been stolen a=
+nd
+hacked, the 2FA is essentially useless since the phone login and 2FA are on=
+ the
+same device. This pitfall also applies to people who keep the USB dongle
+attached to their laptops though. If they lose the laptop with the dongle
+attached, the 2FA is also useless.
+</pre></li>
+
+<li><pre class=3D"student-text">The 2FA scheme using a USB dongle is both m=
+ore secure and more user friendly. One example for security, especially wit=
+h respect to privacy, is that this scheme does not have a global identifier=
+ for a particular online service or website. Thus, if someone loses the USB=
+, the person who finds it cannot gain any useful information from it (like =
+which accounts it was used for). On the other hand, with the MIT scheme, if=
+ you lose your phone, chances are you have not deleted those SMS messages, =
+and they may give away information about the origin (the service/website) b=
+y the number of even in a statement (I=E2=80=99ve received messages like =
+=E2=80=9CYour Google verification code is =E2=80=94-=E2=80=9C).
+
+On the user friendly side, it is really easy to keep a USB dongle in your l=
+aptop and use it as necessary, compared to having to check your phone each =
+time you want to log in. There is an argument that this convenience makes t=
+he USB dongle scheme less secure, because anyone can just tap the USB insid=
+e your laptop, and a phone is a completely separate device so you would nee=
+d access to the two together. However, I would argue that it would be harde=
+r to get into the laptop anyway than the phone, and you could also be tryin=
+g to use the online service on your phone anyway (in which case that is als=
+o just one device).</pre></li>
+
+<li><pre class=3D"student-text">The 2FA scheme using a USB dongle is more s=
+ecure because the USB can hardware protections but the MIT duo-factor authe=
+ntication scheme is more user friendly because it doesn't require the user =
+to carry an additional device.</pre></li>
+
+<li><pre class=3D"student-text">The 2FA scheme using a USB dongle is more s=
+ecure than utilizing a users cell phone because it is hardware backed secur=
+ity. Similarly, the device should be produced by a manufacturer who guarant=
+ees certain security properties of the physical device itself. This may not=
+ be as easy to verify with, for instance, a 3rd party app. On the other han=
+d, an SMS code sent to a users cell phone is more user friendly, since the =
+user does not need to start carrying around an additional device.
+
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">The 2FA scheme which uses a USB dongle is m=
+ore secure. In the 2FA scheme where an SMS message is sent to the user's ce=
+ll phone, there are several more layers where an attacker could compromise =
+the security of the login process. For example, because the SMS message is =
+sent over a network, any security issues relevant to the network become rel=
+evant to the login process.=20
+
+However, the cell phone SMS scheme is certainly more user-friendly. This do=
+es not require a user to remember to carry an additional single-purpose dev=
+ice with them, as users naturally have cell phones on them at most times. <=
+/pre></li>
+
+<li><pre class=3D"student-text">The 2FA scheme with a USB dongle is more se=
+cure than the second factor via SMS message. This is because of extra preca=
+utions with the U2F section, e.g. man in the middle protection: the user's =
+U2F device does not even respond when a man-in-the-middle tries to interfer=
+e with authentication, whereas the 2FA scheme with SMS does not have such p=
+rotections. However, the SMS scheme is certainly more user-friendly because=
+ most people carry around their phones with them on a regular basis, wherea=
+s the other scheme requires people to carry around an extra form of authent=
+ication.</pre></li>
+
+<li><pre class=3D"student-text">The 2FA scheme with a USB dongle is undoubt=
+edly more secure. Communications between the USB dongle and the online serv=
+er are secured with public/private keys, making tampering impossible withou=
+t it being detectable. Cell phone text communications have been intercepted=
+ before; it's possible for an adversary to spoof the cell phone and receive=
+ messages w/ the 2FA code. Meanwhile, MITM attacks on USB dongle are much m=
+ore difficult to implement, since the USB system offers several protections=
+.=20
+
+The cell phone scheme, however, is a lot more user friendly. Both 2FA schem=
+es require the user carry the device around in order to log in. A user is l=
+ikely to have his phone, but not necessarily the dongle everywhere. In addi=
+tion, usage of U2F requires numerous Javascript interactions built into the=
+ browser or the mobile device.
+</pre></li>
+
+<li><pre class=3D"student-text">The FIDO 2FA scheme with the USB dongle is =
+more secure, as it requires possessing the physical USB device in order to =
+authenticate the user. It would be infeasible for an attacker to acquire ma=
+ny people's physical USB devices. I think that 2FA with an SMS message, how=
+ever, is more user friendly because most people carry their phones with the=
+m so they don't need to continually carry the USB. Users can also use an ac=
+count on multiple devices at the same time without the need of multiple USB=
+ devices. </pre></li>
+
+<li><pre class=3D"student-text">The FIDO USB authentication scheme is more =
+secure than the SMS message scheme, as it is more resistant to man-in-the-m=
+iddle attacks. For example, an adversary may be able to remotely intercept =
+SMS messages sent to the user's phone, and read the messages to impersonate=
+ the user (assuming the adversary knows the user's password). The U2F proto=
+col sends origin names and signatures to distinguish the user, origin, and =
+a man-in-the-middle, so the U2F scheme is more secure in this respect.
+
+The two schemes seem similarly user-friendly, as both require the user to p=
+erform a simple task as a second factor.</pre></li>
+
+<li><pre class=3D"student-text">The FIDO USB dongle scheme is more secure. =
+Many phones have minimal unlock security, or display SMS notifications that=
+ can be viewed without unlocking the phone. Some users may receive SMS mess=
+ages through Facebook, Whatsapp, or Google Voice, which are online accounts=
+ themselves and can be compromised. The verification code is sent over the =
+network, which relies on many third parties to prevent eavesdropping. In co=
+mparison, the FIDO U2F standard's verification is not easily human readable=
+ or spoofable, especially compared to a 6 digit number. No information is s=
+ent over the network except when registering the key. The computation is do=
+ne on an isolated USB key, not on the user's computer (or phone) which is m=
+ore easily compromised.
+
+The SMS scheme is likely more friendly for a greater range of people, but t=
+he USB key has some advantages: If attached to a keychain/wallet, it's more=
+ likely to stay on you than a phone. The USB key won't run out of battery. =
+It's easier to carry around. It doesn't rely on cellular signal.</pre></li>
+
+<li><pre class=3D"student-text">The FIDO scheme is more secure because it a=
+lso requires physical activation of the USB device,
+can detect some MITM situations, and an be assessed by an origin. However, =
+a phone is more user
+friendly because it's more likely to be on constantly on hand and requires =
+no effort other than
+receiving an SMS message and entering the code.</pre></li>
+
+<li><pre class=3D"student-text">The FIDO scheme is more secure because it i=
+s cryptographic at the hardware level and the codes produced are much longe=
+r than codes sent via SMS. SMS can be more user friendly since it doesn't r=
+equire carrying around an additional piece of hardware, though there are na=
+no yubikeys which can be kept plugged into a personal computer without caus=
+ing much additional hassle.
+</pre></li>
+
+<li><pre class=3D"student-text">The FIDO scheme is more secure, because it =
+protects against man-in-the-middle attacks.  Given an SMS scheme, a user co=
+uld still enter the code on a malicious site.  However, the SMS scheme is (=
+arguably) more user friendly, in that it does not require the user to carry=
+ around an extra USB device.
+</pre></li>
+
+<li><pre class=3D"student-text">The FIDO standard is (probably) more secure=
+, since they have accounted for things like strong authentication, site-spe=
+cific public/private key pairs, man-in-the-middle protection, and user priv=
+acy. However, the cell phone approach as used by MIT is more user-friendly,=
+ since everyone carries around their cell phone with them anyway (whereas i=
+t's more cumbersome to carry around a USB)</pre></li>
+
+<li><pre class=3D"student-text">The FIDO standard is more secure, since mob=
+ile devices are more easily compromised. It is easy for a user to install m=
+alware on a cell phone and more common for SMS messages to be intercepted. =
+Also, cell phone providers can read your texts if desired. However, if a ce=
+ll phone is stolen, for some phone, such as iPhones, it is possible to wipe=
+ all data, whereas the FIDO U2F device must allow revoking keys from all or=
+igins.
+
+SMS message authentication is more user-friendly since the user does not ha=
+ve to carry an extra device with them.</pre></li>
+
+<li><pre class=3D"student-text">The FIDO standard with the physical USB is =
+more secure. There is security risk involved in just sending the codes over=
+ the network to the user. FIDO U2F isn't vulnerable to man-in-the-middle at=
+tacks like the Duo system is.
+
+I think the user friendliness could be debated, and there are pros and cons=
+ to both. Duo doesn't require users to carry an additional physical device =
+because almost everyone already carries around a smart phone. However, Duo =
+does require the step for a user to type in a code that they receive via SM=
+S. I think the USB dongle is probably slightly more user friendly than Duo.=
+</pre></li>
+
+<li><pre class=3D"student-text">The MIT scheme is more user-friendly and co=
+nvenient. People generally always have their phones on them so it=E2=80=99s=
+ unlikely they=E2=80=99ll forget their phones one day and not be able to lo=
+g in to their accounts. However, with the usb dongle, it seems easy to forg=
+et to take it to work one day or misplace it and not be able to log in. Wit=
+h phones, since they are expensive and people rely on them for so many serv=
+ices other than just logging in to a computer, there=E2=80=99s less of a ch=
+ance they=E2=80=99ll lose it or forget to take it. However, I think USB don=
+gle seems like a more secure way to log in. The MIT 2FA scheme allows you t=
+o get the authentication as a DUO Push, a pin that=E2=80=99s preset and loa=
+ded in DUO, or a phone call. You get to pick every time how you want to aut=
+henticate. If you choose phone call and you=E2=80=99re an Apple user where =
+your macbook and iphone are linked, you can receive the authentication phon=
+e call on your computer.  This is not very secure way to log in at all. If =
+someone stole my laptop and they had my password, they=E2=80=99d be able to=
+ easily log in if they chose the phone all option, 2FA scheme being practic=
+ally useless. However, if I had a USB dongle, in this scenario, the 2FA sch=
+eme might be able to prevent someone from accessing my account because not =
+only do they need my password, they also need my USB device with the pin. F=
+urthermore, phones identify the user whereas the usb dongle doesn=E2=80=99t=
+. If my phone is stolen, someone can figure out who I am and try to log int=
+o services I use. However, if my usb dongle is stolen, there is no way they=
+ can figure out who I am based on that device and it would be harder for pe=
+ople to log into my accounts. </pre></li>
+
+<li><pre class=3D"student-text">The SMS message 2 Factor authentication is =
+much more user friendly because it already uses a device that users have on=
+ hand with them all the time.  SMS, however, is not generally considered a =
+very secure system, and the USB dongle has many checks to make sure it is s=
+ecure.  The USB has many measures that makes it more secure.
+</pre></li>
+
+<li><pre class=3D"student-text">The SMS message is less secure compared to =
+the FIDO USB dongle. It=E2=80=99s possible for an attacker to intercept the=
+ SMS using technical means (cell site spoofing, surveillance technology, or=
+ remote exploitation of the phone itself). It=E2=80=99s also possible for t=
+hem to do the same through social engineering (porting a target=E2=80=99s p=
+hone number after impersonating the target to a cell carrier=E2=80=99s cust=
+omer service department). On the other hand, the USB dongle is a lot less s=
+usceptible to these attacks: you need physical access to an unconnected obj=
+ect in order to authenticate.
+
+In most cases, the SMS solution is more user friendly. It doesn=E2=80=99t r=
+equire distribution of a physical key and enables a wider range of use case=
+s (e.g., 2FA on a device without a USB port). The dongle may be better for =
+special use cases though: it allows someone to authenticate without a netwo=
+rk connection or without a phone.
+
+</pre></li>
+
+<li><pre class=3D"student-text">The U2F scheme is more secure, as SMS-based=
+ 2FA has several potential security holes through telecom companies. It is =
+possible to impersonate a user to change which SIM card receives text messa=
+ges, and insiders at these companies could potentially access users' messag=
+es if there are issues in the companies' security policies. U2F keys rely o=
+n well-built hardware checked by a third party, and cannot be compromised a=
+s easily through simple social engineering. Both schemes seem about equally=
+ user friendly, given that mobile devices and sets of keys are both commonl=
+y carried daily, so both 2FA devices would be at hand when a user wants to =
+log in. However, most people already have a mobile device, but getting a US=
+B dongle would require some additional effort and cost. So, overall, SMS-ba=
+sed 2FA seems slightly more user friendly.</pre></li>
+
+<li><pre class=3D"student-text">The USB 2FA approach is more secure. While =
+it seems that codes from an SMS message can be intercepted (by tapping comm=
+unication channels over which the SMS messages are sent, etc), the USB cann=
+ot be phished since it is a hardware token. Thus, the USB would not fall fo=
+r phishing or interception attacks, and thus be more secure (the attacker m=
+ust gain access to the physical token to authenticate).
+
+The SMS message is probably more user friendly because the user (presumably=
+) always carries their mobile phone around anyways, so they do not need to =
+carry an additional device like a USB in order to log in. The user uses the=
+ir phone for a lot of other things, so they are unlikely to lose it (unlike=
+ a USB, which they might misplace).
+</pre></li>
+
+<li><pre class=3D"student-text">The USB Dongle is more secure than the SMS.=
+  SMS can be intercepted/spoofed by a third party, while the USB dongle use=
+s encryption and signatures that are more secure.  The SMS is obviously mor=
+e user friendly, as most people carry around their phone and not necessaril=
+y USB dongles.
+</pre></li>
+
+<li><pre class=3D"student-text">The USB dongle is more secure because it pr=
+ovides hardware-backed security that
+the SMS message cannot provide.=20
+
+Additionally, it is more user friendly in that the user can simply plug the=
+ USB
+into their device and tap it whenever two-factor authentication is required
+(rather than open up their phone to check the SMS message).
+</pre></li>
+
+<li><pre class=3D"student-text">The USB dongle is more secure since it is a=
+ much simpler system with less attack vectors than a user's cell-phone. Wit=
+h SMS messages on a cell-phone, one must trust the network for sending the =
+messages, the security of the phone itself, the integrity of the phone's ha=
+rdware, security of the text messaging app, any exploits in the phone's OS,=
+ etc. However with a USB dongle, since it's a authentication system grounde=
+d in physical contact between your finger and the usb (and the USB to the c=
+omputer), basically the only concern is that it can get stolen.=20
+
+The phone scheme might be more user friendly since people carry their phone=
+s around everywhere and not necessarily their USB dongles. Also no addition=
+al setup is required to use SMS on a phone, since most people text message =
+anyways, whereas a USB dongle might require extra hassle of obtaining the d=
+ongle and figuring out how to use it.=20
+</pre></li>
+
+<li><pre class=3D"student-text">The USB dongle is more secure since it requ=
+ires the user to actually have a USB dongle on their person, but obviously =
+the SMS message sent to the user's cell phone is more user friendly.
+
+I'm unsure how a vendor can design a U2F device to reset as part of revokin=
+g a key from origin. Doesn't that kind of defeat the purpose of issuing out=
+ tokens if the vendor has some centralized control that can be hacked?</pre=
+></li>
+
+<li><pre class=3D"student-text">The USB dongle is more secure than SMS sinc=
+e phone carriers can easily be exploited by malicious actors. The USB dongl=
+e method can only be subverted by forcefully and physically taking the devi=
+ce from a person. The SMS method is more user-friendly since all that is re=
+quired is a phone with a working SIM card. While people usually carry their=
+ phones with them, they may forget to bring the USB dongle. Also, some devi=
+ces (like my MacBook Pro and my phone) do not have USB ports, so I would al=
+so have to bring an adapter.
+</pre></li>
+
+<li><pre class=3D"student-text">The USB dongle is more secure, as it allows=
+ for more security to be built into the hardware of the device. The phone s=
+ms scheme, however seems more user friendly as most users likely carry thei=
+r phones with them, as opposed to having to add a new device.</pre></li>
+
+<li><pre class=3D"student-text">The USB dongle is more secure, because it's=
+ much easier to compromise a mobile
+device than a USB; a USB will never be connected to the Internet. The
+only way to corrupt the USB would be by plugging it into a malicious device=
+,
+whereas a mobile device is prone to malicious applications, networks, websi=
+tes,
+etc. that could potentially corrupt or gain access to its memory. Also, sin=
+ce the USB must be plugged directly into a device, it requires that the U2F=
+ and device both be in physical proximity to each other; this isn't true fo=
+r mobile devices.
+
+It seems hard to argue that a USB could win the user-friendliness argument.
+People to whom this security measure is relevant already have phones and ar=
+e
+comfortable interacting with them. They're probably also less likely to los=
+e
+them, and it's convenient to not have to fumble with plugging in a USB to
+another device.
+</pre></li>
+
+<li><pre class=3D"student-text">The USB dongle is more secure, however the =
+SMS form is more user friendly as then users dont need an additional piece =
+of hardware.=20
+</pre></li>
+
+<li><pre class=3D"student-text">The USB dongle is more secure, since it con=
+tains a cryptographic key that, once verified with the origin, cannot be re=
+asonably faked by a MITM attack. The USB key can be used to cryptographical=
+ly sign the user's message in the identification protocol, and, assuming th=
+at the user correctly registered the key with the server, a MITM cannot for=
+ge a signature, by the security of the signature scheme the protocol uses.
+
+The more user-friendly option is obviously the SMS message to the user's ce=
+llphone because then the user does not have to carry around another piece o=
+f hardware.=20
+
+** shameless plug **
+if you're interested in a neat compromise between security and usability, c=
+heck out Kryptco (website: krypt.co), a startup that's making an app that s=
+tores an SSH or PGP private key on your phone for convenient, cryptographic=
+ally secure 2FA.</pre></li>
+
+<li><pre class=3D"student-text">The USB dongle is more secure. However, car=
+rying a USB dongle is cumbersome and so using one's phone is more userfrien=
+dly as it is more practical.
+</pre></li>
+
+<li><pre class=3D"student-text">The USB dongle is safer. Because the SMS me=
+ssage is easy to be
+intercepted or redirected. And it's sent by some telecommunication
+providers. The providers can be hacked. But USB dongle is hard
+to be stolen physically. But SMS messager is more user friendly
+because people usually take their phones with them but they may
+forget taking an additional USB device. </pre></li>
+
+<li><pre class=3D"student-text">The USB dongle might be more secure based o=
+n the level of complexity the system could have using the information and f=
+ormat of the dongle, but it is very hard to use as the user would be requir=
+ed to hold on to this physical key, and it would only be compatible with de=
+vices that USB ports (i.e. computers, not mobile phones, etc.). Thus, if a =
+system required 2 factor auth, then the user would be required to use certa=
+in devices. MIT's version is perhaps more convenient, but also might be les=
+s secure since hackers could steal the device/listen to texts. </pre></li>
+
+<li><pre class=3D"student-text">The USB dongle scheme is far more user frie=
+ndly as users don't have to update drivers or perform middleware setup. Onc=
+e plugged in, the U2F device-aware browser can communicate with it using OS=
+ APIs. The scheme with SMS message sent to the user's cell phone is more se=
+cure since typically phones have their own layer of security to be able to =
+read SMS sent to it. This scheme is certainly less user friendly, but it pr=
+ovides a more rigorous speedbump before authentication. </pre></li>
+
+<li><pre class=3D"student-text">The USB dongle scheme is more secure than t=
+he SMS scheme, because it uses cryptographically secure authentication and =
+communication, whereas SMS communication can be intercepted.
+The SMS scheme is more user friendly, because users don't need to remember =
+to carry the U2F device with them, and don't need to buy a separate device.
+
+</pre></li>
+
+<li><pre class=3D"student-text">The USB dongle scheme is more secure, as it=
+ allows the browser (assuming it's working correctly) to comunicate with th=
+e device to verify some information about the origin, which a user couldn't=
+ or simply wouldn't verify themselves. The SMS message, however, is user fr=
+iendly, since the user don't need to carry any additional devices and have =
+no need to install any apps.</pre></li>
+
+<li><pre class=3D"student-text">The USB dongle scheme is more secure, as th=
+e key can be burnt into the on-board secure element rather than being imple=
+mented in software on any particular device.  The SMS to the user's phone, =
+however, is more user friendly as it allows for many different types of pho=
+nes and does not require the end user to acquire a special piece of hardwar=
+e simply to log into their account.
+</pre></li>
+
+<li><pre class=3D"student-text">The USB dongle scheme is much more secure t=
+han the mobile option because the USB dongle has dedicated firmware/drivers=
+ to ensure credibility whereas the mobile device only has software. However=
+, the latter is more user-friendly since it can be considered a hassle to p=
+urchase and carry around a USB stick just for authentication as opposed to =
+just pulling out your smartphone.
+</pre></li>
+
+<li><pre class=3D"student-text">The USB dongle seems safer only because the=
+y have gone through a relatively thorough analysis of the safety and privac=
+y concerns associated with it. But for that, it is similar to a phone in th=
+e sense that if it is stolen, an adversary would likely be able to access a=
+ lot of secure services pretty easily. In fact in the absence of a passcode=
+ equivalent like there is on a phone, this might even be easier than a phon=
+e.
+
+Which is more user friendly is dependent on the actual process to register =
+this U2F device. For instance, it depends on the nature of the javascript p=
+age where you register and so on. Overall, it seems easier to use a phone f=
+or a second factor since it is so widely used as opposed to carrying around=
+ a dongle.</pre></li>
+
+<li><pre class=3D"student-text">The USB scheme is more secure because it's =
+difficult for other hardware on the USB to corrupt/steal/snoop
+on the Key Handles a phone generates. However, it's not as user friendly, b=
+ecause the "user presence" which
+provides reassurance to users is more apparent and understandable on a phon=
+e. It's also more likely for users
+to misplace their USBs since it's an additional item to remember.
+</pre></li>
+
+<li><pre class=3D"student-text">The mobile 2-factor authentication flow is =
+more user-friendly, because it doesn't require you to carry around a USB. A=
+lso, if you want to authenticate through a browser app on your phone, that =
+doesn't work because phones don't usually have USB input. However, USB is s=
+een as more secure because it may be more secure hardware-wise, and complie=
+s with the original standards.</pre></li>
+
+<li><pre class=3D"student-text">The scheme that is significantly more secur=
+e is the 2FA scheme involving the
+USB dongle. This is because the USB dongle is presumably more secure to beg=
+in
+with, and also involves no transmitting of any codes over the air. For the =
+SMS
+code, an attacker could potentially be listening in or even reading someone=
+'s
+phone screen. But the USB dongle must be physically obtained.
+
+The scheme that is far more user-friendly is the SMS scheme, since it doesn=
+'t
+require having to carry a USB dongle around everywhere.</pre></li>
+
+<li><pre class=3D"student-text">The scheme using a USB dongle is generally =
+more secure, because it requires one to have the physical USB in order to a=
+uthenticate a user. However, this approach is not user friendly. Having a c=
+ode sent to a cell-phone is a more convenient form of 2 factor authenticati=
+on for most people (compared to having a USB dongle at least!). However, th=
+ere are many possible ways of compromising this form of authentication (one=
+ can intercept or potentially fake data).
+</pre></li>
+
+<li><pre class=3D"student-text">The scheme using a USB dongle is more secur=
+e =EF=BF=BD cell phones are more susceptible to MITM attacks. However, cell=
+ phones are more user friendly since it is a device that users will always =
+have with them. An extra USB would require having an extra device.
+</pre></li>
+
+<li><pre class=3D"student-text">The scheme with the dongle is more secure b=
+ecause it is purely in hardware. The SMS can be potentially intercepted via=
+ other methods beyond simply having the physical phone. However, phones ser=
+ve many purposes and are easier to carry around because users generally hav=
+e them. However, carrying around a separate USB dongle is a bit cumbersome,=
+ therefore MIT's DUO is more user friendly.
+</pre></li>
+
+<li><pre class=3D"student-text">The text message system has the pro of most=
+ cellphone users having access to
+text message communication. The downside is that it does not work in any lo=
+cation
+without phone signal. However, a dongle requires physically obtaining the d=
+ongle
+which is more work for those less technical. Everyone has access to text. N=
+ot everyone
+knows the existence of the dongle. Also, providing a dongle to everyone who=
+ has a cellphone
+is much more work than using a function cellphones already have. So the tex=
+t message system
+is more user friendly.
+
+However, I think the text message system is less secure because it involves=
+ the SIM card
+system. You're phone number, which is tied to your SIM card, is now open to=
+ attack in order
+to compromise the 2FA scheme. A possibility would be calling your phone ser=
+vice provider and
+impersonating you, claiming a lost SIM, and attempting to acquire a new one=
+. This could allow
+full access to a user's phone line. Of course this is all dependent on the =
+security of the phone service provider
+but using a dongle keeps all the security in the user's hands instead of in=
+ another party's. So
+the dongle system is more secure.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Two-factor Authentication (2FA) is commonly=
+ used to authenticate users.=20
+For example, MIT allows as a second factor a code sent via an SMS message t=
+o the user's cell phone.
+The FIDO standard describes a 2FA scheme using a USB dongle. Which scheme i=
+s more secure?=20
+Which scheme is more user friendly?
+
+The 2FA using a dongle is more secure because the USB device is able to con=
+firm that=20
+the authentication request came from a valid origin that it had previously =
+registered. By sending a SMS
+message via cell phone, the phone is not able to do that verification. So, =
+the user might be prone
+to a sophisticated phishing or MITM attack.
+
+The SMS scheme is more user friendly though. Carrying around a USB dongle c=
+an be inconvinent,
+and if one is lost it seems like it would be annoying to have to replace it=
+ and re-register it with all
+of your different services.</pre></li>
+
+<li><pre class=3D"student-text">Two-factor Authentication (2FA) is commonly=
+ used to authenticate users. For example, MIT allows as a second factor a=
+=20
+code sent via an SMS message to the user's cell phone. The FIDO standard de=
+scribes a 2FA scheme using a USB dongle.=20
+Which scheme is more secure? Which scheme is more user friendly?
+
+The cell phone SMS verifcation is more user friendly because most users hav=
+e their cell phone nearby almost all the time,=20
+so using this does not introduce a new requirement on the user. However, US=
+B dongle is more secure because sometimes the user=20
+is authenticating from their phone, so the SMS verification does not requir=
+e a different device so if the phone is compromised,=20
+the system fails. </pre></li>
+
+<li><pre class=3D"student-text">Two-factor Authentication (2FA) is commonly=
+ used to authenticate users. For example, MIT allows as a second factor a c=
+ode sent via an SMS message to the user's cell phone. The FIDO standard des=
+cribes a 2FA scheme using a USB dongle. Which scheme is more secure? Which =
+scheme is more user friendly?
+
+FIDO's standard is more secure. FIDO describes two ways the authentication =
+can be performed, either in hardware or software. Hardware authentication w=
+ould be more secure than cell phone authentication. For example, onlookers =
+could peek over the user's shoulder and see the codes even on the lock scre=
+en of the phone. Overcoming the hardware security would require stealing th=
+e user's USB dongle, a significantly more difficult task. In essence, there=
+ is no way to peek and see the authentication for a hardware device, but th=
+ere is for phone verification. FIDO may also be authenticated with software=
+. Software authentication, in worst case, may be comparably as secure as SM=
+S, but no less secure than SMS. For instance, a software authentication sch=
+eme that displays the auth codes for a user to type would be just as insecu=
+re as SMS. A software authenitcation scheme that performs authorization at =
+a level unseen by humans would be more secure.=20
+
+MIT's scheme is more user friendly. Carrying around an additional piece of =
+hardware, as required in FIDO's standard is annoying and may likely be disr=
+egarded as a result of inconvience.  </pre></li>
+
+<li><pre class=3D"student-text">Two-factor Authentication (2FA) is commonly=
+ used to authenticate users. For example, MIT allows as a second factor a c=
+ode sent via an SMS message to the user's cell phone. The FIDO standard des=
+cribes a 2FA scheme using a USB dongle. Which scheme is more secure? Which =
+scheme is more user friendly?
+
+The first article we had to read for this lecture introduces the idea that =
+"more secure" is a somewhat more subjective designation than might be immed=
+iately apparent.  For instance, a longer, more complicated password that ch=
+anges every day is clearly more "more secure" in terms of entropy then a sh=
+ort easy-to-remember one, but carries with it the inherent risk of being un=
+usable.  Thus, the easier, less traditionally-secure password may actually =
+be "more secure"; again, depending on the circumstances around its use.
+
+Therefore, when comparing the above 2FA schemes, one must also use some cau=
+tion to avoid falling into incorrect absolutes.  Having a standalone device=
+, as described in the FIDO standard, seems like the "more secure" choice in=
+ that it fully decouples your 2FA from everything else.  The SMS to a cellp=
+hone method could fall due to a malicious actor gaining access to the cellp=
+hone through a browser exploit, an untrusted side-loaded app, a bug in the =
+underlying phone infrastructure, or even telcom interference.  The proposed=
+ dongle, on the other hand, has a singular focus and thus only a (roughly) =
+singular attack surface. =20
+
+However, much like the lengthy oft-changing password schemes, having to car=
+ry around an entirely new device that is required to gain access to your pe=
+rsonal accounts may present some unexpected usability issues.  It's much ea=
+sier to remember to bring your phone everywhere than your phone *and* this =
+other 2FA device, which may cause users to simply choose to opt-out of 2FA =
+altogether. =20
+
+Balancing security and usability is a very delicate game due to how intertw=
+ined these two tenants are.  Providing options to the end-user which allows=
+ them to cater their risk vs. convenience seems like a logical choice to en=
+sure that even if a user opts out of the "most secure" option, they still h=
+ave the ability to enjoy the benefits of 2FA to some degree.</pre></li>
+
+<li><pre class=3D"student-text">Two-factor Authentication (2FA) is commonly=
+ used to authenticate users. For example, MIT allows as a second factor a c=
+ode sent via an SMS message to the user's cell phone. The FIDO standard des=
+cribes a 2FA scheme using a USB dongle. Which scheme is more secure? Which =
+scheme is more user friendly?
+
+The scheme using a USB dongle might be less in the sense that it might easi=
+er for one to lose the dongle than to lose a phone. The scheme doesn't prot=
+ect users against attacks that may arise due to client malware interactions=
+. However, it might be safer against attacks like MITM attacks because it k=
+eeps track of the origin name and ChannelIDs whereas such protection does n=
+ot seem to exist in SMS messaging.
+The scheme using a USB dongle might be less user-friendly because users wil=
+l need to buy those dongles whereas almost everyone owns a phone. However, =
+it saves users from having to remember passwords which is a huge plus.</pre=
+></li>
+
+<li><pre class=3D"student-text">Two-factor Authentication (2FA) is commonly=
+ used to authenticate users. For example, MIT allows as a second factor a c=
+ode sent via an SMS message to the user's cell phone. The FIDO standard des=
+cribes a 2FA scheme using a USB dongle. Which scheme is more secure? Which =
+scheme is more user friendly?
+
+The SMS authentication scheme prooved to be vulnerable and insecure. In Jul=
+y 2016, America's National Institute for Standards and Technology has advis=
+ed abandonment of SMS-based two-factor authentication. Down in section 5.1.=
+3.2 of https://pages.nist.gov/800-63-3/sp800-63b.html, the document says ou=
+t-of-band verification using SMS is deprecated and won't appear in future r=
+eleases of NIST's guidance. There's a certain history of successful attacks=
+ which exploited flaws in the cell networks, which lays behind that decisio=
+n. There's a good article here https://www.theverge.com/2017/9/18/16328172/=
+sms-two-factor-authentication-hack-password-bitcoin.
+
+The security of the scheme which uses a USB dongle is more secure than the =
+SMS authentication scheme, because it allows to quickly recognize if an aut=
+hentication token is compromised, e.g. lost or stolen, thus limit a time wi=
+ndow available for an attacker. Second, it's very close to impossible to "s=
+teal" a key inside a FIDO U2F Security Key and it makes its security better=
+ too. Finally, a USB key is used for secure authenticaion all the time, whi=
+le an SMS authentication is commonly used only in cases of the elevated ris=
+k of compromisation or sensitive transactions. E.g. MIT doesn't require a 2=
+FA in case I'm using a certificate installed on my machine. Also, we all re=
+member the scene from Mr. Robot when a phone was temporary stolen to get an=
+ access to an SMS message. Although, it'd be fair to say that the USB dongl=
+e authentication scheme could have been compromized through a human factor =
+too. Building up on the human factor, we need to take into account that peo=
+ple tend to keep things simple and can forget to unplug a dongle from a com=
+puter as much as they constantly forget to lock it.   =20
+
+The usability of both of the methods has its pros and cons. The SMS method =
+can be perceived as more intuitive, because it's associated with a routine =
+process of receiving an SMS on a phone which is always with us, thanks to t=
+he messengers &amp; social networks. However, the manual entry of a code fr=
+om an SMS message creates frictions in the experience of users. On the othe=
+r hand, a USB dongle is one more device we'd need to keep with us, remember=
+ to unplug when we leave a workplace, and avoid loosing it, and it's hard.
+
+In summary, I'd vote for the FIDO U2F Security Key, because it provides a h=
+igher level of protection with a better user experience, which is actually =
+increasing more the key is used.</pre></li>
+
+<li><pre class=3D"student-text">Two-factor Authentication (2FA) is commonly=
+ used to authenticate users. For example, MIT allows as a second factor a c=
+ode sent via an SMS message to the user's cell phone. The FIDO standard des=
+cribes a 2FA scheme using a USB dongle. Which scheme is more secure? Which =
+scheme is more user friendly?=20
+
+Which is more secure?
+The FIDO USB dongle gets this one in my book. It does not store any user in=
+formation. Getting access to the device does not tell the attacker *which* =
+websites it could attack. The attacker will also need information about the=
+ user's username and password. For the SMS, if the attacker has access to t=
+he user's phone (probably a smartphone) and has gained access it, they will=
+ easily be able to get information about the user and probably be able to u=
+se the saved passwords in their phone to gain access to all of their accoun=
+ts.
+
+Which is more user friendly?
+This is actually a tie for me. For the FIDO scheme, you can have devices pe=
+rmanently attached to your device, which means that you don't have to searc=
+h for your phone everytime you need to log in. On the other hand, it is har=
+d to connect it to your phone vs your laptop (although if it gets non-USB t=
+ransports in the future, this will not be an issue). It is also easy to for=
+get, whereas people now-a-days would always have their phone on them.=20
+
+</pre></li>
+
+<li><pre class=3D"student-text">Two-factor Authentication (2FA) is commonly=
+ used to authenticate users. For example, MIT allows as a second factor a c=
+ode sent via an SMS message to the user's cell phone. The FIDO standard des=
+cribes a 2FA scheme using a USB peripheral. Which scheme is more secure? Wh=
+ich scheme is more user friendly?
+
+User-friendliness
+-----------------
+The user-friendliness is straightforward: the majority of Americans already=
+ own a smartphone, while (since the standard is still in an early stage), v=
+irtually no Americans own a U2F-compatible peripheral. Therefore, an SMS-ba=
+sed 2FA strategy is more user-friendly.
+
+Security
+--------
+The security of each scheme is dependent on the possibility/probability of =
+physical access to the 2FA device. In both cases, we'll assume the attacker=
+ already has the user's username and password.
+
+Physical access improbable/impossible: the U2F peripheral would only be acc=
+essible if the host device had been remotely compromised (precluding any at=
+tempt at security), while SMS-based authentications can be MITMed. The U2F =
+MITM attack requires much more sophistication than an SMS MITM, so in this =
+case the U2F peripheral appears more secure.
+
+Physical access possible/probable: this scenarios is pretty comparable. On =
+the one hand, an open, unlocked host device is easily taken advantage of wi=
+th a freely-exposed U2F peripheral. However, many smartphone users allow th=
+eir text messages to be viewed without unlocking their phone, allowing an e=
+qually trivial attack vector.
+
+Thus, given that the remote attack is the more prevalent attack, we'll say =
+it seems the U2F-based 2FA is more secure than the SMS-based 2FA.
+</pre></li>
+
+<li><pre class=3D"student-text">U2F tokens are more secure against many kin=
+ds of attacks than SMS two-factor
+authentication. This is because it is far harder to duplicate a USB dongle =
+than
+it is to trick a cell carrier into reassigning a phone number, and because =
+U2F
+devices are much more resilient to phishing (because the challenge response=
+ will
+only be valid for the phishing site and not the site being impersonated).
+
+</pre></li>
+
+<li><pre class=3D"student-text">USB dongle is more secure because it requir=
+es the Second factor authentification to occurr in the same device in which=
+ the log-in is requested (USB connected to computer).
+SMS message is more convenient, since most users will already have their ce=
+ll phone with them, so 2FA does not require the user to carry around any ad=
+ditional devices.
+</pre></li>
+
+<li><pre class=3D"student-text">USB dongle is more secure since it is nearl=
+y impossible to identify the owner of the device when stolen, making it ess=
+entially useless.=20
+SMS message is more user-friendly since it does not require carrying an add=
+itional device (USB dongle).=20
+</pre></li>
+
+<li><pre class=3D"student-text">USB dongle is more secure. It is possible t=
+hat users type their SMS code on a phishing website.=20
+SMS message is more user friendly. It does not require users to buy and car=
+ry extra devices and install drivers.=20
+</pre></li>
+
+<li><pre class=3D"student-text">USB dongle vs. SMS message 2FA
+
+Security:
+Both schemes require the use of a physical device for authentication.
+The USB dongle requires a test of physical presence since the user needs
+to press a button to complete the authentication process. The attacker woul=
+d
+need to have physical possession of the device.
+
+If an attacker somehow has remote access to a user's SMS messages, the atta=
+cker
+would not need to have physical possession of the user's cell phone.
+In case the attacker did physically possess either device, cell phones typi=
+cally
+have finger-print scanners and passcode requirements which a USB dongle wou=
+ld not have
+(although on most phones you do not need to unlock the screen in order to s=
+ee a recent, unread text message).
+
+I would also guess that 5 or 6-digit codes are not as secure as key pairs a=
+nd signatures.
+
+I think it's probably easier to lose the USB dongle than a phone, but overa=
+ll I would say
+that it is more secure.
+
+User Friendliness:
+The USB dongle is easier to use since it consists of clicking through a=20
+pop-up window or two and pressing a single button. The user would only need
+to take one hand off the keyboard and only very briefly.
+With the SMS method you need to wait for the message to arrive (which, comp=
+ared to the speed it takes to click a button, can feel long) and then try t=
+o remember the code
+off the top of your head while entering it into the website.
+The dongle method is more efficient and requires less mental processing on =
+the user's end.</pre></li>
+
+<li><pre class=3D"student-text">Using 2FA through SMS is more user-friendly=
+: it does not require a USB port, you always carry your phone with you and =
+it's easier to realize that your phone is lost.
+However, it is less secured than the U2F protocol described by the FIDO pap=
+er: it has more points of failure, as it relies on a third party (phone car=
+rier) that can be compromised.
+</pre></li>
+
+<li><pre class=3D"student-text">Using a USB dongle (i.e hardware-backed sec=
+urity) is more secure than receiving codes on a mobile device. However, it =
+is probably easier to use a phone to perform two-factor authentication (bec=
+ause it takes a moment to plug in a USB device).
+</pre></li>
+
+<li><pre class=3D"student-text">Using a USB dongle is generally more secure=
+ than using SMS messages for 2FA, because U2F devices cannot have secret in=
+formation intercepted over the SMS protocol. Additionally, phishing is not =
+possible when using the USB scheme. In some ways, the U2F scheme is more us=
+er-friendly than the SMS scheme because it requires minimal user interactio=
+n. However, the U2F scheme typically requires users to purchase a physical =
+device, so it is less convenient for new users.
+</pre></li>
+
+<li><pre class=3D"student-text">Using a USB dongle is more secure since the=
+re=E2=80=99s a lower risk of man-in-the-middle attacks. It=E2=80=99s diffic=
+ult to ensure the user=E2=80=99s cell phone hasn=E2=80=99t come in contact =
+with malwares and the hardware itself is secure.
+
+Using the cell phone is more user friendly since the user is probably alrea=
+dy accustomed to carrying it around 24/7. User also don=E2=80=99t have to g=
+o out and buy a new device like a USB dongle.</pre></li>
+
+<li><pre class=3D"student-text">Using a usb is more secure. It is more diff=
+icult for an attacker to physically steal the hardware from the user. They =
+would have to find out where the user lives and go to steal it. It is also =
+hard to just build a bunch of usb and try. It will be relatively easier to =
+intercepting SMS message and use the code. SMS code is more friendly as it =
+is more accessible by the user as well since everyone brings their cellphon=
+e around but not so much the USB.
+
+Question: How difficult is it to temper with the Key Handles and bypass the=
+ authntication process?</pre></li>
+
+<li><pre class=3D"student-text">When considering between an SMS message con=
+taining a code vs. a USB dongle for second factor authentication, the USB d=
+ongle can be more secure. As a physical hardware object, the USB dongle cou=
+ld be manufactured to contain a secure hardware element that, for example, =
+in accordance with the FIDO U2F protocol, could provide strong authenticati=
+on as well as security protections against MITM and cloning attacks. In con=
+trast, relying on SMS messages to cell phones to convey authorization codes=
+ can increase security vulnerabilities, e.g. SMS codes can be more easily i=
+ntercepted and exploited by MITM attacks. Of the two, however, the SMS/cell=
+phone option feels more user-friendly. Since most people already carry and =
+use cellphones, SMS codes are an easy 2FA method for many people. Some may =
+find purchasing a USB dongle and remembering to carry it around somewhat of=
+ a hassle. USB type and FIDO U2F protocol compatibility problems with host =
+devices could also become troublesome.</pre></li>
+
+<li><pre class=3D"student-text">When evaluating these two options (SMS vs. =
+USB dongle), we really have to depend on the context.
+
+SECURITY
+USB dongle appears more secure because the SMS system depends on the securi=
+ty of the SMS network, the phone that receives it (which is not as controll=
+ed of an ecosystem as the dongle), and the user to type something manually.=
+ However, as we saw in the FTC blog post on mandatory password changes, sec=
+urity can actually decrease from a "more secure system" that simply isn't u=
+ser friendly. The SMS system is much more accessible to people, so they are=
+ probably much more likely to use it than a dongle they have to carry aroun=
+d everywhere.
+
+USER FRIENDLY
+Here, the SMS system seems more user friendly (at least for SMS-savvy users=
+) because it leverages a user interface that many people are already famili=
+ar with. However, the USB dongle could be seen as user-friendly because it =
+"requires less button presses" typically. Additionally, it could lead to le=
+ss frustration in the event that the user's phone dies (except it is much m=
+ore susceptible to being left at home than a phone).
+</pre></li>
+
+<li><pre class=3D"student-text">Whether an SMS message or a USB dongle is m=
+ore secure depends on the threat model. The SMS approach can be compromised=
+ if the phone is compromised, which can happen remotely, whereas compromisi=
+ng the USB would require either physically stealing it or eavesdropping dur=
+ing the secret-exchange phase. FIDO-standard TFA calls for a password as si=
+mple as a 4-digit PIN, leaving very little between the system and an attack=
+er with a legitimate or spoofed dongle.</pre></li>
+
+<li><pre class=3D"student-text">Which scheme is more secure?=20
+USB U2F device.
+
+Which scheme is more user friendly?
+U2F built into the user=E2=80=99s browser.
+</pre></li>
+
+<li><pre class=3D"student-text">Why scheme is more secure?
+Overall, I think that FIDO's 2FA system is more secure.
+
+I don't know how easy it is to spoof a cellphone number. However, it seems =
+difficult to spoof the USB dongle due to encryption and counters.
+
+Additionally, the USB dongle is relatively safe from MITM attacks. Instead =
+of having two distinct channels to perform the MITM attack on, the adversar=
+y only has one for any origin. Additionally, detection of a MITM attack ove=
+r this channel is detectable in most *reasonable) scenarios (if the adversa=
+ry has access to the website certificate for the website, the website itsel=
+f has been compromised).
+
+Both are vulnerable to malicious code on an either a computer or phone. If =
+a system call for this USB dongle could be created and supported for all co=
+mmon OSes, this would allow for the dongle to be more secure. However, as o=
+f now, the playing field is even.
+
+Due to lack of information on how secure SMS is, it is hard to say which sy=
+stem is more secure. However, currently, I would say that FIDO's solution s=
+eems to have the upper hand.
+
+Which scheme is more user friendly?
+2FA with a phone is more convenient for the user and probably easier to use=
+ (less difficult to set up and change).
+</pre></li>
+
+<li><pre class=3D"student-text">Zach Miller
+Computer Security Lecture 3
+
+It is really hard to say whether the MIT 2FA scheme or the one described in=
+ FIDO is more secure. There are many factors to think about in regard to th=
+is question, but in the end I think the FIDO scheme is more secure. The fir=
+st thought I had in regards to the security of both schemes is what happens=
+ when you loose the 2FA device in both cases. With the MIT scheme this devi=
+ce is your phone and in the FIDO case it is the USB device. In the FIDO cas=
+e you don't really lose much when you lose the device. The paper describes =
+how the device isn't globally identifiable with any particular website. If =
+a random person finds the U2F device there isn't much they can do with it, =
+where as a phone may be a different story.=20
+
+It seems that the 2FA scheme that MIT has is more user friendly simply beca=
+use most people already have smart phones, so they don't have to buy any ad=
+ditional hardware, they just need to download an app.=20
+</pre></li>
+
+<li><pre class=3D"student-text">usb dongle is more secure, although for stu=
+dents mobile authentication will be significantly more convenient
+</pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--ikkgIkqVy5b1vYPKH36XsnRyk18Fc3B5LPsW3jqhug------

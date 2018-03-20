@@ -1,0 +1,1192 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-questions/3
+Subject: Questions for lecture 3 - 6.858
+Date: Wed, 20 Mar 2018 22:57:34 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--yle2bJzd8VIDEs1O1ZkyTL7Ud1jA6s6JfRv5qz0l9X----"
+
+------MultipartBoundary--yle2bJzd8VIDEs1O1ZkyTL7Ud1jA6s6JfRv5qz0l9X----
+Content-Type: text/html
+Content-ID: <frame-32851-eae65057-cd82-4506-9b5b-7e926eb31015@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-questions/3
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Questions for lecture 3 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Questions for lecture 3 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text">
+Q: The paper seems to promote USB devices over other methods for authentica=
+tion;=20
+however, in a situation such as that of athena clusters, a smart attacker c=
+ould
+have malicious software corrupting/reading data from USBs from all the peop=
+le
+who would authenticate in those machines. Is a situation in which read-only=
+ access
+is possible? and even if that's the case, how would an attacker not read th=
+e data and=20
+try to access accounts from that same origin (I imagine timestamps might pl=
+ay a role here)?
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">If forcing users to change their password o=
+ften can make for weaker passwords and less
+security, does having 2FA also make users pick weaker passwords on average =
+so that they
+can lighten the amount of work they need to do to sign in each time overall=
+? I also
+wonder how effective 2FA might be on its own compared to only using a passw=
+ord.
+</pre></li>
+
+<li><pre class=3D"student-text">=EF=BF=BDTime to rethink mandatory password=
+ changes=EF=BF=BD argues that changing passwords often can do more harm tha=
+n good
+ and establishes this is because users do trivial modifications to their pa=
+sswords. What about if the system still=20
+forces the user to change their password to change often but forces the use=
+r to pick a very different password?
+This can be implemented by making sure the system itself can=EF=BF=BDt gues=
+s the new password based on the old password=EF=BF=BDs hash? </pre></li>
+
+<li><pre class=3D"student-text">"This 'client data' includes:
+...
+c. [optionally] if the ChannelID extension to TLS is used, the connection's=
+ channelID
+public key."
+
+Do users get to know whether ChannelIDs are used?
+
+</pre></li>
+
+<li><pre class=3D"student-text"># Lecture 3 Question: U2F Auth
+-------------------------------
+
+While the U2f paper says it prompts the user to press a button before the k=
+ey
+signs anything, is it possible to take any critical information from these =
+keys
+(like the private key) without the user knowing?
+
+More specifically, if I plugged my U2F key into a public computer so I coul=
+d say,
+log into Google, could malware on that machine copy my keys or even put mal=
+ware
+on my key? Basically, is it safe to plug them into arbitrary computers?
+</pre></li>
+
+<li><pre class=3D"student-text"># Lecture Question L3
+# Rayden Y. Chia
+
+Is it worth the burden of carrying a USB key around in order for risk reduc=
+tion and transference from the server to its users?</pre></li>
+
+<li><pre class=3D"student-text">1) In the FTC.gov article, the success of t=
+he hackers being able to determine future passwords depended on offline att=
+empts and access to the hashed passwords. How likely is it that a hacker wi=
+ll be able to gain access to the hashed passwords db multiple times to succ=
+eed in this attack after password changes without being observed? I guess t=
+he situation seems unlikely.=20
+
+2) The U2F document states "At the core of
+the protocol, the U2F device has a capability (ideally, embodied in a secur=
+e element)". What is this "secure element"? Like special hardware security =
+within the phone or usb or simply that the U2F device is kept in a secure l=
+ocation or has password-limited access?=20
+
+3) For a U2F device, why does the "Remember this" functionality not impede =
+security? Once a user has activated the U2F device once, then what is stopp=
+ing malware from automating the use of the signature?=20
+
+</pre></li>
+
+<li><pre class=3D"student-text">1. If counters are implemented, when someon=
+e clones a U2F device, would the device that is used first from that point =
+out be considered the =E2=80=9Creal=E2=80=9D U2F device? If the clone is us=
+ed first, when the original tries to log in, the browser will think it=E2=
+=80=99s a fake because the counter would have decremented.
+
+2. How is a mounted U2F device that much more secure than not having a U2F =
+device at all? Let=E2=80=99s say we have a USB U2F device in a laptop. If s=
+omeone steals the laptop, don=E2=80=99t they just need to know/guess the pa=
+ssword like normal?</pre></li>
+
+<li><pre class=3D"student-text">1. Is it possible to clone a USB token give=
+n the token's private key. If so, the scheme really places a lot of trust i=
+nto the party that generates the public and private key pairs. Do you think=
+ such trust is acceptable?
+
+2. Indeed, more and more companies are using second-factor-authentication. =
+But unfortunately, companies usually create their own second-factor devices=
+ and people have to carry a lot of dongles.</pre></li>
+
+<li><pre class=3D"student-text">1. The article claims that passwords can be=
+ reduced to a 4 digit pin. Since that length password is easily brute force=
+d, does that suggest that the password is irrelevant once the U2F is set up=
+? If that is the case, is U2F a bit of a misnomer, since the U2F would actu=
+ally be the primary protection mechanism? Or, is the password still an impo=
+rtant bootstrapping step to set up an account before the U2F is set up?
+
+2. I was confused the the discussion of 'origins'. In the article it seemed=
+ like it was easy to identify the origin address, meaning that attempts to =
+spoof the origin wouldn't work. The article suggested that this address was=
+ signed in some way. How is that? Is it because this protocol exclusively r=
+uns on HTTPS?
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">6.858 Lecture 3 Questions
+
+- How likely are the attacks mentioned in the U2F reading for a system like
+  MIT certs? For example, what is the possiblity of an attacker getting a M=
+IT server CERT?=20
+</pre></li>
+
+<li><pre class=3D"student-text">6.858 Lecture 3 Reader Question - Collin Fi=
+jalkovich
+
+This paper mentions that U2F authentication is primarily carried out throug=
+h a Javascript API, but does not perform an analysis
+on whether this creates any risks to the integrity of the protocol? Does th=
+is reliance on userland web APIs provide significant
+routes of attack?</pre></li>
+
+<li><pre class=3D"student-text">Are there certain accounts that attackers a=
+re more likely to hack? For example, email vs. bank accounts?
+</pre></li>
+
+<li><pre class=3D"student-text">Are there operating systems with the U2F cl=
+ient built into the OS system layer?
+</pre></li>
+
+<li><pre class=3D"student-text">Are there works looking into n-factor authe=
+ntication? Are there diminishing returns to security at the cost of user-fr=
+iendliness? </pre></li>
+
+<li><pre class=3D"student-text">Are we able to use a single U2F device to a=
+uthenticate multiple unrelated personal accounts (ie google, facebook, bank=
+ing, etc)?
+</pre></li>
+
+<li><pre class=3D"student-text">As a user of both a U2F dongle, Google Auth=
+enticator, SMS messages
+and latly Duo through MIT. I sometimes wonder about the security
+implications of having multiple 2FA methods active. As an example
+for my MIT account I have the Duo app and also SMS text active and
+for my Google account I have two U2F dongles (one as backup at home)
+,two methods through my phone "Google prompt" and "Authenticator",
+and fallback backup codes and I could add a phone number.
+
+Looking at chains of trust they terminate at either my phone or with
+a physical item that I carry. I don't want to add my telephone number
+because that would an additional chain of trust that is less secure,
+but Google also does not discourage me from adding more methods.
+
+When does 2FA become security theater? I know this is a judegement
+call based on a personal threat-model, but in discussion about 2FA
+I never seen the term: too many methods.
+
+Amusingly I currently can't remove an old phone number from my google
+account since my new phone number is through Google Fi... So if
+someone manages to recover my old Japanese phonenumber I am screwed.
+</pre></li>
+
+<li><pre class=3D"student-text">As of 2016, NIST no longer recommends using=
+ SMS for 2FA [1]. Do you think the  security benefits of not using SMS are =
+outweighed by the (potentially) higher barrier to entry that non-SMS 2FA pr=
+esents? In other words, those who use non-SMS 2FA will be more secure, but =
+not using SMS means fewer people will adopt 2FA.
+
+[1] https://www.schneier.com/blog/archives/2016/08/nist_is_no_long.html</pr=
+e></li>
+
+<li><pre class=3D"student-text">Building off the lecture question:
+
+Should users be given the choice to fine-tune their own security vs. usabil=
+ity in terms of 2FA, or could that somehow inherently weaken the system for=
+ everyone?  More concretely, why is it an either-or situation?  Why can't M=
+IT offer both the SMS 2FA option as well as something more conformant to U2=
+F's 2FA implementation, (as well as no 2FA at all, I suppose)?</pre></li>
+
+<li><pre class=3D"student-text">Can U2F still be secure if malware is runni=
+ng on the user's computer?
+
+How can the U2F device gather enough entropy to generate keys?
+
+</pre></li>
+
+<li><pre class=3D"student-text">Can a compromised browser lead to a MITM at=
+tack by making undesired javascript calls?
+</pre></li>
+
+<li><pre class=3D"student-text">Danny Tang
+data1013
+2/13/18
+
+Lecture 3
+
+What can a user do if they end up losing their USB dongle? I know you can j=
+ust leave a dongle in your computer, but that doesn't really seem like it s=
+hould be a requirement to use this scheme.</pre></li>
+
+<li><pre class=3D"student-text">Do U2F second-factor implementations signif=
+icantly impact origin server complexity and computational cost on the backe=
+nd? Is this a barrier to adoption of the technology?</pre></li>
+
+<li><pre class=3D"student-text">Do any commercial devices today (phones, de=
+sktops, laptops) offer U2F on built-in hardware? If so, do you know any com=
+panies or governments that require their employees to use these devices? Do=
+ you see a future where this is possible?
+</pre></li>
+
+<li><pre class=3D"student-text">Do you think that universal second factor w=
+ill become widely supported by
+financial service providers, online retailers, etc.? Relatedly, how long wo=
+uld
+you envision such a transition taking?
+</pre></li>
+
+<li><pre class=3D"student-text">Does anyone know how common is it for peopl=
+e at MIT to have their passwords compromised?=20
+
+Given the arguments in the "mandatory password changes" reading, is it poss=
+ible that MIT will abandon its annual mandatory password change? (After the=
+ reading, I'm pretty salty about having to change my password every summer.=
+.. especially since I tend to forget and I get locked out things...)
+
+Also, related to duo authentication, have people implemented a mechanism wh=
+ere if someone manages to log in with a username and password but fails the=
+ physical device part, the user gets warned that their password might have =
+been compromised?=20
+
+Sorry I ask a lot of questions :/
+
+</pre></li>
+
+<li><pre class=3D"student-text">Does being able to remember a device/sessio=
+n for a certain number of days with U2F weaken it?  In some cases, provider=
+s don=EF=BF=BDt enable this option, so one needs to use U2F at every login =
+(even when the user=EF=BF=BDs session times-out), but that can be fairly an=
+noying to the user to have to re-authenticate every single time.  So, if th=
+ere a tradeoff between the user=EF=BF=BDs annoyance and also security in th=
+is case?
+</pre></li>
+
+<li><pre class=3D"student-text">Does the DUO application that MIT uses also=
+ have similar security measures as the USB Dongle?
+</pre></li>
+
+<li><pre class=3D"student-text">Does the Duo "send a push" authentication u=
+sed by MIT follow the FIDO standard?=20
+
+Also, in my personal experience, many accounts with 2FA (including my googl=
+e login!) may offer a dongle-like option (i.e., tap a button on the google =
+iphone app), but also offer to send SMS texts.  Does this defeat the purpos=
+e?
+</pre></li>
+
+<li><pre class=3D"student-text">Does the site about password changes sugges=
+t performing routine password changes at all? They seem to just suggest cha=
+nging your password if you think it is compromised
+</pre></li>
+
+<li><pre class=3D"student-text">FIDO gives the option for Near Field Commun=
+ication (NFC) devices for 2FA. Is it possible to listen for some bluetooth =
+signal, record it, and replay the signal later to get access to an account?=
+ They talk about having the same origin for the devices. Is it possible to =
+completely copy the bluetooth signals?</pre></li>
+
+<li><pre class=3D"student-text">First of all, these readings were super fun=
+.
+
+1. Why does the authentication authority send back a signature to the clien=
+t? How is it used?</pre></li>
+
+<li><pre class=3D"student-text">For the mandatory password changes paper: I=
+nstead of getting rid of frequent mandatory password changes, have organiza=
+tions/people considered a tool to go along with mandatory password changes =
+that, using some simple rules like the transformation rules found in papers=
+/research or using AI/ML, could make certain that each new password created=
+ is not related to the previous one?
+
+For the U2F paper: The paper mentions =E2=80=9Cstrong security=E2=80=9D in =
+several places -- how can we define this concretely? What are the requireme=
+nts for strong security? Also, is MIT=E2=80=99s current second factor authe=
+ntication policy (with the Duo app) the same thing as U2F in software, or d=
+oes it not follow this protocol?</pre></li>
+
+<li><pre class=3D"student-text">Google Authenticator seems to be a secure f=
+orm of 2FA.  In Google Authenticator there is a 6 digit number that refresh=
+es about every 15 seconds or so.  This paper describes having to provide a =
+signature locally in order to veryify the 2FA.  Is Google Authenticator sim=
+ilar?  Providing the 6 digit number on the remote site does not seems to im=
+pliment any local siging.
+</pre></li>
+
+<li><pre class=3D"student-text">Has the increased popularity of password ma=
+nagers made required password changes a more viable idea?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Have there been any notable breaches in U2F=
+ security recently?
+</pre></li>
+
+<li><pre class=3D"student-text">Have you seen any potential alternatives to=
+ passwords and two-factor authentication?</pre></li>
+
+<li><pre class=3D"student-text">How can malware create a fake origin for th=
+e creation of a keypair, when its running on the device that the U2F is run=
+ning in?
+</pre></li>
+
+<li><pre class=3D"student-text">How common is the U2F protocol? It seems th=
+at are a good number of browsers that support it natively, but is it actual=
+ly practical for regular people to use?</pre></li>
+
+<li><pre class=3D"student-text">How difficult was it to get U2F support via=
+ NFC and Bluetooth on other browsers? They do leverage an already supported=
+ libUSB approach for the first stage, but I imagine it must have been diffi=
+cult to get other browser vendors on board (seeing as the U2F standard was =
+proposed by mostly Google engineers).
+</pre></li>
+
+<li><pre class=3D"student-text">How do secure elements really work? Is it r=
+eally impossible to read the secret if you have physical access to the devi=
+ce or is it just very difficult?
+
+Also, why do the designers of this system choose to make this a second form=
+ of authentication instead of attempting to replace passwords? Is there som=
+e threat that they worry about that still having a password protects them f=
+rom? I can understand the worry about someone physically obtaining access t=
+o your device, but then shouldn't it be possible to have a pin that needs t=
+o be entered on the device?
+</pre></li>
+
+<li><pre class=3D"student-text">How does FIDO propose to spread the popular=
+ity of their standard, given that this paper is less than a year old? It se=
+ems that, nowadays, most 2-factor authentication is done via cell phone (ba=
+nks, email sites, MIT). It would seem rather difficult for the FIDO standar=
+d to become more popular than this already-established system, especially b=
+ecause a cell phone is typically more user-friendly.</pre></li>
+
+<li><pre class=3D"student-text">How does the U2F device protocol prevent ag=
+ainst MITM attacks? In what cases could a MITM attack be successfully launc=
+hed?</pre></li>
+
+<li><pre class=3D"student-text">How does the U2F protocol ensure that an at=
+tacker doesn't register a device onto another user's account?
+</pre></li>
+
+<li><pre class=3D"student-text">How is a U2F device cloned--does this have =
+to be done physically? If a device is cloned, how (or can) you differentiat=
+e between the original and the clone after detection?</pre></li>
+
+<li><pre class=3D"student-text">How is origin verified? Why can't the MITM =
+just fake the origin to intercept?</pre></li>
+
+<li><pre class=3D"student-text">How largely were physical U2F devices adopt=
+ed before 2FA apps like Duo and Google Authenticator became popular?
+</pre></li>
+
+<li><pre class=3D"student-text">How might an origin distinguish a legitimat=
+e backup of a USB key from a malicious clone? Does this protocol even allow=
+ for such thing as a legitimate backup? </pre></li>
+
+<li><pre class=3D"student-text">I am a bit confused as to how the hashing w=
+orks. Does the U2F device create a new public/private key pair every time s=
+omeone tries to log in with it? What is the key handle? Is there something =
+that is unique and stays the same to the U2F device?</pre></li>
+
+<li><pre class=3D"student-text">I don=E2=80=99t quite understand the follow=
+ing: =E2=80=9CFrom version 1.2 onwards, it is possible to ask a device for =
+a signature without user presence. The signature clearly indicates it was m=
+ade without user presence and will have to treated by the online service or=
+ website accordingly.=E2=80=9D How could the device be asked for a signatur=
+e without user presence? Isn=E2=80=99t that very insecure?=20
+
+Also =E2=80=94 are there U2F devices that also integrate biometrics? Are bi=
+ometrics (fingerprints, face recognition) considered much more secure than =
+passwords and pins? </pre></li>
+
+<li><pre class=3D"student-text">I have two questions. The first one is rath=
+er than using an additional
+USB dongle as the second step authentication, why not use the identity
+of the device the users use as authentication. My second question is
+can we fully rely on the USB dongle authentication and not use password
+at all.</pre></li>
+
+<li><pre class=3D"student-text">I may have missed something, but it seems l=
+ike the U2F protocol is particularly lacking in physical security; it would=
+ be easy for someone who comes in contact regularly with a user of a U2F US=
+B dongle to steal the device and utilize it. Because of this, having more c=
+omplete security would require another security factor alongside U2F. Is th=
+is the correct view, or is there a mechanism in U2F preventing the devices =
+from being appropriated so simply in this manner?</pre></li>
+
+<li><pre class=3D"student-text">I read through the paper and I was concerne=
+d about the point that multiple people, like couples, could use the U2F dev=
+ice. I understand that it only cares about issuing keys to origins, so ther=
+e=E2=80=99s no concept of a user. But having the device be specific to a us=
+er, like DUO, seems to me like it would be more secure. So I was wondering =
+if why they made this decision could be explained in more detail through di=
+scussing the tradeoffs of different security designs.</pre></li>
+
+<li><pre class=3D"student-text">I've used both Duo and Yubikey before, whic=
+h seem to be instances of U2F devices. I don't really understand how the au=
+thentication works behind the scenes.
+
+Is there a specific key? Does it change? The Yubikey always seemed to spit =
+out random strings of text. What's going on there?
+</pre></li>
+
+<li><pre class=3D"student-text">Identity management and authentication is a=
+ hot topic, neihter a USB dongle nor an SMS message can be treated as a gre=
+at method.  Is there a way to significantly improve security and user exper=
+ience? Social identity, mouse movements, etc. What is the most promosing te=
+chnology/method, which will be widely adopted in the next 10 years?    </pr=
+e></li>
+
+<li><pre class=3D"student-text">If additionally sending 'client data' would=
+ not protect against a MITM that intermediated the registration, what is th=
+e point of this additional information? In the normal case where the MITM d=
+id not intermediate registration, wouldn't the public/private key protectio=
+n be enough to protect against MITM?</pre></li>
+
+<li><pre class=3D"student-text">If changing passwords doesn't necessarily i=
+ncrease security what is the best practice for passwords? Is saving passwor=
+ds in your browser secure? Is using a password manager (like LastPASS) secu=
+re? Should you reuse passwords sometimes (conventional wisdom says no, but =
+conventional wisdom also says to constantly change your password)? How do y=
+ou prevent forgetting of passwords without writing them down or reusing pas=
+swords or using a common pattern?
+
+How are the non-USB approaches (like SMS messages phishable)? What approach=
+ would you use to fake a mobile 2FA?
+</pre></li>
+
+<li><pre class=3D"student-text">If there's no origin check, how does that a=
+llow multiple colluding sites to use a public key and Key Handle as a "supe=
+rcookie" and strongly verify and correlate a particular user's identity? I =
+understand how it could allow MITM but not what they mean by "supercookie" =
+to correlate a particular user's identity.</pre></li>
+
+<li><pre class=3D"student-text">In Section 6 of the U2F paper, I=E2=80=99m =
+not quite sure I follow the whole edge-case to the MITM attack. Even if a M=
+ITM with a different origin tried to register the U2F device onto itself an=
+d not pass this, won=E2=80=99t you still need the user=E2=80=99s password? =
+Or does the MITM essentially just replay this by acting as a =E2=80=9Cfake =
+origin=E2=80=9D?
+
+Is there a study on the optimal rotation time between passwords? As well as=
+ the constraints that need to be imposed on them (combination of letters/nu=
+mbers/characters) that are relatively user-friendly? Or rather did the NIST=
+ study have any numbers on this?</pre></li>
+
+<li><pre class=3D"student-text">In a similar vein to requiring changed pass=
+words, are requiring characters from different character classes effective?=
+ Certainly prohibiting passwords matching common passwords, but is it more =
+effective than, for example, requiring longer passwords?
+</pre></li>
+
+<li><pre class=3D"student-text">In both this paper and lecture, I hear the =
+term "public key" being used when talking about authentication in online se=
+rvices between the client/server. I have no idea what having a "public key"=
+ means, nor what a "public key" even is. I think this is due to my limited =
+knowledge about cryptography.
+</pre></li>
+
+<li><pre class=3D"student-text">In the FIDO paper under the discussion of M=
+an-In-The-Middle attacks, the author describes a set of client data that th=
+e browser can observe about the origin, including the 'random challenge' se=
+nt by the origin. What do they mean by 'random challenge'? What's an exampl=
+e?
+</pre></li>
+
+<li><pre class=3D"student-text">In the FIDO standard document, they mention=
+ that, in addition to U2F being a 2nd factor authentication, it could also =
+be used as the sole method of authentication (i.e. replacing a password). I=
+t seems like, if one had to choose between their U2F model and a standard p=
+assword, theirs is more secure, and it might well be adopted more readily i=
+f it could replace passwords (potentially reducing user burden) instead of =
+augmenting them (increasing user burden). Assuming that I would notice quic=
+kly (at most a few hours after the fact) if my U2F device was stolen, and I=
+ could "deactivate" it somehow, would there be any reason not to replace pa=
+sswords? Does the standard support any way to "deactivate" a stolen device =
+(like one does with, e.g., credit cards)?
+</pre></li>
+
+<li><pre class=3D"student-text">In the U2F paper, there was something calle=
+d the "ChannelID extension to TLS". I didn't know what it was, but looked i=
+t up (https://en.wikipedia.org/wiki/Transport_Layer_Security_Channel_ID) an=
+d was wondering how it prevents the domain cookie attack as well as a simil=
+ar attack where a compromised website with the same top level domain sends =
+a ton of cookies to the client's browser and override cookies for a secure =
+website in the same top-level domain.=20
+</pre></li>
+
+<li><pre class=3D"student-text">In the reading, it describes counter measur=
+es against cloning U2F devices.
+Does cloning mean duplicating hardware or software of another U2F in this c=
+ase?=20
+</pre></li>
+
+<li><pre class=3D"student-text">In what direction has MIT been trending tow=
+ards with passwords? I know they still require passwords to be reset every =
+year, but they have added two-factor authentication recently. Is the instit=
+ute planning on focusing more on two-factor auth approaches going forward a=
+nd potentially dropping passwords? At the very least, do you think they'll =
+keep making us change our passwords every year?
+</pre></li>
+
+<li><pre class=3D"student-text">Is 2FA really that effective? From my perso=
+nal experience, it seems to be quite
+a mixed bag. Users get upset at the added inconvenience, and in fact try to
+make the log-in process as easy as it normally was, almost negating the ent=
+ire
+process.
+
+For example, almost everyone I know uses "remember me for 30 days" when usi=
+ng
+2FA with MIT.</pre></li>
+
+<li><pre class=3D"student-text">Is FIDO really that secure if users use a m=
+ore easy-to-guess password? A device could easily be lost or stolen, and th=
+en the account is compromised, unless backed with a good password too. Addi=
+tionally, how many layers of authentication are "secure enough"?</pre></li>
+
+<li><pre class=3D"student-text">Is it worrisome to operate the U2F protocol=
+ from the browser, given that installing browser plug-ins is a common thing=
+, and some plug-ins may be malicious? Would it make any difference to inste=
+ad run the U2F protocol from a desktop application and have the browser com=
+municate with the desktop app instead, so that that desktop app is the guar=
+d between the user and browser?</pre></li>
+
+<li><pre class=3D"student-text">Is the Duo authentication scheme used at MI=
+T an implementation of the FIDO U2F
+protocol? Or does it use some other protocol?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Is the added level of security created by 2=
+FA worth the user difficulty created, or in most cases is it as beneficial =
+as changing your password frequently. </pre></li>
+
+<li><pre class=3D"student-text">Is there a good protocol for how to handle =
+users losing their U2F? A back-up
+doesn't seem user-friendly since it would require registering two devices f=
+or
+everything, but standard methods of password recovery seem like they would
+significantly lessen the security gains from 2FA.
+</pre></li>
+
+<li><pre class=3D"student-text">Is there a way for the U2F key pair to also=
+ encode which device it was generated on? So the USB dongle can only work o=
+n a certain machine?=20
+Not sure if this is at all how key pairs work...=20
+</pre></li>
+
+<li><pre class=3D"student-text">Is there a way to fake a "test of user pres=
+ence"? For example, could you convince the USB dongle it has been touched e=
+ven if it hasn't?</pre></li>
+
+<li><pre class=3D"student-text">Lecture 3 (Question About Paper)
+Jorge Troncoso
+
+- I don't understand what types of attacks they're trying to prevent by imp=
+lementing the measures described in section 6. What kind of "more sophistic=
+ated MITM situations" are they trying to prevent?
+
+- Can malicious U2F vendors falsify attestation keys?
+
+- Section 13.2: Why can't we delink an individual key?
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 3: My Two Factor Authentication Que=
+stion
+
+The "Mandatory Password Changes" reading, the author mentioned slow-hash fu=
+nctions
+as a stronger alternative to regular hashing. What is a slow-hash function =
+and how
+does it differ from a regular hash function? To what extent is it better th=
+an
+regular hashing?
+
+Thank you!
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 3: User Authentication
+2/14/18
+
+The paper mentions that if there is malware on the client OS, it is possibl=
+e for this malware to create a keypair with the UTF device and "exercise" i=
+t. I assume that by exercise the malware can request for a large set of key=
+s so that it can calculate the private key, but is it also possible to try =
+to corrupt the stored memory on the UTF device? </pre></li>
+
+<li><pre class=3D"student-text">MIT mandates that we use 2 factor authentic=
+ation for accessing protected resources, yet it doesn't seem nearly as wide=
+spread as it should be. What is stopping important institutions,
+like banks, companies that have had previous leaks, from adoption?</pre></l=
+i>
+
+<li><pre class=3D"student-text">My understanding is that given the client i=
+s going to be run in user space, however, that makes it more vulnerable. It=
+ deemed seem to me like the paper properly discussed how the implementation=
+ at the OS system level can be effectively deployed, and if not, why is it =
+much of an issue ?
+</pre></li>
+
+<li><pre class=3D"student-text">One attack that seems obvious for this prot=
+ocol is to simply register a new key for the user's account, which reduces =
+the security of the U2F protocol to the original account credentials. Is th=
+is a common attack?
+
+Also, I've heard of these USB devices having to be recalled for hardware is=
+sues. Are these usually a response to side-channel attacks (i.e. placing a =
+microphone next to the USB and extracting the key), or usually for actual b=
+ugs in the hardware?</pre></li>
+
+<li><pre class=3D"student-text">One issue the document warns us about that =
+the U2F cannot protect against is:
+13.1 An Origin Can Discover that Two Accounts Share a U2F Device
+
+I wonder how feasible this attack is? As far as I understand, origins send =
+back key handles for the specific account trying to authenticate (otherwise=
+ it would have to send a huge flood of all possible key handles!) In order =
+for the origin to send down a key handle for another account that uses the =
+same U2F device, the origin would have to have *some* other information rel=
+ating these two accounts, or else they would have to guess and thus send do=
+wn a flood of key handles, which the user's machine should be able to detec=
+t and stop.</pre></li>
+
+<li><pre class=3D"student-text">Password reseting mechanisms weaken the pas=
+sword system in order to address the common problem of forgetting your pass=
+word. Does losing your usb dongle pose any problems for the two factor auth=
+entication system?
+</pre></li>
+
+<li><pre class=3D"student-text">Question about Password/2FA Reading - Ajink=
+ya Nene
+
+Many websites have requirements on password lenghts/character types/etc. Do=
+ these requirements usually improve password security? There seems to be a =
+possibility that these requirements could guide a hacker into guessing cert=
+ain passwords with higher probability. It'd be interesting to see research =
+on this. </pre></li>
+
+<li><pre class=3D"student-text">Question: In the first article they mention=
+ how important it is to change passwords after you suspect it has been comp=
+romised. It also explains that you shouldn't be using the same password fro=
+m multiple sites. Part of the logic against changing passwords so often is =
+user inconvience, yet what are best practices or solutions to trying to rem=
+ember numerous passwords to different websites that may change?</pre></li>
+
+<li><pre class=3D"student-text">Question: The tradeoff between user-friendl=
+iness and technical security seems to also reflect a tradeoff between physi=
+cal security and technical security: i.e., if a U2F device is physically lo=
+st, an attacker may be able to find some exploit. What are heuristics which=
+ system designers take into account in making these tradeoffs between techn=
+ical security and user-friendliness, especially given that systems that are=
+ not user friendly may make the system vulnerable to non-technical exploits=
+? (physical security, social engineering, etc.)</pre></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz=20
+
+Lecture 3
+
+How does building U2F into the OS system layer=20
+make it immune to malware? How would this=20
+integration work?</pre></li>
+
+<li><pre class=3D"student-text">Regarding requirements for users to create =
+passwords of a certain length / including special characters - is there a s=
+cenario where the hacker could use these requirements to their advantage?  =
+Or is it usually the case that such requirements still make it more secure =
+despite clueing the attacker in to certain patterns in the passwords.
+</pre></li>
+
+<li><pre class=3D"student-text">SQ3
+
+The mandatory password changes article often includes the
+assumption that the attacker has the hashed password file
+in many of the scenarios that the article explores.  Would
+making the hashed password file more secure be a more effective
+method at improving password security, rather than relying
+on user behavior?</pre></li>
+
+<li><pre class=3D"student-text">So if a user loses a FIDO USB dongle, they =
+basically lose access to all of their log ins? This seems inconvenient, to =
+say the least.
+A potential attack (just to stop a user from gaining access to their log in=
+s would be then to physically destroy the USB stick).=20
+Is there a good way to prevent for this? I know I would lose USB sticks pre=
+tty easily.=20
+
+Also they talk about USB cloning, but how would an attacker go about "Cloni=
+ng" a device?=20
+
+</pre></li>
+
+<li><pre class=3D"student-text">So, it really seems like a good salt and sl=
+ow hash function makes a lot of the attacks in the first blogpost unfeasibl=
+e.  Are there big enough gains in 2FA to justify the extra inconvenience fo=
+r most users?
+
+Also, if as the paper suggests, users can have a password as simple as a 4-=
+digit pin, is it really infeasible for an attacker to just spam all 10k com=
+binations if they have the second factor?  Doesn't this render the first fa=
+ctor effectively pointless?
+</pre></li>
+
+<li><pre class=3D"student-text">The "Time to rethink mandatory password cha=
+nges" article mentions
+that researchers were able to crack a user's newer passwords much
+faster based on knowing their previous passwords. However, is there
+any point to having a system that actually stores the hashes of
+a user's old passwords? This scenario seemed a little unrealistic
+to me in that sense.
+</pre></li>
+
+<li><pre class=3D"student-text">The FIDO U2F system involving an external d=
+evice seems complicated to pull off from a product-perspective. Additionall=
+y, it assumes that the second factor in question is necessarily a physical =
+device.=20
+[Quote: ...The user logs in with a username and password as before. The ser=
+vice can also prompt the user to present a second factor device at any time=
+ it chooses. The strong second factor allows the service to simplify its pa=
+sswords (e.g. 4-digit PIN) without compromising security. During registrati=
+on and authentication, the user presents the second factor by ***simply pre=
+ssing a button on a USB device or tapping over NFC.***]
+
+Will a simpler method of sending an email to a registered ID and asking a u=
+ser to click a link on it fulfill the requirements of security, while manag=
+ing user-convenience? If yes, why not singularly adopt this method? Should =
+2F necessarily involve a separate physical device?</pre></li>
+
+<li><pre class=3D"student-text">The FIDO standard describes a 2FA scheme us=
+ing a USB dongle, but smart phones don't have a USB port. Is there any impl=
+ementation of FIDO U2F in existence/planned that would work when users want=
+ to log in to an online service from a smart phone?</pre></li>
+
+<li><pre class=3D"student-text">The U2F protocol implementation relies on u=
+sage of Javascript calls for creating key pairs and generating signatures. =
+How could implementations of the protocol protect against Javascript vulner=
+abilities?</pre></li>
+
+<li><pre class=3D"student-text">The U2F seems to rely on two big assumption=
+s - the browser working correctly and that only the actual user posesses th=
+e devices. Don't those two assumptions compromises the entire security? Esp=
+ecially, since the protocol suggests simplifying the password requirements,=
+ the websites rely more on the devices than on the users. So, how does the =
+device make sure it is more reliable than the user?</pre></li>
+
+<li><pre class=3D"student-text">The U2F standard claims to defeat most man-=
+in-the-middle attacks, but I am confused about why. It appears that the U2F=
+ device/client is supposed to detect the presence of a MITM via an "incorre=
+ct origin name." But isn't it easy for a MITM to spoof its apparent origin =
+(IP address/domain name)? And if a MITM simply passes on each challenge and=
+ response, how can either party detect its presence?</pre></li>
+
+<li><pre class=3D"student-text">The article on password changes is pretty c=
+lear that frequent password changes are probably not necessary. MIT, noneth=
+eless, requires frequent password changes. Why?
+</pre></li>
+
+<li><pre class=3D"student-text">The first paper talked about how requiring =
+users to change their passwords too often lead them to make weaker password=
+s and to write them down. Have there been any studies on requiring users to=
+ i.e. use a certain number of capital letters, numbers, special characters,=
+ etc? I feel like this would make passwords stronger by rejecting common ph=
+rases like "password123", but if the requirements are too stringent, the us=
+er would still write the password down.
+</pre></li>
+
+<li><pre class=3D"student-text">The paper described a MITM attack that they=
+ deemed as acceptably sophisticated as to ignore it in the design of U2F. N=
+amely, if:
+
+- an attacker is "able to get a server cert for the actual origin name issu=
+ed by a valid CA"
+- "ChannelIDs are NOT supported by the browser"
+
+My questions are:
+- How could an attacker get such a server cert?
+- What are ChannelIDs?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that =E2=80=9CThe counte=
+r is a strong signal of cloning but cannot detect cloning in every case - f=
+or example, if the clone is only one which is used after the cloning operat=
+ion and the original is never used, this case cannot be detected.=E2=80=9D =
+So what happens if the counter can=E2=80=99=E2=80=99t detect the cloned U2F=
+ device? Do we just kind of throw our hands up and say =E2=80=9Coops too ba=
+d=E2=80=9D?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper says that "for high quality U2F d=
+evices we expect that the attestation key would be burnt into the on-board =
+secure element" - what does it mean for the key to be "burnt in"?=20
+
+Is a cloned U2F device typically a malicious act? Could a user have multipl=
+e U2F devices for an account, and two of the devices happen to have the sam=
+e key pair for the origin?</pre></li>
+
+<li><pre class=3D"student-text">The paper seems to leave open the exact imp=
+lementation of each U2F device, only requiring that it follow the outline i=
+n the paper, and be verified by some certification body (like FIDO). If FID=
+O is verifying implementations anyway, why does FIDO just not agree on a si=
+ngle U2F device? With multiple vendors, there may be a bug present in one i=
+mplementation that is not in another, and compromise the security of some u=
+sers. Having a single U2F device would leave FIDO as the "central authority=
+" regarding the security of U2F devices, but even with multiple vendors, FI=
+DO (or other certifying third parties) would still be the central authority=
+, as they declare that implementations are secure.</pre></li>
+
+<li><pre class=3D"student-text">The password hashing method seems to be vul=
+nerable to rainbow table attack. In linux, the system will concatenate the =
+user's password with a random str before hashing. Do most websites use this=
+ method in hashing?</pre></li>
+
+<li><pre class=3D"student-text">This is in reference to the attestation key=
+ pair. Theoretically could you not just copy the attestation key pair and t=
+hen create new devices. They would check out as valid if you copied from a =
+vendor in good standing but then you could distribute those U2F devices and=
+ say have a backdoor which means it is not safe. Are there added protection=
+s on the U2F device that allow it to make sure you can't impersonate anothe=
+r vendor? (I believe this is different from simply cloning a U2F device)
+</pre></li>
+
+<li><pre class=3D"student-text">Use of this U2F seems to necessitate carryi=
+ng around a small portable USB or bluetooth device at all times. Our phones=
+ already seem to fulfill this requirement - are there communication standar=
+ds or mobile apps that allow our phone to be a U2F device?=20
+</pre></li>
+
+<li><pre class=3D"student-text">What are the pros and cons of FIDO U2F (eit=
+her hardware- or software-based) versus TOTP-based systems like RSA SecurID=
+ (hardware) or Google Authenticator (software)?
+</pre></li>
+
+<li><pre class=3D"student-text">What are the vulnerabilities of this authen=
+tication scheme?</pre></li>
+
+<li><pre class=3D"student-text">What exactly would a man in the middle atta=
+ck look like when physical devices are involved? What information is being =
+intercepted?</pre></li>
+
+<li><pre class=3D"student-text">What happens if a user loses their U2F devi=
+ce?</pre></li>
+
+<li><pre class=3D"student-text">What happens when a user loses their U2F de=
+vice? It seems important that there's also a secure distribution for replac=
+ement devices.
+</pre></li>
+
+<li><pre class=3D"student-text">What is the best defense against a stolen U=
+SB dongle? Can it have a fingerprint reader or something similar to make su=
+re that the person is using it is the actual owner?
+</pre></li>
+
+<li><pre class=3D"student-text">What is the most pertinent threat vector fa=
+cing software based 2FA? I.E. emulating the secure hardware in a VM tied to=
+ a users machine
+</pre></li>
+
+<li><pre class=3D"student-text">What is the need for so many different keys=
+ within the U2F device? Attestation keys are for verifying the vendor of th=
+e device, Key Handles also seem to be used for identification. Could the di=
+fferent keys stored on the device be distinguished clearer?</pre></li>
+
+<li><pre class=3D"student-text">What is the percentage of 2FA that uses USB=
+ dongles vs. mobile-based apps/SMS authentication? I know very few people t=
+hat actually use a dongle, but I know this is relatively popular in the cor=
+porate world, so it would be interesting to know statistics about this.
+</pre></li>
+
+<li><pre class=3D"student-text">What is the security protocol for SMS messa=
+ges used for two-factor authentication? </pre></li>
+
+<li><pre class=3D"student-text">What makes this a viable product? In 2017, =
+most people had a cellphone, and as a result, it seems to me that very few =
+companies would be willing to impose the extra hassle of a USB, even in exc=
+hange for more security. Did Fido manage to sell this idea to any companies=
+--what happened with this product?
+</pre></li>
+
+<li><pre class=3D"student-text">What's to stop a MITM attacker from being a=
+ble to impersonate the 'origin' hash of a server?</pre></li>
+
+<li><pre class=3D"student-text">When discussing cost, why were they so conc=
+erned about not using memory in the device? I thought that memory was relat=
+ively cheap these days.</pre></li>
+
+<li><pre class=3D"student-text">When user accounts have been compromised an=
+d users are then prompted to change
+their password, would it be beneficial for websites to recommend (or even
+enforce) that a password not be similar to a previous password because that=
+'s
+easier for the hacker to guess?
+</pre></li>
+
+<li><pre class=3D"student-text">Why does building the U2F client into the O=
+S help protect against malware?
+</pre></li>
+
+<li><pre class=3D"student-text">Why is it uncommon to do 2FA using biologic=
+al information like fingerprints as the second factor? I feel like it=E2=80=
+=99s pretty secure and user friendly.</pre></li>
+
+<li><pre class=3D"student-text">Why is there so much back in forth between =
+a UF2 device and an origin during authentication?
+What exactly is a 'sign' call and how many are sent overall?</pre></li>
+
+<li><pre class=3D"student-text">Why is two-factor authentication not more w=
+idely used if it provides such
+security benefit?
+</pre></li>
+
+<li><pre class=3D"student-text">Why isn't U2F more commonly used? Especiall=
+y for more important services, e.g. bank accounts? Just an observation, but=
+ in Singapore (where I'm from) the banks all issue security tokens to the c=
+ustomers and U2F authentication (or similar 2 factor authentication) is req=
+uired for viewing statements / performing transactions, but this doesn't se=
+em common here.</pre></li>
+
+<li><pre class=3D"student-text">Will a properly chosen "salt" make dictiona=
+ry attack useless? i.e. If the attacker only has the salted version of the =
+hash, and cannot correctly guess the salt, then the most frequent password =
+list won't help, right? </pre></li>
+
+<li><pre class=3D"student-text">Wireless carriers seem to be the weak point=
+s in 2FA for mobile phones. Do we have any solutions for that=20
+or is the general advice to move onto Yubikeys?
+</pre></li>
+
+<li><pre class=3D"student-text">Would (or has) vendor attestation for U2F d=
+evices lead to lock-in
+where only a small group of vendors can produce widely-usable devices,
+and new competitors can't enter the market?  How does this compare to
+the landscape of TLS Certificate Authorities?
+</pre></li>
+
+<li><pre class=3D"student-text">Would an untrusted browser extension allow =
+a third-party to replicate the function of the U2F device?
+</pre></li>
+
+<li><pre class=3D"student-text">Would it be possible to get the same benefi=
+ts of the U2F protocol without requiring the user to purchase a physical de=
+vice?
+</pre></li>
+
+<li><pre class=3D"student-text">how can you know whether to prioritize usab=
+ility or security?=20
+</pre></li>
+
+<li><pre class=3D"student-text">how does the 2 factor make it possible to h=
+ave a more insecure pin and still maintain the same level of security?</pre=
+></li>
+
+<li><pre class=3D"student-text">the article discusses how mutliple users ca=
+n use the same U2F device, and a single user can even have multiple U2F dev=
+ices; however, what are the risks if a user loses one of their U2F device(s=
+)?
+</pre></li>
+
+<li><pre class=3D"student-text">tl;dr: How are they anticipating a leak of =
+a key from the USB dongle (and maybe detecting with counter)? Wouldn't it b=
+e more effective to detail how they prevent this theft rather than just det=
+ecting when a theft occurs?
+
+When they talk about "cloned" U2F devices, are they talking about a private=
+ key being duplicated onto a different device? If this happens, isn't the s=
+ecurity pretty done for anyways (what's the point of the counter--just a wa=
+y to detect cloned devices sometimes)? I'm a bit confused what they're anti=
+cipating in terms of a private key being stolen from such a device (or mayb=
+e in transit initially?).
+</pre></li>
+
+<li><pre class=3D"student-text">what happens if the user loses access to th=
+eir 2-factor authentication deviec?</pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--yle2bJzd8VIDEs1O1ZkyTL7Ud1jA6s6JfRv5qz0l9X------

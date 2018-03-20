@@ -1,0 +1,3222 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-answers/10
+Subject: Answers for lecture 10 - 6.858
+Date: Wed, 20 Mar 2018 22:59:07 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--ntt9zVhpsVTy2OWlCPJ0XgsyGEQ6FIqiYrE3xc579r----"
+
+------MultipartBoundary--ntt9zVhpsVTy2OWlCPJ0XgsyGEQ6FIqiYrE3xc579r----
+Content-Type: text/html
+Content-ID: <frame-32870-1dee6354-77db-44cb-ae19-b1c2335bc488@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-answers/10
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Answers for lecture 10 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Answers for lecture 10 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text">	One attack scenario that Apple considers i=
+s downgrading the OS to a version where a past vulnerability has not yet be=
+en addressed, so they can use that already discovered vulnerability to gain=
+ access to the device. This is prevented with their System Software Authent=
+ication.
+
+	Time delays after invalid passcode entries help protect against brute-forc=
+e passcode attacks. This is in the Encryption and Data Protection part of t=
+he iOS security architecture. </pre></li>
+
+<li><pre class=3D"student-text">
+Lecture 10
+
+Ben Bitdiddle has an iOS device that he uses to keep track of confidential =
+notes. What are the different attack scenarios that Apple considers where a=
+n adversary tries to obtain Ben's notes, and what part of the iOS security =
+architecture prevents those attacks?
+
+-----------------------------------------------------------
+
+Attack 1: Buffer overflow or other runtime attack. Apple uses Address Space=
+ Layout Randomization (ASLR) to make it much harder for people to do return=
+-to-libc attacks, or any type of attack that overwrites code pointers. Also=
+, iOS uses ARM Execute Never, which marks the stack non-executable. Additio=
+nally, Apple addresses the problem of 3rd party developers using things lik=
+e self modifying code by doing security audits of 3rd party apps and signin=
+g them with the developer and Apple certs, as well as the libraries linked =
+to that app. Finally, Apple uses runtime code signature checks of all execu=
+table memory pages as another check to maintain memory integrity.
+
+Attack 2: Keylogging. The attacker tries to log Ben's keystrokes to see his=
+ confidential secrets. This is protected by Apple's sandboxing of the keybo=
+ard extension so that it can't send the output over the network or to anoth=
+er app who could then send it over the network.
+
+Attack 3: MITM attack on TouchID/FaceID/etc. Apple solves this by not sendi=
+ng these over the network, and by storing them in the secure enclave on the=
+ phone's processor.
+
+Attack 4: Somehow the attacker manages to change some aspect of the firmwar=
+e on Ben's phone, so that it makes all kinds of system calls that create bu=
+gs in the phone's software. The secure boot chain will check the signatures=
+ on the firmware and require an update in DFU mode on boot.
+
+</pre></li>
+
+<li><pre class=3D"student-text">- someone compromising the iOS kernel and g=
+aining access to Ben's notes that way
+    - secure boot chain, chain of trust (Boot ROM laid down @ chip fabricat=
+ion, root of this chain of trust), only allows Apple-signed stuff to be ins=
+talled
+
+- downgrading iOS on Ben's phone to exploit a patched security issue
+    - System Software Authorization (ensures integrity of software + preven=
+ts downgrades)
+
+- someone using an image of Ben's face to trick FaceID, breaking into=20
+    - neural net trained to catch this, depth map should notice that it's n=
+ot actually a face...
+
+- someone breaking into iCloud/other Apple servers and stealing TouchID/Fac=
+eID data, breaking into Ben's phone, and stealing Ben's notes
+    - don't store this data anywhere other than the phone
+
+- other apps messing with Touch/Face ID on Ben's phone, breaking in, and st=
+ealing Ben's notes
+    - apps only have access to Touch/Face ID through an API, which only tel=
+ls the app whether or not the authentication was successful (much privilege=
+ separation)
+
+- Ben gets a new iPhone, erases his old phone, assumes the notes are gone. =
+Evil guy gets his old phone and manages to recover the notes.
+    - all data on the phone is encrypted. When you erase the phone, you get=
+ rid of the encryption keys, so any data the evil guy manages to extract is=
+ useless.
+
+- Evil guy gets Ben's phone and starts bashing out passwords
+    - time.=20
+        - each attempt takes ~80 ms, so it takes years to try enough combin=
+ations.
+        - escalating time delays (there was this news article about a kid m=
+anaging to lock his mom out of her phone for 45 years or something? :o )
+    - the "after 10 attempts, erase everything" feature.
+
+- Evil guy creates a sketchy app that does sketchy things, and Ben download=
+s it.
+    - sandbox the app
+        - lower privilege
+        - randomized addressing
+    - Apple Developer Program
+        - verifies ID of publishers
+    - all apps are reviewed before published=20
+        - ... hopefully they catch sketchy things :/
+    - phone never allows untrusted code to run, always verifies signatures
+
+- Evil guy creates a sketchy accessory and pairs it with Ben's phone
+    - checks whether or not it's Apple-certified through a challenge/respon=
+se mechanism
+
+</pre></li>
+
+<li><pre class=3D"student-text">Apple considers the possibility of attacks =
+that happen at startup. To prevent this, Apple uses the Boot ROM which is r=
+ead-only memory and use signatures as a form of authentication. Apple also =
+considers the possibility of malware posing as software updates. To prevent=
+ this, apple also signs any software updates so that they can be verified. =
+Apple also makes sure that hackers cannot attempt to install older, buggy v=
+ersions of software by using system software authorization and the secure e=
+nclave. The secure enclave is a coprocessor that uses encrypted memory and =
+a hardware random number generator. Apple is also prepared for the possibil=
+ity of an attacker trying to physically break into someones phone. Apple ha=
+s features such as touch ID, face ID, and passcodes in order to prevent thi=
+s. </pre></li>
+
+<li><pre class=3D"student-text">The IOS security design implements privileg=
+e separation to prevent compromised services from compromising other servic=
+e. They do so by assigning unique IDs to each service. The system also trie=
+s to protect against brute force password guessing attacks by locking the p=
+hone after a certain number of incorrect guesses. All data and files are al=
+so encrypted to protect against any data breach. </pre></li>
+
+<li><pre class=3D"student-text"> Attack: somebody steals the device, takes =
+off the Flash chip, and attempts to read the filesystem.
+ Solution: the device's filesystem is encrypted.
+
+ Attack: somebody replaces the boot-loader and modifies the boot process.
+ Solution: the initial boot script is stored in ROM, and written into the p=
+rocessor at fabrication time.  It checks that iBoot, the main bootloader, i=
+s signed by Apple before proceeding.  If it's not properly signed, the devi=
+ce does not boot.
+
+ Attack: somebody attempts to downgrade the software version, or install an=
+ unsafe update.
+ Solution: When being upgraded, the device sends information about its rece=
+ived update to an authentication server, which verifies that the update is =
+legitimate.
+</pre></li>
+
+<li><pre class=3D"student-text"># Lecture 10
+
+--------------------------------------
+Ben Bitdiddle has an iOS device that he uses to keep track of confidential
+notes. What are the different attack scenarios that Apple considers where
+an adversary tries to obtain Ben's notes, and what part of the iOS security
+architecture prevents those attacks?
+--------------------------------------
+
+Apple considers many different scenarios.
+- [Hardware reused] When Ben gets a new device and sells his old device, he=
+ can use a "Erase all
+  content and settings" feature to make all of his data cryptographically i=
+naccessible.
+- [Hardware stolen] all application data stored on the phone is encrypted w=
+ith AES 256bit encryption, so
+  if the device was stolen an attacker could not read it.
+- [Malicious Apps] iOS uses ASLR to prevent memory corruption attacks from =
+apps
+
+- [Extra Note Security] Additionally, iOS provides a Secure Notes feature w=
+here a user secures a note,
+  a 16-byte key is derived from the user=E2=80=99s passphrase using PBKDF2 =
+and SHA256.
+  The note=E2=80=99s contents are encrypted using AES-GCM. New records are =
+created in
+  Core Data and CloudKit to store the encrypted note, tag, and initializati=
+on
+  vector, and the original note records are deleted; the encrypted data isn=
+=E2=80=99t
+  written in place. Attachments are also encrypted in the same way
+  This extra layer of encryption helps isolate the note from any virus that=
+ has
+  access to the user's memory space on the device. To read the note, the us=
+er
+  must enter the passkey or use FaceID, which can't happen without the user
+  knowing.
+</pre></li>
+
+<li><pre class=3D"student-text">* The Secure Enclave protects data even if =
+the adversary is able to compromise the kernel
+* The Secure Enclave also processes fingerprint/face data for Touch ID and =
+Face ID, if adversary attempts to physically hijack the phone
+* If an adversary tries to access Ben=EF=BF=BDs notes with the file key, th=
+e file key and class key are wrapped by the UID and GID key, respectively
+</pre></li>
+
+<li><pre class=3D"student-text">- An attacker could install malicious softw=
+are via the update process that
+compromises Ben's notes. This is prevented by all the signing techniques th=
+at
+verify Apple software updates.=20
+- An attacker could gain physical access to the device and attempt to use i=
+t to
+read Ben's notes. This is prevented by the variety of authentication method=
+s
+Apples provides, such as passcodes, Touch ID, and Face ID.
+- An attacker could gain physical access to the device and attempt to read =
+data
+straight out if its storage. This is prevented by the encryption of user da=
+ta
+as well as storing Touch ID and Face ID data in the encrypted secure enclav=
+e.=20
+- An attacker could try to brute-force the device passcode, but this is
+prevented by a long iteration count that would make this prohibitively slow=
+.=20
+- An attacker could attempt to create an app that compromises Ben's notes, =
+but
+Apple's application sandboxing would prevent this.
+- An attacker could attempt to exploit a buffer overflow in iOS, but ASLR
+prevents this.=20
+- An attacker could attempt to provide Ben with a fake Notes app for him to
+download, but this is prevented by the requirement that iOS apps are all=20
+signed.=20
+</pre></li>
+
+<li><pre class=3D"student-text">- Apple protects the overall system integri=
+ty through a hierarchical system of
+  cryptographic signing, which protect the bootloaders, kernel, kernel
+extensions, and baseband firmware from tampering, ensuring that the foundat=
+ion
+of the system has not had any backdoors introduced.
+- Apple prevents an attacker from downloading any additional code not signe=
+d by
+  Apple during the start-up process, preventing an attacker from from trick=
+ing
+a phone from running malicious code during start-up.
+- Apple prevents iOS downgrades, preventing an attacker from obtaining a ph=
+one
+  and reintroducing previously caught and repaired system exploits.
+- Cryptographic measurements are made during system updates, ensuring that =
+when
+  a phone connects to an Apple server for an update that a third party cann=
+ot
+interfere with the device update, or copy an image of the device to another
+location.
+- Data is protected via cryptographic keys generated by the Secure Enclave
+  coprocessor, preventing an attacker from obtaining private data even if t=
+he
+phone's kernel is compromised.
+- An antireplay counter + UID protect the phone from replay attacks involvi=
+ng
+  passcode, biometric, and payment method updates, ensuring an attacker cou=
+ld
+not trick the device into changing this security information to allow the
+attacker into the device.
+- Face ID locally stores biometric data that uses sophisticated enough
+  technology to prevent an attacker from mimicking the victim by using a
+picture or a mask of the victim to unlock the phone.
+- Face ID uses eye tracking to prevent an attacker from unlocking the phone=
+ by
+  showing it your unconscious or unaware face.
+- Passcodes are required to unlock the device if it has been restarted, or
+  locked for a number of hours, in order to protect against the chance that
+your phone is taken by an attacker with a similar enough fingerprint to you=
+rs
+to open the phone (1/50000 chance).
+- The Secure Enclave's UID and GID can only be read by the AES engine dedic=
+ated
+  to the Secure Enclave, ensuring that no software or firmware can access
+cryptographic keys to break into the device, or to mimic the device elsewhe=
+re.
+- iOS requires that all executable code be signed by an Apple-issued
+  certificate, ensuring that the user does not download a tampered version =
+of
+the app the notes are stored on.
+- In order to protect against malicious developers, Apple registers and
+  collects personal information about each app developer.
+- Apple reviews third-party Apps for obvious bugs and provides code signatu=
+re
+  validation of all dynamic libraries used by apps, preventing an app from
+executing code from outside its address space and obtaining other memory.
+- Each app is sandboxed, preventing a malicious app from accessing files st=
+ored
+  on the note-taking app, or from accessing system code and taking over the
+entire device.
+- Privileged operations are regulated via key-value pairs called entitlemen=
+ts,
+  which prevent third-party apps from accessing secure user information.
+- Apple prevents accessory devices from being plugged in and used to obtain
+  device information by requiring authentication of the accessory.
+</pre></li>
+
+<li><pre class=3D"student-text">- Attacker attempts to load and boot a modi=
+fied copy of iOS: code signing and secure boot prevents this attack.
+- Attacker attempts to downgrade iOS to an older, exploitable version. Devi=
+ce requests signed authorization (SSA) from Apple's server, preventing this=
+ attack.
+- Attacker in control of iOS attempts to subvert the Secure Enclave OS to g=
+ain control of encrypted data. Apple uses the L4 microkernel and limits com=
+munication with the Enclave in order to reduce the attack surface thereof.
+- Attacker attempts to substitute or spoof Secure Enclave memory with previ=
+ously encrypted contents. Secure Enclave generates a new key on each boot a=
+nd uses anti-replay counters to prevent this class of attacks.
+- Attacker attempts to authenticate FaceID with an ersatz face. Apple only =
+allows five attempts before switching to passcode authentication to minimiz=
+e the probability of this attack.
+- Attacker within Apple, a supplier, or a government uses stored device UID=
+s to decrypt iPhone contents. To prevent this, the Secure Enclave generates=
+ its own UID after manufacturing so that it is never stored apart from the =
+device.
+- Attacker attempts to crack passcode by brute force. Apple uses a hash fun=
+ction that takes about 80 milliseconds per attempt to make brute force slow=
+. Additionally, the attempt must be made on the device itself because the h=
+ash involves the UID.</pre></li>
+
+<li><pre class=3D"student-text">- Read-only memory and hardware root of tru=
+st called Boot ROM, from which the application processor executes code upon=
+ device turn-on --&gt; this provides secure boot up and verifies that the b=
+ootloader is signed by Apple before loading the kernel
+- Only newer software updates can be installed --&gt; this prevents attacke=
+rs from exploiting bugs in older software and installing older software upd=
+ates
+- Apple installation authorization server checks the presented list of cryp=
+tographic measurements for each part of the installation bundle (iBoot, ker=
+nel, OS image) --&gt; this makes it difficult for attackers to pretend to b=
+e an iOS device because the server checks device specific cryptographic key=
+s
+- Secure Enclave accesses an encrypted memory and is encrypted with an ephe=
+meral key entangled with the device's UID --&gt; this prevents the attacker=
+ from accessing the Secure Enclave from a different device
+- Touch ID sensor passes encrypted fingerprint data through serial peripher=
+al interface bus to the processor, which cannot read the data and forwards =
+it to Secure Enclave for matching --&gt; this prevents attackers from tryin=
+g to read the fingerprint data and try to duplicate the fingerprint
+- Touch ID uses subnormal ridge flow angle mapping --&gt; attackers cannot =
+try to use a lifted fingerprint to try to access the device
+- Face ID is encrypted and analyzed by many trained neural networks in the =
+Secure Enclave --&gt; prevents spoofing with photos/masks=20
+- Five unsuccessful attempts to match Face ID disables Face ID --&gt; if de=
+vice falls into hands of attacker, attacker has a harder time trying to use=
+ Face ID with original user to unlock device
+- File that has the confidential notes has a file-specific 256-bit key, wra=
+pped with a class key, and is then stored in file's metadata. Metadata of f=
+ile is encrypted with random file system key and wrapped by Secure Enclave =
+UID key for long-term storage. The file system key is protected by the hard=
+ware UID and maybe the user's passcode for certain classes. --&gt; attacker=
+ has to successfully decrypt many layers of keys before accessing the file
+- iOS Keychain protects data from being accessed by any app --&gt; attacker=
+ cannot use a different app to try to access Ben's confidential data
+- Apple verifies every app that can be installed on an iOS device, from the=
+ developer to the libraries that the app uses --&gt; prevents malicious dev=
+eloper from changing the app to reveal Ben's notes
+- Third-party apps are sandboxed so that they cannot access files stored by=
+ other apps --&gt; prevents a different developer from writing an app to ac=
+cess Ben's notes
+- Address space layout randomization (ASLR) --&gt; prevents return-to-libc =
+attacks</pre></li>
+
+<li><pre class=3D"student-text">- The attacker could trick Ben into install=
+ing/'upgrading'/downgrading an insecure OS version on his device. This is p=
+revented by System Software Authorization.
+
+- The attacker could try to guess Ben's password / replicate his fingerprin=
+t / model his face. Apple prevents this by using a secure enclave and not s=
+olely relying on touch/face ID (a password is still required). Delays mecha=
+nisms also prevent the attacker from brute-forcing the password.
+
+- The attacker could obtain Ben's device (either legitimately with Ben eras=
+ing his data and giving it to him, or illegitimately by stealing it) and tr=
+y to gain read access to the file system. Apple prevents this by using a de=
+dicated crypto engine to speed up file encryption. It also deletes all cryp=
+tographic keys when the user deletes all his data.
+
+- The attacker could try to copy sensitive authentication information (wifi=
+ passwords, vpn certificates, etc). Apple prevents this by giving the appro=
+priate class protection, and ensuring that sensitive data that needs to acc=
+essible even if the device is locked (e.g. VPN certificates, so that the de=
+vice can maintain a continuous connection) remains non-migratory, so the at=
+tacker cannot simply copy the data to another device, since other devices w=
+ill have a different UID.
+
+- The attacker could trick Ben into downloading and installing an unauthori=
+zed app. Apple prevents this using App Code signing.
+
+- The attacker could try to gain unauthorized data from through application=
+s that Ben has downloaded. Apple prevents this by using sandboxing techniqu=
+es on all third-party apps, and ensuring that they have restricted permissi=
+ons in accessing user data. Apple also uses Address space layout randomizat=
+ion (ASLR) to prevent memory corruption bugs.</pre></li>
+
+<li><pre class=3D"student-text">- The device could boot a malicious operati=
+ng system or firmware =3D&gt; prevented by Secure boot  chain
+- An attacker could make a device downgrade to an older software version wi=
+th exploits =3D&gt; prevented by System Software Authorization (personalize=
+d "update plan" has to be signed by Apple server before update can take pla=
+ce, signatures checked by devce using chain of trust based on Apple's publi=
+c key burnt into the hardware)
+- An attacker could compromise the kernel, record a user's fingerprint data=
+, and use it to authenticate on a different device of the same user =3D&gt;=
+ the fingerprint sensor talks to the secure enclave (which checks and store=
+s fingerprint data) over an encrypted channel
+- An attacker could steal fingerprint data from an Apple server =3D&gt; fin=
+gerprint data is never sent to Apple
+- An attacker could read Ben's notes after Ben has thrown away his old devi=
+ce =3D&gt; =E2=80=9CErase all  content and  settings=E2=80=9D discards all =
+keys and therefore makes all data inaccessible (because encrypted)
+- An attacker could bruteforce the passcode on a powerful computer =3D&gt; =
+No because the keys not only depend on the passcode, but also the on the de=
+vice's UID, which cannot be read out
+- Malicious apps =3D&gt; All apps signed by Apple, each app runs in its own=
+ sandbox
+- A fancy keyboard, conciously installed by Ben, could have a key logger =
+=3D&gt; keyboards run in sandbox without network access (unless user allows=
+ it)
+</pre></li>
+
+<li><pre class=3D"student-text">- Untrusted BIOS, OS, etc initialized under=
+ the Notes app =3D&gt; secure boot chain
+- Day-zero iOS bugs; downgrading iOS to a version with a known bug =3D&gt; =
+system software authorization
+- Stealing crytographic high value products through memory mismanagement or=
+ side channel attacks =3D&gt; secure enclave coprocessor
+- Brute forcing access to the phone =3D&gt; touchID/faceID security
+- Physical access to underlying memory/storage =3D&gt; file data protection
+- Improperly shared user passwords =3D&gt; keychain data protection
+</pre></li>
+
+<li><pre class=3D"student-text">- iOS=E2=80=99s System Security design cons=
+iders the case when bad code has somehow made it onto an iPhone. When an iP=
+hone is turned on, it executes immutable read-only code laid down during ch=
+ip fab to obtain the public key used to load the boor loader, leading to a =
+verifiable chain of trust throughout starting up the kernel. Only Apple-sig=
+ned code can be downloaded onto an iPhone. Additionally, if Ben Bitdiddle i=
+s able to figure out that his iPhone=E2=80=99s firmware has been compromise=
+d, he may manually restore his phone back to a good state before his files =
+are stolen.
+
+- Apple prevents an attacker from downgrading a device to exploit a vulnera=
+bility in an older version by having an authorization server handle all iOS=
+ upgrades. When an iPhone gets an upgrade, it always communicates the devic=
+e=E2=80=99s ECID and a random anti-replay value, which the server stores. T=
+he server will not allow a device to go back to a previous version. Along t=
+he same thread, Apple also tries to wirelessly push all iOS upgrades ASAP s=
+o that devices are not vulnerable.
+
+- The Secure Enclave is an isolated coprocessor that maintains data protect=
+ion and encrypts data saved to the file system. Even if the kernel has been=
+ compromised, it still performs its user confirmation duties to spec.
+
+- Touch ID, Face ID, and having a strong passcode helps Ben Bitdiddle preve=
+nt someone from directly opening his phone and getting access to his confid=
+ential notes.=20
+
+- Each device has a unique UID that ties data to that device. If a device i=
+s lost or stolen, Apple can remotely wipe that device using the UID to make=
+ sure data isn=E2=80=99t compromised.
+
+- Each file created on the data partition is encrypted and given a key so t=
+hat specific permissions can be given out. For example, a third party app t=
+hat Ben downloads from the App Store will not have the permissions to see h=
+is notes unless he opts to give it permissions. Additionally, all third-par=
+ty apps are sandboxed so that they can=E2=80=99t make changes to the device=
+ or access data from other apps.
+
+- Every app available on the App Store is verified by Apple and all app dev=
+elopers are tied to real world identities. iOS also doesn=E2=80=99t allow u=
+sers to install unsigned apps or run untrusted code. This prevents maliciou=
+s apps from being downloaded.
+
+- ASLR (address space layout randomization) happens every time an app is la=
+unched. This prevents exploits that take advantage of knowledge of the addr=
+ess space.</pre></li>
+
+<li><pre class=3D"student-text">- upgrading iOS: iOS updates are signed by =
+Apple so that you can't have malicious updates
+- you can't downgrade your iOS to prevent attackers from exploiting vulnera=
+bilities that have been fixed in the newest version, this is enforced by sy=
+stem software authorization
+- secure enclave: even if the kernel is compromised, the secure enclave is =
+separate, and handles all the key generation and other security related com=
+putations
+- touch ID, face ID, passcode: prevents attackers from unlocking your phone
+- file data protection: data is encrypted (with varying security levels) so=
+ that you can't read memory without decrypting it, usually with a class key=
+ which is derived from the hardware key and sometimes your passcode
+- app security: apple requires developers to be registered and have their i=
+dentity verified, so it decreases the chance of bots posting malicious apps=
+ to the app store. apple also code reviews each app
+- apps are sandboxed and they're run on the non-priviledged user 'mobile' s=
+o you can't access files you're not supposed to access</pre></li>
+
+<li><pre class=3D"student-text">1) Attacker obtains the phone, and tries to=
+ access the data directly -- Face ID,
+Touch ID, Passcode.
+
+2) Attacker obtains the phone, and tries to access the data by downgrading =
+the
+system software to exploit an older security flaw -- System Software
+Authorization.
+
+3) Attacker obtains the phone, and tries to modify the boot loading firmwar=
+e to
+gain access to data -- chain of trust signing of system components.
+
+4) Attacker obtains the phone, and tries to access the data by directly
+accessing the flash storage -- AES-256 cryptography for flash storage
+</pre></li>
+
+<li><pre class=3D"student-text">1) Attacker tampers with the lowest levels =
+of software, i.e. the kernel, to gain control of the system. Apple mitigate=
+s this by cryptographically signing these elements and having the Boot ROM =
+(immutable hardware code, implicitly trusted) verify the signatures and run=
+ the kernel.  If this fails, it goes into DFU mode, which returns the phone=
+ to trusted settings =E2=80=9Cwith the certainty that only unmodified Apple=
+-signed code is present.=E2=80=9D
+2) Attacker disguises bugs in software updates. Apple mitigates this by cry=
+ptographic signing/verification.  Apple also prevents installing software d=
+owngrades to previous versions without certain security fixes.=20
+3) Attacker compromises the kernel to get personal data. Apple stores and p=
+rocesses personal data on a Secure Enclave. There is also high level of enc=
+ryption for user at a, and the Apple File System with subdivides access key=
+s to limit permissions for files.
+4) Attacker steals a phone. Apple has certain conditions where you must ent=
+er a passcode instead of Touch ID or Face ID that try to maintain the power=
+ of a strong passcode. The device passcode provides entropy for certain enc=
+ryption keys and is entangled with the device=E2=80=99s UID. Attempts to br=
+ute-force passwords is calibrated so that one attempt takes 80 ms. This mea=
+ns it would take many years to brute-force a password.=20
+5) Attacker designs a malicious app.  iOS makes sure that apps are signed a=
+nd verified, and are sandboxed to protect user data.=20
+</pre></li>
+
+<li><pre class=3D"student-text">1) His phone gets stolen
+	- Apple supports the ability to remotely wipe the data on a device
+	- A device requires some sort of authentication (passcode, fingerprint, fa=
+ceID)
+2) An attacker can try to unlock Ben's phone using his face while he's slee=
+ping
+	- FaceID only works if it detects that the user's eyes are open.
+3) A malicious application can access confidential note data and relay that=
+ across the network to the attacker's machine.
+	- Apple has a very strict app developer program. Also, applications are sa=
+ndboxed and have no explicit access to other application's data
+	- The iOS file system is extremely secure and makes heavy use of cryptogra=
+phy
+</pre></li>
+
+<li><pre class=3D"student-text">1) Threat: Someone steals the memory chip a=
+nd tries to read its contents 	Solution: All data is encrypted before stori=
+ng, done quickly using the builtin AES-256 crypto engine
+2) Threat: Application tries to access file.	Solution: All files protected =
+by default, key required to access file
+3) Threat: Bruteforce attack on keys in keychain			Solution: Strong encrypt=
+ion
+4) Threat: Someone tries to read the contents of the file in an application=
+ 	Solution: All applications Sandboxed, and their directory is randomly ass=
+igned at installatio. Also,  all apps need to be certified by Apple.
+5) Threat : Memory corruption		Solution: Address space layout randomization=
+, sandobixing(minimizing damage) and all apps need to be certified by Apple=
+. Lastly, memory pages as non-executable=20
+6) Threat: Attack through I/O device		Solution: Certificate issued by apple=
+ neccesary for device to communicate, otherwise, can only access reduced da=
+ta stream (analog audio, UART)
+</pre></li>
+
+<li><pre class=3D"student-text">1.
+	Attack: Adversary exploits a security vulnerability in an old iOS version
+	Defense: iOS uses System Software Authorization to ensure that devices are=
+ continuously updated to=20
+			 newest security specs, and downgrades are not possible. All updates mus=
+t be verified to be signed=20
+			 by Apple to go through. This is done in the Secure Enclave. Only truste=
+d code can be run,
+
+2.=20
+	Attack: Adversary tries to break into the phone by changing the password, =
+manipulating faceID or touchID.
+   	Defense: iOS uses the Secure Enclave to set user permissions that makes=
+ it harder to do that. FaceID and touch
+   			 ID keys are not accessible when the phone is unlocked
+
+3.  Attack: Adversary tries to access files with a malicious app.
+    Defense: Apple implements a data protection class to set permissions on=
+ certain files. Also, the app must be
+    	     signed with an Apple certifcate of approval to run. Applications =
+are sandboxed.
+
+Defense: Notes have option to be secure and be encrypted.=20
+</pre></li>
+
+<li><pre class=3D"student-text">1. Attacker provides own malicious, modifie=
+d boot-up software which grants him access to files on the device. Secure b=
+oot chain in iOS software prevents this, as it has a hardware root of trust=
+ and checks the Apple Root CA.
+2. Attacker installs an older version of iOS and exploits a bug that has be=
+en fixed since in order to gain access to files on the device. System Softw=
+are Authorization prevents this to prevent downgrade installations.
+3. Attacker attempts to brute-force guess Ben's passcode to get access. Esc=
+alating time delays after wrong attempts and large iteration counts to slow=
+ down attempts are aspects of iOS security that try to stop this.
+4. Attacker takes device almost immediately after Ben has been using his no=
+tes file. Data Protection classes can prevent this, for example, by assigni=
+ng the file a Complete Protection class which would require it to log in ag=
+ain with a passcode or touch ID.
+5. Attacker tries to add own fingerprint to Keychain in order to be able to=
+ access a file protected by a Keychain item. This can be prevented by ACLs,=
+ because access to items can be specified to ensure Touch/Face ID hasn't ch=
+anged since the item got added.
+6. Attacker tries to get access to an iCloud backup of Ben's notes. This is=
+ prevented by keybags, more specifically iCloud Backup keybag.
+7. Attacker creates a malicious app and tries to get Ben to download it. Th=
+is is hopefully prevented by the App code signing requirements Apple has.
+8. Attacker creates a malicious app but gets it certified by Apple, and tri=
+es to get Ben to download it and gain file access through the app. In iOS, =
+third-party apps are "sandboxed" so they can't make changes to the device o=
+r access files stored by other apps. </pre></li>
+
+<li><pre class=3D"student-text">1. Attacker tries to sideload a malicous OS=
+ either by having physical access or MITM the upgrade process:
+  - Verified and trusted boot chain, leading to the load of a Apple Signed =
+software environment
+    preventing an adviserary to sideload a malicous OS.
+  - Hardware copy of the Apple public key to ensure that updates are signed
+  - Preventing downgrades to potentially trusted but vulnerable versions
+  - The device proves that no modification has been taken place and that th=
+e
+    upgrade path is correct.
+2. Isolation of key cryptographical routines and secret.
+  - Protecting against kernel vulnerabilities
+  - Secure Enclave co-processor using encrypted memory
+3. Prevention of unauthorized access to your device
+  - FaceID
+  - TouchID
+  - Passwords &amp; brute-force prevention
+4. Isolate sensitive data in case of a compromise
+  - Secure enclave
+  - hierarchy of keys
+  - per-file keys
+5. Prevention of stealing data through malicous apps
+  - all apps must be signed and verified
+  - apps are sandboxed
+  - ASLR to prevent explotation of memory bugs
+  - use of Execute Never pages and apple only W+X pages
+  - Sandboxing of app extensions through IPC
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">1. Prevention of malicious kernel code with=
+ the secure boot chain.=20
+2. Prevention of bugs in older verions of iOS by disallowing downgrade.=20
+3. Prevention of unauthorized access with passcode, FaceID and TouchID.=20
+4. Prevention of data access with app-level file encryption.=20
+</pre></li>
+
+<li><pre class=3D"student-text">1. The adversary get access to the physical=
+ memory.=20
+	The data on the disk is encrypted.=20
+2. The adversary exploit bugs in the kernel.
+	Downgrade system or installing a modified system is not possible due to th=
+e software authorization. The adversary need to exploit bugs in the up-to-d=
+ate system which is more difficult.
+3. The adversary unlock the phone.=20
+	Cryptographic algorithms protect password from brute-force attempts.
+	Enclave and multiple mechanism protects Touch ID and Face ID.=20
+4. The adversary exploit a buy in an app.
+	Apps are sandboxed.=20
+	APFS keep track the permission of each file. </pre></li>
+
+<li><pre class=3D"student-text">1. The paper stated that "When a face is de=
+tected, Face&nbsp;ID confirms attention and intent to unlock by detecting t=
+hat your eyes are open and directed at your device; for accessibility, this=
+ is disabled when VoiceOver is activated and, if required, can be disabled =
+separately." Does this mean that apple does not require people using VoiceO=
+ver (generally blind people), to have their eyes open and directed at the d=
+evice in order for the device to unlock? I see why this makes sense, but do=
+esn't this also mean that these phones are inherently vulnerable, without t=
+he user knowing it, to somebody picking up the phone, pointing it at the bl=
+ind person's face, and then being able to unlock the phone? This seems ques=
+tionable, but I can see why it might be a worthwhile tradeoff.
+2. If an attacker was able to guess a user's passcode, what data would they=
+ now have access to? Is it all the data except for the that in the full-pro=
+tection class?
+3.  The paper writes "If Settings &gt; Touch&nbsp;ID &amp; Passcode &gt; Er=
+ase Data is turned on, the device will automatically wipe after 10 consecut=
+ive incorrect attempts to enter the passcode." Why is this not a terrible i=
+dea? Wouldn't this mean an attacker can make a user lose all their data sim=
+ply by trying to log into the phone? Shouldn't there be some security mecha=
+nism in place to ensure this setting can only be used if the data is backed=
+ up?
+</pre></li>
+
+<li><pre class=3D"student-text">6.858 Lecture 10 Question
+
+One attack that Apple considers is applications attempting to collect infor=
+mation from another. This is prevented at a practices level by Apple inspec=
+ting and signing applications
+before they can run on its hardware. It is prevented at a process level by =
+sandboxing each application and providing defined ways for applications to =
+interacct. It allows for app
+extensions, but even thes run in their own sandbox.
+
+His notes are also protected on storage if another program were to access i=
+t, with file and intrafile granularity enfrorced by ACL-like policies, and =
+enforced by multi-stage encryption=20
+enforced by hardware on the storage pipeline. His files and backups are enc=
+oded, in part, with his devices uid, preventing someone else from using bac=
+kup devices to access
+the files. His files are also locked at the OS level until his password is =
+entered, and password policy fallsback to the stronger non-biometric altern=
+ative after several incorrect
+tries. These tries are also rate-limited on device by timeouts, preventing =
+easy brute-forcing. Key-checking and user-authentication are enforced by th=
+e secure-enclave
+which has the important device specific keys in read-only-memory and does n=
+ot disclose them. The entire boot chain is signed and verified by keys in t=
+he security enclave utilizing
+read-only-memory. Finally, anti-rollback measures are in place in the secur=
+ity enclave to prevent otehrs from downgrading to vulnerable editions of so=
+ftware.</pre></li>
+
+<li><pre class=3D"student-text">&lt;F28&gt;Ben Bitdiddle has an iOS device =
+that he uses to keep track of confidential
+notes. What are the different attack scenarios that Apple considers where a=
+n
+adversary tries to obtain Ben's notes, and what part of the iOS security
+architecture prevents those attacks? &lt;F29&gt;
+
+- Attacker tries to send a fake software update to the iPhone and compromis=
+e its
+filesystem security --&gt; All software updates are cryptographically verif=
+ied.  -
+Attacker compromises the kernel to change the user's password to log in and
+access their notes app --&gt; The Secure Enclave protects the memory space =
+with
+passwords, TouchID, and FaceID.  - Attacker physically accesses the iPhone =
+and
+tries to open it --&gt; iOS requires a password, which has escalating time =
+delays
+and an 80ms per password time, making it infeasible to bruteforce.
+- Attacker compromises Apple servers to get your UID to decrypt your data -=
+-&gt;
+The UID is generated within the Secure Enclave and is not accessible outsid=
+e of
+it.
+- Attacker opens up the phone board and reads the bits written to it --&gt;=
+ Secure
+data is put in Effaceable Storage, where it gets overwritten (e.g. with NAN=
+D).
+- Attacker compromises the Mail app to gain access to the Notes app --&gt; =
+All
+files are encrypted with classes and per-file keys, so Mail can't access No=
+tes.
+- Attacker requests the keychain password of your Apple account to log in t=
+o
+your iCloud and read your synced Notes --&gt; Only other Apple apps can req=
+uest
+your keychain password for Apple.
+- Attacker downloads and installs a fake Notes app from the browser, which =
+Ben
+mistakes for his Notes app and writes things in --&gt; All apps have to be =
+signed
+by Apple to be downloaded to the device.
+- Attacker exploits a buffer overrun to execute a return to libc attack --&=
+gt; iOS
+uses ASLR so the attacker does not know where to overrun.
+</pre></li>
+
+<li><pre class=3D"student-text">&gt; Bootchain
+
+Booting on OS not signed by Apple
+Exploiting vulnerability in older version of iOS where vulnerabilities are =
+not yet patched
+Providing fake software updates
+Replaying passcode change
+
+&gt; Credentials / Secure Enclave=20
+
+Spoofing the face to deceive FaceID
+Using a malicious app to retrieve data from Touch ID or FaceID
+
+&gt; Data encryption
+
+Stealing the hard drive=20
+Stealing back up files
+
+&gt; App sandboxing
+
+Malicious app that reads notes files
+</pre></li>
+
+<li><pre class=3D"student-text">A) The device's unique ID and device group =
+ID are  AES 256-bit fused or=20
+compiled into the application processor and secure enclave during manufactu=
+ring.=20
+This means that no one will know the UID or GID ever, making data safe from
+Apple or any of its supplies. This protects from an attacker stealing the=
+=20
+unique ID and doing nefarious things with it, such as accessing Ben's notes=
+.
+
+B) To protect against brute force attacks, there is a count that makes each
+attempt slower (and escalating time delays that is enforced even if the=20
+device is restarted). Then the attacker cannot unlock Ben's phone to get
+to his notes.
+
+C) The iOS Keychain restricts access to passwords and keys while simultaneo=
+usly
+trying to make users' lives easier.=20
+
+D) iOS requires all exe code by signed with an Apple-issued certificate. Th=
+is
+helps guard against malicious agents putting false apps on the iPhone that
+Ben could download and compromise his notes.=20
+
+E) All third-party apps are sandboxed, so that they can't just access whate=
+ver
+they want on the phone. This could prevent an attacker from using another
+app to access Ben's memory.  </pre></li>
+
+<li><pre class=3D"student-text">Adversary might have found a vulnerability =
+in an older version that could then exploit access to the Notes, but once t=
+he device has been updated, the device cannot be downgraded. -- for devices=
+ with Secure Enclaves; this means that.  Further, only signs updates that A=
+pple has created via EICD; this also ensures that an old version from anoth=
+er device cannot be copied to another
+The fingerprint sensor is encrypted and authenticated and cannot be read by=
+ the processor; the key is strong, random and different for each processor;=
+ the raster scan is discarded after being analyzed.  A user might have want=
+ed to get access to the key to unlock the device.  Thereafter, they could t=
+hen get access to the notes app by unlocking the device with the key.
+Face Id infor is not saved in backups.  An adversary might have wanted to g=
+et access to the stored Face information.  This would mean that they then m=
+ight be able to unlock via Face ID by making use of that data in some form,=
+ taking it from a saved backup.  This is not possible.
+All exeecuted code must be signed with an Apple-issued certificate and ther=
+e is no side loading of applications.  An adversary might have created a ma=
+licious application that could break out of the sanbox and/or gain acess to=
+ the iPhone.  By ensuring that the code must be approved by Apple and by no=
+t allowing side loading, this minimizes the number of malicious application=
+s that are available to the user, and it directly links any malicious appli=
+cations with an organization or user.
+Sandboxing of third party applications and apps that need access outside of=
+ their files/home dir must make use of App APIs.  Apps run as non-privilege=
+d users.  Since the application only has access to its own files and home d=
+ir, and the adversary cannot create an application that would access the us=
+er's Notes.  This could only be done if it was allowed through Apple Servic=
+e API, and therefore, it's much less likely that the adversary would be abl=
+e to do anything malicious.</pre></li>
+
+<li><pre class=3D"student-text">An adversary could try to:
+
+Hack into the phone by stealing the TouchID/FaceID data. Apple encrypts the=
+ data and stores it on the Secure Enclave and the data never leaves the dev=
+ice itself, so it would be very difficult to obtain.
+
+Steal the notes from flash memory. Apple encrypts the files using something=
+ called Data Protection. The hacker can only decrypt the files if they have=
+ the hardware, passcode, file system keys, which are wrapped in many layers=
+ of security and are difficult to obtain.
+
+Steal the user's passcode. The passcode is entangled with the device UID, s=
+o attempts must be made on the device itself. Attempts are rate-limited, ma=
+king brute force attacks hard.=20
+
+Obtain the password to the app the user uses to take notes. Apple provides =
+an iOS keychain which stores these notes securely. These passcodes can only=
+ be shared between apps of the same developer and are protected using a cla=
+ss structure similar to Data Protection.
+
+Install a malicious app on the user's phone to obtain access to the notes a=
+pp. All third-party apps are sandboxed and cannot access files that belong =
+to another app.=20
+</pre></li>
+
+<li><pre class=3D"student-text">An adversary gaining physical access to the=
+ device could try to unlock it to access notes; iOS protects against this t=
+hrough its passcode/TouchID/FaceID security, as well as through effaceable =
+storage that enables secure data erasure after enough unsuccessful unlock a=
+ttempts (if enabled).=20
+
+An adversary could try to use a device backup stored elsewhere (e.g. iTunes=
+ backup) to see backed-up versions of notes using a different device; howev=
+er, Keychain items created for such iTunes backups have non-migratory acces=
+ibility permissions, implying that the backups wouldn't be accessible on an=
+other device.
+
+An adversary could install an app or extension hoping to gain access to fil=
+es through app functionality; however, all third-party apps are vetted, san=
+dboxed, and effectively chrooted to a randomly assigned unique home directo=
+ry -- its access to files elsewhere can only be achieved by iOS-provided se=
+rvices.
+
+Exploits of memory corruption bugs are prevented by address space layout ra=
+ndomization; default apps use ASLR and third-party apps developed with Xcod=
+e compile apps with ASLR support on.
+
+More hardware-specific parts of the iOS security architecture that increase=
+ security of notes on an iOS device include -- the crypto engine into the D=
+MA path that encrypts all file contents being written to memory, effaceable=
+ storage enabling secure data erasure, Data Protection that uses a heirarch=
+y of keys to control file access and decryption, and the Secure Enclave tha=
+t provides the cryptographic operations for Data Protection key management.=
+</pre></li>
+
+<li><pre class=3D"student-text">An attacker could attempt to access the con=
+fidential notes by fooling Ben into installing an app that contains malicio=
+us code. iOS protects against this by sandboxing all third-party apps, conn=
+ecting the code signature of an app to a real developer identity, and check=
+ing the code signature each time the executable is loaded to ensure that th=
+e app that was tested and approved by Apple has not been modified.
+
+The same signature checks are performed on all system processes as well, wh=
+ich mitigates the effect that an attacker who compromises the iOS kernel co=
+uld have, since the attacker would not be able to modify the system code in=
+ any way.  </pre></li>
+
+<li><pre class=3D"student-text">An attacker could try to obtain Ben's notes=
+ by physically getting ahold of the phone and unlocking it. However this ca=
+n only be done using  Ben's passcode, Touch ID or Face ID, which is process=
+ed by the Secure Enclave. The attacker can't access the mathematical data f=
+or face detection, because this is secured in the enclave as well.
+Another attack could be to attempt to access phone data through a third-par=
+ty app. All the apps are sandboxed, so they can't access information from o=
+ther apps, and data stored in flash memory is protected by Data Protection =
+(and Notes specifically implements Protected Until First User Authenticatio=
+n).
+The attacker could also try to downgrade the iOS version in order to exploi=
+t vulnerabilities in previous code that have since been fixed. However, sys=
+tem software authorization prevents downgrade.
+Another attack could try to compromise the kernel but things are compartmen=
+talized, so the Secure Enclave maintains integrity of protection even if th=
+e kernel is compromised.</pre></li>
+
+<li><pre class=3D"student-text">Answer to Paper Question:
+
+1-a) Strategy - Corrupt booting sofware to grant backdoor access to read no=
+tes
+1-b) Protection - Booting software is all authenticated using ROM public ke=
+y. Furthermore, data is securely encrypted
+
+2-a) Strategy - Using data-accessibility vulnerabilities to read the confid=
+ential data
+2-b) Protection - Data protection classes protect confidential data
+
+3-a) Strategy - Use another application to access condidential data
+3-b) Protection - Use sandboxing to prevent any privilege escalation</pre><=
+/li>
+
+<li><pre class=3D"student-text">Answer to Paper Question:
+
+Qn 1
+----
+a) Strategy: Grant backdoor access to read notes by corrupting bootloader
+b) Protection: Authenticate bootloader using ROM public key and encrypt all=
+ data
+
+
+Qn 2
+----
+a) Strategy: Read confidential data by exploiting data-accessibility vulner=
+abilities
+b) Protection: Protect confidential data using data protection classes
+
+
+Qn 3
+----
+a) Strategy: Read confidential data using another application
+b) Protection: Sandbox the application for defense-in-depth in the event of=
+ process compromise</pre></li>
+
+<li><pre class=3D"student-text">Answer:=20
+Can't exploit phone by booting a different OS that looks like iOS and can a=
+ccess iOS's memory due to secure boot chain.
+Can't downgrade version of iOS to a previous version with unpatched exploit=
+s and access notes using one of those exploits due to system software autho=
+rization.
+Secure Enclave is trusted and secured and does authentication of Touch ID a=
+nd Face ID so an attacker can't login using their fingerprint or face.
+You can't access the data on the device while it's locked through a differe=
+nt means, because the Data Protection keys are wrapped using a key in the S=
+ecure Enclave that is only provided when TouchID or FaceID finds a match.
+The memory can't be moved into a new device and read there, because it's en=
+crypted using the UID of that device which is only accessible on that speci=
+fic device because it is written directly into the Secure Enclave during ma=
+nufacturing.
+Data Protection keeps all files locked using a class key and a per-file key=
+, so they can only be accessed when the AES crypto engine unlocks the file =
+using the per-file key, which can only be accessed when it is unlocked with=
+ the class key.
+Brute force attacks on the passcode must be done on the device, and each en=
+try is made to take 80 miliseconds, plus consequtive incorrect entries caus=
+e additional time between allowed entries and may wipe the device, so brute=
+ force unlocking the phone is unreasonable.
+If someone tries to make a malicious app, they must have their identity ver=
+ified with Apple before they can sign their app to get it allowed to be dis=
+tributed on the app store, and then their app is reviewed by Apple before i=
+t goes live on the store.
+When an app loads, it checks the code signature to make sure it hasn't been=
+ modified since it was signed.
+All 3rd-party apps are sandboxed, so they can't access the notes in the Not=
+es app which is an app made by Apple and they're running as unprivileged us=
+ers so they can't escalate their privileges to be able to access the files.
+Address space layout randomization prevents memory overflow bugs.
+Can only talk to accessories that are verified as approved MFi using signat=
+ure and challenge/response.
+
+</pre></li>
+
+<li><pre class=3D"student-text">App Security:
+First, since Ben is storing notes, it's inevitable he will need an App for =
+editing and saving to storage. The App is very much unlikely to be develope=
+d by Ben himself, but more likely to be developed by Apple or third parties=
+. In either case, the app will be signed by Apple, or a certificate issued =
+by Apple. This protects from an attacker modifying the software and Ben usi=
+ng the modified version without knowing. Then, iOS sandboxes apps so that o=
+ther apps/processes cannot access the stored files(i.e. notes) by the Note =
+App.
+File Storage Security:
+The SDK providers a suite of APIs for the Note App to store its contents se=
+curity on storage. Each file on a device is assigned a "class" at creation =
+time. The Note App will have to pick appropriete protection level given its=
+ usecase. Regardless of the level of protection an App choses, the basic id=
+ea is that each file is associated with a Key, which is generated from the =
+user passcode and device UID. The key is emphemoral in the sense that it is=
+ discarded whenever the file in consideration is expected to be encrypted(s=
+o that next access will require the user to input passcode for a new empher=
+moral key). The device UID is encrypted on chip through hardware, and the a=
+ssumption here is that no firmware/software will have direct access to that=
+ number.=20
+Passcode Security:
+All above assumption is based on the assumption of a passcode provided by t=
+he user. The passcode is "entangled" with the device's UID, so only brute-f=
+orce attempts can let an attacker have acess to passcode. Furthermore, brut=
+e-force attack is further discouraged by using delays between attemps and f=
+orcefully erasing thd device after X number of attemps.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Apple considers a wide range of attack scen=
+arios where an adversary tries to steal Ben's notes. The adversary could tr=
+y to steal Ben's data by reading the files. However, the files used to stor=
+e Ben's notes are enrypted by a hierarchy of keys, ultimately ending with a=
+ key that depends on the device UID (which differs for each device) and the=
+ user's passcode, so the files are cryptographically secure. The attacker c=
+ould also try to remove the memory chip, but all memory chip data is encryp=
+ted with the UID, so the device will recongize that the chip is from the wr=
+ong device and not be able to decrypt it. The attacker could try to corrupt=
+ the operating system, but the OS and all other software running on iOS is =
+cryptographically verified by a public key inside the Secure Enclave before=
+ being allowed to run. The adversary could also make a fake Notes applicati=
+on, but all applications have to be cryptographically signed by Apple. The =
+adversary could try to use their third-party app to access the Notes data, =
+but all apps are run in a sandbox that prevents them from unauthorized acce=
+ss of other data.
+</pre></li>
+
+<li><pre class=3D"student-text">Apple considers attack scenerios such as br=
+ute force password discovery, spoofing face/touch ID, malicious 3rd party a=
+pps, physical deconstruction of the phone to get information, and malicious=
+ attackers within Apple.  A large iteration count for password checking, re=
+quiring a password after a certain amount of failed face/touch ID attempts,=
+ sandboxing, cryptographically tying the UID to a particular device and usi=
+ng the UID in the key heirarchy protecting the file system, and generating =
+the UID within the Secure Enclave all respectively prevent these attacks.
+</pre></li>
+
+<li><pre class=3D"student-text">Apple considers many scenarios in which an =
+adversary tries to install an older OS onto the device in order to gain acc=
+ess to the system through a known vulnerability. The architecture prevents =
+this by using a chain of trust evaluation in order to ensure the provided =
+=E2=80=9Cupdate=E2=80=9D is actually the data that was provided by the serv=
+er.=20
+
+To make sure attackers can not use brute force methods to guess user passwo=
+rds, Apple imposes time delays based on the number of invalid passwords pro=
+vided.=20
+
+In order to securely encrypt the files in the case that the data is leaked,=
+ Apple also uses the user supplied unlock passcode to provide entropy to th=
+e encryption keys. </pre></li>
+
+<li><pre class=3D"student-text">Apple considers physical and software attac=
+ks when securing iOS. Physical attacks are prevented with TouchID, Passcode=
+, and FaceID.=20
+Software attacks are prevented because apps can't access other file systems=
+ and data is encrypted on the device.
+</pre></li>
+
+<li><pre class=3D"student-text">Apple considers physical device access, net=
+work attacks, and cryptographic vulnerabilities. The physical device is pro=
+tected by passcode and biometric identification, since data is encrypted by=
+ default having access to device memory without the passcode would not allo=
+w the attacker to extract any meaningful data. Network attacks are prevente=
+d by using extension endpoints for cross-system communication. The use of a=
+ secure enclave keeps execution and key management hidden from observers. T=
+he crypto engine makes it feasible for the Ben to encrypt his notes by defa=
+ult and provide deletion guarantees for the data. System state, passcodes, =
+and device specific details are used to generate enough entropy to create t=
+he keys which secure the device.
+</pre></li>
+
+<li><pre class=3D"student-text">Apple considers several attacks including a=
+ malicious app, to an unauthorized user. Apple has an App sandbox and user =
+login IDs for each respective attack.</pre></li>
+
+<li><pre class=3D"student-text">Apple considers the following attack scenar=
+ios:
+
+* An attacker could attempt to have the user download a malicious firmware =
+update, which would give the attacker kernel access. This is prevented by r=
+equiring iOS updates to be signed by Apple.
+* An attacker could physically obtain the user's phone while it's locked, a=
+nd attempt to unlock it. This is prevented by allowing the user to store a =
+passcode, fingerprint, face ID, etc. in the Secure Enclave.
+* An attacker could physically obtain the user's phone while it's locked, a=
+nd attempt to read the data off of the hardware. This is prevented by encry=
+pting the device storage, and not allowing any un-signed software to run on=
+ the device.
+* An attacker could create an iOS app, convince the user to download it, an=
+d try to read the notes while the app is running. This is prevented because=
+ apps cannot read each others' data.
+* An attacker could attempt a social engineering attack where they try to c=
+onvince the user to copy data from another app into the attacker's app. In =
+theory, this is prevented by requiring all apps on the App Store to be manu=
+ally reviewed by Apple.
+</pre></li>
+
+<li><pre class=3D"student-text">Apple considers the following attack scenar=
+ios:
+
+- attacker gains control over bootloads (protected by verifying boot chain)
+- installing attacker code on a device (protected by only Apple-signed code=
+ can be installed on a device)
+- brute force passcode attacks (choose six-digit passcode, TouchID, FaceID)
+- attacker gains access to one of the file keys (there are several file key=
+s needed to see a file's contents)
+- attacker creates malicious third-party app (apps must be signed by an App=
+le-issued certificate)</pre></li>
+
+<li><pre class=3D"student-text">Apple designs their products such that lowe=
+r levels of software can't be tampered with - each step of the startup proc=
+ess is crptographically signed by Apple. It forces iOS upgrades such that a=
+ttackers can't get a device and install an older version of the OS and expl=
+oit a bug in that code. Apple has its own set of Data Protection classes th=
+at determine when specific data on the phone should be accessible.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Apple first considers attacks on the lowest=
+ level during the boot-up process. These are mitigated mainly through code =
+signing. To ensure updates are secure apple uses a system where measures ar=
+e sent and verified to ensure integrity.
+To ensure an attacker cannot just unlock the device other security features=
+ are handled by the secure enclave such as touch id and face id,
+In terms of encryption, the paper states that the devices uid and gid are g=
+enerated an manufacture and are unreadable by software or firmware. Only th=
+e encryption hardware can use them as keys. This authorization ensures that=
+ one cannot decrypt on hardware different from that it was encrypted on eve=
+n if given the encryption key.
+Files are encrypted on iOS by assigning them to classes. In order to unlock=
+ a file, it's class key must first be unlocked and then the file can be dec=
+rypted using the file's key. If Ben copies his notes, the file system begin=
+s encrypting the clone with different key[s] as the fs is copy-on-write. Th=
+e file keys are stored in it's metadata which is encrypted with another key=
+ provided by the secure enclave.</pre></li>
+
+<li><pre class=3D"student-text">Apple has prepared for many scenarios in wh=
+ich an adversary would try to access Ben's notes:
+- device theft: assuming Ben has a passcode, his notes files are likely enc=
+rypted and only available upon device unlock
+- authentication spoofing: authentication methods like FaceID learn to dete=
+ct spoofing, while passcode entries are deterred with delays upon incorrect=
+ password entries
+- physically plugging into the device: only authorized MFi devices can comm=
+unicate with the iPhone
+- stealing the flash storage device: device storage is encrypted with keys =
+specific to the device and cannot be recovered by any other iOS device
+- installing malicious software on bootup: iOS device bootup verifies the n=
+ext step before proceeding, so malicious code cannot be run to boot the dev=
+ice
+- access by another malicious app: apps privileges are highly sandboxed, an=
+d apps are tied to real identities to dissuade submission malicious apps to=
+ the App Store
+
+</pre></li>
+
+<li><pre class=3D"student-text">Apple is worried about software reversions =
+leading to security exploits. To prevent this they disallow software revisi=
+ons through multiple levels of checks. They are also concerned about attack=
+ers managing to install fake bootload software, which they preventby bootlo=
+ading to ROM section that holds the main stuff. Malware apps also seems to =
+be a fear, which they protect agains through app code signing and runtime p=
+rocess security.</pre></li>
+
+<li><pre class=3D"student-text">Apple protects against three main types of =
+attacks
+
+- Compromise of the OS. This is prevented by establishing a chain of trust =
+during boot, that ensures the OS was issued by apple and was not modified.
+- Unwanted device access. This is preventing by encription for the differen=
+t identification, where decryption and access granting only ocurrs behind a=
+ secure enclave.
+- Devide data access. This is prevented by user data encription, as part of=
+ apple's Data Protection technology.
+</pre></li>
+
+<li><pre class=3D"student-text">Apple protects its file data from being sto=
+red in plaintext in its flash memory
+by providing Data Protection to its files and file data installed on the iO=
+S
+device. This Data Protection is a hierarchy of encryption on the files base=
+d on
+accesibility of the file, and this system's layered characteristic prevents
+applications from being able to read these keys when they are accessing fil=
+es,
+therefore they can't arbitrarily gain access to reading files on the file
+system without the proper priveledges.
+
+Additionally, Apple ensures that all the apps on its system are coming from
+trusted sources, and it checks that Apple made apps are signed by Apple on
+startup. This ensures malicious apps can't tamper with or access Ben's secu=
+re
+notes.
+
+Apple sandboxes all of the apps running on its devices and prevents them fr=
+om
+modifying or viewing data stored by other apps. Additionally, they provide =
+a
+set of defined services for viewing files outside of your app's files. Thes=
+e
+services don't allow the escalation of priveledge or other malicious action=
+s. This
+prevents malicious apps from viewing data that is protected by Ben's note's
+app.
+
+Finally, to prevent return-to-libc attacks, ASLR randomly assigns memory
+addresses for common exploitable system libraries and related things, that =
+can
+allow for sophisticated exploits. This makes return-to-libc and other attac=
+ks
+much harder to execute, making arbitrary system calls and such harder to
+achieve.
+</pre></li>
+
+<li><pre class=3D"student-text">Apple takes into account someone stealing B=
+en's phone and trying to take the main memory and trying to decrypt it, att=
+acking the ios kernel either by downgrading it or man in the middling an up=
+date. The keys for unlocking and accessing the device are stored on the sec=
+ure enclave and further protected by requiring multiple subsystems, e.g. fa=
+ceID or touchID, to also work in order to unlock the phone.</pre></li>
+
+<li><pre class=3D"student-text">Apple tries to prevent attacks on many diff=
+erent levels. Going from higher to lower levels, apple does the following:
+1) To prevent a malicious app from accessing the notes, iOS uses sandboxing=
+ and isolates data from different applications.
+2) Apple tries to make sure Ben is not installing a malicious note-taking a=
+pp that could steal his data by providing code signing and disabling any un=
+trasted sources.
+3) To prevent bugs introduced during the development of the note taking app=
+, Apple provides an extensive toolkit for Data Protection in their SDK
+4) To prevent the notes to being stolen from the physical storage, Apple us=
+es different policies on encrypting stored files, and, presumably, keeps th=
+e data encrypted until the devices is unlocked.
+5) To protect the data from attepmting to use the memory devices within ano=
+ther, presumably compromised device, Apple limits the data to the current h=
+ardware by encrypting it with current UID.
+6) Apple also encryptes the backups, so the notes won't get extracted from =
+the backups.=20
+7) Apple ensures there is no way to access the data from any unauthorized d=
+evices via Bluetooth or the Internet.
+
+Ben's notes will be fine.</pre></li>
+
+<li><pre class=3D"student-text">Apple uses secure boot chain to prevent att=
+ackers from installing a boot sequence or any component along the boot chai=
+n on the hard drive that would give them a backdoor or start a rogue OS tha=
+t could access Ben's files.
+
+They use System Software Authorization to prevent attackers from triggering=
+ a downgrade to an earlier version of iOS with security vulnerabilities whi=
+ch could grant access to his files.
+
+The software update process also involves the exchange of cryptographically=
+ signed data to prevent rogue attackers from trying to install their own up=
+dates on a phone, perhaps by running a fake Apple server.
+
+When implementing Face ID, Apple was prepared for attackers to try to use t=
+his method to unlock the phone. Thus they use 3D imaging as well as randomi=
+zation of the measurements they take of a face to reduce the chance that an=
+ attacker could use a picture of the user to get inside a phone (thereby ge=
+tting Ben's files).
+
+Apple also hides the UID and GID of the device by only presenting an encryp=
+ted version to applications, thus preventing attackers who try to obtain th=
+e UID and GID to potentially forge cryptographic certificates.
+
+Apple also protects against brute-force attacks by entangling the password =
+with the device-specific UID and also throttling the number of password att=
+empts that can be made per second.
+
+Also also encrypts data on the hard drive using File Data Protection; even =
+in the event an attacker has gained control of the operating system, they w=
+ouldn't be able to read encrypted files.
+
+Apple curates apps on the App Store to prevent the spread of malicious apps=
+. They also implement Address Space Layout Randomization to prevent return-=
+to-libc attacks, for example, which could be used to delete Ben Bitdiddle's=
+ files.
+</pre></li>
+
+<li><pre class=3D"student-text">Applications are sandboxed so as to restric=
+t their access to files stored by other apps. Each app has its own home dir=
+ectory randomly assigned at install time to prevent other apps from being a=
+ble to find the home directories of other apps. All access to information e=
+xternal to the app is done through certain iOS services so that Apple can m=
+anage the security of information access. ASLR is used to mitigate memory c=
+orruption bugs. Keyboard apps are run in a special more restricted sandbox =
+that blocks access to the network so that they can't be used to peek on wha=
+t's being written.
+
+If using Apple's Secure Notes, the notes are encrypted with a passphrase.
+</pre></li>
+
+<li><pre class=3D"student-text">Attack 1: Somehow modify boot chain to run =
+on insecure version of iOS, and give control to attacker.
+    Mitigation: The entire boot chain relies on the Boot ROM (and the key s=
+tored in it) to ensure the software loaded in the boot chain is all signed =
+by Apple and intended to be run on the device.
+
+Attack 2: Force malicious update or revert iOS to vulnerable version to all=
+ow some exploit to get the notes.
+    Mitigation: The updates have to be recieved from a trust worthy source =
+and are also checked for Apple signatures, as in the first attack. The atta=
+ck is unable to revert iOS to a different version because each version acts=
+ as a directed graph - a certain update is only allowed to be applied to pa=
+rticular versions of iOS.
+
+Attack 3: Physical stealing of device, so notes can be extracted at attacke=
+r's leisure.
+    Mitigation: The use of effacable storage, and having many actual keys w=
+rapped in effacable keys allows the device to easily delete these wrapped k=
+eys (depending on user settings) so that the data would be undecryptable - =
+the real keys would be permanently encrypted.
+
+Attack 4: Password attacks
+    Mitigation: 5+ years to attempt all passwords due to delay, delay statu=
+s stored in secure enclave, so can't be wiped by reboot.=20
+
+Attack 5: Using a malicious app to exploit the notes application.
+    Mitigation: Each third-party application is sandboxed and also must be =
+verified by Apply before becoming available on the app store. In order to b=
+e verified, the app must be attributed to a specific person or company, so =
+attempts to submit malicious apps are deterred for fear of attribution.
+</pre></li>
+
+<li><pre class=3D"student-text">Attack:
+Compromising an accessory
+Protection:
+Requires correct IC that returns correct signed response.
+
+Attack:
+Developer app compromised
+Protection:
+Developers are physical identity is verified and known.
+Sandboxing, only select API allow communication
+ASLR (Address space layout randomization)
+XN (Execute Never) marks pages non-executable
+
+Attack:
+Extensions compromised
+Protection:
+Strictly sandboxed
+Run in own address space
+
+Attack:
+Key chain /file data compromised
+Protection:
+Protected by wrapped encrypted keys
+Requires passcode, face, or touch ID
+</pre></li>
+
+<li><pre class=3D"student-text">Attacks:
+- Compromised Bootloader/kernel
+- Application code and updates to software can be buggy
+- Downgrades to buggy software versions
+- Copying of updates across devices
+- Reusing already downloaded software on other device
+- Accessing protected data
+- Replaying faceid or authorization changes on other devices
+- Dictionary attack on passcode
+- Tampering of data sent from Touch ID sensor
+- Tampering of matching data or logic for FaceID and TouchID
+- Sending over confidential data to diagnostics
+- accessing data from other devices with the same chip
+- Data tampering on the file system
+- Attacks on generic keychain use
+- Reuse of a one-time unlock code for an update - maybe for an old version =
+or known buggy version
+- Buggy applications violating user privacy
+- Memory corruption via buggy or intentional malicious code
+- Extensions trying to usurp app permissions to execute unwanted code
+- Bogus devices and accessories trying to get access to sensitive data
+
+Corresponding mitigations:
+- Signed by Apple - and Boot RO code executed to check for signature before=
+ booting=20
+- Only apple signed code can be installed - verified at boot time
+- Disabled downgrades
+- Device specific id verified before update is installed
+- Anti-replay nonce that ensures only one download
+- Secure enclave for Data protection keys - with very little interaction wi=
+th the application processor
+- Anti-replay nonce for such changes
+- Lockout after 5 attempts, slowing down progressively, device wipeout afte=
+r 10 attempts
+- Encryption before sending over bus to secure enclave with a key negotiate=
+d between sensor and enclave
+- Data maintained in secure enclave and not sent to any Apple Backups
+- User verified and approved before data is sent
+- Unique UID tied to the device at manufacture that secure the enclave wher=
+e data is stored
+- many hierarchies of keys - per file, file system, class key controlled by=
+ passcode
+- many classes on keychain protection too depending on access level
+- Monotonic counter that is incremented upon use and can=E2=80=99t be reuse=
+d
+- Apple signature on any app, sandboxing to prevent data access
+- Address space randomization
+- Separation of extensions=E2=80=99 access from the app itself
+- Devices needs to provide certificate given by Apple=20
+
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">Ben Bitdiddle has an iOS device that he use=
+s to keep track of confidential notes.=20
+What are the different attack scenarios that Apple considers where an adver=
+sary tries to obtain Ben's notes, and what part of the iOS security archite=
+cture prevents those attacks?
+
+1. Malitious apps - Apple  created the app sandbox to separate apps from ot=
+her data and filesystem components
+
+2. Fishing scam - asking people to disable their security features to allow=
+ easier machine access
+
+3. Network listeners - data over the network is encrypted so that no one ca=
+n eves drop effectively=20
+
+4. Malware running in OS - secure boot verifies that the software running h=
+as been certified by Apple </pre></li>
+
+<li><pre class=3D"student-text">Ben Bitdiddle has an iOS device that he use=
+s to keep track of confidential notes. What are the different attack scenar=
+ios that Apple considers where an adversary tries to obtain Ben's notes, an=
+d what part of the iOS security architecture prevents those attacks?
+
+## Secure Boot
+    Apple considers attackers that may try to modify the hardware, firmware=
+, and software. Apple specifically protects against attackers changing the =
+firmware/os by adding a READ-only memory section called the Boot ROM which =
+contains Apple's public key and can verify that the next step of the boot p=
+rocess is a piece of software signed by Apple. Additionally, newer phones h=
+ave a Secure Enclave which also performs a similar function. After the subs=
+equent boot of Apple Firmware, the following boot processes are also verifi=
+ed that they have been signed by Apple before execution.
+   =20
+## Secure Enclave
+    The secure enclave uses encrypted memory and a hardware based random nu=
+mber generator to protect passwords even if the kernel becomes malicious. T=
+he secure enclave uses a randomly generated number on startup to protect ag=
+ainst replay attacks.
+
+## Face ID and Touch ID
+    Apple used fingerprints and the geometry of your face to provide biomet=
+ric authenticators. Apple prevents fingerprint spoofing by checking that th=
+e fingerprint is an accurate match and that the finger is conductive (meani=
+ng that you could not cut off a person's finger and use it). Face ID uses i=
+nfrared dot projectors in conjuction with camera data fed to neural network=
+s to determine that a user's facial geometry and gaze are accurate and dire=
+cted at the phone. NOTE: One research group, BKAV, has claimed to have brok=
+en FaceID with a sophisticated mask.
+
+## Encryption
+    Each iPhone has hardware dedicated AES-256 encryption engine dedicated =
+to encrypting data. Apple uses 'per-file' keys meaning that a new key is ge=
+nerated to encrypt a file's contents so if one file's key is compromised th=
+en the other files will still be safe. Since this may be data intensive, Ap=
+ple creates a hierarchy of protection levels that let application developer=
+s decide whether a file needs full protection or not.=20
+
+## Keychain management
+    Apple uses Access Control Lists based on UIDs and GIDs in conjuction wi=
+th hardware and user provided passcodes to prevent malicious programs from =
+accessing data stored in the keychain manager i.e. tokens, certificates, wi=
+fi-passwords, etc..
+
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">Ben Bitdiddle has an iOS device that he use=
+s to keep track of confidential notes. What are the different attack scenar=
+ios that Apple considers where an adversary tries to obtain Ben's notes, an=
+d what part of the iOS security architecture prevents those attacks?
+
+Apple consider many attack scenarios and remedies them, including:
+Brute force attack. Phone deactivation after a certain # of tries
+Third party code attack. Code signing by Apple and review of all apps on th=
+e App store. Sandboxing execution.
+Hardware hack attack. Secure chain of trust established in the hardware dur=
+ing boot. Enclave on startup.
+iOS re-installment with known security issues. Not allowed to install older=
+ versions of iOS.
+Malicious use of memory attacks (buffer overflow, return to libc ..). Non e=
+xecutable memory and randomized memory layout (ASLR)
+Touch ID/Face ID impersonation. Unlikely in general population, quick locko=
+uts and algorithmic detection.
+Reading memory drives/stealing physical memory drive. Can't read from memor=
+y without the proper UID associated with the OS hardware. Files encrypted a=
+t rest.
+</pre></li>
+
+<li><pre class=3D"student-text">Ben Bitdiddle has an iOS device that he use=
+s to keep track of confidential notes. What are the different attack scenar=
+ios that Apple considers where an adversary tries to obtain Ben's notes, an=
+d what part of the iOS security architecture prevents those attacks?
+
+Compromised passcode:
+	FaceID
+	TouchID
+	Hard to brute force a 6 digit passcode, takes 5.5 years to go through all =
+iterations
+	If more than 10 attempts, can enable to delete all data in phone (preventi=
+ng someone from accessing the data)=20
+
+Malicious apps having access to data:
+	Each app is sandboxed and only has access to what the user allows
+	Each app developer has to register with apple and be verified as a real en=
+tity, so there will be fewer malicious apps
+	Each app's data is signed
+
+Accessing data while device is locked:
+	After a device is locked, within 10s the key to access it is wipe and the =
+data is inaccessible unless the device is unlocked again
+
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">Ben Bitdiddle has an iOS device that he use=
+s to keep track of confidential notes. What are the different attack scenar=
+ios that Apple considers where an adversary tries to obtain Ben's notes, an=
+d what part of the iOS security architecture prevents those attacks?
+
+Low level code modification - validate cryptographic signature
+Cellular software modification - validate again
+Downgrading software to exploit bugs - system software authorization
+Fake update server - more verification=20
+Stolen phone unlock with touchid or faceid - passcode only in certain scena=
+rios
+Mitm for touchid - hardware (serial peripheral interface bus), encrypted
+Take actual fingerprint out - lossy storage
+Hack Apple for fingerprint info - never synced=20
+Weak passcode for convenience - touchid or faceid
+Fake faceid - separate neural net to detect fake
+Recover unlock keys - discarded=20
+Faceid data sent for diagnostic - have to set up again
+Incomplete erasure - effaceable storage
+Copied files being read together - separate key generated
+Slow erasing in emergency - effaceable key storage and erasure
+Brute force passcode attempts - timeouts and hardware delays
+Keychain access passwords - enforced accessibility requirements, ACLs
+Data pull from iTunes backup - encryption
+External app code - code signing
+Fake developer getting certificate - verify real world identity
+Runtime process vulnerabilities (buffer overflows, etc) - ASLR
+Run non executable code - ARM EXECUTE NEVER feature
+</pre></li>
+
+<li><pre class=3D"student-text">Ben Bitdiddle has an iOS device that he use=
+s to keep track of confidential notes. What are the different attack scenar=
+ios that Apple considers where an adversary tries to obtain Ben's notes, an=
+d what part of the iOS security architecture prevents those attacks?
+
+Strong cryptography over a deep root of trust enable Apple devices to prote=
+ct against myriad attacks with respect to confidential storage of informati=
+on.  Since everything is encrypted at rest, attackers can no longer simply =
+pull the filesystem off a phone in order to view the saved data.  Apple als=
+o protects against unauthorized people gaining access to Ben's notes by enf=
+orcing strong passcode policies with an increasing delay and even possibly =
+full user-data wipe to prevent against bruteforce attacks.  Strong applicat=
+ion sandboxing prevents other apps on the same system from accessing privat=
+e data.</pre></li>
+
+<li><pre class=3D"student-text">Ben Bitdiddle has an iOS device that he use=
+s to keep track of confidential notes. What are the different attack scenar=
+ios that Apple considers where an adversary tries to obtain Ben's notes, an=
+d what part of the iOS security architecture prevents those attacks?
+
+There are a variety of attacks that Apple considers when securing iOS archi=
+tecture.
+1. Physical Attacks. In the event that Ben loses his iPhone, the uniqueness=
+ of FaceID, TouchID, and Passcode (limited to ten tries) prevent adversarie=
+s from unlocking the iPhone and reading the notes.
+2. External Software Attacks. Apple prevents other applications from being =
+installed on iOS architecture without being verified, and explicitly lock d=
+own the filesystems of each application so that they can't access data pert=
+aining to other applications.
+3. Internal Software Attacks. In the event that the adversaries are snoopin=
+g on the database, data to and from databases are encrypted, so it's unlike=
+ly that MITM attacks can succeed.
+</pre></li>
+
+<li><pre class=3D"student-text">Ben Bitdiddle has an iOS device that he use=
+s to keep track of confidential notes. What are the different attack scenar=
+ios that Apple considers where an adversary tries to obtain Ben's notes, an=
+d what part of the iOS security architecture prevents those attacks?
+
+attack scnarios + preventions include:=20
+
+Hijaking the startup process and booting into other code that finds Ben's n=
+otes in memory
+Apple prevents this by making its application processer immediately executi=
+ng code from read only memory Boot ROM (encoded during chip fab)=20
+
+Man in the middle attack when downloading software updates for iOS
+Apple prevents this by having iTunes connect to Apple installation authoriz=
+ation server and send it a list of cryptogragic measurements for each part =
+of the installation. The part is only installed if the server finds a match=
+ in the versions for the installation is permitted.=20
+
+Someone puts a fingerprint/face ID logger on the phone so they can access i=
+t later as Ben
+The sensitive data is saved to the file system by Secure Enclave, which is =
+encrypted with a key entagled with the UID and an antireplay counter. Also =
+this Secure Enclave is responsible for processing fingerprint and face data
+Also related to fingerprint/face ID, it's interesting that the keys for the=
+ highest class of Data Protection are wrapped in a another key that is give=
+n to the Touch ID/ Face ID. The wrapper key is discarded under some conditi=
+ons when a passcode is necessary.
+Also Face ID data is never backed up to anywhere other than the device whic=
+h limits the number of places an attacker could obtain Face ID
+
+Someone makes an app where they require Face ID and gets the Face ID data s=
+omehow to unlock Ben's notes
+Apple prevents this by never sending actual Face ID data to any Third-party=
+ apps. It only tells the app if the authentication was successful or not
+
+Someone gets the UID/GID of the device and pretends to be the device
+Apple prevents this by allowing no software or firmware to read it directly
+Also you can't swap chips, because the UID is embedded in the hardware
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">Ben Bitdiddle has an iOS device that he use=
+s to keep track of confidential notes. What are the different attack scenar=
+ios that Apple considers where an adversary tries to obtain Ben's notes, an=
+d what part of the iOS security architecture prevents those attacks?
+
+----------
+
+
+Attack Scenarios:
+ - Attacks on the boot process / lower-level components
+ 	 Apple uses a 'chain of trust' by checking at each step in the boot proce=
+ss is signed by Apple. It has to implicitly rely on 'the hardware root of t=
+rust' from the Boot ROM to start the chain. Here iOS makes sure that none o=
+f the lower-level components have been tampered with.
+ - Taking advantage of outdated software:
+ 	 iOS uses 'System Software Authorization' to keep devices from being down=
+graded to versions that could have old security bugs.
+ - Tricking user into installing fake software updates:
+ 	 iOS uses an authorization server that checks a given set of information =
+from the device and authorizes the update only if it finds a match in the l=
+ist of permitted updates. This makes sure that only updates provided by App=
+le take place. In addition, the server's response can't be spoofed because =
+a nonce is used.
+ - Device is lost or stolen:
+   A passcode, Touch ID, or Face ID is needed to access the device. You can=
+ also do a remote data wipe to protect your data.
+ - Kernel is compromised:
+ 	 iOS uses the Secure Enclave to protect all sensitive data, such as Touch=
+ ID and Face ID data.
+ - Cracking a passcose with brute force attempts:
+ 	 These attacks must be done on the device because the UID and the passcod=
+e are 'entangled'. An iteration count is used to make each attempt slower. =
+There is also delays set between the number of attempts. These delays are e=
+nforced by the Secure Enclave and even if the device is restarted, the dela=
+y is still enforced.
+ - Cracking FaceID with pictures:
+   iOS uses an additional neural network trained to spot spoofs such as pho=
+tos or masks.
+ - Downloading Malicious Apps that tamper is iOS or other apps on the syste=
+m:
+   iOS sandboxes each app and only allows Apple-validated and signed apps t=
+o be installed.
+ - Exploting memory corruption bugs:
+   iOS uses ASLR as well as ARM'S Execute Never feature to mark memory page=
+s non-executable.
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">Ben Bitdiddle has an iOS device that he use=
+s to keep track of confidential notes. What are the different attack scenar=
+ios that Apple considers where an adversary tries to obtain Ben's notes, an=
+d what part of the iOS security architecture prevents those attacks?
+
+I'll structure my answers in the form of a simple threat model, which is co=
+mprised of a numbered list of potential attack vectors and a high level ove=
+rview of associated protective measures which Apple has implemented in iOS =
+and surround ecosystem.=20
+
+1. An adversary tries to obtain an unathorizes access to the documents in a=
+ device, while having unlimited access to the physical device.
+	- User authentication is the main protection against this threat. Touch ID=
+ and Face ID with anti-spoof mechanisms, and a passcode are used to prevent=
+ an unathorized access to the content stored in an iOS device and its funct=
+ionality.
+	- Passcode authentication is enforced in situations when a risk of spoofin=
+g Face &amp; Touch IDs is higher than normal. E.g. a device hasn't been acc=
+essed for a long time or multiple failed attempts, etc.
+	- Apple securely erases the data upon user's request to avoid the access t=
+o the data by av adversary who bought a used device specifically to obtain =
+the data previously stored there. Also, Apple provides users with an opport=
+unity to remotely wipe the data in the case of device theft or loss.
+	- The adersary may try to physically move memory chips with file system to=
+ another device to get malicious access to the data. However, the encryptio=
+n provided in iOS is tied to a particular device and this makes the data in=
+accessible after the move.
+
+2. An adversary tries to get access to the confidential notes by exploiting=
+ a known vulnerability in previous versions of iOS and thus makes an attemp=
+t to install one of the previos versions of iOS on the device.=20
+	- Every upgrade is signed for a specific device using its unique device ID=
+, therefore an old iOS version from one device can=E2=80=99t be copied to a=
+nother.
+
+3. An adversary attempts to spoof Face ID or Touch ID identity systems by "=
+capturing and replaying" data to the device. =20
+	- The encryption of patterns and protected computation of matching algorit=
+hms in a secure enclave protects against advarsaries compromizing the algor=
+ithms of the patterns is used for the confirmation of user identity.=20
+	- Apple in general doesn't allow the digital identity patterns to leave an=
+ iOS device and takes extra mesaures when the data are sent to Apple. These=
+ mechanisms include encryption &amp; digitally signed approval from Apple t=
+o enable an associated diagnostics mechanism.=20
+	 =20
+4. An adversary can create and encourage a victim to use a malicious applic=
+ation for "storing &amp; editing" notes, while uses the application to exfi=
+ltrate the data.=20
+	- All applications are signed by an Apple issued certificate=20
+	- Developers should confirm their identity before their certificate is iss=
+ued
+	- Third-party apps are restricted to access only the files stored by other=
+ apps or from making changes to the device.
+	- Applications are reviewed and certified by Apple before publishing and a=
+lso enterpises are empowered to limit what applications can be installed on=
+ the iPhones of their employees.
+	- iOS is robustly protected from sophisticated "buffer overflow" types of =
+attacks by applying Address Space Layout Randomization (ASLR) and by markin=
+g memory non executable (XN)
+	- iOS doesn=E2=80=99t allow users to install potentially malicious unsigne=
+d apps from websites, or run untrusted code
+
+5. An adversary obtained access to the device's backup data stored on a loc=
+al desktop.=20
+	- The adversary may try to restore the data to another device. Therefore, =
+iTunes creates a new set of keys to re-encrypte the data, while remains the=
+ data wrapped with the UID-derived key, "allowing them to be restored to th=
+e devicethey were originally backed up from, but rendering them inaccessibl=
+e on a different device."
+
+=20
+
+</pre></li>
+
+<li><pre class=3D"student-text">Ben Bitdiddle has an iOS device that he use=
+s to keep track of confidential notes. What are the different attack scenar=
+ios that Apple considers where an adversary tries to obtain Ben's notes, an=
+d what part of the iOS security architecture prevents those attacks?=20
+
+If the attacker gains control of the device and tries to install an older v=
+ersion of iOS, this is prevented by system software authorization - Every i=
+OS upgrade requires contact with the Apple installation authorization serve=
+r, and includes the devices unique ID
+
+If the attacker tries to read the files directly off the disk, they will ha=
+ve to contend with files being stored in an encrypted form, with a per-file=
+ cryptographic key that is never exposed to the application - Instead, this=
+ is handled by the Secure Enclave and the AES engine.  If the phone is turn=
+ed off, then most files should be protected by "Protected Until First User =
+Authentication", equivalent to full-disk encryption.  If the phone is on, b=
+ut locked, the files are hopefully protected by "Complete Protection" as de=
+scribed in Data Protection Classes.
+
+If the attacker tries to brute force the password, iOS enforces rate limiti=
+ng - Each attempt takes approximately 80 miliseconds, and there is an escal=
+ating delay (enforced by the Secure Enclave) after entry of invalid passcod=
+es on the lock screen.
+
+If the attacker tries to trick the user into installing a third-party app t=
+o access his/her data, they will have a difficult time, as all third-party =
+apps must be validated and signed by Apple (enforced by the OS), which requ=
+ires the attacker to give Apple his/her real identity and pass some code re=
+view.  In addition, code signature checks are required of all executable me=
+mory pages as they are loaded.
+
+If the attacker tries to exploit a buffer overflow, they will have to deal =
+with address-space layout randomization, which sounds like a real pain.
+
+PS: Hopefully Ben does not use Face ID, and the attacker is not one of his =
+siblings and/or a child under the age of 13.  Just in case, FaceID only all=
+ows for 5 attempts.
+</pre></li>
+
+<li><pre class=3D"student-text">Code signing- Protects against untrusted co=
+de. Device will only run code signed by trusted source.
+Sandboxing- Protects user agains malicious app developers who want access t=
+o user data.=20
+Keybags- Means of privilege separation. Makes sure correct keys are only ac=
+cessible to the correct parties, so an attacker cannot pretetend to be the =
+user of the phone without having access to the password.=20
+Data Protection Classes- access control on files.=20
+Keychain- Secure way to store pasword data. Makes sure random app developer=
+ can't get access to password.
+UID- used as an identifier for a device. If a chip is moved from one device=
+ to another, it locks access to files.=20
+TouchID/FaceID- data stored as a set of points that aren't enough to identi=
+fy user. Ensures that access to phone doesn't give attacker access to perso=
+nal user identity information
+Encryption- files encrypted with UID. Makes sure only correct device users =
+can access information.
+SSA- makes sure people can't install old versions of an OS(downgrade). Doin=
+g this would allow an attacker to exploit a now-patched vulnerability
+Secure Boot Chain- ensures that only an apple-trusted OS can be booted. Ens=
+ures that attacker can't hijack data on device by installing malicious OS.
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">Danny Tang
+
+data1013
+
+3/10/18
+
+
+
+Lecture 10
+
+Question:
+
+Ben Bitdiddle has an iOS device that he uses to keep track of confidential =
+notes. What are the different attack scenarios that Apple considers where a=
+n adversary tries to obtain Ben's notes, and what part of the iOS security =
+architecture prevents those attacks?
+
+Answer:
+
+1) An adversary tries to use a fake kernel or hardware to take over the dev=
+ice
+	- Apple has a secure boot chain that ensures that the start up process is =
+trusted, which includes checks for both hardware (built=20
+	  in from chip fabrication) and extends to the kernel.
+
+2) An adversary tries to download a previous version of iOS onto the device=
+ to exploit a bug that existed before
+	- Apple has checks for version numbers that connects to an Apple installat=
+ion authorization server, so this would be impossible
+
+3) An adversary tries to steal the device and open it
+	- Apple has secure unlocking protocols, such as Face ID, Touch ID, and pas=
+swords. The Face ID and Touch ID have anti spoofing
+	  mechanisms built into it.
+
+4) An adversary steals the device's memory chip to try and read it
+	- Apple has unique UIDs for each device, and these IDs cryptographically t=
+ie the device's data. So, you cannot read the memory
+	  chip elsewhere.
+
+5) An adversary tries to make a malicious app to try and steal the data
+	- Third party apps are sandboxed, so they cannot access files from other a=
+pps or make changes to the device. Instead, they are
+	  randomly assigned a directory for themselves.
+
+6) An adversary tries to make a malicious extension to try and steal the da=
+ta
+	- Like apps, extensions are sandboxed and given their own container.</pre>=
+</li>
+
+<li><pre class=3D"student-text">Depending on where Ben stores his notes, th=
+ere are a number of attacks possible.
+
+If he stores it in the Notes app, all of his notes are assigned the "Protec=
+ted
+Until First User Authentication" class. This means that any attack involvin=
+g a
+reboot in which the attacker does not have the user's passcode will not be =
+able
+to access Ben's notes. For example, if an attacker compromises the kernel a=
+nd
+reboots the device doing so, he will still be unable to access Ben's notes,=
+ as
+Ben's passcode and other security keys are stored in the secure enclave, wh=
+ich
+the kernel is unable to access.
+</pre></li>
+
+<li><pre class=3D"student-text">First, Apple has a secure boot chain that e=
+nsures the integrity of the basis of the software when everything is just b=
+ooted. This prevents adversary inserting a virus to be run during starting =
+your phone.
+
+Second, Apple has System Software Authorization and app code signing to ens=
+ure only trusted code is ran, either from downloaded updates or apps. This =
+prevents unauthorized code insertion from adversaries.
+
+It has also hardware protection to prevent adversary just cutting open the =
+iPhone device to extract data from the hardware.</pre></li>
+
+<li><pre class=3D"student-text">Following are the perceived attacks -=20
+- Adversary tries to access the note from Apple's backend databases
+- Adversary has gained access to the phone physically
+- Adversary has gained access to a particular passphrase=20
+- Adversary tries accessing the attachments to a note, and not the content =
+of the note itself
+</pre></li>
+
+<li><pre class=3D"student-text">Gaining physical access to the device:
+* Brute-force approach is limited by an iteration count that limits the tri=
+es to once every 80ms.=20
+* Delays for consecutive failed attempts makes brute-force even harder to p=
+ull off.
+* Some devices and be configured to wipe all data after a limited number of=
+ failed logins.
+* Devices can be wiped remotely.
+
+Compromised accessory:
+* The device checks if the accessory being used is signed by Apple, and if =
+not, only gives it a minimal API to communicate with.
+
+Malicious applications
+* Only applications signed by Apple are even allowed to be installed on the=
+ device.
+
+Compromised application
+* All applications are sandboxed. If a legitimate application on the device=
+ is compromised, the amount of harm it can do is limited.
+
+Compromised kernel
+* Important keys are stored in the enclave which has a separate processor. =
+If the kernel is compromised, because all file data is already encrypted, i=
+t cannot access any files without the keys. Further, the keys are deleted a=
+fter certain events, so will need the user to enter her passcode in order t=
+o generate the keys again. So the compromised kernel cannot do any harm wit=
+hout the user's cooperation.
+
+Moving files from one device to another
+* Files are encrypted using keys specific to the device they were encrypted=
+ in. So in a different device (which will not have that specific key), the =
+data will be unreadable.
+
+Gaining access to TouchID or FaceID data to recreate the key
+* The TouchID and FaceID data is not stored outside of the device, and only=
+ the mathematical representation of the IDs are stored. These representatio=
+ns are lossy, so cannot be used to recreate the original fingerprints or fa=
+cemap.
+</pre></li>
+
+<li><pre class=3D"student-text">Hardware is protected with a UID, so transf=
+ering a memory chip
+will not allow for access of private data.
+
+To prevent brute-force attacks, 80 ms must pass between successive
+failed login attempts. There are also options to automatically wipe
+data after 10 successive failed logins.
+
+Applications might try to target data. There are various protection classes=
+;
+Complete protection, for example, makes a file inaccessible after locking.
+The Keychain cryptographically stores keys and passwords, which can only
+be accessed through an API. All app developers' real world identities are
+known, and the apps themselves are sandboxed.</pre></li>
+
+<li><pre class=3D"student-text">Here are some exploit highlights after read=
+ing the paper.
+- Type: secure boot chain
+  - Exploit: exploiting startup by compromising a component
+  - Preventative measure: cryptographically signing each component=20
+- Type: Enclave
+  - Exploit: Using OS to read information inside enclave
+  - Preventative Measure: encrypting enclave
+- Type: Face ID
+  - Exploit: Using OS or third party app to read face data used by face id
+  - Preventative Measure: Executing facial recognition neural nets inside s=
+ecure enclave
+- Type: GID/UID=20
+  - Exploit: Finding GID and UID of root
+  - Preventative Measure: Encrypting both of these and never having them vi=
+sible in an unencrypted form.
+- Type: Cryptographic Keys
+  - Exploit: Reading deleted keys saved on flash storage
+  - Preventative Measure: Low level hardware operations to delete keys (eff=
+aceable storage)
+- Type: IOs App Developers
+  - Exploit: Bad people as app devs do bad things
+  - Preventative Measure: Confirming dev identities before accepting apps
+- Type: Third-party Apps=20
+  - Exploit: App A accesses data from App B
+  - Preventative Measure: Sandboxing apps, ALSR, and only allowing backgrou=
+nd processing via system APIs
+</pre></li>
+
+<li><pre class=3D"student-text">Here are two examples:
+
+1. If an adversary had access to Ben's phone, they add their own firmware o=
+r bootloader to run software
+that would give them access to the files.  Apple protects against this by h=
+aving a secure boot chain.
+They cryptographically verify the firmware and bootloader.
+
+2. An adversary could build an app that would give them access to his files=
+.  Apple protects against this
+by sandboxing all third party apps and also having a thorough app screening=
+ to.=20
+</pre></li>
+
+<li><pre class=3D"student-text">His phone gets lost/stolen - remote erase a=
+ll content and settings, thereby erasing all keys to decrypt the data on th=
+e phone, ensuring that his notes can't be accessed by the adversary.
+
+Brute force attempts to access phone by cracking the passcode - large itera=
+tion count and escalating time delays used to slow down frequency of access=
+es and increase time required to brute force access into the phone.
+
+Compromised/malicious app downloaded onto the phone - all third-party apps =
+are sandboxed so a malicious app can't access his confidential notes.
+
+I'm not fully sure what this protects against, but iOS performs privilege s=
+eparation by using data protection per file key - allows encrypted data sto=
+rage by organizing data into different classes.  One such class is Class A,=
+ complete protection, which deletes decrypted class key upon locking of the=
+ device, thus rendering all data in this class unaccessible until the user =
+unlocks the device via passcode, TouchID, or FaceID.=20
+</pre></li>
+
+<li><pre class=3D"student-text">If Ben Bitdiddle has confidential notes on =
+his iOS device, some different attack scenarios that Apple considers when a=
+n adversary tries to steal his notes are as follows:
+- someone physically stealing Ben's device and reading his notes
+- someone stealing Ben's SIM card
+- a malicious third party app being downloaded that tries to access the not=
+es
+- a malicious extension that tries to steal the notes by communicating with=
+ the notes app
+
+The iOS security architecture that protects against the above attacks inclu=
+de:
+- secure passcodes, Touch ID, and Face ID
+- File Data Protection with keys and the UID of the device
+- App code signing to ensure only trusted developers, sandboxing apps and r=
+unning them as unpriviledged users, ASLR
+- restrictive sandboxing for extensions, entitlements </pre></li>
+
+<li><pre class=3D"student-text">If the application Ben uses to store his no=
+tes is unsecure, then the first level of defense Apple has is preventing an=
+ adversary from logging in to the phone. This is done through Face ID, Touc=
+h ID, and passcodes (and time delays to prevent brute-force attacks). If an=
+ adversary is able to log into the device, the files may be encrypted and p=
+rotected by something in the phone's keychain. If the adversary is a rogue =
+engineer at the company which makes this notes-storing application, but the=
+ application is designed to store the files on the local device, the advers=
+ary may be prevented from breaking out of the application by a sandbox. Fin=
+ally, an adversary may try to make a competing application for Ben to switc=
+h all his files to, but Apple tries to prevent rogue developers like this b=
+y making the process to get an app on the app store more difficult.
+</pre></li>
+
+<li><pre class=3D"student-text">In the paper: communication between the Sec=
+ure Enclave and the application processor is&nbsp;isolated to an interrupt-=
+driven mailbox and shared memory data buffers. What is an interrupt-driven =
+mailbox?</pre></li>
+
+<li><pre class=3D"student-text">Installing a rogue update for iOS to change=
+ filesystem permissions. Apple's System Software Authorization prevents thi=
+s by making sure only authorized Apple Updates can be attempted.
+
+Installing a rogue version of the note app via some rogue App Store link. A=
+ll executable code is signed by an Apple-issued certificate, and the real-w=
+orld identity of the developer can be traced.=20
+
+Fooling TouchID/FaceID via the attacker's own biometrics to log in. Apple's=
+ FaceID implementation and policy of forcing passcode after several unsucce=
+ssful attempts makes such an occurence unlilkely.
+
+Grabbing TouchID/FaceID authentication information to build an artificial f=
+inger/face to fool the sensor. Apple's Secure Enclave prevents communicatio=
+n from happening, and no authentication info is sent to the server.=20
+
+Grabbing the file stored by the note app via another app. First of all, the=
+ file is protected by an individual file key and a filesystem key, derived =
+from the hardware/passcode key. Second, inter-app communication is limited =
+to extensions that cannot be exploited outside of the original app develope=
+r's intention.
+
+Grabbing the file stored directly from flash storage. The file is once agai=
+n encrypted - specifically, it is under a Data Protection Class and will li=
+kely not be available unless the device is unlocked.=20
+</pre></li>
+
+<li><pre class=3D"student-text">It seems like Apple is most concerned about=
+ a malicious third-party app as attack vector. Apple's secure boot chain an=
+d trusted OS updates ensure that the phone's operating system remains trust=
+ed. Third-party apps must be signed with an Apple-issued certificate to ens=
+ure that an incorrect/unidentifiable app is not installed on the phone, and=
+ they are sandboxed at runtime (extensions allow for system-wide third-part=
+y code to communicate via mediated IPC).
+
+A secondary concern is physical takeover of the device. There, protections =
+like Touch ID/Face ID/passcodes and device encryption (at the hardware leve=
+l and also with hierarchical access control managed by the Data Protection =
+feature) prevent a malicious agent with possession of the device from readi=
+ng its secured data.
+</pre></li>
+
+<li><pre class=3D"student-text">Jun Wan 991032935
+
+1. The adversary might tries to tamper with the lowest levels of software, =
+for example, boot the iOS device into a malicious system where the adversar=
+y has strong authority. Apple makes sure that each step of the startup proc=
+ess contains components that are cryptographically signed by Apple. This en=
+sure integrity.
+
+2. The adversary can use zero-day exploits to attack. To prevent this, appl=
+e regularly releases software updates to address emerging security concerns=
+.
+
+3. The adversary might downgrade the device to older versions to exploit vu=
+lnerabilities fixed in the newer version. IOS uses a process called system =
+software authorization to prevent this.
+
+4. IOS use secure enclave during authentication and data operations to prev=
+ent adversary from interrupting the authentication or overhearing valuable =
+information.
+
+5. IOS enforce delays between passcode attempts to prevent attacks via brut=
+e force.
+
+6. Keys are wiped away from memory after used or locked. This prevents the =
+adversary from inferring passwords from the hardware.</pre></li>
+
+<li><pre class=3D"student-text">Lecture 10
+
+Ben Bitdiddle has an iOS device that he uses to keep track of confidential =
+notes. What are the different attack scenarios that Apple considers where a=
+n adversary tries to obtain Ben's notes, and what part of the iOS security =
+architecture prevents those attacks?
+
+1. OS Downgrading to exploit an old vulnerability: System Software authoriz=
+ation makes sure that when an OS is installed on a phone it is signed by a =
+unique signature.
+
+2. Read file from hard disk: Erase all content and settings feature renders=
+ all old data inaccessible to an adversary who acquires an old iphone.
+
+3. File Data Protection: All data and meta data is encrypted using keys gen=
+erated by the hardware engine.
+
+4. Malicious App: Adversary cannot install malicious apps on the phone sinc=
+e all of it needs to signed by Apple authority.
+
+5. Third-party App: All third party apps are sandboxed so that one app cann=
+ot access files created by another app.</pre></li>
+
+<li><pre class=3D"student-text">Lecture 10 (Answer to Paper Question)
+
+Question:
+
+Ben Bitdiddle has an iOS device that he uses to keep track of confidential =
+notes. What are the different attack scenarios that Apple considers where a=
+n adversary tries to obtain Ben's notes, and what part of the iOS security =
+architecture prevents those attacks?
+
+
+Attack scenarios:
+
+1. Theft or loss: Apple provides methods for instant and complete remote wi=
+pe.
+
+2. Reading data directly from memory: Apple encrypts files.
+
+3. Reading data from another user's phone by physically moving memory chips=
+ from one device to another: Each Secure Enclave generates its own UID, whi=
+ch allows data to be cryptographically tied to a particular device.
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 10: Client Device Security
+3/12/18
+
+Ben Bitdiddle has an iOS device that he uses to keep track of confidential =
+notes. What are the different attack scenarios that Apple considers where a=
+n adversary tries to obtain Ben's notes, and what part of the iOS security =
+architecture prevents those attacks?
+
+- Attack: install older or altered versions of software:=20
+  Prevention: Secure Enclave uses System Software Authorization, eg chain o=
+f trust that relies on the Apple authorization server to approve correct in=
+stallations
+
+- Attack: trick face id or encryption
+  Prevention: mathmatically improbable for strangers, secure enclave (which=
+ handles all the encryption data and work) stores mathematical rep of face =
+and images are immediately discarded after using
+
+- Attack: tries to access file from an unauthorized process
+  Prevention: Apple File System uses a heirarchy of keys, which are stored =
+and used only with the Secure Enclave
+
+- Attack: developing a virus disguised as an app
+  Prevention: Apple prevents third party apps from breaking out of their bo=
+x by running the app through a program that checks for out of bounds access=
+es/overwritten code, having the app reviewed by an engineer, by randomly as=
+signing memory
+
+- Attack: taking his hard drive and reading the data
+  Prevention: data stored is encrypted</pre></li>
+
+<li><pre class=3D"student-text">Lecture 10: iOS Security Reading Question
+
+The different attacks that Apple considers in their security architecture i=
+nclude brute force login attempts,
+old bug exploitation through system downgrades, malicious third party code =
+introduced into the system through
+app downloads, and memory corruption attacks (such as return to libc).
+
+Apple attempts to fend off brute force login attempts by giving the user a =
+very efficient login functionality
+that then encourages them to pick strong passcodes to fortify their securit=
+y. The ease of biometric login (such
+as finger print and facial recognition) strongly encourages users to then p=
+ick a very strong password that they
+won't have the hassle of typing when they login. The system then uses a Dat=
+a Protection protocol that assigns
+keys on a per file basis for encryption onto flash memory. Login is also co=
+nfigured to be on a 80 millisecond
+attempt timer, meaning that it would take over 5 years for an attacker to t=
+ry all the possible passcode
+combinations.
+
+Apple attempts to fend off old bug exploitation through system downgrades b=
+y preventing devices from reverting
+to older system versions, and making system updates extremely user friendly=
+. Update notifications are received
+by devices and make updating as easy as clicking a button.
+
+Apple attempts to fend off malicious third party code by requiring applicat=
+ions to receive Apple issued certificates
+that sign the code and approve it as safe code. Receiving this certificate =
+requires a developer to be identified
+by Apple, and their code to be processed and approved by Apple. All apps ar=
+e also sandboxed and cannot alter data
+on other apps or general system data.
+
+Apple attempts to fend off memory corruption attacks (such as return to lib=
+c attacks) by using address space layout
+randomization, making it much harder for memory to be corrupted as it is as=
+signed at random upon execution. Memory
+pages are also made not executable by default, and if they are used as exec=
+utable, are put under very restricted
+execution conditions.
+</pre></li>
+
+<li><pre class=3D"student-text">Log In: Apple has FaceId, TouchId, and pass=
+code. They all have high degrees of security. FaceId is 1 in a million. Wha=
+ts interesting is that Apple claims having a simpler login allows for users=
+ to have more complicated passwords =3D better security. I wonder if this i=
+s true in practice. Apple also considers side channel attacks and makes sur=
+e that these biometrics are not passed to apple as well.
+
+Replay: Apple has antireplay to prevent adversaries from replaying a valid =
+user move. I was a bit confused on this part as it is light on details (see=
+ s10.txt) but if an adversary could just replay a passcode change it would =
+allow them to break into the device.
+
+Apple also considers the case of reset and requires you to resign into to i=
+cloud if notes are stored there. And if the iphone is reset all the data is=
+ lost.
+
+Another issue Apple considers is previous bugs. Apple doesn't want patched =
+bugs to reappear. So if there was previously a bug in the notes app that ad=
+versaries could exploit it would be a shame if the patched version could so=
+mehow be reverted by an adversary to get the notes. Apple uses System Softw=
+are Authorization ot prevent this.
+</pre></li>
+
+<li><pre class=3D"student-text">Lost/stolen device - data protected by encr=
+ypted user partition
+MitM on network - prevented by encrypted traffic
+Replay attack to authorize downgrade and exploit known bug - nonce in updat=
+e auth protocol
+Spoofing Apple auth servers to authorize downgrade - Apple public key in ha=
+rdware, Apple server response incorporates ECID
+Malicious/compromised third party app - app sandboxing
+Firmware hijack on reboot - secure/signed boot chain with hardware root of =
+trust
+Brute force against touch/faceID - require passcode after 5 failed attempts
+Attacker attempts to retrieve Ben's biometric data from Apple - data is onl=
+y stored in secure enclave on device
+Attacker steals device and tries to unlock it with Ben's face without him n=
+oticing - faceID requires that Ben's attention be on the device
+Attacker tries to spoof faceID with mask/photo - randomized 2D image collec=
+tion, device-specific point pattern, supplementary neural network trained t=
+o detect spoof attempts
+Physical attacks on crypto - hardware random number generator, UID/GID not =
+available to crypto, secure key deletion
+Attacker tries to brute force passcode on stolen device - lockout
+Attacker tries to brute force passcode using multiple cloned devices - pass=
+code is entangled with UID
+Attacker develops malicious clone of Notes app - OS will only allow signed =
+code to run
+Attacker compromises some other app - sandboxing prevents access to Notes d=
+ata</pre></li>
+
+<li><pre class=3D"student-text">One attack scenario could be where an app d=
+eveloper is trying to access Ben's notes that are being stored on their app=
+. In this case, Apple prevents these attacks by only allowing verified apps=
+ (certified by Apple, requiring the developer's identity) and they check du=
+ring runtime to ensure that the code hasn't been modified. Apple also uses =
+standard techniques like ASLR to prevent memory corruption. There is also d=
+ata protection in apps.
+
+Another potential attack could just be getting Ben's phone physically. In t=
+his case, the adversary needs to get past either touch ID, face ID, or the =
+password. Ben could put his confidential notes in the complete protection c=
+lass, requiring that the adversary have access to one of these unlock metho=
+ds in order to get to Ben's notes. </pre></li>
+
+<li><pre class=3D"student-text">One attack scenario is when the adversary t=
+ries a reboot attack, but notes are designated as protected until first use=
+r authentication to protect from this type of attack.=20
+Also apps are sandboxed, to prevent attacks from other apps.=20
+Keys are encrypted in a secure enclave, in case the adversary tries to hija=
+ck the keys to unlock the application.
+To prevent a brute-force attack, the PBDKF is used to hash the password.=20
+Viewing of secure notes is conducted in a secure session, and the secure se=
+ssion is exited out of when the user deviates from viewing the notes for to=
+o long/locks their phone. This is to prevent an attacker from simply taking=
+ a recently locked phone and viewing the notes. </pre></li>
+
+<li><pre class=3D"student-text">One way an attacker might try and steal Ben=
+'s notes is to=20
+maliciously install code directly onto the IOS device. However,=20
+Apple's boot ROM code ensures that only Apple signed code
+can be installed. The hardware is responsible for this protection.
+
+If the OS somehow does get compromised, the crucial data is still=20
+protected using a secure enclave. So, memory in the secure=20
+enclave is encrypted and device access information such as=20
+passcodes, touch id, face id, etc. are secure. So, an attacker can
+not easily gain access to the device. The hardware provides for
+having a secure enclave.
+
+Next, it might be possible that an attacker might gain access to
+all of the device UIDs through a hack of Apple. In this case,
+they still do not have access to the Secure Boot UIDs as those
+are uniquely generated within each device. This is made possible
+by the construction of the secure enclave.
+
+Finally, if the attacker attempts to brute force their way into
+the device, they probably would not be successful as each attempt
+takes at least 80 ms and consecutive incorrect entries results in=20
+an increasing time delay. This is a security measure implemented
+via software.
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">Possible Attack: An adversary tampers with =
+the iOS system software (e.g. by tricking Ben into installing malicious cod=
+e disguised as a iOS software update, or tricking Ben into reverting to an =
+older version of iOS with a vulnerability and exploiting that) and runs cod=
+e via the system to get Ben's notes.
+
+Apple's Solution: Before an update is applied, it must be sent and signed b=
+y the Apple installation authorization server. This ensures that the only u=
+pdates that happen are those that Apple intended.
+
+
+Possible Attack: An adversary obtains data about the Touch ID/Face ID input=
+ used to unlock Ben's device, and uses it to unlock Ben's device.
+
+Apple's Solution: The device's Secure Enclave is used to run calculations a=
+nd store the data in the Touch ID/Face ID computations, and the data is kep=
+t only on the device. This ensures that an adversary cannot obtain this dat=
+a by exploiting some other part of the device, or finding it outside the de=
+vice.
+
+
+Possible Attack: An adversary brute-forces Ben's passcode.
+
+Apple's Solution: There are escalating time delays after entering invalid p=
+asscodes, limiting the rate at which passcodes can be brute-forced.
+
+
+Possible Attack: An adversary copies data from Ben's device to one the adve=
+rsary owns, and uses his own device to read Ben's notes.
+
+Apple's Solution: Ben's data is encrypted with a device UID-derived key, so=
+ the adversary's device will not be able to decrypt Ben's data.
+
+
+Possible Attack: Ben runs an app made by the adversary, which runs maliciou=
+s code to exploit his device and read his notes.
+
+Apple's Solution: App developers must be verified by Apple before being all=
+owed to develop and install apps on iOS devices, so malicious app developer=
+s will not be anonymous to Apple. When an app is run, iOS also does code si=
+gnature checks to ensure that an app has not been modified to include malic=
+ious code since it was installed or updated. Third-party apps are also sand=
+boxed, restricting their access to files stored by other apps, like Ben's n=
+otes.</pre></li>
+
+<li><pre class=3D"student-text">Possible attacks and ways Apple deals with =
+them:
+-Adversary modifies low-level firmware so that they can read Ben's notes: a=
+ll the low-level=20
+components must be signed by Apple. The first executed code is read-only, a=
+nd all components
+launched after that (e.g. the bootloader or kernel) must be confirmed to be=
+ signed by Apple
+before they are launched. Therefore, if an adversary modified low-level cod=
+e, it would be=20
+detected before startup, and the device would enter recovery mode.
+-Adversary tries to downgrade version to exploit vulnerabilities in earlier=
+ code: system software authorization prevents downgrades
+-Adversary compromises the kernel: things are compartmentalized, e.g. the s=
+ecure enclave=20
+maintains integrity of protection even if the kernel is compromised
+-Adversary tries to obtain face ID data like mathematical representation of=
+ your face in order
+to log in to your phone: mathematical representation of face is stored in t=
+he secure enclave
+and never leaves the device, making it difficult for an adversary to obtain=
+ it
+-Adversary attemps to read device's UID or GID: these id's are compiled int=
+o the application processor,
+and no software or firmware can directly read them, and they can only be us=
+ed by the AES engine
+dedicated to Secure Enclave
+-Adversary tries to read keys: Old keys are securely erased using the effac=
+eable storage feature
+</pre></li>
+
+<li><pre class=3D"student-text">Question: Ben Bitdiddle has an iOS device t=
+hat he uses to keep track of confidential notes. What are the different att=
+ack scenarios that Apple considers where an adversary tries to obtain Ben's=
+ notes, and what part of the iOS security architecture prevents those attac=
+ks?
+
+The first line of defense is the login step, randomly being able to login w=
+ith faceid or touchid is apparently very unlikely to be unlocked. It can al=
+so be locked through a remote command, allowing Ben to lock it even if the =
+adversary has access to it. There is a secure enclave which processes all l=
+ogin info so it is not possible to just send bits in to brute force it. The=
+ memory chip is encrypted with a unique uid and gid, so the adversary can't=
+ just take the memory chip and load it somewhere else to read the notes. Th=
+e file contents and metadata are also encrypted with software and hardware =
+keys so a random adversarial application cannot access this file unless it =
+has the key. Furthermore these applications are signed for approval from Ap=
+ple and sandboxed when run. Address randomization also helps deter retrun t=
+o libc attacks from overflow attacks in other apps that might try to access=
+ the information.</pre></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 10
+
+Ben Bitdiddle has an iOS device that he uses to keep track of confidential =
+notes. What are the different attack scenarios that Apple considers where a=
+n adversary tries to obtain Ben's notes, and what part of the iOS security =
+architecture prevents those attacks?
+
+Rootkits:
+Each part of the startup sequence are signed by Apple to prevent running of=
+ unsigned code during the startup sequence. This would allow the system to =
+identify that software has been written to the boot sequence and is trying =
+to maintain persistence.
+
+Compromised OS:
+There is a secure enclave which runs software in a separate box to protect =
+from a malicious OS.
+
+Physical inspection of device:
+Each physical device contains an encryption chip which uses a private key w=
+ritten into hardware during manufacturing to encrypt and decrypt memory bei=
+ng stored/read from physical device memory.
+
+Malicious Apps:
+Apps are signed by the developer and must contain a valid signature in orde=
+r to be installed and to automatically install updates.</pre></li>
+
+<li><pre class=3D"student-text">Scenarios:
+1. Adversary tries to read the decrypted file from Ben's device. This is pr=
+otected by the Data Protection classes to ensure the file is only decrypted=
+ when needed
+2. Adversary tries to downgrade the device to an older version of iOS that =
+has a bug which allows an adversary access. This is protected by System Sof=
+tware Authorization
+3. Adversary tries to guess the user's passcode or trick the facial or touc=
+h recognition. This is protected by the Secure Enclave and various methods =
+to detect an adversary vs the user.
+</pre></li>
+
+<li><pre class=3D"student-text">Scenarios:
+- Attacker takes control of a component in the boot process.
+- Attacker takes control by unlocking phone.
+- Attacker takes control by using phone which was unlocked.
+- Attacker gets data from phone by dumping its data.
+- Attacker takes control using an untrusted app.
+- Attacker takes control with a trusted app that has a buffer overflow/etc =
+vulnerability.
+
+Responses:
+- Bootchain is completely secure, down to the boot ROM which is completely =
+unmodifiable.
+- Face ID/Touch ID/passcode.
+- Requiring unlock checks periodically.
+- Data can be encrypted.
+- Apps must be code-signed and trusted.
+- Apps are sandboxed, and their vulnerabilities cannot be used for exploits=
+.</pre></li>
+
+<li><pre class=3D"student-text">Someone could just unlock the phone and see=
+ the notes, but that's protected by a passcode. There is a defective kernel=
+ that allows access, but Apple blocks it with a secure enclave. Try to use =
+touch/face to unlock after phone turned off (ie. sleeping person), but keys=
+ for touch/face discarded when phone turns off. File data protection protec=
+ts against malicious apps. Keychain control uses access control lists to st=
+op adversaries unless they have access.</pre></li>
+
+<li><pre class=3D"student-text">Someone steals the device and reverts it to=
+ an earlier version of iOS to exploit a security flaw:
+iOS uses a process used System Software Authorization. The authorization se=
+rver checks a presented list of measurements to make sure that the update h=
+appens as intended.=20
+
+Someone tries to impersonate Apple and pushes through an update:
+The boot-time chain-of-trust evaluation verifies that the signature comes f=
+rom Apple, so this is protected by hardware.
+
+Someone tries to hack the device and get the Touch ID fingerprint informati=
+on to access the device:
+There are many things to stop against this. The processor can=E2=80=99t rea=
+d fingerprint data, only the secure enclave can. The data is encrypted with=
+ a session key using a secure shared key (provisioned at the factory) and t=
+hen discarded afterwards. Also it is never sent to Apple, iCloud or iTunes.
+
+Someone tries to hack the device using Face ID:
+To prevent against digital and physical spoofs, the True Depth camera data =
+is randomized in a device specific random pattern and it is transformed int=
+o a mathematical representation in the Secure Enclave. Also there is separa=
+te neural network that=E2=80=99s trained to detect spoofing attacks using m=
+ask for example. Similar to Touch ID, the data is not sent to device backup=
+s or Apple and discarded afterwards. Face ID diagnostics can=E2=80=99t be u=
+sed to gain information because it enabling it requires digitally signed au=
+thorization from Apple.
+
+Someone steals the device=E2=80=99s memory chip to access its files on anot=
+her similar device:
+The UID is also needed because it protects the file system, and since the U=
+ID isn=E2=80=99t related to any other identifier on the device, the files w=
+ill not be accessible.
+
+Some hacks the device by guessing the password:
+Brute force attacks are prevented by using large iteration count so all try=
+ing all combinations takes time in the magnitude of years. Also there is an=
+ escalating time delay if a passcode is attempted incorrectly, and this tim=
+e delay is enforced by the Secure Enclave coprocessor.
+
+An attacker gains access to an app on Ben=E2=80=99s device through adding t=
+heir own fingerprint in Touch ID:
+Keychain access control is fine-grained enough to specify that the enrollme=
+nt hasn=E2=80=99t changed since the item was added.
+
+An attacker develops a malicious app to tamper with the device:
+To create an app, the developer must register with Apple, which then verifi=
+es their identity and reviews their app to catch security flaws. These thir=
+d-party apps must be validated and signed using an Apple-issued certificate=
+.=20
+
+An attacker develops a malicious app that embeds a malicious framework:
+The system performs a code signature validation of dynamic libraries that a=
+ process links against at launch time. A program may link against any libra=
+ry with the same team identifier in its code signature as the main executab=
+le-other executables don=E2=80=99t have a team identifier so they are limit=
+ed to libraries that ship with the system itself.=20
+
+An attacker develops a malicious app that wants to access files on Ben=E2=
+=80=99s device:
+All third-party apps are sandboxed so they can=E2=80=99t access files from =
+other apps or make changes to the device. Apps can=E2=80=99t degrade perfor=
+mance because background processing can only happen through system provided=
+ APIs.
+
+An attacker creates a malicious app that wants to corrupt another app on Be=
+n=E2=80=99s device:
+The iOS SDK offers a full suite of APIs that make it easy to adopt Data Pro=
+tection in their apps.
+
+</pre></li>
+
+<li><pre class=3D"student-text">The adversary could steal Ben's device and =
+try to login. Apple tries to prevent this with their general system securit=
+y (TouchID, passwords, or FaceID). Apple also believes that an attacker mig=
+ht try to directly access the memory on the device to steal Ben's informati=
+on without the need to login so they have encryption and data protection av=
+ailable for all stored data on the device such that it cannot be accessed b=
+y an attacker. Another attack is that an attacker could create a malicious =
+application that Ben downloads and then they would try to use it to access =
+his other files. Apple's app security aims to prevent this by first requiri=
+ng the app to have been validated by Apple already, so a malicious app woul=
+d have a tough time getting approved, but if the malicious app does happen =
+to make it past Apple's screening then Apple's runtime process security wou=
+ld step in to prevent it from accessing files that are not available to it.=
+ One more possible attack is if the attacker were to create a malicious ext=
+ension for another app, and Ben began using this extension, then the extens=
+ion might be able to access his data. However, Apple sandboxes extensions a=
+nd gives them no access to the files of other apps, and also limits the typ=
+es of extensions that are allowed into a set of extensions that can be cont=
+rolled easily. Finally, the attacker could make a malicious accessory that =
+Ben may begin to use. Apple only allows Apple accessories to have full acce=
+ss to the system through the use of special hardware, so a third-party acce=
+ssory would have its capabilities severly limited such that it could not st=
+eal anything from Ben.
+</pre></li>
+
+<li><pre class=3D"student-text">The adversary could tamper with low level d=
+evice software (so that it leaks
+messages). To avoid this Apple ensures that there is an unbroken chain of t=
+rust
+during the secure boot process.
+
+A naively implemented version of Face ID could be tricked by a static pictu=
+re of
+the phone owner. This attack is prevented by using a depth camera.
+
+An attacker with physical access to the phone could read out the contents o=
+f its
+flash memory without even booting the device. Thus it is essential that the
+flash contents are encrypted.
+
+The user could be tricked into using the wrong messaging app. This can't
+entirely be prevented, but some amount of deception can be avoided by Apple=
+'s
+approval process/related app signing.
+</pre></li>
+
+<li><pre class=3D"student-text">The attack scenarios that Apple considers f=
+or Notes are:
+
+1) Reading text from phone --&gt; solved by using encryption (AES-GCM)
+
+2) Reading attachments from phone --&gt; also solved by using encryption (a=
+nd restricting types of supported attachments)
+
+3) Direct access from phone --&gt; requires passcode/FaceID/TouchID
+
+4) User leaves app open --&gt; 3 minute timer untill lockout
+</pre></li>
+
+<li><pre class=3D"student-text">The attacker could downgrade the software a=
+nd exploit the security bugs in the old software. Apple uses System Softwar=
+e Authentication to prevent this.=20
+
+Milicious software is prevented from being downloaded because anything inst=
+alled must be signed by apple.=20
+
+Any data stored into the file system by the Secure Enclave is encrypted.=20
+
+Passwords, faceID, and touchID prevent an attacker from accessing the data =
+on the phone.=20
+</pre></li>
+
+<li><pre class=3D"student-text">The iOS has a number of relevant techniques=
+ for protecting files, including:
+
+-&gt; botstrapping protects from malicious hardware being able to substitut=
+e critical components, so no files can be stored or acessed in/through mali=
+cious hardware
+-&gt; system software authorization doesnt allow software to be downgraded,=
+ and hence old exploits can=E2=80=99t be used by attackers.
+-&gt; encryption is ubiquitous in storing and transfering data, so that MiI=
+M-like attacks are not possible.=20
+-&gt; similarly, some attacks on direct access to memory, corruption etc. c=
+an be avoided by setting strong permissions and limiting access through enc=
+ryption. The key feature that protects files, Data Protection, uses a hiera=
+rchy of keys in a per-file basis and determines which files are accessible =
+and unlocked. In particular, it keeps an specialized piece of hardware to p=
+erform cryptographic computations. It also uses a set of classes to set up =
+different permissions.
+-&gt; short yet critical pieces of information - such as passwords, or mayb=
+e Bob's files - can be stored using the Keychain Data Protection, which has=
+ an API that allows programs to authenticate passwords etc. through it.
+
+
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">There are many attack scearios that Apple c=
+onsiders when thinking about the security of the device.
+From a hardware standpoint, Apple thinks about attackers that may obtain th=
+e device and modify the hardware in an attempt
+to gain access to Ben's data. In this, Apple has all of their hardware sign=
+ed, refusing to boot up if third party hardware
+is in use (secure boot chain). Apple also thinks about attackers that may t=
+ry to revert to old versions of iOS that are missing security features,
+to which Apple prevents any reverting by using System Software Authorizatio=
+n.=20
+
+When considering their user authentication systems, attackers may try to gu=
+ess passwords in an attempt to access the keys necessary to access
+sensitive data, to which Apple rate limits guesses by using slow hashing, a=
+nd then locks out attempts to unlock after repeated failures, and
+then, if the user configures their device as such, wipes the memory of the =
+device if enough incorrect attempts occur. Attackers may want
+to use application code to do a return-to-libc or buffer overflow, to which=
+ Apple uses ASLR, and non-executable memory to thwart such attempts.</pre><=
+/li>
+
+<li><pre class=3D"student-text">There are several possible things Apple is =
+concerned about in terms of
+someone accessing Notes they shouldn't be able to access. One is that
+an adversary may try to downgrade the device to a lower OS version with
+a known security bug. This is prevented by requiring verification from
+Apple servers in conjunction with a unique device ID to update a device
+and confirm that the update attempted is an allowed update (Apple does not
+allow downgrades for any device due to security concerns). Apps are sandbox=
+ed
+and each have their own randomized file directory, so one app becoming
+compromised will not hurt the others or the OS. If the OS itself is
+compromised (ie by the phone being jailbroken), Apple still tries to
+protect data using hardware encryption. This encryption is built into the
+path between flash storage and main system memory.</pre></li>
+
+<li><pre class=3D"student-text">There are several scenarios that Apple cons=
+iders:=20
+1. The device can be stolen by an adversary and the adversary
+may try to access the note from this device. But Apple makes
+it impossible for the adversary to bypass the passcode and
+unlock the device. Apple uses device's UID to encrypt user's
+passcode, so the attacks must be performed on the device. But
+Apple also uses attempt delay to make this impossible.
+2. The adversary may try to take the device's flash storage and
+try to access the data by attaching the flash to other devices.
+However, any attempt to access the data must be signed by=20
+a key that is specific to a device.=20
+3. Compromising the system. Still the adversary can't access the=20
+note because any attempts to access the data must use a hardware key
+and passcode key. The passcode key generation happends at a secure
+enclave, so the attacker can't access the data without the user
+presents the passcode.
+4. Malicious apps. The apps are sandboxed. Each app is only allowed
+to access its own data. </pre></li>
+
+<li><pre class=3D"student-text">These are some attack scenarios for the cas=
+e where an adversary tried to obtain Ben=E2=80=99s notes:
+
+- Gain access to the physical device and 1) open it to get to the notes, or=
+ 2) copy over the device=E2=80=99s memory
+- Pretend to be Apple and send a software update with a virus that compromi=
+ses the system and reads all the data
+- Create and release an application on App Store that compromises the syste=
+m
+- Pretend to be Ben (in person, remotely, at an Apple Store)
+- If the notes are not just saved locally (e.g. Ben uses iCloud), then hack=
+ into Ben=E2=80=99s iCloud account and retrieve the notes
+
+Here are some parts of iOS security architecture to prevent such attacks:
+
+- System security:
+	- only code signed by Apple can be installed on a device (System Software =
+Authorization, Apple installation authorization server)
+	- Touch ID, Face ID, passcodes: password / fingerprint / face protected, a=
+lso supports remote locking and other locking mechanisms (e.g. five unsucce=
+ssful attempts)
+	- 3rd party applications must pass security reviews when joining the App S=
+tore, and must also use system-provided APIs when using Apple security tool=
+s like Touch ID, Face ID, or a passcode (they are only notified when authen=
+tication is successful and cannot access the data associated with the user)
+
+- Encryption and Data Protection:
+	- Secure Enclave: user data is kept in this coprocessor enclave (will not =
+be compromised even if kernel is compromised)
+	- hardware security features: crypto engine used for file encryption
+	- UIDs (specific to Secure Enclave) and GIDs (shared across processors in =
+a class of devices)
+	- random number generator
+	- Effaceable Storage: secure data erasure
+	- Data Protection: protect data stored in flash memory on the device; for =
+files: per-file basis, encryption via AES CBC, key wrappings via NIST AES, =
+only Secure Enclave has the keys &amp; gives ephemeral key to AES engine
+	- =E2=80=9CErase All Content and Settings=E2=80=9D option: makes all files=
+ cryptographically inaccessible</pre></li>
+
+<li><pre class=3D"student-text">guessing passcode to gain access into devic=
+e
+  - prevented through explicitly 80ms delays when testing passwords. would =
+take 5 years to brute force all passwords
+  - escalating times of delays with invalid attempts
+
+attacks involving automated remote logins
+  - entry to device is protected with the passcode *and* the device UID. me=
+aning that attempts must originate from the device
+
+invalid access to the keychain module to obtain sensitive bits of metadata
+  - enforcing a prefix requirement of the user access group to gain access
+  - protected using a hierarchical protection structure similar to the Data=
+ Protection scheme
+
+attacker changing the touch/face id to access keychain components
+  - keychain access control requires that touch/face id's remain constant t=
+o constrain the attacker
+</pre></li>
+
+<li><pre class=3D"student-text">iOS has very sophisticated file data protec=
+tion. There is a hierarchy of
+keys and data protection class. Furthermore, different portions of a file
+can have different keys. In order to obtain Ben's notes stored on his iOS
+device, the attacker would need to have physical access to his device and
+his passcode. Depending on what app Ben uses to store his notes, the
+protection class might range from Complete Protection which requires
+the attacker to enter the passcode, to Protected Unless Open to Protected
+Until First User Authentication which all use very secure encryption scheme=
+s.
+</pre></li>
+
+<li><pre class=3D"student-text">iOS secures most parts of the device. Becau=
+se the hardware and the software are generated by the same manufacture, the=
+y can create a complete security profile.=20
+
+Attack: Unlocking the device by pin
+Prevention: The attacker must know the pin. If not, there are too many opti=
+ons of the attacker to be successful using trial and error.
+
+Attack: Using OS update to gain access to the system
+Prevention: OS updates come signed directly from apple servers. In order to=
+ get an update the device must send a unique signature embedded in the hard=
+ware to the servers.
+
+Attack: After getting access to the OS, attempting to access the confidenti=
+al notes
+Prevention: The Enclave stores security keys and prevent the OS from readin=
+g for secure, encrypted portions of memory. Further, the AES encryption gen=
+erates keys that are accessible to the applications and not the server
+
+Attack: Using the person=EF=BF=BDs image/finger print to access the device
+Prevention: The image of the user is not stored on the device just a mathem=
+atical representation. This representation is updated regularly as the user=
+ accesses the device so slight changes in personal appearance are tracked. =
+Using a photo to access the device would fail due to proximity and depth se=
+nsors. Using a copy of the person=EF=BF=BDs finger prints may also fail bec=
+ause the system does not retain the finger prints but its own representatio=
+n of the prints. Failed tries revert to pin security.
+</pre></li>
+
+<li><pre class=3D"student-text">iOS security architecture starts protection=
+ of Ben's notes from the ground up. First is authentication which begins by=
+ authenticating Apple's software. There is also hardware encryption so that=
+ files cannot be copied and viewed on another device. There is the actual u=
+ser authentication. This is strengthened by giving users easier (while stil=
+l secure) ways of authenticating like FaceID and TouchID. Then there is fil=
+e permissions protection via usage of ACLs. Apple also uses sandboxing to e=
+nsure that apps cannot access information that other apps are allowed. Apps=
+ that need access to certain files (like Ben's notes) require declared enti=
+tlements. </pre></li>
+
+<li><pre class=3D"student-text">iOS uses encryption and data protection, ap=
+p security, and network security to keep Ben Bitdiddle's notes safe. The en=
+cryption protects the data from people who may steal your device, or if an =
+unauthorized person attempts to use it. App security sandboxes each app so =
+that there is no data leakage and runs apps securely so that there is no da=
+ta leakage. Network security uses industy-standard networking protocols so =
+that there is secure authentication and data in transmission is encrypted s=
+o if Ben Bitdiddle tried to send the notes over the network, it could not b=
+e stolen in interception.
+</pre></li>
+
+<li><pre class=3D"student-text">lec10
+
+SecureBoot
+Ensures that the hardware has not been tampered with to
+include backdoors and/or monitoring
+
+Secure Enclave
+Ensures the integrity of user credentials such that
+an attacker cannot change sign-in info and gain control
+
+TouchID, FaceID
+Provides a way to sign into the iOS device that is seemingly
+more unique to a user than passwords
+
+Hardware security features
+Ensures that files are encrypted and cannot be read by
+foreign devices
+
+App Security
+Ensures Ben does not download a foreign application that
+contains malicious code</pre></li>
+
+<li><pre class=3D"student-text">lec10.txt
+
+John C. McLaughlin
+March 12th 2018
+
+Question: Ben Bitdiddle has an iOS device that he uses to keep track of con=
+fidential notes. What are the different attack scenarios that Apple conside=
+rs where an adversary tries to obtain Ben's notes, and what part of the iOS=
+ security architecture prevents those attacks?
+
+
+Attack Scenario One:
+	Attacker with physical access attempts to change or modify the kernel or c=
+omponents in the boot sequence in order to bypass certain authentication fe=
+atures.
+
+	- iBoot ensures that only Apple signed code is executing on the device dur=
+ing the boot up sequence.
+
+Attack Scenario Two:
+	Attacker attempts to guess Ben Bitdiddle's passcode, or somehow spoof biom=
+etric inputs.
+
+	-TouchID, user passcode, and FaceID all operate on secure channels, with t=
+ime outs, lock outs
+
+Attack Scenario Three:
+	Attacker reads live memory or device storarge looking for Ben Bitdiddle's =
+notes.
+
+	- User data is encrypted at rest.=20
+	- Encryption keys are securely deleted using effaceable storage
+	- Apple File System enforces encryption of user data on a per file and eve=
+n a per extent basis.=20
+
+Attack Scenario Four:
+	Attacker utilizes a malicious app or compromised app to read and access Be=
+n Bitdiddle's notes
+
+	- Apps must be signed.
+	- All apps run in a sandboxed mode, preventing access to files from other =
+apps.=20
+	- Apps run in least privledged mode and can only do operations which they =
+have entitlements for.
+=09
+
+</pre></li>
+
+<li><pre class=3D"student-text">some of the attack scenarios include:
+
+physical compromise of the device: Apple's passcodes system, Face ID, and T=
+ouch ID are designed to prevent unauthorized access of the physical device,=
+ and attempts are purposefully slowed to take long periods of time to preve=
+nt brute-forcing.
+
+malicious apps: Apple ensures that every app released on the App Store is m=
+ade by a verified organization or person, and that apps can only utilize ce=
+rtain system resources.
+
+memory swaps: data encryption is specific to the device, so removing the de=
+vice's flash memory to try to read it would not yield any results.
+
+subversion of boot/OS: the bootup process is controlled with a series of si=
+gnatures and keys that ensure the code that is being loaded is genuine the =
+genuine iOS boot code.</pre></li>
+
+<li><pre class=3D"student-text">the following could be a few attacks that a=
+pple tries to protect against.
+
+1. Downgrading the software. A malicious attacker could try to downgrade th=
+e software so that a previous version with a bad entry point can be used to=
+ enter the phone. Apple disallows this by not giving the option to downgrad=
+e.
+
+2. Get in via faceID data. Apple disallows this by storing the faceid data =
+very securely
+
+3. Modifying Lower Level firmware. Apple disallows by making sure all low l=
+evel things are signed.
+
+4. Attacker tries to get through by learning the user's password. Apple tri=
+es to get the user to not share their password with anyone else, but this o=
+ne is hard to protect against.
+</pre></li>
+
+<li><pre class=3D"student-text">=E2=80=A2 The startup process ensures that =
+only Apple-signed code can be installed on a device. An attacker cannot spo=
+of Apple identity or trick a device into downloading a fake software update=
+ that would compromise the device. An attacker also cannot somehow downgrad=
+e a device to an older version to take advantage of patched vulnerabilities=
+. An attacker cannot gain access to Ben's notes by installing malicious cod=
+e posing as a software update.
+=E2=80=A2 The Secure Enclave encrypts with a key that is dependent on an an=
+tireplay counter. Thus, an attacker cannot perform a replay attack compromi=
+sing a new passcode, new fingerprint record, etc.
+=E2=80=A2 TouchID and FaceID authentication is architected to prevent digit=
+al and physical spoofing, preventing an attacker from unlocking the phone b=
+y, for example, presenting an image of Ben's face to the TrueDepth camera (=
+which forms a depth map). The FaceID and TouchID data also never leaves the=
+ device and is securely encrypted in the Secure Enclave.
+=E2=80=A2 Third-party apps that use TouchID/FaceID must use a system-provid=
+ed API that gives no access to user data, or the touch/faceID/passcode itse=
+lf. Thus, no third-party app can compromise Ben's device by recording touch=
+/faceID data.
+=E2=80=A2 The UID and GID keys cannot be read directly by any software or f=
+irmware. All other keys are created by a TRNG process. It is almost impossi=
+ble for attackers to gain access to the keys/decrypt secure data even with =
+physical access to the device, such as Ben's notes.
+=E2=80=A2 Data Protection protects flash memory. Per-file, per-extent, and =
+metadata keys are never exposed to the application processor, and are only =
+handled within the Secure Enclave. Attackers cannot decrypt data from the d=
+evice filesystem unless they are able to break into the Secure Enclave.
+=E2=80=A2 Third-party apps must be validated and signed with Apple-issued c=
+ertificates. Certificates are only issued to developers whose real-world id=
+entities are known by Apple, and apps are reviewed and vetted for obvious b=
+ugs, vulnerabilities, etc. This discourages developers from attempting to s=
+ubmit malicious code, even if they are able to find a security vulnerabilit=
+y.
+=E2=80=A2 Third-party apps are sandboxed, and so they can't access files st=
+ored by other apps (such as Notes!) and can't make changes to the device. I=
+f an app needs to access data outside of its sandbox, it can only do so via=
+ services explicitly provided by iOS.=20
+=E2=80=A2 ASLR prevents memory corruption attacks, such as return-to-libc a=
+ttack.</pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--ntt9zVhpsVTy2OWlCPJ0XgsyGEQ6FIqiYrE3xc579r------

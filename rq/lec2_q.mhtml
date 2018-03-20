@@ -1,0 +1,1129 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-questions/2
+Subject: Questions for lecture 2 - 6.858
+Date: Wed, 20 Mar 2018 22:57:26 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--pHWuE9W8UFLvnBr9gxIoFWRFBI2LyWqCX2GSEweNS0----"
+
+------MultipartBoundary--pHWuE9W8UFLvnBr9gxIoFWRFBI2LyWqCX2GSEweNS0----
+Content-Type: text/html
+Content-ID: <frame-32849-90edda48-cc97-4095-b53d-f4ce23980dc1@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-questions/2
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Questions for lecture 2 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Questions for lecture 2 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text">How does google defend against attacks on i=
+t=E2=80=99s open source code/what is the best security mechanism to defend =
+against attacks on code that everyone can see?</pre></li>
+
+<li><pre class=3D"student-text">Questions:
+- What does =E2=80=9Crooting the trust of the boot chain in either a lockab=
+le firmware chip=E2=80=9D mean?
+- What does a cluster orchestration service mean?
+- How do you secure the global name space in which Google engineers=E2=80=
+=99 identities are all stored? Is this a single point of failure?</pre></li=
+>
+
+<li><pre class=3D"student-text"># Lecture Question L2
+# Rayden Y. Chia
+
+Is Google's change management process fully automated with minimal human in=
+tervention, or does it rely on some human checks?</pre></li>
+
+<li><pre class=3D"student-text">1. Can you go over the RPC protocol part (A=
+ccess Management of end user data section) once in the class? I didn't unde=
+rstand that part that well.
+</pre></li>
+
+<li><pre class=3D"student-text">1. Google uses load balancers to avoid DoS =
+attacks. But what if=20
+the load balancers are attacked? Is there any particular way to
+protect load balancers?=20
+2. How does Google ensure its codebase can't be stolen by others?
+As Google is becoming a huge company and everyone can access the
+codebase.</pre></li>
+
+<li><pre class=3D"student-text">1. Security is a comprehensive problem and =
+ubiqutous problem. I'm inetersted how does Google prioritize its security a=
+ctivities taking into account the scale of its operations.
+2.    </pre></li>
+
+<li><pre class=3D"student-text">1. What are the planned interactions betwee=
+n the machine, service, and employee identitiy objects in "Inter-Service Ac=
+cess Management" section?
+2. How are API's designed securely separately from the system infrastructur=
+e?
+3. How might Google protect against a DoS attack against the =EF=BF=BDend u=
+ser permission ticket=EF=BF=BD verification process?=20
+4. How can Google be confident that they continue to scale up to allow them=
+selves to absorb many attempted DoS attacks?
+5. Why would other companies/services want to partner with Google for Unive=
+rsal 2 Factor auth?=20
+6. What percentage of security flaws would Google expect their Red Teams to=
+ find in contrast to like the paid 3rd party hackers? </pre></li>
+
+<li><pre class=3D"student-text">&gt;&gt; "Hardware Design and Provenance
+A Google data center consists of thousands of server machines connected to =
+a local network. Both the server boards and the networking equipment are  c=
+ustom-designed by Google"
+
+What real kind of custom-designing does this entail? This seems to be marke=
+ting jargon? The line that follows this seems much more feasible -- of plac=
+ing checks in the process of selecting vendors and the equipments they sell=
+.
+"We vet component vendors we work with and choose components with care, whi=
+le working with vendors to audit and validate the security properties provi=
+ded by the components." So is this the real cusotm-designing that they refe=
+r to?
+
+-----
+&gt;&gt;"When an end user deletes their entire account, the infrastructure =
+notifies
+services handling end user data that the account has been deleted. The
+services can then schedule data associated with the deleted end user accoun=
+t
+for deletion."
+
+Google innocuously mentions that this is the process it follows in deleting=
+ user information. From a user's security standpoint (and not the perspecti=
+ve which is dominant in this document, namely, of Google's), how can one be=
+ assured that the promise made by Google is actually implemented, and that =
+there's no residual data that's left behind in their system? What if there'=
+s a bug in their deletion system? Should companies move towards publishing =
+COQ equivalent designs/proofs of their internal semantics as a first step? =
+That still won't assure having followed the semantics during implementation=
+. What's the right way out then?
+-----
+</pre></li>
+
+<li><pre class=3D"student-text">A lot of the processes depend on a two-part=
+y authentification system - is this enough? It seems that if an attacker co=
+uld compromise an account, they might also be able to get the account of a =
+second party needed to authenticate.=20
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">Are Google's "custom chips" still affected =
+by Meltdown/Spectre? If so, how do they protect against those security flaw=
+s from being exploited?
+</pre></li>
+
+<li><pre class=3D"student-text">Are there any negative side effects of publ=
+ishing Google's security practices online for everyone to see? Is it possib=
+le for a malicious attacker to read through this security design and be mor=
+e well informed of how to successfully attack Google (or perhaps a smaller =
+less secure company)?</pre></li>
+
+<li><pre class=3D"student-text">Are there known attacks that have been moun=
+ted against Google in the past? In general, was this system developed by fo=
+llowing security principles, or by responding to threats?</pre></li>
+
+<li><pre class=3D"student-text">Chrome doesn't do this anymore, but I remem=
+ber that it is used to store your passwords in plaintext so anyone with acc=
+ess to your computer could view all your passwords with minimal effort. I w=
+as very surprised to see the contrast between allowing this vulnerability a=
+nd the amount of effort put into to secure their infrastructure. Do we have=
+ to think about security differently when it comes to end users than infras=
+tructure?
+</pre></li>
+
+<li><pre class=3D"student-text">Could Google's various open-source projects=
+ reveal vulnerabilities to Google's security measures, and have those vulne=
+rabilities been exploited?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Danny Tang
+data1013
+2/8/18
+
+Reading 1
+
+What part of Google's extensive security system is its weakest link, and ho=
+w does Google respond to attacks on this part?</pre></li>
+
+<li><pre class=3D"student-text">Discussing DoS attacks, the paper describes=
+ how "at the next layer, the GFE instances also report information about re=
+quests that they are receiving to the central DoS service, including applic=
+ation layer information that the load balancers don't have"
+
+What are some examples of application-level information that would be valua=
+ble to the DoS service?
+</pre></li>
+
+<li><pre class=3D"student-text">Do companies ever sacrifice security for th=
+e sake of usability? It sounds like some of Google's precautions (for examp=
+le checking if the user is logging in from a reasonable location) slow down=
+ the usage process and add overhead, but at the same time it does sound lik=
+e a good precaution to take. I guess I'm wondering if there's such a thing =
+as too much security or if "better safe than sorry" is what all companies a=
+dhere to.
+</pre></li>
+
+<li><pre class=3D"student-text">Do most companies follow the Google method =
+of 'scheduling' data for deletion? Obviously it is nice to have the option =
+of recovering something that is accidentally deleted, but it might create a=
+ false sense of security when a user is trying to delete particularly sensi=
+tive information - something that would be wiped right away.
+
+On a side note, is it possible to 'write' to a disk in such a way that you =
+nomially write over a region of the disk, but don't actually change anythin=
+g there, thus giving yourself access to whatever bits were set in that regi=
+on before (and possibly allowing you to recover the data previously stored =
+there)?
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">Do you think that Google puts private backd=
+oors in some of their software? Does this generally happen in the industry?=
+ Does a private backdoor make software less safe?
+</pre></li>
+
+<li><pre class=3D"student-text">Does Google use formal verification to ensu=
+re the security of any piece of its infrastructure? Is there any piece of i=
+ts infrastructure so critical that it would benefit from that degree of eff=
+ort?</pre></li>
+
+<li><pre class=3D"student-text">Does Google use homomorphic encryption duri=
+ng cloud operations to protect users' privacy?</pre></li>
+
+<li><pre class=3D"student-text">For finding vunerabilities in software, wha=
+t are good tools to approach this problem algorithmically? (Is fuzzing stan=
+dard practice, and how exactly does that help find areas of exploitation?) =
+ </pre></li>
+
+<li><pre class=3D"student-text">Given that this paper was last updated in J=
+anuary 2017, do you think there have been anything that has emerged in the =
+past year that would/could result in a large change/addition to the policie=
+s that have been described?
+</pre></li>
+
+<li><pre class=3D"student-text">Google Security Design Question
+
+I noticed in this paper and have noticed in many other papers that encrypti=
+on is
+used far and wide as a security buzzword to assure readers that a certain p=
+rocess
+is undoubtedly secure. However, is there a universal encryption standard? D=
+o all
+companies use the same level of encryption? If not, just how different are =
+varying
+encryption qualities and what kind of overhead do they each have?
+
+Thank you!
+</pre></li>
+
+<li><pre class=3D"student-text">Google mentions specifically how they revie=
+w and test KVM both automatically and by hand as that appears to be a signi=
+ficant dependency of theirs, so any security flaws there affect them. Do th=
+ey write almost everything else in-house or are they able to scale this pro=
+cess of manual inspection + automatic testing (static analysis, etc.) to al=
+l libraries that they use either directly or indirectly (as dependencies of=
+, e.g., KVM)?
+</pre></li>
+
+<li><pre class=3D"student-text">Google puts a lot of effort into protecting=
+ customers' information. For example, it destroys the decomissioned SSDs if=
+ there are any traces of data. What about the opposite case? An SSD is bein=
+g destroyed/faulted/stolen - what do they do to preserve the customer's inf=
+ormation without violating the security?</pre></li>
+
+<li><pre class=3D"student-text">Google seems to say that they mainly rely o=
+n scale for absorbing DoS. If there was a natural disaster and one of Googl=
+e's main data centers went down, would what they have as backup be enough?
+</pre></li>
+
+<li><pre class=3D"student-text">Google uses machine intelligence on top of =
+data processing pipelines in order to warn of possible incidents -- what so=
+rt of signals indicate a potential incident?
+</pre></li>
+
+<li><pre class=3D"student-text">How are =E2=80=9Cmore secure=E2=80=9D hardw=
+are components chosen and spec=E2=80=99d out? Are they usually just looking=
+ for how physically breakable or scratchable a chip or disk is or are there=
+ other factors?
+</pre></li>
+
+<li><pre class=3D"student-text">How can isolation between VMs using hardwar=
+e virtualization break down? Why are they isolated?
+</pre></li>
+
+<li><pre class=3D"student-text">How common are companies breeched by using =
+a malicious piece of hardware (do we even know?)
+
+Have there been any attacks that aim to beat out security chips of any sort=
+?
+</pre></li>
+
+<li><pre class=3D"student-text">How do large organizations such as Google c=
+ome up with new potential
+attack vectors they need to address?
+</pre></li>
+
+<li><pre class=3D"student-text">How do metal detectors increase the securit=
+y of physical premises?
+
+</pre></li>
+
+<li><pre class=3D"student-text">How do organizations that do not have the t=
+remendous resources Google assure that their hardware does not have any bac=
+kdoors without creating it themselves (especially against national state at=
+tackers like the NSA)? </pre></li>
+
+<li><pre class=3D"student-text">How does Google determine if certain parts =
+of libraries are safe to use=20
+security wise? It seems like it can be the case that rather innocuous detai=
+ls
+can lead to large security problems. </pre></li>
+
+<li><pre class=3D"student-text">How does Google ensure they have active fee=
+dback in their security measures?=20
+I imagine the types of attacks that are common now may be very different ne=
+xt month or next year, and they need some mechanism to optimize their engin=
+eer's time.</pre></li>
+
+<li><pre class=3D"student-text">How does a load balancer help with a DDoS a=
+ttack by dropping/throttling users without affecting too many people? If th=
+e attack has a sufficiently high number of machines performing the attack, =
+it seems difficuly to distinguish it from normal traffic.</pre></li>
+
+<li><pre class=3D"student-text">How does a trust chain work? How is an iden=
+tity assigned to hardware? I understand that certain sofware components can=
+ store a "cryptographic signature". How is this stored? </pre></li>
+
+<li><pre class=3D"student-text">How does encapsulating application layer pr=
+otocols (such as HTTP) inside infrastructre RPC mechanisms work?
+</pre></li>
+
+<li><pre class=3D"student-text">How does google go about deleting data "sch=
+eduled for deletion"? Do they have steps to make sure that deleted data sta=
+ys deleted?
+</pre></li>
+
+<li><pre class=3D"student-text">How does google respond to security breache=
+s when they happen? For example, does google immediately shut down the infe=
+cted service? Does google let affected users know that their security may h=
+ave been breached? </pre></li>
+
+<li><pre class=3D"student-text">How is verification of cryptographic signat=
+ures implemented for the BIOS, bootloader, kernel, and operating system ima=
+ge? Can this system be spoofed
+by bad actors?</pre></li>
+
+<li><pre class=3D"student-text">How much additional latency, cost (in hardw=
+are and engineers), and time
+does it take to maintain this level of security at seemingly every layer
+of their infrastructure? I'm wondering what the utility benefits are for
+this additional work and how Google goes about deciding how much effort
+to put towards security relative to other tasks engineers can do.
+</pre></li>
+
+<li><pre class=3D"student-text">How much does the process of software devel=
+opment slow down due to the fact that only the owner of a service can grant=
+ it access to communicate with other servers? In general, is the process of=
+ getting permissions from the right people slow?
+</pre></li>
+
+<li><pre class=3D"student-text">How much of a performance impact does encry=
+pting all communications between machines have?  Is it negligible or not re=
+ally as Google has to build their own hardware specific for encryption?</pr=
+e></li>
+
+<li><pre class=3D"student-text">How much of a real threat are physical atta=
+cks, given that there is an entire subsection devoted to them? Have there b=
+een any high-profile ones recently?</pre></li>
+
+<li><pre class=3D"student-text">How to efficient detect attackers who bypas=
+s all the security controls and gain access to some sensitive data? Althoug=
+h we can log everything, it's still hard to discover these attackers from n=
+ormal users before they cause any damage.=20
+
+There are still some websites or smartphone apps transmitting passwords on =
+unencrypted network flow. Is there a way to enforce all websites hosting on=
+ google cloud to securely transfer sensitive data? Is it safe to store unen=
+crypted passwords database on a google cloud server since all the data are =
+already encrypted by google? What kinds of security problems should develop=
+ers consider when they deploy a website on google cloud?</pre></li>
+
+<li><pre class=3D"student-text">How worrisome is the physical threat of peo=
+ple attempting to access data centers? If credible, how effective are the c=
+ountermeasures mentioned against unwanted access?</pre></li>
+
+<li><pre class=3D"student-text">I don't quite understand the difference bet=
+ween the encryption mentioned in the "Service Identity, Integrity, and Isol=
+ation" subsection vs in "Encryption of Inter-Service Communication". Does t=
+his mean a communicated message is encrypted twice; once at the application=
+ level and another time at the network level?</pre></li>
+
+<li><pre class=3D"student-text">I noticed Google's layers of security don't=
+ map perfectly onto the idea of a technology stack as I'm used to thinking =
+about it, e.g. placing storage and communication "above" or "below" one ano=
+ther seems arbitrary, but the language of the paper implies the ordering is=
+ deliberate and meaningful. Why are the middle four layers in particular ar=
+ranged the way they are?</pre></li>
+
+<li><pre class=3D"student-text">I thought the paper was very well written a=
+nd not very confusing (probably for
+the sake of better security). They also provided links at the end for furth=
+er
+readings which answered most of my questions. I do wonder what would be dif=
+ferent about the
+cloud security section if it was written after the spectre/meltdown attacks
+were found. Would anything change (like more isolation), or would they just
+disable the features that allow the attacks and move on?
+</pre></li>
+
+<li><pre class=3D"student-text">I would think that publishing some details =
+of your security measures might give attackers an advantage when they are t=
+hinking about how to compromise your systems. How do companies like Google =
+balance sharing information that might help others with the need to keep as=
+pects of their security measures secret from potential attackers?</pre></li=
+>
+
+<li><pre class=3D"student-text">I've heard people talk about Google falling=
+ prey to not-made-here syndrome, in
+that they take major efficiency and quality hits from being too reluctant t=
+o
+use third-party services. Are there advantage to making everything in-house
+besides just being privy to all of the implementation details, from a secur=
+ity
+standpoint?
+</pre></li>
+
+<li><pre class=3D"student-text">If Google uses its automated process and de=
+tects security bugs in the developed source code, how does it determine whe=
+ther the developer inserted the bug intentionally or it is purely an overlo=
+oked bug? Since this is a quite important decision that is related to futur=
+e threats. </pre></li>
+
+<li><pre class=3D"student-text">In "Keeping Employee Devices and Credential=
+s Safe", it mentions that Google has replaced the use of "phishable" OTPs w=
+ith U2f security keys. Why are OTPs insecure against phishing attacks, and =
+how are Google-developed U2F security keys more resistant to phishing attac=
+ks than OTP second factors?</pre></li>
+
+<li><pre class=3D"student-text">In the Denial of Service Protection section=
+, it describes a series the Google Front End
+and a series of hardware and software load balancers. How does having servi=
+ces use
+the Google Front End help with DoS attacks and how does throttling help wit=
+h this as well?
+</pre></li>
+
+<li><pre class=3D"student-text">In the Google Front End Service subsection =
+they mention that GFE ensures that all TLS connections are supporting perfe=
+ct forward secrecy. What does this entail?
+</pre></li>
+
+<li><pre class=3D"student-text">In the section "Intrusion Detection", it sa=
+ys that incident and investigation teams respond to potential incidents all=
+ hours of the day. How small could a potential incident be and what exactly=
+ is the "machine intelligence" that is used to trigger a warning?</pre></li=
+>
+
+<li><pre class=3D"student-text">Is there anyone high up enough who can actu=
+ally view private data when they want to? Or could a couple of insiders wor=
+k together to access private data (e.g. give each other permission, disable=
+ infrastructure hooks)?=20
+</pre></li>
+
+<li><pre class=3D"student-text">It appears that U2F compliant devices are p=
+hysical usb disks that contain private keys. Would it be possible to physic=
+ally steal someones U2F device and load malware on it that runs when an emp=
+loyee attempts to authenticate and perhaps create a virus that loads itself=
+ onto any further U2F devices plugged into that machine?=20
+</pre></li>
+
+<li><pre class=3D"student-text">It seems like Google Compute Engine relies =
+on a hardened KVM to isolate customer processes. What does a KVM exploit ty=
+pically look like? What are ways (current or in the past) to escape a sandb=
+ox like KVM?
+</pre></li>
+
+<li><pre class=3D"student-text">It seems like there's a particular extra le=
+vel of risk when Google is running client code (e.g. GCE) on its machines. =
+What extra security measures does it take on that code, if any, parallel to=
+ the operational security measures for safe software development for its ow=
+n employees?
+</pre></li>
+
+<li><pre class=3D"student-text">It seems that many of these problems are pr=
+oblems that should be addressed in
+general, but the document makes several explicit references to internal Goo=
+gle
+services (BigTable, Borg, etc.).
+
+Are there any particular attacks that Google must be more careful to guard
+against due to this specific infrastructure and more generally, Google's sc=
+ale?
+</pre></li>
+
+<li><pre class=3D"student-text">Jeanie Pearson
+Lecture 2
+Question
+
+What does "smart reverse-proxy front end" mean in general? I assume it enco=
+mpasses everything the GFE takes care of but I don't understand that termin=
+ology.</pre></li>
+
+<li><pre class=3D"student-text">Lecture 2 (Question About Paper)
+Jorge Troncoso
+
+What type of attacks is Google trying to prevent by "scheduling data for de=
+letion"? Are they trying to give customers an opportunity to recover their =
+data if an attacker manages to delete their data?</pre></li>
+
+<li><pre class=3D"student-text">Lecture 2: Security Architecture
+2/12/18
+
+In the section about intrusion detection, they mentioned using "monitoring =
+points" in the infrastructure, but what does that entail? These points must=
+ include access and reading of data, but would they also just authenticate =
+all the users on the internal network at intervals/how else/that's pretty h=
+igh cost?</pre></li>
+
+<li><pre class=3D"student-text">Not a question about the article per se. Du=
+ring my internship at Google last year, we had training on security (the in=
+formation was similar to the information in the article). The employee gues=
+t policy was that it is the employee's job to keep a watch on their guests =
+and make sure not to let them take pictures of corporate information (say w=
+hiteboards with writing). The lunch areas were also pretty open and guests =
+would probably be able to eves drop on a conversation if they wanted to.=20
+
+It makes it seem like that part of the security isn't regulated super tight=
+ly. I wonder if it's a tradeoff between potential hazards and employee conv=
+enience? </pre></li>
+
+<li><pre class=3D"student-text">One of the big questions I have is on the d=
+esigning of their own hardware. I understand that they claim custom designe=
+d hardware provides better security because it is built for specific applic=
+ations. My concern is though it seems to fall under a bit of "security thro=
+ugh obscurity". Hardware that is only used in Google is not as widely teste=
+d and Google is by no means an expert in hardware design. While it does red=
+uce the number of attacks due to the fact that their hardware is less commo=
+n (Meltdown and Spectre probably don't affect Google's machines), it also s=
+eems that since the hardware is not as widely used there are likely to be m=
+ore security holes.
+
+I guess the question I have here is in practice, is following an agreed sta=
+ndard or keeping a private implementation more secure for hardware, protoco=
+ls, etc.?
+</pre></li>
+
+<li><pre class=3D"student-text">Paper Question
+
+In the paper it mentions that Google uses Red Team exercises, how are these=
+ penetration testing exercises usually conducted in industry?</pre></li>
+
+<li><pre class=3D"student-text">Part 2
+
+A lot of esoteric terms are used in the report. The paper lacked overall st=
+ructure. A comprehensive diagram of the safeguards at each level from Data =
+Centers -&gt; Hardware -&gt; Software -&gt; Cloud would be immensely helpfu=
+l. The paper only used specific terms such as application level encryption.=
+ What is the application level, exactly, and what is above/below it? They a=
+lso say "We use cryptographic authentication and authorization". What's the=
+ difference between authentication and authorization? </pre></li>
+
+<li><pre class=3D"student-text">Question
+
+Despite the scale of Google=E2=80=99s infrastructure and engineering organi=
+zation, I imagine that they must still rely on third-party tools in some ca=
+ses. How does Google manage the security risks of using third-party librari=
+es and software, particular open-source libraries?</pre></li>
+
+<li><pre class=3D"student-text">Question:
+	Google mentioned preventing DoS attacks, but it didn't mention anything ab=
+out DDoS. Are there any current security schemes that can detect a DDoS att=
+ack? </pre></li>
+
+<li><pre class=3D"student-text">Question: Does Google generally act proacti=
+vely when creating their security measures or would a large number of them =
+be more reactive?</pre></li>
+
+<li><pre class=3D"student-text">Question: They mention manual code review o=
+r having experts take a look at these systems. How effective is this really=
+? I would think that sure experts know what the state of the art is or know=
+ what paradigms to look for, but I would think 1. the number of false posit=
+ives would be quite high and 2. it would require knowledge of the entire st=
+ack. </pre></li>
+
+<li><pre class=3D"student-text">Question: This is regarding the Secure Boot=
+ Stack &amp; Machine Identity section. Doesn't it heavily impact performanc=
+e to check signatures of the BIOS, bootloader, kernel, and OS on each boot?=
+=20
+</pre></li>
+
+<li><pre class=3D"student-text">Question: how can Google detect DoS attacks=
+? this is briefly mentioned in the paper but not explained. Specifically, h=
+ow
+can Google detect that a DDoS attack is taking place, since it is expected =
+to be receiving hundreds of thousands of requests
+from all over the globe at any given time? In that scenario, how would it b=
+e able to discriminate between requests from the=20
+attacker and normal requests (I imagine that the services are all operation=
+al even in those scenarios)?
+</pre></li>
+
+<li><pre class=3D"student-text">Questions for "Securing the Google Cloud Pl=
+atform (GCP)":
+"
+Compute Engine enables customers to run their own virtual machines on Googl=
+e=E2=80=99s infrastructure. The Compute Engine implementation consists of s=
+everal logical components, most notably the management control plane and th=
+e virtual machines themselves.
+[...]
+Each virtual machine (VM) runs with an associated virtual machine manager (=
+VMM) service instance. The infrastructure provides these services with two =
+identities. One identity is used by the VMM service instance for its own ca=
+lls and one identity is used for calls that the VMM makes on behalf of the =
+customer=E2=80=99s VM. This allows us to further segment the trust placed i=
+n calls coming from the VMM."
+
+These questions might not make sense but do Google customers get to customi=
+ze the VMM service? How does having VMMs provide any additional security gu=
+arantee?
+</pre></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 2 Questions
+
+What's to stop a malicious RPC once a service has=20
+acquired a valid "end user permission ticket"?
+
+What's to stop the GFE from being bottlenecked when=20
+trying to load-balance external connection and prevent
+DoS attacks?
+</pre></li>
+
+<li><pre class=3D"student-text">SQ2
+
+Google mentions that it prevents IP spoofing as part of
+their secure service deployment, but they also mention that
+the infrastructure does not assume any trust between services
+on the infrastructure.  Why is it then necessary to prevent
+IP spoofing at this level?</pre></li>
+
+<li><pre class=3D"student-text">Testing question submission. V2
+</pre></li>
+
+<li><pre class=3D"student-text">The "Deletion of Data" section stands out t=
+o me as the one (main) area where Google decided to heavily place usability=
+ before security.  That is, rather than securely deleting the data when ask=
+ed, they instead hold onto it "just in case".  They also present this as a =
+good thing and assure you that the data is still "deleted in accordance wit=
+h service-specific policies."  Even deletion of an account appears to be ju=
+st a series of deletion-scheduling messages being sent to the different ser=
+vices.  The argument is that this protects users from unintentional data-de=
+letion.  And it does.  However...
+
+If services can describe their own deletion properties, what's stopping the=
+m from just never deleting anything you ask them to?  Google apparently has=
+ good data-at-rest policies, but this policy dictating deletion of user dat=
+a seems to be designed with Google in mind more than with the customer in m=
+ind.  I also wonder how much of the rest of Google's security infrastructur=
+e is designed more towards facilitating their data-consumption needs than t=
+owards consumers' data-privacy needs.  Everything in the article is spun in=
+ a positive light- what else did they sneak in to their policy?  Perhaps mo=
+re importantly, what did they leave out?</pre></li>
+
+<li><pre class=3D"student-text">The Google Infrastructure Security paper me=
+ntions securing the hardware in terms of hardware authentication. What do t=
+hey do about vulnerabilities in the hardware such as from Meltdown and Spec=
+tre, especially given that Project Zero was involved with discovering and r=
+eporting the vulnerabilities?
+</pre></li>
+
+<li><pre class=3D"student-text">The article says "To guard against this thr=
+eat we have replaced phishable OTP second factors with mandatory use of U2F=
+-compatible Security Keys for our employee accounts."
+
+What are soem examples of phishable OTP second factors and how are they phi=
+shable?
+</pre></li>
+
+<li><pre class=3D"student-text">The article states that Google will =E2=80=
+=9Cvet component vendors we work with and choose components with care=E2=80=
+=9D how do they decide which vendors to choose criteria wise and what compo=
+nents are better than others?
+
+</pre></li>
+
+<li><pre class=3D"student-text">The author mentions that Google uses 'ingre=
+ss and egress filtering' to prevent IP spoofing. What do they mean by that =
+and why would it help more with network performance as opposed to using a f=
+irewall (which the paper says they don't rely on)?</pre></li>
+
+<li><pre class=3D"student-text">The document briefy mentions Google's effor=
+ts in finding 0-day exploits, and Google Zero has indeed been frequently in=
+ the news lately. Is it safe to assume that the goal of this team is for Go=
+ogle to find such exploits themselves before other parties can use these ex=
+ploits against Google? If so, this strategy seems totally inaccessible to a=
+ny company not on the same scale as Google (which is pretty much everyone).=
+ Are we to conclude that smaller companies are simply unable to protect the=
+mselves as well as Google can against these sorts of exploits?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper described lots of hardware-implem=
+ented and software-implemented security policies to mitigate attack risk, a=
+nd it lightly touched some of their policies to prevent engineers from doin=
+g bad things. However, they didn't talk much about how employee or legal po=
+licies help their security goals (or leave areas vulnerable). How important=
+ are societal rules when considering secure systems like Google's?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper does not really discuss in detail=
+ the protections that Google has in place to prevent a rouge employee from =
+attacking their systems. The sections under Operational Security dedicated =
+to this mostly just say that Google monitors employee actions and devices a=
+nd responds to any alarming signs. Although Google may have kept details se=
+cret in order to ensure security, what are some common ways that companies =
+prevent employees from attacking systems besides just access control and tr=
+ust? To me right now it seems that a privileged enough employee with enough=
+ knowledge of the security process could attack important services.</pre></=
+li>
+
+<li><pre class=3D"student-text">The paper mentioned "phishing-resistant Sec=
+urity Keys". How is it possible for anything to be phishing resistant? If a=
+ user needs to know a piece of information to access a system (like a passw=
+ord), isn't it always possible to get that information by phishing the user=
+?</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions IP spoofing as one poten=
+tial attack that Google's security system prevents. How does IP spoofing wo=
+rk, and how does Google's network filtering protect against it?</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions several centralized syst=
+ems being part of the overall infrastructure (e.g. centralized identity ser=
+vice, centralized access control lists, centralized code repository, centra=
+lized management of SSL/TLS support, centralized DoS service, centralized k=
+ey management system). Each of these may effectively be a centralized point=
+ of attack. How is the security and fault-tolerance of each of these system=
+s ensured?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that "the system enforce=
+s that code modifications to any system must be approved by the owners of t=
+hat system." This seems like a lot of work for the owners of the system if =
+they must approve any modification made to the code base, and it seems to m=
+e that it would be relatively easy for an engineer to slip through a malici=
+ous code change if only one other engineer has to approve it and the owners=
+ probably don't have time to meticulously inspect the code. Do you know if =
+there are any other measures in place, or in general any methods available,=
+ to protect from this?</pre></li>
+
+<li><pre class=3D"student-text">The paper says that "GFEs have the ability =
+to scale to match incoming request volumes". How exactly do they scale to m=
+atch the number of requests to the service?</pre></li>
+
+<li><pre class=3D"student-text">The paper states that there is a multi-step=
+ process for decomissioning storage
+devices that includes multiple independent verifications. Presumably the ex=
+act
+details of what Google does are not public, but what is the general proceed=
+ure
+for decommisioning drives? Is it just a matter of triggering the "secure de=
+lete"
+functionality on the drive and/or overwritting all sectors on it?
+</pre></li>
+
+<li><pre class=3D"student-text">The reading states:
+
+=E2=80=9CTo protect against sophisticated adversaries who may be trying to =
+tap our private WAN links, the infrastructure automatically encrypts all in=
+frastructure RPC traffic=E2=80=A6=E2=80=9D
+
+Do large companies like Google ever send large, intra-company communication=
+ over the public Internet? Or do they solely have private networks now?
+</pre></li>
+
+<li><pre class=3D"student-text">The text mentions "In the future we plan to=
+ take advantage of the hardware-accelerated network encryption discussed ea=
+rlier to also encrypt inter-VM LAN traffic within the data center" - what v=
+ulnerabilities will this help protect against?
+</pre></li>
+
+<li><pre class=3D"student-text">The thing I found most confusing about this=
+ paper is all the terminology and acronyms. A lot of it was unexplained. Th=
+is is most likely due to my lack of background, but I hope that it all beco=
+mes clear after I complete this course.
+</pre></li>
+
+<li><pre class=3D"student-text">The whitepaper doesn't discuss user facing =
+security measures. How does Google manage this aspect of security?
+</pre></li>
+
+<li><pre class=3D"student-text">There are security features at every level =
+from the hardware level to the employee level. Is there any tradeoff in per=
+formance for some of these (sometimes redundant) features?
+
+Also, does google do anything about the problem of common/unsecure password=
+s?</pre></li>
+
+<li><pre class=3D"student-text">Though I realize its necessity, what are th=
+e performance costs of encrypting and decrypting messages between services?=
+ </pre></li>
+
+<li><pre class=3D"student-text">Under =E2=80=9CSecure Internet Communicatio=
+n=E2=80=9D, in the =E2=80=9CDenial of Service (DoS) Protection=E2=80=9D sub=
+section, it states: =E2=80=9CWhen the central DoS service detects that a Do=
+S attack is taking place, it can configure the load balancers to drop or th=
+rottle traffic associated with the attack.=E2=80=9D How does the central Do=
+S service detect that there is a DoS attack? What is the process?</pre></li=
+>
+
+<li><pre class=3D"student-text">What are cryptographic signatures? How are =
+they used to ensure you are using correct stuff?
+</pre></li>
+
+<li><pre class=3D"student-text">What are private WAN links and how would an=
+ adversary be able to "tap" them?</pre></li>
+
+<li><pre class=3D"student-text">What are some attacks that have succeeded a=
+gainst google are?</pre></li>
+
+<li><pre class=3D"student-text">What are the performance trade offs from th=
+e level of isolation between services?</pre></li>
+
+<li><pre class=3D"student-text">What do other large corporate companies do =
+differently for security measures (Microsoft, Amazon, Facebook, etc.)?
+</pre></li>
+
+<li><pre class=3D"student-text">What exactly is the point of secure boot?=
+=20
+Wouldn't it be just as easy to compromise the microcontroller at the root o=
+f the boot stack as any other part of the stack? </pre></li>
+
+<li><pre class=3D"student-text">What exactly is the purpose of this documen=
+t? Who is Google trying to inform? Why does Google want to inform them of a=
+ll this stuff? Is it just aimed towards generic clients who really, really =
+care about security? Or is there something else?
+</pre></li>
+
+<li><pre class=3D"student-text">What is a OTP second factor, and why is it =
+phishable?  Similarly, what is the difference between OTP and a U2F Securit=
+y Key, and why is the latter considered to be not phishable?
+</pre></li>
+
+<li><pre class=3D"student-text">What is a fuzzer? The paper mentions that G=
+oogle has tools for automatically detecting security bugs like fuzzers but =
+I have no idea what that is.</pre></li>
+
+<li><pre class=3D"student-text">What is an example of insecure hardware?</p=
+re></li>
+
+<li><pre class=3D"student-text">What is ingress and egress filtering, and h=
+ow does it prevent IP spoofing?
+</pre></li>
+
+<li><pre class=3D"student-text">What is the general overhead of network enc=
+ryption in terms of latency and throughput? It seems that it would be costl=
+y to encrypt traffic within a data center.=20
+</pre></li>
+
+<li><pre class=3D"student-text">What is the trade-off between performance a=
+nd security?
+I.e. Is it still worth encrypting non-sensitive traffic using standard proc=
+edures if doing incurs severe performance penalties
+</pre></li>
+
+<li><pre class=3D"student-text">What kinds of attacks would be possible if =
+Google did not require services to provide "end user permission tickets" to=
+ other services? I understand that the goal is to make sure the service is =
+servicing a request on behalf of a particular end user, but I do not have a=
+ clear understanding of why we can't just trust the service to only ask for=
+ data it should ask for. What kinds of vulnerabilities would this expose?=
+=20
+</pre></li>
+
+<li><pre class=3D"student-text">What kinds of security bugs are fuzzers and=
+ static analysis tools intended to catch (both at Google and in general)?</=
+pre></li>
+
+<li><pre class=3D"student-text">What legal recourse does Google face if the=
+ data of its Google Cloud service clients gets leaked due to a fault of Goo=
+gle? </pre></li>
+
+<li><pre class=3D"student-text">What sort of attacks does the GFE prevent b=
+esides Denial of Service?
+</pre></li>
+
+<li><pre class=3D"student-text">What types of security advantages would net=
+work segmentation or firewalling bring to inter-service communication and c=
+an cryptographic authentication and authorization make up for these?</pre><=
+/li>
+
+<li><pre class=3D"student-text">What would be an example of the type of att=
+acks that can be mitigated/prevented
+by the ``Hardware Design and Provenance'' measure mentioned in the paper (i=
+.e.
+by using custom-designed server boards and networking equipment)?  In
+particular, would it be able to mitigate flaws like Spectre and Meltdown (I=
+'m
+thinking not, as long as they're still using commercial CPUs, but wanna
+confirm).
+</pre></li>
+
+<li><pre class=3D"student-text">What's the likelihood of taking social or p=
+olitical action to force moronic companies like Equifax and Target to make =
+their systems=20
+more secure?
+</pre></li>
+
+<li><pre class=3D"student-text">Which of the technical aspects of security =
+used by Google will we get hands-on experience in from this course?</pre></=
+li>
+
+<li><pre class=3D"student-text">Why are permission tickets necessary for en=
+d-user access when the user also receives a cookie or OAuth token after ide=
+ntity verification? What is the difference between these?
+</pre></li>
+
+<li><pre class=3D"student-text">Why does google use the open source KVM sta=
+ck, rather than their own proprietary software?  Wouldn't that make their s=
+oftware easier to exploit since hackers have access to their code? If googl=
+e is making a majority of the bug fixes, doesn't that show that not enough =
+attention from the open source community is focused on securing KVM, and a =
+proprietary software would result in just as much, if not more security, du=
+e to the lack of outsiders who have their code?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Why does having different identities for VM=
+M service calls and calls on behalf of the customer's VM aid in having secu=
+rity? What benefits does this have over protecting from all calls from the =
+VMM? What are the tradeoffs in terms of complexity and CPU usage? </pre></l=
+i>
+
+<li><pre class=3D"student-text">Within physical security, how does a lockab=
+le firmware chip or security chip work?</pre></li>
+
+<li><pre class=3D"student-text">Would a Google security engineer be able to=
+ hack into his own system if he had no access or authentication credentials=
+?
+</pre></li>
+
+<li><pre class=3D"student-text">how does Google deal with security issues c=
+aused by the sheer number of personnel coming in and out of the company?</p=
+re></li>
+
+<li><pre class=3D"student-text">sqn.txt
+
+Lecture 2
+John McLaughlin
+jo26061@mit.edu
+
+
+Question:
+With such a thorough security plan and so many critical details, how does G=
+oogle ensure that the real implementation exactly matches what they have pe=
+rscribed in their plan? Moreover, how does Google ensure that their impleme=
+ntation doesn't have any side channels for leaking critical information?</p=
+re></li>
+
+<li><pre class=3D"student-text">{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoas=
+ubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww9800\viewh17520\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\=
+tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 I\'92m confused by the nature of the \'93end user permission =
+ticket\'93. Is it just some kind of certificate that is used for authentica=
+tion when delivering data?\
+}</pre></li>
+
+<li><pre class=3D"student-text">=EF=BB=BFHow effective is it to invest a lo=
+t in securing the hardware and software infrastructures inside Google servi=
+ces compared to investing more in reducing the possibility of end users mak=
+ing foolish security mistakes?</pre></li>
+
+<li><pre class=3D"student-text">=EF=BB=BFWhat exactly is a DoS attack? The =
+paper explains how the service detects and handles DoS attacks, but I want =
+to know more about how it can tell that there is a DoS attack taking place =
+and what that specifically means.</pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--pHWuE9W8UFLvnBr9gxIoFWRFBI2LyWqCX2GSEweNS0------

@@ -1,0 +1,1410 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-answers/5
+Subject: Answers for lecture 5 - 6.858
+Date: Wed, 20 Mar 2018 22:58:07 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--Higcbi8RxOHUaRCJVG8i68rdN5Cg2l5WRyQV3ezjlu----"
+
+------MultipartBoundary--Higcbi8RxOHUaRCJVG8i68rdN5Cg2l5WRyQV3ezjlu----
+Content-Type: text/html
+Content-ID: <frame-32858-20845543-75b6-4996-bb77-d2047a455162@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-answers/5
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Answers for lecture 5 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Answers for lecture 5 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text">Lecture 5
+
+What's the worst that could happen if one service in OKWS were to leak its =
+20-byte database proxy authentication token?
+
+The worst depends on the service and the priviliges associated with the 20-=
+byte database proxy authentication token. If the service only has row wise =
+read access then the adversary can't do much. If the service has read acces=
+s then the adversary can leak user data. But in this case also he can only =
+do it for one of the database proxies as he will need another token for a d=
+ifferent proxy. </pre></li>
+
+<li><pre class=3D"student-text">Someone would be able to create a new conne=
+ction with the database, but with theoretically limited access. The severit=
+y would depend on what data this token allows them to access, whether or no=
+t they can perform operations on the entire table at once, and whether or n=
+ot they can write to the database.
+
+They would not be able to touch other databases, since services should be a=
+s separate as possible, and each service should only need to directly acces=
+s their own database.
+</pre></li>
+
+<li><pre class=3D"student-text">The database allows services to access a se=
+t of RPCs based on the proxy authentication tokens. However, because OKWS u=
+ses separation of code and privileges, if an attack were to gain access to =
+this token, they could only establish a new connection to a remote RPC data=
+base but they could not access source code, binaries, or ptraces of other s=
+ervices.=20
+</pre></li>
+
+<li><pre class=3D"student-text">The worst that could happen is that the sin=
+gle service that the token corresponds to would be compromised. However, si=
+nce OKWS isolates services and uses the least privilege principle, there wi=
+ll be a limited number of files and states that the attacker can access (sp=
+ecifically, the attacker can only access what that one service is permitted=
+ to access which is restricted to only the minimal resources that the servi=
+ce needs to perform its function.</pre></li>
+
+<li><pre class=3D"student-text"> The adversary, in the worst case, would on=
+ly be able to mine the database and compromise user information. Due to pro=
+cess isolation and privilege separation, the adversary will only have acces=
+s to the whatever privilege the auth token has and only be able to make cal=
+ls through the relevant database RPC channel. If this RPC channel restricts=
+ permissions to row-wise queries, gathering this information will be even m=
+ore difficult. Overall, the adversary might be able to gather all relevant =
+information from the database, but this is only in the worst case (there ar=
+e precautions wrt permissions that make this more difficult as described in=
+ the paper.) Also, SQL injections are sort of dismissed by the paper due to=
+ runtime checks.
+</pre></li>
+
+<li><pre class=3D"student-text"># Lecture 5
+--------------------------------------------------------------
+What's the worst that could happen if one service in OKWS
+were to leak its 20-byte database proxy authentication token?
+--------------------------------------------------------------
+
+It is variable depending on the privileges of the token that was leaked.
+Different tokens have access to different sets of RPCs in the database prox=
+y.
+Its not clear what these RPCs include, but probably provide an interface
+for reading and writing the database. To be able to do so means the adversa=
+ry
+is in a position where he can send RPCs to the DB proxy machine.
+
+In the worst case the adversary could read and write to the DB, but not ful=
+l
+access like an SQL command line. The interface is a custom RPC interface fr=
+om
+OKWS, which I assume restricts read/write privileges only to data owned by =
+a
+specific user, making it hard to corrupt or mine the database.
+</pre></li>
+
+<li><pre class=3D"student-text">6.858 - Lecture 5
+
+What's the worst that could happen if one service in OKWS were to leak its =
+20-byte database proxy authentication token?
+
+It depends on the service. A malicious user would have access to some, but =
+not
+all database commands and the damage varies. Assuming that this service had
+all commands, they will be able to modify a single database as much at it
+pleases
+</pre></li>
+
+<li><pre class=3D"student-text">A database proxy exposes a specific RPC int=
+erface that limits what the service can access in the database. If a servic=
+e leaked its database proxy authentication token, the hacker would only hav=
+e access to this limited interface. The severity of this leak depends on wh=
+at this service was in charge of. It may be really severe if, for example, =
+the service had write access to a sensitive table.
+</pre></li>
+
+<li><pre class=3D"student-text">According to the reading:=20
+
+OKWS chroots all services to a remote jail directory.
+Within the jail, each process has just
+enough access privileges to read shared libraries
+upon startup and to dump core upon abnormal termination.
+The services otherwise never access the
+file system and lack the privileges to do so.
+
+In addition, The reading also specifies that:
+
+After a Web service
+connects to a database proxy, it supplies a 20-byte authentication
+token in a login message. The database
+proxy then grants the Web service permission to access
+a set of RPCs based on the supplied authentication token.
+
+Therefore, if a token is leaked, the attacker will only have access to the =
+RPCs that the particular token allows and won't be able to write anything o=
+utside of that very limited scope.
+</pre></li>
+
+<li><pre class=3D"student-text">After a Web service connects to a database =
+proxy, it supplies a 20-byte authentication token in a login message. The d=
+atabase proxy then grants the Web service permission to access a set of RPC=
+s based on the supplied authentication token. Therefore, with hijacked auth=
+entication tokens, an attacker might monitor and alter network traffic ente=
+ring and exiting a compromised server.
+</pre></li>
+
+<li><pre class=3D"student-text">An adversary could use the 20-byte authenti=
+cation token to access some set of RPCs. This is better than full SQL permi=
+ssions or even just SELECT permissions. The worst that could happen depends=
+ on the exact RPCs available.
+</pre></li>
+
+<li><pre class=3D"student-text">An adversary could use the authentication t=
+oken to impersonate the service when interacting with the database. Then, t=
+he adversary can issue requests to modify or read the database, which could=
+ be dangerous, depending on how much the RPC protocol permits the service t=
+o do.</pre></li>
+
+<li><pre class=3D"student-text">An attacker could access anything that that=
+ service could access. If the design principles given in the paper are foll=
+owed, such as minimal permissions, then the attacker would not be able to m=
+ove laterally into other parts of the system. However, the attacker, having=
+ gotten the authentication token, could access all user data that service c=
+ould access.
+</pre></li>
+
+<li><pre class=3D"student-text">An attacker who gains control of an OKWS to=
+ken could establish a new connection to a remote RPC database.  The worst h=
+e could do with this is gain access to in-memory state of one specific serv=
+ice and interact with the database in a manner specified strictly by the RP=
+C protocols declaration.  He would not acquire generic SQL client access, a=
+s he knows no authentication token aside from his own and thus has no acces=
+s to source code, binaries, or ptraces of other services.
+
+
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">An attacker would be able to access and mod=
+ify the database resources used by that service, but would not be able to m=
+odify unrelated resources.
+</pre></li>
+
+<li><pre class=3D"student-text">An attacker would be able to use the RPCs a=
+vailable to that service if the authentication token were released, so the =
+worst case depends on the abilities given to the service by the programmer.=
+ In the worst case the programmer gave the service full read and write abil=
+ities for the database, so the attacker would have total access and control=
+ over the database.
+</pre></li>
+
+<li><pre class=3D"student-text">An attacker would gain access to the set of=
+ RPCs this service is allowed to use. How bad this is depends on the set of=
+ RPCs. However, since the attacker would only be able to interact with the =
+proxy database in a manner consistent with the RPC protocol, the attacker's=
+ ability to compromise the system is significantly reduced compared to a sy=
+stem without an RPC protocol in place.
+
+</pre></li>
+
+<li><pre class=3D"student-text">An attacker would have the same "permission=
+s" to access the database as the process, whatever those might be -- in the=
+ OKWS case, access to an RPC interface, with exact capabilities preconfigur=
+ed.</pre></li>
+
+<li><pre class=3D"student-text">An attacker would only be able to interact =
+with the database using the white-listed RPCs for that authentication token=
+. Damage would depend on what RPCs are available.
+</pre></li>
+
+<li><pre class=3D"student-text">Answer to OKWS Question:
+
+If one service in OKWS were to leak its 20-byte database proxy auth token, =
+a hacker could establish a connection to a remote RPC database proxy. But, =
+because of how OKWS is designed, the hacker would have very limited interac=
+tion ability with the database (for example the RPC protocol could prevent =
+row-wise queries, inputs are sanitized). Furthemore, isolation between code=
+/privileges means that the hacker would not know about other auth tokens. T=
+hus, the worst that could happen is the worst that the RPC database protoco=
+l allows for. And since, this RPC protocol is easily restricable on a per s=
+ervice basis, the damage is not that great. </pre></li>
+
+<li><pre class=3D"student-text">Armed with the authentication token of one =
+service, an attacker could connect to the database proxies and issue RPCs c=
+onsistent with the database privileges afforded to that service. For exampl=
+e, if the service is only allowed to make row-wise queries, the attacker wo=
+uld also be able to make row-wise queries, but she would not be able to mak=
+e "SELECT *" or "DELETE" queries.</pre></li>
+
+<li><pre class=3D"student-text">As I understand it, if one service in the O=
+KWS were to leak its 20-byte database proxy authentication token, then whoe=
+ver received the token would have access to a restricted RPC interface expo=
+sed by the database proxy. The damage would largely be dependent of the per=
+missions granted by that particular token, but could possibly include gaini=
+ng access to in-memory state belonging to other users.</pre></li>
+
+<li><pre class=3D"student-text">As stated in the paper the goal of OKWS is =
+to "limit the effectiveness of attacks when they occur." Following this sta=
+tement, the system is designed so that the leak of a single authentication =
+token only grants access to the process it is associated with and the RPC c=
+ommands granted to this process. Because of the seperation of functionality=
+ into processes by the developer using OKWS, accessing a single service wil=
+l not allow the attacker to gain control of the whole server or otherwise a=
+ccess information the token's service wouldn't have access to. Because data=
+base access is controlled over RPC, the attacker may only have read only ac=
+cess to a small portion of the table depending on the service. OKWS attempt=
+s to fix the problem in other systems where a vulnerability could grant unr=
+estricted access</pre></li>
+
+<li><pre class=3D"student-text">Assuming that the database proxies are behi=
+nd a firewall which only accepts OKWS services from the same network, and a=
+ssuming that there are no other bugs, just leaking a 20-byte database proxy=
+ authentication token of one service would cause no damage.
+However, since OKWS was built under the assumption that all components are =
+buggy, let's consider the following cases:
+* If attackers can connect to a database proxy, they can use the authentica=
+tion token to get access to the same data as the service from which they st=
+ole the authentication token can access, but they only get access through a=
+n RPC interface, rather than a SQL interface, which makes it harder to dump=
+ data, but it really depends on the design of the RPC interface.
+* If attackers compromised a service, they don't need to bypass the firewal=
+l, and can connect to the database proxy from that service, and the same ap=
+plies as in the previous point.
+</pre></li>
+
+<li><pre class=3D"student-text">Attackers may access the database through t=
+he interface, but cannot obtain the source code of the server or compromise=
+ other services and processes which would lead to further leaks.</pre></li>
+
+<li><pre class=3D"student-text">Danny Tang
+
+data1013
+
+2/20/18
+
+
+
+Lecture 5
+
+Question:
+
+What's the worst that could happen if one service in OKWS were to leak its =
+20-byte database proxy authentication token?
+
+Answer:
+
+If a service leaked its authentication token, then an attacker that obtaine=
+d this token would only be able to access
+information and make requests that were available to the service itself. It=
+ would not be able to make arbitrary
+queries to the overall database since OKWS by design limits the permissions=
+ of each service to only what it needs
+to operate. Thus, a token leak would be bad, but nowhere near as bad as if =
+we were not using a scheme such as the
+one provided by OKWS.</pre></li>
+
+<li><pre class=3D"student-text">Database access is restricted to approved R=
+PCs for a given authentication token. An attacker could run these calls but=
+ could not make arbitrary SQL calls like from users select *. The attacker =
+could only perform actions as the service they had the authentication token=
+ for and could not locate the authentication tokens of other services. The =
+worst case is whatever the RPC calls allowed.</pre></li>
+
+<li><pre class=3D"student-text">Each service is OKWS is the exclusive acces=
+sor of its data (i.e. no other services access that same data; a service is=
+ defined this way). Because OKWS implements least privilege, a service can =
+only access the data it requires (and has no privilege to access the data o=
+ther services use). Thus if one service leaks an authentication token, the =
+attacker may be able to read/write/delete any of the data that service used=
+, but the attacker can't modify any other data (e.g. if this service handle=
+s your email inbox, attackers could read your emails, delete them, etc. but=
+ they can't access your medical records in another service). This is implem=
+ented by "[t]he database proxy =EF=BF=BD grant[ing] the Web service permiss=
+ion to access a set of RPCs based on the supplied authentication token." Th=
+e services can't run arbitrary code on the database; through the RPC API, t=
+hey're restricted to only the data they should be using. ("an attacker who =
+gains control of an OKWS web service can only interact with the database in=
+ a manner specified by the RPC protocol declaration; he does not have gener=
+ic SQL client access.")</pre></li>
+
+<li><pre class=3D"student-text">First, an attacker who has access to databa=
+se token might be able to start new connections or hijack existing ones. Ho=
+wever, since different components with different functionalities are separa=
+ted in OKWS, no other services can be affected(i.e. the matching algorithm =
+service of OkCupid, the example site deployed by the authors, will not be a=
+ffected). Furthermore, since the token is only a key to database proxies, t=
+he attacker is limited to queries supported those which matches the RPC pro=
+tocals set up the developer. In most cases this implies that the attacker w=
+ill just end up "acting" like a frontend app/browser, and can only alter th=
+e database the same way a normal user can. (Though for this this part I ima=
+gine that if a developer specified the RPC protocal less rigorously, this c=
+an still lead to potential attacks).</pre></li>
+
+<li><pre class=3D"student-text">If a 20-byte database proxy authentication =
+token were leaked, then an attacker
+would essentially have full control over the database associated with that
+service. Hence they would be able to view possibly sensitive-ish data, and =
+be
+able to make alterations to it as well.</pre></li>
+
+<li><pre class=3D"student-text">If a database proxy authentication token we=
+re leaked, a malicious server could
+connect to a database proxy and appear to be an authentic server. Since OKW=
+S
+only gives authentic servers a structured RPC interface with which to inter=
+act
+with the database; the malicious server wil not get generic SQL client acce=
+ss.
+So, the likely worst-case scenario would be for an attacker to mine the
+database through a tedious series of RPC calls, although I suppose the
+possibility of an exploitable bug in the RPC interface that could grant
+unrestricted access to the database is possible, since the interface runs o=
+n
+the same machine as the database.
+</pre></li>
+
+<li><pre class=3D"student-text">If a hacker gets the authentification token=
+, then the hacker can only access the set of RPCs based on the supplied tok=
+en. However, the hacker cannot access or processes because of the isolation=
+ built into OKWS.=20
+</pre></li>
+
+<li><pre class=3D"student-text">If a service in OKWS leaked its 20-byte aut=
+hentication token, an adversary would be able to connect to databases withi=
+n the server and do whatever he/she wanted to the network traffic. Essentia=
+lly the adversary could impersonate the service that leaked the token.</pre=
+></li>
+
+<li><pre class=3D"student-text">If a service in OKWS leaked its DB authenti=
+cation token, it would only be able
+to affect the database a limited amount, since each service is restricted s=
+o
+that it can only perform the minimum number of operations on the database
+necessary for it to carry out its intended function.=20
+</pre></li>
+
+<li><pre class=3D"student-text">If a service in OKWS leaked its database au=
+thentication token, a malicious
+attacker could access the database with that tokens set of RPC's. So the wo=
+rst
+an attacker could do is what is limited to them in the RPC's. This can rang=
+e from
+just reading the database to compromising the integrity of the database.=20
+</pre></li>
+
+<li><pre class=3D"student-text">If a service in OKWS were to leak its 20-by=
+te database proxy authentication token, then an attacker would only be able=
+ to access the database through
+the specific RPC architecture, and not have direct query access. </pre></li=
+>
+
+<li><pre class=3D"student-text">If a service in OKWS were to leak its auth =
+token,  I believe that it would be equivalent to the scenario of that servi=
+ce being compromised. The attacked would be able to issue the RPCs to the d=
+atabase proxy that the service is able to issue. If the principles of OKWS =
+are followed correctly, the database permissions allowed to the service wou=
+ld be highly limited, so the attacker would be limited by that and not be a=
+ble to, as said in the paper 'mine' the database easily.=20
+
+I'm not sure how RPCs work. Assuming these are issued through some internet=
+ protocol, then I believe my answer is correct, but if they are sent some o=
+ther way, then the attacker would have to have access to that channel, and =
+having the authentication token wouldn't help as much, since they haven't a=
+ctually compromised the service with access to that channel.
+</pre></li>
+
+<li><pre class=3D"student-text">If a service leaks its auth token, OKWS sti=
+l, ensures that any attacker will have limited access to the system.
+The service communicates with other services with a structured RPC interfac=
+e, which can have any set of arbitrary query restrictions.
+Attackers are then limited to queries that fit the RPC query restrictions, =
+even if they manage to obtain an auth token.
+</pre></li>
+
+<li><pre class=3D"student-text">If a service leaks its database proxy authe=
+ntication token, then another process could gain access to the RPC interfac=
+e that the database proxy would authorize to the original service. This cou=
+ld allow this new process to corrupt any data that the original service had=
+ access to on the database, but since all requests are passed through the p=
+roxy, the new service should not be able to escalate its permissions beyond=
+ the permissions of the original service.</pre></li>
+
+<li><pre class=3D"student-text">If a service was to leak its 20-byte databa=
+se proxy authentication token, an attacker could freely access any of the d=
+atabase functions provided via RPC calls to this service. This means that t=
+hey would be unable to attack other services or obtain raw SQL access to a =
+database. Depending on how the database is permissioned, an attacker may on=
+ly be able to query a single row of a table at a time.
+</pre></li>
+
+<li><pre class=3D"student-text">If a service were to leak its 20-byte datab=
+ase proxy authentication token, an attacker could make new connections to t=
+he database proxy with the token. But, the attacker is still limited to the=
+ abilities defined in the RPC interface defined by the database proxy - if =
+the database proxy only allows looking up of users by their ID, this is all=
+ the attacker gains access to - they cannot perform general SQL queries, li=
+ke "SELECT * FROM Users"
+</pre></li>
+
+<li><pre class=3D"student-text">If a single service in the OKWS were to lea=
+k its 20-byte database proxy
+authentification token, an attacker would be able to only access the databa=
+se
+through that particular service's RPC, and so will only be able to make=20
+calls allowed by the RPC protocol declaration.  </pre></li>
+
+<li><pre class=3D"student-text">If a single service were to leak its 20-byt=
+e authentication token, this would expose the set of RPCs associated with t=
+hat token. If the particular service was authorized to completely modify da=
+tabases, etc. (bad design of an OKWS service), then the worst-case scenario=
+ would be an adversary dropping/modifying these databases (assuming they ca=
+n send signals from a location and pretend to be the service).
+</pre></li>
+
+<li><pre class=3D"student-text">If an authentication token were leaked, an =
+attacker holding the token
+would still only be able to interact with the database in the very
+restricted set of ways that the leaking service was able to.  For
+instance, if the service only needed to query single rows, the
+attacker would be unable to request the entire database, and would
+only be able to get tables that the service in question had access to.
+</pre></li>
+
+<li><pre class=3D"student-text">If compromised, the database wil lgrant per=
+mission to a set of RPCs to compromised service. Given the RPCs that the se=
+rvice will be allowed to access are already pretty restrictive, the extent =
+of the damage will be very limited. =20
+</pre></li>
+
+<li><pre class=3D"student-text">If it leaks its authentication token, an at=
+tacker could masquerade as the service to gain access to the database. This=
+ is mitigated by a few factors. First, the service only has access to the d=
+atabases it needs and in a limited capacity, so this limits the number of p=
+ossible attacks. Also, SQL queries are checked at runtime, so injection att=
+acks are not possible.</pre></li>
+
+<li><pre class=3D"student-text">If one service OKWS were to leak its 20-byt=
+e database proxy authentication token, then an compromised service may be a=
+ble to access data from that database. Depending on the service the permiss=
+ions are the lowest possible, so the user may only have read access and can=
+not change content in the database. And the service is designed to have acc=
+ess to a subset of the data. Worst case, the compromised service has write =
+access to the database and inserts/removes data in order to compromise othe=
+r users or other services that have access to the same data.</pre></li>
+
+<li><pre class=3D"student-text">If one service in OKWS leaked its 20-byte d=
+b proxy authentication token, it would have access to that service's token'=
+s level of RPC access to the database and logfiles.
+</pre></li>
+
+<li><pre class=3D"student-text">If one service in OKWS leaks its 20-byte da=
+tabase proxy authentication token, the worst that could happen is that an a=
+ttacker can access a set of RPCs based on the supplied token. The attacker =
+does not have generic SQL client access, and "the RPC protocol restricts ac=
+cess to row-wise queries". </pre></li>
+
+<li><pre class=3D"student-text">If one service in OKWS leaks its database p=
+roxy authentication token, then anybody with the token would have the Web s=
+ervice permission to access the specific set of RPCs allowed by the token. =
+However, the database accesses are limited by these RPCs and the attacher d=
+oes not have generic SQL client access. This means that the attacker can vi=
+ew or obtain data, but only the data and in the way the compromised service=
+ was allowed in the first place.
+</pre></li>
+
+<li><pre class=3D"student-text">If one service in OKWS were to be compromis=
+ed, and its database token were to be
+leaked, then the attacker would be able to issue a limited set of RPC calls=
+ to
+the database. This in theory, would limit if not completely restrict the da=
+mage
+done to other services, as the server would only be able to modify certain
+database entries in certain ways.
+</pre></li>
+
+<li><pre class=3D"student-text">If one service in OKWS were to leak its 20 =
+byte database proxy authentication code, the attacker would only be able to=
+ access a specific set of RPCs that are linked to the authentication code. =
+It doesn't have acceess to the entire database, just a specific part. A sin=
+gle process is linked with a single service, so it can only compromise one =
+process.
+</pre></li>
+
+<li><pre class=3D"student-text">If one service in OKWS were to leak its 20-=
+byte authentication token,=20
+then an attacker would not have generic SQL access. They would be constrain=
+ed to the specific process's RPC protocol declaration. This combined with t=
+he fact that the protocol can restrict access to row-wise queries and have =
+the keyspace of the table sparse, getting desired information from the data=
+base would prove to be very difficult for the attacker. </pre></li>
+
+<li><pre class=3D"student-text">If one service in OKWS were to leak its 20-=
+byte database proxy
+authentication token, the adversary would have access to a set
+of RPCs based on the token. However, the accesses cannot go
+beyond what is specified by the RPC protocol declaration which
+means that the adversary does not have generic SQL client
+access. Plus, due to the priviledge separation, the adversary
+has no access to the source code, binaries, or ptraces of any
+other service. Lastly, because OKWS checks for parameters in
+input queries, the adversary cannot perform SQL injection.
+</pre></li>
+
+<li><pre class=3D"student-text">If one service in OKWS were to leak its 20-=
+byte database proxy auth token, the worst that canhappen is that the attack=
+er can issue RPC calls to the database service, pretending to be that servi=
+ce. Because the processes are isolated, the attacker can only pretend to be=
+ this one service and not any other services, so it only has access to this=
+ one server's RPC calls. In addition, because the server and the database o=
+nly communicate via RPC calls, the attacker cannot make arbitrary queries o=
+n the database, only the RPC calls exposed by the database API to the one c=
+ompromised service. Basically, the process isolation limits the total damag=
+e.
+</pre></li>
+
+<li><pre class=3D"student-text">If one service in OKWS were to leak its 20-=
+byte database proxy authentication token, an attacker who got ahold of it w=
+ould only be able to interact with the restricted RPC interface exposed by =
+that database proxy.  They would not have arbitrary or full access to query=
+ the database.  With the RPC protocol, there can be stronger restrictions t=
+han with database permissions alone; for example, it could restrict row-wis=
+e queries. </pre></li>
+
+<li><pre class=3D"student-text">If one service in OKWS were to leak its 20-=
+byte database proxy authentication token, then other services that gain kno=
+wledge of this proxy authentication token could masquerade themselves as th=
+e leaky service and use the leaked token to login and connect to database p=
+roxies. This means that the other services could now gain access to the set=
+ of RPCs granted based on the leaked the leaked authentication token. Howev=
+er, this is the extent to which the leak would affect security -- even if t=
+he attacker now gains access to a database proxy using the leaked token, th=
+e compromised web service (now possibly masquerading as the service that ha=
+d leaked the token) can only interact with the database as specified by the=
+ RPC commands granted to it. The attacker would therefore not have generic =
+database access, but their ability to access and/or modify the database wou=
+ld be determined by the particular set of RPCs to which they gained access =
+via the the leaked token.</pre></li>
+
+<li><pre class=3D"student-text">If one service in OKWS were to leak its 20-=
+byte database proxy authentication token, then the attacker would still onl=
+y be able in interact with the underlying database with the permissions of =
+that service. The attacker does not have generic access. This seems quite d=
+ependent on the particular process that was compromised... so it seems hard=
+ to say what is the worst that can happen.
+
+The example given in the paper is that a process's RPC protocol might be re=
+stricted just to row-wise queries, so an attacker would only be able to do =
+things like "SELECT a FROM USERS where NAME=3D'a'"? (I'm actually not sure =
+how to specify/enforce a row-wise query --- by rowid or by field?).=20
+
+</pre></li>
+
+<li><pre class=3D"student-text">If one service in OKWS were to leak its aut=
+hentication token, it can establish a new connection to a remote RPC databa=
+se proxy, but it cannot gain access to any other authentication tokens. The=
+ attacker can only act within the RPC protocol.</pre></li>
+
+<li><pre class=3D"student-text">If one service were to leak its authenticat=
+ion token, the worst thing that could happen would be that that single serv=
+ice is compromised. Because of the permission system within OKWS, that serv=
+ice=E2=80=99s authentication token will only give the attacker access to th=
+at service=E2=80=99s information, it can not compromise another service. </=
+pre></li>
+
+<li><pre class=3D"student-text">If one service were to leak its authenticat=
+ion token, then anyone who had access would only have access to the databas=
+e as specified by the RPC protocol declaration.  This does not grant generi=
+c client access to the database.  This makes it significantly more difficul=
+t for the database to be mined and nothing additional can be done to the da=
+tabase than the permissions given to the service.</pre></li>
+
+<li><pre class=3D"student-text">If one service were to leak its proxy authe=
+ntication token, then a rogue service would be able to connect to the datab=
+ase proxy on the OKWS and run any RPCs specified by authentication token. H=
+owever, the proxy means that raw database queries aren't allowed. In additi=
+on, services are limited in scope; they have almost no access to the filesy=
+stem, can only write to logs (not read/delete), and cannot kill/ptrace othe=
+r processes. </pre></li>
+
+<li><pre class=3D"student-text">If one service were to leak its token to a =
+malicious user,
+- they could replicate the service's action.=20
+- assuming that the RPCs don't allow arbitrary access to the underlying dat=
+abase (which is the point of its design), and enforces a restricted templat=
+e of query-accesses, all data from only the specific accessible data-stores=
+ will be at the hands of the malicious user.</pre></li>
+
+<li><pre class=3D"student-text">If one service were to leak their proxy aut=
+hentication token, someone who gets this token would still only be able to =
+access certain databases that are privileged to that service rather than al=
+l of the databases. At worst, if the attacker has sufficient time, they can=
+ still get all the information in that specific database, but this is made =
+more difficult by restricting row-wise queries and sparse keyspace in the t=
+able. </pre></li>
+
+<li><pre class=3D"student-text">If one service were to leak this code, then=
+ other services could use it to authenticate themselves (essentially impers=
+onate the service that should have sole access to the proxy). This would ch=
+ange the dependency graph for the OKWS architecture and violate the guideli=
+nes, thus comprising the efficiency and security of the system.</pre></li>
+
+<li><pre class=3D"student-text">If one web service leaked its authenticatio=
+n tokens, then it would only be able to contact the DB services over RPC an=
+d still just have row access to the DB like the original service. If a DB s=
+ervice were leaked, then the results would be much worse, but that is less =
+likely to be leaked.</pre></li>
+
+<li><pre class=3D"student-text">If the 20-byte database proxy authenticatio=
+n token were leaked, then the attacker would gain access
+to the set of RPCs that the original service has access to. The amount of d=
+amage varies depending on
+the service e.g. if one service does the same thing for all the users then =
+the attacker has access
+to all of the user data.</pre></li>
+
+<li><pre class=3D"student-text">If the attacker does not have access to the=
+ LAN, they can't get any data because the database servers only accept requ=
+ests from LAN.
+If the attacker do have the access to the LAN, they can pretend the web ser=
+vice. They can call the ROC interface and access the data which the service=
+ is allowed to access.=20
+</pre></li>
+
+<li><pre class=3D"student-text">If the database proxy authentication token =
+is leaked, then an attacker could access information in the database =EF=BF=
+=BD which can contain highly sensitive personal/user information.=20
+</pre></li>
+
+<li><pre class=3D"student-text">If the database proxy token were exposed, t=
+hen an attacker
+could take control of that specific service. This means that
+the attacker would gain access to service permissions as=20
+defined by the RPC protocol declaration. As services are granted
+minimal permissions in general, it's likely that the attacker
+would not be able to accomplish much.</pre></li>
+
+<li><pre class=3D"student-text">If this happened, an adversary could use th=
+e token to authenticate itself with the database proxy, gaining access to a=
+ certain set of RPCs and then interact with the database according to the "=
+RPC protocol declaration." The worst that could happen depends on the RPC p=
+rotocol declaration, but being able to mine the database is possible.</pre>=
+</li>
+
+<li><pre class=3D"student-text">In that case, the hacker would be able to t=
+ake control of the RPCs that are allowed by that particular service. Howeve=
+r, other databases (not used by this particular service) will not be compro=
+mised, and the adversary will also not be allowed to perform other operatio=
+ns on the database (outside of those necessary for the task of the compromi=
+sed server).</pre></li>
+
+<li><pre class=3D"student-text">In the case where an adversary gains access=
+ to an OKWS services 20-byte database proxy authentication token, the adver=
+sary would be unable to mine keys for the other services due to the systems=
+ isolation, nor would the adversary be able to write to the file system. Th=
+e worst that the attacked can do is issue RPCs to databases that the servic=
+e is allowed to issue, but could not mine the databases any further.</pre><=
+/li>
+
+<li><pre class=3D"student-text">It could only reveal the contents of that p=
+articular database lookup -- which is likely not that bad.
+</pre></li>
+
+<li><pre class=3D"student-text">Jun Wan 991032935
+
+The adversary can use the leaked token to log into the database as the user=
+. He can do whatever he want within that user's authority. But he can not r=
+ead or write data out of that user's access.</pre></li>
+
+<li><pre class=3D"student-text">Leaking a database authentication token of =
+one service would enable an attacker
+to use another compromized service to impersonate it. The attacker would be=
+ able
+to execute any query that either of the two services were allowed to
+perform. Depending on the exact services compromized, the severity could ra=
+nge
+from leaking data that was already public (if only read queries of a public
+table were allowed) all the way to letting the attacker change their own ac=
+count
+permissions to have full administrator access (if the service had, for inst=
+ance,
+unrestriced write access to the users table).
+</pre></li>
+
+<li><pre class=3D"student-text">Lec5
+
+If a service in OKWS leaks its 20-byte database proxy
+authentication token, an attacker would have access to the
+database that corresponds to that service.  Due to the
+separation that results from the OKWS architecture, the
+attacker would only have access to the database for that
+service, but could thus affect all users with data in that
+database.</pre></li>
+
+<li><pre class=3D"student-text">Lecture 5 (Answer to Paper Question)
+
+Question:
+
+What's the worst that could happen if one service in OKWS were to leak its =
+20-byte database proxy authentication token?
+
+
+Answer:
+
+An attacker would only be able to access the database if he could compromis=
+e the service that leaked the 20-byte database proxy authentication token. =
+All other services use a different 20-byte database proxy authentication to=
+ken to access the database, if they're allowed to access the database at al=
+l.
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 5 Lecture Question Response
+
+The worst that could happen is that an adversary would be able to access a =
+database with the same privileges as the service.
+Therefore, the impact of such a leak depends on the service's privileges, b=
+ut it will likely not be nearly as catastrophic as
+unfettered access, with the possibility of an adversary being limited to ro=
+w-only/read-only database accesses.</pre></li>
+
+<li><pre class=3D"student-text">Lecture 5: OKWS Reading Question
+
+The worst that could happen if a service were to leak its 20-byte database =
+proxy
+authentication code is that an attacker would then only be able to interact=
+ with
+the database in a manner outlined by the RPC protocol declaration. This mea=
+ns
+that the attacker would be much more limited in the commands he could run o=
+n the
+database and would be much more restricted in the harm he could do with tha=
+t
+access. The attacker would also be limited in that access to this one authe=
+ntication
+code does not allow him to access other authentication codes for other part=
+s of the
+system because of separation of code and privileges.
+
+For example, an attacker could still use a command like "SELECT * FROM USER=
+S", but
+would be restricted from "mining" if the RPC protocol restricts access to r=
+ow-wise
+queries. The attacker would also be restricted from "SQL injection" attacks=
+ because
+OKWS database libraries provide runtime checks that ensures SQL queries can=
+ only
+be prepared when a proxy starts up.
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 5: Privilege Separation
+2/21/18
+
+What's the worst that could happen if one service in OKWS were to leak its =
+20-byte database proxy authentication token?
+
+The specific self-contained subset of data that the service has access to w=
+ill be compromised.</pre></li>
+
+<li><pre class=3D"student-text">OKWS only allows database queries through l=
+imited (when compared to general SQL queries) RPCs. Thus, if a web service =
+leaks its authentication token, the damage an attacker can do is limited by=
+ the RPC protocol. As an example, an RPC protocol can only allow row-wise q=
+ueries preventing the attacker from issuing "SELECT *"-like queries.=20
+</pre></li>
+
+<li><pre class=3D"student-text">OKWS services are only allowed to see the R=
+PC front-end interface, and are not given the ability to execute arbitrary =
+database commands. Furthermore, it seems according to the paper that even w=
+ith the authentication token, an OKWS service is only given permission to a=
+ certain set of RPCs. The worst that can happen is that an attacker may be =
+able to make all of the specific set of calls that the OKWS service could m=
+ake, but no more. However, the dangerousness of this depends on the securit=
+y of the RPC frontend and the nature of the allowed calls; at minimum, an a=
+ttacker could likely obtain data they are not meant to have access to.</pre=
+></li>
+
+<li><pre class=3D"student-text">Only that particular service becomes compro=
+mised. If the correct separation is achieved, the attacker should not be ab=
+le to read the database because database connection is managed by another i=
+solated service. </pre></li>
+
+<li><pre class=3D"student-text">Only this service would be compromised
+</pre></li>
+
+<li><pre class=3D"student-text">Other services would be able to perform dat=
+abase actions with the same "permissions" as the service whose token was st=
+olen.
+
+The 20-byte authentication token is a stateless mechanism by which the data=
+base proxy can authenticate the caller in an RPC call based on their report=
+ed ID and the corresponding provided token. The idea is that only a particu=
+lar service S has access to its accompanying token T. Then, on each call to=
+ the database proxy, S sends T along as part of the call. The database prox=
+y acts as a guard and rejects the call on authentication failure.
+
+However, an authenticated calling process cannot make arbitrary database ca=
+lls. The caller can only choose from a set of pre-defined calls, following =
+the principle of least privilege. (This is similar in spirit to e.g. interr=
+upt vectors in interrupt descriptor tables--the caller is restricted in how=
+ it can interact with the callee.)
+
+Thus, leaking a database proxy auth token, in the worst case, could allow a=
+n arbitrary service (e.g. a client service) to access the same set of datab=
+ase interactions as the leaking service. This is definitely not a good thin=
+g, but it is a much smaller loss than e.g. full read/write permission to th=
+e database.
+
+This strategy could also be combined with something similar to Google's use=
+ of passing per-user tokens between services to further restrict the attack=
+ surface--with this change, a leaked db proxy token would provide ideally n=
+o immediate exploits without the additional leakage of a valid user token.
+</pre></li>
+
+<li><pre class=3D"student-text">Question:  What's the worst that could happ=
+en if one service in OKWS were to leak its 20-byte database proxy authentic=
+ation token?
+
+Answer: The 20-byte database proxy authentication token gives access to the=
+ database RPC that acts as a messenger for the SQL queries. So, the attacke=
+r would have a more limited access to SQL queries than the raw queries them=
+selves, ie it would at least allow some check of the query. Also, the authe=
+ntication token would isolate the permissions for the system. For example, =
+if the token leaked only allowed the client to read the messages sent betwe=
+en users, this would probably be less valuable than reading credit card pay=
+ment information or other user information.
+</pre></li>
+
+<li><pre class=3D"student-text">Question: What's the worst that could happe=
+n if one service in OKWS were to leak its 20-byte database proxy authentica=
+tion token?
+
+The attacker would be able to have access to the RPCs associated with the a=
+uthentication token. Usually this would be probably have read calls to the =
+proxy dataset so the attacker would be able to read other people's data. I =
+do not believe this database proxy actually has write access to the actual =
+data so overwritting data shouldn't be possible.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 5
+
+What's the worst that could happen if one service in OKWS were to leak its =
+20-byte database proxy authentication token?
+
+An adversary who acquired a token which belonged to a web service which had=
+ access to many RPCs would gain the same RPC access as the original web ser=
+vice. This means the adversary could have more read/write privileges over t=
+he web service files and databases than they are supposed to. Since all RPC=
+s are chromed and limited by principles of least-privilege, the adversary s=
+hould not have root access over the entire OKWS.</pre></li>
+
+<li><pre class=3D"student-text">Since the database access is done through R=
+PC channels, even if an attacker has the 20 byte database proxy authenticat=
+ion token, they can only interact with the database specified by the RPC cl=
+ient protocol=E2=80=94i.e. they cannot execute arbitrary SQL code. This lim=
+its the attacker in terms of how much of the database they can mine (for ex=
+ample if the RPC is only allowed row-wise access). Furthermore, since there=
+ is code/privilege isolation, the attacker cannot get any other authenticat=
+ion tokens.</pre></li>
+
+<li><pre class=3D"student-text">Since there is a particular authentication =
+token for every service, leaking of one service=E2=80=99s token implies tha=
+t another service would be able to access more of the database than it is a=
+uthorized to via the compromised service=E2=80=99s RPC service.
+
+For instance, with the Internet dating application, if the profile maintena=
+nce=E2=80=99s authentication token was to leak, the message service may be =
+able to tamper with the passwords of a given user when in reality it should=
+ only permit the forwarding and reception of messages.</pre></li>
+
+<li><pre class=3D"student-text">The 20-byte database proxy authentication t=
+oken used by Web servers only allows the Web
+server to access a restricted RPC interface exposed by the database proxy. =
+Only local=20
+processes can execute arbitrary database commands; the webservers cannot do=
+ this.=20
+Therefore, if an OKWS process leaked its token, the worst that could happen=
+ is that=20
+an attacker would be able to use the restricted RPC interface, but they wou=
+ld not be=20
+able to execute disastrous commands directly on the database.</pre></li>
+
+<li><pre class=3D"student-text">The attack would have access to the RPCs th=
+at the web service has access to. This does not mean general access to the =
+SQL table. Also, this would not grant the attacker access to any of the oth=
+er web services.</pre></li>
+
+<li><pre class=3D"student-text">The attacker could only access a specific s=
+et of RPCs that the token authorizes.</pre></li>
+
+<li><pre class=3D"student-text">The attacker would only gain access to the =
+set of database RPC calls that the
+compromised service is authorized to make.
+</pre></li>
+
+<li><pre class=3D"student-text">The claim in section 3.1 stating "if a Web =
+server implements principles (1) through (4), and if there are no critical =
+kernel bugs, an attacker cannot move from vulnerable to secure parts of the=
+ system" seems shaky to me as it implies that poor coding practices on the =
+web server itself have no bearing on the potential for system compromise as=
+ well as ignoring anything else that might be running on the system.  In OK=
+WS specifically, buggy logic or even just buggy code in any part of the sys=
+tem or even the RPC mechanisms between the services could potentially lead =
+to escalation, depending on how things are written.
+
+If one of the OKWS processes does become compromised and all the security c=
+laims from the paper are true (chroot jail holds, privilege separation work=
+s as intended, etc.), is there anything preventing a malicious user from us=
+ing this foothold to spread to other processes on the system?  For a silly =
+example, say there's another process that runs as root and has a world-read=
+/writable pipe that it simply exec()'s whatever it sees.  Is there anything=
+ in OKWS's design that would protect the system from this, or does the clai=
+m that "an attacker cannot move from vulnerable to secure parts of the syst=
+em" require more information about the system than just the design of a sin=
+gle part of it?</pre></li>
+
+<li><pre class=3D"student-text">The database proxy authentication token onl=
+y gives the attacker access to a set
+of RPCs but there's not actually much the attacker can do with the RPCs. Th=
+e RPC
+protocol declaration specifies what the attacker can/cannot do.=20
+</pre></li>
+
+<li><pre class=3D"student-text">The database proxy maintains service-specif=
+ic sets of RPCs based on the authentication token. Thus, the compromised se=
+rvice may only interact with the database through those RPCs and not via a =
+generalized query language. Additionally, each service maintains its own to=
+ken, so if OKWS is used correctly, the compromised service cannot be used t=
+o access data it normally wouldn't have access to (e.g. hijacking a search =
+service to access email).
+</pre></li>
+
+<li><pre class=3D"student-text">The database proxy would grant the Web serv=
+ice permission to access a set of RPCs. Once the administrator realizes, th=
+ey will be able to lock down the database server so only local processes ca=
+n execute arbitrary commands on the server.=20
+</pre></li>
+
+<li><pre class=3D"student-text">The leaked auth token would allow the attac=
+ker to access a limited set of RPCs priviledged to the service where the pr=
+ocess was leaked. If the service and/or the db proxy are not set up correct=
+ly, the attacker could potentially damage the database or access some sensi=
+tive data. On the other hand, if the guideline principles are followed, the=
+ worst that could happen is the attacker could perform any requests that ar=
+e authorized to the webserver, which are limited with an assumption of them=
+ being misussed. In other words, if the token gets leaked, the owner of the=
+ service is expected to be "OK" with any potential requests.</pre></li>
+
+<li><pre class=3D"student-text">The person who has access to the token can =
+access only the parts of the database which the service is authenticated to=
+ access in the manner that the RPC specifies. Access control isn't determin=
+ed by the database system. </pre></li>
+
+<li><pre class=3D"student-text">The proxy authentication service for that t=
+oken woulld be compromised.=20
+</pre></li>
+
+<li><pre class=3D"student-text">The set of RPCs the service was allowed to =
+access based on its authentication token would be useable by anyone who cam=
+e to know the authentication token, as the database proxy would recognize t=
+hem as the original service.</pre></li>
+
+<li><pre class=3D"student-text">The worse that can happen is that this auth=
+entication key can be used to obtain whatever data the service had access t=
+o in the database. If the website developers followed the paper's guideline=
+s that "Server processes should have the minimal set of
+database access privileges necessary to perform their task", then not too m=
+uch data should be leaked, but this depends on what data the developers mad=
+e available to a given process.</pre></li>
+
+<li><pre class=3D"student-text">The worst case is the attacker can execute =
+any RPCs that
+the database proxies provide. This actually won't be too=20
+bad since the database is run in a dedicated machine, the=20
+attacker can't get full control over the database machine.
+If the database proxies only provide minimal RPC operations=20
+that other can call and implement some protection mechanism,
+the database won't be compromised too much. </pre></li>
+
+<li><pre class=3D"student-text">The worst that can happen is that the attac=
+ker can use a set of RPCs that are authenticated by the=20
+token to access data from the database.
+</pre></li>
+
+<li><pre class=3D"student-text">The worst that could happen if one service =
+in OKWS were to leak its 20-byte database proxy authentication token, is th=
+e attacker would be able to establish a new connection to a remote RPC data=
+base proxy.  Once connected with the database proxy, the attacker with the =
+authentication token would only have access to the restricted RPC interface=
+ exposed by the database proxy.
+</pre></li>
+
+<li><pre class=3D"student-text">The worst that could happen is an attacker =
+could take advantage of the RPC methods that were made available to the OKW=
+S service. However this prevents direct access to the database.
+</pre></li>
+
+<li><pre class=3D"student-text">The worst that could happen, if a service l=
+eaks the database proxy authentication token, is that a malicious user coul=
+d access database through the restricted set of queries enabled by the RPC =
+interface available to that service.  As a result, the attacker should not =
+be able to make arbitrary SQL queries.
+</pre></li>
+
+<li><pre class=3D"student-text">The worst thing that can happen if a OKWS s=
+ervice were to leak its 20-byte database proxy authentication token is that=
+ an attacker could make queries on the database. However, he could only mak=
+e queries that were allowed by the token's specified set of RPCs, restricti=
+ng his access significantly.</pre></li>
+
+<li><pre class=3D"student-text">The worst thing that can happen if a servic=
+e is compromised is that an
+attacker can access everything the service could normally access. Particula=
+rly,
+a service has write access to its coredump directory and can read from OKWS
+shared libraries. Services can only interact with databases in a manner
+specified by the protocol, so the attacker would not be able to instantly
+grab every row of a table, for example. Services only have their own
+authentication tokens, so access to one token does not give you access
+to any other service.</pre></li>
+
+<li><pre class=3D"student-text">The worst thing that could happen is that a=
+n attacker would gain access to whatever the RPC protocol allows that speci=
+fic service to access.  The attacker does not have full access to the datab=
+ase.
+</pre></li>
+
+<li><pre class=3D"student-text">There would be unintentional but presumably=
+ "safe" modifications to the database. The authentication token only expose=
+s a specific set of RPC interfaces. Only a local machine can run arbitrary =
+code to the database. Therefore any modification due to the leaking of the =
+authentication token is going to be safe albeit unexpected. Perhaps this me=
+ans that some users are going to have their data changed or read unknowingl=
+y. All other services remain safe due to the OS protection.</pre></li>
+
+<li><pre class=3D"student-text">What's the worst that could happen if one s=
+ervice in OKWS were to leak its 20-byte database proxy authentication token=
+?
+
+If a service leaks it's 20-byte database proxy authentication token, then t=
+he attacker will only have access to the data available to the service that=
+ leaked the token for the user's account who leaked the token.
+</pre></li>
+
+<li><pre class=3D"student-text">What's the worst that could happen if one s=
+ervice in OKWS were to leak its 20-byte database proxy authentication token=
+?
+
+If a service were to leak its 20-byte database proxy authentication token, =
+a malicious attacker would have access to all the RPC's a service is capabl=
+e of calling and whatever database access the service has. If the service h=
+as read/write access, the attacker could destroy the database. If the servi=
+ce has read access only, the attacker could mine the database. If the servi=
+ce has no DB access, the attacker can't do anything to the DB or read anyth=
+ing from it.</pre></li>
+
+<li><pre class=3D"student-text">What's the worst that could happen if one s=
+ervice in OKWS were to leak its 20-byte database proxy authentication token=
+?
+
+If one service in OKWS were to leak its 20-byte database proxy authenticati=
+on token, then the attacker could use that token to access that service's d=
+atabase, but only through the RPC interface exposed by the service's databa=
+se proxy; the attacker would not gain sql client access! The authentication=
+ token would grant the attacker access to the same set of RPCs that the lea=
+king service ahd access to. Due to this, the "worst that could happen" is l=
+argely dependent on the kind of information the leaking service had access =
+to and how well the programmer set up the service. If the programmer was ta=
+king advantage of OKWS's security features, then she would minimize the typ=
+e of information and the set of RPCs that the service could access to only =
+those that were absolutely neccessary for the service to complete its funct=
+ion; this includes limiting the service to only use RPCs that return single=
+ rows.</pre></li>
+
+<li><pre class=3D"student-text">What's the worst that could happen if one s=
+ervice in OKWS were to leak its 20-byte database proxy authentication token=
+?
+
+-----
+
+The attacker would have access a subset of RPCs that the authentication tok=
+en provides for the specific service,
+but they wouldn't have full access to the database. For example, the attack=
+er could perhaps be able to look up information
+on a single user, but they wouldn't be able to ask the database for the ent=
+ire set of data on all of the users.
+The worst that could happen depends on the permissions and capabilities (se=
+t of RPCs) of the service that is compromised.</pre></li>
+
+<li><pre class=3D"student-text">What's the worst that could happen if one s=
+ervice in OKWS were to leak its 20-byte database proxy authentication token=
+?
+
+The attacker could masquerade as the service to get access to the service-s=
+pecific subset of the data on the database or local user information, but i=
+t wouldn't be able to get all data from the database because of limited acc=
+ess privileges. </pre></li>
+
+<li><pre class=3D"student-text">What's the worst that could happen if one s=
+ervice in OKWS were to leak its 20-byte database proxy authentication token=
+?
+
+The desing of OKWS assumes that the token is used to authenticate a web ser=
+vice, therefore another service can get access to the database using the le=
+aked token getting the permissions associated with this token. Let's assume=
+ that the set of RPCs which is allowed to be accessed by the web service au=
+thorised by this token is rich enough. Therefore, a malicious user can pote=
+ntially compomise a web service and then thorugh the compormised web servic=
+e gets access to all records in the database, compromise the data or broke =
+its integrity. Obviosly, compromising a service itself might be a challenge=
+.=20
+
+The article doesn't say how often a token is created. The potential damage =
+will be significantly less if a token is created for each session, thus it =
+becomes useless once the connection between a web service and proxy is clos=
+ed.
+</pre></li>
+
+<li><pre class=3D"student-text">What's the worst that could happen if one s=
+ervice in OKWS were to leak its 20-byte database proxy authentication token=
+?=20
+The attacker would only be able to interact with the database in a manner s=
+pecified by the RPC protocol declaration. He wouldn't have generic SQL clie=
+nt access.=20
+
+</pre></li>
+
+<li><pre class=3D"student-text">What's the worst that could happen if one s=
+ervice in OKWS were to leak its 20-byte database proxy authentication token=
+?=20
+
+If one service leaks its authentication token, then *each* user using that =
+service will be conpromised. However, since the database only exposes a lim=
+ited set of RPCs to the service, the harm that can be done is quite limited=
+.=20
+
+The attacker will only be able to get and set data that the service is perm=
+itted to. It will not be able to arbitrary sql commands, for example. If th=
+e service was a non-critical one (e.g. it looks up and updates a user's fav=
+orite drink), then the harm is probably small. However, if the compromised =
+service deals with sensitive information (e.g. ssn or credit card info), th=
+en there can be a lot of harm.</pre></li>
+
+<li><pre class=3D"student-text">When an OKWS service leaks its authenticati=
+on token, a malicious adversary will be able to establish a remote connecti=
+on to the RPC database proxy. However the adversary will have limited inter=
+activity due to (1) separation-of-duties and (2) least-privilege design con=
+cepts in OKWS. There is code isolation that prevents the adversary from rea=
+ding other authentication tokens. The worst that could happen when the toke=
+n is compromised is whatever limited ability the protocol allows. Since the=
+ protocol is easily restricted for each service, the potential damage is al=
+so limited.
+
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">With the authentication token, the adversar=
+y access a set of RPCs of the database. They will only have a restricted RP=
+C interface access through a proxy.
+
+</pre></li>
+
+<li><pre class=3D"student-text">You could get interesting things out of the=
+ database for that particular service, but nothing outside of that service =
+should be easily leaked because the point of OKWS is that services are sepa=
+rate. Getting into one doesn=E2=80=99t mean you can get into anything else =
+because they store all the different services in such a way that you cant b=
+uffer overflow attack from one to the next.</pre></li>
+
+<li><pre class=3D"student-text">lec5.txt
+
+John McLaughlin
+2/21/2018
+
+What's the worst that could happen if one service in OKWS were to leak its =
+20-byte database proxy authentication token?
+
+
+If one of the services leaked its database proxy authentication key then an=
+ attacker might be able to impersonate the compromised web service to the d=
+atabase proxy rpc mechanisms.=20
+However, since privileges and authorization is done on a per service level,=
+ the attacker would be limited to only the data that the compromised servic=
+e had access to.
+Furthermore, due to the seperation of processes and lock down of privileges=
+, the compromised web service would be severely limited in what it could ac=
+complish </pre></li>
+
+<li><pre class=3D"student-text">=EF=BB=BFIf one service in OKWS was to leak=
+ its 20-byte database proxy authentication token, there actually won=E2=80=
+=99t be much loss in terms of exposing the source code or binaries for serv=
+ices. The worst that could happen is that an attacker will be able to conne=
+ct to a remote RPC database.</pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--Higcbi8RxOHUaRCJVG8i68rdN5Cg2l5WRyQV3ezjlu------

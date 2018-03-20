@@ -1,0 +1,1303 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-answers/11
+Subject: Answers for lecture 11 - 6.858
+Date: Wed, 20 Mar 2018 22:59:27 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--o7YyxImjWswygRPjefe8wbfpagbuvzvqsp0ZnZZwpL----"
+
+------MultipartBoundary--o7YyxImjWswygRPjefe8wbfpagbuvzvqsp0ZnZZwpL----
+Content-Type: text/html
+Content-ID: <frame-32872-0af7e302-9cc5-411b-88ad-1603dbb9db42@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-answers/11
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Answers for lecture 11 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Answers for lecture 11 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text">
+Lecture 11
+
+The paper mentions that typical Android applications execute on top of a Ja=
+va virtual machine. What is the role of Java in ensuring overall security?
+
+----------------------------------------------------------
+
+Answer: Java provides some benefits not listed in the paper like protection=
+ about buffer overflow attacks. The paper describes some security mechanism=
+s that the develop can use to further restrict permissions like the service=
+ hooks. The checkPermission() method, for example, can give a developer the=
+ ability to double-check the permissions are set right in the runtime of th=
+eir app, assuming there are no bugs in the checkPermission() function.
+</pre></li>
+
+<li><pre class=3D"student-text">Java provides isolation between the android=
+ program and the rest of the system through a virtual machine. By virtualiz=
+ing memory and processes Java makes it difficult for an attacker to gain co=
+ntrol of the system simply by attacking the android app itself.</pre></li>
+
+<li><pre class=3D"student-text">The JVM helps ensure overall security by li=
+miting what developers can do. Developers have to go through special APIs i=
+n order to interact with the system/other apps. Also, the middleware enforc=
+es security by running different apps under different user IDs, and it care=
+fully monitors and controls intercomponent communication. This limits the a=
+mount of damage a compromised app can do.=20
+</pre></li>
+
+<li><pre class=3D"student-text"> What is the role of Java in ensuring overa=
+ll security?
+
+ The Java virtual machine sandboxes the code running on the Android operati=
+ng system. It allows Google to control the programming interface for Androi=
+d better than giving users a mobile phone that only runs linux. JVM ensures=
+ that developers must use the component-interaction methodology used in And=
+roid applications=20
+</pre></li>
+
+<li><pre class=3D"student-text">6.858 - Android
+
+Although not specifically mentioned, I'm assuming that the JVM is responsib=
+le
+for handling the software-level permissions securities, e.g. the enforcemen=
+t
+of permission protection levels, enforcing private/public components, etc. =
+that
+are rules written into the SDK but can't be enforced with hardware.
+</pre></li>
+
+<li><pre class=3D"student-text">All android applications run on top of the =
+Java middleware, which controls all interactions between the application an=
+d the device's operating system, and across applications. Hence, all applic=
+ations must obey the communication rules imposed by the middleware. This pr=
+events applications from freely acessing data from other processes running =
+within the phone.
+</pre></li>
+
+<li><pre class=3D"student-text">Although the paper doesn't explicitely talk=
+ about JVM, it has to perform the role of virtualization of the app and lim=
+iting its access to the system. For example, it has to make sure the only w=
+ay two apps can communicate is through the defined interface and no other w=
+ay instead. Even though the Linux part gives different apps unique user ids=
+, some things like access to /dev/binder is not restricted, thus the apps w=
+ould be able to access other apps' comunications.</pre></li>
+
+<li><pre class=3D"student-text">Android application execute on top of a Jav=
+a virtual machine. This allows Android to mitigate the risk of running appl=
+ications. In order to exploit the OS kernel, the attacker would have to fin=
+d a bug in the VM implementation which is a lot smaller and protected. </pr=
+e></li>
+
+<li><pre class=3D"student-text">Android applications only allow application=
+s to  use a special API. Each application also gets a unique user identity.=
+ These features both attempt to limit programming flaws. Developers also ha=
+ve the option to make components private so that they cannot be accessed by=
+ other applications. </pre></li>
+
+<li><pre class=3D"student-text">Android apps are run as different users, so=
+ a bug in the JVM would not allow apps to read each others' files. However,=
+ since the Java middleware layer is used to grant access to RPCs, a bug in =
+the middleware layer would allow apps to send arbitrary RPCs to each other,=
+ potentially compromising the security of an app with public components.
+</pre></li>
+
+<li><pre class=3D"student-text">Android provides a set of custom user inter=
+face environment that is shipped via Java. The virtual environment(which ea=
+ch app has its own user identity), restricts what app can do.=20
+
+In general though, I know that Java is not the only choice. One can potenti=
+ally use other languages such as scala to develop an Android application. T=
+he only caveat is that the all system APIs must conform to the Android SDK,=
+ and that it must follow the same Activity model. So in some sense, the API=
+ shipped via Java is part of the integration that enforces the security.</p=
+re></li>
+
+<li><pre class=3D"student-text">Android relies on Java isolating applicatio=
+ns from each other and preventing them from escaping their execution enviro=
+nment. This allows for security properties to be enforced by only allowing =
+certain interactions between applications.
+</pre></li>
+
+<li><pre class=3D"student-text">Answer about Paper
+
+Java promises the Java VM which allows you to guarantee execution policies =
+and also sandbox the software. The Android specific Java SDK also only allo=
+ws a certain type of API to execute on Android devices. Thus, Java provides=
+ stronger security guarantees than languages like C.  </pre></li>
+
+<li><pre class=3D"student-text">Answer: The role of Java in ensuring overal=
+l security is that Java implements the middleware layer which separates the=
+ applications from the Linux system. It also allows for communications betw=
+een applications using the ICC reference monitor (where ICC =3D InterCompon=
+ent Communications). This is important for overall security because this is=
+ where communication between apps is checked to make sure the permissions l=
+abels permit the attempted action.</pre></li>
+
+<li><pre class=3D"student-text">Applications developed for Android are exec=
+uted on top of a Java middleware layer. Therefore, the=20
+developer must use the custom interface environment of Android. This layer =
+of indirection between
+the application and the actual Android system helps protect the Android sys=
+tem from malicious
+apps.</pre></li>
+
+<li><pre class=3D"student-text">Applications execute on top of a Java middl=
+eware layer running on top of an embedded Linux kernel. This middleware pla=
+ys a central role in security enforcement on Android, as it mediates all in=
+ter-component communication (ICC). It interprets the access permission labe=
+ls assigned to components and implements the reference monitor that enforce=
+s mandatory access control for ICC. When a component initiates ICC, the ref=
+erence monitor checks the target component's permission labels to determine=
+ whether the ICC should be allowed to proceed or be denied. This MAC enforc=
+ement is the same for all component types on Android, is therefore a centra=
+l aspect of Android security, and is enabled by the Java middleware.</pre><=
+/li>
+
+<li><pre class=3D"student-text">Applications execute on top of a Java middl=
+eware layer virtual machine running on an embedded Linux kernel, such that =
+developers wishing to port their applications to Android must use its custo=
+m user interface environment. This allows for application interactions to b=
+e restricted to their special APIs with each application being ran as its o=
+wn user identity, thus being a very beneificial security feature to prevent=
+ leakage of information between different applications and the kernel.
+</pre></li>
+
+<li><pre class=3D"student-text">Applications on Android run on their own Ja=
+va virtual machine in order to
+enable sandboxing of applications in an attempt to keep malicious applicati=
+ons
+from affecting any other part of the phone. Specifically, applications are =
+run
+with their own user identity. The android system then uses a permission sys=
+tem
+to allow that application to call other components from other applications.
+Although much of the application security lies in the manifest folder, the =
+Java
+source code of the application does contain some security related features,
+such as defined by Broadcast Intent Permissions. Lastly, Java is responsibl=
+e
+for following ICC (intercomponent communication) protocols.
+</pre></li>
+
+<li><pre class=3D"student-text">Applications run on Java middlware, so deve=
+lopers/app neeed to use the custom interface.
+</pre></li>
+
+<li><pre class=3D"student-text">Applications written in Java allows code to=
+ be portable to multiple devices with different processors and also removes=
+ some of the burden to write code without security flaws, like buffer overf=
+lows, that exist in languages like C. The Java Virtual Machine isolates app=
+lications and executes applications as their own identity.
+</pre></li>
+
+<li><pre class=3D"student-text">As the applications execute in the JVM, And=
+roid is relying on the JVM to isolate the applications from the underlying =
+linux operating system. This would allow an application
+to break out of Android's specially crafted APIs and depending on how privi=
+leges are assigned may be able to gain significant control of the system.</=
+pre></li>
+
+<li><pre class=3D"student-text">Because applications are executed on top of=
+ a Java middleware layer and Android doesn't support apps developed for oth=
+er platforms, developers must use Android's custom user interface environme=
+nt and must conform to Android's standards.</pre></li>
+
+<li><pre class=3D"student-text">Before compromising the Android kernel, And=
+roid applications have to first bypass the protections given by the JAVA VM=
+.
+However, bugs in the Java VM can still be exploited.
+</pre></li>
+
+<li><pre class=3D"student-text">Building Android on top of a Java Virtual M=
+achine ensures that applications written for Android do not run machine cod=
+e, but intermediate Java bytecode. This bytecode can then be verified to en=
+sure that the system is not compromised by using Java's built-in security m=
+anager to sandbox code.</pre></li>
+
+<li><pre class=3D"student-text">By forcing Android applications to execute =
+on top of a Java virtual machine, Androids have complete control over permi=
+ssions of individual apps and how they can interact with the Linux system /=
+ other apps.  Since each application runs as a unique user identity, Androi=
+d can limit the potential damage of programming flaws.
+
+The Java middleware layer works by mediating communication between differen=
+t components, following a protocol called "intercomponent communication" te=
+chnique (ICC) in which all components declare intents. A reference monitor =
+provides mandatory access control (MAC) enforcement of how applications acc=
+ess components.  Thus, each component is restricted by an access permission=
+ label.
+When a component initiates ICC, the reference monitor looks at the permissi=
+on labels assigned to its containing application and if the target componen=
+t=E2=80=99s access permission label is in that collection, it allows ICC es=
+tablishment to proceed. Note: permission labels are set at install time and=
+ can=E2=80=99t change until the application is reinstalled.
+
+To increase permissions flexibility, Android provides the checkPermission()=
+ method, which lets developers arbitrarily extend the reference monitor wit=
+h a more restrictive policy (think privilege separation for two different i=
+nterface). These "service hooks" let the developer write code to perform cu=
+stom runtime security.
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">By writing apps in Java many sorts of memor=
+y safety issues are avoided,
+including buffer overflows and the like. However, because Android also allo=
+ws
+running native code, the use of Java does not prevent apps from deliberatel=
+y
+running any code of their choosing.
+</pre></li>
+
+<li><pre class=3D"student-text">Danny Tang
+
+data1013
+
+3/14/18
+
+
+
+Lecture 11
+
+Question:
+
+The paper mentions that typical Android applications execute on top of a Ja=
+va virtual machine. What is the role of Java in ensuring overall security?
+
+Answer:
+
+The role of the Java middleware layer in ensuring overall security is to pr=
+otect Android from arbitrary applications. The paper mentions
+that Android does not support other platforms' applications, so developers =
+who want to make apps for Android need to make their apps
+compatible with this middleware layer. Because of this, Android can make de=
+velopers conform to their standards.</pre></li>
+
+<li><pre class=3D"student-text">Developers are forced to write their applic=
+ations in Java and to use the Android application framework, instead of hav=
+ing a main() function or a single point of execution. This forces developer=
+s to have a certain structure in their code that forces component separatio=
+n.</pre></li>
+
+<li><pre class=3D"student-text">First, Java requires the app to be executed=
+ in a virtual machine-like environment, so that it is unable to affect othe=
+r=20
+apps or files if not through the ICC and Android APIs. This also means that=
+ the code is contained, and hence it is=20
+safe to execute a number of untrusted applets and still ensure security (an=
+ example is provided in the paper). The paper
+describes how the android middleware and the deeper Linux system are used t=
+o allow for those Java encapsulated apps to
+communicate with one another and the system.=20
+</pre></li>
+
+<li><pre class=3D"student-text">First, running on top of a JVM avoids the c=
+omplications that come with having to deal with multiple platforms. JVM als=
+o helps sandbox the application from other things from the machine, so it's=
+ harder for the application to access outside data.
+</pre></li>
+
+<li><pre class=3D"student-text">From the paper, it seems like Android is do=
+ing a good job at privilege separation and sandboxing. Therefore, if a vuln=
+erability is found, the damage will be limited. Therefore, given the code r=
+uns on top of JVM, Java's role is to ensure that their implementation is as=
+ safe as possible and doesn't allow user code to access other parts of the =
+OS directly. Here, we don't see signed code as with iOS, and hence anyones =
+code is allowed to run on Adroid. Therefore, Google assigns part of the res=
+ponsability to Java and the JVM.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Given that typical Android applications run=
+ on top of a Java virtual machine, the virtual machine acts as a sandbox be=
+tween the operating system
+and the application code. This prevents applications from modifying and exp=
+loiting bugs in the system code (provided the virtual machine is
+implemented correctly), and provides a trusted (maybe) code base for runnin=
+g applications, potentially preventing the operating system from
+modifying and exploiting the application code.</pre></li>
+
+<li><pre class=3D"student-text">I don't think Java is important in ensuring=
+ overall Android security. I think the Java VM is just a layer that creates=
+ a common API for Android developers to use.</pre></li>
+
+<li><pre class=3D"student-text">I don't think the role of Java as language =
+in Android security is mentioned much
+in the paper. I guess Java allows developers to specify whether an app comp=
+onent
+should be private or public which significantly reduces the attack surface.
+</pre></li>
+
+<li><pre class=3D"student-text">If applications run inside a Java Virtual m=
+achine, that means if they want to mess with the android kernal, they would=
+ first have to break out of the JVM kernal. Therefore the Java VM adds anot=
+her layer of security. On the other hand, bugs in the Java VM could not be =
+exploited by applications to read/write files they shouldn't be able to.</p=
+re></li>
+
+<li><pre class=3D"student-text">It provides a sandbox preventing buffer ove=
+rrun attacks due to bugs in apps.
+</pre></li>
+
+<li><pre class=3D"student-text">JVM enforces runtime security checks. In pa=
+rticular, it does verification on bytecode to prevent branching to disallow=
+ed locations. Furthermore, the code execution is sandboxed from the rest of=
+ the system.</pre></li>
+
+<li><pre class=3D"student-text">Java adds another layer between the actual =
+code and the app code, so it can effectively "sandbox" the app code and run=
+ that within some predefined environment (we can restrain its access to cer=
+tain areas of Android)
+</pre></li>
+
+<li><pre class=3D"student-text">Java creates an isolated environment for th=
+e application to run. Since the runtime environment runs in it's own proces=
+s, it must communicate with the OS in order to access hardware. This isolat=
+ion also prevent applications from communicating directly with each other a=
+nd means hardware resources can be consistently shared between applications=
+. This provides the Java with the responsibilty of deciding which connectio=
+ns to allow to the application and preventing an application from accessing=
+ unauthorized resources</pre></li>
+
+<li><pre class=3D"student-text">Java ensures overall security by being a re=
+latively 'safe' language. One example
+of this is that it is only possible to trigger a buffer overflow in Java un=
+der
+several unusual scenarios (e.g in the JVM itself, etc.).
+
+Additionally, by requiring the application layer to be written in Android's
+specific dialect of Java, developers are forced to be more security conscio=
+us
+when writing Android code, as the MAC enforcement outlined in the paper mus=
+t be
+adhered to.
+</pre></li>
+
+<li><pre class=3D"student-text">Java essentially acts as the middleware reg=
+ulating interactions of apps between each other and the system. Java plays =
+a major role in regulating access control and sandboxing applications. </pr=
+e></li>
+
+<li><pre class=3D"student-text">Java has a couple of different roles. First=
+ of all, the way that Java executes makes it an inherently safer language t=
+han say C. Java runs in the JVM which means that the code that is executing=
+ is already sandboxed to some extent from the rest of the files and OS. Jav=
+a is also strongly typed, has type checking, and there are no pointers whic=
+h makes it much safer.
+</pre></li>
+
+<li><pre class=3D"student-text">Java has automatic memory management, garba=
+ge collection, and range checking, which doesn't allow buffer overflows. Fu=
+rthermore, Java has a bytecode verifier, which checks that bytecode is legi=
+timate before executing it.</pre></li>
+
+<li><pre class=3D"student-text">Java implicitly sandboxes each application =
+to some extent, preventing them from accessing the state of other processes=
+ or interacting with the OS beyond a predefined API. It also adds the entir=
+e JVM to the attack surface presented to a malicious application.</pre></li=
+>
+
+<li><pre class=3D"student-text">Java is a better underlying language than C=
+ because it prevents buffer overflows, exploitable pointer arithmetic error=
+s, etc. that would be present in a lower level language like C.=20
+
+Also by running apps in a Java VM, no app has untrusted access to the OS ke=
+rnel, which prevents very severe security exploits. The VM creates a sandbo=
+xed execution environment, so that 1 app cannot compromise the whole OS.</p=
+re></li>
+
+<li><pre class=3D"student-text">Java is a more secure language than C first=
+ off (it automatically checks for buffer overruns etc.). Also developing yo=
+ur own language can be buggy. Using tried and tested software is always a g=
+ood idea.
+</pre></li>
+
+<li><pre class=3D"student-text">Java is a well established programming lang=
+uage, with a dedicated team which has spent years on creasing out security =
+issues.
+Hence, advanced bytecode verification, bounds checking, garbage collection,=
+ type safety etc. can be used off the shelf.
+In addition to having a well developed programming security model, it also =
+has the advantage of serving its functionality via a virtual layer. This gi=
+ves further assurance that the developed code, irrespective of its underlyi=
+ng platform (phone devices, tablets etc.), will hold steady in Java's envir=
+onment.</pre></li>
+
+<li><pre class=3D"student-text">Java is significantly more safe from typica=
+l attacks that are common to C code.
+For example, Java has bounds-checking in all of its arrays, and has
+significantly better exception handling, meaning it is far harder to break =
+out
+of.</pre></li>
+
+<li><pre class=3D"student-text">Java isn't explicitly mentioned much in the=
+ article, but since the Android SDK and apps are in Java, I assume that the=
+ ICC security is all handled in Java. This would mean doing the checks of t=
+he permission labels when components try to initiate communication with oth=
+ers as well as enforcing the various variants that Android adds to the simp=
+le MAC model, such as URI permissions when accessing a content provider and=
+ the service hooks that might define custom security checks.</pre></li>
+
+<li><pre class=3D"student-text">Java plays a role in ensuring the overall s=
+ecurity of Android by providing a framework with built in security features=
+ that is not vulernable to low level attacks like C.</pre></li>
+
+<li><pre class=3D"student-text">Java programs run in the Java Virtual Machi=
+ne, so I imagine that Java is Android's way of sandboxing the applications,=
+ and they have modified the Android layer to add support for ICC.
+</pre></li>
+
+<li><pre class=3D"student-text">Java provides an additional layer for the c=
+odes to execute. This would enforce code to comply with certain form and pr=
+event anything to be ran and have more controlled bugs when there are any.<=
+/pre></li>
+
+<li><pre class=3D"student-text">Java provides security by performing array =
+bounds checks and automatically deleting resources that are no longer neede=
+d via its garbage collector, which eliminates the chances of a buffer overf=
+low attack.
+
+Android's virtual machine (running on Java) also provides other forms of se=
+curity. As the paper mentions, it runs components such as Activities and Se=
+rvices as their own users, so if one is compromised the others aren't.
+
+Android's java virtual machine also controls ICC, so it will only direct an=
+ intent to an application from another application that has permission to d=
+o so. The virtual machine also controls access via permissions to devices t=
+hat offer direct API access, such as the camera.</pre></li>
+
+<li><pre class=3D"student-text">Java runs Android applications in a virtual=
+ machine, thus providing a layer of both abstraction and protection in betw=
+een malicious programs and the OS.  This allows Java to easily prevent dang=
+erous operations if necessary, such as file system reads and syscalls.
+</pre></li>
+
+<li><pre class=3D"student-text">Java serves as software fault isolation mec=
+hanism. The JVM is the final author of executable machine code. It enforces=
+ type safety and restricts the APIs a Java application can use. This preven=
+ts memory corruption attacks and limits the attack surface for other types =
+of attacks. The JVM is trusted. An exploitable bug in the JVM itself will b=
+reak many security guarantees; for example, it likely has writeable-executa=
+ble pages in its memory for use in JIT compilation which could be exploited=
+ to inject arbitrary code.</pre></li>
+
+<li><pre class=3D"student-text">Java takes care of the security of the func=
+tions and environment it provides.  So Java is responsible for making sure =
+the environment restricts the applicaitons to only the expected functionali=
+ty of Java.
+</pre></li>
+
+<li><pre class=3D"student-text">Java virtual machine does two things.=20
+First, it sandboxes each application and handles inter-component=20
+communications. There is a reference monitor and it provides
+mandatory access control enforcement of how applications access=20
+components. It ensures applications access components if they have the=20
+right permission labels. =20
+Second, it provides system APIs. Applications are not allowed to interact
+with system resources. They are only allowed to use system resources
+via components or APIs, which are provided by the Java middleware.=20
+
+Java ensures that buffer-overflow/return-to-libc attacks are not possible.=
+=20
+Since Java runs on top of JVM, compromising OS by exploiting Apps=20
+vulnerability is not easy.
+</pre></li>
+
+<li><pre class=3D"student-text">Java virtual machine is responsible for run=
+ning the reference monitor which handles establishment of ICCs by checking =
+access permissions between components.
+
+</pre></li>
+
+<li><pre class=3D"student-text">Java works as a middleware layer that media=
+tes all inter-component communication establishments by checking the permis=
+sion labels assigned to applications and components.</pre></li>
+
+<li><pre class=3D"student-text">Java's role in ensuring overall security is=
+ localizing the impact of exploits and vulnerabilities to the Jav VM rather=
+ than exposing the entire Linux kernel to the vulnerability. In addition us=
+ing a language such as Java prevents exploits such as buffer overflows.</pr=
+e></li>
+
+<li><pre class=3D"student-text">Java, or specifically the Java SDK, seems t=
+o be responsible for all security
+features, including permissions, and encouraged modularity of systems withi=
+n
+applications. I would also think the virtual machine itself helps with
+sandboxing, especially of foreign apps.</pre></li>
+
+<li><pre class=3D"student-text">Jun Wan 991032935
+
+Java monitors and secures inter-component communication by reasoning about =
+labels assigned to applications and components. It also enforces access con=
+trol of how applications access components.</pre></li>
+
+<li><pre class=3D"student-text">Lecture 11
+-------------------------------------------------
+The paper mentions that typical Android applications execute on top
+of a Java virtual machine. What is the role of Java in ensuring overall
+security?
+-------------------------------------------------
+
+The JVM acts as a sort of sandboxed environment for each application. It
+restricts what the worst an application can do if compromised. The JVM also
+controls ICC and provides extra safety on top of just using RPCs between
+processes. Also, Java is a higher-level language with stricter type enforce=
+ment
+and many fewer scenarios which result in buffer overflows.
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 11 (Answer to Paper Question)
+
+Question:
+
+The paper mentions that typical Android applications execute on top of a Ja=
+va virtual machine. What is the role of Java in ensuring overall security?
+
+
+The Java virtual machine prevents Android applications from accessing syste=
+m resources they aren't supposed to access. The virtual machine sandboxes A=
+ndroid application running on mobile devices.
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 11: Android Security
+3/14/18
+
+The paper mentions that typical Android applications execute on top of a Ja=
+va virtual machine. What is the role of Java in ensuring overall security?
+
+Java acts as the middleware between the linux system and the applications. =
+As it allows for applications to talk to one another, it is responsible for=
+ managing the ICC (inter-component communication) as well as the MAC permis=
+sions (which determine which components can access which resources).
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 11: Android Security Reading Questi=
+on
+
+The Java VM acts as a universal platform that gives Android apps a standard=
+ized approach
+for app development and execution. The VM serves as an isolation mechanism =
+that then gives
+Android apps a well known and universally functional execution environment.=
+ This way, when
+a new app is being developed, the new app will be able to replicate existin=
+g functionalities
+easily and will be able to synchronize with other apps in the Android famil=
+y with ease as well.
+This standardization also limits the approaches that attackers could take t=
+o when it comes to
+sending malicious instructions to application in the Android family.
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture Qn 10
+
+Overall security is enforced through a number of mechanisms. First of all, =
+the language is designed to be type-safe and easy to use. The hope is that =
+the burden on the programmer is such that the likelihood of making subtle m=
+istakes is lessened compared with using other programming languages such as=
+ C or C++. Language features such as automatic memory management, garbage c=
+ollection, and range checking on strings and arrays are examples of how the=
+ language helps the programmer to write safe code.
+
+Second, compilers and a bytecode verifier ensure that only legitimate Java =
+bytecodes are executed. The bytecode verifier, together with the Java Virtu=
+al Machine, guarantees language safety at run time.
+
+Moreover, a classloader defines a local name space, which can be used to en=
+sure that an untrusted applet cannot interfere with the running of other pr=
+ograms.
+
+Finally, access to crucial system resources is mediated by the Java Virtual=
+ Machine and is checked in advance by a SecurityManager class that restrict=
+s the actions of a piece of untrusted code to the bare minimum.</pre></li>
+
+<li><pre class=3D"student-text">Like running anything in any kind of VM, th=
+e Java VMs give each application an
+isolated address space/environment in which to execute, which protects the
+Andriod system and other applications from a compromised application. Java
+specifically plays a role in that all of the Java applications compile into
+Java bytecode before it is executed. This bytecode is therefore prevented f=
+rom
+making common errors that lead to exploits such as illegal jumps or buffer
+overflows. No user code is able to crash the overall system-- meaning that =
+a
+compromised app should only be able to harm itself.
+
+</pre></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 11
+
+The paper mentions that typical Android applications execute on top of a Ja=
+va virtual machine. What is the role of Java in ensuring overall security?
+
+The Java middlewear provides a layer between the application and the linux =
+kernel in order to protect the kernel from applications being run.</pre></l=
+i>
+
+<li><pre class=3D"student-text">RQ 11=20
+
+The Java virtual machine serves as a middleware layer on top of a Linux ker=
+nel,
+and it reasons about the labels assigned to appliations and components to
+mediate inter-component communication, implementing MAC.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Running applications on a Java VM isolates =
+any security issues to the VM and better protects the OS kernel. Java is a =
+higher level language, than say C/C++, and therefore less prone to low-leve=
+l pointer-related bugs for developers, so Android probably chose Java over =
+other languages because it's a safer language for developers of varying lev=
+els of expertise.</pre></li>
+
+<li><pre class=3D"student-text">Running in a Java environment means while t=
+hings will run a bit slower than in C, the code is also more immune to buff=
+er overflow attacks and the like. There is also a centralized java.security=
+ library that helps standardize good security practices.</pre></li>
+
+<li><pre class=3D"student-text">Since Android applications run on a Java vi=
+rtual machine, they cannot directly interact with the underlying Linux kern=
+el. As a result, different applications running as different processes have=
+ to communicate through Android's custom ICC APIs, since they cannot use th=
+e tools that Linux provides for inter-process communication. The design of =
+the ICC APIs can be constrained to give more confidence that Android ICC is=
+ secure.</pre></li>
+
+<li><pre class=3D"student-text">Some features of Java make it a more inhere=
+ntly secure language/platform to run on rather than popular alternatives su=
+ch as C/C++. Java checks array bounds, which disables stack overflow attack=
+s. It also provides good access control features, which are ideal when sepa=
+rating public/private compoennts and checking label permissions. Each app a=
+lso runs as a separate UID, which limits the damage of compromised programs=
+ to just the progrma itself.=20
+</pre></li>
+
+<li><pre class=3D"student-text">The Android middleware is a Java virtual ma=
+chine that is responsible for providing mandatory access control enforcemen=
+t of how applications access components. When a component wants to communic=
+ate with another component through ICC, the middleware checks permission la=
+bels that developers set on the components to make sure the requesting comp=
+onent has the appropriate permissions to access the other component. </pre>=
+</li>
+
+<li><pre class=3D"student-text">The JVM acts as a sandbox for untrusted cod=
+e from applications. This serves to have one layer of protection from malic=
+ious applications.</pre></li>
+
+<li><pre class=3D"student-text">The JVM ensures sandboxing of all applicati=
+ons. Also, use of Java
+prevents some attacks such as buffer overflow attacks.</pre></li>
+
+<li><pre class=3D"student-text">The JVM is a sandbox for the Android applic=
+ation code, virtualizing the hardware so the application doesn't have direc=
+t access to it.
+</pre></li>
+
+<li><pre class=3D"student-text">The JVM prevents any application from havin=
+g direct access to memory, and screens all accesses to make sure that they =
+are not unsafe or malicious accesses. This prevents applications from explo=
+iting memory safety flaws, so for example something like a buffer overflow =
+would be much more difficult to pull off with the JVM in the middle. Overal=
+l, Java's role in Android security is to make sure that applications' memor=
+y accesses are safe.
+</pre></li>
+
+<li><pre class=3D"student-text">The JVM sandboxes apps, meaning they can't =
+run native code. Everything is mediated by the JVM--app code is first trans=
+lated to Java bytecode, which prevents many classes of attacks that require=
+ native execution.
+</pre></li>
+
+<li><pre class=3D"student-text">The Java JVM enables individual apps to exe=
+cute in their own VMs, this forms a basis for modularity essential for secu=
+rity. Built-in type-safety and a garbage collector reduce the frequency of =
+vulnerabilities. Additionally, the portability of Java's abstraction of the=
+ underlying hardware enables developers to focus on system provided abstrac=
+tions and inter component communication rather than produce potentially har=
+mful side-effects on a mobile device. The wide-spread developer usage of Ja=
+va implies an existing set of security best practices.=20
+</pre></li>
+
+<li><pre class=3D"student-text">The Java SDK allows developers to set permi=
+ssion labels for different protection levels.
+</pre></li>
+
+<li><pre class=3D"student-text">The Java SDK ensures that developers use th=
+e specific commands and interface and provides protection labels for variou=
+s permission levels. By running on top of Java, it restricts developers fro=
+m accessing other resources and applications.</pre></li>
+
+<li><pre class=3D"student-text">The Java SDK that Android uses allows devel=
+opers to refine their security by
+setting components to be public or private (private means other application=
+s
+can never access this component), creating permissions and having different
+protection levels for inter component communication, enforcing usage of
+APIs, and allowing for different ways to ask for permission to access a com=
+ponent(URI/pending intents)
+</pre></li>
+
+<li><pre class=3D"student-text">The Java VM is middleware between the appli=
+cations and the kernel. It mediates
+inter-component communication (ICC) by enforcing MAC. For every ICC, it che=
+cks
+the permission labels of the sender application and component and decides i=
+f it
+has the right to communicate with its desired receiver.
+</pre></li>
+
+<li><pre class=3D"student-text">The Java VM provides the middleware between=
+ the low level Linux System and the actual Android application. Having this=
+ middleware enforces security through separation, ie. it discourages one ap=
+plication from directly accessing the contents/messages of a separate appli=
+cation.=20
+</pre></li>
+
+<li><pre class=3D"student-text">The Java VM would be able to monitor ICC ca=
+lls and ensure that the relevant
+permissions are followed when making these calls.=20
+</pre></li>
+
+<li><pre class=3D"student-text">The Java VM wraps system calls to isolate a=
+pplication from OS kernel.
+The Java VM enforces access control. </pre></li>
+
+<li><pre class=3D"student-text">The Java Virtual Machine (JVM) provides the=
+ middleware layer that controls Inter Component Communications (ICCs). The =
+OS by itself just enforces system-level security. Since each application ru=
+ns as a separate user, we have very good security in terms of applications =
+accessing system files and each other's files (they cannot directly access =
+them). But although running as separate processes provides good security, i=
+t is too isolated and doesn't allow for any communication. The communicatio=
+n is handled by the JAVA layer, which is much more difficult to get correct=
+. The JAVA layer allows the different *components* (not just apps, but comp=
+onents within apps) to specify Mandatory Access Control lists controlling w=
+hat can be accessed, along with certain forms of discretionary control (lat=
+er added) that make Android security rather complex. Basically, the JAVA la=
+yer allows apps to communicate with each other, as well as components withi=
+n an app to communicate with each other.
+</pre></li>
+
+<li><pre class=3D"student-text">The Java Virtual Machine acts as an applica=
+tion sandbox. Because the applications run on seperate JVM's there is isola=
+tion built into the system. The middleware itself then handles message pass=
+ing between apps and between apps and the OS, which gives greater control o=
+ver security</pre></li>
+
+<li><pre class=3D"student-text">The Java Virtual Machine is the central poi=
+nt of security enforcement, the Android middleware mediates all inter compo=
+nent communication (ICC). It enforces how applications have access to certa=
+in components. The JVM compare permission labels
+</pre></li>
+
+<li><pre class=3D"student-text">The Java middleware in the Android system m=
+akes sure that the system can control the Android applications=E2=80=99 acc=
+ess to different components. The is does my monitoring references between t=
+wo applications and enforcing a mandatory access control. </pre></li>
+
+<li><pre class=3D"student-text">The Java middleware is used to monitor the=
+=20
+establishment of ICC.</pre></li>
+
+<li><pre class=3D"student-text">The Java middleware is what all application=
+s must use to interact with the Android kernel. By defining an API for kern=
+el calls, rather than allowing developers to use the native Linux kernel ca=
+lls, the Java middleware is a defense of the kernel and all that the kernel=
+ enforces. Forcing calls to the kernel to have a more rigid structure makes=
+ exploitation of kernel bugs that much harder. </pre></li>
+
+<li><pre class=3D"student-text">The Java middleware mediates ICC via MAC. A=
+pplications are assigned access permission labels, and the reference monito=
+r in the Java middleware performs checks to ensure that all ICC is allowed =
+based on permission labels. </pre></li>
+
+<li><pre class=3D"student-text">The Java middleware provides a more heavily=
+ constrained API than the
+Linux kernel, restricting what applications can do and how they can
+interact.
+</pre></li>
+
+<li><pre class=3D"student-text">The Java middleware provides a set of pre-d=
+efined interface for application to utilize various phone functionalities. =
+Apps cannot directly interact with the phone, and thus reduces the attack s=
+urface for an attacker who gains control of an app.=20
+</pre></li>
+
+<li><pre class=3D"student-text">The Java middleware regulates all the inter=
+ component communication. They state that in the simplest form each compone=
+nt has some kind of access control label which the middleware can use to de=
+termine what any given component has access to.</pre></li>
+
+<li><pre class=3D"student-text">The Java virtual machine is used to sandbox=
+ the Android application and also can be used to restrict calls.
+</pre></li>
+
+<li><pre class=3D"student-text">The Java virtual machine provides a securit=
+y layer on top of the Linux kernel.
+Java manages the user separation between components that allows the vulnera=
+bilities to be contained.
+</pre></li>
+
+<li><pre class=3D"student-text">The Java-based Android API mediates all com=
+munication between third-party application components and the phone's syste=
+m, as well as all communication between applications (inter-component commu=
+nication). The VM allows for portability between different architectures, a=
+llowing phone manufacturers more freedom in the type of CPU they use.
+</pre></li>
+
+<li><pre class=3D"student-text">The android middleware, implemented in Java=
+, is responsible for dealing with ICCs and enforcing MAC contraints (the re=
+ference monitor). If there is an issue with the middleware (a programming b=
+ug in the middleware itself or a bug in Java), MAC contraints can be subver=
+ted. Thus if a bug is found in Java, all of the security of android will be=
+ compromised.</pre></li>
+
+<li><pre class=3D"student-text">The binary form of programs running on the =
+Java platform is not native machine code but an intermediate bytecode. The =
+JVM performs verification on this bytecode before running it to prevent the=
+ program from performing unsafe operations such as branching to incorrect l=
+ocations. It also allows the JVM to enforce runtime constraints such as arr=
+ay bounds checking. This means that Java programs are significantly less li=
+kely to suffer from memory safety flaws such as buffer overflow than progra=
+ms written in languages such as C which do not provide such memory safety g=
+uarantees.
+</pre></li>
+
+<li><pre class=3D"student-text">The code for most of the mediation and secu=
+rity enforcement must be in Java since the API itself is in Java and its un=
+derlying implementation is likely checking for a number of security violati=
+ons. For instance, the ICC establishment reasoning, access label checking a=
+nd so on is likely in Java.</pre></li>
+
+<li><pre class=3D"student-text">The jvm provides a nice way for android to =
+sandbox and run the code. It can make it so threads cannot talk to each oth=
+er exact through specified APIs, and also gives android more control over l=
+imiting the access to hardware for individual threads by neccesitating them=
+ to request and get access to resources. The JVM provides an additional lay=
+er of security between code and hardware, so even if code is comprised atta=
+ckers cannot arbitrarily start executing commands on the OS.</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that typical Android app=
+lications execute on top of a Java virtual machine. What is the role of Jav=
+a in ensuring overall security?
+
+In order to maintain all the other invariants listed, the Java virtual mach=
+ine must contain and isolate all the components from each other (except for=
+ exposing the limited communications and protected APIs).
+</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that typical Android app=
+lications execute on top of a Java virtual machine. What is the role of Jav=
+a in ensuring overall security?
+
+Java allows developers to explicitly distinguish between public and private=
+ components. Privitizing components simplifies security since now developer=
+s don't have to worry about setting permission labels for it corretly. </pr=
+e></li>
+
+<li><pre class=3D"student-text">The paper mentions that typical Android app=
+lications execute on top of a Java virtual machine. What is the role of Jav=
+a in ensuring overall security?
+
+The JVM provides a sandbox within which untrusted apps are (supposed to be)=
+ constrained from interacting with the rest of the system in a dangerous wa=
+y.</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that typical Android app=
+lications execute on top of a Java virtual machine. What is the role of Jav=
+a in ensuring overall security?
+
+The Java virtual machine needs to be properly sandboxed and isolated. That =
+is, the constraints we understand that a virtual machine requires must be m=
+et by the Java virtual machine.</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that typical Android app=
+lications execute on top of a Java virtual machine. What is the role of Jav=
+a in ensuring overall security?
+
+
+The main role of the Java VM or Android runtime (ART) is to create an sandb=
+ox executed applications. So the applications get a dedicated part of the f=
+ilesystem and also isolated from the OS kernel to minimize the impact from =
+potential unintended behavior. </pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that typical Android app=
+lications execute on top of a Java virtual machine. What is the role of Jav=
+a in ensuring overall security?
+
+------
+
+The Java middleware layer contains the ICC reference monitor, which control=
+s the establishment of communication between components. It does this by en=
+forcing MAC with permission labels assigned by the app developer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that typical Android app=
+lications execute on top of a Java virtual machine. What is the role of Jav=
+a in ensuring overall security?
+
+I think the fact that they use a JVM helps in that it keeps the system cons=
+istent regardless of hardware. By using a specific JVM, Android SDK develop=
+ers are not worried about different systems having different configurations=
+. They are able to ensure correctness independent of the type of host cellu=
+lar device. </pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that typical Android app=
+lications execute on top of a Java virtual machine. What is the role of Jav=
+a in ensuring overall security?
+
+The JVM foloows the idea that local code is trusted and remote code is untr=
+usted, also providing a very restricted model.  As Android is written in Ja=
+va, this also provides the general Java security such as being unable to ac=
+cess variables prior to initialization, final entities, access methods, arr=
+ay bound checking, and being unable to access abritrary memory locations.  =
+Particularly, this protects security as the Java middleware layer deals wit=
+h interactions between applications.</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that typical Android app=
+lications execute on top of a Java virtual machine. What is the role of Jav=
+a in ensuring overall security?
+
+The Java VM provides a layer of separation between applications running on =
+the device and the kernel and other critical system components that run wit=
+h very=20
+high permissions. The Java VM allows for separation of permissions at a hig=
+her level than relaying on the complex and limiting Linux permissions struc=
+ture that isn't as well suited for app silo-ing. </pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that typical Android app=
+lications execute on top of a Java virtual machine. What is the role of Jav=
+a in ensuring overall security?=20
+
+The JVM implements a reference monitor. The "reference monitor"/"middleware=
+" looks at ICCs between components. In simple terms, it checks that each IC=
+C sent is allowed to be sent. More specifically, suppose component 1 sends =
+an ICC to component 2. Java checks that permission label of component 2 are=
+ contained within component 1's application group of permission labels.
+</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that typical Android app=
+lications execute on top of a Java virtual machine. What is the role of Jav=
+a in ensuring overall security?=20
+
+The Java VM runs the ICC reference monitor, which plays a critical role in =
+ensuring that different components only operate within the permissions gran=
+ted to them.
+</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that =E2=80=9Capplicatio=
+n execute on top of a Java middleware layer running on an embedded Linux ke=
+rnel=E2=80=9D. Android security is enforced via two mechanisms/layers: the =
+Linux system and Android middleware. The role of this middleware layer (and=
+ therefore Java) in ensuring overall security is Inter-Component Communicat=
+ion (ICC) mediation. This meditations occurs via the reference monitor in t=
+his middleware layer, and is built on the assumptions and guarantees given =
+by the underlying Linux system. Therefore, Java must be able to create this=
+ monitor and carry out the ICC mediation.</pre></li>
+
+<li><pre class=3D"student-text">The role of Java in ensuring overall securi=
+ty is providing a trustworthy, less bug-prone runtime.
+
+For example:
+
+1) Java is type-safe, has automatic memory management, bounds checking on s=
+trings/arrays, etc. Makes it less likely to make subtle mistakes (e.g. that=
+ can lead to buffer overflow).
+
+2) Java compiler + VM runs valid Java bytecode, not arbitrary machine code =
+that might be inserted in a shellcode injection.
+
+3) Java VM manages access to system resources, restricting access of untrus=
+ted code.
+</pre></li>
+
+<li><pre class=3D"student-text">The use of Java here is important because A=
+ndroid forces users to execute their code on top of a "Java Middleware Laye=
+r" that extends certain things they're allowed to do.
+By doing this, the creators of android force any developers to follow the s=
+trict guidelines and interface THEY provide, which is good because it allow=
+s them to narrow the scope
+of the security issues they have to worry about and puts the ball in their =
+court.
+</pre></li>
+
+<li><pre class=3D"student-text">The use of the Java language helps to ensur=
+e that the code is memory and type safe, thus preventing exploitable proble=
+ms such as buffer overflow and dangling pointers. Since all apps must run o=
+n top of the Java virtual machine, the apps are are effectively =E2=80=9Csa=
+ndboxed=E2=80=9D and cannot interfere with the kernel / other applications.=
+</pre></li>
+
+<li><pre class=3D"student-text">There are essentially 4 layers. There's the=
+ linux system, Android middleware, ICC monitor, and applications. Applicati=
+ons execute on top of a Java layer. Each application runs through it's own =
+user identity. The role of java in ensuring overall security is the basic c=
+omputer security problems. The packages used and imported in the code have =
+to be safe, memory allocation has to be done correctly to avoid common bugs=
+ like buffer overflows. I think the Java layer is also the one that assigns=
+ each application a uid and separates the processes each application can ru=
+n.
+
+</pre></li>
+
+<li><pre class=3D"student-text">There is a reference monitor that can reaso=
+n about access control. Whenever a component requests a resource, the monit=
+or locks those permission labels.
+</pre></li>
+
+<li><pre class=3D"student-text">Writing in Java ensures that the applicatio=
+n is unable (or much more difficult?) to exploit buffer overflow vulnerabil=
+ities to attack other aspects of the Android OS. Java also does static chec=
+king to ensure that everything in the application works as described. It al=
+so makes it much easier to implement Public &amp; Private components to add=
+ an additional layer for more sensitive parts of the application.</pre></li=
+>
+
+<li><pre class=3D"student-text">lec11
+
+By using Java for the VM that apps run on, the secure
+features of Java, especially the access control of Java,
+provide isolation.  Other aspects of Java, such as garbage
+collection, help prevent any exploits in memory.</pre></li>
+
+<li><pre class=3D"student-text">lec11.txt
+
+John C. Mclaughlin
+March 14 2018
+
+Question: The paper mentions that typical Android applications execute on t=
+op of a Java virtual machine. What is the role of Java in ensuring overall =
+security?
+
+There are two Java touchpoints for overall system security. The first is th=
+e java sdk that application developers must conform to. The second is the j=
+ava middleware layer that mediates all ICC establishment.=20
+
+The Java SDK provides developers with an API to interact with other compone=
+nts on the system. On top of that it alows developers to percisely define t=
+heir application security posture. For instance, they are able to mark comp=
+onents as explicitely private and deny access from other appplications. Fur=
+thermore, it provides developers with the permission model of normal, dange=
+rous, signature only, and signature or system.
+
+The Java middleware layer acts as a core mediator between applications on t=
+he system. It runs on top of the embedded linux kernel and facilitates inte=
+r-component communication. The middleware is able to reason about the secur=
+ity of ICC interactions because each interaction has a label attached. In c=
+ombination with the ICC reference mmonitor, the java middleware layer acts =
+as the core security enforcement layer.</pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--o7YyxImjWswygRPjefe8wbfpagbuvzvqsp0ZnZZwpL------

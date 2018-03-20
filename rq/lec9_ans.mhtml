@@ -1,0 +1,1315 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-answers/9
+Subject: Answers for lecture 9 - 6.858
+Date: Wed, 20 Mar 2018 22:58:53 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--OkbIeHGOMQyfwwBLwx4qFubBojyasbg7t1metUKcqY----"
+
+------MultipartBoundary--OkbIeHGOMQyfwwBLwx4qFubBojyasbg7t1metUKcqY----
+Content-Type: text/html
+Content-ID: <frame-32867-1347554f-92fe-4994-ad6a-aa23a75a47a0@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-answers/9
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Answers for lecture 9 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Answers for lecture 9 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text">No, it is not possible because the enclave =
+maintains its own mapping of virtual to physical addresses that the OS cann=
+ot access or modify.</pre></li>
+
+<li><pre class=3D"student-text">No, this is not possible. Given that the ho=
+st does provide some guarantees (which will be my question for this lecture=
+),
+a user using SGX is able to isolate a full part of the memory and won't all=
+ow the OS to remap it. There's a set of steps
+that one can use to verify that the memory is coherent and still in the reg=
+ion that is enclaved.
+</pre></li>
+
+<li><pre class=3D"student-text">No. The hardware keeps track of which encla=
+ve pages are mapped to (as well as all their permissions). It makes sure th=
+e processor is in enclave mode and that the page belongs to the EPC and is =
+correctly typed before allowing the processor to touch the virtual page. If=
+ an untrusted OS tries to do stuff with an enclave virtual page, it should =
+fail.
+</pre></li>
+
+<li><pre class=3D"student-text">6.858 Lecture 9 Question
+
+No this is not possible, the phyiscal pages must be within the enclave prot=
+ected cache which has hardware track the enclave it is mapped to,
+the virutal address, and the permissions. These factors are rechecked on ev=
+ery page access by SGX.</pre></li>
+
+<li><pre class=3D"student-text">6.858 Reading Question 9
+
+The Intel SGX protects information in an enclave, and mediates page mapping=
+s at
+enclave setup and maintians a shadow state for each state. SGX also support=
+s a
+CPU-based attestation, which establishes trust. The SGX also prevents OS
+exception calls from interfering with the enclave's register files, but the=
+ OS
+can see the base address of a page should there be a page fault.=20
+
+The SGX specification allows the enclave and host OS to copoeratively add/r=
+emove
+enclave pages and modify their permissions. So for remapping to occur, I th=
+ink
+the host needs to talk to the enclave, which means that the enclave will be
+aware of it.=20
+</pre></li>
+
+<li><pre class=3D"student-text">6858 - Haven
+
+It looks like Haven provides many protections against faulty data writing i=
+nto
+the enclave.
+
+- First, the enclave is protected by OS instructions. This is however bypas=
+sed by the OS
+- Second, the enclave is cryptographically secured during writes. This mean=
+s OS's trying to
+write their own data will not be able to write anything meaningful without =
+breaking
+the cryptographic hash first.
+- Third, the enclave has a time-ordered numbering, so that an untrusted OS =
+is not
+able to try to write a previous page in.
+
+I think that the 2nd and 3rd are the strongest ways in which Haven allows f=
+or an
+enclave to detect another process (OS) trying to modify data. However, the =
+paper
+notes that this does not prevent the OS from never giving the enclave OS ti=
+me,
+which is another issue.=20
+</pre></li>
+
+<li><pre class=3D"student-text">After the contents are written to an encryp=
+ted buffer in main memory, the OS may then relocate the information. The en=
+clave will not notice this relocation but this information can only be acce=
+ssed when back in the enclave.
+</pre></li>
+
+<li><pre class=3D"student-text">An untrusted OS cannot remap a virtual page=
+ to a physical page that the OS controls. The SGX hardware checks, on each =
+enclave page access, that the page accessed belongs to the EPC, so the OS c=
+annot remap a virtual page to outside the EPC. Within the EPC, the SGX hard=
+ware also keeps track of the virtual address of the page in the enclave, so=
+ the SGX hardware can also verify that an accessed page has not been remapp=
+ed to elsewhere in the EPC.</pre></li>
+
+<li><pre class=3D"student-text">Answer - Lecture Question 9
+
+Each enclave page has to reside in a specific region of physical memory (th=
+e enclave page cache, or EPC) so the reference monitor cannot do this witho=
+ut the enclave noticing.
+For each page in the EPC, the type, mapped enclave, enclave virtual address=
+ and page permissions are tracked by the hardware.
+Whenever the enclave accesses that virtual address, Intel SGX will check th=
+at the page belongs in the EPC. A compromised reference monitor cannot simp=
+ly re-map the virtual address of a page without the enclave noticing.</pre>=
+</li>
+
+<li><pre class=3D"student-text">Answer to Haven Question
+
+The OS cannot do this without the enclave noticing as each enclave page mus=
+t reside in a specific region of physical memory (enclave page cache). For =
+each EPC page, the hardware tracks the type, the enclave to which it is map=
+ped, the VA within that enclave, and the permissions of that page. So, when=
+ever the enclave accesses that VA, SGX ensures that the page belongs in the=
+ EPC. Thus, a compromised OS cannot simply remap the VA of a page that the =
+enclave is using without the enclave noticing. </pre></li>
+
+<li><pre class=3D"student-text">At setup, page table mappings are verified =
+by SGX and are tracked during page accesses. In order to remap a virtual pa=
+ge to a physical memory page that is controlled by the OS, the page table m=
+apping would have to be modified. This is similar to adding/removing enclav=
+e pages after creation, and SGX does not allow this to happen (nor does it =
+allow EPC permissions to be changed) without cooperation between both the e=
+nclave and host OS. The host managing the EPC cannot be trusted to arbitrar=
+ily map pages, e.g. to unallocated regions, and any new allocations or rema=
+ppings to a virtual address/offset in the enclave would have to be acknowle=
+dged by the enclave before the mapping would become accessible. Since such =
+cooperation is enforced by SGX, the OS cannot remap a virtual page of an en=
+calve without the enclave noticing.</pre></li>
+
+<li><pre class=3D"student-text">By design, malicious OS shouldn't be able t=
+o remap virtual addresses. However, it is possible to do so, if the host OS=
+ is compromised, since Haven assumes the reliability of the host. </pre></l=
+i>
+
+<li><pre class=3D"student-text">Danny Tang
+
+data1013
+
+3/5/18
+
+
+
+Lecture 9
+
+Question:
+
+In Haven, can the untrusted operating system remap a virtual page of an enc=
+lave to a physical memory page that the operating system controls without t=
+he enclave noticing? (Explain briefly your answer.)
+
+Answer:
+
+I think that the OS cannot remap a virtual page without the enclave noticin=
+g. This is because everything inside the enclave, including
+the pages themselves, are encrypted by SGX. So, the enclave would notice if=
+ anything was ever changed, since the integrity of the
+contents of the enclave is checked.</pre></li>
+
+<li><pre class=3D"student-text">Haven seems to be more preoccupied with pro=
+tecting the mapping from virtual to physical memory pages inside the enclav=
+e than outside the enclave. However, it does mention that  the shield never=
+ allows the untrusted operating system to choose virtual addresses. Also, t=
+he visual address region in the enclave starts at 0, so the host cannot map=
+ pages here.</pre></li>
+
+<li><pre class=3D"student-text">I do not think so. The haven design require=
+s that pages accessed by the enclave occupy the enclave page cahce (EPC). W=
+hen an enclave accesses a page, SGX conducts a series of checks to make sur=
+e it is a valid page access: it checks that "the processor is in enclave mo=
+de, the page belongs to the EPC and is correctly typed, the current enclave=
+ maps the page at the accessed virtual address, and the access agrees with =
+the page permissions." If the OS remapped a virtual page to a physical memo=
+ry page that the operating system controls, this would cause a fault becaus=
+e the page would be outside the EPC.</pre></li>
+
+<li><pre class=3D"student-text">I don't believe that there is any mechanism=
+ that would prevent this kind of remapping from happening.
+</pre></li>
+
+<li><pre class=3D"student-text">I don't think it can since while the OS is =
+allowed to virtualize EPC, it does so through the use of SGX instructions. =
+I think this means that the enclave will be aware when these SGX instructio=
+ns are used. I'm unsure if using SGX instructions will make the enclave awa=
+re of of this action or not though. It seems as though the hardware and SGX=
+ are mostly in charge of dealing with this. </pre></li>
+
+<li><pre class=3D"student-text">I don't think this is possible. An enclave =
+has an EPC which is a physical region where the page must be mapped. Althou=
+gh the enclave allows the host to page the EPC, I think that when an enclav=
+e's memory is loaded in RAM, the enclave ensures the pages are in the EPC. =
+Additionally,  section 7.3 states that enclaves do not support moving an ex=
+isting page. So, I don't believe the host OS could remap a page without the=
+ enclave noticing.
+</pre></li>
+
+<li><pre class=3D"student-text">I think that the enclave would notice if th=
+e OS remapped the virtual page to a physical memory page that the OS contro=
+ls because the shield doesn't allow the host to choose virtual addresses. T=
+he host OS only manages physical resources and would not be able to access =
+the virtual page map. </pre></li>
+
+<li><pre class=3D"student-text">In Haven the untrusted operating system wil=
+l not be able to successfully remap
+a virtual page in the enclave to a physical memory address because Haven is=
+ all
+about limiting the ability of the operating system to affect your set of co=
+de.
+Specifically, SGX supports attestation, which cryptographically verifies th=
+e
+software loaded into the enclave. The software will experience a fault if t=
+he
+enclave is accessed at a tampored location.
+</pre></li>
+
+<li><pre class=3D"student-text">In Haven, an untrusted operation system can=
+not remap a virtual page of an enclave to a physical memory page that the o=
+perating system controls without the enclave noticing because the shield mo=
+dule is in place to ensure that specific calls like changing virtual memory=
+ permissions require validation. </pre></li>
+
+<li><pre class=3D"student-text">In Haven, can the untrusted operating syste=
+m remap a virtual page of an enclave
+to a physical memory page that the operating system controls without the en=
+clave
+noticing? (Explain briefly your answer.)
+
+No. Pages in an enclave can only be mapped to physical addresses within the
+enclave page cache (EPC). The operating system can has access to an encrypt=
+ed
+version of those pages by freeing them into the buffer region in regular me=
+mory,
+and does not have plaintext access.
+</pre></li>
+
+<li><pre class=3D"student-text">In Haven, can the untrusted operating syste=
+m remap a virtual page of an enclave to a physical memory page that the ope=
+rating system controls without the enclave noticing?
+
+No, because Haven specifically supports persistent secure storage, by encry=
+pting each disk block a secure algorithm that maps the encryption to the bl=
+ock number. This protects the overall disk storage integrity.=20
+</pre></li>
+
+<li><pre class=3D"student-text">In Haven, can the untrusted operating syste=
+m remap a virtual page of an enclave to a physical memory page that the ope=
+rating system controls without the enclave noticing? (Explain briefly your =
+answer.)
+
+An untrusted OS can remap a virtual page of an enclave to a physical memory=
+ page, but will not adversely effect SGX execution as SGX checks that the p=
+hysical memory page belongs to the enclave EPC. </pre></li>
+
+<li><pre class=3D"student-text">In Haven, can the untrusted operating syste=
+m remap a virtual page of an enclave to a physical memory page that the ope=
+rating system controls without the enclave noticing? (Explain briefly your =
+answer.)
+
+No, the host OS doesn't have access to the enclave's OS. The enclave contai=
+ns a basic OS, handler and memory management tool to handle some of the ope=
+rations of an OS and ensure regularity of operations performed by the host =
+OS. Haven, specifically the module in charge of memory management would den=
+y the Host OS's request.</pre></li>
+
+<li><pre class=3D"student-text">In Haven, can the untrusted operating syste=
+m remap a virtual page of an enclave to a physical memory page that the ope=
+rating system controls without the enclave noticing? (Explain briefly your =
+answer.)
+
+No.  SGX disallows anything outsie of its secure area (enclave) from access=
+ing the memory of anything inside the secure area.  This is at the hardware=
+(/microcode?) layer, which is lower in the stack than the OS.</pre></li>
+
+<li><pre class=3D"student-text">In Haven, can the untrusted operating syste=
+m remap a virtual page of an enclave to a physical memory page that the ope=
+rating system controls without the enclave noticing? (Explain briefly your =
+answer.)
+
+------
+
+No. SGX does a number of checks for each enclave page access, including whe=
+ther or not the page belongs to the EPC, so the enclave would know if the v=
+irtual page was re-mapped to a physical page outside the EPC. For each EPC =
+page, SGX also keeps track of the enclave to which it was mapped and the vi=
+rtual address within the enclave so it would also know if there was any cha=
+nge to the mappings if the remap was still within the EPC.</pre></li>
+
+<li><pre class=3D"student-text">In Haven, can the untrusted operating syste=
+m remap a virtual page of an enclave to a physical memory page that the ope=
+rating system controls without the enclave noticing? (Explain briefly your =
+answer.)
+
+I believe the untrusted operating system cannot remap a virtual page of an =
+enclave to a physical memory page that the operating system controls withou=
+t the enclave noticing.  I based this on the fact that, on each enclave pag=
+e access, the entire page table is walked and SGX ensures that the page bel=
+ongs to the EPC, the processor is in enclave mode, and is properly typed.  =
+The address is then checked to ensure that it maps the page at the accessed=
+ address and the access agrees with the page permissions.
+
+</pre></li>
+
+<li><pre class=3D"student-text">In Haven, can the untrusted operating syste=
+m remap a virtual page of an enclave to a physical memory page that the ope=
+rating system controls without the enclave noticing? (Explain briefly your =
+answer.)
+
+It looks like the design of Haven and specifically, SGX prevents it from ha=
+ppening. I think the best explanations are provided in the text of the arti=
+cle. Despite the memory pages "are allocated by the OS, but must occupy a s=
+pecific region of physical memory: the enclave page cache (EPC)." In additi=
+on, "hardware tracks its type, the enclave to which it is mapped, the virtu=
+al address within the enclave, and permissions (read, write, execute)." The=
+refore, in case of any remappings, SGX ensures "that the processor is in en=
+clave mode, the page belongs to the EPC and is correctly typed, the current=
+ enclave maps the page at the accessed virtual address, and the access agre=
+es with the page permissions."</pre></li>
+
+<li><pre class=3D"student-text">In Haven, can the untrusted operating syste=
+m remap a virtual page of an enclave to a physical memory page that the ope=
+rating system controls without the enclave noticing? (Explain briefly your =
+answer.)
+
+No, this is not possible because the untrusted runtime in the Drawbrige pic=
+oprocess controls the policy for virtual address allocation. </pre></li>
+
+<li><pre class=3D"student-text">In Haven, can the untrusted operating syste=
+m remap a virtual page of an enclave to a physical memory page that the ope=
+rating system controls without the enclave noticing? (Explain briefly your =
+answer.)
+
+No. SGX has a control structure in protected memory that, on each page load=
+, checks if the physical address matches the state in the control structure=
+. SGX checks that the accessed page is in the current enclave's enclave pag=
+e cache (EPC) and that the virtual memory actually maps to that page. These=
+ checks would be enough to catch a remapping to a different physical page, =
+even if that page is in the correct EPC.</pre></li>
+
+<li><pre class=3D"student-text">In Haven, can the untrusted operating syste=
+m remap a virtual page of an enclave to a physical memory page that the ope=
+rating system controls without the enclave noticing? (Explain briefly your =
+answer.)=20
+
+No. Intel's SGX watches the enclave's page mappings and ensures that remapp=
+ing doesn't take place. It maintains a shadow page tables, and checks that =
+all mappings are exactly what is expected by the shadow page table (permiss=
+ions, location, types, etc). (see section 3.1) This in turn ensures that al=
+l virtual addresses map to the EPC. So if the remapping is out of the expec=
+ted area or page, SGX will terminate execution.
+</pre></li>
+
+<li><pre class=3D"student-text">In Haven, can the untrusted operating syste=
+m remap a virtual page of an enclave to a physical memory page that the ope=
+rating system controls without the enclave noticing? (Explain briefly your =
+answer.)=20
+
+This should not be possible, per section 3.1 (Memory protection) - SGX veri=
+fies at the hardware level, when enclave page access is attempted, that the=
+ page belongs to the enclave page cache (the physical memory the enclave co=
+ntrols)
+</pre></li>
+
+<li><pre class=3D"student-text">In Haven, can the untrusted operating syste=
+m remap a virtual page of an enclave to a physical memory page that the ope=
+rating system controls without the enclave noticing? (Explain briefly your =
+answer.)=20
+No because the untrusted os does not have access to the virtual pages of an=
+ enclave. The data and code in enclave is only accessibly by code running i=
+n enclave. Since the os is untrusted, it does not have access. It can only =
+input instructions that are then verified by enclave before being executed =
+or denied. If it tries to access something it cannot access, it will be den=
+ied service and memory.
+</pre></li>
+
+<li><pre class=3D"student-text">In Haven, modifying allocation of pages req=
+uires cooperation from the enclave and the OS, so the OS can't remap pages =
+without the enclave noticing.</pre></li>
+
+<li><pre class=3D"student-text">In Haven, the operating system cannot map o=
+r remap virtual pages within an enclave without the enclave's "approval" vi=
+a the EACCEPT instruction.</pre></li>
+
+<li><pre class=3D"student-text">In haven, an untrusted operating system can=
+not remap a virtual page of an enclave to a physical memory page that the o=
+perating system controls without the enclave noticing. When the data in the=
+ enclave is modified, a subsequent load of the data will signal a fault
+</pre></li>
+
+<li><pre class=3D"student-text">In haven, if the OS remaps a virutal page o=
+f an enclave to another physical memory=20
+page, this new page has to belong to the EPC. Otherwise, on the next access=
+, SGX will
+detect the the page does not belong to EPC anymore.
+No.
+</pre></li>
+
+<li><pre class=3D"student-text">It is not possible. As outlined in 4.3, the=
+ enclave has its own managed
+virtual address space which cannot be modified externally. The shield
+prevents the host to choose any virtual addresses.</pre></li>
+
+<li><pre class=3D"student-text">It is unlikely. This is so because, for the=
+ malicious OS to be able to remap pages, it would have to use one of the pr=
+imitives of LibOS. Given that the user has full control of these primitives=
+' usage, the user can, in principle, write checks to detect if such a parti=
+cular sequence of actions/primitve calls have been made.</pre></li>
+
+<li><pre class=3D"student-text">It's not possible because Haven never allow=
+s the host to choose virtual addresses, and the application
+is blocked from accessing any nonenclave memory, by failing requests to all=
+ocate it.
+</pre></li>
+
+<li><pre class=3D"student-text">It's not possible for the operating system =
+to remap a virtual page=20
+without the enclave knowing because of the SGX memory protection
+scheme. SGX only allows enclave memory to be mapped to the EPC page
+of physical memory. It then keeps track of the virtual addresses
+mapped to each EPC page and ensures that everything is correct.
+</pre></li>
+
+<li><pre class=3D"student-text">Jun Wan 991032935
+
+No, it can not. The processor maintains a map (EPCM) that for each EPC page=
+ records page type, the enclave ID, the virtual address for the page, and p=
+ermissions. In order to remap, one must first change the EPCM. However, EPC=
+M is accessible only to processor. Therefore, remap is not possible without=
+ the notice of enclave.</pre></li>
+
+<li><pre class=3D"student-text">Lecture 9
+
+----------------------------------------------------------------------
+In Haven, can the untrusted operating system remap a virtual page
+of an enclave to a physical memory page that the operating system
+controls without the enclave noticing? (Explain briefly your answer.)
+----------------------------------------------------------------------
+
+It seems not. Enclaves even own address 0 (NULL address) to prevent attacks
+on dereferencing null pointers. SGX also does not support moving any existi=
+ng
+pages after execution has begun. This has some downsides, especially for
+programs that do dynamic memory allocation, as the enclave size must be dec=
+ided
+before execution begins, usually causing very large enclaves.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 9 (Answer to Paper Question)
+
+Question:
+
+In Haven, can the untrusted operating system remap a virtual page of an enc=
+lave to a physical memory page that the operating system controls without t=
+he enclave noticing? (Explain briefly your answer.)
+
+
+The paper mentioned that SGX hardware verifies page table mappings and main=
+tains shadow state for each page. This suggests that SGX hardware would be =
+able to detect if the operating system remaps a virtual page of an enclave =
+to a physical memory page that the operating system controls, therefore, I'=
+m inclined to conclude that an untrusted operating system would not be able=
+ to remap a virtual page of an enclave without the enclave noticing.
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 9: Haven Reading Question
+
+No, an untrusted operating system cannot remap an enclave virtual page with=
+out the enclave noticing
+because SGX mediates page mapping at enclave setup, and maintains a shadow =
+state for each. After an
+enclave is created, pages are added with the "EADD" command and must must o=
+ccupy a specific region
+of physical memory (the enclave page cache), which tracks the page's type, =
+the enclave to which
+it is mapped, the virtual address within the enclave, and permissions. Then=
+ on each enclave page
+access, after walking the page table, SGX ensures that the processor is in =
+enclave mode, the page
+belongs to the EPC and is correctly typed, the current enclave maps the pag=
+e at the accessed virtual
+address, and the access agrees with the page permissions.
+
+Because of all of this, the OS cannot remap enclave virtual pages without t=
+he enclave noticing.
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 9: Intel SGX
+3/7/18
+
+In Haven, can the untrusted operating system remap a virtual page of an enc=
+lave to a physical memory page that the operating system controls without t=
+he enclave noticing? (Explain briefly your answer.)
+
+No, the OS cannot do that because Intel's SGX keeps a record of the address=
+ of the page (along with its contents, types, permissions). If the OS chang=
+es where this page is stored, the enclave will notice. SGX also prevents th=
+e program from allocating/executing memory outside of the enclave.</pre></l=
+i>
+
+<li><pre class=3D"student-text">Memory pages are "encrypted and integrity p=
+rotected when written to memory".  As
+a result, the enclave will notice if it attempts to load from a page that h=
+as
+been tampered with. It is unclear whether the enclave would detect if a pag=
+e
+mapping were changed but an identical page were mapped in its place.
+</pre></li>
+
+<li><pre class=3D"student-text">No because the virtual address region occup=
+ied by a Haven enclave always starts at zero, allowing the enclave to relia=
+bly detect and handle NULL pointer dereferences. This means that a maliciou=
+s host OS cannot map pages into the protected virtual memory.</pre></li>
+
+<li><pre class=3D"student-text">No the OS can not do this. The OS is allowe=
+d to allocate pages, but these pages must fall within a certain physical me=
+mory region and after it is allocated, the hardware tracks permissions on t=
+he page and disallows touching the mapping unless enclave mode is enabled a=
+nd the enclave owns this page.
+</pre></li>
+
+<li><pre class=3D"student-text">No, SGX protects the integrity of these pag=
+es.  The virtual pages must be mapped to the EPC, a specific region of phys=
+ical memory.  Haven can detect this with attestation.
+</pre></li>
+
+<li><pre class=3D"student-text">No, SGX tracks every enclave page access an=
+d makes sure that all the mappings are valid.
+</pre></li>
+
+<li><pre class=3D"student-text">No, because Haven puts many checks in place=
+ with SGX.  For  each  EPC  page,  hardware  tracks  its
+type,  the enclave  to which it is mapped,  the  virtual address within the=
+ enclave, and permissions (read, write, execute).
+</pre></li>
+
+<li><pre class=3D"student-text">No, because SGX does not allow enclave page=
+s to be added after creation or for EPC permissions to change. Even in revi=
+sion 2 of SGX, it only allows the enclave and host OS to cooperatively add/=
+remove enclave pages and modify their permissions. An untrusted OS would no=
+t be able to remap the enclave by itself.</pre></li>
+
+<li><pre class=3D"student-text">No, because SGX does not support moving an =
+existing page to a different physical address.=20
+</pre></li>
+
+<li><pre class=3D"student-text">No, because it cannot provide attestation.=
+=20
+</pre></li>
+
+<li><pre class=3D"student-text">No, because relocating EPC memory requires =
+an SGX instruction, which will then write an encrypted version into main me=
+mory for OS to relocate. Thus, Enclave controls the security of this proces=
+s.=20
+</pre></li>
+
+<li><pre class=3D"student-text">No, because the EPC is encrypted and integr=
+ity-protected in physical memory. The page table mappings are verified by t=
+he SGX hardware.</pre></li>
+
+<li><pre class=3D"student-text">No, because the hardware ensures that chang=
+es to the page tables only can happen cooperatively, i.e. it only happens i=
+f the enclave executes an instruction to acknowledge the change.
+</pre></li>
+
+<li><pre class=3D"student-text">No, enclave pages must occupy a specific re=
+gion of physical memory. SGX tracks this memory and maintains state in hard=
+ware about how it can be interacted with. This prevents enclaved code from =
+being "tricked" into writing to unprotected memory and prevents anything el=
+se, including the OS, from reading enclaved memory.</pre></li>
+
+<li><pre class=3D"student-text">No, it cannot because dynamic memory alloca=
+tion requires cooperation. The enclave must acknowledge and approve of the =
+remapping before the operating system makes a change.</pre></li>
+
+<li><pre class=3D"student-text">No, it cannot do so without the enclave not=
+icing. The OS must follow a hardware verifiable protocol when evicting a pa=
+ge (TLB shootdown), and this event is necessarily reported to the guard.
+</pre></li>
+
+<li><pre class=3D"student-text">No, it won't be able to. The paper states t=
+hat the shield blocks applications from using non-enclave addresses, by fai=
+ling the request to allocate it. Therefore, as the compromised OS will atte=
+mpt to reallocate the page to new physical memory, the application will no =
+longer run.=20
+</pre></li>
+
+<li><pre class=3D"student-text">No, since the enclave maintains a measureme=
+nt (a hash of code and data in the enclave) that it keeps up to date. If th=
+e host OS tries to remap a virutal memory page to a different physical loca=
+tion, the contents in memory will change and the enclave will notice during=
+ attestation.
+</pre></li>
+
+<li><pre class=3D"student-text">No, the host cannot remap a virtual page to=
+ a physical page the OS controls without
+the OS noticing. Usually, the virtual pages get mapped to the EPC, a physic=
+al space on
+the host. The OS can free up space on the EPC by virtualize a page, storing=
+ the contents
+in an encrypted buffer somewhere in main memory. But any of these changes m=
+ade are done through
+communication between the shield module and the OS. So the enclave would kn=
+ow about any changes.
+</pre></li>
+
+<li><pre class=3D"student-text">No, the shield never allows the host to cho=
+ose virtual addresses.
+</pre></li>
+
+<li><pre class=3D"student-text">No, the shield that manages virtual memory =
+does not allow the host to choose virtual addresses nor does it allow the a=
+pplication to use non-enclave memory.=20
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">No, the system would notice. The process th=
+at suggests this is outlined in section 3.1 of the Haven paper; SGX ensures=
+ that enclave pages belong to a specific region of memory (the EPC).</pre><=
+/li>
+
+<li><pre class=3D"student-text">No, the untrusted OS cannot remap an enclav=
+e-protected virtual page to a physical page that the OS controls without th=
+e enclave noticing. This would cause the measurement to differ from any rec=
+alculated cryptographic hash the contents of the enclave.
+</pre></li>
+
+<li><pre class=3D"student-text">No, the untrusted operating system CANNOT r=
+emap a virtual page of an enclave to a physical memory page that the operat=
+ing system controls without the enclave noticing.
+
+The host manages EPC but cannot be trusted to arbitrarily add enclave pages=
+ (e.g., in an unallocated region). If it were to simply swap out the physic=
+al pages without telling the enclave, the enclave would know because it wou=
+ld not match the predefined specific offset in an enclave so the enclave wo=
+uld throw an error.
+
+</pre></li>
+
+<li><pre class=3D"student-text">No, the untrusted operating system cannot r=
+emap a virtual page of an enclave to a different physical memory page witho=
+ut the enclave noticing because SGX tracks the mappings from the enclave to=
+ physical memory so if the operating system tried to remap a page SGX would=
+ be able to recognize the change in page and deny it.
+</pre></li>
+
+<li><pre class=3D"student-text">No, the untrusted operating system cannot r=
+emap a virtual page of an enclave to a physical memory page that the operat=
+ing system controls without the enclave noticing. In Haven, EINIT locks dow=
+n the enclave
+and ensures that only code within the enclave has access to the data in enc=
+lave. This means that=20
+any attempts to access the enclave's memory from untrusted nd unauthorized =
+software, including=20
+the operating system, are prevented. </pre></li>
+
+<li><pre class=3D"student-text">No, the untrusted operating system cannot r=
+emap a virtual page of an enclave to a physical page that the OS controls w=
+ithout the enclave noticing. Ordinarily, the operating system can only map =
+virtual pages of enclaves to physical pages in the EPC (enclave page cache)=
+, which is a special region of RAM protected by hardware that is encrypted =
+and integrity-protected. SGX hardware makes sure that the page table maps e=
+nclave regions to EPC.
+
+While it is possible that the OS can evict pages from the EPC if it becomes=
+ full, the OS needs to call special hardward SGX instructions to move pages=
+ to and from the EPC, so the OS cannot do this secretly without the enclave=
+ noticing.
+</pre></li>
+
+<li><pre class=3D"student-text">No, this is not possible. The point of an e=
+nclave is precisely to isolate code from an untrusted system in a secure se=
+tting. Section "Enclave Entry and Exit" section 3 outlines specifically how=
+ memory mappings are allocated inside the enclave. It is possible to read a=
+nd write memory outside the enclave region but will encounter faults in the=
+se scenarios.=20
+</pre></li>
+
+<li><pre class=3D"student-text">No, this isn't possible. The virtual addres=
+s space of an enclave in Haven starts at zero. This is checked by a process=
+ at startup. And it enables the enclave to detect and handle null pointer d=
+ereferences so that null accesses can't be mapped to a physical memory loca=
+tion of an adversary's choosing.</pre></li>
+
+<li><pre class=3D"student-text">No.=20
+
+(1) Hardware tracks the EPC page, so the OS can't modify it.=20
+(2) EPC stores the map between physical and virtual address. If the system =
+remap a virtual address, SGX will notice it when the enclaved software tryi=
+ng to access that virtual address. SGX will forbid that access and halt the=
+ software to prevent further damage. </pre></li>
+
+<li><pre class=3D"student-text">No. All pages alloced by the OS must occupy=
+ a specific region of physical memory called the enclave page cache. Every =
+time a page is accesses, SGX will check that the page is in enclave mode, t=
+hat the page belongs to EPC and that it is correctly typed, and that the cu=
+rrent enclave maps the page at the accessed virtual address and the access =
+agrees with the page permissions. Version numbers are also kept on all page=
+s. Therefore, an untrusted operating system cannot remap a virtual page of =
+an enclave without the enclave noticing. </pre></li>
+
+<li><pre class=3D"student-text">No. Any memory allocation or remapping page=
+s to an unallocated pages requires the cooperation of the shield that manag=
+es virtual memory. The enclave verifies each time that the permissions and =
+the addresses conform to what it expected
+</pre></li>
+
+<li><pre class=3D"student-text">No. Because the pages are encrypted and ver=
+sion-numbered, the enclave will notice if any unauthorized changes are made=
+ to the page. In addition, SGX ensures that the physical address correspond=
+s with the virtual address, so any inconsistency will result in an error be=
+ing thrown up.=20
+</pre></li>
+
+<li><pre class=3D"student-text">No. First there is a in-enclave library OS =
+that protects the code execution from malicious OS systems. Second, SGX mon=
+itors the pages, hardware tracks the memory information of each page.  </pr=
+e></li>
+
+<li><pre class=3D"student-text">No. For each of the physical enclave pages =
+there is a mapping to its virtual address that is maintained &amp; accessed=
+ only by the processor (so the OS wouldn=E2=80=99t be able to modify this).=
+  Each time an enclave page is accessed SGX the map is consulted to check w=
+hether the EPC is the right page for the given virtual address, whether the=
+ page is in enclave mode, etc. </pre></li>
+
+<li><pre class=3D"student-text">No. SGX detects when the host operating sys=
+tem is remapping a virtual page to a different physical page by keeping tra=
+ck of the page mappings when the enclave is initialized and then tracking p=
+age mappings. When a page is allocated by the OS, SGX checks that the page =
+is within the enclave page cache, a region of memory owned by the enclave a=
+nd tracked by SGX. For each page access, SGX ensures that the page is in th=
+e enclave page cache and that it is owned by the enclave that is accessing =
+the page. If this is not the case, SGX will alert the enclave.</pre></li>
+
+<li><pre class=3D"student-text">No. SGX mediates page mappings. Ecreate mai=
+ntains a control structure and are all located in the enclave page cache. S=
+GX ensures that page accesses are only made in enclave mode so remapping is=
+ noticed by sgx.
+</pre></li>
+
+<li><pre class=3D"student-text">No. The paper says =E2=80=9CSGX mediates pa=
+ge mappings at enclave setup and maintains shadow state for each page=E2=80=
+=9D and their diagram says =E2=80=9CPage table mappings verified by SGX HW=
+=E2=80=9D, so page table mappings are monitored to make sure nothing malici=
+ous is happening. </pre></li>
+
+<li><pre class=3D"student-text">No. The shield module would protect against=
+ this. The shield module keeps track of pages that have been assigned to th=
+e appliction. Haven designed the shield so that the host is not allowed to =
+choose virtual address or using non-enclave memory.
+
+The SGX technology that makes this possible is the mechanisms that allow fo=
+r dynamic memory allocation when both the application and the OS agree to d=
+o so, via instructions such as EAUG and EACCEPT. Thus, the OS cannot remap =
+virtual addresses without the application knowing.</pre></li>
+
+<li><pre class=3D"student-text">No: Haven uses distrustful virtual memory m=
+anagement, where page table mappings
+are verified by Intel SGX hardware. The virtual memory is managed by the sh=
+ield
+module. The shield uses dynamic memory allocation instructions to ensure th=
+at
+the expected changes were made. The shield also never allows the host to ch=
+oose
+virtual addresses, and blocks the application from using  non- enclave memo=
+ry by
+failing requests to allocate it.
+
+</pre></li>
+
+<li><pre class=3D"student-text">No; I got a little confused in this section=
+ ("Memory protection"), but it states that "SGX mediates page mappings at e=
+nclave setup and maintains shadow state for each page." Since the mappings =
+are mediated by SGX (which protects your code even from more privileged pro=
+cesses), the OS shouldn't be able to change them.</pre></li>
+
+<li><pre class=3D"student-text">Question: In Haven, can the untrusted OS re=
+map a virtual page of an enclave to a physical memory page that the OS cont=
+rols without the enclave noticing?
+
+Answer: No, this would be a major flaw in the design of SGX. There are asse=
+mbly instructions for dynamic
+memory allocation that block this sort of behavior. These instructions for =
+cooperatively allowing the
+host OS to allocate virtual pages with the enclave's permission include EAU=
+G and EACCEPT.
+
+
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">Question: In Haven, can the untrusted opera=
+ting system remap a virtual page of an enclave to a physical memory page th=
+at the operating system controls without the enclave noticing? (Explain bri=
+efly your answer.)
+
+No, because if it remaps a virtual page, the state of the enclave will chan=
+ge and it will be reflected in the measurement, quote, and/or attestation. =
+The enclave will realize that something has been modified. </pre></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 9
+
+In Haven, can the untrusted operating system remap a virtual page of an enc=
+lave to a physical memory page that the operating system controls without t=
+he enclave noticing? (Explain briefly your answer.)
+
+An untrusted OS cannot remap the virtual page of an enclave without the enc=
+lave noticing. Enclaves have memory allocated from the enclave page cache w=
+hich is a specified region of memory specifically for the enclave, and when=
+ there is an enclave page access, Intel SGX interactions ensure that the pr=
+ocessor is in enclave mode, the page accessed belongs to the enclave page c=
+ache, and the current access both maps to the correct virtual address and p=
+ermissions.</pre></li>
+
+<li><pre class=3D"student-text">SGX does not let the the processor access a=
+ny enclave page while not in enclave mode. The hardware does not let the OS=
+ access pages in the Enclave Page Cache except to copy encrypted and versio=
+ned pages to memory that the OS can control. Haven relies on encryption to =
+protect the data integrity and confidentiality of the page while the OS con=
+trols it and picks where to relocate the page within the EPC.
+</pre></li>
+
+<li><pre class=3D"student-text">SGX mediates page mappings at enclave setup=
+ and maintains shadow state for each page. For each EPC page, hardware trac=
+ks its type, the enclave to which it is mapped, the virtual ad- dress withi=
+n the enclave, and permissions. The hardware keeps a version number for the=
+ page in EPC. Therefore, untrusted operating system can't remap a virtual p=
+age of an enclave to a physical memory page that the operating system contr=
+ols without the enclave noticing.
+</pre></li>
+
+<li><pre class=3D"student-text">SGX meidates page mappings at enclave setup=
+. Everytime an enclave page is accesed, the SGX ensures the process is in e=
+nclave mode and the page and tha tthe page belongs to the enclave page cach=
+e. This means that every time pages are mapped from the enclave the state o=
+f the processor must be correct and the cccess and page permission must be =
+in agreement. If a untrusted system decides to access and map a virtual pag=
+e, it would be denied.</pre></li>
+
+<li><pre class=3D"student-text">Since the virtual address region occupied b=
+y the enclave always starts at zero, the enclave can reliably detect null p=
+ointer dereferences, so the host OS cannot redirect null accesses to OS con=
+trolled data. In addition, the shield never allows the host OS to pick the =
+virtual addresses.
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">The Enclave Page Cache (SGX) tracks pages, =
+more speciifcally it tracks the type, the virtual address within an enclave=
+, which enclave the page belongs to, and permissions ($3.1)
+While the pages are allocated by the OS ensures that for each enclave page =
+access the information in the EPC is still correct. Further steps are taken=
+ to make sure that rollback attacks on=20
+pages are prevented and pages that are paged to cold storage are encrypted.=
+=20
+
+The Shield services manages virtual memory and uses EPC and SGX to ensure t=
+hat expected changes happen and unexpected changes don't happen, therefore =
+it should not be possible for a=20
+malicous OS to remap a virtual page of an enclave to a location outside the=
+ EPC.
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">The OS wouldn't be able to remap the virtua=
+l pages of an enclave to a physical page because there are certain priveleg=
+es EINIT sets up on initialization. The data is also not raw - there is a l=
+evel of encryption that makes it unreadable to the public.=20
+</pre></li>
+
+<li><pre class=3D"student-text">The Operating System cannot remap a virtual=
+ page of the enclave without the=20
+enclave noticing because of the Drawbridge, which protects from memory
+changes. Specifically, Haven implements a LibOS within the enclave, which
+uses a much narrower set of OS primitives.</pre></li>
+
+<li><pre class=3D"student-text">The enclave does not trust the host, and th=
+e shield is implemented such that it never allows the host to choose virtua=
+l addresses. The shield also blocks the application from using non-enclave =
+memory, should the OS remap the virtual pages to physical pages outside of =
+the enclave.</pre></li>
+
+<li><pre class=3D"student-text">The host OS cannot remap a virtual page wit=
+hout the enclave noticing. All modifications to memory must be done via one=
+ of the dynamic memory allocation instructions. </pre></li>
+
+<li><pre class=3D"student-text">The untrusted OS cannot remap a virtual pag=
+e of an enclave without the enclave noticing thanks to both the shield modu=
+le and SGX's memory protections.</pre></li>
+
+<li><pre class=3D"student-text">The untrusted OS cannot remap a virtual pag=
+e to a physical memory page that the OS controls without the enclave knowin=
+g. This is because
+the remapping of pages is a "cooperative" action, where both the OS and the=
+ enclave must agree on the remapping for the enclave to
+be able to use the new page. In particular, must EACCEPT a new page in orde=
+r for the code inside the enclave to have access to it.
+Otherwise, accesses to the new page from code within the enclave is not per=
+mitted.</pre></li>
+
+<li><pre class=3D"student-text">The untrusted operating system CANNOT  rema=
+p a virtual page of an enclave to a
+physical memory page that the operating system controls without the enclave
+noticing.
+
+This is because in order to remove an allocated page, hardware must help en=
+sure
+TLB shootwdown has occured.
+</pre></li>
+
+<li><pre class=3D"student-text">The untrusted operating system can not rema=
+p the page because SGX does not allow pages to be moved after being created=
+ and allocation at creation will only occur after SGX makes sure that the O=
+S only maps pages to a region called the EPC. </pre></li>
+
+<li><pre class=3D"student-text">The untrusted operating system cannot remap=
+ a virtual page of an enclave
+to a physical memory page that the operating system controls without the
+enclave noticing because the shield tracks sub-regions of the enclave that
+are reservered for use (page commits, permissions etc.) and it never allows
+host OS to choose virtual addresses.
+</pre></li>
+
+<li><pre class=3D"student-text">The untrusted operating system cannot remap=
+ a virtual page of an enclave to a physical memory page that the operating =
+system controls without the enclave noticing. This is because for every rea=
+llocation of virtual memory, the enclave chooses the address of the virtual=
+ page.</pre></li>
+
+<li><pre class=3D"student-text">The untrusted operating system cannot remap=
+ a virtual page of an enclave to an OS controlled physical page without the=
+ enclave noticing.
+
+1) Page table mappings are verified by SGX hardware.
+
+2) Each page of memory is added to the enclave through a heavily monitored =
+process (ECREATE and EADD).
+
+3) The hardware continuously tracks each page in the enclave page cache by =
+type, mapping, and permissions. SGX ensures that all the properties check o=
+ut for each enclave page access.
+
+4) New enclave pages are added dynamically after creation only through EAUG=
+ and EACCEPT.
+
+5) Virtual address regions used by Havane always start at 0 so that NULL po=
+inter accesses are always handled by the enclave.
+</pre></li>
+
+<li><pre class=3D"student-text">The untrusted operating system cannot remap=
+ a virtual page of an enclave without the enclave noticing. Because Haven i=
+s run on SGX, there are certain guarantees based on the SGX model. Firstly,=
+ the data in each enclave is encrypted as it is stored in physical memory. =
+Secondly, pages must be mapped to the EPC; furthermore, hardware tracks the=
+ precise details of the mapping. SGX also performs checks on each enclave p=
+age access, ensuring that pages are part of the EPC. Though the EPC itself =
+can be virtualized, SGX still knows which pages are part of the EPC and tra=
+cks version numbers as well.</pre></li>
+
+<li><pre class=3D"student-text">The untrusted operating system could in the=
+ory remap a virtual page, and although the enclave would not notice immedia=
+tely, SGX will ensure that the processor is in enclave mode and that the en=
+clave maps the page correctly.
+
+So the enclave would notice on access.
+</pre></li>
+
+<li><pre class=3D"student-text">The untrusted operating system wouldn't be =
+able to remap a virtual page of an enclave because the shield manages virtu=
+al memory within the enclave and tracks all of the pages. Additionally, EIN=
+IT prevents access to the enclave's memory from unauthorized software.</pre=
+></li>
+
+<li><pre class=3D"student-text">The virtual address space of an enclave in =
+Haven always starts at zero, so the enclave can always detect null pointer =
+dereferences.
+</pre></li>
+
+<li><pre class=3D"student-text">They can remap, but as soon as the enclave =
+attempts to access the memory, "SGX
+ensures that the processor is in enclave mode, the page belongs to the EPC =
+and
+is correctly typed, the current enclave maps the page at the accessed virtu=
+al
+address, and the access agrees with the page permissions." As soon as one o=
+f
+these checks do not pass, the enclave will shut down.
+</pre></li>
+
+<li><pre class=3D"student-text">This cannot happen since the shield blocks =
+the OS from choosing virtual addresses. Thus, the OS will not be able to re=
+map the virtual addresses without going through the shield in some way.</pr=
+e></li>
+
+<li><pre class=3D"student-text">This is actually expressly disallowed by Ha=
+ven, and the shield module built into the system would expressly disallow t=
+his: To prevent exploits of latent bugs in the application or LibOS, the sh=
+ield never allows the host to choose virtual addresses. It also blocks the =
+application from using nonenclave memory, by failing requests to allocate i=
+t.
+
+</pre></li>
+
+<li><pre class=3D"student-text">This is not possible because SGX hardware m=
+anages all enclave pages, and would
+be able to prevent the OS from remapping a page outside of the EPC.=20
+</pre></li>
+
+<li><pre class=3D"student-text">This is not possible due to the fact that e=
+nclave pages must meet certain requirements that the host OS cannot meet wi=
+th a different page. The physical page must be in the enclave page cache an=
+d every page is "encrypted and integrity protected" meaning that the proces=
+sor can verify a page belongs to an enclave as it walks the page table. Alo=
+ng with this the SGX changes brought by Haven only allow the host OS to mod=
+ify an enclave's pages cooperatively with the enclave, meaning the enclave =
+must know.</pre></li>
+
+<li><pre class=3D"student-text">This is not possible. The reasons why are d=
+escribed in sections 4.3 (discussing virtual memory) and 3.1 (discussing dy=
+namic memory allocation). Essentially, the enclave=E2=80=99s shield compone=
+nt manages the virtual memory: the region allocator tracks when memory is c=
+ommitted or protection is changed, and then the dynamic memory allocation i=
+nstructors are applied, to make sure that the changes were allowed. One pos=
+sible way to remap a virtual page of the enclave to a physical memory page =
+that the OS controls would be to do so during dynamic memory allocation (fo=
+r example, in deleting that virtual page belonging to the enclave); however=
+, since the instructions for dynamic memory allocation require cooperation =
+between the enclave and the OS on changing permissions or adding/removing p=
+ermissions, there are checks in place during these processes that would not=
+ allow for such illegal operations.</pre></li>
+
+<li><pre class=3D"student-text">Untrusted operating system cannot remap it =
+because the hosts cannot choose the virtual addresses of memory and applica=
+tions=E2=80=99 requests will fail when they try to access memory pages with=
+out the enclave.</pre></li>
+
+<li><pre class=3D"student-text">Well, it can. But it can't remap the virtua=
+l memory to=20
+arbitrary physical memory. The EPCs occupy a specific
+region of physical memory. When there is no enough space
+for EPC, the OS can page its contents to other storage like
+an encrypted buffer in main memory, which the OS may then
+relocate. But since the hardware keeps a version number
+for the page in EPC, it avoids rollback attachs on page-in.
+So even though the OS can remap EPCs without enclave noticing,
+the OS can't perform malicious operations. </pre></li>
+
+<li><pre class=3D"student-text">Yes, but it's not an issue.
+
+Yes, the untrusted OS can remap a page of an enclave's virtual memory to a =
+new physical page without the enclave noticing--at the time of the remap. T=
+his is not dangerous, however, because SGX provides protection against this=
+ remap at access time. That is, upon walking the page table and accessing o=
+ne of an enclave's physical pages, the SGX-enabled hardware checks that, am=
+ong other things, "the current enclave maps the page at the accessed virtua=
+l address," and that "the page belongs to the EPC."
+
+It seems a bit nebulous whether Haven/SGX protects against e.g. swapping tw=
+o same-enclave virtual memory mappings, but Figure 1 indicates that page ta=
+ble mappings are "verified by SGX HW," so I assume it handles this case.
+</pre></li>
+
+<li><pre class=3D"student-text">Yes, the OS could.  Code can read and write=
+ data outside the enclave if permitted by the OS, it just can't execute.
+</pre></li>
+
+<li><pre class=3D"student-text">lec9
+
+In Haven, the host OS and enclave work cooperatively
+through EAUG and EACCEPT calls in order to add enclave
+pages, and thus the enclave will be aware of any changes
+to page mappings.</pre></li>
+
+<li><pre class=3D"student-text">lec9.txt
+
+John C. Mclaughlin
+March 7th 2018
+
+
+Question: In Haven, can the untrusted operating system remap a virtual page=
+ of an enclave to a physical memory page that the operating system controls=
+ without the enclave noticing? (Explain briefly your answer.)
+
+
+Since the enclave is protected by processor based SGX, remapping a virtual =
+page of the enclave to a new physical memory page would not be possible. SG=
+X physical memory pages must reside in the the enclave physical cache. Any =
+attempts to change this would result in a fault when SGX next accessed that=
+ page of memory.&nbsp;</pre></li>
+
+<li><pre class=3D"student-text">lec9.txt
+
+Lecture 9: In Haven, can the untrusted operating system remap a virtual pag=
+e of an enclave to a physical memory page that the operating system control=
+s without the enclave noticing? (Explain briefly your answer.)
+
+The enclave page cache is virtualized - when the OS requests access to run =
+a privileged instruction, the hardware frees the selected page. The content=
+ is written into an encrypted buffer and can then be moved as the OS decide=
+s. Ostensibly, a rouge remapping would not be possible to complete silently=
+: the initial state of the enclave before access is captured in a hash, and=
+ the processor checks for its signature on a validating 'quote' to verify t=
+he enclave state's validity. Haven's shield service for virtual memory trac=
+ks available memory sub-regions and allocates the space in response to the =
+OS request, choosing addresses in a fashion opaque to malicious OS. This st=
+ep protects page remapping from occuring in a surrepticious fashion.
+</pre></li>
+
+<li><pre class=3D"student-text">the untrusted operating system cannot remap=
+ a virtual page of an enclave, since the virtual to physical page mapping i=
+s kept within the enclave, and it can only be accessed when the processor i=
+s in enclave mode. Therefore, to access said mapping, the code that accesse=
+s it must recide withing the enclave, and therefore the enclave would be aw=
+are of the access.
+</pre></li>
+
+<li><pre class=3D"student-text">=EF=BB=BFNo, it cannot. The processor ensur=
+es that enclave memory is not accessible to the operating system. There is =
+an EPC (enclave page cache), and the interface with encrypt and decrypt whe=
+n reading to or from the EPC. The processor has a map to the page type, enc=
+lave ID, virtual address, permission etc. Only the processor has access to =
+this EPCM.</pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--OkbIeHGOMQyfwwBLwx4qFubBojyasbg7t1metUKcqY------

@@ -6,6 +6,7 @@ wget \
      --convert-links \
      --reject "*.ova*" \
      --span-hosts \
-     --domains "css.csail.mit.edu,6858.csail.mit.edu" \
+     --domains "css.csail.mit.edu" \
      --no-parent \
-        css.csail.mit.edu/6.858/2018
+        css.csail.mit.edu/6.858/2018/schedule.html
+        css.csail.mit.edu/6.858/2018/questions.html

@@ -1,0 +1,1856 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://www.freebsd.org/cgi/man.cgi?capsicum
+Subject: capsicum
+Date: Thu, 21 Mar 2018 15:59:43 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--rSQrSAkks8oaSrGkAkhAZO3H9KF9lVhYSKLjvunZDe----"
+
+------MultipartBoundary--rSQrSAkks8oaSrGkAkhAZO3H9KF9lVhYSKLjvunZDe----
+Content-Type: text/html
+Content-ID: <frame-35625-f2d6c350-624e-4379-a7ef-1004474e63ef@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.freebsd.org/cgi/man.cgi?capsicum
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns=3D"http://www.w3.=
+org/1999/xhtml"><head><meta http-equiv=3D"Content-Type" content=3D"text/htm=
+l; charset=3Dwindows-1252">
+
+<meta name=3D"robots" content=3D"nofollow">
+
+<link rel=3D"search" type=3D"application/opensearchdescription+xml" href=3D=
+"https://www.freebsd.org/search/opensearch/man.xml" title=3D"FreeBSD Manpag=
+es">
+<link rel=3D"search" type=3D"application/opensearchdescription+xml" href=3D=
+"https://www.freebsd.org/search/opensearch/man-freebsd-release-ports.xml" t=
+itle=3D"FreeBSD + Ports Manpages">
+<style type=3D"text/css">
+<!--
+b { color: #996600; }
+i { color: #008000; }
+-->
+span.footer_links { font-size: small; }
+span.space { font-size: xx-small; }
+form#man > input, form#man > button { font-size: large; }
+form#man > input[name=3D'query'] { text-align: center; }
+
+@media only screen and (max-height: 640px), (max-width: 760px) {
+div#header, div#menu { display: none !important; }
+div#content { padding-top: 4.9em; }
+form#man > input, button { font-size: 200%; }
+form#man > button { font-size: 200%; }
+form#man > input[name=3D'query'] { width: 12em; }
+form#man > select { font-size: 140%; }
+span.spaces { display: none; }
+}
+</style>
+<title>capsicum</title>
+
+<meta name=3D"robots" content=3D"nofollow">
+    <link rel=3D"stylesheet" media=3D"screen" href=3D"https://www.freebsd.o=
+rg/layout/css/fixed.css" type=3D"text/css" title=3D"Normal Text">
+    <link rel=3D"alternate stylesheet" media=3D"screen" href=3D"https://www=
+.freebsd.org/layout/css/fixed_large.css" type=3D"text/css" title=3D"Large T=
+ext">
+    <link rel=3D"shortcut icon" href=3D"https://www.freebsd.org/favicon.ico=
+" type=3D"image/x-icon">
+    <link rel=3D"apple-touch-icon" href=3D"https://www.freebsd.org/favicon.=
+ico" type=3D"image/x-icon">
+
+
+
+</head>
+<body>
+
+    <div id=3D"containerwrap">
+      <div id=3D"container">
+        <span class=3D"txtoffscreen"><a href=3D"https://www.freebsd.org/cgi=
+/man.cgi?capsicum#content" title=3D"Skip site navigation" accesskey=3D"1">S=
+kip site
+        navigation</a> (1)</span><span class=3D"txtoffscreen"><a href=3D"ht=
+tps://www.freebsd.org/cgi/man.cgi?capsicum#content" title=3D"Skip section n=
+avigation" accesskey=3D"2">Skip section navigation</a> (2)</span>
+
+        <div id=3D"headercontainer">
+          <div id=3D"header">
+            <h2 class=3D"blockhide">Header And Logo</h2>
+
+            <div id=3D"headerlogoleft">
+              <a href=3D"https://www.freebsd.org/" title=3D"FreeBSD"><img s=
+rc=3D"https://www.freebsd.org/layout/images/logo-red.png" width=3D"457" hei=
+ght=3D"75" alt=3D"FreeBSD"></a>
+            </div>
+
+            <div id=3D"headerlogoright">
+              <h2 class=3D"blockhide">Peripheral Links</h2>
+
+	      <div class=3D"frontdonateroundbox">
+		<div class=3D"frontdonatetop">
+		  <div>
+		    <b style=3D"display: none;">.</b>
+		  </div>
+		</div>
+		<div class=3D"frontdonatecontent">
+		  <a href=3D"https://www.freebsdfoundation.org/donate/">Donate to FreeBSD=
+</a>
+		</div>
+		<div class=3D"frontdonatebot">
+		  <div>
+		    <b style=3D"display: none;">.</b>
+		  </div>
+		</div>
+	      </div>
+
+              <div id=3D"search">
+		<form method=3D"get" id=3D"search" action=3D"https://duckduckgo.com/">
+		  <h2 class=3D"blockhide"><label for=3D"words">Search</label></h2>
+		 =20
+		 =20
+		 =20
+		 =20
+		 =20
+		  <input id=3D"words" name=3D"q" type=3D"text" size=3D"20" autocapitalize=
+=3D"none" maxlength=3D"255" value=3D"Search">
+		  <span>&nbsp;</span>
+		  <input id=3D"submit" name=3D"submit" type=3D"submit" value=3D"Search">
+		</form>
+              </div>
+            </div>
+          </div>
+
+          <h2 class=3D"blockhide">Site Navigation</h2>
+
+	  <div id=3D"menu">
+	    <ul class=3D"first">
+	      <li><a href=3D"https://www.freebsd.org/">Home</a></li>
+	    </ul>
+	    <ul>
+	      <li><a href=3D"https://www.freebsd.org/about.html">About</a>
+		<ul>
+		  <li><a href=3D"https://www.freebsd.org/projects/newbies.html">Introduct=
+ion</a></li>
+		  <li><a href=3D"https://www.freebsd.org/features.html">Features</a></li>
+		  <li><a href=3D"https://www.freebsd.org/advocacy/">Advocacy</a></li>
+		  <li><a href=3D"https://www.freebsd.org/marketing/">Marketing</a></li>
+		</ul>
+	      </li>
+	    </ul>
+	    <ul>
+	      <li><a href=3D"https://www.freebsd.org/where.html">Get FreeBSD</a>
+		<ul>
+		  <li><a href=3D"https://www.freebsd.org/releases/">Release Information</=
+a></li>
+		  <li><a href=3D"https://www.freebsd.org/releng/">Release Engineering</a>=
+</li>
+		</ul>
+	      </li>
+	    </ul>
+	    <ul>
+	      <li><a href=3D"https://www.freebsd.org/docs.html">Documentation</a>
+		<ul>
+		  <li><a href=3D"https://www.freebsd.org/doc/en_US.ISO8859-1/books/faq/">=
+FAQ</a></li>
+		  <li><a href=3D"https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbo=
+ok/">Handbook</a></li>
+		  <li><a href=3D"https://www.freebsd.org/doc/en_US.ISO8859-1/books/porter=
+s-handbook">Porter's Handbook</a></li>
+		  <li><a href=3D"https://www.freebsd.org/doc/en_US.ISO8859-1/books/develo=
+pers-handbook">Developer's Handbook</a></li>
+		  <li><a href=3D"https://www.freebsd.org/cgi/man.cgi">Manual Pages</a></l=
+i>
+		  <li><a href=3D"https://www.freebsd.org/doc/en_US.ISO8859-1/books/fdp-pr=
+imer">Documentation Project Primer</a></li>
+		  <li><a href=3D"https://www.freebsd.org/docs/books.html">All Books and A=
+rticles</a></li>
+		</ul>
+	      </li>
+	    </ul>
+	    <ul>
+	      <li><a href=3D"https://www.freebsd.org/community.html">Community</a>
+		<ul>
+		  <li><a href=3D"https://www.freebsd.org/community/mailinglists.html">Mai=
+ling Lists</a></li>
+		  <li><a href=3D"https://forums.freebsd.org/">Forums</a></li>
+		  <li><a href=3D"https://www.freebsd.org/usergroups.html">User Groups</a>=
+</li>
+		  <li><a href=3D"https://www.freebsd.org/events/events.html">Events</a></=
+li>
+		</ul>
+	      </li>
+	    </ul>
+	    <ul>
+	      <li><a href=3D"https://www.freebsd.org/projects/index.html">Develope=
+rs</a>
+		<ul>
+		  <li><a href=3D"https://www.freebsd.org/projects/ideas/ideas.html">Proje=
+ct Ideas</a></li>
+		  <li><a href=3D"https://svnweb.freebsd.org/">SVN Repository</a></li>
+		  <li><a href=3D"https://p4web.freebsd.org/">Perforce Repository</a></li>
+		</ul>
+	      </li>
+	    </ul>
+	    <ul>
+	      <li><a href=3D"https://www.freebsd.org/support.html">Support</a>
+		<ul>
+		  <li><a href=3D"https://www.freebsd.org/commercial/commercial.html">Vend=
+ors</a></li>
+		  <li><a href=3D"https://security.freebsd.org/">Security Information</a><=
+/li>
+		  <li><a href=3D"https://bugs.freebsd.org/search/">Bug Reports</a></li>
+		  <li><a href=3D"https://www.freebsd.org/support.html">Submit Bug-report<=
+/a></li>
+		</ul>
+	      </li>
+	    </ul>
+	    <ul>
+	      <li><a href=3D"https://www.freebsdfoundation.org/">Foundation</a>
+		<ul>
+		  <li><a href=3D"https://www.freebsdfoundation.org/donate/">Donate</a></l=
+i>
+		</ul>
+	      </li>
+	    </ul>
+	  </div> <!-- MENU -->
+        </div>
+
+	<div id=3D"content">
+
+<h1>FreeBSD Manual Pages</h1>
+
+<form id=3D"man" method=3D"get" action=3D"https://www.freebsd.org/cgi/man.c=
+gi">
+<!-- Manual Page or Keyword Search: -->
+<span class=3D"spaces">&nbsp;&nbsp;</span>
+<input type=3D"text" id=3D"query" value=3D"capsicum" name=3D"query" size=3D=
+"36" autocapitalize=3D"none">
+<button type=3D"submit" name=3D"apropos" value=3D"0">man</button>
+<button type=3D"submit" name=3D"apropos" value=3D"1">apropos</button>
+<br>
+<span class=3D"space">&nbsp;</span><br>
+<span class=3D"spaces">&nbsp;&nbsp;</span>
+<select name=3D"sektion">
+<option value=3D"0">All Sections</option>
+<option value=3D"1">1 - General Commands</option>
+<option value=3D"2">2 - System Calls</option>
+<option value=3D"3">3 - Subroutines</option>
+<option value=3D"4">4 - Special Files</option>
+<option value=3D"5">5 - File Formats</option>
+<option value=3D"6">6 - Games</option>
+<option value=3D"7">7 - Macros and Conventions</option>
+<option value=3D"8">8 - Maintenance Commands</option>
+<option value=3D"9">9 - Kernel Interface</option>
+<option value=3D"n">n - New Commands</option>
+</select>
+<select name=3D"manpath">
+<option value=3D"2.8 BSD">2.8 BSD</option>
+<option value=3D"2.9.1 BSD">2.9.1 BSD</option>
+<option value=3D"2.10 BSD">2.10 BSD</option>
+<option value=3D"2.11 BSD">2.11 BSD</option>
+<option value=3D"4.3BSD NET/2">4.3BSD NET/2</option>
+<option value=3D"4.3BSD Reno">4.3BSD Reno</option>
+<option value=3D"4.4BSD Lite2">4.4BSD Lite2</option>
+<option value=3D"386BSD 0.0">386BSD 0.0</option>
+<option value=3D"386BSD 0.1">386BSD 0.1</option>
+<option value=3D"CentOS 5.6">CentOS 5.6</option>
+<option value=3D"CentOS 5.7">CentOS 5.7</option>
+<option value=3D"CentOS 5.8">CentOS 5.8</option>
+<option value=3D"CentOS 5.9">CentOS 5.9</option>
+<option value=3D"CentOS 5.10">CentOS 5.10</option>
+<option value=3D"CentOS 5.11">CentOS 5.11</option>
+<option value=3D"CentOS 6.0">CentOS 6.0</option>
+<option value=3D"CentOS 6.1">CentOS 6.1</option>
+<option value=3D"CentOS 6.2">CentOS 6.2</option>
+<option value=3D"CentOS 6.3">CentOS 6.3</option>
+<option value=3D"CentOS 6.4">CentOS 6.4</option>
+<option value=3D"CentOS 6.5">CentOS 6.5</option>
+<option value=3D"CentOS 6.6">CentOS 6.6</option>
+<option value=3D"CentOS 7.0">CentOS 7.0</option>
+<option value=3D"CentOS 7.1">CentOS 7.1</option>
+<option value=3D"CentOS Linux/i386 3.9">CentOS Linux/i386 3.9</option>
+<option value=3D"CentOS Linux/i386 4.8">CentOS Linux/i386 4.8</option>
+<option value=3D"CentOS Linux/i386 5.4">CentOS Linux/i386 5.4</option>
+<option value=3D"CentOS Linux/i386 5.5">CentOS Linux/i386 5.5</option>
+<option value=3D"Darwin 1.3.1/x86">Darwin 1.3.1/x86</option>
+<option value=3D"Darwin 1.4.1/x86">Darwin 1.4.1/x86</option>
+<option value=3D"Darwin 6.0.2/x86">Darwin 6.0.2/x86</option>
+<option value=3D"Darwin 7.0.1">Darwin 7.0.1</option>
+<option value=3D"Darwin 8.0.1/ppc">Darwin 8.0.1/ppc</option>
+<option value=3D"Debian 2.2.7">Debian 2.2.7</option>
+<option value=3D"Debian 3.1.8">Debian 3.1.8</option>
+<option value=3D"Debian 4.0.9">Debian 4.0.9</option>
+<option value=3D"Debian 5.0.10">Debian 5.0.10</option>
+<option value=3D"Debian 6.0.10">Debian 6.0.10</option>
+<option value=3D"Debian 7.8.0">Debian 7.8.0</option>
+<option value=3D"Debian 8.1.0">Debian 8.1.0</option>
+<option value=3D"FreeBSD 1.0-RELEASE">FreeBSD 1.0-RELEASE</option>
+<option value=3D"FreeBSD 1.1-RELEASE">FreeBSD 1.1-RELEASE</option>
+<option value=3D"FreeBSD 1.1.5.1-RELEASE">FreeBSD 1.1.5.1-RELEASE</option>
+<option value=3D"FreeBSD 2.0-RELEASE">FreeBSD 2.0-RELEASE</option>
+<option value=3D"FreeBSD 2.0.5-RELEASE">FreeBSD 2.0.5-RELEASE</option>
+<option value=3D"FreeBSD 2.1.0-RELEASE">FreeBSD 2.1.0-RELEASE</option>
+<option value=3D"FreeBSD 2.1.5-RELEASE">FreeBSD 2.1.5-RELEASE</option>
+<option value=3D"FreeBSD 2.1.6.1-RELEASE">FreeBSD 2.1.6.1-RELEASE</option>
+<option value=3D"FreeBSD 2.1.7.1-RELEASE">FreeBSD 2.1.7.1-RELEASE</option>
+<option value=3D"FreeBSD 2.2.1-RELEASE">FreeBSD 2.2.1-RELEASE</option>
+<option value=3D"FreeBSD 2.2.2-RELEASE">FreeBSD 2.2.2-RELEASE</option>
+<option value=3D"FreeBSD 2.2.5-RELEASE">FreeBSD 2.2.5-RELEASE</option>
+<option value=3D"FreeBSD 2.2.6-RELEASE">FreeBSD 2.2.6-RELEASE</option>
+<option value=3D"FreeBSD 2.2.7-RELEASE">FreeBSD 2.2.7-RELEASE</option>
+<option value=3D"FreeBSD 2.2.8-RELEASE">FreeBSD 2.2.8-RELEASE</option>
+<option value=3D"FreeBSD 2.2.8-RELEASE and Ports">FreeBSD 2.2.8-RELEASE and=
+ Ports</option>
+<option value=3D"FreeBSD 3.0-RELEASE">FreeBSD 3.0-RELEASE</option>
+<option value=3D"FreeBSD 3.1-RELEASE">FreeBSD 3.1-RELEASE</option>
+<option value=3D"FreeBSD 3.2-RELEASE">FreeBSD 3.2-RELEASE</option>
+<option value=3D"FreeBSD 3.3-RELEASE">FreeBSD 3.3-RELEASE</option>
+<option value=3D"FreeBSD 3.4-RELEASE">FreeBSD 3.4-RELEASE</option>
+<option value=3D"FreeBSD 3.4-RELEASE and Ports">FreeBSD 3.4-RELEASE and Por=
+ts</option>
+<option value=3D"FreeBSD 3.5-RELEASE and Ports">FreeBSD 3.5-RELEASE and Por=
+ts</option>
+<option value=3D"FreeBSD 3.5.1-RELEASE">FreeBSD 3.5.1-RELEASE</option>
+<option value=3D"FreeBSD 3.5.1-RELEASE and Ports">FreeBSD 3.5.1-RELEASE and=
+ Ports</option>
+<option value=3D"FreeBSD 4.0-RELEASE">FreeBSD 4.0-RELEASE</option>
+<option value=3D"FreeBSD 4.1-RELEASE">FreeBSD 4.1-RELEASE</option>
+<option value=3D"FreeBSD 4.1.1-RELEASE">FreeBSD 4.1.1-RELEASE</option>
+<option value=3D"FreeBSD 4.1.1-RELEASE and Ports">FreeBSD 4.1.1-RELEASE and=
+ Ports</option>
+<option value=3D"FreeBSD 4.2-RELEASE">FreeBSD 4.2-RELEASE</option>
+<option value=3D"FreeBSD 4.2-RELEASE and Ports">FreeBSD 4.2-RELEASE and Por=
+ts</option>
+<option value=3D"FreeBSD 4.3-RELEASE">FreeBSD 4.3-RELEASE</option>
+<option value=3D"FreeBSD 4.3-RELEASE and Ports">FreeBSD 4.3-RELEASE and Por=
+ts</option>
+<option value=3D"FreeBSD 4.4-RELEASE">FreeBSD 4.4-RELEASE</option>
+<option value=3D"FreeBSD 4.5-RELEASE">FreeBSD 4.5-RELEASE</option>
+<option value=3D"FreeBSD 4.5-RELEASE and Ports">FreeBSD 4.5-RELEASE and Por=
+ts</option>
+<option value=3D"FreeBSD 4.6-RELEASE">FreeBSD 4.6-RELEASE</option>
+<option value=3D"FreeBSD 4.6-RELEASE and Ports">FreeBSD 4.6-RELEASE and Por=
+ts</option>
+<option value=3D"FreeBSD 4.6.2-RELEASE">FreeBSD 4.6.2-RELEASE</option>
+<option value=3D"FreeBSD 4.6.2-RELEASE and Ports">FreeBSD 4.6.2-RELEASE and=
+ Ports</option>
+<option value=3D"FreeBSD 4.7-RELEASE">FreeBSD 4.7-RELEASE</option>
+<option value=3D"FreeBSD 4.8-RELEASE">FreeBSD 4.8-RELEASE</option>
+<option value=3D"FreeBSD 4.8-RELEASE and Ports">FreeBSD 4.8-RELEASE and Por=
+ts</option>
+<option value=3D"FreeBSD 4.9-RELEASE">FreeBSD 4.9-RELEASE</option>
+<option value=3D"FreeBSD 4.9-RELEASE and Ports">FreeBSD 4.9-RELEASE and Por=
+ts</option>
+<option value=3D"FreeBSD 4.10-RELEASE">FreeBSD 4.10-RELEASE</option>
+<option value=3D"FreeBSD 4.10-RELEASE and Ports">FreeBSD 4.10-RELEASE and P=
+orts</option>
+<option value=3D"FreeBSD 4.11-RELEASE">FreeBSD 4.11-RELEASE</option>
+<option value=3D"FreeBSD 4.11-RELEASE and Ports">FreeBSD 4.11-RELEASE and P=
+orts</option>
+<option value=3D"FreeBSD 5.0-RELEASE">FreeBSD 5.0-RELEASE</option>
+<option value=3D"FreeBSD 5.1-RELEASE">FreeBSD 5.1-RELEASE</option>
+<option value=3D"FreeBSD 5.2-RELEASE">FreeBSD 5.2-RELEASE</option>
+<option value=3D"FreeBSD 5.2-RELEASE and Ports">FreeBSD 5.2-RELEASE and Por=
+ts</option>
+<option value=3D"FreeBSD 5.2.1-RELEASE">FreeBSD 5.2.1-RELEASE</option>
+<option value=3D"FreeBSD 5.2.1-RELEASE and Ports">FreeBSD 5.2.1-RELEASE and=
+ Ports</option>
+<option value=3D"FreeBSD 5.3-RELEASE">FreeBSD 5.3-RELEASE</option>
+<option value=3D"FreeBSD 5.3-RELEASE and Ports">FreeBSD 5.3-RELEASE and Por=
+ts</option>
+<option value=3D"FreeBSD 5.4-RELEASE">FreeBSD 5.4-RELEASE</option>
+<option value=3D"FreeBSD 5.4-RELEASE and Ports">FreeBSD 5.4-RELEASE and Por=
+ts</option>
+<option value=3D"FreeBSD 5.5-RELEASE">FreeBSD 5.5-RELEASE</option>
+<option value=3D"FreeBSD 5.5-RELEASE and Ports">FreeBSD 5.5-RELEASE and Por=
+ts</option>
+<option value=3D"FreeBSD 6.0-RELEASE">FreeBSD 6.0-RELEASE</option>
+<option value=3D"FreeBSD 6.0-RELEASE and Ports">FreeBSD 6.0-RELEASE and Por=
+ts</option>
+<option value=3D"FreeBSD 6.1-RELEASE">FreeBSD 6.1-RELEASE</option>
+<option value=3D"FreeBSD 6.2-RELEASE">FreeBSD 6.2-RELEASE</option>
+<option value=3D"FreeBSD 6.3-RELEASE">FreeBSD 6.3-RELEASE</option>
+<option value=3D"FreeBSD 6.3-RELEASE and Ports">FreeBSD 6.3-RELEASE and Por=
+ts</option>
+<option value=3D"FreeBSD 6.4-RELEASE">FreeBSD 6.4-RELEASE</option>
+<option value=3D"FreeBSD 6.4-RELEASE and Ports">FreeBSD 6.4-RELEASE and Por=
+ts</option>
+<option value=3D"FreeBSD 6.4-stable">FreeBSD 6.4-stable</option>
+<option value=3D"FreeBSD 7.0-RELEASE">FreeBSD 7.0-RELEASE</option>
+<option value=3D"FreeBSD 7.1-RELEASE">FreeBSD 7.1-RELEASE</option>
+<option value=3D"FreeBSD 7.1-RELEASE and Ports">FreeBSD 7.1-RELEASE and Por=
+ts</option>
+<option value=3D"FreeBSD 7.2-RELEASE">FreeBSD 7.2-RELEASE</option>
+<option value=3D"FreeBSD 7.2-RELEASE and Ports">FreeBSD 7.2-RELEASE and Por=
+ts</option>
+<option value=3D"FreeBSD 7.3-RELEASE">FreeBSD 7.3-RELEASE</option>
+<option value=3D"FreeBSD 7.3-RELEASE and Ports">FreeBSD 7.3-RELEASE and Por=
+ts</option>
+<option value=3D"FreeBSD 7.4-RELEASE">FreeBSD 7.4-RELEASE</option>
+<option value=3D"FreeBSD 7.4-RELEASE and Ports">FreeBSD 7.4-RELEASE and Por=
+ts</option>
+<option value=3D"FreeBSD 7.4-stable">FreeBSD 7.4-stable</option>
+<option value=3D"FreeBSD 8.0-RELEASE">FreeBSD 8.0-RELEASE</option>
+<option value=3D"FreeBSD 8.0-RELEASE and Ports">FreeBSD 8.0-RELEASE and Por=
+ts</option>
+<option value=3D"FreeBSD 8.1-RELEASE">FreeBSD 8.1-RELEASE</option>
+<option value=3D"FreeBSD 8.1-RELEASE and Ports">FreeBSD 8.1-RELEASE and Por=
+ts</option>
+<option value=3D"FreeBSD 8.2-RELEASE">FreeBSD 8.2-RELEASE</option>
+<option value=3D"FreeBSD 8.2-RELEASE and Ports">FreeBSD 8.2-RELEASE and Por=
+ts</option>
+<option value=3D"FreeBSD 8.3-RELEASE">FreeBSD 8.3-RELEASE</option>
+<option value=3D"FreeBSD 8.3-RELEASE and Ports">FreeBSD 8.3-RELEASE and Por=
+ts</option>
+<option value=3D"FreeBSD 8.4-RELEASE">FreeBSD 8.4-RELEASE</option>
+<option value=3D"FreeBSD 8.4-RELEASE and Ports">FreeBSD 8.4-RELEASE and Por=
+ts</option>
+<option value=3D"FreeBSD 8.4-stable">FreeBSD 8.4-stable</option>
+<option value=3D"FreeBSD 9.0-RELEASE">FreeBSD 9.0-RELEASE</option>
+<option value=3D"FreeBSD 9.0-RELEASE and Ports">FreeBSD 9.0-RELEASE and Por=
+ts</option>
+<option value=3D"FreeBSD 9.1-RELEASE">FreeBSD 9.1-RELEASE</option>
+<option value=3D"FreeBSD 9.1-RELEASE and Ports">FreeBSD 9.1-RELEASE and Por=
+ts</option>
+<option value=3D"FreeBSD 9.2-RELEASE">FreeBSD 9.2-RELEASE</option>
+<option value=3D"FreeBSD 9.2-RELEASE and Ports">FreeBSD 9.2-RELEASE and Por=
+ts</option>
+<option value=3D"FreeBSD 9.3-RELEASE">FreeBSD 9.3-RELEASE</option>
+<option value=3D"FreeBSD 9.3-RELEASE and Ports">FreeBSD 9.3-RELEASE and Por=
+ts</option>
+<option value=3D"FreeBSD 9.3-stable">FreeBSD 9.3-stable</option>
+<option value=3D"FreeBSD 10.0-RELEASE">FreeBSD 10.0-RELEASE</option>
+<option value=3D"FreeBSD 10.0-RELEASE and Ports">FreeBSD 10.0-RELEASE and P=
+orts</option>
+<option value=3D"FreeBSD 10.1-RELEASE">FreeBSD 10.1-RELEASE</option>
+<option value=3D"FreeBSD 10.1-RELEASE and Ports">FreeBSD 10.1-RELEASE and P=
+orts</option>
+<option value=3D"FreeBSD 10.2-RELEASE">FreeBSD 10.2-RELEASE</option>
+<option value=3D"FreeBSD 10.2-RELEASE and Ports">FreeBSD 10.2-RELEASE and P=
+orts</option>
+<option value=3D"FreeBSD 10.3-RELEASE">FreeBSD 10.3-RELEASE</option>
+<option value=3D"FreeBSD 10.3-RELEASE and Ports">FreeBSD 10.3-RELEASE and P=
+orts</option>
+<option value=3D"FreeBSD 10.4-RELEASE">FreeBSD 10.4-RELEASE</option>
+<option value=3D"FreeBSD 10.4-RELEASE and Ports">FreeBSD 10.4-RELEASE and P=
+orts</option>
+<option value=3D"FreeBSD 10.4-stable">FreeBSD 10.4-stable</option>
+<option value=3D"FreeBSD 11.0-RELEASE">FreeBSD 11.0-RELEASE</option>
+<option value=3D"FreeBSD 11.0-RELEASE and Ports">FreeBSD 11.0-RELEASE and P=
+orts</option>
+<option value=3D"FreeBSD 11.1-RELEASE">FreeBSD 11.1-RELEASE</option>
+<option selected=3D"selected" value=3D"FreeBSD 11.1-RELEASE and Ports">Free=
+BSD 11.1-RELEASE and Ports</option>
+<option value=3D"FreeBSD 11.1-stable">FreeBSD 11.1-stable</option>
+<option value=3D"FreeBSD 12-current">FreeBSD 12-current</option>
+<option value=3D"FreeBSD Ports 2.2.8">FreeBSD Ports 2.2.8</option>
+<option value=3D"FreeBSD Ports 3.4">FreeBSD Ports 3.4</option>
+<option value=3D"FreeBSD Ports 3.5">FreeBSD Ports 3.5</option>
+<option value=3D"FreeBSD Ports 3.5.1">FreeBSD Ports 3.5.1</option>
+<option value=3D"FreeBSD Ports 4.1.1">FreeBSD Ports 4.1.1</option>
+<option value=3D"FreeBSD Ports 4.2">FreeBSD Ports 4.2</option>
+<option value=3D"FreeBSD Ports 4.3">FreeBSD Ports 4.3</option>
+<option value=3D"FreeBSD Ports 4.5">FreeBSD Ports 4.5</option>
+<option value=3D"FreeBSD Ports 4.6">FreeBSD Ports 4.6</option>
+<option value=3D"FreeBSD Ports 4.6.2">FreeBSD Ports 4.6.2</option>
+<option value=3D"FreeBSD Ports 4.7">FreeBSD Ports 4.7</option>
+<option value=3D"FreeBSD Ports 4.8">FreeBSD Ports 4.8</option>
+<option value=3D"FreeBSD Ports 4.9">FreeBSD Ports 4.9</option>
+<option value=3D"FreeBSD Ports 4.10">FreeBSD Ports 4.10</option>
+<option value=3D"FreeBSD Ports 4.11">FreeBSD Ports 4.11</option>
+<option value=3D"FreeBSD Ports 5.1">FreeBSD Ports 5.1</option>
+<option value=3D"FreeBSD Ports 5.2">FreeBSD Ports 5.2</option>
+<option value=3D"FreeBSD Ports 5.2.1">FreeBSD Ports 5.2.1</option>
+<option value=3D"FreeBSD Ports 5.3">FreeBSD Ports 5.3</option>
+<option value=3D"FreeBSD Ports 5.4">FreeBSD Ports 5.4</option>
+<option value=3D"FreeBSD Ports 5.5">FreeBSD Ports 5.5</option>
+<option value=3D"FreeBSD Ports 6.0">FreeBSD Ports 6.0</option>
+<option value=3D"FreeBSD Ports 6.2">FreeBSD Ports 6.2</option>
+<option value=3D"FreeBSD Ports 6.3">FreeBSD Ports 6.3</option>
+<option value=3D"FreeBSD Ports 6.4">FreeBSD Ports 6.4</option>
+<option value=3D"FreeBSD Ports 7.0">FreeBSD Ports 7.0</option>
+<option value=3D"FreeBSD Ports 7.1">FreeBSD Ports 7.1</option>
+<option value=3D"FreeBSD Ports 7.2">FreeBSD Ports 7.2</option>
+<option value=3D"FreeBSD Ports 7.3">FreeBSD Ports 7.3</option>
+<option value=3D"FreeBSD Ports 7.4">FreeBSD Ports 7.4</option>
+<option value=3D"FreeBSD Ports 8.0">FreeBSD Ports 8.0</option>
+<option value=3D"FreeBSD Ports 8.1">FreeBSD Ports 8.1</option>
+<option value=3D"FreeBSD Ports 8.2">FreeBSD Ports 8.2</option>
+<option value=3D"FreeBSD Ports 8.3">FreeBSD Ports 8.3</option>
+<option value=3D"FreeBSD Ports 8.4">FreeBSD Ports 8.4</option>
+<option value=3D"FreeBSD Ports 9.0">FreeBSD Ports 9.0</option>
+<option value=3D"FreeBSD Ports 9.1">FreeBSD Ports 9.1</option>
+<option value=3D"FreeBSD Ports 9.2">FreeBSD Ports 9.2</option>
+<option value=3D"FreeBSD Ports 9.3">FreeBSD Ports 9.3</option>
+<option value=3D"FreeBSD Ports 10.0">FreeBSD Ports 10.0</option>
+<option value=3D"FreeBSD Ports 10.1">FreeBSD Ports 10.1</option>
+<option value=3D"FreeBSD Ports 10.2">FreeBSD Ports 10.2</option>
+<option value=3D"FreeBSD Ports 10.3">FreeBSD Ports 10.3</option>
+<option value=3D"FreeBSD Ports 10.4">FreeBSD Ports 10.4</option>
+<option value=3D"FreeBSD Ports 11.0">FreeBSD Ports 11.0</option>
+<option value=3D"FreeBSD Ports 11.1">FreeBSD Ports 11.1</option>
+<option value=3D"HP-UX 10.01">HP-UX 10.01</option>
+<option value=3D"HP-UX 10.10">HP-UX 10.10</option>
+<option value=3D"HP-UX 10.20">HP-UX 10.20</option>
+<option value=3D"HP-UX 11.00">HP-UX 11.00</option>
+<option value=3D"HP-UX 11.11">HP-UX 11.11</option>
+<option value=3D"HP-UX 11.20">HP-UX 11.20</option>
+<option value=3D"HP-UX 11.22">HP-UX 11.22</option>
+<option value=3D"Linux Slackware 3.1">Linux Slackware 3.1</option>
+<option value=3D"Minix 2.0">Minix 2.0</option>
+<option value=3D"NetBSD 1.0">NetBSD 1.0</option>
+<option value=3D"NetBSD 1.1">NetBSD 1.1</option>
+<option value=3D"NetBSD 1.2">NetBSD 1.2</option>
+<option value=3D"NetBSD 1.2.1">NetBSD 1.2.1</option>
+<option value=3D"NetBSD 1.3">NetBSD 1.3</option>
+<option value=3D"NetBSD 1.3.1">NetBSD 1.3.1</option>
+<option value=3D"NetBSD 1.3.2">NetBSD 1.3.2</option>
+<option value=3D"NetBSD 1.3.3">NetBSD 1.3.3</option>
+<option value=3D"NetBSD 1.4">NetBSD 1.4</option>
+<option value=3D"NetBSD 1.4.1">NetBSD 1.4.1</option>
+<option value=3D"NetBSD 1.4.2">NetBSD 1.4.2</option>
+<option value=3D"NetBSD 1.4.3">NetBSD 1.4.3</option>
+<option value=3D"NetBSD 1.5">NetBSD 1.5</option>
+<option value=3D"NetBSD 1.5.1">NetBSD 1.5.1</option>
+<option value=3D"NetBSD 1.5.2">NetBSD 1.5.2</option>
+<option value=3D"NetBSD 1.5.3">NetBSD 1.5.3</option>
+<option value=3D"NetBSD 1.6">NetBSD 1.6</option>
+<option value=3D"NetBSD 1.6.1">NetBSD 1.6.1</option>
+<option value=3D"NetBSD 1.6.2">NetBSD 1.6.2</option>
+<option value=3D"NetBSD 2.0">NetBSD 2.0</option>
+<option value=3D"NetBSD 2.0.2">NetBSD 2.0.2</option>
+<option value=3D"NetBSD 2.1">NetBSD 2.1</option>
+<option value=3D"NetBSD 3.0">NetBSD 3.0</option>
+<option value=3D"NetBSD 3.1">NetBSD 3.1</option>
+<option value=3D"NetBSD 4.0">NetBSD 4.0</option>
+<option value=3D"NetBSD 4.0.1">NetBSD 4.0.1</option>
+<option value=3D"NetBSD 5.0">NetBSD 5.0</option>
+<option value=3D"NetBSD 5.1">NetBSD 5.1</option>
+<option value=3D"NetBSD 6.0">NetBSD 6.0</option>
+<option value=3D"NetBSD 6.1.5">NetBSD 6.1.5</option>
+<option value=3D"NetBSD 7.0">NetBSD 7.0</option>
+<option value=3D"NetBSD 7.1">NetBSD 7.1</option>
+<option value=3D"OpenBSD 2.0">OpenBSD 2.0</option>
+<option value=3D"OpenBSD 2.1">OpenBSD 2.1</option>
+<option value=3D"OpenBSD 2.2">OpenBSD 2.2</option>
+<option value=3D"OpenBSD 2.3">OpenBSD 2.3</option>
+<option value=3D"OpenBSD 2.4">OpenBSD 2.4</option>
+<option value=3D"OpenBSD 2.5">OpenBSD 2.5</option>
+<option value=3D"OpenBSD 2.6">OpenBSD 2.6</option>
+<option value=3D"OpenBSD 2.7">OpenBSD 2.7</option>
+<option value=3D"OpenBSD 2.8">OpenBSD 2.8</option>
+<option value=3D"OpenBSD 2.9">OpenBSD 2.9</option>
+<option value=3D"OpenBSD 3.0">OpenBSD 3.0</option>
+<option value=3D"OpenBSD 3.1">OpenBSD 3.1</option>
+<option value=3D"OpenBSD 3.2">OpenBSD 3.2</option>
+<option value=3D"OpenBSD 3.3">OpenBSD 3.3</option>
+<option value=3D"OpenBSD 3.4">OpenBSD 3.4</option>
+<option value=3D"OpenBSD 3.5">OpenBSD 3.5</option>
+<option value=3D"OpenBSD 3.6">OpenBSD 3.6</option>
+<option value=3D"OpenBSD 3.7">OpenBSD 3.7</option>
+<option value=3D"OpenBSD 3.8">OpenBSD 3.8</option>
+<option value=3D"OpenBSD 3.9">OpenBSD 3.9</option>
+<option value=3D"OpenBSD 4.0">OpenBSD 4.0</option>
+<option value=3D"OpenBSD 4.1">OpenBSD 4.1</option>
+<option value=3D"OpenBSD 4.2">OpenBSD 4.2</option>
+<option value=3D"OpenBSD 4.3">OpenBSD 4.3</option>
+<option value=3D"OpenBSD 4.4">OpenBSD 4.4</option>
+<option value=3D"OpenBSD 4.5">OpenBSD 4.5</option>
+<option value=3D"OpenBSD 4.6">OpenBSD 4.6</option>
+<option value=3D"OpenBSD 4.7">OpenBSD 4.7</option>
+<option value=3D"OpenBSD 4.8">OpenBSD 4.8</option>
+<option value=3D"OpenBSD 4.9">OpenBSD 4.9</option>
+<option value=3D"OpenBSD 5.0">OpenBSD 5.0</option>
+<option value=3D"OpenBSD 5.1">OpenBSD 5.1</option>
+<option value=3D"OpenBSD 5.2">OpenBSD 5.2</option>
+<option value=3D"OpenBSD 5.3">OpenBSD 5.3</option>
+<option value=3D"OpenBSD 5.4">OpenBSD 5.4</option>
+<option value=3D"OpenBSD 5.5">OpenBSD 5.5</option>
+<option value=3D"OpenBSD 5.6">OpenBSD 5.6</option>
+<option value=3D"OpenBSD 5.7">OpenBSD 5.7</option>
+<option value=3D"OpenBSD 5.8">OpenBSD 5.8</option>
+<option value=3D"OpenBSD 5.9">OpenBSD 5.9</option>
+<option value=3D"OpenBSD 6.0">OpenBSD 6.0</option>
+<option value=3D"OpenBSD 6.1">OpenBSD 6.1</option>
+<option value=3D"OpenBSD 6.2">OpenBSD 6.2</option>
+<option value=3D"OpenDarwin 6.6.1/x86">OpenDarwin 6.6.1/x86</option>
+<option value=3D"OpenDarwin 6.6.2/x86">OpenDarwin 6.6.2/x86</option>
+<option value=3D"OpenDarwin 7.2.1">OpenDarwin 7.2.1</option>
+<option value=3D"OpenDarwin 20030208pre4/ppc">OpenDarwin 20030208pre4/ppc</=
+option>
+<option value=3D"OSF1 V4.0/alpha">OSF1 V4.0/alpha</option>
+<option value=3D"OSF1 V5.1/alpha">OSF1 V5.1/alpha</option>
+<option value=3D"Plan 9">Plan 9</option>
+<option value=3D"Red Hat Linux/i386 4.2">Red Hat Linux/i386 4.2</option>
+<option value=3D"Red Hat Linux/i386 5.0">Red Hat Linux/i386 5.0</option>
+<option value=3D"Red Hat Linux/i386 5.2">Red Hat Linux/i386 5.2</option>
+<option value=3D"Red Hat Linux/i386 6.1">Red Hat Linux/i386 6.1</option>
+<option value=3D"Red Hat Linux/i386 6.2">Red Hat Linux/i386 6.2</option>
+<option value=3D"Red Hat Linux/i386 7.0">Red Hat Linux/i386 7.0</option>
+<option value=3D"Red Hat Linux/i386 7.1">Red Hat Linux/i386 7.1</option>
+<option value=3D"Red Hat Linux/i386 7.2">Red Hat Linux/i386 7.2</option>
+<option value=3D"Red Hat Linux/i386 7.3">Red Hat Linux/i386 7.3</option>
+<option value=3D"Red Hat Linux/i386 8.0">Red Hat Linux/i386 8.0</option>
+<option value=3D"Red Hat Linux/i386 9">Red Hat Linux/i386 9</option>
+<option value=3D"SunOS 4.1.3">SunOS 4.1.3</option>
+<option value=3D"SunOS 5.5.1">SunOS 5.5.1</option>
+<option value=3D"SunOS 5.6">SunOS 5.6</option>
+<option value=3D"SunOS 5.7">SunOS 5.7</option>
+<option value=3D"SunOS 5.8">SunOS 5.8</option>
+<option value=3D"SunOS 5.9">SunOS 5.9</option>
+<option value=3D"SunOS 5.10">SunOS 5.10</option>
+<option value=3D"SuSE Linux/i386 4.3">SuSE Linux/i386 4.3</option>
+<option value=3D"SuSE Linux/i386 5.0">SuSE Linux/i386 5.0</option>
+<option value=3D"SuSE Linux/i386 5.2">SuSE Linux/i386 5.2</option>
+<option value=3D"SuSE Linux/i386 5.3">SuSE Linux/i386 5.3</option>
+<option value=3D"SuSE Linux/i386 6.0">SuSE Linux/i386 6.0</option>
+<option value=3D"SuSE Linux/i386 6.1">SuSE Linux/i386 6.1</option>
+<option value=3D"SuSE Linux/i386 6.3">SuSE Linux/i386 6.3</option>
+<option value=3D"SuSE Linux/i386 6.4">SuSE Linux/i386 6.4</option>
+<option value=3D"SuSE Linux/i386 7.0">SuSE Linux/i386 7.0</option>
+<option value=3D"SuSE Linux/i386 7.1">SuSE Linux/i386 7.1</option>
+<option value=3D"SuSE Linux/i386 7.2">SuSE Linux/i386 7.2</option>
+<option value=3D"SuSE Linux/i386 7.3">SuSE Linux/i386 7.3</option>
+<option value=3D"SuSE Linux/i386 8.0">SuSE Linux/i386 8.0</option>
+<option value=3D"SuSE Linux/i386 8.1">SuSE Linux/i386 8.1</option>
+<option value=3D"SuSE Linux/i386 8.2">SuSE Linux/i386 8.2</option>
+<option value=3D"SuSE Linux/i386 9.2">SuSE Linux/i386 9.2</option>
+<option value=3D"SuSE Linux/i386 9.3">SuSE Linux/i386 9.3</option>
+<option value=3D"SuSE Linux/i386 10.0">SuSE Linux/i386 10.0</option>
+<option value=3D"SuSE Linux/i386 10.1">SuSE Linux/i386 10.1</option>
+<option value=3D"SuSE Linux/i386 10.2">SuSE Linux/i386 10.2</option>
+<option value=3D"SuSE Linux/i386 10.3">SuSE Linux/i386 10.3</option>
+<option value=3D"SuSE Linux/i386 11.0">SuSE Linux/i386 11.0</option>
+<option value=3D"SuSE Linux/i386 11.1">SuSE Linux/i386 11.1</option>
+<option value=3D"SuSE Linux/i386 11.2">SuSE Linux/i386 11.2</option>
+<option value=3D"SuSE Linux/i386 11.3">SuSE Linux/i386 11.3</option>
+<option value=3D"SuSE Linux/i386 ES 10 SP1">SuSE Linux/i386 ES 10 SP1</opti=
+on>
+<option value=3D"ULTRIX 4.2">ULTRIX 4.2</option>
+<option value=3D"Unix Seventh Edition">Unix Seventh Edition</option>
+<option value=3D"X11R6.7.0">X11R6.7.0</option>
+<option value=3D"X11R6.8.2">X11R6.8.2</option>
+<option value=3D"X11R6.9.0">X11R6.9.0</option>
+<option value=3D"X11R7.2">X11R7.2</option>
+<option value=3D"X11R7.3.2">X11R7.3.2</option>
+<option value=3D"X11R7.4">X11R7.4</option>
+<option value=3D"XFree86 2.1">XFree86 2.1</option>
+<option value=3D"XFree86 3.3">XFree86 3.3</option>
+<option value=3D"XFree86 3.3.6">XFree86 3.3.6</option>
+<option value=3D"XFree86 4.0">XFree86 4.0</option>
+<option value=3D"XFree86 4.0.1">XFree86 4.0.1</option>
+<option value=3D"XFree86 4.0.2">XFree86 4.0.2</option>
+<option value=3D"XFree86 4.1.0">XFree86 4.1.0</option>
+<option value=3D"XFree86 4.2.0">XFree86 4.2.0</option>
+<option value=3D"XFree86 4.2.99.3">XFree86 4.2.99.3</option>
+<option value=3D"XFree86 4.3.0">XFree86 4.3.0</option>
+<option value=3D"XFree86 4.4.0">XFree86 4.4.0</option>
+<option value=3D"XFree86 4.5.0">XFree86 4.5.0</option>
+<option value=3D"XFree86 4.6.0">XFree86 4.6.0</option>
+<option value=3D"XFree86 4.7.0">XFree86 4.7.0</option>
+</select>
+<select name=3D"arch">
+<option value=3D"default">All Architectures</option>
+<option value=3D"amd64">amd64</option>
+</select>
+
+<select name=3D"format">
+<option value=3D"html">html</option>
+<option value=3D"pdf">pdf</option>
+<option value=3D"ascii">ascii</option>
+</select>
+</form>
+
+<br>
+<span class=3D"footer_links"><a href=3D"https://www.freebsd.org/cgi/man.cgi=
+?manpath=3DFreeBSD+11.1-RELEASE+and+Ports">home</a> | <a href=3D"https://ww=
+w.freebsd.org/cgi/man.cgi/help.html">help</a></span>
+<hr>
+<pre>CAPSICUM(4)	       FreeBSD Kernel Interfaces Manual		   CAPSICUM(4)
+
+<a name=3D"NAME" href=3D"https://www.freebsd.org/cgi/man.cgi?capsicum#end">=
+<b>NAME</b></a>
+     <b>Capsicum</b> -- lightweight OS	capability and sandbox framework
+
+<a name=3D"SYNOPSIS" href=3D"https://www.freebsd.org/cgi/man.cgi?capsicum#e=
+nd"><b>SYNOPSIS</b></a>
+     <b>options</b> <b>CAPABILITY</b>_<b>MODE</b>
+     <b>options</b> <b>CAPABILITIES</b>
+
+<a name=3D"DESCRIPTION" href=3D"https://www.freebsd.org/cgi/man.cgi?capsicu=
+m#end"><b>DESCRIPTION</b></a>
+     <b>Capsicum</b> is a lightweight OS capability and sandbox framework i=
+mplement-
+     ing a hybrid capability system model.  <b>Capsicum</b> can be used for=
+ applica-
+     tion and library compartmentalisation, the	decomposition of larger	bod=
+ies
+     of	software into isolated (sandboxed) components in order to implement
+     security policies and limit the impact of software	vulnerabilities.
+
+     <b>Capsicum</b> provides two core	kernel primitives:
+
+     capability	mode
+	     A process mode, entered by	invoking <a href=3D"https://www.freebsd.or=
+g/cgi/man.cgi?query=3Dcap_enter&amp;sektion=3D2&amp;apropos=3D0&amp;manpath=
+=3DFreeBSD+11.1-RELEASE+and+Ports">cap_enter(2)</a>, in which	access
+	     to	global OS namespaces (such as the file system and PID names-
+	     paces) is restricted; only	explicitly delegated rights, refer-
+	     enced by memory mappings or file descriptors, may be used.	 Once
+	     set, the flag is inherited	by future children processes, and may
+	     not be cleared.
+
+     capabilities
+	     Limit operations that can be called on file descriptors.  For
+	     example, a	file descriptor	returned by <a href=3D"https://www.freebsd=
+.org/cgi/man.cgi?query=3Dopen&amp;sektion=3D2&amp;apropos=3D0&amp;manpath=
+=3DFreeBSD+11.1-RELEASE+and+Ports">open(2)</a> may	be refined
+	     using <a href=3D"https://www.freebsd.org/cgi/man.cgi?query=3Dcap_righ=
+ts_limit&amp;sektion=3D2&amp;apropos=3D0&amp;manpath=3DFreeBSD+11.1-RELEASE=
++and+Ports">cap_rights_limit(2)</a> so that only <a href=3D"https://www.fre=
+ebsd.org/cgi/man.cgi?query=3Dread&amp;sektion=3D2&amp;apropos=3D0&amp;manpa=
+th=3DFreeBSD+11.1-RELEASE+and+Ports">read(2)</a> and	<a href=3D"https://www=
+.freebsd.org/cgi/man.cgi?query=3Dwrite&amp;sektion=3D2&amp;apropos=3D0&amp;=
+manpath=3DFreeBSD+11.1-RELEASE+and+Ports">write(2)</a> can
+	     be	called,	but not	<a href=3D"https://www.freebsd.org/cgi/man.cgi?que=
+ry=3Dfchmod&amp;sektion=3D2&amp;apropos=3D0&amp;manpath=3DFreeBSD+11.1-RELE=
+ASE+and+Ports">fchmod(2)</a>.  The	complete list of the capabil-
+	     ity rights	can be found in	the <a href=3D"https://www.freebsd.org/cgi=
+/man.cgi?query=3Drights&amp;sektion=3D4&amp;apropos=3D0&amp;manpath=3DFreeB=
+SD+11.1-RELEASE+and+Ports">rights(4)</a> manual page.
+
+     In	some cases, <b>Capsicum</b> requires use of alternatives to traditi=
+onal POSIX
+     APIs in order to name objects using capabilities rather than global
+     namespaces:
+
+     process descriptors
+	     File descriptors representing processes, allowing parent pro-
+	     cesses to manage child processes without requiring	access to the
+	     PID namespace; described in greater detail	in <a href=3D"https://www.=
+freebsd.org/cgi/man.cgi?query=3Dprocdesc&amp;sektion=3D4&amp;apropos=3D0&am=
+p;manpath=3DFreeBSD+11.1-RELEASE+and+Ports">procdesc(4)</a>.
+
+     anonymous shared memory
+	     An	extension to the POSIX shared memory API to support anonymous
+	     swap objects associated with file descriptors; described in
+	     greater detail in <a href=3D"https://www.freebsd.org/cgi/man.cgi?quer=
+y=3Dshm_open&amp;sektion=3D2&amp;apropos=3D0&amp;manpath=3DFreeBSD+11.1-REL=
+EASE+and+Ports">shm_open(2)</a>.
+
+     In	some cases, <b>Capsicum</b> limits the	valid values of	some paramet=
+ers	to
+     traditional APIs in order to restrict access to global namespaces:
+
+     process IDs
+	     Processes can only	act upon their own process ID with syscalls
+	     such as <a href=3D"https://www.freebsd.org/cgi/man.cgi?query=3Dcpuset=
+_setaffinity&amp;sektion=3D2&amp;apropos=3D0&amp;manpath=3DFreeBSD+11.1-REL=
+EASE+and+Ports">cpuset_setaffinity(2)</a>.
+
+<a name=3D"SEE_ALSO" href=3D"https://www.freebsd.org/cgi/man.cgi?capsicum#e=
+nd"><b>SEE ALSO</b></a>
+     <a href=3D"https://www.freebsd.org/cgi/man.cgi?query=3Dcap_enter&amp;s=
+ektion=3D2&amp;apropos=3D0&amp;manpath=3DFreeBSD+11.1-RELEASE+and+Ports">ca=
+p_enter(2)</a>, <a href=3D"https://www.freebsd.org/cgi/man.cgi?query=3Dcap_=
+fcntls_limit&amp;sektion=3D2&amp;apropos=3D0&amp;manpath=3DFreeBSD+11.1-REL=
+EASE+and+Ports">cap_fcntls_limit(2)</a>,	<a href=3D"https://www.freebsd.org=
+/cgi/man.cgi?query=3Dcap_getmode&amp;sektion=3D2&amp;apropos=3D0&amp;manpat=
+h=3DFreeBSD+11.1-RELEASE+and+Ports">cap_getmode(2)</a>,	<a href=3D"https://=
+www.freebsd.org/cgi/man.cgi?query=3Dcap_ioctls_limit&amp;sektion=3D2&amp;ap=
+ropos=3D0&amp;manpath=3DFreeBSD+11.1-RELEASE+and+Ports">cap_ioctls_limit(2)=
+</a>,
+     <a href=3D"https://www.freebsd.org/cgi/man.cgi?query=3Dcap_rights_limi=
+t&amp;sektion=3D2&amp;apropos=3D0&amp;manpath=3DFreeBSD+11.1-RELEASE+and+Po=
+rts">cap_rights_limit(2)</a>, <a href=3D"https://www.freebsd.org/cgi/man.cg=
+i?query=3Dfchmod&amp;sektion=3D2&amp;apropos=3D0&amp;manpath=3DFreeBSD+11.1=
+-RELEASE+and+Ports">fchmod(2)</a>, <a href=3D"https://www.freebsd.org/cgi/m=
+an.cgi?query=3Dopen&amp;sektion=3D2&amp;apropos=3D0&amp;manpath=3DFreeBSD+1=
+1.1-RELEASE+and+Ports">open(2)</a>, <a href=3D"https://www.freebsd.org/cgi/=
+man.cgi?query=3Dpdfork&amp;sektion=3D2&amp;apropos=3D0&amp;manpath=3DFreeBS=
+D+11.1-RELEASE+and+Ports">pdfork(2)</a>, <a href=3D"https://www.freebsd.org=
+/cgi/man.cgi?query=3Dpdgetpid&amp;sektion=3D2&amp;apropos=3D0&amp;manpath=
+=3DFreeBSD+11.1-RELEASE+and+Ports">pdgetpid(2)</a>,
+     <a href=3D"https://www.freebsd.org/cgi/man.cgi?query=3Dpdkill&amp;sekt=
+ion=3D2&amp;apropos=3D0&amp;manpath=3DFreeBSD+11.1-RELEASE+and+Ports">pdkil=
+l(2)</a>,	<a href=3D"https://www.freebsd.org/cgi/man.cgi?query=3Dpdwait4&am=
+p;sektion=3D2&amp;apropos=3D0&amp;manpath=3DFreeBSD+11.1-RELEASE+and+Ports"=
+>pdwait4(2)</a>, <a href=3D"https://www.freebsd.org/cgi/man.cgi?query=3Drea=
+d&amp;sektion=3D2&amp;apropos=3D0&amp;manpath=3DFreeBSD+11.1-RELEASE+and+Po=
+rts">read(2)</a>, <a href=3D"https://www.freebsd.org/cgi/man.cgi?query=3Dsh=
+m_open&amp;sektion=3D2&amp;apropos=3D0&amp;manpath=3DFreeBSD+11.1-RELEASE+a=
+nd+Ports">shm_open(2)</a>, <a href=3D"https://www.freebsd.org/cgi/man.cgi?q=
+uery=3Dwrite&amp;sektion=3D2&amp;apropos=3D0&amp;manpath=3DFreeBSD+11.1-REL=
+EASE+and+Ports">write(2)</a>, <a href=3D"https://www.freebsd.org/cgi/man.cg=
+i?query=3Dcap_rights_get&amp;sektion=3D3&amp;apropos=3D0&amp;manpath=3DFree=
+BSD+11.1-RELEASE+and+Ports">cap_rights_get(3)</a>,
+     <a href=3D"https://www.freebsd.org/cgi/man.cgi?query=3Dlibcasper&amp;s=
+ektion=3D3&amp;apropos=3D0&amp;manpath=3DFreeBSD+11.1-RELEASE+and+Ports">li=
+bcasper(3)</a>, <a href=3D"https://www.freebsd.org/cgi/man.cgi?query=3Dproc=
+desc&amp;sektion=3D4&amp;apropos=3D0&amp;manpath=3DFreeBSD+11.1-RELEASE+and=
++Ports">procdesc(4)</a>
+
+<a name=3D"HISTORY" href=3D"https://www.freebsd.org/cgi/man.cgi?capsicum#en=
+d"><b>HISTORY</b></a>
+     <b>Capsicum</b> first appeared in	FreeBSD	9.0, and was developed at th=
+e Univer-
+     sity of Cambridge.
+
+<a name=3D"AUTHORS" href=3D"https://www.freebsd.org/cgi/man.cgi?capsicum#en=
+d"><b>AUTHORS</b></a>
+     <b>Capsicum</b> was developed by Robert Watson &lt;<i>rwatson@FreeBSD.=
+org</i>&gt; and
+     Jonathan Anderson &lt;<i>jonathan@FreeBSD.org</i>&gt; at the Universit=
+y	of Cambridge,
+     and Ben Laurie &lt;<i>benl@FreeBSD.org</i>&gt; and Kris	Kennaway &lt;<=
+i>kris@FreeBSD.org</i>&gt; at
+     Google, Inc., and Pawel Jakub Dawidek &lt;<i>pawel@dawidek.net</i>&gt;=
+.
+
+FreeBSD	11.1			 May 18, 2017			  FreeBSD 11.1
+</pre>
+<a name=3D"end">
+<hr>
+</a><a href=3D"https://www.freebsd.org/cgi/man.cgi?capsicum#NAME">NAME</a> =
+|
+<a href=3D"https://www.freebsd.org/cgi/man.cgi?capsicum#SYNOPSIS">SYNOPSIS<=
+/a> |
+<a href=3D"https://www.freebsd.org/cgi/man.cgi?capsicum#DESCRIPTION">DESCRI=
+PTION</a> |
+<a href=3D"https://www.freebsd.org/cgi/man.cgi?capsicum#SEE_ALSO">SEE ALSO<=
+/a> |
+<a href=3D"https://www.freebsd.org/cgi/man.cgi?capsicum#HISTORY">HISTORY</a=
+> |
+<a href=3D"https://www.freebsd.org/cgi/man.cgi?capsicum#AUTHORS">AUTHORS</a=
+>
+<p align=3D"left">Want to link to this manual page? Use this URL:<br>&lt;<a=
+ href=3D"https://www.freebsd.org/cgi/man.cgi?query=3Dcapsicum&amp;manpath=
+=3DFreeBSD+11.1-RELEASE+and+Ports">https://www.freebsd.org/cgi/man.cgi?quer=
+y=3Dcapsicum&amp;manpath=3DFreeBSD+11.1-RELEASE+and+Ports</a>&gt;</p>
+<span class=3D"footer_links"><a href=3D"https://www.freebsd.org/cgi/man.cgi=
+?manpath=3D">home</a> | <a href=3D"https://www.freebsd.org/cgi/man.cgi/help=
+.html">help</a></span>
+<hr noshade=3D"noshade">
+	</div>
+        <div id=3D"footer">
+          <a href=3D"https://www.freebsd.org/copyright/">Legal Notices</a> =
+| =A9 1995-2018
+          The FreeBSD Project. All rights reserved.<br>
+	  <address><a href=3D"https://www.freebsd.org/mailto.html">Contact</a><br>=
+</address>
+        </div>
+      </div>
+    </div>
+ =20
+
+</body></html>
+------MultipartBoundary--rSQrSAkks8oaSrGkAkhAZO3H9KF9lVhYSKLjvunZDe----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.freebsd.org/layout/css/fixed.css
+
+@charset "windows-1252";
+
+@import url("global.css");
+
+@import url("layout.css?20150916");
+
+@import url("text.css");
+
+@import url("navigation.css");
+
+@import url("table.css");
+
+@import url("iefixes.css");
+------MultipartBoundary--rSQrSAkks8oaSrGkAkhAZO3H9KF9lVhYSKLjvunZDe----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.freebsd.org/layout/css/global.css
+
+@charset "windows-1252";
+
+body { margin: 0px; padding: 0px; font-family: verdana, sans-serif; color: =
+rgb(0, 0, 0); background: url("../images/hdr_fill.png") repeat-x rgb(255, 2=
+55, 255); }
+
+h1 { font-size: 120%; font-weight: bold; margin: 0em 0em 1.2em; }
+
+h2 { font-size: 115%; margin: 1.2em 0em; font-weight: bold; }
+
+h3 { font-size: 110%; margin: 1.2em 0em; font-weight: bold; }
+
+h4 { font-size: 100%; margin: 1.2em 0em; font-weight: bold; }
+
+h5 { font-size: 90%; margin: 1.2em 0em; font-weight: bold; }
+
+h6 { font-size: 85%; margin: 1.2em 0em; font-weight: bold; }
+
+img { border: 0px; }
+
+ol, ul, li { font-size: 1em; line-height: 1.2em; margin-top: 0.2em; margin-=
+bottom: 0.1em; }
+
+p { line-height: 1.2em; margin: 1.2em 0em; }
+
+li > p { margin-top: 0.2em; }
+
+pre { font-family: monospace; font-size: 1.1em; }
+
+tt { font-family: monospace; font-size: 1.1em; }
+
+strong, b { font-weight: bold; }
+
+form textarea { text-align: left; }
+------MultipartBoundary--rSQrSAkks8oaSrGkAkhAZO3H9KF9lVhYSKLjvunZDe----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://www.freebsd.org/layout/images/hdr_fill.png
+
+iVBORw0KGgoAAAANSUhEUgAAAAEAAABoCAYAAAAw7pobAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+AAALEgAACxIB0t1+/AAAACV0RVh0U29mdHdhcmUATWFjcm9tZWRpYSBGaXJld29ya3MgTVggMjAw
+NId2rM8AAAAWdEVYdENyZWF0aW9uIFRpbWUAMDcvMTIvMDU8ecxaAAAAPUlEQVR4nNXOsQnAQAwD
+wIuHzcaGbOLSKR6+9jeBNIcKgeSmAxbXxjAdlb/Y+MWhB6qqo7tNwKh3BERmegGnhlFNcpplTgAA
+AABJRU5ErkJggg==
+------MultipartBoundary--rSQrSAkks8oaSrGkAkhAZO3H9KF9lVhYSKLjvunZDe----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.freebsd.org/layout/css/layout.css?20150916
+
+@charset "windows-1252";
+
+#containerwrap { text-align: center; }
+
+#container { margin: 0em auto; width: 90%; padding: 0px 0px 15px; text-alig=
+n: left; }
+
+#headercontainer { padding-bottom: 2px; }
+
+#header { position: relative; height: 15%; margin: 0px; padding: 0px; clear=
+: both; }
+
+#headerlogoleft { position: relative; border: 0px; padding: 0px; top: 0px; =
+float: left; }
+
+#headerlogoleft img { border: 0px; }
+
+#headerlogoright { position: relative; border: 0px; padding-left: 0px; floa=
+t: right; }
+
+#headerlogoright img { border: 0px; }
+
+@media screen {
+  #search { position: relative; text-align: right; padding: 0px; margin: 6p=
+x 0px 0px; color: rgb(102, 102, 102); }
+  #search form { position: relative; top: 5px; right: 0px; margin: 0px; tex=
+t-align: right; white-space: nowrap; }
+  #search form label { color: rgb(102, 102, 102); }
+  #search form #submit { background: transparent; color: rgb(255, 255, 255)=
+; border-width: 1px; border-style: solid; border-color: rgb(218, 218, 218);=
+ padding: 1px 5px; }
+  #search form #words { width: 50%; border: 1px solid rgb(218, 218, 218); b=
+ackground: rgb(255, 255, 255); color: rgb(102, 102, 102); padding: 2px 2px =
+2px 5px; }
+}
+
+@media print {
+  #search { display: none; }
+}
+
+#mirror { text-align: right; padding: 0px; margin: 6px 0px 0px; color: rgb(=
+102, 102, 102); }
+
+#mirror form { padding-top: 5px; right: 0px; margin: 0px; text-align: right=
+; white-space: nowrap; }
+
+#mirror form label { color: rgb(102, 102, 102); font-size: 0.8em; }
+
+#mirror form select { font-size: 0.8em; }
+
+#mirror form #mirrorsel { font-size: 0.8em; width: 150px; border: 1px solid=
+ rgb(218, 218, 218); background: rgb(255, 255, 255); color: rgb(102, 102, 1=
+02); }
+
+#mirror input { font-size: 0.8em; background: transparent; color: rgb(102, =
+102, 102); border: 1px solid rgb(218, 218, 218); }
+
+#content { clear: both; display: block; }
+
+#frontcontainer { width: 100%; }
+
+#frontfeaturecontainer { clear: both; }
+
+#frontfeatureleft { width: 30%; margin: 0px; padding: 0px; float: left; }
+
+#frontfeatureleft h2 { border: none; margin-top: 0px; }
+
+#frontfeatureleft p { margin: 0px 0px 1em; }
+
+#frontfeaturecontent { margin: 10px 10px 10px 13px; }
+
+#frontfeaturemiddle { float: left; margin-top: 20px; background: url("../im=
+ages/beastie.png") left top no-repeat; min-height: 196px; width: 30%; }
+
+#frontfeatureright { position: relative; border: 0px; padding: 0px; margin:=
+ 0px; width: 30%; float: right; }
+
+#frontnemscontainer { width: 100%; background: rgb(238, 238, 238); display:=
+ inline; float: left; margin-top: 8px; margin-bottom: 8px; }
+
+#frontnews { width: 24%; margin: 0px; padding: 0px; float: left; }
+
+#frontnewscontent { margin: 17px 15px 24px 18px; }
+
+#frontevents { width: 24%; margin: 0px; padding: 0px; float: left; }
+
+#fronteventscontent { margin: 17px 15px 24px 14px; }
+
+#frontmedia { width: 24%; margin: 0px; padding: 0px; float: left; }
+
+#frontmediacontent { margin: 17px 15px 24px 14px; }
+
+#frontsecurity { width: 24%; margin: 0px; padding: 0px; float: left; }
+
+#frontsecuritycontent { margin: 17px 15px 24px 14px; }
+
+.frontseparator { width: 0.5%; height: 500px; margin: 0px; padding: 0px; ba=
+ckground-color: rgb(255, 255, 255); float: left; }
+
+.newseventswrap { padding-left: 5px; }
+
+.newseventslist { list-style: none; margin: 0px; padding: 0px; display: inl=
+ine; }
+
+.newseventslist img.rssimage { display: inline; border: 0px; vertical-align=
+: bottom; }
+
+.newseventslist li { padding: 0px 0.3em 0px 0.5em; display: inline; border-=
+right: 1px solid rgb(225, 225, 225); }
+
+.newseventslist li a { }
+
+.newseventslist li.last-child { border-right: 0px; padding-right: 0px; }
+
+.newseventslist li.first-child { padding-left: 0px; }
+
+.newseventslist li.only-child { border-right: 0px; padding-left: 0px; }
+
+#frontshortcuts { margin: 0px; padding: 0px; color: rgb(102, 102, 102); }
+
+#frontshortcutscontent { float: right; margin: 0px; padding: 20px 0px 0px 1=
+5px; }
+
+#frontshortcutslist { margin: 5px 0px 0px 5px; padding: 0px; list-style: no=
+ne; }
+
+#frontshortcutslist li { margin: 0px; padding-left: 12px; background-image:=
+ url("../images/blt_red_arrow.png"); background-repeat: no-repeat; backgrou=
+nd-position: 0px 0.5em; }
+
+#frontreleases { padding: 0px 0px 20px; margin: 5px 8px 8px 190px; color: r=
+gb(102, 102, 102); width: 85%; }
+
+#frontreleasescontent { margin: 0px; padding: 0px; }
+
+#frontreleaseslist { margin: 5px 0px 0px 5px; padding: 0px; list-style: non=
+e; }
+
+#frontreleaseslist li { margin: 0px; padding-left: 12px; background-image: =
+url("../images/blt_red_arrow.png"); background-repeat: no-repeat; backgroun=
+d-position: 0px 0.5em; }
+
+.frontnewtop div, .frontnewtop, .frontnewbot div, .frontnewbot { width: 100=
+%; height: 12px; }
+
+.frontnewcontent { margin: -4px 0px; padding: 0px; text-align: center; font=
+-size: 1.1em; font-weight: bold; }
+
+.frontnewcontent a, .frontnewcontent a:link, .frontnewcontent a:visited, .f=
+rontnewcontent a:hover, .frontnewcontent a:active { color: rgb(153, 0, 0); =
+text-decoration: none; }
+
+.frontnewroundbox { float: left; margin: 30px 0px 0px; padding: 0px; width:=
+ 130px; background-color: rgb(216, 216, 216); border-radius: 10px; }
+
+.frontdonatetop div, .frontdonatetop, .frontdonatebot div, .frontdonatebot =
+{ width: 20%; height: 10px; font-size: 1px; text-align: center; }
+
+.frontdonatecontent { margin: -4px 0px; padding: 0px; text-align: center; f=
+ont-size: 1.1em; font-weight: bold; }
+
+.frontdonatecontent a, .frontdonatecontent a:link, .frontdonatecontent a:vi=
+sited, .frontdonatecontent a:hover, .frontdonatecontent a:active { color: r=
+gb(153, 0, 0); text-decoration: none; }
+
+.frontdonateroundbox { margin-top: 0.5em; padding: 0px; white-space: nowrap=
+; background-color: white; border-radius: 10px; }
+
+.frontgettop div, .frontgettop, .frontgetbot div, .frontgetbot { width: 100=
+%; height: 18px; font-size: 1px; }
+
+.frontgetcontent { margin: -8px 0px; padding: 0px; text-align: center; font=
+-size: 1.4em; font-weight: bold; }
+
+.frontgetcontent a, .frontgetcontent a:link, .frontgetcontent a:visited, .f=
+rontgetcontent a:hover, .frontgetcontent a:active { color: rgb(153, 0, 0); =
+text-decoration: none; }
+
+.frontgetroundbox { margin-top: 50px; margin-left: 160px; padding: 0px; wid=
+th: 190px; background-color: rgb(250, 204, 46); border-radius: 15px; }
+
+@media screen {
+  #sidewrap { float: left; width: 166px; margin-top: 15px; margin-right: -1=
+70px; }
+  #rightwrap { float: right; width: 166px; margin-left: 15px; }
+  #contentwrap { margin-left: 170px; padding-top: 15px; }
+}
+
+@media print {
+  #sidewrap, #rightwrap { display: none; }
+  #contentwrap { margin-left: 16px; padding-top: 15px; }
+}
+
+#footer { font-size: 0.9em; text-align: center; color: rgb(115, 115, 115); =
+line-height: 1.3em; padding-top: 5px; clear: both; }
+
+.clearboth { clear: both; margin: 0px; padding: 0px; }
+
+.blockhide { display: none; height: 0px; width: 0px; overflow: hidden; posi=
+tion: absolute; }
+
+img { border: 0px; }
+------MultipartBoundary--rSQrSAkks8oaSrGkAkhAZO3H9KF9lVhYSKLjvunZDe----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.freebsd.org/layout/css/text.css
+
+@charset "windows-1252";
+
+h1 { color: rgb(153, 0, 0); }
+
+h2 { color: rgb(153, 0, 0); }
+
+h3 { color: rgb(153, 0, 0); }
+
+h4 { color: rgb(153, 0, 0); }
+
+.txtcolumn1 { width: 50%; line-height: 1.3em; }
+
+.txtcolumn2 { width: 50%; line-height: 1.5em; }
+
+.txtcurrentlocation { font-weight: bold; }
+
+.txtdivider { font-size: 0.8em; color: rgb(225, 225, 225); padding-left: 4p=
+x; padding-right: 4px; }
+
+.txtnewsevent { font-size: 0.9em; color: rgb(0, 0, 0); }
+
+.txtshortcuts { font-size: 0.9em; color: rgb(0, 0, 0); }
+
+.txtdate { font-size: 0.9em; color: rgb(102, 102, 102); }
+
+.txtmediumgrey { color: rgb(102, 102, 102); }
+
+.txtformlabel { color: rgb(102, 102, 102); font-weight: bold; text-align: r=
+ight; vertical-align: top; }
+
+.txtrequiredfield { color: rgb(236, 88, 0); }
+
+.txtimportant { color: rgb(236, 88, 0); }
+
+.txtoffscreen { position: absolute; left: -1999px; width: 1990px; }
+
+#txtfrontfeatureheading { padding-bottom: 0em; }
+
+#txtfrontfeaturelink a { font-size: 1.2em; font-weight: bold; padding-left:=
+ 5px; }
+
+#txtfrontjournalblock { padding-left: 0px; }
+
+#txtfrontjournallink { font-size: 1.2em; font-weight: bold; padding-left: 1=
+px; }
+
+a:link { color: rgb(153, 0, 0); text-decoration: underline; }
+
+a:visited { color: rgb(153, 0, 0); text-decoration: underline; }
+
+a:hover { color: rgb(0, 0, 0); text-decoration: underline; }
+
+a:active { color: rgb(153, 0, 0); text-decoration: underline; }
+
+#footer a:link { color: rgb(102, 102, 102); text-decoration: underline; }
+
+#footer a:visited { color: rgb(102, 102, 102); text-decoration: underline; =
+}
+
+#footer a:hover { color: rgb(0, 0, 0); text-decoration: underline; }
+
+#footer a:active { color: rgb(102, 102, 102); text-decoration: underline; }
+
+#frontnemscontainer h2 { margin: 0px; padding: 0px; font-size: 1.1em; }
+
+#frontshortcuts h2 { margin: 0px; padding: 0px; font-size: 1.1em; }
+
+#frontreleases h2 { margin: 0px; padding: 0px; font-size: 1.1em; }
+
+ul.txtdownloadlist, ul.txtdocslist { list-style: none; padding: 0px 10px; }
+
+.txtdocslist a { color: rgb(0, 0, 0); }
+
+.tblwide { width: 100%; }
+
+.tbldownload th, .tbldownload td { vertical-align: top; }
+------MultipartBoundary--rSQrSAkks8oaSrGkAkhAZO3H9KF9lVhYSKLjvunZDe----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.freebsd.org/layout/css/navigation.css
+
+@charset "windows-1252";
+
+@media screen {
+  #topnav { text-align: left; color: rgb(102, 102, 102); font-size: 0.9em; =
+margin: 7px 0px 0px; padding: 0px; height: 29px; overflow: visible; }
+  #topnavleft { width: 7px; height: 29px; border: 0px; padding-right: 10px;=
+ margin: 0px; float: left; }
+  #topnavleft img { border: 0px; margin: 0px; padding: 0px; }
+  #topnavright { width: 7px; height: 29px; border: 0px; padding: 0px; margi=
+n: 0px; float: right; }
+  #topnavright img { border: 0px; margin: 0px; padding: 0px; }
+  #topnavlist { list-style: none; margin: 0px; padding: 0px; height: 29px; =
+}
+  #topnavlist li { padding: 0px 1em 0px 1.2em; display: inline; border-left=
+: 1px solid rgb(180, 180, 180); }
+  #topnavlist li a { color: rgb(102, 102, 102); font-weight: bold; text-dec=
+oration: none; }
+  #topnavlist li:first-child { border-left: 0px; padding-left: 0px; }
+  #menu { float: left; height: 2em; font-size: 90%; clear: both; margin-top=
+: 0.1%; font-weight: bold; }
+  #menu ul { list-style: none; margin: 0px; padding: 0px 10px 2px; float: l=
+eft; border-left: 1px solid rgb(180, 180, 180); }
+  #menu ul:first-child { padding-left: 0px; border: 0px; }
+  #menu a { display: block; padding: 0px 3px; color: rgb(102, 102, 102); te=
+xt-decoration: none; }
+  #menu a:hover { color: rgb(153, 0, 0); }
+  #menu li { position: relative; }
+  #menu ul ul { position: absolute; background-color: rgb(229, 229, 229); p=
+adding: 2px; border: 0px; width: 10em; z-index: 500; }
+  #menu ul ul li { border-top: 1px solid rgb(180, 180, 180); padding: 4px 0=
+px; }
+  #menu ul ul ul { top: 0px; left: 100%; background: rgb(229, 229, 229); }
+  div#menu ul ul, div#menu ul li:hover ul ul, div#menu ul ul li:hover ul ul=
+ { display: none; }
+  div#menu ul li:hover ul, div#menu ul ul li:hover ul, div#menu ul ul ul li=
+:hover ul { display: block; }
+  #languagenav { text-align: right; color: rgb(102, 102, 102); font-size: 0=
+.9em; margin: 0px; right: 0px; padding: 0px; }
+  #languagenavlist { list-style: none; margin: 0px; padding: 0px; }
+  #languagenavlist li { padding: 0px 0.5em 0px 0.2em; display: inline; bord=
+er-right: 1px solid rgb(182, 182, 182); }
+  #languagenavlist li.last-child { padding: 0px 0em 0px 0.2em; border-right=
+: 0px; }
+  #languagenavlist li a { text-decoration: underline; }
+  #languagenavlist li a:hover { }
+  #searchnav { position: relative; text-align: right; color: rgb(255, 255, =
+255); font-size: 0.9em; margin: 8px 0px 0px; right: 0px; padding: 0px; }
+  #searchnavlist { list-style: none; margin: 0px; padding: 0px; }
+  #searchnavlist li { padding: 0px 0.6em 0px 0.3em; display: inline; border=
+-right: 1px solid rgb(255, 255, 255); }
+  #searchnavlist li.last-child { padding: 0px 0px 0px 0.3em; border-right: =
+0px; }
+  #searchnavlist li a { color: rgb(255, 204, 102); text-decoration: underli=
+ne; }
+  #searchnavlist li a:hover { color: rgb(255, 255, 255); }
+  #sidenav, #sidenav ul, #sidenav ul ul { margin: 0px; padding: 0px; list-s=
+tyle: none; font-size: 1em; }
+  #sidenav { width: 150px; background-color: rgb(238, 238, 238); border: 1p=
+x solid rgb(212, 212, 212); }
+  #sidenav ul { padding: 8px 4px 12px; }
+  #sidenav ul ul { background: none rgb(238, 238, 238); margin: 0px; paddin=
+g: 0px; list-style: none; }
+  #sidenav ul ul li { background: none; border: none; }
+  #sidenav ul li { border-bottom: 1px solid rgb(238, 238, 238); margin: 0px=
+; padding-left: 12px; background-image: url("../images/blt_red_arrow.png");=
+ background-repeat: no-repeat; background-position: 12px 0.65em; }
+  #sidenav ul li.active { font-weight: bold; }
+  #sidenav ul li.active span { display: none; }
+  #sidenav ul li a { display: block; color: rgb(153, 0, 0); text-decoration=
+: underline; padding: 3px 5px 3px 12px; margin: 0px; }
+  #sidenav ul ul li a.active { font-weight: bold; }
+  #sidenav ul ul li a { display: block; padding-left: 12px; margin: 0px; }
+  #sidenav ul li a:hover { color: rgb(0, 0, 0); }
+  #feedlinks { padding-top: 5px; padding-left: 5px; margin-top: 5px; margin=
+-left: 5px; list-style: none; display: block; }
+  #feedlinks ul { list-style-image: url("../images/ico_rss.png"); }
+  .rightnav, .rightnav ul, .rightnav ul ul { margin: 0px; padding: 0px; lis=
+t-style: none; font-size: 1em; }
+  .rightnav { width: 150px; background-color: rgb(238, 238, 238); border: 1=
+px solid rgb(212, 212, 212); }
+  .rightnav ul { padding: 8px 4px 12px; }
+  .rightnav ul ul { background: none rgb(238, 238, 238); margin: 0px; paddi=
+ng: 0px; list-style: none; }
+  .rightnav ul ul li { background: none; border: none; }
+  .rightnav ul li { border-bottom: 1px solid rgb(238, 238, 238); margin: 0p=
+x; padding-left: 12px; background-image: url("../images/blt_red_arrow.png")=
+; background-repeat: no-repeat; background-position: 12px 0.65em; }
+  .rightnav ul li.active { font-weight: bold; }
+  .rightnav ul li.active span { display: none; }
+  .rightnav ul li a { display: block; color: rgb(153, 0, 0); text-decoratio=
+n: underline; padding: 3px 5px 3px 12px; margin: 0px; }
+  .rightnav ul ul li a.active { font-weight: bold; }
+  .rightnav ul ul li a { display: block; padding-left: 12px; margin: 0px; }
+  .rightnav ul li a:hover { color: rgb(0, 0, 0); }
+  .rightnav h1, .rightnav h2, .rightnav h3, .rightnav h4, .rightnav h5, .ri=
+ghtnav h6, .rightnav p { padding-left: 10px; padding-right: 10px; }
+}
+
+@media print {
+  #topnav, #topnavleft, #topnavright, #topnavlist { display: none; }
+  #menu { display: none; }
+  #languagenav, #languagenavlist { display: none; }
+  #searchnav, #searchnavlist { display: none; }
+  #sidenav { display: none; }
+  #feedlinks { display: none; }
+  .rightnav { display: none; }
+}
+------MultipartBoundary--rSQrSAkks8oaSrGkAkhAZO3H9KF9lVhYSKLjvunZDe----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.freebsd.org/layout/css/table.css
+
+@charset "windows-1252";
+
+.tblbasic { background-color: rgb(238, 238, 238); border-spacing: 0px; bord=
+er-width: 1px 1px 0px; border-top-style: solid; border-right-style: solid; =
+border-left-style: solid; border-top-color: rgb(202, 202, 202); border-righ=
+t-color: rgb(202, 202, 202); border-left-color: rgb(202, 202, 202); border-=
+image: initial; border-bottom-style: initial; border-bottom-color: initial;=
+ border-collapse: collapse; }
+
+.tblbasic thead { font-weight: bold; }
+
+.tblbasic th { font-weight: bold; padding: 8px; border-bottom: 1px solid rg=
+b(212, 212, 212); }
+
+.tblbasic td { padding: 8px; border-bottom: 1px solid rgb(212, 212, 212); }
+
+.tblbasic td + td, .tblbasic th + th { border-left: 1px solid rgb(212, 212,=
+ 212); }
+------MultipartBoundary--rSQrSAkks8oaSrGkAkhAZO3H9KF9lVhYSKLjvunZDe----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.freebsd.org/layout/css/iefixes.css
+
+@charset "windows-1252";
+
+* html #topnavlist li { margin: 0px 0.5em 0px -0.5em; }
+
+* html #menu ul.first { border-left: 0px; }
+
+* html #menu li { margin: 0.2em 0px -1em; }
+
+* html #languagenavlist li { padding: 0px 0.1em 0px 0.4em; }
+
+* html #languagenavlist li.last-child { padding: 0px 0em 0px 0.4em; }
+
+* html #searchnavlist li { padding: 0px 0.4em 0px 0.8em; }
+
+* html #searchnavlist li.last-child { padding: 0px 0px 0px 0.8em; }
+
+* html #search { height: 1%; }
+
+* html #mirror { height: 1%; }
+
+* html pre { font-size: 1em; }
+
+* html tt { font-size: 1em; }
+
+* html #frontshortcuts { height: 1%; }
+
+* html #frontshortcutswrap { height: 1%; }
+
+* html #frontshortcutscontent { height: 1%; }
+
+* html #frontshortcutslist { height: 1%; }
+
+* html #frontreleases { height: 1%; }
+
+* html #frontreleaseswrap { height: 1%; }
+
+* html #frontreleasescontent { height: 1%; }
+
+* html #frontreleaseslist { height: 1%; }
+------MultipartBoundary--rSQrSAkks8oaSrGkAkhAZO3H9KF9lVhYSKLjvunZDe----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.freebsd.org/layout/css/fixed_large.css
+
+@charset "windows-1252";
+
+@import url("fixed.css");
+
+body { font-size: 93%; }
+------MultipartBoundary--rSQrSAkks8oaSrGkAkhAZO3H9KF9lVhYSKLjvunZDe----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://www.freebsd.org/layout/images/logo-red.png
+
+iVBORw0KGgoAAAANSUhEUgAAAckAAABLCAYAAAAbMHwWAAAABmJLR0QAAAAAAAD5Q7t/AAAACXBI
+WXMAAAsSAAALEgHS3X78AAAAB3RJTUUH1gUFDgAhsXoXhAAAIABJREFUeNrsvXuUHFd17/85VdXv
+ntGM3rJle/SyLYGtGQtjI2N7hMGADfEoEHACjkaBAGFdIikruUlwElmEe5MFvpHsGwIhEEkhN+HH
+S6N7gYCN0ZhgOxjbatnYli2NNbIeM6PX9Mz0s7qqzu+POlVT3dOvkWQeyZy1alV3dXWd6uqq8z3f
+vb97b3E/SAPQ1CKYbI5aZOB1tUU2WGjiM6+/4Hsq3lduf62bqHIO9fa5mE3+HH9btW2NXgfX1Rat
+xmvR4JxkE9sqr0/lPUbgvqTiHnWqvPde20CJmTbTZtpMm2xGXg1iqLUHmCE1QBmBgSo4wNhVwLPa
+wCNrDF7VPhM1QFHWGRinAywXAmjiIu3T7Pm+VuArmgTGeoBY67VWYy2aAElR8T+LwL0hqvz3os71
+qwegssF9OtNm2kybaWUgWVQDjq7WpYpBTw8Ap6Heo9aygmnKOuyyGcbp1GCf1V5XA1TxC7iA4gL6
+vtDzlRcA4NNlivVYYz2QpIqFot6EqBIwRZXfLNS90ggoZR0WOQOQM22mzbSmQLJUBRz1wNoCzIrP
+jMDigaYdHIyEmBx8pKw6KDV6X89UWw00p8MomSawCjG5l5Ty58b6mgU+0eR+5wOO1d5rNQCy0sRK
+A/YoqwCirDEJEhX7a1U+g+ZM/LIKmP6i/8uZNtNm2i8pSAYHIm92blUZ/HS1DoKmZ5YNCeEyTQUm
+Uq2dIEhWrL1+7RpgSfB1EHTV61pAGQQxpwqgNRoQheoP9RuCAOkfXx23GmBeLBbZNIBfBObYrJ9R
+VAFBrQZIihoskBoMUlQBR9HkdXHqgCNNgKOYJiufaTNtpv0XAslaLMypYIhB86seGBQtISgKgaZp
+GEIQ0jRCQviMEymRUuI4jgtaUmKrbZJJs20ZSHqgqNaOB1pVwLJsAFSg5YGj5vUTALWaA686/pS1
+pgUR0j2e47ivHadpsJzu4Cum+VmzQpyLYU5t5H+kBsMTlIuzalkDavkhZQUwUsciUctP7jSwSsy0
+mTbTZlpVJimoL4jwWJ8dMHd5oCh0HanrSMPA0nUcXUcXAkNKDCnRbZuQbeOoxVCAKaX0Ac1RDM5b
+S01z3wsBmuayU01DqteyGmMNgJjjrR3H3xYEzHI0cUFRqN+iqQVNc0HSY8iOg7RtbMvCsSz3POoA
+5cViJc0ApmhieyNghMbqVL0OcAa/HwQgpwLYqrH5egy/ntpZNgGETpNAKJhhkjNtps20KkyyctBp
+RnbvCIGladi6TigcJhyJYEQi7jocRtM0kNIFRstCFIvopRJGqYTwQMa2J1ke+ACIrk8Cr3qNroNh
++MDlsUspxCTgKlD0wNhS/TgBgK4ES6GOJ3QdzTDQQiH0cBg9FEIPhdAMA6Fp7vEtC9s0sQoFSoUC
+tmm6v0Md82KAXrP7NAOKtUCwWdZYL4yjnnK1EryauZ+qfdaMf7ERW6wnGIP6vu2ZNtNm2kwzmObg
+NUm+BELXMcJhjESCUEuLuySTRONxwobh+q0sywWVfB4nn8fK56FQQC8U0EslhG2DlC5j03WEAiot
+HEaEw4hQCBF4j2H4AOqZYB0FkLYCZKtUwi6VsIpFrGLRBTbTdLeZJtK2caScZI8KGEPRKEYsRige
+x4jFMCIR9HAYTddd0C0WKeVyFMbGKI6PY2az2Or4Uoifi9lVNMEmK9mjVoNBahWvq5lStSZMr4Lq
+Ma+VQCmo7R+E+kIspwqwNQJFp0lz6gx7nGkzbabVZZJBUxg0ltZrnr9O19EjEcLJJLH2dqKtrWjn
+ztIaCRE3wMhM4Cy4hPyll2JnMpTUYmYyWNksslBAlEoYjkNE1wl7LC4aRY/H0WMxtGjUfR+NosVi
+LliGQi679EyvirHaHtMrFikVCpi5HKVsllI+P7kUCtilEo4yk2qhEEY0SigWw0gkiLS0EG5pIZxI
+ENE1YqeHkeNj5BCMZ3PosQTGnDloUiIcB9O2wbJ8Nns+jLGeSEc0+b4RU4TyUIxGLFFrkjV6fTkN
+rBGej9CmvpBGVgFGQXUfZCPG6NBYIU0DgL4YbQaEZ9pM+08Aks0wSX8gUUIdTdfRw2GiLS0k5swh
++9RTxBIxorEwiy5ZzpzruoiNnkGkRxmzchxZMJeJefMojY1hjo1h5XJYxSI4DrZhYIfDhONxookE
+sdZWF7DmzKF1xQriixeT7OjASCSIzpuHqMHcJo4epZBOkz15ktGXXyY9MOCyvokJimqxikXXlygE
+WjiMEY8TSiaJtLaSTES5JJfmstxpCEfILesgPZrm+HM/49TAEUayeRZ2XUd81iwwTSgWEaUStm03
+x8CnOYg2G+zfTJB/NXCE6uKbRoKcyslUkCXaNVigU7ENmgvzqSXSacacWnk/N6uYbeazGSCdaTPt
+vwhINhLtVBswpGKSWjhMOJEgMTZG4exZJooJxoUkKWDOqlXEblxLKJ9lztlTLDt1lLOnjnNQaIzM
+XoKdySCLRaRtY4RChOJxwi0tJOfPZ9Eb38j8zk7iCxe6ZlE3NgMhXBFrZWgGuOKZtqVLXZ9jZycd
+73wnpVyO0YMHOfXUU5x9/nnyZ89SyuWwSyWEEOjRKKFkkpawQ0d7iEXz52Nc+U5sR2A6EjuXRzz5
+JJlTpyjk8zhSoh87RvTaa7HHx3FCIV9kJL2TOw82KKdhTm0EkLVAsJFvsZp5tV7/lYBkV3zmVDDJ
+aqrTSnOoU8Vs2yxgNpP6sB6AvhbgNQN+M22m/YqD5HRMTUFhhq78eXoohBGLkTx1ioKUjGWyZHAY
+x+HMvkdILl5M/B13wvAQHD/CnOI4N6VPkBs+zM/G5jAqZqNLSTgaJblgAZfceCNzV61C07QycCw7
+jyojj5N1ARdARCIII4QWiaAlkyxYs4Z5XV0URkcZeewxzj37LKVCARyHKFkWtxaY/4Y3w+XXgi1B
+aohoHN00Kf2on7NPP0XRNDGlRJMQ13WMeJxSJIKt60gh0D1lbgP20qxZtR44NTKtNgLHRmnj6oFy
+JcDYDUDQM7FWy/db696rZSZlmsDYzH388wSxGcCcaTPtVxQkz/uhV6ETmq6jt7eTxI1NzOVyZIQk
+ffBFRnb+A4ZVouXXfh1mtcLxV2D+fOKXL+GNxVHGXj3ISGwJs254J3OXLvXBcTrNyecpnjw5CRgi
+YF6MxRCxOHoiSWLuXK5417tYePPNpJ9+nMirTzC36zZYcgOULJAChA6ts6BUIvd/93D623vJp0fJ
+5/KYEqJAQggcXSesaZQUOGoVzGk6JtbzEeM0im+sxxCrsUWtwUBezVdYzSwaBEU78LpWnt9aLE82
+AMxGwFgrUXo9gLzYoDkDijNtpv0nMbfWe7CrmWF9c1og9EImk7QIQURKTAn5XJ4sDuOHDxP5/IOI
+A8+QvGUdYtFC9wBzLwP9MuIrb2bpwqXooUgAHOslJps6FGmxGHpbG6V02v2W9ABAYo6MMHHoEEII
+Qm1tzFq9mtjpx0gscODWe8FSCflCKt+QEcYZOknuke+T7t9HYSLDxJkzFIomJQmzhSDe3k5BSnTH
+IaSSIlhSVgXJWsKcRr7GZvOpNlKoVottpA5jDJ6zrAOQThVQDAKjXWefeqZQaCzsaWRSrbzujTLr
+1DN1N3o+ZtpMm2k//3axnsNmdCTGdEx+ZYOWF6yvwi5yV1zBJa2ttI6NMSKhKCFXKJIdHSWBQ6b/
+EUKHDhK9agV0rsa5pgvr8pUYiRY3DENUy7FSsZay5lmF585Di8YojAyDUq4WTpzksbvvxsnnXYFO
+xODqje9m2Sf/CsIt7vFCOtiWCyvjY8gjA5jPHiD/0ouYxSJjg4NkRtMUJQgJc+fOIbJoEVapRFjF
+XuI4GHWYZLNmVOqAYS0GWQ0ktTqf1zsn2YAhyhqm00r2WA04ayW+pwGrbCaPL9R3GTTLHmWDycpM
+m2kz7VcfGKfNJKeLqgoh/bRsjmW5IRf5PKGVK2l76ilOWxZFBZT5okl2NE1MOsSEJGwVkQvm4fza
+BwglWxBaQOzirUXFWUmnTBAjpV71jPV4nNjiy8gNncQpFjna10fh7Fm0cJhEewtv+Lu/Y/4d73aP
+h+rXtlxQHT4JJ47jHDuGNTqKWShy7rlnGR8epiChACQjEea2t2PMnYt2+jSGaRKybURFqr1GTasz
+CREN9hENTKWNlK6V1oF61TIalUarBMVKH2Sj0Ixmza3QvNAHmk94P8MSZ9pMm2nTAslp0VQFkLZp
+ugH2ExPk5s9n0YoVnHzxRXISF1wk5EolcuPjxMMhQr/2HiKbt2IYhjtQOxKBC7hlGh3FLKVdrFB1
+GHhykaqsQdOIL1xEbmTEHcgNg3jMZt0PvkNs+bVuB0KfBF+rBGeGYWwUslmsfI5CepTTD32PsZND
+5NVvsNG4fMUKWufNw9Q0tGwWo1BAlkrojoNdoWqVDZhjLaZSTzgjpvk9rcr5BEtMNSqo3QgYq5We
+cuoAbaPcqY1As16u1Wqm1EZm1BlQnGkzbYZRNgTJ8xksZIBJ2qUSpXweM5Ph9NKlXGNZzD9xgoHx
+cfISF2QQ5NGw3vFuwn+6DcMwkEiXHDoO0iqpfK3CV90IcLdjll0e6WgNGQFAfMECZr3udUTmzmV+
+5yUuQAotwISBUgky42CWoGhi53IUjrzCma//KxPDp3yALEiYNX8+i1//evRcDjIZRC6HrrL3CMfx
+S4ZVG7ibMaUGQU0KMckKA8ndq90kQjFYQSCBeyDVH00CYhAUK5lgNfEN1K/PaDM1brIZc2ulQrhR
+CEcjFjn1Tymv7iIqri3BpBDnWe2llvDsQqrG/FdoM5VYZtovJZO8kBvSB8lCATObpTA+zsSCBXSs
+WcPQo4+Slw55KchrBtH3/Rbz/+pvMAzdTUMnQNoWsmS62XukUOpS9ylxTAukhdCLgf5CSKdUGySF
+O1wL4SCBxW+/lcKzPbQtmz0JkD4jtaCYd4GyWETm8hT3P83ZL32BiUyOnIS8AzkJVjROR1cXSdPE
+vvRSnIMHEfk8wjTRLAu9wtQqqS2+gdrVMjy1sFAJ3jWV0N1Lsi6EcLMdgV9RxcuPK7xk7o7jglKg
+jmclwFUDw2q+xEaFi2WT+1XGNjINJkkN0JzOLLOsyouXq1ddX7/Ki4px9ZPhBxdvUlgD5GpWkPES
+4we/H1jXAs4gcHvnV7VkWxDUL0L5ttcC8C4mQ5gBz5n2C2GS5/8USL8qhlUs+iB5sqWFzpUrWTww
+wMvHXiUvBKFrVrNs618SCocQChJkoYC0rUnw0hTfsHU38bllI0QBKQv+EydtzbWSll0xG0QJISwQ
+TtmFDLdFmHPLTTijp+HsKzBnqRqtbTdbjmVBsQijoxT/8QuMPvx9srkCOcnkgsb8q66i441vxE6l
+3LytmQymSm/nl80KsMF6AFnLdCqDA7hhgGGgqbXwkqwHB09PVWzbUCr5+Wody/LLknkAZVHdr1iL
+OdaqpAG1E4o7NBfoH2SL00kyfr6FtYMVXjQvib1hoKu1CAKl50ZQYjTHstxratvuda6o+FIJvN7x
+vdfBZ8WbwEjb9v83797xgK7a8fxj1QBd73w9QMdxfu6A+fOC5Rkf8kz7hTDJ877pPBZjWdgq8Xdx
+fJzs7NlM6DrLb76Z4W99C6clyfV//2UirbPQjJACyJzLIHU9YOlyh2xpgyxZYNtICgiRn+yyFJ00
+3mlFhFagUlOqhi8cJ4ojw7R2riH/yisUTw4RmbMEbOWHLJlw8lV49IdY/28vmRdeIJMvkJWQdSDn
+wIQDoUsuYdn11xMbG+Ps/PlkT54kn81iFQpudZPAoKRRHsivUV+d6gOGyl6ErrtJ3MNhRCQC6rVX
+/YRAmTBvoLVLJTfJej6PiQpFkRLHS/xO7WD+eqKaWskBqol7phvgX692pGgSEJsqWq1AR9N1t6JL
+KIShqtV4lV48IAqCmQeOXh5gq1j0JyC+71yxPKHrLuCGQhjhsJsQ3zB8YPOPWwG8/oSmooqMB7R+
+FZpQCF0Bb9As7IFi8LiOZWGr6jqObfsm+Nca/H4ZwGoGMGcY5c8FJGWDk5niv/Rmsp5fMpslPz7O
+iUSCa5ctY8Xq1Sz8xCeYvXgxeiTsgmAxhyxkQfdYpWdilSBtsAQodiQtDaGXQJSQThhsE0QRoWVc
+sKty3o6MYTsxJBqSElokgiMER7/6DZY6DoZtwtg4HHweXjqE8/IrZI8cYWJ8nKzjAmRWwrgNpUSS
+JdddxxU33sj4975HNhYjMzFBLp+nZJpIy0JzHITyBQaBsRIkq2XE8RmkV/0kEkGPxdBjMUQsRnzp
+Uubcdhuz1qzBaGmZ8nullOA4ZF99lQN//ucUhoYo2Ta2bfvACI3FM5X71WOVjV5D48w3ogFoni9L
+kVVMlh7ghFQSe2+56vbbmb9yJYu7usrApzgxwemXX+blRx5h6Nln3fs6l6OUz2PBJFAGq+BEIm6C
+/GiUUDRKbPZsFqxc6TO/sRMnSB8/PllqzQPfQsEHYOHmWkQ3DPRIxK1IE426wBsKlYOkF5+sGK5t
+WTiqwo3tLQo0PWZZDyxfKyYof46DovwFDJ4z7b/GpGhaPskpMWZSumY/r0RVsYiVz1OIxRhPJLj6
+Ix/hkne8A81wQUCWijjj5xChsPvAaxrCCIEuwJHIUgkcE0rKHKpKUAk9C7aOECdBmP5TIQMvJBqW
+04YjdSTFycFaCMLz5nHiwCG0Vz7F8nt+G44fh1ePI48Pkz95kvGzZ8nYkoyEjALInGbQvup1LL/h
+BvjpT8ldfjmFY8fIF4vkTBNLldtCSl+0EwRBvQqT9MBRDwzknnlVRCKEEgn0ZJKWFSt43V/+Je1d
+XU39L+1r1jB27BhPf/rTWJqGJUTVdHHN+hhr+RIbVd1odAM3ShVRlQ2ep/lNBBhkKBZzq7okk9zw
+oQ9xw+/+LpFksuZxl958Mzd86EOc2L+ffZ/9LMefftr1XwK2EC5LE8Itr6aOHU4k6Hzf++j6zd9k
+7vLlVY97IpVioL+flx9+mLMDA5i67t8zjm2jaZpbVSceJ5JM0nn33Vz3gQ8wb8WK6sfbv59TL73E
+saee4uWHH3YtOgp4LVXv1FLm4nqs8nwHnPPNeysv4mAofskG1Jn2nw8s9bVwX6MCvHUXbzAyDELR
+KJFkksScORhz53LZW9+KIQSh9jYEEufMMRAuMAojhIjEIRQGTeWEMbNQdKBYgkLB9ReWJFgOwjkD
+ds4Fz1LRNdeaRaRZxDFtSvkWbFPimObkUiq5wCsEySuv5ND39tEycY6ElMijxykcfZWx48cZyxcY
+d2DMgXMWjEnQL7+Cq7u7WXrDDaTPniUTCpE5fZrc6Cj5iQl3MLIsP9NOiXLxi6W2efrcyvclIdzF
+MLAiEWQigWxpYe66dbzxi18kccUV0/ojjz78MCd/8hOKloVp25Qch1KgX1utrcC24DkFXwe3mRX7
+24F1M4yx1s1cK35zug9I1ZR8QYBU92SstZU7//qvecNv/zZGONzU8VsXLeKqt7+dzPAwo4ODrhLb
+cVwwU+AbTSaZtXgxv/HFL9L5/vcTnz279vEWLuSKG2/kug98gI43vYkzhw6RGRkBZcLVQyHCsRiR
+lhbeff/9vOkjHyExZ07d81v0+tdz1e23s+aee4i2tjJ65IjLIAMKaZSlo9mC29XcAs1c/4vNLkUT
+/TZzT5zPPTSz/Gos/By+b1w8SJ9UZgpNI7FqFbH2duW3MbBPH4OSiYgYLosMhcEIBeykFpQKYNqQ
+tyCfR5RKCO0MiKzr93Mk2J4AwvPJGJj2XBw5Ws5uhEDquluhQ9MIzZrFwt/8IE/+/d/ylnktaFIy
+PjRMeiJH2oZRG0YdmJBgtc5iyZo1LLnxRqxnniHW24v91a9S0jSKmoYJFJmMOdRUn5Wp4KjyoAY1
+tt5ga0Sj6IkEs9as4fr77ycUYDmlTIahxx8nNzTkCjUCogzPJ1U4d47n//VfyVsWJdv2gVs24Yus
+xyqDplMxjQGsHkA2WxZMXui9qGllTO+Ov/orVt55Z9luLz/0EONDQ4EkFoJISwsdN91Ey4IFAESS
+Sd62dStjJ07w6pNPIqXELpXcSWE8Tusll/D+L3+ZuTXYXq22eM0afusrX+F/v+lNjA8Pownh3wsr
+77yTVe96l7/vxMgIE8PDZWbTSEtLGWONJJPc8OEP03n33Tz6N3/Dga99DdPzZYJbbDwQKnQxTNoX
+CwxrWRPOxyc6XbPrjBhohkVeVHPr1LFIhSVoGoZhYITD7sy9tZXFq1dTGhsjdumlyNwE9unjaIkW
+hHRnzSIIkNJB5tPIwgQya0PGhuwEQhxHOAWk5SAtG1mywbRwcjnskWGsV18lnW6hmB7Hsm3yZ85g
+CYE2Zw62rqO1txNasIDo5ZcTmj+f+Ny5tK5/Hz/4+le5avwM5plzpC3JuHTZ44SEnBFi3uuvYcUN
+NxArFhnv6CCZTBK9+mrsI0coRSLkw2FKhoFdKrksIDBTb1RuigDb0ZVPS0SjaAsX8qa/+ZsygHzh
+K1/hwBe/iK2UtLZtuyIQXOGOZ+a2TROzUMAslbAdxwfJWllz6oVliPO4CZspBF0LaOVFfgC8SZqu
+7sdwLEbn+99fBpBnBwb4t3vvZXRwENs0XeYFrghH3cO33XsvV95+uw9Ab//Up/in97zHza5UKqEZ
+BuFEgp4HHywDyLMDAzz3zW8ysG8f+XTaV63Ou/pqVt5xB1e9852+qTfS0sKsxYvJjIwgNc0tFxeJ
+sOaDHywD8v7PfMYtGF4suj5RKd2kGe3tXHb99ax817tYevPN/rne/hd/wWVr1vDdT37SvR7qWJ5P
+tRIopzM5aYb1X+zPxEUcQMWv8GA9034x1/6CmaQ3IHnKwVA8Ttvy5cSVb0yPxTB/9owbdqEecDcu
+0o/rgNxp5MRpyI4ixzTEWA5ROoyw8i6zNC04N4rz8svYzz+HdXIIu+CQLs0iZxuULMs1L0rpmgqF
+wNJ1t5BzKIQTiSBmzSKxYgXJa68lcdev8+Sj/cwefQZKBcYVQE4giHZ0sOKNb2TRypXs/9+foe3j
+m2iRkrYVKzj2ox9hx+OY4TA5w8Dy4heZWnEjCJaSKonHhcDQdcKhEESjLH3Pe0gsXOhf1yc++1le
+/Na3MDMZVzSiEhd4ilXHU2I6DrZlYZVKrvlX7SNVfUspBI46RyfgSw7G1tWqgSkVmPvgQyDswdsv
+kMyg2vGmhLrUAlKl2uUiBPkLJYAxIhGMaJQbP/KRMhDr+8QnmBgexsxmsRTwePeyEYlgJxL84C//
+EsAHyrnLl3PVO97Bi9/5DloohGYYrH7f+7g04Dd++aGH+MGnP01JCX18QBOCV3/yE048/TQ/fvBB
+Vv3arxFOJBh+9lmGUilXCOQpZUOh8mM+/DBmoUBR3Qe2afrnamYyTAwP89JDDzG7o4Pbt27lks5O
+AFbeeSdzr7ySr27cyPiJE34xAi8MpREYni/QXbAVoMbx6iWklw0mX81MAsQFnt8McP5i2s8jc9bF
+YZK6TsgTHCQSXHL99Zijo4RbW7HPDmGdPo7eOhvpJBBCc9PQWeMIW0OWMsiJ08ixUcicRZ7REdnD
+UMjAeA45cBgnlcI5PoyddbALDrIkKdg6RSeDLSW2CqC3pHTXQrg+NE3D0jQXLM+eZfzECeRTTxHt
+6CC54kpGEknM55/FHhomJ0HOns3yNW9gyY03cuSb3+RAKM71515i4uhCEpdeStvKlYwNDSGiUWQo
+REnXsZT/JxgGUgmWlf4PTQh0TcPQdZxwGCIRVt5996R/8fHHSfX1kRsfJz8+jpnP45RKbthHMEmA
+F+6hwNLxQEOFNXgxdrqn9GQydEAGYuuk47ifefF/Hjiq5AXBwHtN0/zPgjl8vRi9yti/hqwzEHiv
+BQL9gwkUZEU/9YL8hWfGNgyMUIhF11xDS2Dy8b177yUzPExhbAwzk8EqFv1jaZqGFYn4oPnYgw/S
+sXYtYcX8lq9bx8Ajj2BbFrphsGzdOv+4QwcO8MP/+T8xJyYoTkz4hb091ueFdhTGxnjic5/DCYTv
+eH0LTXNjYwl6ISysXI5SJkMxk8H2zKZqX01NBk6/9BJf+/CHecOGDbz5E58AYN6KFbz1T/+Ub//J
+n7hWB2+REhEIO7kYAClrWA4uBDDFND8TF+EYrzVzmQHPXz1GeeH1JD2/mmKRicWLmb94MYWBAeKX
+XkrxuR+5iQNiJdB0hC7AcKXp0i5CYRR5bhh57jSMnoEzY5AdQ/7sOeRPn0KeySNzDk5BIksu8bQl
+ZKWDg1nuW/N8cV4soQqFsEzTBcxcDiebJTc2hnP4MMaiRdC5hvHLzjIxeITWTBYef5zUI4/w5OWX
+Y8+bR3roMO1tK2lbvpyWjg4iySThWAwtFHJDNzQNOwBezfjjNAVCYV1HGgZtV1xRNpA/92//RjqX
+I5fJkM9mXVaigtDLBtDgIKdApizOTg2imq774QiObSNVyEBlrJ6vxg1MfoxA8L2ujqUFgu/xgtlV
+jJ4TCL4XFcH3waYF0u0J75y98/XO+XyC/D3FsDrm8re8pQzIRgcHMbNZf/ETQqj72VOuGuEw2bNn
+GXz8cZ9NtixahB4O+wC15M1vLmN8lso8VcxkfJD0f29g4iI0DaTEVr/HVzhXsmcPJFUBAc/kivqd
+mq6j6br7ebFIuFTiyX/8R4oTE9z2yU/6jPLUyy/zxBe/iO39R94E6SKzRVkxGYTalWfEeZpyG/kg
+5TSYxvmwSnmBg/UM6/zVM7kaF+T7CfjVQrEYkUSC9pUrEYUCTqmEho156Fn0ZCv6rLmIkI2ISES4
+FVnKgZmD7BmckaPIoWE4fRo5+Cr2E08gTowhMhJZlEjLtdY6KuzDBBxk7bqDFdU4vJqXtm27JslC
+ASeXIzcxgZNMErnsMkRnF+cyGb5t25QAXddpKZUYHZng0sUD5IeX0rZkCbGWFiLxOOFIBMswcDTN
+9+tVe8hljUFEFwJD07B1nZbFi8uu7Ys//CF6f1PvAAAgAElEQVTFQoFisUixWKRkmjWZmc/41MAd
+UsHyRiRCKBIpD5iX0k9A4JimHy5ge7F6HlgEmJgRibj/byQyCWBeqjQPdAPHtIpF18/nAXCV8INg
+kL8P6KofXfWjB0QnHrg7tu2Ce6Afu6If7/jehCGYzu1kKuX+1mIRp1j01c8yINyRmuafu7RtV30a
+HPwDxw62zMiIaw5X18FTV3uAJoM5eCviHTXDmIy1rZJ+zlGxkHaphAzEaVoKYO1SCd2bNDgOB77+
+dQAfKG/dsoWXH3mEkRde8GMohcf8g9V1pjkwNcpJ7L1+2333AfCwWtc7hpyGWXW6zPe1iNtsxtwn
+fgkH/hmQ/HkwyQDb8KT24USCBStXUjx3Dj0ep3joWexcDhHS0WJptMhcRHwhGDGEbeHk05A+hj3w
+Es7gSeSB5+Bnh2BcInISUXIpYmVge57aSbrrZn3xYjptG8u23eDrYhE7l0POnUv7ihVQLJJRfh9i
+McbOlsideonCmS7XTLtkCZHBwUkAUubHWjPaWtuFGjgna2lONlslBLBUMHiZ36/y5lATFf8/iMcJ
+x+O0zp9P53vew4pbb2X+ihW+WOT4/v2MvPwyP/2nf+L0wAClbJaSplESAmG70ZVC1wkrf14oFiMc
+i3HJNdew4rbbuPS666YMXK88+igDjzzCuSNHsAoFn/XYpokwzTKgrAzy14OB+LEYC6+5huWBfoLt
+lUcf5XCNfvD6Caqsq/k1K0y1wXRvU9LBaRrhRKJi1J307QVby4IFkybQAGt0lNiqbjC/pvkTuyl7
+BfOyBiaAQVOzZ273lc9CcOCb32TJzTf7gp6bfu/3+L9/9EdYxSJCpWRsxCapA3ze+/aODuZ0dACQ
+HhxkdHBwyj7Lb70VCfRTW+kdfD6aSUIRFJ81A4yV29o7OpitzjufTnMilZq2X7WZGqYXylgvNgBc
+0tlJtK3NfZ76+19zAHtdT4/vJ/cmqs/39f1KgOOFM0mYApKhWIz2jg5KAwOEk0ly+5/EyY8RujyD
+0GeDFgMj5t4E+TSMHsc5cRDzyadxnjwAI1m0jEQU3ZSsfs7WwOLF7tlNgGM90PR8eLbjYFkWJdNk
+Ynyc8FVXEQ6HsWybUqHAmGVQOPMShaEh5l57LeHZswlHo4TCYRecNA1HDcaVJtdqgoOyhAOez68C
+JIVK0qCpQbKm+Tag5AyrSUqspYXr3v9+bvuDP6gaML+4q4vFXV2sef/7eeIf/oF927e7/yO4zEcI
+QkoVGk4kWHbLLdz40Y+WiUkq26VdXdy8eTMn9+/nR5/9LCdTKQzDoJjNYsEkgHlmYS8LTixGKB4n
+nEiw5JZbuOGjH+WSOv1c0tXFmyv60Q0DM5t1A/09UUvA0lF5vXTVtxEKIZX/0QfJgFUkHIthRCJ0
+3HST//3ixIRv7kVKzh4+zBwVhnHdPfcwsG8fVj7vMlVvwiHEpM+WGuEXAV/wdJ5HGbg/HJVDWQIo
+F8j3tm3jQ319RJJJVt15J4/93d8x9MIL6KGQy3QDvvRKNqjV2CaAZd3drN20iVU9PVXP62BfHwf3
+7iW1a1eZ0jtC7bJx52PWbVCifcrYAbCqp4c7tm+nXQGk10YHB/n2li3+AH6xskBdbP/odMfrWFsb
+N23ezKq77ioDq+DvfqW/n8ceeICTFROFC22/sXMna3p7p2w/mUrxYJOJUn61za24AglNSdeNcJjI
+okUkEgnOnDtHZPZsJh5/mPY1IQSXI0u2W/rKsZHFcZzhF5AnXsJ55hGKP0whRh1EDmTJzVMuaswc
+Cwogg4tTBzTrgqjHLAMFpM8dOIB+2WWIZBJLSgqaxujAKRZcNYRhW0Tnz3dNmqEQRhAkqZ+jtHJ2
+qDGpGK00sfmmzlAIJxxGq1BzBhNsax5AxuNEW1pY/5nP8LqKeMBa7U2/+7u0LlzI3j/8Q3QpsZUp
+1bMKvPXP/ozO97+/+VlqVxd3/8u/8NSXv8yPd+woV8Gapq/i1EMhjFiMcDJJpKWFdffey+oL6EcE
+FMYe6JWVGvPOQf02Ox4Hx0E3jDIwE7qOEYkQTiaJtrbS+Zu/SVLFSwIM/uhHOMrEK22bl777Xdb+
+/u8DkFywgDdv2sQPtm3zEw6YhuGqZwN5X53KJOkX4SH3rAy2l+y+WMTM58meOcOL3/0une97HwBX
+vvWtnDp8GN0wsHQdzbLKJm5TkjIEGF9w+7u2b6eto4ODfX2MHDjA6g0baOvo4EfbttF2xRVc0d1N
+R3c3L+zaVXaccJ0BTtQxt1Yzu9YqnRaM661kmx3d3Xxgzx7Sg4P0bdzoJogAFnZ2cuOmTdyzZw9f
+WreOIwGGJZsA5gsBT/Eag2Z7Rwdv3bqVoVSKx3bscK0KmzczlErxwt69LLn1Vtb09lJIpxm6iCC5
+preXNb29DKVSfGX9ekYHB1nV08OaDRvIp9MXBdhEE37nX5i5NWjO8v1K4TB6ezthXcc2TXKpx6F4
+HIrtOLn5aLkcMn3SVedNnEYe+xn2U99Hvvg89hkHkXcLgUin+sDh3fxFJjO+1ALIRsV+p4Cmyj8r
+HQfhOOSPHEFvbyfU1kYRGD17Cn5tFMO2iMyZ4+brDIXcwtEVjKXyj5N1zFfVFLAAczs6GC4UcEwT
+DbBCoallnNTA6GeVSSR4w913lwFkMZPhwLe+xcCjj3Lq5ZeZf+WVXHbddax+73v9YPnXvfvdFNJp
+vr9tG4YKbQjHYtzxV3/F1XfcUXZeQwcOMPjv/86pl15y2a6mMffKK7nyne9kzrJl/n5v+NCHaFm0
+iH/74z/2zYWW8ofiAVEiQbSlhbf/9V/X7QfVz7xm+6GivFQAJBdee61rPlWTC1uF1XgA6ilFQ4kE
+K9/1Lm742MfKfI4vfuc7briNaSIsi+e+8Q2uuuMOn02uuP12wskkj3zqU0wMD6OFQq5JWKWIs0sl
+tEDycadK3c965cFqlRRDHUuA66c0TXSVmP1n3/62D5LLurv5jy99iVAohNR1LOUmqKxco1Vhk8F7
+9suKBXjbltx6K20dHTyhfI7e9nDFM2HUMN8GnwtnGibOWqxR1LhuN27aRCGd5h+6uiik0/7nx/r7
+eXbXLjYdOcKbN23ieH9/U8W+GwFnM/7QZhIpnG9qRoChVIo/rZiE37R5My/s3csPKnzEF7Ndt2ED
+gA+QAC/09fHCRTK1/tIzyaA5yzO3GuEw7QsWUEyn3eD246+gTZzCPhVCGOcQxgiYGoJXcYaP4jz/
+JPKln8GEhQgJnHFZ9YEN3ggekwymR7OqsMpaYFk364yUtNoWCelwxrIoFYvkzpzB1HVGSxkc7RzR
+1jiReNwHSc/caiszYnDQE3Vmm5UAWWluXbBiBRMnT6IDoVDIV2B6i5e8WkqJHgoRiceZtWAB67Zs
+8Y9xZmCA7957L2deecU1w1kWx558kpP79/Ozvj5u3bKFlQqc5l99NaFw2Fd1rvuTPykDrrMDAzz+
+4IO8+sQTfvC9x5YGf/Qj9n/lK1x+4410f/KTPvO66o47mBga4sf/639NhpvYNsIwXBaZSPD2CiA+
+NzDAY1X6Ec32o8ygKCtHJZNctHo1Xffcw/Czz/oioCArF7rOrMWLWf62t7Fo9eqy/+Qnn/+8Pxny
+BDrZU6f4wdatrP/7v/fDRK5Yu5YPfuMbPPfNb7L/K19hYmSEkALKIFhK23Yr3Si/6HQGw5qvvVzK
+nnrZNDn1/PNMDA/TsnAhi7u6iBqGHyKkB0J5qgGiqAGetfyT4RrbBRBpa+POnTtZ2tNDpK2NV/r6
+ePaBBzhR4ReTwMreXq7esIG5nZ2Y6TSnUymefeCBMvBy6lyPWkW9r+rp4bldu3DSaUIVn1npNEf7
+++no7vbB/PLublZv2MAV3d1E29oYTqVI7d5Natcu/9h379lDIZ3mWxs3+sdb2NnJh/ft45/Xry/z
++925fTtLu7t5IGBqXNrdzU2bNvm+wlf6+3lh716e3rWrpo/vrVu3sqizk9HBQZ7ZvZsf79hBIZ2+
+KCbepcqUvqizk1jgfJ6pcT6NWqFJ1ljZ78lUimd2767a79Lubt6ydStLu7sppNO80NfHd7ZsoZBO
+84E9e2jv6OBvq5hz/9v+/Rzp7+c7apyMtrWxdvNmltx6K0u7uxlKpRhKpXhk2zYf2C9MuFMBlJph
+IGIxV9pumpSODhA7PYp9PI6wwoh8GMcYgvFx5MgJ5JHDMJFxfWG2C3Aa1QsWVzJJu8FSj11WA8i5
+QDtgSHjadghJ0B0Hs1Ry9xEOsnQa3RDouoYej6MrU7PnV5QV508TPslg3GSwXX/PPZjZLMf37ycU
+jfos108kryo9SMfxmd8NGzb4PshiJsN3772X04cOYU5M+CEkQpnGrWyW7/z3/05y3jzmX301z+/d
+64t/OtauLTN9HnroIX58//2Mj4xg5XJ+8L1QCQu88J/BRx/l6y+9xF2f+xyzFdt7w4c+xImf/pTD
+jzziAotloYVChONxltxyC1cHWO+hhx7i3++/n4mREUzVjw96gX5eefRRTlfpZ+CHP+TYT37iKzyr
+hVMAdN1zz7Tv83MDA0yMjLj3uFLMOspnfXL/fr71sY9x5/33+2E84WSSNRs2cM173sOzX/86z/zz
+P5MZGUFXQiOrWMQyTVCKVNT9U0u0Ui+ZfCUbEVKiOQ6aZWHYNrplMTE05J/b7MWLOTs+DgHBWa3s
+UBr1c10G9wF84KkGrvM6O5nX2clgXx8Tg4Nc1dvL0p4eHlq/nqMBdvG2PXvo6OlhYnCQo319hNva
+WNzdzdKeHp7bsYPHt2xpytxa61pljx4lVANE2zs6OJVKYQDX9PZy586dFNJpXu3vp5BOc3l3Nz07
+d9K1YQNfW7/eNxt29fby0JYtboYlYM2GDUTb2lizYQNHA8C+preX0cFBdNXfe3fu5Dpl6nylv598
+Os3S7m5e19PD0ltv5esKeIMmzN/YuZPRwUF+vGMHl3R2ctvWray6666aPr7ppN2rPJ9COs2S7m5W
+qfP5RsX51Gsv7t3L0u5uPrhnD/+8fn1NEPcmDzdt3jyl3/fu3Mmqu+7in9evn2Sovb28V/0vj+/Y
+QVtHB9f19rKos5O/7eoircy6S7q7y8zmq3p6WNTZyYt797oT5s5OH1A9U/Sizk6u6+1lVU9P2QTn
+/JkkATm8UgTKSATpOFimSfbZZ4iPS8yXjuMMncWKv4oeSiDyRRgbRZhF17yigd4qKKVl1Qc2+Gd7
+ibadACBadYCyXi1FASxS4Kir/Z5Rn4WV30gXAgvQkRjjSXByRMJhtFjMV7VqXpA+zdVNDF4/nUmF
+apm5ddky7vrsZ+v+B8d++lP+zz33IFQih2W33OJ/9ty3vsW5V17BnJjAHB/3QVJTiRUsFUP5lfe+
+F11NcLxQj7f82Z+VgcPjDz5I9swZ7FzOBUllovSUqrJUckubAeL0ab69eTPv2rHDB7A3fuxjvPrE
+E+A4lEol1zycSHDb1q1l/ez7H/+Dwvg4pWzWFb8osY/Xjxd/CZBR/fz6l77kM8pb/uiP+Ppv/7Yf
+/xkMH7nQNnvZMno+/3kOPfQQP/rMZxhX5+JYFmYux8mnnuJf776bW//4j7nqne/0vxdOJnnDxo1c
++xu/wbNf/zqPf+5zGNHoZMxjoeCabpUAqxqoyxqmVyr8237lGSkxpCQspQuSjsPI/v2+IGrOpZcy
+cfCgq6wOMNjKzFDVzK1aDXOpVoVJalW+9+ONGzmk/JQ/27aNd+/fz9rt2xnp60MAb9i+nY6eHgZ2
+7eKxwIAcbmvjpp07uWbzZs48+ihH+/oa1iuVFRMMry2/6y5+et99UwDylu3bmd/ZyRPbtrGsu5s7
+d+7kVCrF/7duHUUFfhJYs3kzt23fzju2b+c7GzcysHcvV/f08LqeHg4ohrlSCZpW9vRgbNyIBK7u
+6SHa1saB3bvRgc7eXq7r7WX/rl18RwGs196jBC/po0d5RJlEo21tvHv7doZSKb64bp0POmt6e1l1
+113nbXr09l+7eTPX9fbyjDqfQsX5XFdxPo3a4zt2sGj1aq7r7eW/HznCI9u28bjyiQbbqp4e1/zb
+18c3N24s6/fO7dtZu3kz79q+3Wd/79q+ndHBQT6nTOYecHZt2IAAnnjgAfe3bNjAYAAkV6prtF/d
+f+/ZuZNYWxv/Z/36MhPwImUF+OCePfxtVxejg4NcnJFEPXBe6ivLNDFNBycHzhhYw3mswdOUDg1i
+HR/GnijiuBoepA16y1Rgq7aYlFeosGqYXOuBpQFcAlyjQNKbVb4KZNRAEwKiQEJKklISkZBomQ3S
+RNOEn65NeOrUWgyR6hl4qu0z3XbZ9dfTsXata/Y1jLJk16/092Pn89i5HKVcDiufxykUsPJ5rFzO
+TXWnFiufd+tiCsHlN9xQltTgR/ffjzk+7oJgIIZS6LoLrrruFoIOpDsrjo/zky98oeymW7h6tWti
+VWrWK9/+9rJ+fnDffZNFhL1wFy8xglr8OE/VT2F8nH+///7yfq691o+zrBZac6Ftxe230/OFL5CY
+Px897JZ7s0yTQibD2PHj/Nsf/zF9H//4FJWgB5Ybv/1tOj/wAaLt7URmzSLc0kIoHkePRBBeYe0a
+QBkc6DV1j0bUfRpT67DaboALlOq9XuW7YSEIq31DVRbvM6PifUQt4cDaO2PvXCoXDRhNpTi+axdx
+IAEY6TSv7t5NsqODRZ2dtLa1cfXmzZzs6yO1cSMJtV9c7fv0xo1kBwd54/btxCuOH6/SZzRwrpEA
+y53b2cknpOT31bJJSjZLyXWbN3Oiv5+n7ruP7u3bKabT7Fm3zjfNetc1tWMHz+/axTW9vczp6GBA
+DbBX3XUXBjCno4M2pZyNtrWxTJlvvUH6UF8fBvCWrVtJDw6yd+NGSuk0OpPl9fZs3MiR/n5u2rTJ
+Hx88c+wPt22jqBisAJ7ZtauMaU1XPOTdW2s3bWJ0cHAKUAF8U53P2k2bpnXsb27cyDfVZOfO7dv5
+b/v3s6S7u2yfOxToVev3O1u28EJfH2s3byba1sZSZfZ+4oEHyvZ9ZtcuvqyyX40ODjKUSrFKTUq8
+/+G63l6O9PczOjjoM88fbts2xUc6lErxpXXrXFOs+r0XxiQrZy9qELNLJUolB9tUyGQF0UGi6QJH
+gibdj/WkQBpgW7XVfjIAiA5Ty1LZDcDSUKA4q+K7Uvk5j3nK0sDA4A0u7cCCm68Bx0I60pfdB0Gv
+lqCilslDZ2ph5um04sQEZw4e9FPcBdupF17wA9qxLBfkvAoQjgMq+F+GQu65K3/k0gAbPfTQQ4wO
+DPiJwp1oFKFpkzGGAZM7KjG4Hg6jGQbDBw4wfOAAC5Vfb9ltt3HqhRfcGMJQiKWBdG6HHnqIzMiI
+m/tX9aPV6EfzihyHw+iGwdCBAwwdOOD7D5fddpubC9VLFajuyaD4Zu/v/R5mJoOZy/km68rJnjcR
+iLW3u+av9et9Zjxn+XLe8w//wD+/970+a/WSJ1imyeFHHuHoE0/QcdNNXP/hD5fJ7lsWLuS2T36S
+N/7O7/CTL32JA1/7mi8gwktQUAPYtQBYNRLWGAoEQ0K4YBoIBfImgd61dahfJkirMtkTFfex95zE
+q5yz9x07nSZeIaxJ9/fD1q3E29pIquuU7OjgmhpsRQDxjg6iAZ9kNSbp1BDoeW1g1y4yR4+WPa9n
+UimO9PURUabhZ3fs8AGy8hgv7d7N69RAe7ivj+P9/azo6SEUYJGPb9vG2q1bufquuzjR38/VPT2M
+DQ6SGRz0gTQ9OMhbAr81eI6xtjYfZI/09/vXuKgA9ULVtZWxru0dHT5bq8ZKH3/gAT6wZw9LK8yY
+jdr+Xbt4UQHdW7Zu5cP79vH4jh18V/XV3tFBIZ3mps2bq34/poAu+BwNp1J1x8wnHniAX9+5k1U9
+PezftcsPQ9m/ezcC/HFp0erV3FaHGS/q7LxIpbICeTVtxyE2dy6lQgHTcsg7kFDF0X1U0N2/U5Oi
+7AE12gTFM7KuJN4OmFtrMc5KoARYCMyuAMag+fVVtdYCs+dwYGZ+aTJKy7yFgIWU2pT8pI1k/NUS
+LpdNNCpi58xMhie+8AUmRkYmwwcCLMoxTQafeMKd5UQik8ni/Qtl+4twHLRAMLtQn/vlxDwA1TQW
+BW7ERatXE0kmMTMZQvE46HqZMKbMFyaEK8iJRNB1nXAySTLAFBd1dqKFQq5vMRwuY72LVq8mHOjH
+C8CvmvdVqVKNSMRNeJBMljHSS7q6XMYZYJHB4xx97DHy6bQLktmsb9KttIqAm0Yun04zPjTEC3v3
+8pY//3NWqPR0c1asYM3GjS5jVjGRlmmiqUxAZqHAyz/4AUcee4zZS5Zww0c+wlXveEcZWL71z/6M
+lXfeyZ7f/30yp0+7/uVQaIqZWA+wsVCFYKVamIamMjmF1BLWdWYHqpRMHDyI5jjonlqa6pVrtIA7
+oFZlm0qwDlWAp6iibg1uC1eYaQFaOztprRLPF2zJtrYyE2g9FXAlwJ3o6+NpZQINmmRtxTh9oB0b
+mwLG3tiRV6KOBZ2dHO3r48jevSzu7uaqnh5et2EDxXSaJ++7j9dv2MCVPT28uHs3kbY2frZrl882
+Ado6Orgl4Hao1jyWWZbSsoa6tlGu3FqftQWSQdTyddfzKTYj3vnhffexf9cufmvPHtZu3szwgQO+
+KCfa1sZbGlyHYjrtM8OG/tC+Pgrbt/OmTZvYv2sXnRs2UEin2a/682Jku6rEcFae94UzyWDiadtG
+5PPokYhrgjIdsjbEpPuneoDoqKsvkWiISX/GHEFumiDZCCjbgXmB71bzTRaAEfU6FJgZGwGT0qq7
+r3eNvQ6MjaXRVFLsYNB/8GEUNRSt1fxImncdA+0/vvAFDn3/+xSVP9FTtwop/fyo4Aa/Yxh+OrnJ
+J3zy3Dww14KTmor9NEDXNJ8tgRv391vf+tZFMVN64SaeCbWynw9epH7CyWTVzET+5EPlay2Mj7vJ
+zQuFKZlzJJNJGjTDwIhGsU2TR7ZtI5xMcsXata6v9cMf5umdO92YQ/BLllmlErppunlc83nMXI7v
+/smf8B9f/CJv27qVSwKq2Uu7urj7H/+Rr330o+TOnXPFUxUJzr3Jmvf8WFXArIz1KZCMGAYhtbQp
+kCxlMtjpNIaaPIW8tHhVjlMVgKmeJce73pHA/pUCICpMs8EZuq6YJsDxHTs4XMFoqg3c4Tp+yFpJ
+RQAyBw4QYWr8dXD/UjrN3NWrfZAMfmYr1SvAqf5+wsCxvj7Yvp2uTZuY19nJiwoMj/T1sXrzZt6x
+cycAB3fvxgCGFBM73NdH3/r1U+I5K8/fCLB1b/IynVCUemOQVMwM3FCeF2uEaHgTaA84zgc30oOD
+/OO6ddw7OkrXhg0+aA2lUvxdE8kFPFNtI1JSTKd5sa+PLiXCWdTZ6fsiAYYPHGBlTw//WuGPrIV1
+2gVVdZbSpYkqwXX2zBkAEosWkS85TNhQclTeVUe5ttRraYPjSH+bkRDoLaKuatWq8EdW801a6sdd
+oRikoHoIiPf+RBUWGVxmA/Pf+waQJkgDs2QhcjnfT6cFgLLWolcQaa0BSJ47fJjS2BhmOo05Okrx
+3DnM0VEK585hjo1RmpjAymaRxaJrTq0Y6L1jajXMZd55GJ7wSC2vVUsuXOiyUE91+hq1OcuX+7lN
+ZZWyXdK2sZVvtpTLuaCZyZQvKkF5MZOhqCp6FCcmMLNZHnvggTJAvuxNb/LZn6MmMFaxiJnLUcxm
+KY6Pk0unyY6OMvzCC3ztQx9i7+bNnB0YmBRprVjBmz/+cZLxOIlIhEQFSGqBSZsR9DlWLCH1f4Y1
+jbBKRhEJh+m47Ta/RunZZ54hbFmEbZuwbRORsqr/LhKwooQrtgV9lOGA+ZeK+7xaDLBeAcJBppJJ
+pSgMDjK3p4dQW1tVVW2166FXuS6VvtVwgK1W+lXDVV4P9fWxuKeHS7u7/WvjrVvb2rhu61bMdJrR
+/n4iQGlwkHOpFJeoQfz43r2EgUO7d4My304MDjKqlLM6MNDXx/KeHhZ2dvq/Qa9Ygr9Rq3AHVe5b
+ObbodcajSqA002mO9PdzXW8vl3R2Ttl/dkeH70OtZeqshg/tHR1TtnnmUy80ZP+uXSzq7PRNmw0x
+p05/wSWlrv1v7tnjEo8HHpj8TIGzJ/ZptJy/cCdoZlVxex5IhpJJaJ9LzpKM2mB7QKkA0inbJv1t
+8YWiYXiHVUO8430eApYrE1Wl77JaSMiZAIusNvis/vhawlddoh4TQW407aYl80yanrm1ip+yGlhq
+VW7uypvu7PPPY2WzWJkM1sQE9sSEu85mcbJZnHzeBchSCRGotlE5kOiALiVGYBKgV4CzpsBUSPma
+gdeBf/kXN6m8SkT+WrX9X/mKG4voxZVWJLr3am+W+RErFluF11jFous2UGywmM8zevQoQwcO+Mdb
+fP31bmkr5Uv0MjhZKs62kMtRzGQojI+THxsjl05z+NFH6du0qQwor33ve5nf0UE0EiFcBSSrAWK4
+Agw8gAwZBtFwmEQkQjwSYXFAKHGmv5+QZREulVygdJwpIBiuAi5GlUG33my+VnhGZaHvyv1e3LiR
+aEcHa/bvZ35vrxsW1tbGpZs38+bRURZv3lw24W3IACpANchgq7lVvPXBLVsopdO8ac8errnvPmZ3
+dBAGOnp6eOu+fSQ6Onhq48YygB1UgzLA2f5+ogr4TcW8jvb1lfX1lBLg/Ma+fVzT20uirY1EWxvX
+9vby0SNHeOv27WVgqVeZJOhNTMKrWRyqgcz3FHv/nX376OrtJap8ol29vXx8/36ibW38y/r1DcHL
+V5P29PAHR46wUR1vSXc3S7q7+S0FWh6I7du2jUI6ze/s28eblEDHM4X+wZEjrFcsfLptsL/fNx97
+4B5ktE/s2MHVPT1s3LePhYolt3V0sH7nTj4lpW+CPm9zq5902WORqi4emQzDw8O0XnEFxBJkSxAS
+khCCVjn1JkZ6M0rX9GrEBaFZguJY9QotAnIAACAASURBVAHbqjC3ygoQDCsGKWicicdRatZ8jdmo
+Acy9bBZLP3I9tLQBCfK2RnFsDFsFhUsFlqKOiY8mZ11lZmWvioRXoUNVAZkyEKlKDqLB8YPbgvGc
+QbGVdBwyIyN+SEVmZISH//APyYyM+IDh1Vmsmz0kIJixlZjFC9o3IhG0cHhKP99V/ZQKBff3WlZD
+/64f2C+lL5qxVAyiZ9qtVkwaKRvGGxKwkni5Wp1SCduyOHv4sC8UEkK4/k9N86t8+InHlaXBUsAs
+LQvNcQgJgXnqFP9x//3c+fnP+9113HILL1cxOwcHSlnDJKoJgaES3YfDYaKxGOF4nDnXXMOlKiTF
+ymQ4+/DD6ErMpan7plYuVVHHVOcwNUWclU77wFWrOoZTw0/vgV66v5/n1q9n5c6d/uKLrlIp0irm
+UFKenUdWOU9J7SLfosKvJyv9fOk0T69bx5Xbt3Pl1q1cGfCXldJpfrp+PWeUyMcbh84pE+qJvj4I
+CH6O9fWxrLeXE4pder91PJXi/61bx9v37OFtO3fytsBvHR8c5GVlmvXOT6+4Hxr5Y6F+Sj1RYbY9
+lUqxe9063r9nD+t37iwDp/TgIF9dv55TqdQUf2itNpxKMdjf74NjmbBmxw4OqrCfscFBdq5bx/qd
+O3nn9u28c/v2Mp/ggd27q+YRbma8Te3eTffWrT6LDLbvb9lCcWyM7q1b+fj+/VPERmMqUT8XKtzx
+y/iUSliFAvroKGfOnGHZsmWI1jbGTEnSEJxC4iBoC1xgTVKWYUc5Kmm9TGMkYyPtqQOY55OUVQDP
+A0iaAEdvGVV9ByXeoYBJ5pa/ezf6gjjEW6GUoGhD9tgxHySdStPeRWpTigs7TvWJynn6kwmYy30x
+UKnE8P79LFcCk9GBATIjI65SOZudVINWVKXwQTGwloFcuF79QqEyu+iRCGcPH/ZBcujAAReITRMz
+ECMpK4spezF9wf68ChiBDDOObbthI6FQeb3NJhWBssrAXhZrFzQXK8GSUKpdD9xl0Bds2xiO495b
+mkYkHMYwTUZfegkzk/Ez9UQSCfQq/5euANAO3Ns+exDCZQ6ahuGVSYvHiSYSROJxrvmLv/CPc/Kr
+X8U5fRpRLKIrC0RQzNVI8FEN8LxtL27ZQqyjw99W6ZsfVGbqShAdS6V4acsWziqAkcBwXx/DfX3M
+7+mhRc3wz/T1MaGYQCVAihoMVlTp79n1633RjVNjcqAFQPnpdeto7exknlKsjqdSnO3vp6RAMMiM
+c6kUP9uyhdPKT+ndMy9u28b4gQOM9veXZflxgIlUiq8vWcLC7m4Wdnf7KttXVByoEdj3bCrFf2zb
+xtlUqgwk66UsrOW3fGjLFo7290/JlzuSSvHgkiV+7l0P7A5W8ds1AqmxwUF2rVvHws5OOlTohieq
+qTTZjqRSfKGri4WdnVytrnW1fgf7+/neli1lrLBe+w8Vl5mqkS1onxITLenupk2pbF/s65siYDr/
+BOeeMMRx3KTPxSJWPs/ZQ4d4/etfz+zVnRz/zl4KFkQMOIPEkoI5gJDlszehxnwBCE3S1qFxZsCp
+ySQrS2cFAdKpIuypBZLZGgAZBW7581uZ89YlYM0CrR30CCdOjREaH8dUeVU9tlCrlNX5Mknv2tYz
+Z9T9frM3dBDMTJOTTz/tg+SCa68lnEz6TNJSwe/exMAfjLwiwp6iVIGXHSiQ7DiOX9tRj0Z5pb+f
+K1R1jSvWruUnySTmyAi28ud52XaC/WiBgsXSy3KkGJsPxkp9K0MhDMepO+jXzVzjlT5T4h09FHJ9
+j4ZRlq4uqLYNKTGVZ4o3lIXBUOZs7/4SygSuA6Vs1gdJUcP07vmO3cxPk1mEDCFckFQxq0Yk4ieN
+DyWTrPrUp0goFXFxeJjju3bhFApuRRb1n1Ald2yte6ZeNY50KkU6lar5/ZMVg533mZVOM7BjR9X7
+c0iBZb2JXj2Ar8aETwWOVy9rERW+0onAoB5kdZVM+NUdO3xw87aXBgc5smOHLwoMTvC992f6+zmt
+WLITECWV6SfSaZ5WSRAM6pcErCUA8rY9rc5Tr3EdXu3v59VAmIdG4yTitSZZI6kUIxWgpjW5b7X+
+fqKAr5mxtphO82ggn3C1id/Y4OAUEK01cTpvJumxELtYpJTLce7gQddfc+ONaHPnc86UWJ6AxxPq
+BPySdoWv0rEhFINZl2lVFatBf6Rneu0IAGStZAKVgCkDPsygP6IVuPH2ZVyxYTUSB2LtLkiGYhwb
+PEYonfZrGF4sJln3+xdw7Ho+CL9fZS53TJMXv/ENzEzGF6as/cM/dMHJY0/KvO4xN6kKE/vlvLyw
+C8dBBtmd8vF5YHv4oYfK+rnhYx9zWZnqS6oC2b7/0LJc0A3kWfXLnal9LNN0TbtetY0qNRy9UJUg
+8E1ZwmFEKIQWiaBHoxixGEY8jhGPu7UTA8rcM6+8gh4OY8RiRJJJki0ttLW00J5M0hKP0xqNEotG
+iUajRKJRorEY0WiUcCTCJWvWkAhUGNEqBBpeC+k6ccMgHg6TCIeJqyUWiRCLRonHYsRUNZXorFmE
+W1tZ9elPMz+Q+eelrVvJnzqFnc+710hdS4fGOY8rn8HKpZZ4LqgdqNzHpDwxiBnYx654zktMTSJS
+qhgPqmkTrBrnHvy9tcR8Do0zaFHh56sU3HivqwmKwhU+5em8NqoId4wqr5sRDlb6KkWDbdp5Cml+
+Gdt0zuu8mWRQuOOUSi7TyGaJnDzJwMAAS26+mfiSpZw7fYpZhvsH2xJsJBKBVKEhUlZPhxWdBW1S
+4/9v78qD46ju9Pfe6zkkjSTLtiTLBmNjTOwEHCDc4IwCS5yEJbscG0i8lGtxNkUlqThkcxRJJRhI
+bY6FVLYqqSUpoNa1SyAbSLbYsAlbIUj4AGyMMBhMfMUY2UKWLNmakebsfvtHv9d60+qeft0zsmVI
+V01JGk0f08f73vc7vu9o/ySbkDe6Oss6TQlDucOwvAqbVPvOVIC84Nx5OP3GD6C07xjAGYzFp4Ew
+A5kMQWbfn2FkMo5noOwbrMV5XOdGCvt/P9d4d75IigvIcHk5l8PLDz6IS0Vj7+mXX45zPv1p7Niw
+wSm4MQsFENG3KZmUBB5QiuYFCzC6f7/zeRnOlfsxCwVkBgex7cEHnQbipR/9qG3G+sQTdo8kAKKc
+Xy72Qw0DTKjptCxYgJH9+1FW92NZsAhxrMXcjflEYVyWaYIz5lQG80o0nWwBEQCYSKVw1Z13Oh8p
+ZrM4sHkz4rEYLly7FqXjx/GnX/8akBOIUsn+3TRtwQfGbJ/K5makOjtxnuIwAgCDmzaBlctgrDLo
+mojF0NDQgFihANOyAFHYQ6XBszCupskkEh0dWLZ+PeZceeUkQN5zD4aeew6l8XE73ytkBMNaPlkR
+WITffcrh7wKCKmFUaKzn9R6tsg+/Z4MHPFuWx3vcIy/KffKvXiYOVhWgrvZ3kKcu8fnbK4fp54Pr
+lUf2MnHgVa51LfdOXdJYiGavVZuYgGCSZqmEUi6HYiYDa3QUe/v6sOSmm3DmJ/4aAy+8gOEi0B6f
+nMlBAqVC5akMtyqg2dAKtIFiZMCCadqzoJJyYROYVNDxcvnwe0mAzGNSsioG4Iz5LWh/fwfK+4+B
+WhysYymsbDNoE3BoYAIYGLB7F8WAUzOT9FvPo30hDBN1Cxz45pyU4hQZCdjx8MNYlE5jnuhbuujz
+n8fsJUuw5Uc/wsTQkCNwXgFesRga2trQfdddWNzdjcLYGH526aW2XZRggRDuFOVCAWRiAtsffhiL
+02lHUzT99a+j64MfxKb770d2eLhiP5IBMrGfq++6C0vEfn4q9kPKZRClctYvhxhLpeyBgjEYLsUd
+WRDEpZl1LAYjmURzZyc+/OUvV/Q4vvGb3yBpWbjyW9/CWYK1XXT77Xj14Yex98knbXZeKjmFVUz0
+XLaeeSYuv/detCqMdGTHDmRffx0xzm25OxUkUykkmppsiy3GbPDl3HbyEK0eNB7H6bfeijNuuw2G
+oq6z6957ceixx1DOZm39XoVFeolC6Pyta/nENUEyVHpAEyC9oihB//NzNnF/3qoClH6ATj1Ak3oA
+m1pYZymTf2CqihB1gZ57e3Jd4prkUB8A9wI9rjkJIVWuPwkARqIJbvVij1G2ZZAaQRKWZQ8IhYKt
+Czo2hsL27Th+zTW4eO1aPP+vP8bw0WGkmC0WbvLJvJsESuLBJokClB0NFEf6OViOV4BklwKQXAMg
+uQKQatijwaBYenYb2tuaYB3OoGxyMBoHX3kOrIyJoknw+kuvIXn0KI4JJmlJuyORk4zEJOX58xAD
+gMgZVc1Jygpjj/W5sj7HVBHrCkAVKj5mLoeiYeD369bhkw895Ci1LFm1CqdfcQXeeOIJHOjpwfCu
+XY7FU/vy5Vh67bVY+rGPTRahtLRg3ooVGD9ypPKYRO6T5HIoGAb+Z9063PTQQ5gj9nP2qlVYdMUV
+2PnEE9jX04Mju3Y5LiAdy5dj2bXX4n2u/XStWIGs2A9X0wDS4Nh1bVgshkQqZcvBqVZZ6oMtcp8N
+bW0466qrcOGaNY4ggixqevPRR0ELhQrFn6Z583DZN7+JC7/0JRzavBlDfX0YHxiwBzHG0HH++Tjz
++uudvkXArjrduX49jPFxO2frus5n3HoryuPjGN26FZZhOBXGyQUL0LJ8Odq7uzF35coKcCxns9h9
+//3o/+UvbYCcmLAndQK0Lc4xt7sbHa6qwyM9PTiiFNHoAmPQoBg29KUDmiQgOqMbvdH93c0YdfO2
+7omBG9zcLN0NnAz+DkZuxSD3OKgCIK3CSokGmwx7L5Aq65CQAEjqCJZRgLJ2JikrXItFu0E7k8Gc
+0VFsee45fPy667Dyzjvx+6/+Ew6XOFoIQVvFwXJwTqYM5CqrJABYHJh/FsXoEIcxZCFn2p9vDgBJ
+9+/uVo84gNO6kjjzrGYY1IBlmThucbB3Mmg5P43ERByEFdA/1oCJN94AF5JmKousKZ8rWBx3tTw4
+foMB4OtUprrWl7lC7tEeUq14p5zPg1CK7OHDeHLt2gqgjKdSOG/NGpwnzFSrLYe2bcPBLVumVKjK
+kKsMZ2YOH8bja9dWAGU8lcIFa9Y4pq3Vlv5t23BgyxbnPnTOq6h6ledALhfceisuiGCVpS7FbBbP
+fvWryA0MAJaFg88+i06XWkgslcKiVauwaNWqqtsqZ7PYfvvtmNi9G1apBMqYXZyjLE1LlmBFgCOM
+uoz29WHnt7+NsT17HOcWM5937NbaP/xhdHR3oyOdtsO8vb0AgI50GnPTaczp7sZgTw8GlcINnYEx
+CPx0w1ukju+RKgAaxCS9wrREg6G6/3ZX0VoegMt8wIx7sEZ1rIOLSco6C+oTZq2mSkR8ftaLjQVF
+HnTuqbDgWq/FqDWxSkTxhyX61IqZDPKjoxh//nkcW7kSl3z2H/HCAw/g6N49GDSBLqWylXMZeFV8
+7XxZJUdrO8El7Qz7hjlGj1iA6Q+SKkC6G4gNAHMXxHD1mQ2IJQybcSl9Y6y5DakVV8LKFFFKtmDb
+9tfQcvQosseP29Je+byjIBM5JylZpGBXFURQ9mBKebmA9S3RG+iArLK++/hIQNgcuRxACDKHDuG/
+brwRl6xbhw/cfLPD3oIAZNsDD+Cln/8cptSclU39ktWKQq9SLmdft0OH8J833ogr1q3DCs39FLJZ
+vPjAA3hR7Md0hb1lQVlZsdeqxzLY14c/3nEHJgYHwUXv6s6f/Qz9f/gDzvvCF3BaOl3BEqst2b17
+8fp3voPR7dthCiszkzFbKnFgAMmurlDHduS553DgkUcwtHmzXaCTy9lOMCK3K/Vw53Z3oz2dxju9
+vXhHAcMO0YYwL50GB3DYwwy5XgvRDOXxEAAJj/RCEGgGhVpN+BeiBP0MGtR1jg/wlrtUdWTdoVZS
+JU9pemzHDzy9wq7VgNKvPxVV8psI2M50hE7D5CLrBpJOXqtUssN1Y2PIHz2KOa2t+ONTT+GG1atx
+3Q9+iA03XI8DJY4z4gSzzMmCHS4AkIM4zLECJCtYJUeCEpzRQXBOFwPGOMaOcWQzHIXC1JmWBGMG
+IBkDZs0lmN3J0NoZA2MMGQsoWRZgAYTa26cA5lz/96Dg4CWO/RkO87XXUBwaQn501AZJMfAQV24n
+1CIBslDAYF8fDm/divkXX4wdGzbYg6ZsMfEDYbWyOJ931h/etcteX2GjQVqyktWiXJ7MgQh2+fx9
+92HHhg1YdsMNFblKFRgHhOP33qefxviRIyhNTMBSwntQwEvmQJ2HV+Qqn7vvPmzfsAHn3HBDRa5S
+3c+hvj7s7+nB7qefRlbspyyKUbi6HyXP+ubvfofzPvMZJJqbI9/i/Rs3YtcvfoFDmzbZzEzYixHO
+QWIxZHbtwgtf+xoSDQ1YeM016Eqn0bJ0KZoVIXe5DG/ciCM9Peh//HGUx8dRGh+3r7Uw0AaA17/3
+PSxes2aqx6TSslHOZJDZvRvH3nwTR198EYWREbswp1Cw1Y2kIIWYLFmcozOdRocAyL716/EPYnul
+bBa7H3wQL95xB85fvx7z0mm0d3fjnSpuD7xGkAzzvu5nSEBuslpolmoAKQkA1yCwdE8OvEKUfsfq
+Lrhh8C7GUfOapgfzdIdhAb3+Sj+g9wNQopmzJiGAuB7sNRKhubcOxyIrAVkigURzM1JdXWhZuBDW
+woU493Ofw7KlS/G/X/kKtvz0J2ihwGVx28KHUIDaloS2lR4jznuEiher/JmnwAgjmE2BJvEeKGBx
+IJezS2YzY/bZaG4hiMeBxiaChpTYLgg4p4BFkbUoyhYDLArCKYhF0XTxR9F02cdAqIHMrA789sUd
+6HjlFYwdPIjMwADyo6N2yFUWfURt6lfMjqXNFGT7g1DZUdtMfM95PA4mDJOllZUp+larre854Ck2
+UbIdwkgkwMSLxmKOh6Szrmna7RmlEkpykJbHL5icGnaVxTGg1LbYisXsNgqxDyORAIvFQKSHpJzV
+m6bDdsvKfqSij6lKBIrjNxIJxISHpSGOnyjVo8wVXVDNxFPz5yORSmHkjTdsJxYBPmahAF4sgpom
+KOeIMYZYPG6LBIjrwEQVLpc9pGpYW7bFSHUhRcmIMAYSj4M1NIAmk2DxuH28QhvWUQuSrFkJ15vC
+tssS58MSIXdLXnvOHQB8+e67MdDTg89yjgcJwdwLL8S1zz6Lf29uRld3Ny646y4M9PbiZdFjxiMO
+RjwEuFVjjVwjdKsDvEQzR6n7XlALhA7DrAYIOgVUas0FUL3y1fSJuAUxSSBYRJ0HMGbuMUHQtfri
+GvdblFDviWOSCqvh5TLMfN4OuY6MoKWpCRsffRRnfOMbuOpb38S+3z6JkbcO4uUix/lxAsOSbEJW
+ncpCk0lWSVyskgIoixCtqTBNUKCxmYBSoGWWGIMpQJn9nqRIhHJQYgF0srkb4CAcSCz7EFKXXg1C
+OMrxOHoPDmL2W28hf/QoCseOoTw+DqseLNIVppZMXPYIStf7ICYp1wPnQLlsry+YmaUZDq4Iv0hG
+yTlMmdMToMREM70bvCzTdI5Xhj4tAY6ycMaz+lYM9GXxfc1SCaxQQDkWs9tKPPYjBQq47J2UIKwI
+OsiJhlUuoyzOh1ku260ShgGDUrsRH5OC2xbsXjwJkATA6MiIfV5lzle0dRgCIA3LmhSJL5XslpV8
+HmXDgGUYKDNmg6QisKBOKGSbiKlOYkwTVFjOkWLRBkjpMalYf1lCbMISEwcuekqde0YqNbkmJxaA
+w729OKQwxM+Ka/7M6tW24H9PD+aJgh6rBtZYLbzIfQDCC1QtF5OqNtCFyV36gXhQlavf/6oBJQLA
+k4c4n+qkQc1HunOeblCyPEKxBFNdUnQk7dTr4r42fpWxROO667LPWkKvkcKtqBNIyhJ/s1hEKZtF
+fnQURjKJeQ0N+PWGDfj0bbfhU488gv/48ErkLWBnkeMDAigtVKo6WNzWciVeYVdIH2eOGLeZYUUD
+LHcV/whArejDpByEWDDo5Aljs+ej+eobQQgHGMUOM4HCjm1IDg0hMzKCQiZjMwlFPLu2U6Zog5rm
+ZCO9oqWqU7gDwAY0BSTlujqFRVNCQJKtCPCxTBOkVEJZmgK7QoBOAZIES9ex+50nZ/A2TQeQLbEf
+ByBd+3GKceSxeexHzX1yAGURRqaUglIKJl1PXDNwT8cJzm3vRcsCM01Q0wSzLFDX5ENOElAsOueI
+UAouQN65LhLY5PkSlcmW0vIjJ08oFBwlI0gFIPV8yvMhz4O8JyUwusTd3dWQcvk3xnDJd7+LJbfc
+gj2PPVYxGNVbip6EGPiihFvD5CyDwrJRQqq61bG6oEl8Jhg8gC2rhT7U47q7tWsJqhfyeIGfuj7V
+PE4dsOJVwI/UASgjVbfWTRFBYTZlmZtMJBBLJpF880386vHHcdPf/g2u+8lP8PQXv4iyBewtciyN
+EzBrsuFfgpsFBShdrJLBDq9yNwhyD8UIkcskoopWXgnCOOLERIly0NldaPzEWlDCQQiwJ9aK3Vte
+RtfQEMaGhurOIivyS0LXlLsavOX/SUAvpd/63Gd9rnOjuCpFHYUbSiv1WjGpU1oRDnTJnVWbKHAZ
+iRB9l/YTSJ3wr3s/Fdqxqrar6/gJAFYuI2aaiFHqaJ3CNZNWQ6yqSkkMQEw6qMjCLr/vJ49LRFOk
+2LnD/pT8a8XL9R24bOeRYulQJPLcYTblPFhetmA+A9D8dBrzurudwhzLsrD1nnuwevdutF98MVhj
+I+an0zjU2zstOaFa8k1ePX1R2S3RAFCiEZrVZYtBTNXdoqXbs+jHwqv1R8LFRv2k7aqFU4M+Qzwm
+aNUmALVcV9S47olhkmrORWklkHJmLYzB2roVz8yZg4986hZcuvNV9D3wc5gc2FvgWBQjaMRU3OHg
+ACdTbipp5Dz54qCcTJVO4pXVsfbPSVbJGZA46zwkrrwZhMYAwvFWfBae+uPzOOeddzDW34/xwUHk
+jx2ze81EMU0trR9+YHSi1g8K80wpAVcHdMsKnZMAvPvBPJmlUnijA+x+A1sMQFzoozIxeas2SElt
+Vam8pMrDkYBcDRQAhAtAw7ozeG1DNyekk3Pp7+lBVzqN+d3d6Ff6Icv5PLbdcw8u+ed/xsCmTeDi
+s7Xe5X5VrLyG7elsg4Q4rmrHCegX5ETJbYYN8YYJY3MNJu0l6uBXTes+T5bmhKcaeOn0ZE5HoU/Y
+SRr7K2B9LcbLxGNGroZg5ay+ORbDoYMHMZRI4LLVt4IMD2LstVfBOJCx7Fl+E7GZJCUKABKAgoCR
+yUrVMrEvUqPrcwTEY93K7dmDIgEhADtvJRIXfRKU2eGxA7E5+NUz23DO8DByAwOYcFe0qsUhp9Ar
+St5GZwAKO3PjGmGuMDklogBaHLaHaCNsFSW3X6dbx1KCYiOAJrGu9E4kGg+3nwRYkExYmJcOOIc5
+35kDB9CyeDHmp9NoXrwYW+++GxnheBBraQGhFAsEi3zTxzlhOhZyAtYNuqa6965fwQkP+LsaI/MT
+JdfJDfrtgyNY4CGIFSPkGBN20gBEE3aodmxAfUyb1ZdR7xueq2FXwSil7uY8AG8/9RR+0d+PW+79
+Pto/dBFe+cbXYOYKyJocBQuYw2xWOZUFEicUm4TtA0lFeHYSAO0QrXzPndN04vGtCcRuPhcWWWm/
+w4Gd1iw8/cx2rDh+HAUfgKylmvVkLtX6xjhOnpKFriqH+z2KqRZnNOABV81qE8o6xGfQ4hoDZVQ/
+P52wlg4z4BEG+beF28SCdNoGRFGks0CICxzq7UW/+MyJAsVa9qVbwFOtOCgoDKwTgoUm2LgjKzo5
+T53P8AAA5VXCzdTFHoMEBeQ2acA9H7bXUec61COnHXqd702HeIEiEM3iccRTKSRnz0bj3Llo7OxE
+fvZs7O3owOdWr0bxpRfxp3vuQvmtgyiVTBsEKdDECBoNpQVEtIhQChQZcIwC85UWEuJqJaHq/+Tv
+DQyxy+fD+MgiwGqFdeQSlI04/jCewp937sHybBaZ/n6Mi1aPQiZj98WJdo+6hVlP8GxcV5sz7Gw4
+zDruEI1u6FD9fhLoJDhS14MO199u1hhHdQHnMDN/XSDUBc6g8xG1PN5vWdDdjdNcsnT9PT1OGPZE
+ssETuf0wPZqkhs/oig14KfyEAUndSQF3pTu8+id1843TzZB134syeYyUC//+dCn8qE4KiQRiTU2I
+t7SgYfZsNHZ2It7VhY3FIj5+/fVY0dKMgz/9McY3b4Y1OoRiQXjwESBpEDQYtvmBBMo8tUGyg9mA
+Kvsqqfq7AEpCbHA0Lu1A7Iou0NYkiMFgDn8QA8XF+O99x9HYfxin5XIYHxzExJEjyB09avdCympW
+aVA7g1kkiTio+oFcVMAMM9AHHaMKdEyAHA0YmAxUyg/GgKpu6mG/S1QGGYUt8jo95LWwspkGlvU6
+jij/1xH6hgbT9APJKIVAfqwyKELCI4R2wwIcDzHO6G47bD/pzAZJD0YpTWGTbW1o6uxEQ3s7Xucc
+pYULccsnPo5Y33aM/N/joP27YB47juLBkjDctXseYwyIGcAYIzAFQM5hlaIEZLJqHsbZzTDe3wpj
+RRvorARozAAYQ/b42dg4sBwv7dyHFYUCjGPHkBseRn5kBHlVn1Vt95jhYVZdMeJab3yEAE83Y7N8
+9u02tJW5RNU7z2/wUcOo6sutgenVjM4jPJw6xrZhgPFEzYanG0DJKfA81INdhgFHnRCtbrhVl1UG
+jQe67C5MgV498rRBkZh6TDCjPkPkB9P9zEmgZMxWh0kmEWtqQrKtDcm2NjTMmQMyaxZ6x8bQtnQp
+/u6KyxHf9gIyL20FK70NHM8BhQzMQybMfA7FcgEWnQytphhBIwVYKwObZcBYlIRxegNiZ6dA2xIg
+cdtSiDKKCdKETW8vx8bXGBZls1gEYHxwEDkhFlDMZOwqVqGCcqoApF8IU3cQjqK2ERYIvEBSDTOp
+4Ka+3MBGMNXMVgIl0fyuYR56O+18DAAABbpJREFU3XBqmFBqvVjiqZcdn5lAWevnooBkmNBs1Hyl
+12RU97mPAlA664RhnbrP5nSzyekHSQUopUcfk+HX5mbEW1qQnDULjR0dyCWT6B0awqzFi3HJsmV4
+3/ER0D/vQ37vHrvB3GCgBrMLdAwiHOYZEp0jSC4cAEtxUIMBBgMxJpvfR4xGPH9wNl54tR0dmQLO
+bWy0c46jozZACo9IR/PyFAPIKCCpO/BHCb/o3Jhud/VqFbnuXCTzANGwM9ZaZrFh1Un4ND28fIbc
+d9NdsBX0/U9EdWxYdlkLWOqEVIOqRP32r5MCCQt6JOIYwUPsM2qkqy5M8ocn6lkjxJb8YsxmlYkE
+jGQSRmMj4qkUErNmIdHaikRrK8yGBryRyWB/Po+GuXPx/s4OLGMEXbkJJLIZWMPvgBoMNCZYYoyB
+JTniHUeBZB6HUxzjLI5X+ss4cISBHpuDZU1taCfElpgbG0NBOHo47FHYXzlap6dYFauu/mNYdhQE
+MLo3nAps7spSr8FAgmLCBaJeE4Kw4aAorLDWMKqOWfHJuuO8JM+A6W3QnqkTzHqwz7A6srq5zKiK
+QFGMjevBGhHiOQ1bBBQ0Juk8czMPJD3Cr6oQtdHYaAtRC9CMNzcjlkoh1tSEPWNj2Hv8OIZKJSAe
+BxkeRt6y0NLSAkopOOfIjo+jtasLZc7RRilaOcfZra1oBVASbgul8XEUxsZQnphAKZezC3Oki4Ro
+8TiV2KPujD5sHlIXEKuxALUvkfqAovvzMRdb9GIdtVTFcY/Qb5QKXp2HkUd8MN9NIVTiA8DVqotJ
+nc8JmabvVU8AJSF+ryVEq3N8YdMVUaNOtYRVo1Td1sQk/+VkPJeSVYoQLDUMUOGEoTJMo6HB/j2Z
+BBM/qRDApobhCGBzxWFBuixIy6Cy9NbL51GSv4uiHJU5nqo9kFFvdB3g0bnxvIpoGIIbeKkLGI2A
+UJyOnU/UUE6Uhz0MGP4ld/juYJrT+dmwodlagdOPSSPC/axb1R4WQHXzl/V4Rqstxkm56xT9SiJF
+mqVxcz6P8sQEaDbrWEixeNx2cRA/ZcgWqsOCFAuX1kHCasoUvnqmtFQqlSZNaFWXincBQPqJEgc9
+CDphKFoFFFVRZXfoSmWRavWpqoZTLS8YpYBGJ1SjG2KKOnDMVJDUaZjXZXjvlSWsaEMturJBAgdh
+wrRBfZVE47nXTeN4RQ24xvar3ZthRAWm8zkzTurNr4pWS8eJchm8WAQpFGDKkKxkjvJvAZAVXn3S
+PUO4RFjSkkjYB8n3KlijIpv3bp4Bh7kZddif3/mS/1NbONSGfhoCCHXVbWoN+YT5m0QcRInmwDjT
+mNF7GRjr9ayFAcZqYOn13PIAUNP1tNRhl2HBKNDoPQBgo0heTpvA+Yx4EFxgyQkBKZdhKSFZ+ZKh
+WuenswnuMErHLkr11XN7G77LwFH3ZvbzwIPPLNTvYVHBUH2pFavUBUxmFdCqpl8aBIJh8oO1MEM+
+TQPreyEMCQ128m4Cy5PFXnkAE9RV7EEIQA0DlEEAyqv838/CiwQwXlLjpNSYUXeYahIrANABQgUc
+nYugGNFWAC4w1VKJv/cyQ17WO36fq3aTEoUNElTmHd3OKyroSVC04O1ZpzoKBOUOwzDBqO/XCwj5
+DL0HajneehbU1Ov88AjnAdMUpqslKqAb1g7jpRgl3xkW+KtFoILA0i8VRAIm+NyHeSKAmUZl+zOH
+SfqxS/Wn4qtHFJ++ylW45zbey2EjohEWUkGu0i2lsuGf+cxE3S4Y8AC/WsrD683yeMSBjJzE61bL
+dyPTtK+ZzNp4CEAIa7N0IiJCusfANdllmO8aBjiDAD5MLrQa0CGASeq2LkV5jo1T5olQDWX5X+oF
+w4ZG/JwxqlnMuBVvTB/2ZwUAoM7DeSIKX/hJXn+ms61348Jn+PbqcQxBhsy1AL3uBCIqKFUTRdAF
+UB12GWVCJJf/B0VP4WeilnHhAAAAAElFTkSuQmCC
+------MultipartBoundary--rSQrSAkks8oaSrGkAkhAZO3H9KF9lVhYSKLjvunZDe------

@@ -142,7 +142,7 @@
 <h2>Past Exams</h2>
 <h3>Midterms</h3>
 <ul>
-    <li><a href="css.csail.mit.edu/6.858/2018/quiz/q17-1-sol.pdf">2017</a> - TODO</li>
+    <li><a href="css.csail.mit.edu/6.858/2018/quiz/q17-1-sol.pdf">2017</a> - Google security, 2FA, Airbnb, buffer overflow, baggy bounds marking OOB, OKWS, SGX event attestation, verifying NaCl, Capsicum on FreeBSD, </li>
     <li><a href="css.csail.mit.edu/6.858/2018/quiz/q15-1-sol.pdf">2015</a> - TODO</li>
     <li><a href="css.csail.mit.edu/6.858/2018/quiz/q14-1-sol.pdf">2014</a> - TODO</li>
     <li><a href="css.csail.mit.edu/6.858/2018/quiz/q13-1-sol.pdf">2013</a> - TODO</li>
@@ -181,9 +181,43 @@
 <pre>
 <code>|---| DLLs | code | data | heap |-->      <---| stack | kernel |
 0                                                     3G       4G
-(first page is never mapped to catch NULL dereferences)
-</code>
+(first page is never mapped to catch NULL dereferences)</code>
 </pre>
+
+<h3>Struct layout</h3>
+Note that members are laid out in the order they are defined and each member is aligned to its own size.
+<pre>
+<code>struct student 
+{
+    int id1;
+    int id2;
+    char a;
+    char b;
+    float percentage;
+};
+
+size of structure in bytes : 16 
+Address of id1 = 675376768
+Address of id2 = 675376772
+Address of a = 675376776
+Address of b = 675376777
+Address of percentage = 675376780</code>
+</pre>
+
+<h3>System calls</h3>
+<pre>
+<code>man -k . | grep '(2)'</code>
+</pre>
+
+<h3>Capsicum reference</h3>
+<a href="capsicum.mhtml">man page</a>
+<ul>
+    <li><code>cap_enter()</code> - enter capability mode</li>
+    <li><code>pdfork()</code> - replace <code>fork()</code>, takes process descriptor instead of pid</li>
+    <li><code>pdwait()</code> - replace <code>wait()</code>, takes process descriptor instead of pid</li>
+    <li><code>pdkill()</code> - replace <code>kill()</code>, takes process descriptor instead of pid</li>
+    <li><code>fexecve()</code> - replace <code>execve()</code>, takes fd for executable</li>
+</ul>
 
 </div>
 </body>

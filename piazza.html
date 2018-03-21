@@ -77,6 +77,39 @@
 <p>A way to think about groups is that users are unique, but many users can be part of one group. A user cannot be part of more than one group. </p></div>
 <h2>Followup</h2>
 <div><p>Could you please go over Quiz 1 2012 Question 3?</p></div>
+<h3>Followup Response</h3>
+<div><p>I&#39;m also having trouble with the reasoning for the T/F answers to this question. Could someone explain the answers?  </p>
+<p></p>
+<p>1) It is safe to run all services with the same UID/GID. True</p>
+<div>
+<div>
+<div>
+<p>2) It is safe to run services without chroot. True</p>
+</div>
+</div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<p>3) It is safe to also give each service an open file descriptor for a per-service directory /cores/servicename. True</p>
+<p></p>
+<p>Also, what is 3) asking? </p>
+<p> </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+<h3>Followup Response</h3>
+<div><p>The insight behind these questions is that the capabilities enforce the security. For example, in 3), you can give each service an open file descriptor, but the process doesn&#39;t have the permission to access the directory, then the processor can&#39;t do anything with that descriptor. </p>
+<p></p>
+<p>It&#39;s important to think about this in terms of what is Unix like without Capsicum and what changes with Capsicum.</p></div>
+<h3>Followup Response</h3>
+<div><p>Can&#39;t process with the same UID kill each other though. So wouldn&#39;t 1) be dangerous and therefore false?</p></div>
+<h3>Followup Response</h3>
+<div><p>Sure it is not ideal, but does Capsicum claim to protect against that, i.e. is that part of the threat model?</p></div>
 <h2>Followup</h2>
 <div><p>capsicum: can we go over Q12 for 2015 quiz? The answer says &#34;No. Capsicum may make the application hard to exploit, but you were not required to say this.&#34; I am not sure what this means. </p></div>
 <h3>Followup Response</h3>
@@ -135,14 +168,107 @@
 <h3>Followup Response</h3>
 <div><p>Sure, but aren&#39;t those pointers only 8 bytes combined?</p></div>
 <h3>Followup Response</h3>
-<div><p>I kind of agree with that, but my guess is ... &#64;346.<br />I just saw that post and answered. </p></div><hr><h1>Quiz 1 2015, Question 8</h1>
+<div><p>I kind of agree with that, but my guess is ... &#64;346.<br />I just saw that post and answered. </p></div><hr><h1>2011 Problem 4 Baggy Bounds</h1>
+<h3>2018-03-21T04:53:33Z</h3>
+<div><p>Why does f take up 4 bytes? </p></div><hr><h1>Stack Canary Location</h1>
+<h3>2018-03-21T04:29:54Z</h3>
+<div><p>In the lecture notes, it says that the stack canary is placed before the ebp, but in the baggy bounds review notes and wikipedia, it says that the stack canary is placed before the return address. Which is correct?</p></div>
+<h2>Staff Answer</h2>
+<div><p>I&#39;m unsure either due to inconsistence I also found. Could be varied by compiler design or assembly calling convention? However, you don&#39;t have to worry much about that but the goal is it will always come before return to try to protect the return address (before ebp also mean before return but not immediately before). </p></div><hr><h1>Quiz 1 2012 Question 3</h1>
+<h3>2018-03-21T03:11:48Z</h3>
+<div><p>For 1) they say its true but if all processes run with the same UID/GID doesn&#39;t that allow the processes to kill each other which is dangerous.</p></div>
+<h2>Staff Answer</h2>
+<div><p>That can happen. Is that part of Capsicum&#39;s threat model or security goals?</p></div><hr><h1>NaCl -- why 2 sandbox?</h1>
+<h3>2018-03-21T03:11:07Z</h3>
+<div><p>What&#39;s the purpose of the outer sandbox?</p></div>
+<h2>Staff Answer</h2>
+<div><p>Intercepts system calls at the process boundary</p></div><hr><h1>Fall 2017 Baggy Bounds Question</h1>
+<h3>2018-03-21T02:23:26Z</h3>
+<div><p>I&#39;m still confused as to how we get 0x1001006C for the base? Isn&#39;t the base of the pointer 0x10203040? </p>
+<p></p>
+<p></p></div>
+<h2>Followup</h2>
+<div><p>im also still confused about this one. if someone could draw the whole stack, that would be very helpful. im specifically confused about where the other variables go on the stack, and if the bounds are baggy for the struct (rounded up to 32) or for the buffer (rounded up to 16) or both</p></div>
+<h3>Followup Response</h3>
+<div><p>Baggy bounds works on whole objects (i.e. the struct here); it won&#39;t pad buffers inside of structs, only the memory allocated for the struct itself.</p></div>
+<h3>Followup Response</h3>
+<div><p>thanks, this clears some things up. although, im still confused as to why it couldnt have been out of bounds above the buffer as well? like, if the buffer started at 0x..44 and N=23, then 0x..5a would be 3 bytes outside the bound, causing the oob to set. there must be a flaw in my logic given that this was not a solution, but i am not sure where.</p></div>
+<h3>Followup Response</h3>
+<div><span style="background-color:#fff">That’s because the address of allocated object is slot-aligned ( address % 16 = 0) </span><div><span style="background-color:#fff">So the address of buff can only be either 0x...50 or 0x...60<br /></span><div><span style="background-color:#fff"><br /></span></div><div><span style="background-color:#fff">For more detail please check last page of this quiz review note from yesterday <a href="http://css.csail.mit.edu/6.858/2018/reviews/baggy-buf.pdf">http://css.csail.mit.edu/6.858/2018/reviews/baggy-buf.pdf</a> </span></div></div><div><br /></div></div>
+<h3>Followup Response</h3>
+<div><p>ahh okay! that makes so much sense, thanks. i read the quiz review note but i found it more confusing than helpful tbh</p></div>
+<h3>Followup Response</h3>
+<div><p>also you mean the address of the struct, right?</p></div>
+<h3>Followup Response</h3>
+<div><p>Yes I mean the address of struct.<br />I now know why the note make you confused. It&#39;s actually my typo. I keep remembering that buff is p and p is buff. I just corrected the note and hope that it make more sense. :)</p>
+<p>Thank you. Good catch.</p></div>
+<h2>Student Answer</h2>
+<div><p>I think 0x10203040 is only for the first part (#6) not for #7.  </p>
+<p></p>
+<p>Re: the followup below, this was my impression of what the stack looks like.</p>
+<p><img src="https://d1b10bmlvqabco.cloudfront.net/attach/javuduq1qek22s/h6qi4cr213h2om/jf0htt6z8lhc/20180320_2251.jpg" alt="" width="284" height="181" /></p></div><hr><h1>2012 #1 Buffer Overflows</h1>
+<h3>2018-03-21T02:10:29Z</h3>
+<div><p>Here&#39;s the question setup from #1 in 2012 quiz: </p>
+<p></p>
+<p><img src="https://d1b10bmlvqabco.cloudfront.net/attach/javuduq1qek22s/h6qi4cr213h2om/jf0g5i1wpq20/Screen_Shot_20180320_at_10.05.09_PM.png" alt="" width="406" height="276" /></p>
+<p></p>
+<p>One of the true/false questions is: </p>
+<p><em>An adversary can prevent the program from printing “Hello world” on a system using Baggy bounds checking with slot_size=16. (Stack grows down.)</em></p>
+<p><em></em></p>
+<p>The correct answer is False, since both tmp and buf have 256 bytes allocated to them. My question is: <strong>if in the foo function, tmp was initialized to something smaller (i.e. char tmp[60]) would the question still be False?</strong>  I think it would, since bounds checker wouldn&#39;t let you access tmp[i] where i &gt; 64.  Is that correct? </p></div>
+<h2>Student Answer</h2>
+<div><p>You mean True? Because of the reason you just said -- it wouldn&#39;t let you access tmp[i] for i &gt; 64, so it crashes before printing &#34;Hello World&#34;.</p></div><hr><h1>Direction of writing to variables in the stack</h1>
+<h3>2018-03-21T01:59:24Z</h3>
+<div><p>So when the stack grows down, it goes from high addresses to lower memory addresses. But each individual variable is written from low to high; that&#39;s why we&#39;re able to overflow a return address using a local function variable. </p>
+<p></p>
+<p>When the stack grows up, how does writing to variables work (is it low to high like before) and can we still overflow a buffer in the same way?  </p></div>
+<h2>Staff Answer</h2>
+<div><p>In the first lecture, we discussed that you can still overflow other return address if the stack grows up.</p></div><hr><h1>Quiz 2014 Question IV, #8</h1>
+<h3>2018-03-21T01:26:40Z</h3>
+<div>I thought that Native Client instructions should be 32-byte aligned. Why are the instructions on this question not 32-byte aligned?</div>
+<h2>Followup</h2>
+<div><p>I think the condition is that they do not cross the 32-byte boundary. They do not all have to align there. You can also see why it doesn&#39;t matter if not all of them are aligned. We mainly want to ensure that indirect jumps get to a valid instruction. We just need those to be 32-byte aligned.</p></div>
+<h2>Staff Answer</h2>
+<div><p>The constraint is that no Native Client instruction can straddle a 32-byte boundary.</p>
+<p></p>
+<p>I think the concern was that if we make every instruction 32-byte aligned, we&#39;d have a large blow-up in size of the binary. For example, if we have a bunch of 2-byte instructions, then we would end up with 30 bytes of padding for each instruction. </p></div><hr><h1>Native Client (2014 Quiz Question IV, b)</h1>
+<h3>2018-03-21T01:20:08Z</h3>
+<div><p>The answer says &#34;The validator will complain about the jmp at 0x10020 with error “Bad indirect control transfer”; see Figure 3 in the NaCl paper.&#34; - why is this the case? It seems to be correct for me<br /><br />Here&#39;s the link for the exam: https://css.csail.mit.edu/6.858/2018/quiz/q14-1-sol.pdf</p></div>
+<h2>Staff Answer</h2>
+<div><p></p><pre>1001d: 83 e0 e0      and $0xffffffe0,%eax<br />10020: ff e0         jmp *%eax</pre>
+<p></p>
+<p>1. This is actually the special nacljmp instruction. (We know this because there should be no direct jumps in the binary. )</p>
+<p>2. The validator will treat the nacljmp as a single instruction, and one of the rules is that no instruction can straddle the boundary of a 32-byte block. To the validator, the single nacljmp instruction is violating that rule</p></div><hr><h1>Baggy Bounds: Slots &amp; Tables</h1>
+<h3>2018-03-21T00:47:47Z</h3>
+<div><p>I think I understand the concepts of when arithmetic operations and dereferences succeed / mark OOB / crash. However, I am confused on how the bound table works. Let&#39;s take the example from class: p = malloc(25). Using baggy bounds&#39;s buddy allocation, we actually allocate 32 bytes for p (since that is the closest power of 2 that is greater than 25). Thus, in our bounds table, we want to store the log base 2 of this size (5). What I am confused about it why we store this in 2 slots. Also, as slot size is 16 in this example, it seems like we are using 32 bytes (2 slots) to store size information for p (which is also 32 bytes). Thus, our bounds table is taking up as much space as our object itself? (I know this must be wrong, I believe the paper says the table size is 1/slot_size, so would be 1/16 in this example, but I don&#39;t see how that is possible).</p>
+<p></p>
+<p>In addition, in the notes posted for baggy bounds quiz review, how do we go from the virtual mem address (which is also the bounds table??) to the bounds table?</p></div>
+<h2>Staff Answer</h2>
+<div>They use two table entries to store because they want to make fast look up O(1) from a given pointer.<div>In your example, we use only 2bytes (2 table entries) while object is about 32 bytes &gt;&gt; 2:32 = 1:16 </div><div>That’s how the paper claims that table size spend about (1/16) * allocated_size due to its 1:16 ratio -&gt;&gt; (1/16) * 100 ~ 6% space overhead.</div><div>Do you now see why that’s the case?</div><div><br /></div><div>In contrast, fat pointer keeping track of both start and end of bound in each pointer address will tripple the size of each pointer -&gt; not scalable.</div><div><br /></div><div>In section 3.1, they said that they preserve lower 1/16 of the address space for bound table.</div></div><hr><h1>2015 quiz 1 problem 7 (okws)</h1>
+<h3>2018-03-20T23:23:46Z</h3>
+<div><p>The solution starts off with saying each branch should have a separate token, but that&#39;s already given, right (it&#39;s not a change)? In addition, I don&#39;t really understand how the db proxy enforces that a branch only performs RPCs as users in the same branch (limit which records it can access, given the branch token?). Also, how do we transfer between branches without knowing tokens (is there a protected lookup that the proxy handles)? Finally, how is it that the branch can only give away money is compromised. Thanks!</p></div>
+<h2>Staff Answer</h2>
+<div><p>The problem states that a customer is associated with a branch, so it&#39;s ok to assume that the db proxy probably knows which branch a customer/username is associated with. The branch token is used as identification to the DB proxy since it&#39;s performing the RPC calls.</p>
+<p></p>
+<p>For the transfer, think about how transfer would happen if you had SetBalance instead of Transfer? Branch A would have to give Branch B its token to call SetBalance and Branch B would have to give Branch A its token to call SetBalance so that the right amount is transferred.</p>
+<p></p>
+<p>Since a branch only has its own token, it can only transfer non-negative money since the DB proxy checks to if the value is transfer amount is negative. Therefore, it can only give away money.</p>
+<p></p>
+<p>A branch with its own token should be enough. What else would you need?</p></div><hr><h1>Quiz 1 2015, Question 8</h1>
 <h3>2018-03-20T22:46:22Z</h3>
 <div><p>Strictly speaking, why is it necessary for <strong>auth</strong> to have read, write, and execute permission for /jail/authsvc/? Isn&#39;t execute permission enough to be able to access /jail/authsvc/sock? Same question for /jail/relaydsvc/ and /jail/mda/. (i.e. I thought the permissions for /jail/authsvc/, /jail/relaydsvc/, and /jail/mda/ should&#39;ve been 0110. Is there a reason this is incorrect?)</p>
 <p></p>
 <p>Why do user1 and user2 need to have have read, write, and execute permissions for /mail/user1/ and /mail/user2/ respectively? I didn&#39;t read about any processes running with userids &#34;user1&#34; and &#34;user2&#34;, so I don&#39;t see why we have to give &#34;user1&#34; and &#34;user2&#34; read, write, and execute permission to /mail/user1/ and /mail/user2/.</p></div>
 <h2>Followup</h2>
 <div><p>I also don&#39;t understand why relayd need to be able to read the queue and mda need to be able to read mail in the folders?</p>
-<p> </p></div><hr><h1>What is a namespace?</h1>
+<p> </p></div>
+<h3>Followup Response</h3>
+<div><p>Also confused about these permissions: </p>
+<ul><li>Why does mda need to read and execute user1 and user2? Isn&#39;t it enough to write mail to users&#39; inboxes? I would have thought that 0720 was enough for user1 and user2.</li></ul>
+<p></p>
+<p>I think relayd needs to be able to read a message off the queue and write a new message to the queue when it receives something from smtpd, but I&#39;m not sure why it needs to execute the queue. My guess is that since queue/ is a directory, relayd needs execute permissions in order to read/write to it.</p></div>
+<h2>Staff Answer</h2>
+<div>Not really, execute permissions in a dir allows ‘ls’ but that’s it! To read the socket you will need 500 or 700 to write </div><hr><h1>What is a namespace?</h1>
 <h3>2018-03-20T21:45:28Z</h3>
 <div><p>What do the OKWeb and Capsicum sections mean when they refer to &#34;global namespace&#34;? For example, the OKWeb notes say:</p>
 <pre>Overall, Unix is awkward at precisely-controlled isolation&#43;sharing:
@@ -162,7 +288,11 @@
 <h2>Staff Answer</h2>
 <div><p>Check <a href="https://css.csail.mit.edu/6.858/2018/reviews/baggy-buf.pdf" target="_blank">this</a> (last page) and see if my stack layout make sense to you. </p></div>
 <h2>Followup</h2>
-<div><p>Yes, thanks!</p></div><hr><h1>2015 Q1</h1>
+<div><p>Yes, thanks!</p></div>
+<h2>Followup</h2>
+<div><p>Not relevant to the quiz, but why does this make sense from an implementation standpoint. That means all structs have the potential to be overflown. But if they had simply just padded all arrays would that not have been a better approach?</p></div>
+<h3>Followup Response</h3>
+<div><p>What would be the overhead of padding all arrays?</p></div><hr><h1>2015 Q1</h1>
 <h3>2018-03-20T21:01:42Z</h3>
 <div><p>I&#39;m slightly confused regarding the distinction between address of x and x. </p>
 <p>My understanding is that Q1)1) should contain the address of name, given that the arg is a ptr to name. This is done when they talk of address of n in Q1)4). So in Q1)1), is it truly name that is stored there or the address of name?</p>
@@ -171,7 +301,13 @@
 <div><p>True that variable name is kind of confusing.<br />name = &#34;address&#34; of the string because if you look at the code </p>
 <pre>void http_serve(int fd, char *name) {}</pre>
 <p>Consider name, name&#43;30, name &#43;40...<br />The name is pointer to the string or &#34;address of the string&#34; right?</p>
-<p>in c when you *name it will be the string itself.</p></div><hr><h1>2017 Question 4</h1>
+<p>in c when you *name it will be the string itself.</p></div><hr><h1>2009 Question 9</h1>
+<h3>2018-03-20T20:56:06Z</h3>
+<div><p>Hi, can someone explain the answer to this question in more detail. Would the logging be done by a new service thats only created when some process needs to write to the log? Where will it get its permissions from?</p></div>
+<h2>Staff Answer</h2>
+<div><p>The logging would be down by the logging service except on-demand initiated by the setuid binary. The setuid binary should have logging service id to execute it and set it under the right permissions.</p>
+<p></p>
+<p>Why do you think the sa struct does that?</p></div><hr><h1>2017 Question 4</h1>
 <h3>2018-03-20T20:12:23Z</h3>
 <div><p>https://css.csail.mit.edu/6.858/2018/quiz/q17-1-sol.pdf</p>
 <p></p>
@@ -333,6 +469,8 @@
 <div><p>I wish there was a button for &#34;great question&#34;</p></div>
 <h3>Followup Response</h3>
 <div><p>I&#39;ll do that for you, so resolved!</p></div>
+<h3>Followup Response</h3>
+<div><p>there is a button for good question</p></div>
 <h2>Staff Answer</h2>
 <div><p>it&#39;s error when &gt; slotsize/2, so 9 bits will throw an error. <br />Section 2.4 in the paper mentioned that &#34;out-of-bounds pointer are at most slot_size/2 before or after the alocation&#34; <br /><br /></p></div>
 <h2>Followup</h2>
@@ -533,8 +671,17 @@ Remote attestation is used to verify that the enclave was initialized correctly.
 <div><p>Could you explain why the stack would be padded to 16 byte boundaries?</p></div>
 <h3>Followup Response</h3>
 <div><p>(student answerer) I am not sure. If one of the TA&#39;s can comment on the first question (about 16 x&#39;s) it would be great!</p></div>
+<h3>Followup Response</h3>
+<div><p>I *think* it&#39;s because in http_request_line (if you look at the lab code) there are 4 pointers initialized at the beginning of the function: </p>
+<p><tt> char *sp1, *sp2, *qp, *envp = env;</tt></p>
+<p></p>
+<p>Storing those pointers would create 16 additional bytes between the ebp and reqpath.  Though I&#39;m not sure how you would have realized that without opening up the lab code during the exam. </p></div>
 <h2>Staff Answer</h2>
-<div><p>I agree about the two pointers to env_len and env because even though you will place static variable in BSS section, you will need pointer refer to those address in the stack. <br /><br />Why 16 bytes not 8 bytes, I can&#39;t tell either. <br />My best guess is most time the compiler can do weird thing such as padding to make it cache align (for optimization purpose), reordering the local var on stack, etc. That&#39;s why we will always need gdb to observe the address rather than calculate everything by hand. This particular question doesn&#39;t require you to label these 16 bytes &lt;&lt; my guess is because it is hard to predict the compiler behavior. <br /><br />Most time, the quiz also gave you stack layout and its address to avoid having this issue. Still, you can assume that it is predictable as we do so far, but if it isn&#39;t they won&#39;t require you to label that.<br /><br /></p></div><hr><h1>Quiz 1 (2017), Question 8</h1>
+<div><p>I agree about the two pointers to env_len and env because even though you will place static variable in BSS section, you will need pointer refer to those address in the stack. <br /><br />Why 16 bytes not 8 bytes, I can&#39;t tell either. <br />My best guess is most time the compiler can do weird thing such as padding to make it cache align (for optimization purpose), reordering the local var on stack, etc. That&#39;s why we will always need gdb to observe the address rather than calculate everything by hand. This particular question doesn&#39;t require you to label these 16 bytes &lt;&lt; my guess is because it is hard to predict the compiler behavior. <br /><br />Most time, the quiz also gave you stack layout and its address to avoid having this issue. Still, you can assume that it is predictable as we do so far, but if it isn&#39;t they won&#39;t require you to label that.<br /><br /></p></div>
+<h2>Followup</h2>
+<div><p>Why did the adversary do len(shellcode) &#43; 8? If anything, shouldn&#39;t it be &#43;4, since the &#39;////&#39; is 4 bytes?</p></div>
+<h3>Followup Response</h3>
+<div><p>Before they reach return address they also have &#34;yyyy&#34;.</p></div><hr><h1>Quiz 1 (2017), Question 8</h1>
 <h3>2018-03-18T07:12:47Z</h3>
 <div><p>Why does zookd have to check the Content-Length header for every response sent by a service? Are we trying to prevent a compromised service from tricking a client into reading a response from the compromised service as a response from another service? For example, suppose a client requests something from service A and service B through one HTTP request pipeline.</p>
 <p></p>
@@ -2018,7 +2165,13 @@ to verify the upload.</pre>
 <h2>Staff Answer</h2>
 <div><p>Hope this make sense :)<br /><img src="https://d1b10bmlvqabco.cloudfront.net/attach/javuduq1qek22s/iebp5si0qx78q/jew51k66o4qa/29314749_10213829489425501_2329642698606116864_o.jpg" alt="" /></p></div>
 <h2>Followup</h2>
-<div><p>so is the slot on both sides of the buffer?</p></div><hr><h1>clarifying question about exercise 3</h1>
+<div><p>so is the slot on both sides of the buffer?</p></div>
+<h3>Followup Response</h3>
+<div><p>You only need to be concerned with the slot between 0x10010050 and 0x10010060 because the slot size is 16 bits, and 0x1001005a falls between those two addresses. Because the OOB bit is set and the program didn&#39;t produce an error, you know that the pointer is within half a slot from the allocated buffer. Therefore you know that the beginning of your buffer must start at 0x10010060.</p></div>
+<h3>Followup Response</h3>
+<div><p>is the 0xc the 3 other variables on the stack above the buffer?</p></div>
+<h3>Followup Response</h3>
+<div><p>p-&gt;d = p&#43; 0xC because the relative location of its is 0xC from the struct base location</p></div><hr><h1>clarifying question about exercise 3</h1>
 <h3>2018-03-01T21:39:10Z</h3>
 <div><p>In the first part of this, we are supposed to edit the launch_svc function in zookld.c, to implement the setresuid, setresgid, and setgroups system calls. There is skeleton code for where we are supposed to implement these calls. However, it asks us if we are supposed to set the uid before chroot or setting the groupid. Does this mean that the skeleton code is wrong? Are we supposed to move the order around? I&#39;m confused ...</p></div>
 <h2>Staff Answer</h2>

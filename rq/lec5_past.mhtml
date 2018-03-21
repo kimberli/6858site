@@ -1,0 +1,1473 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: http://css.csail.mit.edu/6.858/2018/questions.html?q=q-okws&lec=5
+Subject: 6.858 / Spring 2018 / Paper Reading Questions
+Date: Thu, 21 Mar 2018 07:18:00 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--64xsMoj15xsj6EEZLJbEB1SVCcFsikGy6tFmTnU075----"
+
+------MultipartBoundary--64xsMoj15xsj6EEZLJbEB1SVCcFsikGy6tFmTnU075----
+Content-Type: text/html
+Content-ID: <frame-35209-1d77ab5f-2bc6-498e-b464-80926263a74c@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://css.csail.mit.edu/6.858/2018/questions.html?q=q-okws&lec=5
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8">
+<title>
+6.858 / Spring 2018
+
+/ Paper Reading Questions
+
+</title>
+<meta http-equiv=3D"pragma" content=3D"no-cache">
+<link rel=3D"stylesheet" type=3D"text/css" href=3D"http://css.csail.mit.edu=
+/6.858/2018/style.css">
+
+
+
+</head>
+
+<body bgcolor=3D"#ffffff" text=3D"#000000">
+
+<table cols=3D"3" width=3D"100%" height=3D"100%" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0">
+<tbody>
+<!-- Header row -->
+<tr height=3D"40px">
+ <td colspan=3D"3">
+ <table width=3D"100%" height=3D"40px" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0">
+ <tbody>
+   <tr>
+    <td bgcolor=3D"#000000">
+      <div align=3D"left" style=3D"padding-left:58px; padding-top: 2px;">
+      <font style=3D"font-size: 28px; color: #ffffff">
+	<a name=3D"top">
+         <b>6.858</b>: Computer Systems Security
+	</a>
+      </font>
+      </div>
+    </td>
+
+    <td bgcolor=3D"#8a0a0a" halign=3D"center" valign=3D"center" width=3D"25=
+0px">
+     <div align=3D"center" style=3D"padding-top: 2px; padding-bottom: 4px;"=
+>
+     <font style=3D"font-size: 28px; color: #ffffff">
+      Spring <b>2018</b>
+     </font>
+     </div>
+    </td>
+  </tr>
+ </tbody>
+ </table>
+ </td>
+</tr>
+
+<!-- horiz line -->
+<tr>
+<td colspan=3D"3" height=3D"5px" bgcolor=3D"#8a0a0a">
+</td>
+</tr>
+
+<tr>
+<!-- Menu -->
+<td bgcolor=3D"#8a0a0a" valign=3D"top" width=3D"180px">
+ <table cols=3D"2" rows=3D"1" border=3D"0" cellspacing=3D"0" cellpadding=3D=
+"0" width=3D"100%" height=3D"100%">
+  <tbody>
+   <tr>
+   <td valign=3D"top">
+   <table cols=3D"1" rows=3D"1" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%">
+    <tbody>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/" class=3D"menuItem=
+">Home</a>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/general.html" class=
+=3D"menuItem">General information</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/schedule.html" clas=
+s=3D"menuItem">Schedule</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/reference.html" cla=
+ss=3D"menuItem">Reference materials</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"https://piazza.com/mit/spring2018/6858" class=3D"menuIt=
+em">Piazza discussion</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/handin.html" c=
+lass=3D"menuItem">Submission</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/quiz.html" class=3D=
+"menuItem">Quizzes</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a class=3D"menuItem">Labs</a><br>
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/lab1.html" cla=
+ss=3D"menuItem">1</a>
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/lab2.html" cla=
+ss=3D"menuItem">2</a>
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/lab3.html" cla=
+ss=3D"menuItem">3</a>
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/lab4.html" cla=
+ss=3D"menuItem">4</a>
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/lab5.html" cla=
+ss=3D"menuItem">5</a>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://ist.mit.edu/network/rules" class=3D"menuItem">MI=
+T network rules</a>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/projects.html" clas=
+s=3D"menuItem">Final projects</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2017/" class=3D"menuItem=
+">2017 class materials</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a rel=3D"license" href=3D"http://creativecommons.org/licenses/by/=
+3.0/us/"><img alt=3D"Creative Commons License" style=3D"border-width:0" src=
+=3D"http://css.csail.mit.edu/6.858/2018/cc-by.png"></a>
+      </div></td></tr>
+    </tbody>
+   </table>
+   </td>
+
+   <td width=3D"3px" bgcolor=3D"#8a0a0a">
+   </td>
+   </tr>
+  </tbody>
+ </table>
+</td>
+<!-- End Menu -->
+
+<td colspan=3D"2">
+
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" heig=
+ht=3D"100%">
+<tbody><tr><td style=3D"padding-left:10px; padding-right:10px; padding-top:=
+ 10px; padding-bottom: 10px" valign=3D"top" align=3D"left">
+
+
+<!-- Begin Page Content -->
+
+
+<!--
+    To add a new question, just put in within a <div> tag, give it
+    some identifier (i.e., 'id=3D"qXX"'), and then add it to the questions
+    array variable below.  To link directly to the question, just use a
+    link to 'questions.html?q=3DqXX'.
+ -->
+
+<h1>
+Paper Reading Questions
+</h1>
+
+<a name=3D"top"></a>
+<p>
+For each paper, your assignment is two-fold.  Before lecture:
+
+</p><ul>
+<li>Submit your answer for each lecture's paper question via the
+    <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/handin.html">submis=
+sion web site</a> in a file named
+    <code>lec<var>n</var>.txt</code>, and
+</li><li>Submit your own question about the paper (e.g., what you find most=
+ confusing about
+    the paper or the paper's general context/problem) in a file named
+    <code>sq<var>n</var>.txt</code>.
+    You cannot
+    use the question below.  To the extent possible, during lecture we will=
+ try to
+    answer these questions.  Below, we have included the questions we've re=
+ceived
+    from students in past years (when available), along with answers to tho=
+se
+    questions, in case you find it helpful.
+</li></ul>
+
+<p id=3D"submit-links" style=3D"visibility: visible; position: static;">
+    Once you submit your own question and answer (or after the deadline
+    has passed), you can view the
+    <a href=3D"https://6858.csail.mit.edu/lec-questions/5" id=3D"question-v=
+iew-link">questions</a>
+    and
+    <a href=3D"https://6858.csail.mit.edu/lec-answers/5" id=3D"answer-view-=
+link">answers</a>
+    that other students submitted.
+</p>
+
+<p></p>
+
+<div id=3D"questions">
+
+ =20
+
+ =20
+
+ =20
+
+  <div id=3D"q-okws" class=3D"questionbox"><p><b>Lecture 5</b></p>
+    <p>
+    What's the worst that could happen if one service in OKWS were to leak
+    its 20-byte database proxy authentication token?
+  </p></div>
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+</div>
+
+<style>
+  div.responsebox {
+    margin: 1pc 4% 0pc 4%;
+    padding: 0.5pc 0.5pc 0.5pc 0.5pc;
+    background-color: #e0e0ff;
+    border: 1px dashed red;
+  }
+
+  pre.responsepre {
+    white-space: pre-wrap;
+  }
+</style>
+
+<div id=3D"responses">
+
+  <div class=3D"lecture-responses">
+    <h2>Questions and answers for lecture 5 from past years</h2>
+
+      <div class=3D"responsebox"><pre class=3D"responsepre">There's a singl=
+e thread that runs a main event handling loop, which is
+an infinite loop that waits for events, and for each incoming event,
+runs a callback.  When the application programmers register an event
+with this loop, they must provide a callback that will be executed
+when the event fires.
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 6:12 PM, Anonymous wrote:
+&gt; Could you elaborate on how async events are handled in terms of how th=
+ey are executed (handed off to threads?) ?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">On Fri, Feb 24,=
+ 2017 at 3:23 PM, Anonymous wrote:
+&gt; One of the primary advantages of OKWS (aside from its security guarant=
+ees)
+&gt; is its better performance over other web servers, though this is likel=
+y
+&gt; due in part due to being written in performance-oriented C++.
+&gt; If the designers were to allow a higher-level interface in the future =
+to
+&gt; make development easier, would performance take a toll?
+
+Probably not a huge amount, though I'm not exactly sure what
+higher-level interface you are thinking of.  I believe later versions
+of OKWS supported Python for services, which worked OK.
+
+&gt; And if so, how much
+&gt; performance loss would be acceptable as a trade-off for the easier to =
+use
+&gt; interface?
+
+I don't think there's any general answer to such questions.
+
+Nickolai.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">They don't allo=
+w it, and it's probably a good thing for services.  If
+a service needs to store some data persistently, it should really go
+into a database.  Otherwise, if the web front-end machine crashes,
+that data might be lost.
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 9:13 PM, Anonymous wrote:
+&gt; How does the OKWS service keep such low access to the file system when=
+ it reaches custom code? What if custom code needs to access the file syste=
+m?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Probably there =
+isn't a single answer but:
+
+- Security-conscious web applications do adopt some ideas that you see
+in the OKWS paper.  For example, in the Google design we saw earlier
+in this class, they also split up services into isolated components,
+have a separate front-end (GFE) that looks a lot like okd, etc.
+
+- The kinds of bugs people worry about have changed -- buffer
+overflows and server-side bugs are less of a concern (with safe
+languages and good libraries to avoid SQL injection, etc), and more
+bugs are now happening in the client-side web browser.
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 3:16 PM, Anonymous wrote:
+&gt; Since OKWS, it seems like the trend for webservers has actually been i=
+n the opposite direction. Instead of a server that runs modules and scripts=
+, much less the ultra-modular design of OKWS, most webservers today are sin=
+gle large programs in the Django or Ruby on Rails style. Why is that, and a=
+re these modern designs even less secure?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">The point isn't=
+ the security of the software of the web server itself,
+but rather bugs in the application code.  Even if the web server
+(Apache, nginx, OKWS) was perfectly secure, the question is, what to
+do with the bugs in application code?  Apache doesn't have any real
+story there -- it just runs all application code together, under the
+same UID.
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 8:51 PM, Anonymous wrote:
+&gt; Has Apache gotten to a place where it is secure enough that some of th=
+ese points are moot? Or should everyone using it consider more secure optio=
+ns if not OKWS specifically?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Indeed, chroot =
+should be safe if the process is not running as root,
+and cannot run any setuid binaries to become root.
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 11:28 AM, Anonymous wrote:
+&gt; I have heard people say in the past that using a chroot is not always =
+the best security mechanism (https://lwn.net/Articles/252794/) due to possi=
+bilities of escaping it and returning to the main filesystem. However, do t=
+hese worries go away since all of the OKWS programs within a chroot jail ar=
+e unpriveledged to begin with?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Max Krohn, the =
+author of this paper, was the founder of okcupid.com,
+and wrote OKWS to solve real technical problems they had (their site
+wasn't performing well, they wanted to hire more developers that
+weren't security experts, and they were worried about security as a
+result).  So there's only one person in this story, not multiple. :-)
+
+Nickolai.
+
+On Sat, Feb 25, 2017 at 3:32 PM, Anonymous wrote:
+&gt; I found it really interesting that they actually tested this system wi=
+th a major website (okcupid.com). Was the first version of this website wri=
+tten with OKWS, or was this an update/rewrite. How did this investors/found=
+ers of the site trust a new system like OKWS?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">OkCupid seems t=
+o be pretty successful, and is still using OKWS..
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 8:19 PM, Anonymous wrote:
+&gt; Paper: OKWS
+&gt;
+&gt; My Question: Is this actually realistic? I feel like in their tests th=
+ey put a lot of
+&gt; unrealistic conditions on the system like that there is no network con=
+gestion or there
+&gt; are only 1 million rows in the database so it can all be held in memor=
+y.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Google's design=
+, which admittedly was described at a very high level
+in the paper we read, seems to have elements of similar separation for
+security.
+
+Today, the equivalent design might be to spin up a separate VM or
+Docker container per service, and use an HTTP load-balancer in place
+of okd.
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 2:50 PM, Anonymous wrote:
+&gt; Are there any popular, modern web frameworks that provide this kind of=
+ separation of
+&gt; privileges security? Although this is claimed to be an effective desig=
+n, I don't
+&gt; really know of many or any frameworks that support security design in =
+this way.
+&gt; Is there a reason for this? I suppose this may be too big of a problem=
+ to build
+&gt; into a framework, but I don't know of much support for building system=
+s like this
+&gt; in general.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">This is one of =
+the few papers that clearly describes the end-to-end
+plan of how to privilege-separate a real, complex service.
+
+There's papers that give out broad advice and describe mechanisms you
+can use for privilege separation, but there aren't many papers that
+actually do something useful (i.e., build a real-world system).
+
+If you have pointers to more recent papers, I'd love to take a look;
+the OKWS paper is certainly getting a bit dated..
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 9:05 PM, Anonymous wrote:
+&gt; Is this paper considered to be particularly innovative, or is it more =
+of a survey/consolidation
+&gt; paper? Everything it suggests seems like straightforward common sense.=
+ Admittedly, the paper is 15
+&gt; years old, but nothing really surprised me. It's a good consolidation =
+of recommendations, though,
+&gt; and a historical look at the problems considered to be low-hanging fru=
+it in 2004 (whereas now we
+&gt; worry about Javascript vulnerabilities, etc.).
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">/etc/passwd isn=
+'t super sensitive: it doesn't actually contain
+passwords, but rather just a list of users, and their information
+(like UIDs, home directories, etc) that other users might need to
+know.
+
+The execute permissions on a binary control who can execute it; that
+applies equally to setuid and non-setuid executables.
+
+Nickolai.
+
+On Fri, Feb 24, 2017 at 5:17 PM, Anonymous wrote:
+&gt; Why does UNIX make sensitive files like /etc/passwd accessible to user=
+s? Also when is a process allowed to execute a setuid executable? What priv=
+ilege must that process have?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">For example, on=
+ my machine, /usr/bin/sudo is setuid (the "s" in
+"rws"), and is owned by root, but allows any user to execute it (the
+"r-x" part):
+
+nickolai@saguaro:~/proj/fscq/src$ ls -l /usr/bin/sudo
+-rwsr-xr-x 1 root root 136808 Aug 15  2016 /usr/bin/sudo
+nickolai@saguaro:~/proj/fscq/src$
+
+Nickolai.
+
+On Fri, Feb 24, 2017 at 5:37 PM, Anonymous wrote:
+&gt; But if I am a normal unprivileged user and I want to move my privilege=
+ level
+&gt; to that of a superuser, then how can I execute a setuid executable if =
+it
+&gt; belongs to the superuser? If I can't execute it then how can I become =
+a
+&gt; superuser? How does it work?
+&gt;
+&gt; On Fri, Feb 24, 2017 at 5:22 PM, Nickolai Zeldovich &lt;nickolai@csail=
+.mit.edu&gt;
+&gt; wrote:
+&gt;&gt;
+&gt;&gt; /etc/passwd isn't super sensitive: it doesn't actually contain
+&gt;&gt; passwords, but rather just a list of users, and their information
+&gt;&gt; (like UIDs, home directories, etc) that other users might need to
+&gt;&gt; know.
+&gt;&gt;
+&gt;&gt; The execute permissions on a binary control who can execute it; th=
+at
+&gt;&gt; applies equally to setuid and non-setuid executables.
+&gt;&gt;
+&gt;&gt; Nickolai.
+&gt;&gt;
+&gt;&gt; On Fri, Feb 24, 2017 at 5:17 PM, Anonymous wrote:
+&gt;&gt; &gt; Why does UNIX make sensitive files like /etc/passwd accessibl=
+e to users?
+&gt;&gt; &gt; Also when is a process allowed to execute a setuid executable=
+? What
+&gt;&gt; &gt; privilege must that process have?
+&gt;
+&gt;
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Indeed, the des=
+ign doesn't have anything to say about vulnerabilities
+that involve the user's web browser.  (OKWS was designed before
+client-side Javascript code became widely used.)  We'll talk more
+about browser-based vulnerabilities in a month or two in this class.
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 8:07 PM, Anonymous wrote:
+&gt; I am wondering how well OKWS could secure successfully web services. B=
+ased on CVE search, there are couple of Cross-Site Scripting vulnerabilitie=
+s found in the past.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Pretty much the=
+ same kinds of bugs that lab 1 deals with, such as
+buffer overflows.  The adversary would find and exploit these bugs
+exactly the same way that you're doing it for lab 1.
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 8:31 AM, Anonymous wrote:
+&gt; Q: The paper notes that the four design principles (detailed in 3.1) c=
+oupled with the lack of critical kernel bugs serves the basis of a secure s=
+ystem. My question is, what sort of kernal bugs could an adversary possibly=
+ exploit and how would an adversary even find out about these kernel bugs?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">okd doesn't hav=
+e access to the log file, by how the UIDs and file
+permissions are set up.
+
+But it can send log messages to oklogd, which will log them.  So it
+can send arbitrary data, which will be written to the log, which is
+what the paper means by noise.
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 9:19 PM, Anonymous wrote:
+&gt; The paper mentions that "a compromised okd or Web service cannot malic=
+iously overwrite or truncate log files; it would only have the ability to f=
+ill them with =E2=80=9Cnoise.=E2=80=9D" What exactly does it mean to fill t=
+he log entries with 'noise', and why can't a malicious okd purposefully ove=
+rwrite log entries?
+&gt;
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">At the time, an=
+d for their application, they were more concerned about
+preventing attackers from stealing private data from OkCupid users,
+than dealing with DoS attacks.
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 5:48 PM, Anonymous wrote:
+&gt; My own question: How exactly does this prevent denial of service? Or d=
+oes it not?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">On Sun, Feb 26,=
+ 2017 at 9:17 PM, Anonymous wrote:
+&gt; 1 - If a service was comprimised can't it make a super powerful
+&gt; *phishing attack* if we may call it to comprimise the user. I mean the=
+ paper is claming that for instance, that if the server responsible for my =
+inbox was comprimised, my search history won't be. But what if my inbox ser=
+ver asked me for my password again and then the attacker used that password=
+ to gain access for the whole account?
+
+Indeed, OKWS doesn't try to address attacks that involve the user or
+the user's web browser.  It's really focused on bugs in service code.
+
+&gt; 2 - To avoid leaking of the 20-byte password ... why don't the servers=
+ change their passwords from time to time?
+
+The administrator certainly could change this token periodically,
+though it's not clear why that would help.  If an adversary obtains a
+token, they will probably use it right away to gain access to as much
+data as possible..
+
+Nickolai.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">On Sun, Feb 26,=
+ 2017 at 3:07 PM, Anonymous wrote:
+&gt; One of the argument in this paper for having per service isolation rat=
+her than per user isolation is sharing among users. Is user level sharing a=
+ctually important in modern applications?
+
+It depends on what applications you're talking about.  Your own
+web-based email or text editor, probably not.  Piazza, facebook,
+websis, shared calendars, discussion forums -- absolutely yes.
+
+Nickolai.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">The graph is a =
+bit of a messy section in this paper.
+
+The process-per-service model works well for their specific
+application, OkCupid.
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 8:54 PM, Anonymous wrote:
+&gt; Graeme Campbell
+&gt; Personal Question: Lecture 5
+&gt;
+&gt; I wasn't entirely clear about how the dependency graph corresponded to=
+ requirements on
+&gt; isolation imposed by the system. The paper seemed to go into some deta=
+il about how to ensure
+&gt; processes can't compromise each other and then seemed to drop it to go=
+ with the one process
+&gt; per service model. Did the discussion actually justify one-process-per=
+-service more than I thought?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">The database pr=
+oxy is written once by Max Krohn, who is careful.  The
+services are written by many less-careful developers, but even if they
+are buggy, it's not the end of the world.
+
+The alternative design, which OKWS was trying to avoid, is having to
+require all services be written by a careful developer like Max Krohn.
+:-)
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 7:36 PM, Anonymous wrote:
+&gt; This system appears to have a relatively obvious weak point: the datab=
+ase proxy. The database proxy appears to have access to all of the valuable=
+ data from all of the various services (as it is shown that a single databa=
+se proxy servies many different services in Figure 1)with little effort tak=
+en to ensure that vulnerabilties within the database proxy do not metasize.=
+ This has not so much eliminated the vunerablities as simply moved them aro=
+und. Am I missing something here? What steps are taken to secure the databa=
+se proxy from an outside attacker or a compromised application?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">The paper says =
+different machines (I don't see "physical" in the
+paper), by which I suspect they mean VMs as well as physical machines.
+
+Nickolai.
+
+On Sat, Feb 25, 2017 at 6:11 PM, Anonymous wrote:
+&gt; Lec. 5 Student Question
+&gt;
+&gt; The paper states that there are few practical isolation schemes aside =
+from running
+&gt; different services on physically separate machines, however Google see=
+med to use VMs
+&gt; to achieve this isolation, so would VMs not be applicable?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">On Sat, Feb 25,=
+ 2017 at 4:19 PM, Anonymous wrote:
+&gt; What exactly are jail directories? How do they ensure isolation of pro=
+grams running within their "jails"?
+
+The goal of the jail is to prevent a process from accessing any files
+on the system, which might otherwise be world-readable or
+world-executable.  Without the jail directory, a process can just open
+or execute any world-readable / world-executable file on the system.
+The jail directories, together with the Unix chroot mechanism, ensure
+that the process in question can only access files inside the jail
+directory.
+
+&gt; Also, since the okld still has high-access privileges and since it has=
+ the singular power to start/stop processes, doesn't this create a single p=
+oint of failure? Does this system tradeoff security for potential availabil=
+ity?
+
+I think pretty much any server has a similar launching process.  Unix
+itself has the init process (PID 1) that is in charge of starting all
+other services, and restarting them if they die.  Apache has a master
+process that launches other workers.  Same with nginx.
+
+Nickolai.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I think it help=
+s a lot, because it eliminates the possibility of SQL
+injection attacks where a service developer accidentally concatenates
+some input into a SQL query without proper escaping.
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 8:46 PM, Anonymous wrote:
+&gt; How much does restricting services=E2=80=99 database access to the RPC=
+ protocol description instead of generic SQL-client access actually help se=
+curity? It seems like within a reasonable RPC protocol description, there i=
+s still enough leeway to access a lot of data.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">At the time, th=
+ere weren't any serious alternatives.  If you were to
+repeat a similar design now, you would probably use Go or Rust.
+
+Nickolai.
+
+On Sat, Feb 25, 2017 at 4:46 PM, Anonymous wrote:
+&gt; Why did the author choose C++ as the language to implement OKWS in, gi=
+ven the shortcomings they pointed out in 6.2?
+&gt;
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">The database pr=
+oxy restricts the kinds of queries that can be issued
+based on the token.
+
+6.033 recitations are great at helping to figure out how to read
+systems papers, if you haven't done 6.033 yet.
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 8:28 PM, Anonymous wrote:
+&gt; If the adversary can access the database through one process, why even=
+ think about getting another token? Probably a dumb question but hey.
+&gt;
+&gt; Also, generally I am still learning to read scientific papers, specifi=
+cally systems papers, and get the most important things out of it. Any sugg=
+estions?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I think the rea=
+l answer is, Max Krohn was very familiar with C++ so he
+wrote OKWS in C++.
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 8:19 PM, Anonymous wrote:
+&gt; # lec5 Question
+&gt; Why did the OKWS designers decide to use C++? My impression was that C=
+++ is not a particularly common language for web service development, and i=
+t seems like if security is the priority its usage in the hands of unskille=
+d developers forces security vulnerabilities.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Indeed; I belie=
+ve later on the OKWS guys added the ability to run
+services written in Python, which seems like a good plan.
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 8:47 PM, Anonymous wrote:
+&gt; The authors of this paper lament that programmers can still introduce =
+security risks in OKWS implementations (such as buffer overrun vulnerabilit=
+ies, for instance) and the main cause of this is that the framework is writ=
+ten in C++. Why did the creators of OKWS choose C++ as the implementing lan=
+guage (or at the very least, why didn't they have some tool similar to Bagg=
+y Bounds Checking to try to minimize potential risks)? I realize that this =
+question may be impossible to answer at worst and unfair at least (and I su=
+ppose 'chrooting' everything minimizes damage that could come out of possib=
+le attacks) but it just seems ironic that given how much time and effort th=
+e authors spent on trying to maximize the security of their system and make=
+ it simple for programmers to use, they apparently did not seem to consider=
+ (or care that much about) vulnerabilities introduced by OKWS' users.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Yes, the develo=
+per has to decide what the granularity of services
+should be.  The guidance, at a high level, is pretty standard: make
+each service responsible for one task with a small set of privileges,
+and split up a service if it's doing two tasks with two distinct sets
+of privileges..  But knowing how to apply that requires a lot of
+domain knowledge (understanding the application).
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 9:00 PM, Anonymous wrote:
+&gt; Is it up to the discretion of the Web developers to decide how to brea=
+k up their
+&gt; Web servers into different Web services, and what kinds of RPCs each s=
+hould have
+&gt; access to? Does OKWS provide "guidance," so to speak, about how to str=
+ucture
+&gt; their services, and how to build the most sercure systems?
+&gt; It seems that the security of OKWS still relies on Web developers bein=
+g diligent
+&gt; about breaking up the jurisdiction of different parts of their website=
+s, but
+&gt; perhaps there isn't a great way of getting around this.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">OKWS hasn't bec=
+ome popular as a piece of software.  OkCupid still runs on OKWS.
+
+The ideas in this paper are fairly widely used by security-conscious
+web sites.  For example, you can look at the Google paper we read
+earlier in the class, and it looks quite a bit like the OKWS design,
+in a sense: their GFE front-end is like OKWS's okd, their services are
+like OKWS services, except they're isolated with VMs instead of Unix
+UIDs, they have separate logging services, etc.
+
+I don't think you'd want to run OKWS literally today, but you would
+want to take some of the ideas from OKWS to design your own
+application's security architecture.
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 6:14 PM, Anonymous wrote:
+&gt; Zane Markel
+&gt; Reading Question for Lecture 5
+&gt;
+&gt; It appears that OKWS serves as the web server for OkCupid, which has g=
+rown into a huge dating site since its inception. However, I personally hav=
+e not heard of OKWS outside of this paper, and it appears that most servers=
+ today either run Apache or Nginx. How popular is OKWS now? And, if it real=
+ly delivers the security and performance perks that it claims, what's holdi=
+ng it back?
+&gt;
+&gt; (If it's ok to ask another question---what additional obstacles are th=
+ere to running OKWS on modern data centers? Does it work for large and comp=
+lex systems like VL2?)
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I think the pro=
+tection is that each process has a limited set of
+privileges, which includes okd (which I'm assuming is what you mean by
+the OKWS helper).
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 9:30 PM, Anonymous wrote:
+&gt; What distinct protections does this system provide if an OKWS helper i=
+s compromised (kinda like we broke zookd in lab 1)? I don't know that I saw=
+ this in the paper. I understand that an OKWS helper won't have a database =
+token, and that it is likely that the machine does not have anything extrem=
+ely interesting, but having control over the dispatcher likely gives an att=
+acker a much larger attack surface to go after the services which have actu=
+al permissions.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">The graph part =
+of the paper is fairly messy and not super useful,
+unfortunately.  But, yes, in lab 1's design, the whole thing is fully
+connected; there's no isolation.  Lab 2 is pretty much the OKWS design
+straight from this paper.
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 8:37 PM, Anonymous wrote:
+&gt; The paper talks about and illustrates dependency graphs. In the first =
+lab the exploits we worked with would have allowed us access to any of the =
+processes. Is the dependency graph of that system a fully connected graph, =
+or is the paper referring to a different class of exploits?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">The literal OKW=
+S software is used only by OkCupid at this point.
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 9:32 PM, Anonymous wrote:
+&gt; Max Lancaster
+&gt; Lecture 5 Reading Question
+&gt;
+&gt; So OKWS sounds great. First of all, who builds web applications using =
+C++? Secondly, besides OkCupid.com, is this system actually being used else=
+where?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">They are (were)=
+ not more widely used because it takes significant
+effort to structure your application in this way, as opposed to just
+running a single process that implements the entire web application on
+the server.
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 4:28 PM, Anonymous wrote:
+&gt; Most of the design choices listed in section 3, especially 3.1 like no=
+t running things as root and preventing file system access in hardware outs=
+ide of the specified directories, seem like they should be useful in any we=
+b server design.  Is there a reason these are novel and not more widely use=
+d?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I don't think t=
+heir design is particularly limited to 10 services; I
+read that sentence as mostly a description of how they deployed it at
+the time.
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 9:29 AM, Anonymous wrote:
+&gt; OKWS's limitations seems to be the number of services (~10). Is this s=
+till the case today? Is there a case where a Web service would need more th=
+an 10?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I believe each =
+service gets its own single 20 byte (20 bit is way too
+small) key.
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 9:06 PM, Anonymous wrote:
+&gt; Lecture 5 Reading - Student Question:
+&gt;
+&gt; I was a little confused by the use of the 20bit keys for database acce=
+ss.
+&gt; Are these keys unique to each web service or does a web service hold a=
+ subset of keys from a set of unique keys and as such, several services may=
+ intersect in the keys they hold?
+&gt;
+&gt; Also, are these keys generic or could they be user specific, depending=
+ on the database structure being used?
+&gt;
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">As far as the l=
+iteral OKWS software, just OkCupid runs it.
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 5:58 PM, Anonymous wrote:
+&gt; What large scale companies or services use OKWS in the real world? It =
+seems well tested, and mentions "commercial deployment". Are there any nota=
+ble companies that use OKWS?
+&gt;
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Seems relativel=
+y unlikely: it does not accept any inputs other than a
+bit indicating a service exited..
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 8:56 PM, Anonymous wrote:
+&gt; Are there any plausible methods of calls that potentially cause okld t=
+o be corrupted and allow attackers to run undesired commands?
+&gt;
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">But what's the =
+question? :-)
+
+I suppose one way they could have tried to do better is to run
+different services on different ports, and expose that in the
+client-visible URLs.  But that makes the browser treat the URLs as
+separate origins, complicating client-side application code/structure.
+
+That said, in terms of points of failure, OKWS seems strictly better
+than monolithic web services, where not only the okd equivalent, but
+the entire web service logic, runs in the same process.
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 11:50 AM, Anonymous wrote:
+&gt; 6.858 Lecture Question 5
+&gt; Marcus Boorstin
+&gt;
+&gt; okd seems like a bad point of failure.  All initial connections need t=
+o go through it, and it has to parse user input in the form of the requeste=
+d path, which is typically a dangerous operation.  An attacker could take d=
+own the entire OKWS system by crashing it (or could potentially compromise =
+it in some other malicious way to attack the individual services).
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">It depends..  F=
+rom talking to the author, I believe they found it
+quite nice to let their service developers run relatively freely
+without worrying that they'll mess up the core design.  In the other
+approach, where everything is monolithic in one server, one might
+worry a lot more about "ordinary" developers, whose job is to write
+user-facing quizzes rather than systems software, making the whole
+system very messy with their changes.  So you might end up with fairly
+tedious code-review and approval processes in the monolithic world.
+
+Nickolai.
+
+On Sat, Feb 25, 2017 at 7:35 PM, Anonymous wrote:
+&gt; Lecture 5
+&gt;
+&gt; Is it more work for a developer to develop or later extend the functio=
+nality of an OKWS web server as opposed to a more typical server, due to it=
+s high modularity and seperation of services?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">"Jail" is, in t=
+his paper, not a precise technical term, and I think
+they use it to refer to the collection of steps OKWS takes to isolate
+processes.  chroot is the kernel mechanism used to confine file
+lookups.  OKWS also sets the UID/GID of each process to a distinct
+value to prevent them from accessing other processes on the system.
+The contents of the chroot environment also prevents a service from
+regaining privileges through setuid binaries.
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 9:11 PM, Anonymous wrote:
+&gt; What exactly does an OS jail do? I get that it can chroot the process,=
+ but is there anything else involved to restrict the access of that process=
+?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">My sense is tha=
+t, in the target application of OKWS (i.e., OkCupid),
+there's only a small number of dynamic resources that have to be
+loaded per page load on the client browser.  All other resources (like
+images, style sheets, etc) are loaded from a separate server geared
+towards serving static content, and that does support keep-alives.
+
+Nickolai.
+
+On Sat, Feb 25, 2017 at 4:44 PM, Anonymous wrote:
+&gt; Why doesn't OKWS have a reason to support keep-alive connections (as t=
+he paper states in section 5.4)? Don't many dynamic resources require keep-=
+alive connections?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I think they're=
+ largely trying to keep any file handling code out of
+the services.
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 9:58 PM, Anonymous wrote:
+&gt; 6.858 Paper Question for Lecture #5
+&gt; OKWS
+&gt; 2/26/16
+&gt; Ismael 'Izzy' Gomez
+&gt; -----
+&gt;
+&gt; The author justifies the existence of the pubd daemon by saying that s=
+ecurity is improved. I guess I'm not entirely convinced that it's necessary=
+ to keep a separate daemon to serve static content that we can guarantee wo=
+nt' change by other measures, so why have this separate daemon?x
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I believe that =
+if a service keeps exiting (e.g., due to crashes) too
+often, okld will not respawn it for a little bit.  For that duration,
+the service is marked as "broken", and users' web browsers will get
+that 500 response from okd.
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 9:56 PM, Anonymous wrote:
+&gt; OKWS
+&gt;
+&gt; In the section 4.2, "If the lookup is successful but the service is ma=
+rked =E2=80=9Cbroken,=E2=80=9D okd sends an HTTP 500 error to the remote cl=
+ient". Could you explain why this is important ? When the service will get =
+marked as broken?
+&gt;
+&gt; It looks like OKWS is similar to Flash for the result, but I'm not sur=
+e why "OKWS process pool size is independent of the number of concurrent HT=
+TP connections." Could you explain more about background knowledge of the d=
+ifferent of between Flash and OKWS?
+&gt;
+&gt;
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">See section 3.2=
+: using Unix user IDs and chroot().
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 6:31 PM, Anonymous wrote:
+&gt; How are processes isolated from one another on a single machine?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Yes (see the Go=
+ogle paper we discussed earlier in this class).  Noone
+except OkCupid uses the literal OKWS software, but the ideas are used
+more widely.
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 9:35 PM, Anonymous wrote:
+&gt; OKWS use of privilege separation seems like a no-brainer smart
+&gt; decision. Is this privilege separation model used in practice?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I imagine the s=
+ystem architect has to pick a sensible design where the
+decomposition into services makes sense.  Hard to answer in the
+abstract, though.  In practice, it seems that it works fine: Google's
+architecture, which we looked at earlier, looks quite a bit like OKWS
+at a high level, and scales fine in many ways.
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 9:37 PM, Anonymous wrote:
+&gt; I am curious about more of the performance trade-offs that happen when=
+ we use
+&gt; separate services. I know these types of architectures are very common=
+ among
+&gt; big companies, so I am wondering what happens when we have a lot of se=
+rvices,
+&gt; does performance scale badly?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Correct.
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 9:59 PM, Anonymous wrote:
+&gt; If the same process/service does the same thing for all of the differe=
+nt users, then if one user compromises it then does that mean he can access=
+ the corresponding data or commands for all of the other users it services =
+as well?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">The Google pape=
+r, which we looked at earlier, looks quite a bit like
+OKWS at a high level.
+
+Nickolai.
+
+On Fri, Feb 24, 2017 at 2:52 AM, Anonymous wrote:
+&gt; Given that OKWS was developed over 10 years ago, are there other popul=
+ar web server implementations that have been developed since then using sim=
+ilar security guidelines? Or any popular web servers that have adopted thei=
+r approach?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Yeah, that's no=
+t entirely clear in the paper.  The paper seems to
+suggest that services obtain their templates from pubd on
+initialization.  Perhaps OKWS doesn't want a compromised service to
+talk to pubd later on, so okd enforces this by fetching the templates
+only once, when the service starts?  Although I could imagine other
+ways of achieving the same goal without involving okd.
+
+Nickolai.
+
+On Sat, Feb 25, 2017 at 6:13 PM, Anonymous wrote:
+&gt; What is pubd connected to okd when its purpose is to provide web servi=
+ces with limited read access to config files and HTML templates files on th=
+e local disk? Inituitively, it makes sense for me to have it connected to e=
+ach of the web servers.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Containers are =
+basically chroot + setuid + separate namespace for PIDs and UIDs.
+
+Probably if you were doing OKWS today, you would use containers or
+whole VMs (like what Google did in the paper we read earlier).
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 9:37 PM, Anonymous wrote:
+&gt; What's the difference between simply chrooting a server process compar=
+ed to
+&gt; the modern popular methods of "containerization"? Does the containeriz=
+ation
+&gt; provide extra levels of privilege separation than denying access to ir=
+relevant
+&gt; parts of the file system?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">In this case, O=
+KWS used their own RPCs largely because there was less
+parsing involved (which can be error-prone); you can certainly
+implement RPC on top of HTTP, like many modern REST services do.
+
+Nickolai.
+
+On Sun, Feb 26, 2017 at 7:17 PM, Anonymous wrote:
+&gt; Are RPCs inherently more secure than HTTP messages, or do they simply =
+provide more structured requests?
+
+</pre></div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- End Page Content -->
+
+</td></tr>
+
+<tr bgcolor=3D"#999999" height=3D"20px">
+<td style=3D"padding-left:10px; padding-top: 10px; padding-bottom: 10px">
+<font style=3D"font-size: 12px;">
+<p>Questions or comments regarding 6.858?  Send e-mail to the course staff =
+at
+<a href=3D"mailto:6858-staff@lists.csail.mit.edu"><i>6858-staff@lists.csail=
+.mit.edu</i></a>.
+
+</p></font><p><font style=3D"font-size: 12px;"><b><a href=3D"http://css.csa=
+il.mit.edu/6.858/2018/questions.html?q=3Dq-okws&amp;lec=3D5#top">Top</a></b=
+> //
+<b><a href=3D"http://css.csail.mit.edu/6.858/2018/">6.858 home</a></b> //=
+=20
+<i>Last updated Wednesday, 28-Feb-2018 11:14:53 EST</i>
+</font>
+</p></td></tr>
+</tbody></table>
+
+</td>
+
+</tr>
+</tbody>
+</table>
+
+
+
+
+</body></html>
+------MultipartBoundary--64xsMoj15xsj6EEZLJbEB1SVCcFsikGy6tFmTnU075----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://css.csail.mit.edu/6.858/2018/style.css
+
+@charset "utf-8";
+
+body { background-color: rgb(255, 255, 255); margin: 0px; padding: 0px; fon=
+t-family: verdana, arial, helvetica, sans-serif; }
+
+p { font-size: 13px; }
+
+ol { font-size: 13px; }
+
+ul { font-size: 13px; }
+
+pre { font-family: "courier new", courier, mono; color: rgb(202, 10, 10); f=
+ont-size: 13px; }
+
+.menuHead { text-align: center; padding-top: 8px; padding-bottom: 8px; }
+
+.menuItem { color: rgb(255, 255, 255); text-decoration: none; font-weight: =
+bold; font-size: 16px; }
+
+table.calendar { font-family: arial, helvetica; font-size: 10pt; empty-cell=
+s: show; border: 1px solid rgb(0, 0, 0); }
+
+table.calendar tr td { border: 1px solid rgb(170, 170, 170); }
+
+table.calendar tr { vertical-align: top; height: 75px; background: rgb(238,=
+ 238, 238); }
+
+table.calendar tr.header { font-weight: bold; font-size: 13px; background-c=
+olor: rgb(68, 68, 68); color: rgb(255, 255, 255); height: 25px; text-align:=
+ center; }
+
+.lecture { background: rgb(255, 255, 170); }
+
+.holiday { background: rgb(204, 255, 204); }
+
+.special { background: rgb(170, 170, 255); }
+
+.lab { background: rgb(0, 204, 204); }
+
+.important { background: rgb(255, 170, 170); }
+
+.reading { color: rgb(51, 51, 255); }
+
+.handout { color: rgb(0, 153, 0); }
+
+.deadline { color: rgb(255, 0, 0); }
+
+.note { color: rgb(136, 136, 0); }
+
+.assignment { color: rgb(10, 160, 10); }
+
+.date { color: rgb(68, 68, 68); }
+
+div.questionbox { margin: 1pc 4% 0pc; padding: 0.5pc; background-color: rgb=
+(224, 224, 255); border: 1px dashed red; }
+------MultipartBoundary--64xsMoj15xsj6EEZLJbEB1SVCcFsikGy6tFmTnU075----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://css.csail.mit.edu/6.858/2018/cc-by.png
+
+iVBORw0KGgoAAAANSUhEUgAAAFgAAAAfCAYAAABjyArgAAAACXBIWXMAAAsTAAALEwEAmpwYAAAK
+T2lDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjanVNnVFPpFj333vRCS4iAlEtvUhUIIFJCi4AU
+kSYqIQkQSoghodkVUcERRUUEG8igiAOOjoCMFVEsDIoK2AfkIaKOg6OIisr74Xuja9a89+bN/rXX
+Pues852zzwfACAyWSDNRNYAMqUIeEeCDx8TG4eQuQIEKJHAAEAizZCFz/SMBAPh+PDwrIsAHvgAB
+eNMLCADATZvAMByH/w/qQplcAYCEAcB0kThLCIAUAEB6jkKmAEBGAYCdmCZTAKAEAGDLY2LjAFAt
+AGAnf+bTAICd+Jl7AQBblCEVAaCRACATZYhEAGg7AKzPVopFAFgwABRmS8Q5ANgtADBJV2ZIALC3
+AMDOEAuyAAgMADBRiIUpAAR7AGDIIyN4AISZABRG8lc88SuuEOcqAAB4mbI8uSQ5RYFbCC1xB1dX
+Lh4ozkkXKxQ2YQJhmkAuwnmZGTKBNA/g88wAAKCRFRHgg/P9eM4Ors7ONo62Dl8t6r8G/yJiYuP+
+5c+rcEAAAOF0ftH+LC+zGoA7BoBt/qIl7gRoXgugdfeLZrIPQLUAoOnaV/Nw+H48PEWhkLnZ2eXk
+5NhKxEJbYcpXff5nwl/AV/1s+X48/Pf14L7iJIEyXYFHBPjgwsz0TKUcz5IJhGLc5o9H/LcL//wd
+0yLESWK5WCoU41EScY5EmozzMqUiiUKSKcUl0v9k4t8s+wM+3zUAsGo+AXuRLahdYwP2SycQWHTA
+4vcAAPK7b8HUKAgDgGiD4c93/+8//UegJQCAZkmScQAAXkQkLlTKsz/HCAAARKCBKrBBG/TBGCzA
+BhzBBdzBC/xgNoRCJMTCQhBCCmSAHHJgKayCQiiGzbAdKmAv1EAdNMBRaIaTcA4uwlW4Dj1wD/ph
+CJ7BKLyBCQRByAgTYSHaiAFiilgjjggXmYX4IcFIBBKLJCDJiBRRIkuRNUgxUopUIFVIHfI9cgI5
+h1xGupE7yAAygvyGvEcxlIGyUT3UDLVDuag3GoRGogvQZHQxmo8WoJvQcrQaPYw2oefQq2gP2o8+
+Q8cwwOgYBzPEbDAuxsNCsTgsCZNjy7EirAyrxhqwVqwDu4n1Y8+xdwQSgUXACTYEd0IgYR5BSFhM
+WE7YSKggHCQ0EdoJNwkDhFHCJyKTqEu0JroR+cQYYjIxh1hILCPWEo8TLxB7iEPENyQSiUMyJ7mQ
+AkmxpFTSEtJG0m5SI+ksqZs0SBojk8naZGuyBzmULCAryIXkneTD5DPkG+Qh8lsKnWJAcaT4U+Io
+UspqShnlEOU05QZlmDJBVaOaUt2ooVQRNY9aQq2htlKvUYeoEzR1mjnNgxZJS6WtopXTGmgXaPdp
+r+h0uhHdlR5Ol9BX0svpR+iX6AP0dwwNhhWDx4hnKBmbGAcYZxl3GK+YTKYZ04sZx1QwNzHrmOeZ
+D5lvVVgqtip8FZHKCpVKlSaVGyovVKmqpqreqgtV81XLVI+pXlN9rkZVM1PjqQnUlqtVqp1Q61Mb
+U2epO6iHqmeob1Q/pH5Z/YkGWcNMw09DpFGgsV/jvMYgC2MZs3gsIWsNq4Z1gTXEJrHN2Xx2KruY
+/R27iz2qqaE5QzNKM1ezUvOUZj8H45hx+Jx0TgnnKKeX836K3hTvKeIpG6Y0TLkxZVxrqpaXllir
+SKtRq0frvTau7aedpr1Fu1n7gQ5Bx0onXCdHZ4/OBZ3nU9lT3acKpxZNPTr1ri6qa6UbobtEd79u
+p+6Ynr5egJ5Mb6feeb3n+hx9L/1U/W36p/VHDFgGswwkBtsMzhg8xTVxbzwdL8fb8VFDXcNAQ6Vh
+lWGX4YSRudE8o9VGjUYPjGnGXOMk423GbcajJgYmISZLTepN7ppSTbmmKaY7TDtMx83MzaLN1pk1
+mz0x1zLnm+eb15vft2BaeFostqi2uGVJsuRaplnutrxuhVo5WaVYVVpds0atna0l1rutu6cRp7lO
+k06rntZnw7Dxtsm2qbcZsOXYBtuutm22fWFnYhdnt8Wuw+6TvZN9un2N/T0HDYfZDqsdWh1+c7Ry
+FDpWOt6azpzuP33F9JbpL2dYzxDP2DPjthPLKcRpnVOb00dnF2e5c4PziIuJS4LLLpc+Lpsbxt3I
+veRKdPVxXeF60vWdm7Obwu2o26/uNu5p7ofcn8w0nymeWTNz0MPIQ+BR5dE/C5+VMGvfrH5PQ0+B
+Z7XnIy9jL5FXrdewt6V3qvdh7xc+9j5yn+M+4zw33jLeWV/MN8C3yLfLT8Nvnl+F30N/I/9k/3r/
+0QCngCUBZwOJgUGBWwL7+Hp8Ib+OPzrbZfay2e1BjKC5QRVBj4KtguXBrSFoyOyQrSH355jOkc5p
+DoVQfujW0Adh5mGLw34MJ4WHhVeGP45wiFga0TGXNXfR3ENz30T6RJZE3ptnMU85ry1KNSo+qi5q
+PNo3ujS6P8YuZlnM1VidWElsSxw5LiquNm5svt/87fOH4p3iC+N7F5gvyF1weaHOwvSFpxapLhIs
+OpZATIhOOJTwQRAqqBaMJfITdyWOCnnCHcJnIi/RNtGI2ENcKh5O8kgqTXqS7JG8NXkkxTOlLOW5
+hCepkLxMDUzdmzqeFpp2IG0yPTq9MYOSkZBxQqohTZO2Z+pn5mZ2y6xlhbL+xW6Lty8elQfJa7OQ
+rAVZLQq2QqboVFoo1yoHsmdlV2a/zYnKOZarnivN7cyzytuQN5zvn//tEsIS4ZK2pYZLVy0dWOa9
+rGo5sjxxedsK4xUFK4ZWBqw8uIq2Km3VT6vtV5eufr0mek1rgV7ByoLBtQFr6wtVCuWFfevc1+1d
+T1gvWd+1YfqGnRs+FYmKrhTbF5cVf9go3HjlG4dvyr+Z3JS0qavEuWTPZtJm6ebeLZ5bDpaql+aX
+Dm4N2dq0Dd9WtO319kXbL5fNKNu7g7ZDuaO/PLi8ZafJzs07P1SkVPRU+lQ27tLdtWHX+G7R7ht7
+vPY07NXbW7z3/T7JvttVAVVN1WbVZftJ+7P3P66Jqun4lvttXa1ObXHtxwPSA/0HIw6217nU1R3S
+PVRSj9Yr60cOxx++/p3vdy0NNg1VjZzG4iNwRHnk6fcJ3/ceDTradox7rOEH0x92HWcdL2pCmvKa
+RptTmvtbYlu6T8w+0dbq3nr8R9sfD5w0PFl5SvNUyWna6YLTk2fyz4ydlZ19fi753GDborZ752PO
+32oPb++6EHTh0kX/i+c7vDvOXPK4dPKy2+UTV7hXmq86X23qdOo8/pPTT8e7nLuarrlca7nuer21
+e2b36RueN87d9L158Rb/1tWeOT3dvfN6b/fF9/XfFt1+cif9zsu72Xcn7q28T7xf9EDtQdlD3YfV
+P1v+3Njv3H9qwHeg89HcR/cGhYPP/pH1jw9DBY+Zj8uGDYbrnjg+OTniP3L96fynQ89kzyaeF/6i
+/suuFxYvfvjV69fO0ZjRoZfyl5O/bXyl/erA6xmv28bCxh6+yXgzMV70VvvtwXfcdx3vo98PT+R8
+IH8o/2j5sfVT0Kf7kxmTk/8EA5jz/GMzLdsAAAAEZ0FNQQAAsY58+1GTAAAAIGNIUk0AAHolAACA
+gwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAeeSURBVHja7JpfbNvGHce/R9JBU9Qa89QN
+2gD5TepLmGTJYyyte9mypiSC7aXrIj8NqDFI6lavLezISpwuE5LJwpACw7aaWJ8L0/kD7B8iyi2w
+RXYiGikgvUkPNbY+ybXbh5l/bg8kT6RlO7Zjq2maM0488e4o8sPv/e53vzOhlEYIIZ/hadr3RCkl
+BAAFgNt/vwWO48BxHHieB8fx4DkOHO8dOQ6EcOAIASEEIMS/CigoqEPhUAeO42bbtt2jY8O2HTiO
+zeoc6rD2lFL/Zlj5SUg/fvknAAACgPpweZ53M8d3yzzv1nG8B5mAEC7I14PjgXVcmLbt5WDZDkN2
+HIeBDYJ+kiALAMJweQFC6Ojmm3O3UKlUUKvVsLa6FrrQYGQQp06dQup7Kbx09kewHR4cZ7kvxOZA
+QLx3GRg+DnVHArwxRPYH7v2FOrQPNDQajdD5RCIB+ZyM4yeP9RUyAUD/duevEASBQRUEwc28gKo+
+j+KVIpaXl3d0wWg0irG3xjA8fBqWbcO2LViWl20LlmUzhW+m5L2q+L//+RTXy9fRbDQBAMlkEpIk
+AQAMw4Cu6wCAeCKO0cwovvmt5/uiYAKA/rP6Dwi80AUrDGBAEJCfmIQ2q7EOoihClmXEYjEMDw8D
+AKrVKtrtNjRNw8rKCmsrKzJ+NfZLHH72MCzLgmlZsCwTlmWFTYYP2PFs+R5s8eernyMzmsXq6ipk
+WUapVEIsFgu1abfbyOVy0DQNkUgEl4uXDxwyA3znwzsY8MEOCBgQBkJwRVFENptFJpOBKIpbXlBV
+VeRyOQY6nojjT+/9Ec8cPgzLMmGaJlPyppDp3gBPvHkBzUYT6XQaMzMz3eHpmaDg9VRVxcjICOKJ
+OC5duXjggDkA4D0bLPA8BD6sXEmSUK/Xkc/nt4ULAOl0Gq1Wiw3NZqOJq8VrIVvOMY+EdLP3txHM
+Tm1us9GELMsYe+ONh7ZPp9OQZRnNRhP3F+oHbiY4AOB8t4znUdXnQ3ArlUrPcNsuiaKISqXCIGuz
+GqrVefC8sDlkznf7EIK806R94N5rqVRC4oUXNvqhm46GUqkU6nvggF0FuyouXikyUDMzMw9V7XaQ
+/b7F3xQ9X9qDSzyfmvM8DIIuZLI7yI1GA8lkskcEIyMjbISMjIyE6mKxGJLJZI+ncXAK9h7+5twt
+5i1ks1mmwr0kURSZUpaXl3Hzxi22YHEhb20idps2u09VVTctb9fnwAD7aqpUKgxOJpNhjXRdh6Io
+SKVSSKVSKBQKW9ZNT0+H7J2v4sqdSkC9XdNAyKOZiMc9uQsNQsARglqt5rpYsszA6LqOVCoV6qTr
+OnRdRyaTgaIoPXVLS0tsNpdlGaqqolaruSvAAFigC7frle/+IQzD2HQy85WbTqd31OcAFew+qL9C
+O3r0KGuQy+WY3Wq1WmzSO3/+PFOyJElotVqYnZ0N+cgAWHltda1rDtjR57p3E5FIJKDrOtrtduh8
+0F0Lln2fWNd1JBKJ/ih44+QStE/+m06n04jFYgy0P5H4KvXrZFnumVC67hf72LcHkM/JaEw1kMvl
+MDs7u6M+vmjkc3J/FPxVTsdPHkM8EYemaT3ewlZwNU1DPBHvS1yC84MtQX8xaJ98NauqipWVFRiG
+gaGhIRQKha6v6y2Tg3XB4dj1S9nHvj7Er98eQyQSgaqqUBSF/WbQD26321AUBdPT04hEIhjNjPZv
+kvNvZDAyiLXVNSwtLbEG+Xye3fSRI0dC4Pw6wzB66vzkX2swMghKA8thUPjv1Pu254d4LvIcyten
+8dt3itA0DZqmQZIkSJIEURSh6zoTTT+DPWzevnvvLg4dOoTChQK0WQ2iKKLT6YQ8g3K5zGIMyWQS
++XyeqbdcLrO2wToAGBoaQrvdxovffxHXSlfxv/V1mOY6TMuEaVqw/biEY8OxHRaE32vo8nEKV7Jg
+z78X/4WBgUP4aP4jZH6RYcvJbDb7SD/gB1YAYOqdKfzwzA+wbq5j3TRhmSZMawPgRwj4PK4Bdw4A
+29JJpoYRjUYBAIVCocf12U1aWVlhs3U0GvUC8X5o0oHj2WLfXDypiQMAhzqwbXcf7dLliwyQoiih
+GO9u4KZSKdZ37M0xL8BudyEHQpRskqVP1pYRm9wB0PH8OF24X6PGgzp99Wev+lM9lSSJ1ut1utPU
+arWoJEmsv6zI1HhQpwv3a/Ti5Yvs/Ncod79kX8/QxfoCNT42qKzI7LwoinRycpJ2Op0twXY6HTo5
+OUlFUWT9Tp46SZc+NuiisUDH8+NfR7i0Z/U/kR/Hy4oMQRBwrXgN7//l/T1vGRUuTcKyLNy9W8Nr
+P3/t4IdiwLwEdzOCq9SN3/tmIoJ5Ij/uKvlBnb6n/plGo9Edv7FoNErLvy9T40GdLhoL9N0/vNs3
+tVBKty0Hz31pCvZT9vUMXvnpK2wXQq9UcWPuxrbb9mfls0gmh9le29zcDUwVpvqnlE0U/GUq96EB
+wuMnjmEifwHf/k40sBsRDDci5Lf6/3iy/Mkn+N3VEuar8/0digGIj4Np2HEE9vTwaZx56QxOfPcE
+vhGJhGO4nmv12eoq7i3ew+2bt/sO9iur4KdpHwBTSp8lhHzxFMWBjCjy/wEATHqgDqiBjQoAAAAA
+SUVORK5CYII=
+------MultipartBoundary--64xsMoj15xsj6EEZLJbEB1SVCcFsikGy6tFmTnU075------

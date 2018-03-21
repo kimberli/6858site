@@ -1,0 +1,1333 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: http://css.csail.mit.edu/6.858/2018/questions.html?q=q-google&lec=2
+Subject: 6.858 / Spring 2018 / Paper Reading Questions
+Date: Thu, 21 Mar 2018 07:17:23 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--RkXtUVExn9FMb6y5aOPfacGVgGlZ3MYBsKjHgQw5gd----"
+
+------MultipartBoundary--RkXtUVExn9FMb6y5aOPfacGVgGlZ3MYBsKjHgQw5gd----
+Content-Type: text/html
+Content-ID: <frame-35206-41a18881-0fc8-4de9-a333-6cb6df84249f@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://css.csail.mit.edu/6.858/2018/questions.html?q=q-google&lec=2
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8">
+<title>
+6.858 / Spring 2018
+
+/ Paper Reading Questions
+
+</title>
+<meta http-equiv=3D"pragma" content=3D"no-cache">
+<link rel=3D"stylesheet" type=3D"text/css" href=3D"http://css.csail.mit.edu=
+/6.858/2018/style.css">
+
+
+
+</head>
+
+<body bgcolor=3D"#ffffff" text=3D"#000000">
+
+<table cols=3D"3" width=3D"100%" height=3D"100%" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0">
+<tbody>
+<!-- Header row -->
+<tr height=3D"40px">
+ <td colspan=3D"3">
+ <table width=3D"100%" height=3D"40px" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0">
+ <tbody>
+   <tr>
+    <td bgcolor=3D"#000000">
+      <div align=3D"left" style=3D"padding-left:58px; padding-top: 2px;">
+      <font style=3D"font-size: 28px; color: #ffffff">
+	<a name=3D"top">
+         <b>6.858</b>: Computer Systems Security
+	</a>
+      </font>
+      </div>
+    </td>
+
+    <td bgcolor=3D"#8a0a0a" halign=3D"center" valign=3D"center" width=3D"25=
+0px">
+     <div align=3D"center" style=3D"padding-top: 2px; padding-bottom: 4px;"=
+>
+     <font style=3D"font-size: 28px; color: #ffffff">
+      Spring <b>2018</b>
+     </font>
+     </div>
+    </td>
+  </tr>
+ </tbody>
+ </table>
+ </td>
+</tr>
+
+<!-- horiz line -->
+<tr>
+<td colspan=3D"3" height=3D"5px" bgcolor=3D"#8a0a0a">
+</td>
+</tr>
+
+<tr>
+<!-- Menu -->
+<td bgcolor=3D"#8a0a0a" valign=3D"top" width=3D"180px">
+ <table cols=3D"2" rows=3D"1" border=3D"0" cellspacing=3D"0" cellpadding=3D=
+"0" width=3D"100%" height=3D"100%">
+  <tbody>
+   <tr>
+   <td valign=3D"top">
+   <table cols=3D"1" rows=3D"1" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%">
+    <tbody>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/" class=3D"menuItem=
+">Home</a>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/general.html" class=
+=3D"menuItem">General information</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/schedule.html" clas=
+s=3D"menuItem">Schedule</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/reference.html" cla=
+ss=3D"menuItem">Reference materials</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"https://piazza.com/mit/spring2018/6858" class=3D"menuIt=
+em">Piazza discussion</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/handin.html" c=
+lass=3D"menuItem">Submission</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/quiz.html" class=3D=
+"menuItem">Quizzes</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a class=3D"menuItem">Labs</a><br>
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/lab1.html" cla=
+ss=3D"menuItem">1</a>
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/lab2.html" cla=
+ss=3D"menuItem">2</a>
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/lab3.html" cla=
+ss=3D"menuItem">3</a>
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/lab4.html" cla=
+ss=3D"menuItem">4</a>
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/lab5.html" cla=
+ss=3D"menuItem">5</a>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://ist.mit.edu/network/rules" class=3D"menuItem">MI=
+T network rules</a>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/projects.html" clas=
+s=3D"menuItem">Final projects</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2017/" class=3D"menuItem=
+">2017 class materials</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a rel=3D"license" href=3D"http://creativecommons.org/licenses/by/=
+3.0/us/"><img alt=3D"Creative Commons License" style=3D"border-width:0" src=
+=3D"http://css.csail.mit.edu/6.858/2018/cc-by.png"></a>
+      </div></td></tr>
+    </tbody>
+   </table>
+   </td>
+
+   <td width=3D"3px" bgcolor=3D"#8a0a0a">
+   </td>
+   </tr>
+  </tbody>
+ </table>
+</td>
+<!-- End Menu -->
+
+<td colspan=3D"2">
+
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" heig=
+ht=3D"100%">
+<tbody><tr><td style=3D"padding-left:10px; padding-right:10px; padding-top:=
+ 10px; padding-bottom: 10px" valign=3D"top" align=3D"left">
+
+
+<!-- Begin Page Content -->
+
+
+<!--
+    To add a new question, just put in within a <div> tag, give it
+    some identifier (i.e., 'id=3D"qXX"'), and then add it to the questions
+    array variable below.  To link directly to the question, just use a
+    link to 'questions.html?q=3DqXX'.
+ -->
+
+<h1>
+Paper Reading Questions
+</h1>
+
+<a name=3D"top"></a>
+<p>
+For each paper, your assignment is two-fold.  Before lecture:
+
+</p><ul>
+<li>Submit your answer for each lecture's paper question via the
+    <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/handin.html">submis=
+sion web site</a> in a file named
+    <code>lec<var>n</var>.txt</code>, and
+</li><li>Submit your own question about the paper (e.g., what you find most=
+ confusing about
+    the paper or the paper's general context/problem) in a file named
+    <code>sq<var>n</var>.txt</code>.
+    You cannot
+    use the question below.  To the extent possible, during lecture we will=
+ try to
+    answer these questions.  Below, we have included the questions we've re=
+ceived
+    from students in past years (when available), along with answers to tho=
+se
+    questions, in case you find it helpful.
+</li></ul>
+
+<p id=3D"submit-links" style=3D"visibility: visible; position: static;">
+    Once you submit your own question and answer (or after the deadline
+    has passed), you can view the
+    <a href=3D"https://6858.csail.mit.edu/lec-questions/2" id=3D"question-v=
+iew-link">questions</a>
+    and
+    <a href=3D"https://6858.csail.mit.edu/lec-answers/2" id=3D"answer-view-=
+link">answers</a>
+    that other students submitted.
+</p>
+
+<p></p>
+
+<div id=3D"questions">
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+  <div id=3D"q-google" class=3D"questionbox"><p><b>Lecture 2</b></p>
+    <p>
+      As you are reading this paper, think about what attacks Google is
+      trying to prevent with each of the security measures described in
+      this document.  Submit a list of potential attacks that Google is
+      worried about, approximately 1 per subsection in the document.
+    </p>
+  </div>
+
+ =20
+
+ =20
+
+ =20
+
+</div>
+
+<style>
+  div.responsebox {
+    margin: 1pc 4% 0pc 4%;
+    padding: 0.5pc 0.5pc 0.5pc 0.5pc;
+    background-color: #e0e0ff;
+    border: 1px dashed red;
+  }
+
+  pre.responsepre {
+    white-space: pre-wrap;
+  }
+</style>
+
+<div id=3D"responses">
+
+  <div class=3D"lecture-responses">
+    <h2>Questions and answers for lecture 2 from past years</h2>
+
+      <div class=3D"responsebox"><pre class=3D"responsepre">One example of =
+not using a correct certificate is presenting an
+expired certificate.
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 7:20 PM, Anonymous wrote:
+&gt; In the subsection describing Google Front End Service, it states =E2=
+=80=9CThe GFE
+&gt; ensures that all TLS connections are terminated using correct certific=
+ates and
+&gt; following best practices such as supporting perfect forward secrecy.=
+=E2=80=9D What does it mean for a TLS connection to be terminated =E2=80=9C=
+using the correct certificates=E2=80=9D?&gt;
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">This document i=
+s targeted at their Google cloud platform customers, so
+perhaps this is a good breakdown in terms of issues a cloud-platform
+customer is likely to worry about?
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 6:46 PM, Anonymous wrote:
+&gt; Why did Google choose to present security along its hierarchy in the s=
+tructure listed in the paper? In particular, what motivates choosing this m=
+eans by which 'User Identity' fits in? Why is User Identity not a separate =
+consideration, orthogonal to the scale hierarchy of the other five categori=
+es?
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">On Tue, Feb 14,=
+ 2017 at 3:27 PM, Anonymous wrote:
+&gt; The whitepaper never goes over the procedure Google goes through when =
+engineers find compromised machines. Compromised machines must happen somet=
+imes - what are the best practices for removing compromised machines and en=
+suring that the machine did not compromise other machines?
+
+Audit logs are super helpful in recovery.
+
+&gt; What assumptions can you make about the access the compromised machine=
+ had?
+
+It's not about assumptions here -- the design of a system determines
+what privileges a compromised machine had.
+
+Nickolai.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Good point.  Go=
+ogle does client-side encryption (e.g., Chrome
+synchronized state is encrypted).  Perhaps they didn't mention it in
+this document because it's focused on Google's cloud platform.
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 12:09 PM, Anonymous wrote:
+&gt; As far as I can tell, client side encryption (for external users) is n=
+ot provided or considered. Would providing something of the sort (say as op=
+t-in and for some services) present significant technical difficulties or i=
+s it purely a practical matter of not wanting to lose access to some percen=
+tage of user data?
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">A service is so=
+mething (e.g., a collection of machines) that
+implements an interface (a SQL database, a key-value store, an email
+service, ...).
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 3:43 PM, Anonymous wrote:
+&gt; What exactly is a service? I can't quite define this in my head.
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Hard to precise=
+ly quantify this kind of stuff.  You might argue that
+their BeyondCorp approach (allowing access to internal Google services
+from anywhere, not just in-the-office computers) might actually make
+their developers more productive!
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 4:58 PM, Anonymous wrote:
+&gt; Given such sophisticated infrastructure for security, what is the over=
+head (both in cost and developer slowdown) to being so conscious about secu=
+rity?
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I don't have an=
+y statistics about how frequently companies encounter
+malicious engineers.
+
+Google encountered this most publicly in this case:
+
+  https://en.wikipedia.org/wiki/Operation_Aurora
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 4:24 PM, Anonymous wrote:
+&gt; Some of the security measures made a lot of sense and seemed pretty co=
+mmon. Others, like those included in the "Safe Software Development" make s=
+ense for a large corporation like Google, but might not make sense for smal=
+ler companies. How frequently do companies deal with malicious software eng=
+ineers, such that implementing restricted access for engineers helps, rathe=
+r than just hurts productivity (neglecting bad, or error-prone engineers).
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Unfortunately, =
+I don't know of anything publicly available about how
+their hardware authentication works.
+
+They do have their own protocols that, at some level, bootstrap off of
+the hardware authentication.
+
+I believe Google's security plan is pretty unusual (in a good way)
+compared to most other companies out there.
+
+Nickolai.
+
+On Mon, Feb 13, 2017 at 6:36 PM, Anonymous wrote:
+&gt; I'd like to learn more about the hardware authentication that Google b=
+uilds into their (custom) motherboards. Does Google also develop their own =
+software/network protocols for authenticating these machines? Is it baked i=
+n to the cyprotgraphy for inter-service security? How common is hardware-le=
+vel security like this in large web companies?
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Here's one exam=
+ple:
+
+  http://www.forbes.com/sites/leemathews/2017/01/16/gmail-phishing-attack-t=
+argets-your-contacts/#6b935ed81f9d
+
+Even if many users can tell this is a phishing attack, some users
+might be in a hurry and not notice the problem, or on a small device
+where the URL isn't obvious.
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 1:20 AM, Anonymous wrote:
+&gt; The paper describes how "sophisticated phishing has been a persistent =
+way to target our employees". What does "sophisticated phishing" look like?=
+ (I ask this because I feel that most phishing techniques appear obvious, a=
+nd Google likely has a blanket "we will never ask you for personal informat=
+ion/credentials" statement that they issue to their employees, so I was jus=
+t wondering how "normal phishing" techniques can be improved to accurately =
+target Google employees.)
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I imagine most =
+of what this document describes evolved as a result of
+Google scaling up to handle more users, more kinds of threats, more
+kinds of policies, etc.
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 11:19 AM, Anonymous wrote:
+&gt; How have the security protocols had to change as Google scaled?
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">In the paper, t=
+hey said "hundreds of engineers".  Sounds like they are
+making a significant investment in security.
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 5:01 PM, Anonymous wrote:
+&gt; How much engineering, design, and cost overhead is induced by Google=
+=E2=80=99s security protections?&gt;
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I don't know fo=
+r sure, but presumably they set up a small test
+deployment that doesn't involve real user data, as a first pass.
+
+I believe that some Google engineers do have access to production
+servers hosting real user data.  I don't know how many or what process
+they use to decide who that is.
+
+Nickolai.
+
+On Mon, Feb 13, 2017 at 5:10 PM, Anonymous wrote:
+&gt; How does Google initially build systems that allow debugging without g=
+iving engineers access to sensitive information?
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">There's no clea=
+r-cut answer for DoS attacks; it's usually a bunch of
+heuristics.  For particularly expensive requests (like a complex
+search), Google sometimes uses CAPTCHAs to prevent fully-automated DoS
+attacks.  For requests that are not so expensive (e.g., just fetching
+a document), perhaps the easiest thing to do is to actually have
+infrastructure that can handle it, even if there's a ton of such
+requests.
+
+Nickolai.
+
+On Mon, Feb 13, 2017 at 4:32 PM, Anonymous wrote:
+&gt; When a DoS service detects an attack, how does it distinguish legitima=
+te traffic from attack traffic in order to drop the bad traffic?
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">On Tue, Feb 14,=
+ 2017 at 4:39 PM, Anonymous wrote:
+&gt; - This was not addressed directly in the paper, but at Google the lapt=
+ops and
+&gt; desktops have built-in security keys. Why is this? Is this more or les=
+s secure
+&gt; than using only the portable keys?
+
+I imagine it's easier to use (no chance of losing or damaging the
+portable key) and perhaps more secure in some ways (adversary can't
+steal it separately, user can't move it to another computer running
+some other software configuration).
+
+&gt; - Why would Google release a previously encrypted storage device? Why =
+doesn't it
+&gt; just shred all storage devices that it has finished using?
+
+It's cheaper than shredding.
+
+Nickolai.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">On Tue, Feb 14,=
+ 2017 at 4:42 PM, Anonymous wrote:
+&gt; Is it possible to compromise the central DoS service?
+
+It might have bugs, much like any other piece of software, sure.
+
+&gt; Also, assuming this system is subject to failures, what happens if the=
+ central DoS service is not functional and a Denial of Service attack happe=
+ns?
+
+Depends on what you mean by failure.  If it fails outright, then no
+requests get in, because in the architecture described in the paper,
+GFE is responsible for converting incoming requests into RPCs into the
+appropriate service.  If it fails to mitigate a DoS attack, then the
+DoS attack's requests get forwarded to whatever service they're send
+towards, and that service might or might not be capable of handling
+them.
+
+Nickolai.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I don't know --=
+ I suspect it's a combination of legal agreements,
+being careful in choosing partners, and being careful in choosing what
+data to reveal.
+
+Nickolai.
+
+On Mon, Feb 13, 2017 at 4:51 PM, Anonymous wrote:
+&gt; How can Google secure their data that goes to partner services and is =
+copied outside of Google's infrastructure.
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I don't know of=
+ a public description of Google's security chip
+mentioned in this paper, but here's some widely used and documented
+hardware security mechanisms:
+
+  https://en.wikipedia.org/wiki/Trusted_Platform_Module
+  https://en.wikipedia.org/wiki/Software_Guard_Extensions
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 2:52 PM, Anonymous wrote:
+&gt; How do hardware security chips work?
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">On Tue, Feb 14,=
+ 2017 at 4:19 PM, Anonymous wrote:
+&gt; 1. Google uses cryptographic authentication and authorization to ensur=
+e that clients are talking to the correct intended server. But isn=E2=80=99=
+t it still vulnerable to man-in-the-middle attack?
+
+If the client knows the public key of the server it wants to talk to,
+it can avoid man-in-the-middle attacks.
+
+&gt; 2. Quoted from the original paper: "the service also intelligently cha=
+llenges users for additional information based on risk factors such as whet=
+her they have logged in from the same device or a similar location in the p=
+ast=E2=80=9D. I doubts the validity of this method. Because Google can not =
+distinguish between (1) adversaries and (2) users logging in using a newly =
+bought device.
+
+That's correct -- in both cases, Google prompts the person (be it an
+adversary or a legitimate user that purchased a new device) for
+additional information.  I'm not sure what you're saying about this
+situation, though.  It seems like asking for additional information in
+this case does make it more difficult for an adversary to gain access
+to a user's account.
+
+Nickolai.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I suppose they =
+could be.  I suspect this isn't their biggest worry,
+though, because they can vet who they invite for a red-team exercise,
+and in case their trust in the red-team participants is misplaced,
+they know who those participants are, and can penalize them (e.g., sue
+them).
+
+Nickolai.
+
+On Mon, Feb 13, 2017 at 4:39 AM, Anonymous wrote:
+&gt; I just learnt what red team excercises are.
+&gt; Can't those be very risky for google.
+&gt; In the sense that these people have clearance and legal protection to =
+pretend like they are attacking Google and while doing so, they might be ac=
+tually planning something bad.
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">In general, Goo=
+gle seems pretty strongly on top of this.
+
+One reason why Chrome, for a long time, used to be much more secure
+than other browsers (like IE and Firefox) is that Chrome deployed
+software updates (including security bug fixes) far quicker than other
+browsers.
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 4:58 PM, Anonymous wrote:
+&gt; Lecture 2 Question
+&gt;
+&gt; How quick is Google's response to new security threats (incl. how fast=
+ do updates reach the vast majority of users)?
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I believe Googl=
+e does have engineers with access to sensitive data,
+it's just not the default for all engineers.
+
+Also, thinking about the big picture and the overall security strategy
+doesn't require having direct access to sensitive data on individual
+servers (or keys to sensitive data).
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 8:07 PM, Anonymous wrote:
+&gt; How do leaders within Google decide how to go about implementing secur=
+ity measures? It seems that Google doesn't want to give too much power to a=
+ limited amount of people so who is there to see the big picture and decide=
+ how to implement policies moving forward?
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Sorry, I can't =
+parse your sentence...  Happy to answer your question
+if you want to rephrase it.
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 2:56 PM, Anonymous wrote:
+&gt; If Google employees use tools such as debuggers that hide modification=
+s to privilleged infrastructure to the employees, are there a set of legacy=
+ tools that are invariant for security engineers as well, which work to dev=
+elop such security infrastructure, or are these tools still continuously up=
+dated and simply protected by continuous employee authentication?
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">The hypervisor =
+they use (KVM) is designed to prevent a malicious VM
+from being able to tamper with the hypervisor, the machine, other VMs
+running on the same machine, and perhaps the network (or maybe they
+fully rely on cryptographic protection for network access; it's not
+fully clear from the paper).
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 9:36 PM, Anonymous wrote:
+&gt; How does Google keep it's large cloud platform safe from malicious use=
+rs of the product itself?
+&gt; What I mean is, what if malicious users sign up for a VM? how is googl=
+e safe from this?
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Encryption-at-r=
+est doesn't prevent a compromised machine from getting
+access to data that is processed on that machine.  But it does prevent
+someone that broke into a machine from getting access to ALL stored
+data, even data that wasn't being processed at the time.
+
+The techniques they describe in the rest of the paper are presumably
+their approach to prevent the machines from being compromised in the
+first place.
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 5:57 PM, Anonymous wrote:
+&gt; 6.858 Paper Question for Lecture #2
+&gt; Google Security Overview
+&gt; 2/14/16
+&gt; Ismael 'Izzy' Gomez
+&gt; -----
+&gt;
+&gt; In the Encryption at Rest section, the reading mentions a storage serv=
+ice that
+&gt; is tasked with managing the process of taking service data, encrypting=
+ it using
+&gt; keys from a central key management service, and then writing it to phy=
+sical
+&gt; storage. Of course, these operations have to occur on some machine, wi=
+th reads
+&gt; and writes to that machine's memory and storage.
+&gt;
+&gt; What further security measures can be specified/implemented these mach=
+ines from
+&gt; being compromised? Alternatively, list some vectors of attack a malici=
+ous user
+&gt; can use to compromise Google data.
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">In this case, I=
+ imagine the big benefits are (a.) potential customers
+of Google services, including Google's cloud platform, will be excited
+about Google's sophisticated security story, and maybe (b.) engineers
+reading this document might get excited about Google's sophisticated
+approach to security and will want to work there.
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 5:25 PM, Anonymous wrote:
+&gt; How much detail do companies usually go into when publicizing their se=
+curity practices?
+&gt; What is the cost/benefit of publicizing security practices/implementat=
+ions.
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I have no idea =
+about contracts; you'd have to ask some lawyers. :-)
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 5:15 PM, Anonymous wrote:
+&gt; What kind of guarantees/contracts need to be made when deciding to rel=
+y on a third-party vendor? Google says they can just vet these companies, b=
+ut can you easily guarantee that their application adheres to the security =
+principles they claim it should?
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Most of what th=
+e paper describes is technical (mechanically enforced)
+measures.  There's some measures that involve humans, like physically
+securing data centers, or ensuring code reviews, but my understanding
+is that they try to mechanize as much as possible.  I don't know how
+they motivate their employees to do the right thing otherwise, though.
+:)
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 9:04 PM, Anonymous wrote:
+&gt; Google clearly has lots of policies in place regarding security, but h=
+ow do they actually make sure that all of these ideas are followed in pract=
+ice? Not all of the various checks are possible to automate, so they depend=
+ on the employees following the guidelines.
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">As far as I can=
+ tell, there's no great plan in this space.  It's a
+bunch of heuristics people add to flag some events for manual review.
+There's little in the way of guarantees that it will catch breaches,
+or that the things it catches are worth examining.
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 8:54 PM, Anonymous wrote:
+&gt; Nicholas G Charchut
+&gt; Lecture 2 Question
+&gt; Google Infrastructure Security Design Overview
+&gt;
+&gt; How does Google implement machine intelligence to alert engineers of p=
+otential breaches? More broadly, how can one teach a computer about what is=
+ common and uncommon behavior with respect to user-to-server and server-to-=
+server protocols?
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Interesting que=
+stion.  I don't know for sure; I suspect they look at
+the options, see what the usability or security properties are, maybe
+do some user testing, and ultimately, have someone technically-minded
+make a good judgement call?
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 5:14 PM, Anonymous wrote:
+&gt; How does Google measure if something is considered "secure" or "secure=
+ enough" (case in point, the removal of security questions)?
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">They are tools =
+to discover bugs, rather than types of attacks.
+
+Lab 3 will involve you building such a fuzzing / analysis tool to find
+security bugs.
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 6:17 PM, Anonymous wrote:
+&gt; Dillon Dumesnil
+&gt; February 15, 2017
+&gt;
+&gt; 6.858 Lecture 2 Paper Question
+&gt;
+&gt; What are fuzzers, static analysis tools, and web security scanners? I =
+understand they are types of attacks, but I have not heard of them before a=
+nd do not really understand what they do.
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">This document s=
+eems to suggest their security is based on fairly
+strong technical measures, so I imagine they weren't (and aren't)
+assuming their design is secret when arguing for why their system is
+secure.  It's in general not a great idea to base your security on the
+secrecy of your design, because if that design ever leaks out, it's
+going to be incredibly difficult to regain security!
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 6:14 PM, Anonymous wrote:
+&gt; Brandon Carter
+&gt; 6.858 Lecture 2 - Google Security
+&gt; 2/15/17
+&gt;
+&gt; I am wondering if there is any risk associated with Google releasing a
+&gt; document of this nature in which they describe security measures used
+&gt; to protect their infrastructure. I am imagining a scenario in which an
+&gt; adversary reads this document and now might have a better idea of how
+&gt; Google is attempting to secure its systems, and therefore might get so=
+me
+&gt; information on a way around those safeguards (either through exploitin=
+g
+&gt; them or finding an alternative way in knowing that these safeguards ex=
+ist.)
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Presumably soft=
+ware-based attacks are much more common, largely
+because they're cheaper than physical attacks like breaking into a
+data center building..
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 7:13 PM, Anonymous wrote:
+&gt; which type of attack is the most common in the context of data centers=
+?
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">This paper is a=
+ description of their overall approach to address the
+attacks you mention, among others.  For instance, the reason they
+encrypt traffic between data centers is because NSA used to tap
+Google's fiber links between data centers.
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 7:16 PM, Anonymous wrote:
+&gt; Question for lecture 2:
+&gt;
+&gt; 1) How does Google deal with advanced persistent threats from nation s=
+tates? (i.e. USA (NSA), Russia, China, etc.)
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">On Tue, Feb 14,=
+ 2017 at 6:27 PM, Anonymous wrote:
+&gt; 1) How does Google know what's enough? Or what's duplication? All of t=
+hese measures seem
+&gt; great, but many of them seem redundant beyond usefulness. Each probabl=
+y took a massive amount
+&gt; of engineering energy and each takes a large amount of money to keep r=
+unning. How does
+&gt; Google decide how to make this tradeoff?
+
+Interesting view!  I guess it depends on what attacks you consider.  I
+was thinking that, each mechanism presented in the paper seems to be
+targeting a somewhat different attack that Google is worried about.
+
+&gt; 2) What about technical debt? Many parts of Google's infrastructure ar=
+e older or haven't
+&gt; been updated in a long time. Google's strategy seems wonderful in a va=
+ccuum, but I'm skeptical
+&gt; of the fact that all of their infrastructure has been upgraded to meet=
+ these standards. Likewise,
+&gt; how does a company with older infrastructure manage to get everything =
+up to this standard?
+
+Yeah, I think this paper presents things in a somewhat clean-slate
+way.  You can get a glimpse of how they evolve things in, for
+instance, the BeyondCorp paper referenced in the overview paper.
+
+Nickolai.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">They actually h=
+ave links at the bottom pointing at more detailed
+descriptions of how their system works.  E.g., they have a specific
+page describing their DoS protection in more detail.
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 9:11 PM, Anonymous wrote:
+&gt; Paper discusses high level overview of security measures and would app=
+reciate if they would go into details for certain measures. Eg. DoS detecti=
+on and protection with load balancing.
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Not much.
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 9:55 PM, Anonymous wrote:
+&gt; If P =3D NP, how would this change things?
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">The paper says =
+they are pretty careful at limiting the sensitive data
+that employees have access to, and careful at reviewing
+security-sensitive code so as to catch unintended or intended problems
+in code.
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 12:37 AM, Anonymous wrote:
+&gt; how does Google deal with security issues caused by the sheer number o=
+f personnel coming in and out of the company?
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">The paper menti=
+ons some situations where they break up large software
+into smaller components, so that a bug in an individual component
+gives an adversary fewer privileges if the bug is exploited.  For
+instance, they mention breaking up the KVM monitor into two pieces:
+one that issues requests on behalf of the hypervisor itself, and one
+that issues requests on behalf of the VM.
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 2:41 PM, Anonymous wrote:
+&gt; Kaitlin Mahar
+&gt; Lecture 2 Question
+&gt;
+&gt; They mention in the "Safe Software Development" section about how they=
+ look for bugs in open source software that they use, and that for example =
+they found the infamous "heartbleed" bug in OpenSSL. I would like to know m=
+ore about how robust their security system is to these kind of vulnerabilit=
+ies in general (that is, ones in related software components.) Are the meas=
+ures they have taken thorough enough to counteract (i.e. not just to discov=
+er, but to prevent the consequences of) bugs in non-Google code, like Heart=
+bleed?
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I'm not sure I =
+understand your question.  Are you worried about the
+bottlenecks due to centralized services?  But it seems like
+distributed services would be the opposite of that.
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 7:24 PM, Anonymous wrote:
+&gt; How does Google keep things running efficiently given that there are s=
+o many centralized/distributed security infrastructures in place for such a=
+ large company?
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Yeah, that's a =
+good question -- I think what's going on is that when
+they say a service is centralized, what that means is that it presents
+a logically centralized view, but the actual implementation is
+distributed over many machines (and in many cases, over multiple data
+centers).  They've done some cool work on figuring out how to make
+such replicated services consistent; 6.824 talks a lot about these
+topics.  One example is their Spanner distributed storage system:
+
+  https://www.usenix.org/system/files/conference/osdi12/osdi12-final-16.pdf
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 7:47 PM, Anonymous wrote:
+&gt; I suppose I was a bit too succinct here. Mostly I was curious how Goog=
+le
+&gt; manages the bottlenecking presented by using centralized services, and=
+ if
+&gt; they manage it by distributing the work of the service, how do they ma=
+intain
+&gt; the correctness and security of the distributed service. A lot of what=
+ they
+&gt; wrote had mention of centralized services for user identity and for ke=
+y
+&gt; management, and that struck me as problematic for a system as large as
+&gt; Google. Apologies for being unclear.
+&gt;
+&gt; Thanks,
+&gt; Anonymous
+&gt;
+&gt; On Tue, Feb 14, 2017 at 7:30 PM, Nickolai Zeldovich &lt;nickolai@csail=
+.mit.edu&gt;
+&gt; wrote:
+&gt;&gt;
+&gt;&gt; I'm not sure I understand your question.  Are you worried about th=
+e
+&gt;&gt; bottlenecks due to centralized services?  But it seems like
+&gt;&gt; distributed services would be the opposite of that.
+&gt;&gt;
+&gt;&gt; Nickolai.
+&gt;&gt;
+&gt;&gt; On Tue, Feb 14, 2017 at 7:24 PM, Anonymous wrote:
+&gt;&gt; &gt; How does Google keep things running efficiently given that th=
+ere are so
+&gt;&gt; &gt; many centralized/distributed security infrastructures in plac=
+e for such a
+&gt;&gt; &gt; large company?&gt;
+&gt;
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Encryption is a=
+ useful mechanism in that situation.  When Google
+Chrome synchronizes its state (like bookmarks), it encrypts it with a
+user-supplied password before uploading to Google servers, so in this
+case, even Google's synchronization servers are not trusted here.  (Of
+course, Google still distributes the Chrome browser binary running on
+the client's machine, but still..)
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 8:44 PM, Anonymous wrote:
+&gt; The white paper describes in great detail measures taken to prevent at=
+tacks on Google's infrastructure and the data stored on it from non-attacke=
+rs themselves, but it does at its core assume that Google is a trusted enti=
+ty. I'm curious what sort of measures exist to protect users' data when the=
+ party running the infrastructure itself may not be trusted.
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I don't think s=
+ecurity through obscurity was ever a great plan.  It's
+really hard to get your system secure again if your design
+accidentally leaks out (you have to re-design your entire system to
+get a new secret design!).  As a result, it's not a great idea to
+hinge the security of your system on the secrecy of the design.
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 9:27 PM, Anonymous wrote:
+&gt; //Samantha Briasco-Stewart; erosolar@mit.edu
+&gt; // 6.858 Paper Question 2; Due 2017.02.14 @ 10:00PM
+&gt;
+&gt; Question for Google Security Design paper:
+&gt;
+&gt;  - Why does Google go into so much detail in this document? Is securit=
+y through obscurity not as useful in the current age as it was in the past?=
+ (eg. theoretically if hackers didn't know how google was securing its info=
+rmation, wouldn't they have a harder time getting at it?)
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I believe Googl=
+e's approach is twofold: first, help the customer build
+a secure service (by providing them some of the tools described in
+this paper), and second, prevent a customer's services from doing
+damage to other customer's services or Google's services.
+
+So, yes, people running stuff on Google's cloud platform are
+ultimately responsible for the security of whatever it is they're
+deploying there.  Google provides many tools to help, but that's about
+it.
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 7:53 PM, Anonymous wrote:
+&gt; Max Lancaster
+&gt; Lecture 2 question
+&gt;
+&gt; How does Google ensure the security of services on the Google Cloud pl=
+atform such as Google Compute Engine given that they are almost entirely ma=
+naged by end users? Are end users responsible for maintaining this security=
+?
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">In some ways, G=
+oogle's focus on security enables employees to work
+from home or other places, whereas other company policies might make
+this difficult.  Check out the BeyondCorp paper mentioned at the
+bottom of this document.
+
+Having a strong security plan also means they don't need to trust
+every engineer as much, so this means they can hire engineers and have
+them build useful software without having to implement super strong
+vetting of each engineer.
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 8:19 PM, Anonymous wrote:
+&gt; -- Google implements such a strict policy and infrastruce to the point=
+ that it seems as it hurts the employees' productivity. Do you think that t=
+he tradeoff (Security Vs Productivity) is reasonable? Maybe it is something=
+ that just companies like Google with endless cash-flow can afford? Eventua=
+lly, no one is safe and also Google can get attacked, where should companie=
+s stop investing in their security?
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I think Google =
+is fairly unique in the depth, breadth, and end-to-end
+thoroughness of security measures it takes.
+
+Nickolai.
+
+On Tue, Feb 14, 2017 at 1:34 PM, Anonymous wrote:
+&gt; Are any of these security measures unique (or close to) for Google, or=
+ is it mostly quite standard for large software companies?
+</pre></div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- End Page Content -->
+
+</td></tr>
+
+<tr bgcolor=3D"#999999" height=3D"20px">
+<td style=3D"padding-left:10px; padding-top: 10px; padding-bottom: 10px">
+<font style=3D"font-size: 12px;">
+<p>Questions or comments regarding 6.858?  Send e-mail to the course staff =
+at
+<a href=3D"mailto:6858-staff@lists.csail.mit.edu"><i>6858-staff@lists.csail=
+.mit.edu</i></a>.
+
+</p></font><p><font style=3D"font-size: 12px;"><b><a href=3D"http://css.csa=
+il.mit.edu/6.858/2018/questions.html?q=3Dq-google&amp;lec=3D2#top">Top</a><=
+/b> //
+<b><a href=3D"http://css.csail.mit.edu/6.858/2018/">6.858 home</a></b> //=
+=20
+<i>Last updated Wednesday, 28-Feb-2018 11:14:53 EST</i>
+</font>
+</p></td></tr>
+</tbody></table>
+
+</td>
+
+</tr>
+</tbody>
+</table>
+
+
+
+
+</body></html>
+------MultipartBoundary--RkXtUVExn9FMb6y5aOPfacGVgGlZ3MYBsKjHgQw5gd----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://css.csail.mit.edu/6.858/2018/style.css
+
+@charset "utf-8";
+
+body { background-color: rgb(255, 255, 255); margin: 0px; padding: 0px; fon=
+t-family: verdana, arial, helvetica, sans-serif; }
+
+p { font-size: 13px; }
+
+ol { font-size: 13px; }
+
+ul { font-size: 13px; }
+
+pre { font-family: "courier new", courier, mono; color: rgb(202, 10, 10); f=
+ont-size: 13px; }
+
+.menuHead { text-align: center; padding-top: 8px; padding-bottom: 8px; }
+
+.menuItem { color: rgb(255, 255, 255); text-decoration: none; font-weight: =
+bold; font-size: 16px; }
+
+table.calendar { font-family: arial, helvetica; font-size: 10pt; empty-cell=
+s: show; border: 1px solid rgb(0, 0, 0); }
+
+table.calendar tr td { border: 1px solid rgb(170, 170, 170); }
+
+table.calendar tr { vertical-align: top; height: 75px; background: rgb(238,=
+ 238, 238); }
+
+table.calendar tr.header { font-weight: bold; font-size: 13px; background-c=
+olor: rgb(68, 68, 68); color: rgb(255, 255, 255); height: 25px; text-align:=
+ center; }
+
+.lecture { background: rgb(255, 255, 170); }
+
+.holiday { background: rgb(204, 255, 204); }
+
+.special { background: rgb(170, 170, 255); }
+
+.lab { background: rgb(0, 204, 204); }
+
+.important { background: rgb(255, 170, 170); }
+
+.reading { color: rgb(51, 51, 255); }
+
+.handout { color: rgb(0, 153, 0); }
+
+.deadline { color: rgb(255, 0, 0); }
+
+.note { color: rgb(136, 136, 0); }
+
+.assignment { color: rgb(10, 160, 10); }
+
+.date { color: rgb(68, 68, 68); }
+
+div.questionbox { margin: 1pc 4% 0pc; padding: 0.5pc; background-color: rgb=
+(224, 224, 255); border: 1px dashed red; }
+------MultipartBoundary--RkXtUVExn9FMb6y5aOPfacGVgGlZ3MYBsKjHgQw5gd----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://css.csail.mit.edu/6.858/2018/cc-by.png
+
+iVBORw0KGgoAAAANSUhEUgAAAFgAAAAfCAYAAABjyArgAAAACXBIWXMAAAsTAAALEwEAmpwYAAAK
+T2lDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjanVNnVFPpFj333vRCS4iAlEtvUhUIIFJCi4AU
+kSYqIQkQSoghodkVUcERRUUEG8igiAOOjoCMFVEsDIoK2AfkIaKOg6OIisr74Xuja9a89+bN/rXX
+Pues852zzwfACAyWSDNRNYAMqUIeEeCDx8TG4eQuQIEKJHAAEAizZCFz/SMBAPh+PDwrIsAHvgAB
+eNMLCADATZvAMByH/w/qQplcAYCEAcB0kThLCIAUAEB6jkKmAEBGAYCdmCZTAKAEAGDLY2LjAFAt
+AGAnf+bTAICd+Jl7AQBblCEVAaCRACATZYhEAGg7AKzPVopFAFgwABRmS8Q5ANgtADBJV2ZIALC3
+AMDOEAuyAAgMADBRiIUpAAR7AGDIIyN4AISZABRG8lc88SuuEOcqAAB4mbI8uSQ5RYFbCC1xB1dX
+Lh4ozkkXKxQ2YQJhmkAuwnmZGTKBNA/g88wAAKCRFRHgg/P9eM4Ors7ONo62Dl8t6r8G/yJiYuP+
+5c+rcEAAAOF0ftH+LC+zGoA7BoBt/qIl7gRoXgugdfeLZrIPQLUAoOnaV/Nw+H48PEWhkLnZ2eXk
+5NhKxEJbYcpXff5nwl/AV/1s+X48/Pf14L7iJIEyXYFHBPjgwsz0TKUcz5IJhGLc5o9H/LcL//wd
+0yLESWK5WCoU41EScY5EmozzMqUiiUKSKcUl0v9k4t8s+wM+3zUAsGo+AXuRLahdYwP2SycQWHTA
+4vcAAPK7b8HUKAgDgGiD4c93/+8//UegJQCAZkmScQAAXkQkLlTKsz/HCAAARKCBKrBBG/TBGCzA
+BhzBBdzBC/xgNoRCJMTCQhBCCmSAHHJgKayCQiiGzbAdKmAv1EAdNMBRaIaTcA4uwlW4Dj1wD/ph
+CJ7BKLyBCQRByAgTYSHaiAFiilgjjggXmYX4IcFIBBKLJCDJiBRRIkuRNUgxUopUIFVIHfI9cgI5
+h1xGupE7yAAygvyGvEcxlIGyUT3UDLVDuag3GoRGogvQZHQxmo8WoJvQcrQaPYw2oefQq2gP2o8+
+Q8cwwOgYBzPEbDAuxsNCsTgsCZNjy7EirAyrxhqwVqwDu4n1Y8+xdwQSgUXACTYEd0IgYR5BSFhM
+WE7YSKggHCQ0EdoJNwkDhFHCJyKTqEu0JroR+cQYYjIxh1hILCPWEo8TLxB7iEPENyQSiUMyJ7mQ
+AkmxpFTSEtJG0m5SI+ksqZs0SBojk8naZGuyBzmULCAryIXkneTD5DPkG+Qh8lsKnWJAcaT4U+Io
+UspqShnlEOU05QZlmDJBVaOaUt2ooVQRNY9aQq2htlKvUYeoEzR1mjnNgxZJS6WtopXTGmgXaPdp
+r+h0uhHdlR5Ol9BX0svpR+iX6AP0dwwNhhWDx4hnKBmbGAcYZxl3GK+YTKYZ04sZx1QwNzHrmOeZ
+D5lvVVgqtip8FZHKCpVKlSaVGyovVKmqpqreqgtV81XLVI+pXlN9rkZVM1PjqQnUlqtVqp1Q61Mb
+U2epO6iHqmeob1Q/pH5Z/YkGWcNMw09DpFGgsV/jvMYgC2MZs3gsIWsNq4Z1gTXEJrHN2Xx2KruY
+/R27iz2qqaE5QzNKM1ezUvOUZj8H45hx+Jx0TgnnKKeX836K3hTvKeIpG6Y0TLkxZVxrqpaXllir
+SKtRq0frvTau7aedpr1Fu1n7gQ5Bx0onXCdHZ4/OBZ3nU9lT3acKpxZNPTr1ri6qa6UbobtEd79u
+p+6Ynr5egJ5Mb6feeb3n+hx9L/1U/W36p/VHDFgGswwkBtsMzhg8xTVxbzwdL8fb8VFDXcNAQ6Vh
+lWGX4YSRudE8o9VGjUYPjGnGXOMk423GbcajJgYmISZLTepN7ppSTbmmKaY7TDtMx83MzaLN1pk1
+mz0x1zLnm+eb15vft2BaeFostqi2uGVJsuRaplnutrxuhVo5WaVYVVpds0atna0l1rutu6cRp7lO
+k06rntZnw7Dxtsm2qbcZsOXYBtuutm22fWFnYhdnt8Wuw+6TvZN9un2N/T0HDYfZDqsdWh1+c7Ry
+FDpWOt6azpzuP33F9JbpL2dYzxDP2DPjthPLKcRpnVOb00dnF2e5c4PziIuJS4LLLpc+Lpsbxt3I
+veRKdPVxXeF60vWdm7Obwu2o26/uNu5p7ofcn8w0nymeWTNz0MPIQ+BR5dE/C5+VMGvfrH5PQ0+B
+Z7XnIy9jL5FXrdewt6V3qvdh7xc+9j5yn+M+4zw33jLeWV/MN8C3yLfLT8Nvnl+F30N/I/9k/3r/
+0QCngCUBZwOJgUGBWwL7+Hp8Ib+OPzrbZfay2e1BjKC5QRVBj4KtguXBrSFoyOyQrSH355jOkc5p
+DoVQfujW0Adh5mGLw34MJ4WHhVeGP45wiFga0TGXNXfR3ENz30T6RJZE3ptnMU85ry1KNSo+qi5q
+PNo3ujS6P8YuZlnM1VidWElsSxw5LiquNm5svt/87fOH4p3iC+N7F5gvyF1weaHOwvSFpxapLhIs
+OpZATIhOOJTwQRAqqBaMJfITdyWOCnnCHcJnIi/RNtGI2ENcKh5O8kgqTXqS7JG8NXkkxTOlLOW5
+hCepkLxMDUzdmzqeFpp2IG0yPTq9MYOSkZBxQqohTZO2Z+pn5mZ2y6xlhbL+xW6Lty8elQfJa7OQ
+rAVZLQq2QqboVFoo1yoHsmdlV2a/zYnKOZarnivN7cyzytuQN5zvn//tEsIS4ZK2pYZLVy0dWOa9
+rGo5sjxxedsK4xUFK4ZWBqw8uIq2Km3VT6vtV5eufr0mek1rgV7ByoLBtQFr6wtVCuWFfevc1+1d
+T1gvWd+1YfqGnRs+FYmKrhTbF5cVf9go3HjlG4dvyr+Z3JS0qavEuWTPZtJm6ebeLZ5bDpaql+aX
+Dm4N2dq0Dd9WtO319kXbL5fNKNu7g7ZDuaO/PLi8ZafJzs07P1SkVPRU+lQ27tLdtWHX+G7R7ht7
+vPY07NXbW7z3/T7JvttVAVVN1WbVZftJ+7P3P66Jqun4lvttXa1ObXHtxwPSA/0HIw6217nU1R3S
+PVRSj9Yr60cOxx++/p3vdy0NNg1VjZzG4iNwRHnk6fcJ3/ceDTradox7rOEH0x92HWcdL2pCmvKa
+RptTmvtbYlu6T8w+0dbq3nr8R9sfD5w0PFl5SvNUyWna6YLTk2fyz4ydlZ19fi753GDborZ752PO
+32oPb++6EHTh0kX/i+c7vDvOXPK4dPKy2+UTV7hXmq86X23qdOo8/pPTT8e7nLuarrlca7nuer21
+e2b36RueN87d9L158Rb/1tWeOT3dvfN6b/fF9/XfFt1+cif9zsu72Xcn7q28T7xf9EDtQdlD3YfV
+P1v+3Njv3H9qwHeg89HcR/cGhYPP/pH1jw9DBY+Zj8uGDYbrnjg+OTniP3L96fynQ89kzyaeF/6i
+/suuFxYvfvjV69fO0ZjRoZfyl5O/bXyl/erA6xmv28bCxh6+yXgzMV70VvvtwXfcdx3vo98PT+R8
+IH8o/2j5sfVT0Kf7kxmTk/8EA5jz/GMzLdsAAAAEZ0FNQQAAsY58+1GTAAAAIGNIUk0AAHolAACA
+gwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAeeSURBVHja7JpfbNvGHce/R9JBU9Qa89QN
+2gD5TepLmGTJYyyte9mypiSC7aXrIj8NqDFI6lavLezISpwuE5LJwpACw7aaWJ8L0/kD7B8iyi2w
+RXYiGikgvUkPNbY+ybXbh5l/bg8kT6RlO7Zjq2maM0488e4o8sPv/e53vzOhlEYIIZ/hadr3RCkl
+BAAFgNt/vwWO48BxHHieB8fx4DkOHO8dOQ6EcOAIASEEIMS/CigoqEPhUAeO42bbtt2jY8O2HTiO
+zeoc6rD2lFL/Zlj5SUg/fvknAAACgPpweZ53M8d3yzzv1nG8B5mAEC7I14PjgXVcmLbt5WDZDkN2
+HIeBDYJ+kiALAMJweQFC6Ojmm3O3UKlUUKvVsLa6FrrQYGQQp06dQup7Kbx09kewHR4cZ7kvxOZA
+QLx3GRg+DnVHArwxRPYH7v2FOrQPNDQajdD5RCIB+ZyM4yeP9RUyAUD/duevEASBQRUEwc28gKo+
+j+KVIpaXl3d0wWg0irG3xjA8fBqWbcO2LViWl20LlmUzhW+m5L2q+L//+RTXy9fRbDQBAMlkEpIk
+AQAMw4Cu6wCAeCKO0cwovvmt5/uiYAKA/rP6Dwi80AUrDGBAEJCfmIQ2q7EOoihClmXEYjEMDw8D
+AKrVKtrtNjRNw8rKCmsrKzJ+NfZLHH72MCzLgmlZsCwTlmWFTYYP2PFs+R5s8eernyMzmsXq6ipk
+WUapVEIsFgu1abfbyOVy0DQNkUgEl4uXDxwyA3znwzsY8MEOCBgQBkJwRVFENptFJpOBKIpbXlBV
+VeRyOQY6nojjT+/9Ec8cPgzLMmGaJlPyppDp3gBPvHkBzUYT6XQaMzMz3eHpmaDg9VRVxcjICOKJ
+OC5duXjggDkA4D0bLPA8BD6sXEmSUK/Xkc/nt4ULAOl0Gq1Wiw3NZqOJq8VrIVvOMY+EdLP3txHM
+Tm1us9GELMsYe+ONh7ZPp9OQZRnNRhP3F+oHbiY4AOB8t4znUdXnQ3ArlUrPcNsuiaKISqXCIGuz
+GqrVefC8sDlkznf7EIK806R94N5rqVRC4oUXNvqhm46GUqkU6nvggF0FuyouXikyUDMzMw9V7XaQ
+/b7F3xQ9X9qDSzyfmvM8DIIuZLI7yI1GA8lkskcEIyMjbISMjIyE6mKxGJLJZI+ncXAK9h7+5twt
+5i1ks1mmwr0kURSZUpaXl3Hzxi22YHEhb20idps2u09VVTctb9fnwAD7aqpUKgxOJpNhjXRdh6Io
+SKVSSKVSKBQKW9ZNT0+H7J2v4sqdSkC9XdNAyKOZiMc9uQsNQsARglqt5rpYsszA6LqOVCoV6qTr
+OnRdRyaTgaIoPXVLS0tsNpdlGaqqolaruSvAAFigC7frle/+IQzD2HQy85WbTqd31OcAFew+qL9C
+O3r0KGuQy+WY3Wq1WmzSO3/+PFOyJElotVqYnZ0N+cgAWHltda1rDtjR57p3E5FIJKDrOtrtduh8
+0F0Lln2fWNd1JBKJ/ih44+QStE/+m06n04jFYgy0P5H4KvXrZFnumVC67hf72LcHkM/JaEw1kMvl
+MDs7u6M+vmjkc3J/FPxVTsdPHkM8EYemaT3ewlZwNU1DPBHvS1yC84MtQX8xaJ98NauqipWVFRiG
+gaGhIRQKha6v6y2Tg3XB4dj1S9nHvj7Er98eQyQSgaqqUBSF/WbQD26321AUBdPT04hEIhjNjPZv
+kvNvZDAyiLXVNSwtLbEG+Xye3fSRI0dC4Pw6wzB66vzkX2swMghKA8thUPjv1Pu254d4LvIcyten
+8dt3itA0DZqmQZIkSJIEURSh6zoTTT+DPWzevnvvLg4dOoTChQK0WQ2iKKLT6YQ8g3K5zGIMyWQS
++XyeqbdcLrO2wToAGBoaQrvdxovffxHXSlfxv/V1mOY6TMuEaVqw/biEY8OxHRaE32vo8nEKV7Jg
+z78X/4WBgUP4aP4jZH6RYcvJbDb7SD/gB1YAYOqdKfzwzA+wbq5j3TRhmSZMawPgRwj4PK4Bdw4A
+29JJpoYRjUYBAIVCocf12U1aWVlhs3U0GvUC8X5o0oHj2WLfXDypiQMAhzqwbXcf7dLliwyQoiih
+GO9u4KZSKdZ37M0xL8BudyEHQpRskqVP1pYRm9wB0PH8OF24X6PGgzp99Wev+lM9lSSJ1ut1utPU
+arWoJEmsv6zI1HhQpwv3a/Ti5Yvs/Ncod79kX8/QxfoCNT42qKzI7LwoinRycpJ2Op0twXY6HTo5
+OUlFUWT9Tp46SZc+NuiisUDH8+NfR7i0Z/U/kR/Hy4oMQRBwrXgN7//l/T1vGRUuTcKyLNy9W8Nr
+P3/t4IdiwLwEdzOCq9SN3/tmIoJ5Ij/uKvlBnb6n/plGo9Edv7FoNErLvy9T40GdLhoL9N0/vNs3
+tVBKty0Hz31pCvZT9vUMXvnpK2wXQq9UcWPuxrbb9mfls0gmh9le29zcDUwVpvqnlE0U/GUq96EB
+wuMnjmEifwHf/k40sBsRDDci5Lf6/3iy/Mkn+N3VEuar8/0digGIj4Np2HEE9vTwaZx56QxOfPcE
+vhGJhGO4nmv12eoq7i3ew+2bt/sO9iur4KdpHwBTSp8lhHzxFMWBjCjy/wEATHqgDqiBjQoAAAAA
+SUVORK5CYII=
+------MultipartBoundary--RkXtUVExn9FMb6y5aOPfacGVgGlZ3MYBsKjHgQw5gd------

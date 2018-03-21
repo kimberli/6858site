@@ -6,11 +6,25 @@
   <title>6.858 Index</title>
   <link rel="icon" type="image/png" href="favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
   <base target="_blank">
 
   <style>
   body { 
     font-family: 'Lato', sans-serif; 
+  }
+  .page {
+    width: 800px;
+    margin: auto;
+  }
+  pre {
+    margin: 5px;
+    padding: 10px;
+    background-color: #efefef;
+  }
+  code {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 75%;
   }
   a, a:visited { 
     color: #f44e64;
@@ -19,25 +33,25 @@
   a:hover {
     color: #e2485d;
   }
+  .old {
+    color: #aaa;
+  }
+  .old a {
+    color: #ff8989;
+  }
+  .old a:hover {
+    color: #de7676;
+  }
   ul a, ul a:visited {
     color: #7478e0;
   }
   ul a:hover {
     color: #6064c1;
   }
-  .old {
-    color: #aaa;
-  }
-  .old a {
-    color: #ff667a;
-  }
-  .old a:hover {
-    color: #e05c6d;
-  }
-  ul .old a, ul .old a:visited {
+  .old ul a, .old ul a:visited {
     color: #9497e8;
   }
-  ul .old a:hover {
+  .old ul a:hover {
     color: #8487ce;
   }
   .note a, .note a:visited {
@@ -56,72 +70,72 @@
 </head>
 
 <body>
+<div class="page">
 <h1>6.858 Index</h1>
 
-<h2>Important</h2>
-<ul>
-    <li><a href="css.csail.mit.edu/6.858/2018/schedule.html">Offline Site</a></li>
-    <li><a href="piazza.html">Offline Piazza</a></li>
-    <li><a href="lab_notes.pdf">Lab Notes</a></li>
-</ul>
+<span class="note">
+    <a href="css.csail.mit.edu/6.858/2018/schedule.html">Offline Site</a> // 
+    <a href="piazza.html">Offline Piazza</a> //
+    <a href="lab_notes.pdf">Lab Notes</a>
+</span>
 
 <h2>Lectures</h2>
 <ol>
-    <li><a href="css.csail.mit.edu/6.858/2018/lec/l01-intro.txt">Introduction, threat models</a> - TODO summary</li>
+    <li><a href="css.csail.mit.edu/6.858/2018/lec/l01-intro.txt">Introduction, threat models</a> - threat model assumptions, airfare, domain ownership, school hacking, Sarah Palin's email, Mat Honan hacking, buffer overflows</li>
 
-    <li><a href="css.csail.mit.edu/6.858/2018/lec/l02-google.txt">Security architecture</a> - TODO summary
+    <li><a href="css.csail.mit.edu/6.858/2018/lec/l02-google.txt">Security architecture</a> - software bugs, configuration mistakes, compromised networks, guessable passwords, physical compromise, phishing, insider attacks, DOS, untrusted hardware; <b>isolation</b> as basis of security; speaks-for/says; least privilege, trusted computing base (TCB)
     <ul>
-        <li><a href="css.csail.mit.edu/6.858/2018/readings/google_infra_sec.mhtml">Google infrastructure security (2017)</a>, <a href="css.csail.mit.edu/6.858/2018/readings/google_sec.mhtml"> other details</a> [<span class="note"><a href="rq/lec2_q.mhtml">questions</a>/<a href="rq/lec2_ans.mhtml">answers</a></span>]</li>
+        <li><a href="css.csail.mit.edu/6.858/2018/readings/google_infra_sec.mhtml">Google infrastructure security (2017)</a>, <a href="css.csail.mit.edu/6.858/2018/readings/google_sec.mhtml"> other details</a> [<span class="note"><a href="rq/lec2_q.mhtml">questions</a>/<a href="rq/lec2_ans.mhtml">answers</a>/<a href="rq/lec2_past.mhtml">past</a></span>]</li>
     </ul></li>
 
-    <li><a href="css.csail.mit.edu/6.858/2018/lec/l03-user-auth.txt">User authentication</a> - TODO summary
+    <li><a href="css.csail.mit.edu/6.858/2018/lec/l03-user-auth.txt">User authentication</a> - guard model, trusted intermediaries, CSRF, password entropy, storing/transmitting passwords, 2FA, U2F,b iometrics, sessions
     <ul>
         <li><a href="css.csail.mit.edu/6.858/2018/readings/password_changes.mhtml">mandatory password changes (2016)</a>, <a href="css.csail.mit.edu/6.858/2018/readings/u2f.pdf">U2F (2017)</a> [<span class="note"><a href="rq/lec3_q.mhtml">questions</a>/<a href="rq/lec3_ans.mhtml">answers</a></span>]</li>
     </ul></li>
 
-    <li><a href="css.csail.mit.edu/6.858/2018/lec/l04-baggy.txt">Buffer overflow defenses</a> - TODO summary
+    <li><a href="css.csail.mit.edu/6.858/2018/lec/l04-baggy.txt">Buffer overflow defenses</a> - NX stacks, stack canaries, ASLR, heap overflows, fat pointers, baggy bounds
     <ul>
-        <li><a href="css.csail.mit.edu/6.858/2018/readings/baggy.pdf">Baggy bounds (2009)</a>, <a href="css.csail.mit.edu/6.858/2018/readings/baggy-errata.txt">errata</a> [<span class="note"><a href="rq/lec4_q.mhtml">questions</a>/<a href="rq/lec4_ans.mhtml">answers</a></span>]</li>
+        <li><a href="css.csail.mit.edu/6.858/2018/readings/baggy.pdf">Baggy bounds (2009)</a>, <a href="css.csail.mit.edu/6.858/2018/readings/baggy-errata.txt">errata</a> [<span class="note"><a href="rq/lec4_q.mhtml">questions</a>/<a href="rq/lec4_ans.mhtml">answers</a>/<a href="rq/lec4_past.mhtml">past</a></span>]</li>
     </ul></li>
 
-    <li><a href="css.csail.mit.edu/6.858/2018/lec/l05-okws.txt.txt">Privilege separation</a> - TODO summary
+    <li><a href="css.csail.mit.edu/6.858/2018/lec/l05-okws.txt">Privilege separation</a> - protect against unknown bugs, isolation &amp; privilege separation, OKWS, services only access relevant data, UNIX tools (uid/gid, fds, chroot)
     <ul>
-        <li><a href="css.csail.mit.edu/6.858/2018/readings/okws.pdf">OKWS (2004)</a> [<span class="note"><a href="rq/lec5_q.mhtml">questions</a>/<a href="rq/lec5_ans.mhtml">answers</a></span>]</li>
+        <li><a href="css.csail.mit.edu/6.858/2018/readings/okws.pdf">OKWS (2004)</a> [<span class="note"><a href="rq/lec5_q.mhtml">questions</a>/<a href="rq/lec5_ans.mhtml">answers</a>/<a href="rq/lec5_past.mhtml">past</a></span>]</li>
     </ul></li>
 
-    <li><a href="css.csail.mit.edu/6.858/2018/lec/l06-capsicum.txt">OS security</a> - TODO summary
+    <li><a href="css.csail.mit.edu/6.858/2018/lec/l06-capsicum.txt">OS security</a> - ambient authority; OS-level access control: virtualize everything, discretionary access control, mandatory access control, capabilities (UNIX fds); no global namespaces
     <ul>
-        <li><a href="css.csail.mit.edu/6.858/2018/readings/capsicum.pdf">Capsicum (2010)</a> [<span class="note"><a href="rq/lec6_q.mhtml">questions</a>/<a href="rq/lec6_ans.mhtml">answers</a></span>]</li>
+        <li><a href="css.csail.mit.edu/6.858/2018/readings/capsicum.pdf">Capsicum (2010)</a> [<span class="note"><a href="rq/lec6_q.mhtml">questions</a>/<a href="rq/lec6_ans.mhtml">answers</a>/<a href="rq/lec6_past.mhtml">past</a></span>]</li>
     </ul></li>
 
-    <li><a href="css.csail.mit.edu/6.858/2018/lec/l07-nacl.txt">Software fault isolation</a> - TODO summary
+    <li><a href="css.csail.mit.edu/6.858/2018/lec/l07-nacl.txt">Software fault isolation</a> - run untrusted binaries in browser (and server); options: trust the code developer, OS sandboxing, software fault isolation (NaCl); variable-length instructions, performance, checking instructions (with computed jumps), memory segmentation; trusted code (trampoline/springboard)
     <ul>
-        <li><a href="css.csail.mit.edu/6.858/2018/readings/nacl.pdf">Native Client (2009)</a> [<span class="note"><a href="rq/lec7_q.mhtml">questions</a>/<a href="rq/lec7_ans.mhtml">answers</a></span>]</li>
+        <li><a href="css.csail.mit.edu/6.858/2018/readings/nacl.pdf">Native Client (2009)</a> [<span class="note"><a href="rq/lec7_q.mhtml">questions</a>/<a href="rq/lec7_ans.mhtml">answers</a>/<a href="rq/lec7_past.mhtml">past</a></span>]</li>
     </ul></li>
 
-    <li><a href="css.csail.mit.edu/6.858/2015/lec/l04-paul-youn.pdf">Airbnb</a> - TODO summary</li>
+    <li><a href="css.csail.mit.edu/6.858/2015/lec/l04-paul-youn.pdf">Airbnb</a> - threat models, features vs. security, Therac-25, CRIME, Stuxnet (Windows vulnerabilities), Flame, MD5 broken, Hacking Team, Firefox ad, Stagefright, USB attacks, Chrome extensions, Xcode Ghost</li>
 
-    <li><a href="css.csail.mit.edu/6.858/2018/lec/l09-sgx.txt">Intel SGX</a> - TODO summary
+    <li><a href="css.csail.mit.edu/6.858/2018/lec/l09-sgx.txt">Intel SGX</a> - Iago attacks: TPM, late boot, trusted hypervisor, special processors; SGX enclave, measurement, attestation; OTP example; Haven for unmodified Windows applications in the cloud
     <ul>
         <li><a href="css.csail.mit.edu/6.858/2018/readings/sgx.pdf">Innovative instructions (2013)</a>, <a href="css.csail.mit.edu/6.858/2018/readings/haven.pdf">Haven (2014)</a>, <a href="css.csail.mit.edu/6.858/2018/readings/costan-sgx.pdf">details</a> [<span class="note"><a href="rq/lec9_q.mhtml">questions</a>/<a href="rq/lec9_ans.mhtml">answers</a></span>]</li>
     </ul></li>
 
-    <li><a href="css.csail.mit.edu/6.858/2018/lec/l10-ios.txt">Client device security</a> - TODO summary
+    <li><a href="css.csail.mit.edu/6.858/2018/lec/l10-ios.txt">Client device security</a> - impersonating user, physical access, OS bugs; secure boot with ECID downgrade protection; secure enclave for key management; key wrapping for data encryption
     <ul>
         <li><a href="css.csail.mit.edu/6.858/2018/readings/ios-security-jan18.pdf">iOS security (2018)</a> [<span class="note"><a href="rq/lec10_q.mhtml">questions</a>/<a href="rq/lec10_ans.mhtml">answers</a></span>]</li>
     </ul></li>
 
-    <li><a href="css.csail.mit.edu/6.858/2018/lec/l11-android.txt">Android security</a> - TODO summary
+    <li><a href="css.csail.mit.edu/6.858/2018/lec/l11-android.txt">Android security</a> - per-app uids, intents for sharing, reference monitor, permissions, mandatory access control (MAC), comparison with iPhone
     <ul>
-        <li><a href="css.csail.mit.edu/6.858/2018/readings/android.pdf">Android security (2009)</a>, <a href="css.csail.mit.edu/6.858/2018/readings/android-errata.txt">errata</a> [<span class="note"><a href="rq/lec11_q.mhtml">questions</a>/<a href="rq/lec11_ans.mhtml">answers</a></span>]</li>
+        <li><a href="css.csail.mit.edu/6.858/2018/readings/android.pdf">Android security (2009)</a>, <a href="css.csail.mit.edu/6.858/2018/readings/android-errata.txt">errata</a> [<span class="note"><a href="rq/lec11_q.mhtml">questions</a>/<a href="rq/lec11_ans.mhtml">answers</a>/<a href="rq/lec11_past.mhtml">past</a></span>]</li>
     </ul></li>
 </ol>
 
 <h2>Labs</h2>
 <ol>
-    <li><a href="css.csail.mit.edu/6.858/2018/labs/lab1.html">Buffer overflows</a> - buffer overflow exploits
+    <li><a href="css.csail.mit.edu/6.858/2018/labs/lab1.html">Buffer overflows</a> - buffer overflows, code injection, return to libc, fixing bugs
         <span class="note">(<a href="css.csail.mit.edu/6.858/2018/readings/phrack_stack_smashing.mhtml">ref</a>) (<a href="/Users/kimberli/Documents/858/lab">code</a>)</span></li>
-    <li><a href="css.csail.mit.edu/6.858/2018/labs/lab2.html">Privilege separation</a> - TODO
+    <li><a href="css.csail.mit.edu/6.858/2018/labs/lab2.html">Privilege separation</a> - process jailing, setting uid/gid/perms, configuring services, calling clients, database perms, password hashing/salting, sandboxing
         <span class="note">(<a href="/Users/kimberli/Documents/858/lab">code</a>)</span></li>
 </ol>
 
@@ -138,5 +152,39 @@
     <li><a href="css.csail.mit.edu/6.858/2018/quiz/q09-1-sol.pdf">2009</a> - TODO</li>
 </ul>
 
+<h2>Misc.</h2>
+<h3>Glossary</h3>
+<ul>
+    <li><b>ASLR</b>: process memory at random addresses</li>
+    <li><b>CA</b>: certificate authority; trusted verification of public key ownership</li>
+    <li><b>CRIME</b>: compression ratio info-leak made easy; information leakage in compressed HTTPS responses</li>
+    <li><b>Cuckoo attack</b>: convince user that an adversary-controlled TPM is in the user's own computer</li>
+    <li><b>Drawbridge</b>: Windows containers using picoprocesses and library OS</li>
+    <li><b>ECID</b>: Apple iPhone exclusive chip ID per device; used to sign iBoot and iOS</li>
+    <li><b>Guard model</b>: gateway between separate systems (like firewall)</li>
+    <li><b>Iago attacks</b>: attacks from malicious OS on an application</li>
+    <li><b>IMC</b>: inter-module communications; NaCl uses NPAPI for this</li>
+    <li><b>MAC</b>: mandatory access control</li>
+    <li><b>NPAPI</b>: browser plugin framework used with NaCl; deprecated in favor of Pepper (PPAPI)</li>
+    <li><b>NX</b>: non-executable (in the context of a stack)</li>
+    <li><b>PBKDF2</b>: expensive hash function good for hashing passwords</li>
+    <li><b>RISC</b>: reduced instruction set computer (e.g. MIPS)</li>
+    <li><b>SFI</b>: software fault isolation</li>
+    <li><b>SGX</b>: software guard extensions - enclave, attestation, sealing</li>
+    <li><b>stack canary</b>: values store to protect stack from control flow hijacking</li>
+    <li><b>TCB</b>: trusted computing base</li>
+    <li><b>TLS</b>: transport layer security; private connection with symmetric cryptography</li>
+    <li><b>TPM</b>: trusted platform module, secure cryptoprocessor that integrates cryptographic keys</li>
+</ul>
+
+<h3>Memory layout</h3>
+<pre>
+<code>|---| DLLs | code | data | heap |-->      <---| stack | kernel |
+0                                                     3G       4G
+(first page is never mapped to catch NULL dereferences)
+</code>
+</pre>
+
+</div>
 </body>
 </html>

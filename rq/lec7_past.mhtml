@@ -1,0 +1,1212 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: http://css.csail.mit.edu/6.858/2018/questions.html?q=q-nacl&lec=7
+Subject: 6.858 / Spring 2018 / Paper Reading Questions
+Date: Thu, 21 Mar 2018 07:18:26 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--d0vdBFuYJhivU7rBCzobQQEiTM6bYXYEjF3vnBR8Kt----"
+
+------MultipartBoundary--d0vdBFuYJhivU7rBCzobQQEiTM6bYXYEjF3vnBR8Kt----
+Content-Type: text/html
+Content-ID: <frame-35213-9918db40-f7a5-420c-bd7c-d510221cf06a@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://css.csail.mit.edu/6.858/2018/questions.html?q=q-nacl&lec=7
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8">
+<title>
+6.858 / Spring 2018
+
+/ Paper Reading Questions
+
+</title>
+<meta http-equiv=3D"pragma" content=3D"no-cache">
+<link rel=3D"stylesheet" type=3D"text/css" href=3D"http://css.csail.mit.edu=
+/6.858/2018/style.css">
+
+
+
+</head>
+
+<body bgcolor=3D"#ffffff" text=3D"#000000">
+
+<table cols=3D"3" width=3D"100%" height=3D"100%" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0">
+<tbody>
+<!-- Header row -->
+<tr height=3D"40px">
+ <td colspan=3D"3">
+ <table width=3D"100%" height=3D"40px" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0">
+ <tbody>
+   <tr>
+    <td bgcolor=3D"#000000">
+      <div align=3D"left" style=3D"padding-left:58px; padding-top: 2px;">
+      <font style=3D"font-size: 28px; color: #ffffff">
+	<a name=3D"top">
+         <b>6.858</b>: Computer Systems Security
+	</a>
+      </font>
+      </div>
+    </td>
+
+    <td bgcolor=3D"#8a0a0a" halign=3D"center" valign=3D"center" width=3D"25=
+0px">
+     <div align=3D"center" style=3D"padding-top: 2px; padding-bottom: 4px;"=
+>
+     <font style=3D"font-size: 28px; color: #ffffff">
+      Spring <b>2018</b>
+     </font>
+     </div>
+    </td>
+  </tr>
+ </tbody>
+ </table>
+ </td>
+</tr>
+
+<!-- horiz line -->
+<tr>
+<td colspan=3D"3" height=3D"5px" bgcolor=3D"#8a0a0a">
+</td>
+</tr>
+
+<tr>
+<!-- Menu -->
+<td bgcolor=3D"#8a0a0a" valign=3D"top" width=3D"180px">
+ <table cols=3D"2" rows=3D"1" border=3D"0" cellspacing=3D"0" cellpadding=3D=
+"0" width=3D"100%" height=3D"100%">
+  <tbody>
+   <tr>
+   <td valign=3D"top">
+   <table cols=3D"1" rows=3D"1" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%">
+    <tbody>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/" class=3D"menuItem=
+">Home</a>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/general.html" class=
+=3D"menuItem">General information</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/schedule.html" clas=
+s=3D"menuItem">Schedule</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/reference.html" cla=
+ss=3D"menuItem">Reference materials</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"https://piazza.com/mit/spring2018/6858" class=3D"menuIt=
+em">Piazza discussion</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/handin.html" c=
+lass=3D"menuItem">Submission</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/quiz.html" class=3D=
+"menuItem">Quizzes</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a class=3D"menuItem">Labs</a><br>
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/lab1.html" cla=
+ss=3D"menuItem">1</a>
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/lab2.html" cla=
+ss=3D"menuItem">2</a>
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/lab3.html" cla=
+ss=3D"menuItem">3</a>
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/lab4.html" cla=
+ss=3D"menuItem">4</a>
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/lab5.html" cla=
+ss=3D"menuItem">5</a>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://ist.mit.edu/network/rules" class=3D"menuItem">MI=
+T network rules</a>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/projects.html" clas=
+s=3D"menuItem">Final projects</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2017/" class=3D"menuItem=
+">2017 class materials</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a rel=3D"license" href=3D"http://creativecommons.org/licenses/by/=
+3.0/us/"><img alt=3D"Creative Commons License" style=3D"border-width:0" src=
+=3D"http://css.csail.mit.edu/6.858/2018/cc-by.png"></a>
+      </div></td></tr>
+    </tbody>
+   </table>
+   </td>
+
+   <td width=3D"3px" bgcolor=3D"#8a0a0a">
+   </td>
+   </tr>
+  </tbody>
+ </table>
+</td>
+<!-- End Menu -->
+
+<td colspan=3D"2">
+
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" heig=
+ht=3D"100%">
+<tbody><tr><td style=3D"padding-left:10px; padding-right:10px; padding-top:=
+ 10px; padding-bottom: 10px" valign=3D"top" align=3D"left">
+
+
+<!-- Begin Page Content -->
+
+
+<!--
+    To add a new question, just put in within a <div> tag, give it
+    some identifier (i.e., 'id=3D"qXX"'), and then add it to the questions
+    array variable below.  To link directly to the question, just use a
+    link to 'questions.html?q=3DqXX'.
+ -->
+
+<h1>
+Paper Reading Questions
+</h1>
+
+<a name=3D"top"></a>
+<p>
+For each paper, your assignment is two-fold.  Before lecture:
+
+</p><ul>
+<li>Submit your answer for each lecture's paper question via the
+    <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/handin.html">submis=
+sion web site</a> in a file named
+    <code>lec<var>n</var>.txt</code>, and
+</li><li>Submit your own question about the paper (e.g., what you find most=
+ confusing about
+    the paper or the paper's general context/problem) in a file named
+    <code>sq<var>n</var>.txt</code>.
+    You cannot
+    use the question below.  To the extent possible, during lecture we will=
+ try to
+    answer these questions.  Below, we have included the questions we've re=
+ceived
+    from students in past years (when available), along with answers to tho=
+se
+    questions, in case you find it helpful.
+</li></ul>
+
+<p id=3D"submit-links" style=3D"visibility: visible; position: static;">
+    Once you submit your own question and answer (or after the deadline
+    has passed), you can view the
+    <a href=3D"https://6858.csail.mit.edu/lec-questions/7" id=3D"question-v=
+iew-link">questions</a>
+    and
+    <a href=3D"https://6858.csail.mit.edu/lec-answers/7" id=3D"answer-view-=
+link">answers</a>
+    that other students submitted.
+</p>
+
+<p></p>
+
+<div id=3D"questions">
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+  <div id=3D"q-nacl" class=3D"questionbox"><p><b>Lecture 7</b></p>
+    <p>
+      Suppose an adversary discovers a bug in NaCl where the checker
+      incorrectly determines the length of a particular x86 instruction.
+      How could an adversary exploit this to escape the inner sandbox?
+    </p>
+  </div>
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+</div>
+
+<style>
+  div.responsebox {
+    margin: 1pc 4% 0pc 4%;
+    padding: 0.5pc 0.5pc 0.5pc 0.5pc;
+    background-color: #e0e0ff;
+    border: 1px dashed red;
+  }
+
+  pre.responsepre {
+    white-space: pre-wrap;
+  }
+</style>
+
+<div id=3D"responses">
+
+  <div class=3D"lecture-responses">
+    <h2>Questions and answers for lecture 7 from past years</h2>
+
+      <div class=3D"responsebox"><pre class=3D"responsepre">Javascript is s=
+andboxed by the Javascript interpreter (or JIT
+compiler); the interpreter simply does not allow the Javascript code
+to access anything it's not supposed to.
+
+Native code is different because, without something like NaCl's
+checks, it would be able to directly invoke arbitrary system calls on
+the underlying OS.
+
+Nickolai.
+
+On Tue, Mar 7, 2017 at 4:13 PM, Anonymous wrote:
+&gt; What are the high-level sandboxing techniques for Javascript and Flash=
+ code?
+&gt; How are the considerations there different from the considerations nec=
+essary
+&gt; for native code?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Some CPUs have =
+bugs in their hardware implementation (silicon or
+microcode) that allow certain malformed instructions to halt the CPU.
+
+Nickolai.
+
+On Tue, Mar 7, 2017 at 5:20 PM, Anonymous wrote:
+&gt; What is the use of the CPU blacklist? Is it protecting against some cl=
+ient side threat, or are there a set of CPUs which architecture for which t=
+hey can not restrict operation to a safe set of instructions? Additionally,=
+ are there additional threat models you have to worry about when directly r=
+unning untrusted binaries, even in a sandbox? Potential for various side ch=
+annel attacks and attacks such as rowhammer come to mind.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">If a program co=
+uld jump to the middle of a long multi-byte x86
+instruction, the resulting instruction could decode as something that
+NaCl would want to block (e.g., a syscall instruction).
+
+Nickolai.
+
+On Tue, Mar 7, 2017 at 2:49 PM, Anonymous wrote:
+&gt; Dillon Dumesnil
+&gt; March 8, 2017
+&gt;
+&gt; 6.858 Lecture 8 Paper Question:
+&gt;
+&gt; What is the point of the byte alignments used in NaCl? I do not really=
+ understand how they are used or what their effects on the code are.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I don't know wh=
+at a better set of names might be.
+
+The main plan is to ensure the inner sandbox confines the code in the
+sandbox.  The outer sandbox provides some lightweight additional
+measures that might reduce damage if an adversary can find and exploit
+some bug in the inner sandbox.
+
+Nickolai.
+
+On Tue, Mar 7, 2017 at 4:53 PM, Anonymous wrote:
+&gt; Samantha Briasco-Stewart; erosolar@mit.edu
+&gt; 6.858 Paper Question 8; Due 2017.03.07 @ 10:00PM
+&gt;
+&gt; Question for "Native Client: A Sandbox for Portable, Untrusted x86 Nat=
+ive Code (NaCl):
+&gt;
+&gt;  - I am confused why the inner and outer sandboxes are called that. To=
+ me, the
+&gt;    phrasing suggests two equally good sandboxes, layered for extra pro=
+tection
+&gt;    (eg. wearing a raincoat and carrying an umbrella). The paper, thoug=
+h, makes
+&gt;    it seem more like each sandbox protects against a different set of =
+'attacks'
+&gt;    (more like wearing a raincoat and buying a waterproof backpack). Wh=
+ich of
+&gt;    these models is more correct, and is there a better naming scheme t=
+hey could
+&gt;    have used?
+&gt;
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Flash and Activ=
+eX came along about a decade before NaCl.  Their
+adoption had little to do with their security or insecurity.
+
+Nickolai.
+
+On Sun, Mar 5, 2017 at 9:38 PM, Anonymous wrote:
+&gt; Why have secure solutions like NaCl not caught on when unsecure ones l=
+ike Flash and ActiveX were widely adopted?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">There isn't a p=
+articularly succinct answer here.  Lacking precise
+documentation of instruction encodings from Intel (much more detailed
+than what Intel's manuals describe), it seems like the only viable
+plan is what they are doing: thinking carefully, testing, fuzzing,
+etc.
+
+Nickolai.
+
+On Tue, Mar 7, 2017 at 6:03 AM, Anonymous wrote:
+&gt; One thing that I'm a little hazy on and they authors don't talk about =
+in detail is how they ensured that their set of blacklisted x86 instruction=
+s is complete. They specify that they exclude three categories of opcodes (=
+syscalls, state modifiers, and returns) but they also note that testing rev=
+ealed that  certain prefixes also caused issues, and thus they had to use a=
+ whitelist for prefixes. With all the permutations and instruction sequence=
+s possible, how can they be certain that their subset of the x86 instructio=
+n set does not allow for any potentially malicious instruction sequences? T=
+hey already missed the issues with the prefixes that was found in testing, =
+how can we audit to make sure that we haven't missed anything else?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">On Tue, Mar 7, =
+2017 at 7:12 PM, Anonymous wrote:
+&gt; 1) Just Javascript itself (without sandboxing) is usually considered t=
+o already be far more secure than running Java or Flash. Why is this? What =
+is it that causes, for instance, Java to come with so many security holes t=
+hat other languages don't have? Given its reputation and popularity, it cou=
+ldn't be that Java is just sloppily written, could it?
+
+It came along very early on, and made security decisions that, in
+retrospect, weren't the best.
+
+&gt; 2) What is a datagram? In particular, what is the difference between a=
+ datagram and a packet?
+
+A datagram is a packet.
+
+&gt; 3) Why does performance for bzip2 increase while performance for gzip =
+decrease with NaCl?
+
+Noise.
+
+&gt; 4) The linked Wikipedia article on the footnote for Voronoi diagrams i=
+s a disambiguation page, and the page on 'Voronoi diagram', presumably the =
+page intended to be referred to, contains no algorithm that's clearly a bru=
+te force algorithm. What do the authors mean when the reference a Voronoi b=
+rute force algorithm?
+
+https://nacltools.storage.googleapis.com/io2014/voronoi.zip
+
+&gt; 5) What is a flat addressing model? Is it the same as a flat memory mo=
+del?
+
+Yeah, just flat 32-bit pointers.
+
+Nickolai.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I don't think i=
+t's a big deal.  Intel CPUs don't get good performance
+if performance-critical code is being modified anyway.
+
+Nickolai.
+
+On Tue, Mar 7, 2017 at 2:09 PM, Anonymous wrote:
+&gt; Realistically, how much of a restriction is the inabilty to have the b=
+inary modify itself during execution?  They discuss how the impact of align=
+ment isn't very big but don't mention the other consraint needed for reliab=
+le disassembly.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">The NaCl progra=
+m would have to do this via Javascript -- the only
+interaction allowed by NaCl is between the NaCl sandboxed process and
+its Javascript "parent", so to say.
+
+Nickolai.
+
+On Tue, Mar 7, 2017 at 8:07 PM, Anonymous wrote:
+&gt; Would it be possible, under this system, for the NaCL process to inter=
+act securely with a sibling program that resides and runs locally on the co=
+mputer? (i.e. controlling one's Spotify music player through a Spotify NaCL=
+ program that is accessed through the browser)
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">On Tue, Mar 7, =
+2017 at 12:37 PM, Anonymous wrote:
+&gt; Why would non-adversary binaries ever need to use the opcodes disallow=
+ed by Native Client (3.1) ? Do these limitations placed by Native Client si=
+gnificantly hinder the capabilities of native code?
+
+Doesn't seem like a big deal for most applications.
+
+Nickolai.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">These are just =
+snippets of code written by NaCl developers that, on
+exit from the sandbox, undoes the sandboxing restrictions and restores
+the regular segment selectors, etc, and on entry to the sandbox, sets
+up the sandbox again.
+
+Nickolai.
+
+On Tue, Mar 7, 2017 at 2:24 PM, Anonymous wrote:
+&gt; Graeme Campbell
+&gt; Personal Question: Lecture 8
+&gt;
+&gt; The paper mentions secure springboard/trampoline mechanisms but seems =
+to assume that we know
+&gt; what they are. Could you explain what springboard/trampoline does, and=
+ why they allow secure
+&gt; transitions between untrusted and trusted code in the dynamic runtime =
+for NaCl?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">On Tue, Mar 7, =
+2017 at 7:48 PM, Anonymous wrote:
+&gt; How scalable is Native client? I mean in terms of the applications it =
+can handle.
+
+The paper describes the cost to scan the binary at runtime for proper
+instrumentation, and there's some limit in their 32-bit version on the
+code size (256MB), but their 64-bit version removes that restriction.
+
+&gt; I noticed this statement in page 3:
+&gt;
+&gt; "Because it has access to local disk, the storage
+&gt; service must be installed as a native browser plugin"
+&gt;
+&gt;
+&gt; Is Native client generic or do I have to install everything I use?
+
+The sandbox and runtime is generic.  Each sandboxed applet can then,
+in principle, be run in that sandbox/runtime.
+
+&gt; Is it made for regular non-specialized users or more for companies lik=
+e Google?
+
+At the time, the plan was to distribute this with web browsers.  Now
+NaCl itself is used more in server-side environments.  The techniques
+it uses (SFI) are pretty broadly applicable.
+
+Nickolai.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">On Tue, Mar 7, =
+2017 at 6:14 PM, Anonymous wrote:
+&gt; Near the end of section 2.2 the authors write that "To prevent uninten=
+ded network access, network system calls such as connect() and accept() are=
+ simply omitted. NaCl modules can access the network via JavaScript in the =
+browser".  I don't really understand how that combines with the native x86 =
+code in NativeClient modules.  Are authors expected to implement their own =
+native code &lt;--&gt; Javascript interfaces to let native code initiate ne=
+twork access?
+
+Yes.
+
+&gt; Also, I understand why `accept()` is potentially dangerous, but I don'=
+t understand why initiating outbound connections is problematic because it =
+can already be done in Javascript.
+
+Javascript does not allow arbitrary network connections -- only
+connections to the same origin via HTTP (plus various exceptions we
+will look at later in web security).
+
+Nickolai.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">On Tue, Mar 7, =
+2017 at 7:00 PM, Anonymous wrote:
+&gt; The paper uses a lot of jargon in the system architecture section, but=
+ I think using Native Client constists of the following things:
+&gt; (0) A programmer compiles their C code into a x86 binary. They make a =
+webpage whose Javascript references the binary.
+&gt; (1) The end user runs a browser that has Native Client enabled. The br=
+owser accesses the webpage and downloads the binary. Then, it disassembles =
+the binary and inserts the instrumented jumps and such. It also shifts arou=
+nd jump destinations so they are aligned with 32-byte slots. Also, it check=
+ed to make sure all the machine instructions are allowed, i.e. none of the =
+instructions are going to halt the processor or call the kernel. Finally, i=
+t reassembles the binary.
+&gt; (2) The browser runs binary. The browser has its own set of libraries =
+for "unsafe" functions that the binary might want to call. These libraries =
+were written carefully by the NaCl authors and include things like allocati=
+ng memory and maybe even thread stuff.
+&gt;
+&gt; I'm sort of assuming some parts; is this correct?
+
+Not quite: the programmer compiles the C code into an x86 binary using
+a special compiler that inserts these alignments and instrumentation.
+Then, the browser in step 1 just checks that the instrumentation is
+there, instead of the much more difficult task you were imagining.
+
+&gt; It seems like step (1) is sort of difficult to do--shifting around ins=
+tructions so they align to slots; how, for example, would a static JMP inst=
+ruction still jump to the right address if you've padded out a bunch of pre=
+ceeding functions? Am I misinterpreting this?
+&gt;
+&gt; Also, what's the basis for contraint #4: "The binary is padded up to t=
+he nearest page with at least one hlt instruction"?
+
+Just so that there's no weirdness possible by executing off the end of
+the binary.
+
+Nickolai.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">The techniques =
+are somewhat different -- NaCl instruments assembly
+code with inline checks at compile time, and the runtime ensures that
+the checks are present, while WebAssembly provides an intermediate
+(even if low-level) instruction set that gets compiled to the target
+machine, along with adding the necessary checks, at runtime.  The
+WebAssembly plan is more portable but requires compiling code to a
+whole new instruction set, rather than a slight variation of x86.
+
+Nickolai.
+
+On Tue, Mar 7, 2017 at 4:39 PM, Anonymous wrote:
+&gt; What are the main differences between NaCl and the relatively recent W=
+ebAssembly?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Yes:
+
+  https://arstechnica.com/information-technology/2009/07/google-nacl-securi=
+ty-contest-uncovered-vulnerabilities/
+
+Nickolai.
+
+On Tue, Mar 7, 2017 at 7:11 PM, Anonymous wrote:
+&gt; Just curious, but was there such a bug found in NaCI such that an adve=
+rsary was able to exploit an escape from the inner sandbox?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Javascript engi=
+nes have gotten way faster, and machines have gotten
+way faster, and there's specialized variants of Javascript like asm.js
+for high performance computations, so web pages can do a lot more
+compute-intensive stuff in the browser.
+
+Nickolai.
+
+On Tue, Mar 7, 2017 at 6:11 PM, Anonymous wrote:
+&gt; Lecture 8
+&gt;
+&gt; Since 2009, has computational performance on the web significantly imp=
+roved, or remained fairly constant?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">The %ss registe=
+r is special in x86; some instructions implicitly refer
+to it (like push and pop).
+
+Nickolai.
+
+On Tue, Mar 7, 2017 at 5:39 PM, Anonymous wrote:
+&gt; Why does NaCl overwrite the %ss segment register? This is why applicat=
+ions can't use the exception stack, but I can't figure out why it is overwr=
+itten at all.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Not that I know=
+ of.  There were some interesting bugs where the
+verifier didn't properly decode instructions, but they messed up on
+something other than length:
+
+  https://www.nccgroup.trust/us/about-us/newsroom-and-events/blog/2009/augu=
+st/the-security-implications-of-google-native-client/
+
+Nickolai.
+
+On Tue, Mar 7, 2017 at 3:09 PM, Anonymous wrote:
+&gt; Zane Markel
+&gt; Lecture 8 Reading Question
+&gt;
+&gt; The reading response question just begs the question - have there been=
+ any known bugs in NaCl in which the checker incorrectly determined the len=
+gth of a particular x86 instruction?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Probably not mu=
+ch impact on web development proper.
+
+Software fault isolation, which NaCl is an example of, is a powerful
+technique and is used in cases where strong isolation is required.
+NaCl itself isn't so widely used in browsers, but is used in other
+cases for strong isolation of untrusted code.
+
+Nickolai.
+
+On Tue, Mar 7, 2017 at 6:35 PM, Anonymous wrote:
+&gt; What impact did this system end up having on web development?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I imagine the w=
+asm guys looked at NaCl when designing their plan.  In
+terms of the actual plan, it's somewhat different: wasm compiles
+intermediate instructions to machine code at runtime, whereas NaCl
+runs the supplied native code directly at runtime, after performing
+lightweight checks to ensure the instrumentation is already there.
+
+Nickolai.
+
+On Tue, Mar 7, 2017 at 4:14 PM, Anonymous wrote:
+&gt; Is this related to wasm at all?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">The answer is t=
+he same reason why that non-tech-savvy user might run a
+large application like the Chrome browser: it comes from a reputable
+source, or is recommended by some friend, or is perhaps pre-installed
+on their computer..  The plan for NaCl was for browser vendors to
+incorporate it into their browsers by default.  Chrome did.  Other
+browsers didn't.  NaCl is now used for sandboxing in other use cases,
+like isolating untrusted code on a server (and not so much for browser
+sandboxing).
+
+Nickolai.
+
+On Mon, Mar 6, 2017 at 6:03 PM, Anonymous wrote:
+&gt; 6.858 Lecture 8 - Sandboxing
+&gt; 3/8/17
+&gt;
+&gt; The NaCl module needs to be trusted by the user. But why should someon=
+e who
+&gt; isn't tech-saavy trust this module more than some module they would ot=
+herwise
+&gt; be trying to run natively from their browser? E.g. suppose I want to r=
+un some
+&gt; computation-heavy physics simulation from a university. Why should I t=
+rust
+&gt; the NaCl container (which I likely wouldn't understand as a non tech-s=
+aavy
+&gt; user) but not the simulation itself?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">If an adversary=
+ finds a bug in the implementation of the inner
+sandbox, they might still not be able to escape the outer sandbox..
+Is that what you were asking about?
+
+Nickolai.
+
+On Tue, Mar 7, 2017 at 7:30 PM, Anonymous wrote:
+&gt; How does the outer sandbox provide additional security depth? Since th=
+ey left it out of performance analysis, it seems strange that they even men=
+tioned it.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">On Tue, Mar 7, =
+2017 at 2:42 AM, Anonymous wrote:
+&gt; How does NaCl compare in security against other approaches of allowing=
+ code to
+&gt; execute at "native" speed in the browser, namely asm.js and WebAssembl=
+y? I
+&gt; unerstand those seem to rely more heavily on some sort of bytecode, as=
+ opposed
+&gt; to unadulterated x86 assembly in NaCl. Does this mean that NaCl code w=
+ill
+&gt; inherently execute faster?
+
+Yes, NaCl has more direct control over the code executing on the
+machine.  This is good in some ways (less toolchain to modify, more
+precise control, easier to port existing software), and bad in some
+ways (less portability).
+
+Nickolai.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">On Tue, Mar 7, =
+2017 at 2:18 AM, Anonymous wrote:
+&gt; How does segmentation work and how is it enforced? Are the any documen=
+ts/links you would recommend reading to develop a good understanding of the=
+se architecture related designs?
+
+x86 instructions access memory locations relative to a "segment", and
+the CPU enforces restrictions associated with that segment (like where
+the segment starts, how large it is, etc).  6.828 is the best way to
+learn this stuff.
+
+Nickolai.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">It would be und=
+esirable if a random web page could connect to your
+local network devices (say, your printer or thermostat or Chromecast).
+
+Nickolai.
+
+On Tue, Mar 7, 2017 at 6:53 PM, Anonymous wrote:
+&gt; Why does NaCl disallow network access from within a module?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">On Tue, Mar 7, =
+2017 at 1:23 AM, Anonymous wrote:
+&gt; Is there a particular reason this design was as convoluted as it was? =
+I'm not sure if this was necessarily the simplest design that would've ensu=
+red proper sandboxing...
+
+I think all the aspects of their design stem from their requirements:
+allow developers to run pretty much native machine code, do not rely
+on the OS for sandboxing, and run on off-the-shelf x86 hardware.
+
+Nickolai.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">On Tue, Mar 7, =
+2017 at 1:40 PM, Anonymous wrote:
+&gt; Two brief questions:
+&gt; 1) Their "outer sandbox": I'm understanding this to just be a last lin=
+e of defense intercepting disallowed system calls. Accurate?
+
+Correct.
+
+&gt; 2) Has this research been integrated into any modern browsers? In my w=
+eb usage, this seems to be a fairly niche need but I suppose some people ma=
+y benefit from it. Seems like there wouldn't be enough demand.
+
+Chrome integrated it (given that NaCl came from the Chrome development
+team).  I think it's still in there.  Other browsers didn't pick it
+up.
+
+NaCl (and the broader set of techniques it illustrates, SFI) are used
+in other contexts now where you need strong isolation.
+
+Nickolai.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Yes!  It's main=
+ly used outside of the browser now -- e.g., sandboxing
+server-side untrusted code where relying on a VM would be too
+heavy-weight and relying on the OS would not give strong enough
+guarantees.
+
+Nickolai.
+
+On Tue, Mar 7, 2017 at 8:41 PM, Anonymous wrote:
+&gt; The design of NaCl seems general enough that it could be used outside =
+web browsers too (e.g. for running apps in mobile, or structuring an OS in =
+general). Are there any such examples?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">On Sat, Mar 4, =
+2017 at 11:37 PM, Anonymous wrote:
+&gt; The paper is fairly light on the specifics of the NPAPI implementation=
+ used; this seems like a fairly plausible attack vector- with a malicious N=
+aCl module crafted to send NPAPI messages that exploit vulnerabilities on t=
+he JavaScript/browser side, some damage could probably be done. Is the NaCl=
+ team justified in offloading this threat to the browser sandbox?
+
+I think NPAPI was, indeed, one of the biggest warts in NaCl.  Partly
+in response to this, they developed a better plug-in API, PPAPI.
+
+Nickolai.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">On Sun, Mar 5, =
+2017 at 12:02 PM, Anonymous wrote:
+&gt; Can you please explain the race condition described here: =E2=80=9Capa=
+rt from facilitating control sandboxing, excluding ret also prevents a vuln=
+erability due to a race condition if the return address were checked on the=
+ stack.=E2=80=9D?
+
+If NaCl first checked that the address on the stack was valid, and
+then executed the ret instruction, another thread could modify the
+address on the stack to be some other value that NaCl didn't check.
+
+Nickolai.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">The first byte =
+of the springboard code is a hlt instruction, which is
+the only place that untrusted code can jump.  See bottom right of page
+6.
+
+Nickolai.
+
+On Tue, Mar 7, 2017 at 8:43 PM, Anonymous wrote:
+&gt; How exactly is alignment ensuring that springboards cannot be invoked =
+by untrusted code?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">On Sun, Mar 5, =
+2017 at 3:01 PM, Anonymous wrote:
+&gt; 1) Is a mechanism like NaCl really necessary a decade later, when so m=
+uch energy has
+&gt;    been poured into JavaScript JITs? Is JavaScript fast enough? Is the=
+ freedom provided
+&gt;    by x86 assembly really necessary, or is is it just as effective to =
+write in a high-level
+&gt;    that's easier to statically check and compile after the fact? (Ackn=
+owledging the paper's point
+&gt;    that adding a compiler to your TCB is a big increase in attack surf=
+ace, we now have
+&gt;    verified compilers...) In short, over the past 8 years, to what ext=
+ent have the dynamics
+&gt;    changed in the problem space NaCl confronts (and have they rendered=
+ NaCl's approach less desirable)?
+&gt; 2) Did NaCl go anywhere as a standard?
+
+For browser sandboxing, it doesn't seem to have won.
+
+NaCl and SFI-related techniques are still used for other situations
+where strong, lightweight isolation without relying on the OS is
+needed.  For example, server-side workloads where the code might come
+from an untrusted user.
+
+&gt; 3) Is there risk to NaCl's reliance on x86 segmentation? Given that we=
+ ostensibly live in a
+&gt;    64-bit world, is the paper taking a pretty big reliance on a *very*=
+ old feature of x86? Or
+&gt;    will backwards compatibility keep those features around forever? Ho=
+w would one go about trying
+&gt;    to recreate these mechanisms in 64-bit?
+
+There's a 64-bit version of NaCl that works around the limited segment
+hardware in 64-bit mode:
+
+  http://static.usenix.org/events/sec10/tech/full_papers/Sehr.pdf
+
+&gt; 4) Do you have a pointer to a good/definitive paper on proof-carrying =
+code? I've always wanted to
+&gt;    dig deeper into it, and this seems paper was a good reminder.
+
+This is the main paper I think of for PCC:
+
+  http://web.eecs.umich.edu/~bchandra/courses/papers/Necula_PCC.pdf
+
+Nickolai.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Depends entirel=
+y on the application.
+
+Nickolai.
+
+On Tue, Mar 7, 2017 at 8:44 PM, Anonymous wrote:
+&gt; Based on the paper, it is obvious that we cannot avoid performance ove=
+rhead to enhance security for sandbox and isolation.
+&gt; Is there any certain guideline performance vs security ? Like we can a=
+llow 10 % reduction of system's best performance to enhance security ?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">It's a complex =
+system, so the answer is "it depends".  It requires the
+browser to support NaCl.  So deploying it requires the major browser
+vendors to buy into this plan.  This hasn't happened, but NaCl has
+found use in other contexts, where strong sandboxing is required.
+
+Nickolai.
+
+On Tue, Mar 7, 2017 at 6:49 PM, Anonymous wrote:
+&gt; What is the limitation of NaCl? Is it the code size of the module load=
+ed (since it has to be in the same segment)?
+
+</pre></div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- End Page Content -->
+
+</td></tr>
+
+<tr bgcolor=3D"#999999" height=3D"20px">
+<td style=3D"padding-left:10px; padding-top: 10px; padding-bottom: 10px">
+<font style=3D"font-size: 12px;">
+<p>Questions or comments regarding 6.858?  Send e-mail to the course staff =
+at
+<a href=3D"mailto:6858-staff@lists.csail.mit.edu"><i>6858-staff@lists.csail=
+.mit.edu</i></a>.
+
+</p></font><p><font style=3D"font-size: 12px;"><b><a href=3D"http://css.csa=
+il.mit.edu/6.858/2018/questions.html?q=3Dq-nacl&amp;lec=3D7#top">Top</a></b=
+> //
+<b><a href=3D"http://css.csail.mit.edu/6.858/2018/">6.858 home</a></b> //=
+=20
+<i>Last updated Wednesday, 28-Feb-2018 11:14:53 EST</i>
+</font>
+</p></td></tr>
+</tbody></table>
+
+</td>
+
+</tr>
+</tbody>
+</table>
+
+
+
+
+</body></html>
+------MultipartBoundary--d0vdBFuYJhivU7rBCzobQQEiTM6bYXYEjF3vnBR8Kt----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://css.csail.mit.edu/6.858/2018/style.css
+
+@charset "utf-8";
+
+body { background-color: rgb(255, 255, 255); margin: 0px; padding: 0px; fon=
+t-family: verdana, arial, helvetica, sans-serif; }
+
+p { font-size: 13px; }
+
+ol { font-size: 13px; }
+
+ul { font-size: 13px; }
+
+pre { font-family: "courier new", courier, mono; color: rgb(202, 10, 10); f=
+ont-size: 13px; }
+
+.menuHead { text-align: center; padding-top: 8px; padding-bottom: 8px; }
+
+.menuItem { color: rgb(255, 255, 255); text-decoration: none; font-weight: =
+bold; font-size: 16px; }
+
+table.calendar { font-family: arial, helvetica; font-size: 10pt; empty-cell=
+s: show; border: 1px solid rgb(0, 0, 0); }
+
+table.calendar tr td { border: 1px solid rgb(170, 170, 170); }
+
+table.calendar tr { vertical-align: top; height: 75px; background: rgb(238,=
+ 238, 238); }
+
+table.calendar tr.header { font-weight: bold; font-size: 13px; background-c=
+olor: rgb(68, 68, 68); color: rgb(255, 255, 255); height: 25px; text-align:=
+ center; }
+
+.lecture { background: rgb(255, 255, 170); }
+
+.holiday { background: rgb(204, 255, 204); }
+
+.special { background: rgb(170, 170, 255); }
+
+.lab { background: rgb(0, 204, 204); }
+
+.important { background: rgb(255, 170, 170); }
+
+.reading { color: rgb(51, 51, 255); }
+
+.handout { color: rgb(0, 153, 0); }
+
+.deadline { color: rgb(255, 0, 0); }
+
+.note { color: rgb(136, 136, 0); }
+
+.assignment { color: rgb(10, 160, 10); }
+
+.date { color: rgb(68, 68, 68); }
+
+div.questionbox { margin: 1pc 4% 0pc; padding: 0.5pc; background-color: rgb=
+(224, 224, 255); border: 1px dashed red; }
+------MultipartBoundary--d0vdBFuYJhivU7rBCzobQQEiTM6bYXYEjF3vnBR8Kt----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://css.csail.mit.edu/6.858/2018/cc-by.png
+
+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
+SUVORK5CYII=
+------MultipartBoundary--d0vdBFuYJhivU7rBCzobQQEiTM6bYXYEjF3vnBR8Kt------

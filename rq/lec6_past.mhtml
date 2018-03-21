@@ -1,0 +1,1847 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: http://css.csail.mit.edu/6.858/2018/questions.html?q=q-capsicum&lec=6
+Subject: 6.858 / Spring 2018 / Paper Reading Questions
+Date: Thu, 21 Mar 2018 07:18:10 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--VAYhXABBy1kJFMiUBNLcbUBvzb2ipTYrfBL4EcpTa2----"
+
+------MultipartBoundary--VAYhXABBy1kJFMiUBNLcbUBvzb2ipTYrfBL4EcpTa2----
+Content-Type: text/html
+Content-ID: <frame-35210-93093b02-3f02-4094-9721-0d362ab345c8@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://css.csail.mit.edu/6.858/2018/questions.html?q=q-capsicum&lec=6
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8">
+<title>
+6.858 / Spring 2018
+
+/ Paper Reading Questions
+
+</title>
+<meta http-equiv=3D"pragma" content=3D"no-cache">
+<link rel=3D"stylesheet" type=3D"text/css" href=3D"http://css.csail.mit.edu=
+/6.858/2018/style.css">
+
+
+
+</head>
+
+<body bgcolor=3D"#ffffff" text=3D"#000000">
+
+<table cols=3D"3" width=3D"100%" height=3D"100%" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0">
+<tbody>
+<!-- Header row -->
+<tr height=3D"40px">
+ <td colspan=3D"3">
+ <table width=3D"100%" height=3D"40px" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0">
+ <tbody>
+   <tr>
+    <td bgcolor=3D"#000000">
+      <div align=3D"left" style=3D"padding-left:58px; padding-top: 2px;">
+      <font style=3D"font-size: 28px; color: #ffffff">
+	<a name=3D"top">
+         <b>6.858</b>: Computer Systems Security
+	</a>
+      </font>
+      </div>
+    </td>
+
+    <td bgcolor=3D"#8a0a0a" halign=3D"center" valign=3D"center" width=3D"25=
+0px">
+     <div align=3D"center" style=3D"padding-top: 2px; padding-bottom: 4px;"=
+>
+     <font style=3D"font-size: 28px; color: #ffffff">
+      Spring <b>2018</b>
+     </font>
+     </div>
+    </td>
+  </tr>
+ </tbody>
+ </table>
+ </td>
+</tr>
+
+<!-- horiz line -->
+<tr>
+<td colspan=3D"3" height=3D"5px" bgcolor=3D"#8a0a0a">
+</td>
+</tr>
+
+<tr>
+<!-- Menu -->
+<td bgcolor=3D"#8a0a0a" valign=3D"top" width=3D"180px">
+ <table cols=3D"2" rows=3D"1" border=3D"0" cellspacing=3D"0" cellpadding=3D=
+"0" width=3D"100%" height=3D"100%">
+  <tbody>
+   <tr>
+   <td valign=3D"top">
+   <table cols=3D"1" rows=3D"1" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%">
+    <tbody>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/" class=3D"menuItem=
+">Home</a>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/general.html" class=
+=3D"menuItem">General information</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/schedule.html" clas=
+s=3D"menuItem">Schedule</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/reference.html" cla=
+ss=3D"menuItem">Reference materials</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"https://piazza.com/mit/spring2018/6858" class=3D"menuIt=
+em">Piazza discussion</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/handin.html" c=
+lass=3D"menuItem">Submission</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/quiz.html" class=3D=
+"menuItem">Quizzes</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a class=3D"menuItem">Labs</a><br>
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/lab1.html" cla=
+ss=3D"menuItem">1</a>
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/lab2.html" cla=
+ss=3D"menuItem">2</a>
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/lab3.html" cla=
+ss=3D"menuItem">3</a>
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/lab4.html" cla=
+ss=3D"menuItem">4</a>
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/lab5.html" cla=
+ss=3D"menuItem">5</a>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://ist.mit.edu/network/rules" class=3D"menuItem">MI=
+T network rules</a>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/projects.html" clas=
+s=3D"menuItem">Final projects</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2017/" class=3D"menuItem=
+">2017 class materials</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a rel=3D"license" href=3D"http://creativecommons.org/licenses/by/=
+3.0/us/"><img alt=3D"Creative Commons License" style=3D"border-width:0" src=
+=3D"http://css.csail.mit.edu/6.858/2018/cc-by.png"></a>
+      </div></td></tr>
+    </tbody>
+   </table>
+   </td>
+
+   <td width=3D"3px" bgcolor=3D"#8a0a0a">
+   </td>
+   </tr>
+  </tbody>
+ </table>
+</td>
+<!-- End Menu -->
+
+<td colspan=3D"2">
+
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" heig=
+ht=3D"100%">
+<tbody><tr><td style=3D"padding-left:10px; padding-right:10px; padding-top:=
+ 10px; padding-bottom: 10px" valign=3D"top" align=3D"left">
+
+
+<!-- Begin Page Content -->
+
+
+<!--
+    To add a new question, just put in within a <div> tag, give it
+    some identifier (i.e., 'id=3D"qXX"'), and then add it to the questions
+    array variable below.  To link directly to the question, just use a
+    link to 'questions.html?q=3DqXX'.
+ -->
+
+<h1>
+Paper Reading Questions
+</h1>
+
+<a name=3D"top"></a>
+<p>
+For each paper, your assignment is two-fold.  Before lecture:
+
+</p><ul>
+<li>Submit your answer for each lecture's paper question via the
+    <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/handin.html">submis=
+sion web site</a> in a file named
+    <code>lec<var>n</var>.txt</code>, and
+</li><li>Submit your own question about the paper (e.g., what you find most=
+ confusing about
+    the paper or the paper's general context/problem) in a file named
+    <code>sq<var>n</var>.txt</code>.
+    You cannot
+    use the question below.  To the extent possible, during lecture we will=
+ try to
+    answer these questions.  Below, we have included the questions we've re=
+ceived
+    from students in past years (when available), along with answers to tho=
+se
+    questions, in case you find it helpful.
+</li></ul>
+
+<p id=3D"submit-links" style=3D"visibility: visible; position: static;">
+    Once you submit your own question and answer (or after the deadline
+    has passed), you can view the
+    <a href=3D"https://6858.csail.mit.edu/lec-questions/6" id=3D"question-v=
+iew-link">questions</a>
+    and
+    <a href=3D"https://6858.csail.mit.edu/lec-answers/6" id=3D"answer-view-=
+link">answers</a>
+    that other students submitted.
+</p>
+
+<p></p>
+
+<div id=3D"questions">
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+  <div id=3D"q-capsicum" class=3D"questionbox"><p><b>Lecture 6</b></p>
+    <p>
+      The authors of the Capsicum paper describe several strategies
+      for how to use Capsicum in several applications (Section 4).
+      How would you recommend using Capsicum in the different components
+      of OKWS?  Are there features missing from Capsicum that would have
+      made it easier to build OKWS?
+    </p>
+  </div>
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+</div>
+
+<style>
+  div.responsebox {
+    margin: 1pc 4% 0pc 4%;
+    padding: 0.5pc 0.5pc 0.5pc 0.5pc;
+    background-color: #e0e0ff;
+    border: 1px dashed red;
+  }
+
+  pre.responsepre {
+    white-space: pre-wrap;
+  }
+</style>
+
+<div id=3D"responses">
+
+  <div class=3D"lecture-responses">
+    <h2>Questions and answers for lecture 6 from past years</h2>
+
+      <div class=3D"responsebox"><pre class=3D"responsepre">I believe Capsi=
+cum would allow okld to do pretty much everything
+without being root, except for listening on port 80.  So perhaps okld
+could bind to port 80, then drop its root privileges, and continue
+running.  It can keep access to port 80 afterwards; the FD
+corresponding to the socket for port 80 is a capability, which can be
+used as long as the process has that FD open.
+
+Nickolai.
+
+On Sat, Feb 25, 2017 at 6:51 PM, Anonymous wrote:
+&gt; In OKWS, okld has to run as root because it needs to bind to a privile=
+ged port. Would it have been possible to use Capsicum somehow to avoid havi=
+ng okld run as root? From reading the paper, I wasn=E2=80=99t sure if a pro=
+cess would still be able to listen on a privileged port after running cap_e=
+nter.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">The application=
+ is now several processes talking to each other, so
+it's no longer a single process that you can attach to with a debugger
+and single-step easily.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 2:04 PM, Anonymous wrote:
+&gt; Dillon Dumesnil
+&gt; March 1, 2017
+&gt;
+&gt; 6.858 Lecture 6 Paper Question:
+&gt; It seems that the biggest issue with Capsicum is the difficulty it add=
+s to debugging the program and ensuring the capabilities are being assigned=
+ correctly. My question is why? To me, it seems as though all the existing =
+tests a developer would have written should still be able to be used regard=
+less of using Capsicum or not.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Capsicum is par=
+t of FreeBSD -- that is, FreeBSD developers integrated
+the Capsicum design into their kernel (at least one of the paper
+authors is a FreeBSD developer).  So it's not a thing that a user or
+administrator can install on top of FreeBSD.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 9:31 PM, Anonymous wrote:
+&gt;
+&gt; The paper says that they add system calls and take privilidges from on=
+es.
+&gt; What mechanism is used to enforce this? I mean to install capsicum, sy=
+stem code would have to get changed right? How does the system make such lo=
+w level changes?
+&gt;
+&gt; Why wasn't unix created with these considerations to begin with?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Yeah, just turn=
+ the thing you care about into a file descriptor.  For
+example, set up a connection to a database proxy, send the 20-byte
+token to the DB proxy to authenticate this connection, and then hand
+this connection FD to the sandboxed process.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 3:39 PM, Anonymous wrote:
+&gt; Can capabilities be feasibly used to implement access controls on thin=
+gs other than file descriptors, e.g. the SQL queries in OKWS?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">No idea, sorry.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 3:16 PM, Anonymous wrote:
+&gt; Where does the name Capsicum come from? I get the "cap" part, but why =
+name it after a pepper?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Correct, a sand=
+box is just a way a developer might logically think of
+what they're trying to achieve, but in terms of the kernel interface,
+there's just individual capabilities, and the "capability mode" flag
+on a process.
+
+Kind-of how, you can run a database on a Unix machine, but the kernel
+has no notion of SQL, tables, transactions, what have you -- it just
+understands files, processes, and sockets.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 9:40 PM, Anonymous wrote:
+&gt; Am I correct that there is no independent notion of a 'sandbox' indepe=
+ndent of
+&gt; a set of capabilities that have been provided to a process? For exampl=
+e, it
+&gt; would not make sense to think of two processes operating in the same '=
+sandbox'.
+&gt; The degree to which different processes can interact with one another =
+and with
+&gt; shared resources is determined by the details of the capabilities that=
+ each of
+&gt; the processes has. I was confused by the use of 'sandbox' as an indepe=
+ndent
+&gt; entity in section 2.3:
+&gt;
+&gt; ```
+&gt; Even with Capsicum=E2=80=99s kernel primitives, creating sandboxes
+&gt; without leaking undesired resources via file descriptors,
+&gt; memory mappings, or memory contents is dif-
+&gt; ficult. libcapsicum therefore provides an API for starting
+&gt; scrubbed sandbox processes, and explicit delegation
+&gt; APIs to assign rights to sandboxes. libcapsicum
+&gt; cuts off the sandbox=E2=80=99s access to global namespaces via
+&gt; cap enter, but also closes file descriptors not positively
+&gt; identified for delegation, and flushes the address space
+&gt; via fexecve. Sandbox creation returns a UNIX domain
+&gt; socket that applications can use for inter-process communication
+&gt; (IPC) between host and sandbox; it can also
+&gt; be used to grant additional rights as the sandbox runs
+&gt; ```
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Many operating =
+systems have various kinds of sandboxes now -- the
+related work section lists a number, including MacOSX's seatbelt
+thing, and Linux's seccomp mechanism.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 8:50 PM, Anonymous wrote:
+&gt;
+&gt; Why isn't Capsicum a basic feature of operating systems, since it seem=
+s so useful and simple in so many situations? What are the drawbacks that h=
+ave stymied its widespread implementaiton (wikipedia lists a bunch of resea=
+rch os's using it, but nothing mainstream)?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I agree Capsicu=
+m seems pretty cool!
+
+One possible answer, somewhat depressingly, is that OS security has
+failed and it doesn't matter anymore: for any situation where an
+application really cares about isolation, it would have moved to using
+separate VMs already..
+
+On a more positive note, check out OpenBSD's pledge(), which is a
+sort-of equivalent to libcapsicum's interface:
+
+  https://www.theregister.co.uk/2015/11/10/untamed_pledge_hopes_to_improve_=
+openbsd_security/
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 9:37 PM, Anonymous wrote:
+&gt; In section 5 only seccomp is described as capability based, and even t=
+hen in
+&gt; a very limited fashion, not allowing "more granular delegation via
+&gt; capabilities=E2=80=9D, though I don=E2=80=99t know what specifically i=
+s being referred to by
+&gt; that. And seccomp required 11,301 lines of code, vs 100 for Capsium. C=
+apsium
+&gt; makes it seem so easy and useful, it seems almost silly that it isn=E2=
+=80=99t
+&gt; mainstream, unless there is some drawback they aren=E2=80=99t addressi=
+ng?
+&gt;
+&gt; On Feb 28, 2017, at 9:27 PM, Nickolai Zeldovich &lt;nickolai@csail.mit=
+.edu&gt;
+&gt; wrote:
+&gt;
+&gt; Many operating systems have various kinds of sandboxes now -- the
+&gt; related work section lists a number, including MacOSX's seatbelt
+&gt; thing, and Linux's seccomp mechanism.
+&gt;
+&gt; Nickolai.
+&gt;
+&gt; On Tue, Feb 28, 2017 at 8:50 PM, Anonymous wrote:
+&gt;
+&gt;
+&gt; Why isn't Capsicum a basic feature of operating systems, since it seem=
+s so
+&gt; useful and simple in so many situations? What are the drawbacks that h=
+ave
+&gt; stymied its widespread implementaiton (wikipedia lists a bunch of rese=
+arch
+&gt; os's using it, but nothing mainstream)?
+&gt;
+&gt;
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">No.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 9:24 PM, Anonymous wrote:
+&gt; Was Capsicum developed by Google?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Yeah, there's b=
+een some work on making it easy to define
+privilege-separation boundaries in applications.  One paper that comes
+to mind is Wedge:
+
+  http://css.csail.mit.edu/6.858/2015/readings/wedge.pdf
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 9:37 PM, Anonymous wrote:
+&gt; To gain the most use out of Capsicum, an application developer would n=
+eed to
+&gt; carefully think of all privileges and resources of the application in =
+advance,
+&gt; or later continuously refactor the program into distributed system sty=
+le.
+&gt;
+&gt; The paper mentions that this is not only a difficult analysis to perfo=
+rm
+&gt; on a big application, it is also difficult to debug and profile such a=
+pplication
+&gt; split into multiple moving parts for the security reasons.
+&gt;
+&gt; This sets a trade-off of development convenience vs security.
+&gt;
+&gt; In case of buffer overrun, the development convenience of working with=
+ buffers
+&gt; and the safety are combined in high level languages (built-in bounds c=
+hecks,
+&gt; garbage collection, etc).
+&gt; Can a high-level language make the development easy, but the security =
+and
+&gt; separation as simple to debug and profile? (for example: hide RPC call=
+s behind
+&gt; function calls syntax, setup the socketpairs for RPCs, etc)
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">One process can=
+not revoke or modify capabilities of another process.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 9:39 PM, Anonymous wrote:
+&gt; I have question about its usability such as revoke or modify capabilit=
+y from a process. How easy and hard to make changes on currently running pr=
+ocess.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Indeed, in Caps=
+icum, if an attacker compromises a sandboxed
+(capability-mode) process, that process wouldn't be able to kill other
+processes of the same UID.  (Assuming it wasn't given an FD capability
+on some process.)
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 3:54 PM, Anonymous wrote:
+&gt; During Lecture 5, we talked about how in order to kill a process, the =
+UID=E2=80=99s for the user and the process have to match. Since access to g=
+lobal namespace is no longer possible in Capsicum, does that mean that if a=
+n attacker compromised a certain OKWS service with a given UID, they can=E2=
+=80=99t compromise other services with the same UID by looking up other pro=
+cesses with the same UID and killing them?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Suppose I want =
+to run some untrusted code.
+
+In Unix, that code could just run "ps", look at what other processes
+I'm running, and kill them.  That's allowed because that process is
+running under my UID.
+
+In Capsicum, if I put that code into a capability-mode process, that
+code wouldn't be able to name my other processes, so it wouldn't be
+able to kill them.
+
+Nickolai.
+
+On Mon, Feb 27, 2017 at 11:31 PM, Anonymous wrote:
+&gt; Lecture 6 Question - mmgong
+&gt;
+&gt; The paper states that process descriptors are used to address the prob=
+lem of the process ID (PID) global namespace. However, I am confused about =
+what is the problem exactly with the PID namespace? Why is it an issue? How=
+ to process descriptors fix this?
+&gt;
+&gt; (I'm a little more confused than usual by this paper)
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">It's an absolut=
+e statement.  The kernel keeps track of a table of open
+files/capabilities for a process.  There's no way for a process to
+make up a capability or file descriptor, because the table just
+doesn't contain other stuff..
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 6:49 PM, Anonymous wrote:
+&gt; I'm not sure I understand how file descriptors and capabilities are un=
+forgeable. Is that given current technology, or is that an absolute stateme=
+nt?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">One really cool=
+ aspect of Capsicum is its practicality.  The more
+extreme capability-based OSes that the paper refers to (EROS, CapROS,
+KeyKOS, PSOS, etc) have all failed in terms of practical impact,
+partly because they focused on conceptual simplicity over pragmatic
+issues.  They are cool research results, and they are valuable in the
+sense that you learn a lot from their design.  I imagine a
+proof-carrying-code-based system would be of similar research value:
+it would ideally clarify some issues and help people understand some
+ideas better, but I can't see it actually being a good idea in
+practice.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 6:38 PM, Anonymous wrote:
+&gt; What capsicum has done on a high level is allowed the developer to def=
+ine a set of calls a process can make different from the kernel calls. But =
+they have made these choices for you. A general approach, similar to how Mi=
+crokernels works is to let the developer write a these calls i.e each proce=
+ss inherits/gets a Kernel API which are the only calls it can make (Somewha=
+t have to be checked for bugs). This will solve a lot of problems, but this=
+ code has to be protected by the process's code, therefore has to run on a =
+ higher privelge level (or seperately). Maybe Proof carrying kernel code is=
+ a good tradeoff which gives perf in this case (There is still headache for=
+ the delevoper to give the proof)
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I believe Chrom=
+ium on FreeBSD does use Capsicum.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 8:47 PM, Anonymous wrote:
+&gt;  Why is Capsicum not used more widely commercially? For example in Goo=
+gle Chromium's web browser?
+&gt;
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">The child gets =
+a separate reference to the underlying open file.
+Similar to how, if you fork off a process in Unix, the child process
+can close its file descriptors, but that doesn't affect the parent.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 9:40 PM, Anonymous wrote:
+&gt; Max Lancaster
+&gt; Lecture 6 Student Question
+&gt;
+&gt; Capsicum distributes 'capabilities' via file descriptors, and when a p=
+rocess forks, the child inherits the open file descriptors from the parent =
+process. If that's the case, say a child process would like to further rest=
+rict its capabilities. It must do so by itself. But what happens to the par=
+ent process's capabilities?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">The picture is =
+pretty accurate.
+
+This is a result of the fact that capabilities are good for keeping
+track of short-term privileges, but not good for keeping track of
+long-term privileges.  Capabilities can't answer "who has access to
+this file?", which is crucial in the long term.  Capability-based OSes
+ignore this fact.
+
+One line of research in operating system security is in better
+sandboxing mechanisms -- see the Ryoan paper we are reading in a few
+weeks.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 2:34 PM, Anonymous wrote:
+&gt; Embedded in this paper is the assumption that capabilities have remain=
+ed a research
+&gt; curiosity rather than a successful story of tech-transfer because most=
+ contemporary
+&gt; operating systems have failed to adopt capabilities. The picture that =
+the Related Work
+&gt; section paints is one of research OSes (mostly microkernels) with capa=
+bilites and
+&gt; commercial OSes (entirely monolithic kernels) without capabilities.
+&gt;
+&gt; 1) To what extent is this picture accurate?
+&gt; 2) Is this a product of the fact that commercial operating systems hav=
+e largely ossified and that the
+&gt; people who write code that interacts with OS security functions are st=
+uck in their ways?
+&gt;
+&gt; This perspective seems to miss the big picture that capabilities seem =
+quite popular in distributed
+&gt; systems settings that go beyond a single OS. Or maybe this fact is ass=
+umed but left unstated by the authors,
+&gt; who have chosen to work on the harder domain of making capabilities wo=
+rk efficiently within a single OS?
+&gt; This is really several questions, but I'm trying to contextualize this=
+ paper in larger discussions
+&gt; in OS security research.
+&gt;
+&gt; * * *
+&gt;
+&gt; What are considered to be topics of current research in operating syst=
+ems and OS security?
+&gt; I took a lot of systems classes during undergrad, but we tended to rea=
+d the classic papers
+&gt; (exokernel, scheduler activations, etc.) rather than look at current r=
+esearch. Is Capsicum (2010?)
+&gt; the style of research that people pursue today?
+&gt; My impression is that, like networking research, the commercial OS lan=
+dscape has become rather ossified,
+&gt; leaving little room for new ideas to make their way into production sy=
+stems.
+&gt; I'm trying to imagine what interesting research in OS/security looks l=
+ike today.
+&gt; Is it mostly in building distributed systems rather than looking at OS=
+ internals? Is it
+&gt; more focused on verification?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">OKWS does use c=
+apability ideas a lot -- the whole notion of setting up
+socketpairs between processes, and passing around FDs for oklogd and
+passing FDs for incoming HTTP connections are pretty capability-esque.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 8:29 PM, Anonymous wrote:
+&gt; I'm curious as to why OKWS didn't use capability-based security in the=
+ first place, since the designer seemed very concerned about process isolat=
+ion. Although Capsicum wasn't around when OKWS was developed, the idea of c=
+apabilities had been around for several decades at that point (based on the=
+ age of KeyKOS).
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I imagine there=
+'s always bugs in the implementation (e.g., in the
+FreeBSD kernel).
+
+But, the design of Capsicum seems like it should be safe.  That is, if
+a bug is found, it should be fixable to bring the code in line with
+the safe design.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 9:34 PM, Anonymous wrote:
+&gt; I'm assuming there are still vulnerabilities in the Capsicum framework=
+ (because
+&gt; there are always still vulnerabilities in any framework), but what wou=
+ld those
+&gt; be/have they been used by attackers before? And if so, what is the cur=
+rent
+&gt; protocol for defending against those attacks? Or, at the very least, i=
+s
+&gt; Capsicum "in theory" (if used totally correctly and privilege separati=
+on is
+&gt; done completely securely) safe?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">There's epsilon=
+ overheads here and there, but I imagine the main (and
+still probably small) overheads are from two sources:
+
+- Overhead for running extra processes due to the extra compartments, and
+
+- Overhead for interacting between these processes through messages
+(RPC, what have you).
+
+These overheads aren't really specific to Capsicum; any plan to break
+up an application would incur these (e.g., see OKWS).
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 5:59 PM, Anonymous wrote:
+&gt; Lecture 6
+&gt;
+&gt; Runtime overhead is discussed extensively; is there any additional mem=
+ory overhead at all when using Capsicum?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">With access to =
+a global namespace, it's hard to figure out what
+privileges a process might have -- it depends on what's out there in
+the global namespace.
+
+Without access to a global namespace, it's easy: just look at what
+capabilities you gave to a process.
+
+Opening files requires a capability on the directory containing that
+file.  So you can give a process a capability to some directory, and
+that lets the process open files (and sub-directories) in that
+directory.
+
+Nickolai.
+
+On Mon, Feb 27, 2017 at 8:57 AM, Anonymous wrote:
+&gt; Why is necessary to deny processes in capability mode access to global=
+ namespaces? I don=E2=80=99t think I understand what the problem is exactly=
+. Also if we disallow global namespaces, then how do we open a file and obt=
+ain its file descriptor (the capability) in the first place? For example, i=
+f my application needs to open files on the fly then how can those files be=
+ opened?
+&gt;
+&gt; Also based on 3.1, are file descriptors and process descriptors put in=
+ the same table?
+&gt;
+&gt; Can you explain the main objectives of sandboxing an application? What=
+ do we want to get out of it? What does it protect us from? I=E2=80=99m new=
+ to this idea.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">You can give th=
+e capability to the process in one of two ways:
+
+- You give it to the process when the process is first started.  OKWS
+does this a lot in its design: they open some file descriptors, and
+then pass them to a process when they start it in the first place.
+
+- You pass it to the process, over some channel (like a socket).  OKWS
+does this with incoming HTTP connections: they are first accepted by
+okd, but once okd figures out which service it's intended for, it
+passes the fd (a capability, in effect) to the correct service over a
+socket between okd and that service.
+
+Nickolai.
+
+On Mon, Feb 27, 2017 at 9:32 AM, Anonymous wrote:
+&gt; But, by disallowing global namespaces, how do you give a process a
+&gt; capability to some directory in the first place? You still need to som=
+ehow
+&gt; specify a path to that directory to obtain that capability, right?
+&gt;
+&gt; On Mon, Feb 27, 2017 at 9:21 AM, Nickolai Zeldovich &lt;nickolai@csail=
+.mit.edu&gt;
+&gt; wrote:
+&gt;&gt;
+&gt;&gt; With access to a global namespace, it's hard to figure out what
+&gt;&gt; privileges a process might have -- it depends on what's out there =
+in
+&gt;&gt; the global namespace.
+&gt;&gt;
+&gt;&gt; Without access to a global namespace, it's easy: just look at what
+&gt;&gt; capabilities you gave to a process.
+&gt;&gt;
+&gt;&gt; Opening files requires a capability on the directory containing th=
+at
+&gt;&gt; file.  So you can give a process a capability to some directory, a=
+nd
+&gt;&gt; that lets the process open files (and sub-directories) in that
+&gt;&gt; directory.
+&gt;&gt;
+&gt;&gt; Nickolai.
+&gt;&gt;
+&gt;&gt; On Mon, Feb 27, 2017 at 8:57 AM, Anonymous wrote:
+&gt;&gt; &gt; Why is necessary to deny processes in capability mode access =
+to global
+&gt;&gt; &gt; namespaces? I don=E2=80=99t think I understand what the probl=
+em is exactly. Also if
+&gt;&gt; &gt; we disallow global namespaces, then how do we open a file and=
+ obtain its
+&gt;&gt; &gt; file descriptor (the capability) in the first place? For exam=
+ple, if my
+&gt;&gt; &gt; application needs to open files on the fly then how can those=
+ files be
+&gt;&gt; &gt; opened?
+&gt;&gt; &gt;
+&gt;&gt; &gt; Also based on 3.1, are file descriptors and process descripto=
+rs put in
+&gt;&gt; &gt; the same table?
+&gt;&gt; &gt;
+&gt;&gt; &gt; Can you explain the main objectives of sandboxing an applicat=
+ion? What
+&gt;&gt; &gt; do we want to get out of it? What does it protect us from? I=
+=E2=80=99m new to this
+&gt;&gt; &gt; idea.
+&gt;
+&gt;
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">On Mon, Feb 27,=
+ 2017 at 3:27 AM, Anonymous wrote:
+&gt; 1. The system described in The Confused Deputy seems to eschew file
+&gt; system ACLs completely in favor of capabilities. Could UNIX have been
+&gt; conceivably implemented in the same way? I understand that file
+&gt; descriptors are a primitive form of capabilities in UNIX, but would it
+&gt; be possible for it to completely rely on capabilities without any ACL?
+
+There's been some work on capability-based OSes; it hasn't worked out
+in the sense that they aren't widely used, but the papers are still
+super interesting.  In the past, we used to read about these in 6.858;
+check out KeyKOS in particular:
+
+  http://css.csail.mit.edu/6.858/2011/readings/keykos.pdf
+  http://css.csail.mit.edu/6.858/2011/readings/keykos/
+  http://css.csail.mit.edu/6.858/2011/readings/keykos/Dom/fundamental/recep=
+c.ck
+
+&gt; 2. Does Linux cgroups have anything to do with capabilities? Can it be
+&gt; used to perform sandboxing?
+
+Not in the sense that the papers refer to, no.
+
+Nickolai.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">With OKWS, you =
+had to be root to sandbox things.  And it was fairly awkward.
+
+With Capsicum, you don't need to be root, and it's fairly
+straightforward (at least for certain kinds of sandboxes).
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 9:22 PM, Anonymous wrote:
+&gt; Lecture 6 Reading - Student Question:
+&gt;
+&gt; What are the differences between using message passing, explicit share=
+d memory or a common address space for component communication?
+&gt;
+&gt; Also, how is using capsicum fundamentally different to how OKWS jails =
+its services and provides UIDs and GIDs to different services with differen=
+t permissions depending on their needs? I.e. I don't quite (clearly) unders=
+tand what new measure of protection this brings to the table.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Right, they jus=
+t provide a byte stream interface (socket), and they
+don't require any particular RPC format.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 2:42 PM, Anonymous wrote:
+&gt; The authors talk a decent bit about IPC and IDL. I understand their im=
+plementation to just return a file descriptor/socket to a forking (cap_ente=
+ring) process which can be used to communicate with the spawned process. An=
+d when they say they don't choose an IDL, they mean they don't force an RPC=
+ protocol on these IPC's. Is this correct? I.e. is IPC handle just a "socke=
+t" between the processes?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Capsicum doesn'=
+t require any special hardware.
+
+Capsicum is a part of FreeBSD, so it's not something that a user or
+administrator would add themselves; it's just a set of changes that
+the FreeBSD developers incorporated into the FreeBSD kernel.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 9:18 PM, Anonymous wrote:
+&gt; To what extent are various system architectures flexible to adding the=
+ sys_call and hardware based changes capsicum requires?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I'm not sure wh=
+at "interjecting" means.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 9:39 PM, Anonymous wrote:
+&gt; If capabilities are passed around processes, then what stops an advers=
+ary from interjecting a capability and just using it?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">The libraries d=
+o not have privileges of their own; the library code
+uses privileges that the process has.
+
+Nickolai.
+
+On Mon, Feb 27, 2017 at 10:41 PM, Anonymous wrote:
+&gt; The authors describe how an application is linked against most standar=
+d C libraries. Isn't this a vulnerability, or is the idea that privileges a=
+re limited such that an adversary would not be able to use powerful functio=
+ns from those libraries?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">It's a set of c=
+hanges that have been integrated into the FreeBSD
+kernel, and are now a standard part of FreeBSD.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 8:03 PM, Anonymous wrote:
+&gt; I'm not quite sure as to what Capsicum really is. Is it actually an OS=
+ system, or is it kind of like an extension/API call type thing in UNIX to =
+speed things up
+&gt; and use its sandbox capabilities for different applications such as we=
+b browsing?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I think applica=
+tion developers solve such problems in
+application-specific ways.  I don't think there's a general-purpose
+solution for this class of issues; it really requires the app
+developer to understand what's going on and to change their app in the
+right way (and, based on what little the paper said about it, it seems
+like the change might often be simple once you understand the app).
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 9:14 PM, Anonymous wrote:
+&gt; 6.858 Lecture Question 6
+&gt; Marcus Boorstin
+&gt;
+&gt; I don't understand the discussion around initialization near the end o=
+f section 4.1.  Their argument for why dynamic initialization of resources =
+during runtime causes problems with Capsicum certainly makes sense (namely =
+that many programs delay requesting resources until they're actually needed=
+, but after the Capsicum jail has been entered during a program's initial l=
+oad it's a lot harder to request those resources later).  However, they see=
+m to have avoided the issue with tcpdump by using a different DNS resolving=
+ service, and they don't mention the issue anywhere else in the paper even =
+though they move plenty of other programs to Capsicum.  Does it just not co=
+me up in practice, or did they always find similar ways around the problem?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I think statist=
+ics is not a good approach to measuring security.
+Statistics fundamentally assumes sampling from some understood
+distribution.  Computer security is about sampling from a distribution
+of inputs chosen by an adversary.  It seems impossible to describe
+what these inputs might look like.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 3:48 PM, Anonymous wrote:
+&gt; The paper gives some logical arguments for why Capsicum improves secur=
+ity,
+&gt; but as far as statistical evaluations it only seems to discuss perform=
+ance
+&gt; overhead. Is there any statistical way that they could have analyzed a=
+nd
+&gt; discussed security improvements?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">An application =
+may not know ahead of time what objects it needs to
+access.  Not supporting this means telling the developers of such
+applications that they can't use Capsicum to sandbox their code.
+Applications are not forced to implement dynamic transfer of
+capabilities, though, so an application with a static set of
+capabilities for its sandbox shouldn't really be impacted negatively
+by this design decision.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 9:16 PM, Anonymous wrote:
+&gt; # sq6
+&gt; =E2=80=9CSandbox creation returns a UNIX domain socket that applicatio=
+ns can use for inter-process communication (IPC) between host and sandbox; =
+it can also be used to grant additional rights as the sandbox runs.=E2=80=
+=9D This seems to introduce security vulnerabilities unnecessarily. What ma=
+ke dynamically granting additional rights worth it?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">The caller, in =
+this case, is some other part of the FreeBSD kernel, so
+the caller is trusted, and the API is just a convenient way to ensure
+the caller is forced to supply some set of rights.  I imagine this was
+a nice way for these authors to find all the places in the FreeBSD
+kernel where they need to decide what rights are being requested.
+
+Nickolai.
+
+On Mon, Feb 27, 2017 at 7:15 PM, Anonymous wrote:
+&gt; Graeme Campbell
+&gt; Personal Question: Lecture 6
+&gt;
+&gt; In section 3.1 the means by which Capsicum checks capability rights, v=
+ia fget, is described.
+&gt; It states that callers are allowed to specify what rights are required=
+ to perform the current
+&gt; operation. Is it safe to provide that ability to the caller? Is it pos=
+sible for a malicious
+&gt; caller to modify the required rights to ensure such a check would pass=
+, or are we unconcerned
+&gt; with malicious callers in this threat model?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I believe they =
+are imagining the following code in the kernel:
+
+  for each component in the slash-separated pathname:
+    if looking up ".." in directory d then:
+      if d is the root of the capability:
+        return error
+    ## do the actual lookup of a path component in d
+
+The race is:
+
+  a process creates a helper process, and they both agree on some
+directory they have a capability for (call it "/d").
+
+  process 1 creates a sub-directory /d/x/y
+  process 1 opens a directory capability for /d/x
+  process 1 accesses y/../../.. via that capability
+  process 2, in the meantime, renames /d/x/y to /d/y (using its
+capability for /d)
+
+This can allow process 1's access to get to the root directory, /.
+Play around with the interleaving, and if you can't figure it out,
+stop by after lecture.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 6:09 PM, Anonymous wrote:
+&gt; I am confused about the reason for restricting the use of directory tr=
+aversals in the the sandboxes. Is this just an insurance against possible b=
+ug's in the code? I am having trouble constructing a situation in which two=
+ sandbox'ed applications can work in conjunction to change the file tree in=
+ such a way that allows for an escape.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">The idea of cap=
+abilities is a pretty basic, widely-used concept in security.
+
+FreeBSD is a somewhat mainstream operating system, and, as the paper
+says, it now includes Capsicum.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 9:57 PM, Anonymous wrote:
+&gt; I haven't heard of many of the technologies and techniques covered in =
+this class, like Capsicum. How often does research like this propagate into=
+ the mainstream?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">On Tue, Feb 28,=
+ 2017 at 9:50 PM, Anonymous wrote:
+&gt; 1) Did FreeBSD end up incorporating capabilities as the paper suggeste=
+d was being done, and if so is there any feedback on the results of this? I=
+t seems like it would be a major breaking change.
+
+Yes.  At least one of the authors is a FreeBSD developer.  This paper
+describes the breakage they discovered and how they fixed it.
+
+&gt; 2) Was MAC something included in early UNIX systems or was this was so=
+mething integrated much later?
+
+MAC ideas showed up in Unix much later, although they were in MULTICS
+fairly early on.
+
+Nickolai.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Presumably whoe=
+ver set up the application should have arranged for a
+way that one process can tell another one that it's finished.
+
+One way this can be accomplished is by giving the process descriptor
+of the first process to the second process.  (Process descriptors are
+a thing that Capsicum introduced, and are described at the end of
+section 3.1.)
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 9:04 PM, Anonymous wrote:
+&gt; It is unclear to me how task scheduling is handled in capsicum. If one=
+ process needs to do something after another process finishes, how that int=
+eraction happens if in different sandboxes?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I think all of =
+these companies have various sandboxing mechanisms --
+e.g., Apple's MacOSX has Seatbelt.  So they do realize that they need
+such mechanisms, and they have added such mechanisms.
+
+You might argue whether Capsicum or Seatbelt is better; I don't know
+what Apple's engineers think of this.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 9:58 PM, Anonymous wrote:
+&gt; It seems like many major software companies (Apple, Google, MS, etc) a=
+re simultaneously writing OSes that don't provide great sandboxing (nothing=
+ like Capsicum) and then spending a lot of effort trying to write applicati=
+ons that implement their own sandboxing. Why don't these vendors just provi=
+de better Sandboxing in the first place and make it easier on the teams tha=
+t have to write their web browsers? Either way the company has to do the wo=
+rk?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Good point!  Ob=
+ject references in type-safe languages can be thought
+of as a capability, and have been used that way for isolation.  For
+example, in Java, you might hand out a reference to a User object only
+after that user has been authenticated.  If the application code
+doesn't have the user's password, it can't get the User object to read
+or write that user's profile.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 8:48 PM, Anonymous wrote:
+&gt; Zane Markel
+&gt; Reading Question for Lecture 6
+&gt;
+&gt; While capsicum does limit OS-level capabilities, developers still need=
+ to implement their own application-level capabilities on what users can do=
+ in an application. Has anybody proposed application-level capabilities?
+&gt;
+&gt; (For instance, a capability for a web-service process might limit whic=
+h user's files can be read and written depending on which remote user has a=
+uthenticated. Alternatively, processes might be given SQL-specific capabili=
+ties for accessing a database.)
+&gt;
+&gt;
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Yes, FreeBSD us=
+es Capsicum, and some companies use FreeBSD.  The idea
+of capabilities, which predated Capsicum, is also widely used.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 9:58 PM, Anonymous wrote:
+&gt; Has this paper had any impact on security in industry?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">If a process is=
+ not running as root, it can't set the UID/GID, but it
+can still use Capsicum.
+
+It's also not sufficient to just set the UID/GID if a process is
+worried about access to world-readable files; it would need to use
+chroot.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 9:36 PM, Anonymous wrote:
+&gt; What is a specific case where using Capsicum would provide better secu=
+rity tha simply setting UID/GID, when it comes to file access?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">When an applica=
+tion invokes cap_enter(), the kernel flips the
+"capability mode" bit in the process descriptor.  All system calls
+that behave differently in capability mode vs non-capability mode
+check this bit.  So, once you flip the bit, the behavior of all such
+subsequent system calls changes..
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 9:47 PM, Anonymous wrote:
+&gt; Paper: Capsicum
+&gt;
+&gt; My Question: How does just adding a cap_enter() call make it so that
+&gt; everything after it is executed via Capsicum mechanisms?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">No, there's a g=
+ood chance the application will break if the process
+didn't set up anything and just randomly called cap_enter().  The app
+developer needs to think about what the plan is, and adjust the code
+accordingly.  The paper shows that, for some apps, it is almost as
+simple as just calling cap_enter(), like in the tcpdump application,
+where the app is already built around file descriptors, etc.  But
+other apps are more complicated to convert.  And even tcpdump had some
+unexpected corner cases.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 10:21 PM, Anonymous wrote:
+&gt; Ah, that makes sense. Does that mean that there is some sort of defaul=
+t
+&gt; behavior that is used when you don't do anything besides call cap_ente=
+r()?
+&gt;
+&gt; On Tue, Feb 28, 2017 at 10:15 PM Nickolai Zeldovich &lt;nickolai@csail=
+.mit.edu&gt;
+&gt; wrote:
+&gt;&gt;
+&gt;&gt; When an application invokes cap_enter(), the kernel flips the
+&gt;&gt; "capability mode" bit in the process descriptor.  All system calls
+&gt;&gt; that behave differently in capability mode vs non-capability mode
+&gt;&gt; check this bit.  So, once you flip the bit, the behavior of all su=
+ch
+&gt;&gt; subsequent system calls changes..
+&gt;&gt;
+&gt;&gt; Nickolai.
+&gt;&gt;
+&gt;&gt; On Tue, Feb 28, 2017 at 9:47 PM, Anonymous wrote:
+&gt;&gt; &gt; Paper: Capsicum
+&gt;&gt; &gt;
+&gt;&gt; &gt; My Question: How does just adding a cap_enter() call make it =
+so that
+&gt;&gt; &gt; everything after it is executed via Capsicum mechanisms?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I believe some =
+FreeBSD programs now use Capsicum by default.
+
+I think the Capsicum-on-Linux project hasn't been very active.  Linux
+seems to be pushing their seccomp plan, which is different (better for
+some things, worse for other things).  I don't have a good sense of
+what the Linux developers think of Capsicum.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 7:38 PM, Anonymous wrote:
+&gt; It seems like Capsicum has been included in FreeBSD from version 10 an=
+d onwards.
+&gt; Does this mean that some applications have been replaced by sandboxed =
+versions
+&gt; by default, or is it hidden behind a flag/configuration setting? There=
+'s also a
+&gt; Google project [0] for implementing Capsicum in the Linux kernel. What=
+ kind of
+&gt; integration would be likely if this was ever merged upstream? I.e. wou=
+ld it stop
+&gt; at being an optional increased level of security, or would the goal ev=
+entually
+&gt; be to use it by default for as much as possible?
+&gt;
+&gt; [0] - https://github.com/google/capsicum-linux
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">He did!  OKWS u=
+ses file descriptors extensively, very much like capabilities.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 9:55 PM, Anonymous wrote:
+&gt; Why didn't the creator of OKWS use capability-based services in their =
+design since the idea had been around awhile?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Sort-of yes and=
+ sort-of no.  Capsicum's overhead is at creation time,
+largely because it creates a new process for the sandbox.  If you're
+already creating a separate process, in the architecture you refer to,
+then you wouldn't create a second process; you can probably just use
+the same one, but isolate it with something like Capsicum.
+
+Nickolai.
+
+On Mon, Feb 27, 2017 at 5:46 PM, Anonymous wrote:
+&gt; It seems that much of the overhead from using Capsicum occurs only onc=
+e at the time of creation (as seen in the gzip performance results). How wo=
+uld the use of capabilities scale for microservice/FaaS architectures, wher=
+e short-running processes are very common? Would the performance overhead b=
+e too excessive?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">There have been=
+ a number of bugs in gzip's input processing code
+(think buffer overflows like in lab 1) when decompressing a file
+downloaded from the internet.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 9:57 PM, Anonymous wrote:
+&gt; I guess I'm confused about why gzip was a program they tried adding ca=
+psicum to. What kind of vulnerabilities are they protecting against? My und=
+erstanding is that gzip is just basic compression/decompression whereas mos=
+t of the other examples they give involve connections to the internet and n=
+etworks, where I am more familiar with the risks.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">When the OS ker=
+nel interprets a path supplied by a user-space process,
+it splits it at "/" characters, and if it finds a ".." path component,
+when in capability mode, it returns an error.  There isn't really
+other sanitization being done because it's not necessary.
+
+I imagine they use locks to deal with concurrent threads to avoid races.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 2:38 PM, Anonymous wrote:
+&gt; In section 2.2, the authors mention that they "dissallow some cases wh=
+en a capability is passed" such as absolute paths and paths containing "...=
+". How are these checks actually performed in a secure way? How does the sy=
+stem sanitize the user input to allow most file names except the cases abov=
+e and how do they prevent against other vulnerabilities such as race condit=
+ions?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">No, I doubt tha=
+t would work..  Someone has to figure out what it would
+mean to integrate capabilities into an existing OS design -- look at
+the long list of issues they had to deal with in terms of integrating
+capabilities into FreeBSD, and not just at the code level, but even
+adapting their design..
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 9:59 PM, Anonymous wrote:
+&gt; 6.858 Paper Question for Lecture #6
+&gt; Capsicum
+&gt; 2/28/16
+&gt; Ismael 'Izzy' Gomez
+&gt; -----
+&gt;
+&gt; This paper adds functionality to an OS's base API for security improve=
+ment. The authors describe modifying programs to make use of these new API =
+calls. Since the publication of this paper, have there been further efforts=
+ to effortlessly migrate to using capablities-based systems in modern OSs, =
+rather than depending on manual code modification?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Dune is more fo=
+cused on giving raw access to hardware features.  It
+doesn't really have anything to say about controlled fine-grained
+sharing.  Capsicum has a way of precisely specifying which objects are
+shared and accessible, and which are not.  But Capsicum has nothing to
+say about raw hardware access.
+
+So, they're solving fairly different problems, although you can build
+a different kind of sandbox on top of Dune.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 9:57 PM, Anonymous wrote:
+&gt; How does this compare to Dune? Are they the same sort of systems? What=
+ are the tradeoffs of one vs the other?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">There's a lot o=
+f ioctl() calls that do various things.  For example,
+Linux has an ioctl() to zero-fill a portion of a file, or to send the
+contents of a file over a network socket, etc.  That's why the
+Capsicum guys largely disable ioctls in cap mode.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 9:55 PM, Anonymous wrote:
+&gt; It is interesting to learn how wrapping a file descriptor can help red=
+uce scope of actions one can perform. Like limiting operation on meta-data =
+in read-only mode mentioned in the paper. Do you know other operation that =
+attack can make use of frequently for different traditional file descriptio=
+n modes (without intrigating with the Capsicum)?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">No real industr=
+y standards in this space.
+
+I imagine the biggest thing to consider is whether any proposed split
+of the application into smaller compartments is good for security, and
+whether it's good for software development, flexibility, evolving the
+application over time, ease of debugging, etc.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 9:51 PM, Anonymous wrote:
+&gt; I know that performance isn't a big problem when it comes to using cap=
+sicum,
+&gt; but are there other engineering trade offs that we should look into wh=
+en using
+&gt; capsicum? There are clearly some trade-offs already when proposing the=
+ use of
+&gt; OKWS with capsicum. Also, is there an industry standard for stuff like
+&gt; web-servers when it comes to mixing program privileges with splitting =
+up
+&gt; services?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Chrome and Chro=
+mium implement the same sandboxing plan.
+
+I don't know what's the flow of code between Chrome and Chromium.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 9:27 PM, Anonymous wrote:
+&gt; Does Chrome implement the same integrated sandboxing techniques descri=
+bed in the paper for Chromium? To my understanding, Google take features fr=
+om Chromium (open-sourced) and adds them to Chrome?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">This is difficu=
+lt for several reasons:
+
+- It's error-prone to require services to do this.
+
+- The logic for interpreting an ACL might be complicated, so the
+service might implement a slightly different check than the kernel.
+
+- The check of the ACL by the service, and the actual operation issued
+by the service, are not atomic, and are subject to race conditions.
+This is a well-known category of Unix security issues called TOCTTOU
+bugs (https://en.wikipedia.org/wiki/Time_of_check_to_time_of_use)
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 6:43 PM, Anonymous wrote:
+&gt; Why do ACLs not solve the problem that capabilities solve? Can't servi=
+ces query the ACL membership of clients and determine the presence of their=
+ permissions to make changes to files?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Capsicum isn't =
+a thing that users or administrators would install on
+top of an existing system; it's part of the FreeBSD kernel itself.  At
+least one of the authors of this paper is a FreeBSD developer, and he
+(and others) integrated the design described in this paper into the
+FreeBSD kernel.  So users or admins that install FreeBSD get a system
+that includes the features this paper talks about.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 5:44 PM, Anonymous wrote:
+&gt; How does one add system calls to the operating system? Are these write=
+s permanent, or do they reset when the system restarts. This seems like a g=
+ood way for attackers to embed backdoors into systems.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">FreeBSD program=
+mers use it.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 9:58 PM, Anonymous wrote:
+&gt; is Capsicum being used by system programmers nowadays?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I believe they =
+are imagining the following code in the kernel:
+
+  for each component in the slash-separated pathname:
+    if looking up ".." in directory d then:
+      if d is the root of the capability:
+        return error
+    ## do the actual lookup of a path component in d
+
+The race is:
+
+  a process creates a helper process, and they both agree on some
+directory they have a capability for (call it "/d").
+
+  process 1 creates a sub-directory /d/x/y
+  process 1 opens a directory capability for /d/x
+  process 1 accesses y/../../.. via that capability
+  process 2, in the meantime, renames /d/x/y to /d/y (using its
+capability for /d)
+
+This can allow process 1's access to get to the root directory, /.
+Play around with the interleaving, and if you can't figure it out,
+stop by after lecture.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 7:48 PM, Anonymous wrote:
+&gt; The paper mentioned that they were conservative in banning =E2=80=98..=
+/=E2=80=99 altogether from pathnames, and it might be possible to ban =E2=
+=80=98../=E2=80=99 only when it=E2=80=99s called from the root of a subtree=
+. However they mentioned that the latter strategy could be broken by 2 coll=
+uding sandboxes exploiting a race condition. How exactly is that possible?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Most OS kernels=
+ provide some kind of sandboxing mechanism these days
+(e.g., see this paper's related work section).  This happens to be the
+one that FreeBSD provides, and it's pretty cleanly done, and is
+relatively easy to understand.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 4:35 PM, Anonymous wrote:
+&gt; What's the current state of capabilities in popular operating systems
+&gt; (Mac/Linux/Windows)? Are we heading towards those OSes adopting capabi=
+lities or
+&gt; is there not much interest/are there unanswered technical problems wit=
+h them?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">On FreeBSD, Cap=
+sicum is used for sandboxing.
+
+OpenBSD has another mechanism, called pledge().
+
+Linux seems to have focused on seccomp, which is somewhat different still.
+
+MacOSX has "Seatbelt", which is a lot like seccomp.
+
+In terms of applications, yes, important applications like Chrome use
+the available priv sep mechanisms on each platform to
+privilege-separate themselves.
+
+Nickolai.
+
+On Tue, Feb 28, 2017 at 2:22 PM, Anonymous wrote:
+&gt; The paper mentions that Capsicum is scheduled for inclusion in FreeBSD=
+ 9. It looks like this paper was published in 2010. Since then, how have ca=
+pabilities entered various places where they might be useful, like OSes or =
+web browsers? Are they widely used? If not, why not?
+
+</pre></div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- End Page Content -->
+
+</td></tr>
+
+<tr bgcolor=3D"#999999" height=3D"20px">
+<td style=3D"padding-left:10px; padding-top: 10px; padding-bottom: 10px">
+<font style=3D"font-size: 12px;">
+<p>Questions or comments regarding 6.858?  Send e-mail to the course staff =
+at
+<a href=3D"mailto:6858-staff@lists.csail.mit.edu"><i>6858-staff@lists.csail=
+.mit.edu</i></a>.
+
+</p></font><p><font style=3D"font-size: 12px;"><b><a href=3D"http://css.csa=
+il.mit.edu/6.858/2018/questions.html?q=3Dq-capsicum&amp;lec=3D6#top">Top</a=
+></b> //
+<b><a href=3D"http://css.csail.mit.edu/6.858/2018/">6.858 home</a></b> //=
+=20
+<i>Last updated Wednesday, 28-Feb-2018 11:14:53 EST</i>
+</font>
+</p></td></tr>
+</tbody></table>
+
+</td>
+
+</tr>
+</tbody>
+</table>
+
+
+
+
+</body></html>
+------MultipartBoundary--VAYhXABBy1kJFMiUBNLcbUBvzb2ipTYrfBL4EcpTa2----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://css.csail.mit.edu/6.858/2018/style.css
+
+@charset "utf-8";
+
+body { background-color: rgb(255, 255, 255); margin: 0px; padding: 0px; fon=
+t-family: verdana, arial, helvetica, sans-serif; }
+
+p { font-size: 13px; }
+
+ol { font-size: 13px; }
+
+ul { font-size: 13px; }
+
+pre { font-family: "courier new", courier, mono; color: rgb(202, 10, 10); f=
+ont-size: 13px; }
+
+.menuHead { text-align: center; padding-top: 8px; padding-bottom: 8px; }
+
+.menuItem { color: rgb(255, 255, 255); text-decoration: none; font-weight: =
+bold; font-size: 16px; }
+
+table.calendar { font-family: arial, helvetica; font-size: 10pt; empty-cell=
+s: show; border: 1px solid rgb(0, 0, 0); }
+
+table.calendar tr td { border: 1px solid rgb(170, 170, 170); }
+
+table.calendar tr { vertical-align: top; height: 75px; background: rgb(238,=
+ 238, 238); }
+
+table.calendar tr.header { font-weight: bold; font-size: 13px; background-c=
+olor: rgb(68, 68, 68); color: rgb(255, 255, 255); height: 25px; text-align:=
+ center; }
+
+.lecture { background: rgb(255, 255, 170); }
+
+.holiday { background: rgb(204, 255, 204); }
+
+.special { background: rgb(170, 170, 255); }
+
+.lab { background: rgb(0, 204, 204); }
+
+.important { background: rgb(255, 170, 170); }
+
+.reading { color: rgb(51, 51, 255); }
+
+.handout { color: rgb(0, 153, 0); }
+
+.deadline { color: rgb(255, 0, 0); }
+
+.note { color: rgb(136, 136, 0); }
+
+.assignment { color: rgb(10, 160, 10); }
+
+.date { color: rgb(68, 68, 68); }
+
+div.questionbox { margin: 1pc 4% 0pc; padding: 0.5pc; background-color: rgb=
+(224, 224, 255); border: 1px dashed red; }
+------MultipartBoundary--VAYhXABBy1kJFMiUBNLcbUBvzb2ipTYrfBL4EcpTa2----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://css.csail.mit.edu/6.858/2018/cc-by.png
+
+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
+SUVORK5CYII=
+------MultipartBoundary--VAYhXABBy1kJFMiUBNLcbUBvzb2ipTYrfBL4EcpTa2------

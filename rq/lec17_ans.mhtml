@@ -1,0 +1,920 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-answers/17
+Subject: Answers for lecture 17 - 6.858
+Date: Tue, 21 May 2018 01:41:35 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--aHrIGBE2TBrQzMuSGv9XxripTdqWY9ksjb3Ov4SQ3d----"
+
+
+------MultipartBoundary--aHrIGBE2TBrQzMuSGv9XxripTdqWY9ksjb3Ov4SQ3d----
+Content-Type: text/html
+Content-ID: <frame-1183-947ea592-1710-4263-b825-4a9c6e4d2c3f@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-answers/17
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Answers for lecture 17 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Answers for lecture 17 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text">The likely value of mix_i is 0 because that=
+ is the first loaded value. </pre></li>
+
+<li><pre class=3D"student-text">The most likely value of mix_i is 84. This =
+is because the for loop surrounding line 76 is checking what array1 entries=
+ we've loaded into cache previously (since mix_i is just iterating through =
+all the possible array1 entries).=20
+
+Given that malicious_x is set to secret-*array1, in victim_function(malicio=
+us_x), because of speculative execution, we should bypass the if statement =
+on line 25 and just execute line 26. This means that we're accessing array1=
+[malicious_x] which is the first character of the secret, "The Magic Words =
+are..." ... whatever the magic words are.
+
+Anyways, the first character is 'T', which is character 84 in ASCII. Hence =
+mix_i =3D=3D 84.
+
+</pre></li>
+
+<li><pre class=3D"student-text"># Lecture 17
+
+------------------------------------------------------
+Consider line 76 in Appendix A. If Spectre registers a cache hit for
+mix_i, what is the likely value of mix_i? (Assume that this call to
+readMemoryByte is the first call from main)
+-------------------------------------------------------
+
+If `mix_i` causes a cache-hit, then that means that `mix_i` pulled the same=
+ value
+out of memory that the victim function did. In this case, `mix_i` would hav=
+e to
+be equal to `x` on line 65:
+
+`victim_function(x);`
+</pre></li>
+
+<li><pre class=3D"student-text">'mix_i' is likely to be the 'x' that is the=
+ argument to victim_function()
+</pre></li>
+
+<li><pre class=3D"student-text">'s', because it is the most common characte=
+r found in the secret. We only ever
+cache array2 elements that correspond to array1 results that result in
+characters found in the secret. As mix_i guesses array1 results, if a cache=
+ hit
+is detected, we know our guess corresponds to a character found in the secr=
+et.
+Thus, the most likely value of mix_i is the most common character found in =
+the
+secret, which is 's'.=20
+</pre></li>
+
+<li><pre class=3D"student-text">13</pre></li>
+
+<li><pre class=3D"student-text">13
+
+i =3D 0, ((i*167)+13) &amp; 255 =3D 13</pre></li>
+
+<li><pre class=3D"student-text">6.858 - Spectre
+
+mix_i most likely is k, where k is the value at the address you're trying t=
+o
+maliciously read from (for example, k could be parts of the string of the *=
+secret
+string).
+</pre></li>
+
+<li><pre class=3D"student-text">84
+The secret k here is the first byte of secret which is 'T'.
+</pre></li>
+
+<li><pre class=3D"student-text">A cache hit for array2[mix_i * 512] is most=
+ likely if mix_i =3D=3D array2[malicious_x], which for the first call to re=
+adMemoryByte will be 84 (i.e. the ascii code of 'T').
+</pre></li>
+
+<li><pre class=3D"student-text">A cache hit would mean that the value was g=
+uessed successfully. So, in our case, the value would be the first letter o=
+f the string, which is 'T'.</pre></li>
+
+<li><pre class=3D"student-text">After registering a cache hit for mix_i, Sp=
+ectre contains the value of mix_i from the previous iteration=20
+of the for loop (i=3D0; i&lt;256; i++) which is ((i-1)*167+13) &amp; 255.
+</pre></li>
+
+<li><pre class=3D"student-text">Answer to Paper Question:
+
+The value of mix_i if there is a cache hit will be array1[x], where x is th=
+e value provided by the function. This is because the rest of the cache has=
+ been cleared, and so one of the only values that should be sitting in the =
+cache currently should be array1[x] as it is read in during the victim_func=
+tion. Thus, a cache hit would imply we have found the contents of array1[x]=
+ correctly. </pre></li>
+
+<li><pre class=3D"student-text">Assuming this call to readMemoryByte is the=
+ first call from main, mix_i is likely to be 84, the UTF-8 representation f=
+or the character
+T, the first letter in the secret.</pre></li>
+
+<li><pre class=3D"student-text">Consider line 76 in Appendix A. If Spectre =
+registers a cache hit for mix_i, what is the likely value of mix_i? (Assume=
+ that this call to readMemoryByte is the first call from main.
+
+I think it would likely be the ordinal value of "T", based on the secret st=
+ring being speculatively read from memory.</pre></li>
+
+<li><pre class=3D"student-text">Consider line 76 in Appendix A. If Spectre =
+registers a cache hit for mix_i, what is the likely value of mix_i? (Assume=
+ that this call to readMemoryByte is the first call from main.
+
+I think since the attacker mistrains the predictor to use out-of-bound x. T=
+he likely
+value of mix_i must be above 16.</pre></li>
+
+<li><pre class=3D"student-text">Consider line 76 in Appendix A. If Spectre =
+registers a cache hit for mix_i, what is the likely value of mix_i? (Assume=
+ that this call to readMemoryByte is the first call from main.
+
+mix_i will be equal to the value of x
+</pre></li>
+
+<li><pre class=3D"student-text">Consider line 76 in Appendix A. If Spectre =
+registers a cache hit for mix_i, what is the likely value of mix_i? (Assume=
+ that this call to readMemoryByte is the first call from main.
+
+---
+
+If there's a cache hit, that means mix_i is most likely the secret/target b=
+yte (array1[x]).</pre></li>
+
+<li><pre class=3D"student-text">Consider line 76 in Appendix A. If Spectre =
+registers a cache hit for mix_i, what is the likely value of mix_i? (Assume=
+ that this call to readMemoryByte is the first call from main.
+
+Most likely, the first value of mix_i is most likely going to be 84 which i=
+s equal to "T"</pre></li>
+
+<li><pre class=3D"student-text">Consider line 76 in Appendix A. If Spectre =
+registers a cache hit for mix_i, what is the likely value of mix_i? (Assume=
+ that this call to readMemoryByte is the first call from main.
+
+if spectre registers a cache hit for mix_i , maybe 180.=20
+
+</pre></li>
+
+<li><pre class=3D"student-text">Consider line 76 in Appendix A. If Spectre =
+registers a cache hit for mix_i, what is the likely value of mix_i? (Assume=
+ that this call to readMemoryByte is the first call from main.
+I'm actually not sure.  So, I know that is Spectre registers a cache hit fo=
+r mix_i, it means that mix_i was already in the cache for that specific val=
+ue.  I think the likely value for mix_i is 13 because that is the value tha=
+t is in the cache for the longest, since it's always the first computed val=
+ue for mix_i.
+</pre></li>
+
+<li><pre class=3D"student-text">Consider line 76 in Appendix A. If Spectre =
+registers a cache hit for mix_i, what is the likely value of mix_i? (Assume=
+ that this call to readMemoryByte is the first call from main.=20
+
+
+So malicious_x will be 24, since secret is length 40 and array1 has size of=
+ 16. Bitwise AND for the first iteration in the for loop, results in mix_i =
+=3D 180.
+</pre></li>
+
+<li><pre class=3D"student-text">Consider line 76 in Appendix A. If Spectre =
+registers a cache hit for mix_i, what is the likely value of mix_i? (Assume=
+ that this call to readMemoryByte is the first call from main.)
+
+Line 76 is where the get the secret value out of the side channel by using =
+the timing of cache reads. If it registers a hit for mix_i, it means that i=
+t found a mix_i which represents the byte value of the secret (because we c=
+onvert the byte value of the secret to an offset into the cache). So in thi=
+s case it should be the byte value of "The Magic Words are Squeamish Ossifr=
+age".</pre></li>
+
+<li><pre class=3D"student-text">Danny Tang
+
+data1013
+
+4/20/18
+
+
+
+Lecture 17
+
+Question:
+
+Consider line 76 in Appendix A. If Spectre registers a cache hit for mix_i,=
+ what is the likely value of mix_i? (Assume that this call to readMemoryByt=
+e is the first call from main.
+
+Answer:
+
+255, since it is within the bounds of results (size 256) and mix_i is calcu=
+lated on line 70 as ((i * 167) + 13) &amp; 255.</pre></li>
+
+<li><pre class=3D"student-text">For the purposes of this demonstration, it =
+looks like they are setting malicious_x to start right at the beginning of =
+the secret and run the attack until the end of the secret (40 characters). =
+So, on the first call to readMemoryByte, a hit is likely to mean that mix_i=
+ is the first secret byte, "T".
+</pre></li>
+
+<li><pre class=3D"student-text">From running the spectre code on my machine=
+ and logging the mix_i values, I found that the values that yielded cache h=
+its the most were mix_i values between 1 and 6 with 1038960 occurrences eac=
+h. The number of cache hits for each mix_i value decreased as the mix_i val=
+ue increased. I'm not exactly sure why this is the case, but I think it mig=
+ht have something to do with inserting the malicious x value every 6 traini=
+ng values.
+</pre></li>
+
+<li><pre class=3D"student-text">Given that the code is trained with more it=
+erations of training_x, mix_i is likely to be training_x when a cache_hit i=
+s registered.
+</pre></li>
+
+<li><pre class=3D"student-text">I couldn't figure it out.
+</pre></li>
+
+<li><pre class=3D"student-text">I don't fully understand this code, but if =
+there was a cache hit for mix_i then
+the results tally for that location gets higher, and the first and
+second-highest tallied items in results get put into score[0] and score[1] =
+and
+the indices get put into value[0] and value[1], which seem to be the best
+guesses for where the branch instructions will go. Therefore, mix_i is prob=
+ably
+a location in memory where the attacker expects execution to branch.
+</pre></li>
+
+<li><pre class=3D"student-text">I think the value of mix_i would be 13. Thi=
+s is because in order for there to be a cache hit, mix_i !=3D array1[tries =
+% array1_size]). Tries will initially have the value 999, and array1_size i=
+s 16, so 999 % 16 =3D 7, and array1[7] =3D 8. mix_i will initially have the=
+ value 13, and since 13 !=3D 8, there will be a cache hit.</pre></li>
+
+<li><pre class=3D"student-text">I would expect that the value mix_i =3D 84 =
+would be most likely. This is because the malicious_x is first pointing
+at the first character in secret, "T". Therefore the code will use "T" to i=
+ndex in the first iteration, and the=20
+char encoding for "T" appears to correspond to the value 84.</pre></li>
+
+<li><pre class=3D"student-text">I'm not sure under what context mix_i would=
+ register a cache hit, since during
+each iteration of the loop the value of mix_i changes, which would invalida=
+te
+its cache entry.=20
+</pre></li>
+
+<li><pre class=3D"student-text">If Spectre gets a cache hit for mix_i, that=
+ means it's already been brought into the cache, and because the attacker h=
+as flushed the cache prior to line 76, mix_i is probably an attacker-contro=
+lled value.</pre></li>
+
+<li><pre class=3D"student-text">If Spectre registers a cache hit for mix_i =
+(meaning that the access array2[mix_i * 512] registers a cache hit, then th=
+e value for mix_i is most likely going to be the value array1[x]. This is b=
+ecause the values in array2 have previously been flushed out of the cache, =
+so the only reason that a particular value of array2 would be in the cache =
+is if it was accessed by victim_function. Since victim_function access arra=
+y2[array1[x] * 512], that means that mix_i is going to be array1[x] if arra=
+y2[mix_i * 512] is in the cache.
+</pre></li>
+
+<li><pre class=3D"student-text">If Spectre registers a cache hit for mix_i,=
+ mix_i is likely to have the value array1[malicious_x].</pre></li>
+
+<li><pre class=3D"student-text">If Spectre registers a cache hit for mix_i,=
+ mix_i is probably the numerical value of the byte at that position. It's b=
+ecause having a cache hit means that this line was loaded from an earlier m=
+emory access to a predicted out of bounds array access from the training se=
+ction.
+</pre></li>
+
+<li><pre class=3D"student-text">If Spectre registers a cache hit for mix_i,=
+ that means that the location in array_2 was recently accessed and the valu=
+e of mix_i is FFF.FF0000 from the loop before.
+</pre></li>
+
+<li><pre class=3D"student-text">If Spectre registers a cache hit for mix_i,=
+ the likely value for mix_i could
+be 13, as it is stored in the cache in the beginning.
+</pre></li>
+
+<li><pre class=3D"student-text">If Spectre registers a cache hit for mix_i,=
+ the likely value of mix_i is the secret byte that the attacker is looking =
+for.</pre></li>
+
+<li><pre class=3D"student-text">If Spectre registers a cache hit for mix_i,=
+ then it is likely that mix_i is equal to the value of the hidden byte loca=
+ted at array1[x]!  This is used to figure out what that hidden value might =
+be
+</pre></li>
+
+<li><pre class=3D"student-text">If Spectre registers a cache hit for mix_i,=
+ then the value is likely an address in the monitored cache line and it wil=
+l return the value of the secret byte.</pre></li>
+
+<li><pre class=3D"student-text">If a cache hit happened for mix_i, it means=
+ that whatever value we were checking for it was actually placed in cache b=
+efore. Say that we
+were in the i-th iteration of our for loop. If there's a cache miss, then w=
+e have most likely had (((i * 167) + 13) &amp; 255) in the cache, so
+we increase its score by one. In this specific example, we assume that we a=
+re in the first iteration, so we look for the value of the first char=20
+of our secret =3D 'T' =3D 84 =3D mix_i, so we get i =3D 97
+</pre></li>
+
+<li><pre class=3D"student-text">If a cache hit is first detected then mix_i=
+ will be i*167 + 13</pre></li>
+
+<li><pre class=3D"student-text">If it is a cache hit, then the function lik=
+ely did not spend much time executing -- mix_i is 180.
+</pre></li>
+
+<li><pre class=3D"student-text">If mixi is present in the cache, then it mu=
+st contain a value of some point that was found by using an out of bounds i=
+ndex on an array, meaning it could contain be a sensitive value.  </pre></l=
+i>
+
+<li><pre class=3D"student-text">If spectre registers a cache hit at line 76=
+ then the value of mix_i is most likely the malicious x. This is because sp=
+ectre operates by accessing a secret byte of data, caching that result, and=
+ then trying to find that cached result later. Therefore, the portion of co=
+de at line 76 is trying to determine whether a cache hit has occurred in or=
+der to retrieve the secret byte. If a cache hit does happen then this means=
+ that the mix_i was equal to the malicious x. </pre></li>
+
+<li><pre class=3D"student-text">If the value of mix_i results in a cache hi=
+t, then the value of array2[mix_i * 512] was in the cache. This means that =
+it was loaded, either correctly or incorrectly, by the speculative executio=
+n system. Assuming that the dereference at line 73 does not cause a seg fau=
+lt, then the value of mix_i is less than 256*512. Since mix_i is also !=3D =
+array1[tries % array1_size], it must be that mix_i is reading a value beyon=
+d what the victim_function would actually read. (I'm assuming the bit trick=
+ in line 70 is to line up the mix_i with the corresponding index of array1)=
+.  </pre></li>
+
+<li><pre class=3D"student-text">If there is a cache hit, `mix_i` likely den=
+otes a piece of a memory page or a cache line that was accessed by the vict=
+im function.=20
+</pre></li>
+
+<li><pre class=3D"student-text">If there is a cache hit, mix_i is likely in=
+side the allowed bounds of array 2.</pre></li>
+
+<li><pre class=3D"student-text">If there is a cache hit, mix_i will take on=
+ the values from array1. The likely values depend on the values of x loaded=
+ from memory, since that is in cache.</pre></li>
+
+<li><pre class=3D"student-text">If there was a cache hit, mix_i likely cont=
+ains the value of the first byte of the secret, namely 84, the ASCII value =
+of 'T'.</pre></li>
+
+<li><pre class=3D"student-text">If we register a cache hit for `mix_i`, the=
+n it is likely that:
+    mix_i =3D array1[malicious_x],
+That is,
+    (char) mix_i =3D=3D 'T'
+</pre></li>
+
+<li><pre class=3D"student-text">In the case of a cache hit, mix_i will be o=
+ut of bounds and will leak the value of array1[x] (since the speculative co=
+de reads from array2[mix_i * 512]). </pre></li>
+
+<li><pre class=3D"student-text">In the first call to readMemoryByte the att=
+ack is attempting to read to first byte from array1 (malicious_x). In this =
+case that byte is the first byte in the 4-byte int '1'. Therefore, probing =
+array2 with result in a cache hit if mix_i corresponds to the malicious_x b=
+eing searched for.</pre></li>
+
+<li><pre class=3D"student-text">In the first run to readMemoryByte, if we h=
+ave a hit on line 76, the value of mix_i is probably the first byte of the =
+secret we want to read, i.e. the character 'T' (84 in decimal).
+</pre></li>
+
+<li><pre class=3D"student-text">It is likely to be 13 because this is the f=
+irst value of mix_i that could have been in there.</pre></li>
+
+<li><pre class=3D"student-text">It is most likely the value at training_x, =
+which is why the code must check to ensure that mix_i is not equal to array=
+1[tries % array1_size].</pre></li>
+
+<li><pre class=3D"student-text">It will likely register a cache hit on the =
+second iteration of the loop, so it will be 180&amp;255.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Jun Wan 991032935
+
+The likely value of mix_i is the value in array_1, which is 1, 2, --, 16.</=
+pre></li>
+
+<li><pre class=3D"student-text">Lecture 17
+
+Consider line 76 in Appendix A. If Spectre registers a cache hit for mix_i,=
+ what is the likely value of mix_i? (Assume that this call to readMemoryByt=
+e is the first call from main.
+
+The likely value of mix_i is the value of the byte at memory address secret=
+ i.e. "T". malicious_x is set in such a way that mix_i stores the character=
+s of secret array on buffer overflow.
+Since it is the first call to readMemoryByte, the first cache hit would gue=
+ss the value at the beginning of the array secret.</pre></li>
+
+<li><pre class=3D"student-text">Lecture 17 (Answer to Paper Question)
+
+Question:
+
+Consider line 76 in Appendix A. If Spectre registers a cache hit for mix_i,=
+ what is the likely value of mix_i? (Assume that this call to readMemoryByt=
+e is the first call from main.
+
+
+mix_i is likely to be the value of array1[x].
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 17: CPU Timing Attacks
+4/23/18
+
+Consider line 76 in Appendix A. If Spectre registers a cache hit for mix_i,=
+ what is the likely value of mix_i? (Assume that this call to readMemoryByt=
+e is the first call from main.
+
+mix_i is going to be the byte that the attacker wants to uncover, and would=
+ be the index of the secret char.</pre></li>
+
+<li><pre class=3D"student-text">Lecture 17: Spectre Reading Question
+
+The likely value of mix_i is some malicious x value that resolves array1[x]=
+ to a desired
+secret byte k. There is no concrete value that will satisfy this condition,=
+ so mix_i can
+range based on where the desired secret byte lies in relation to array1.
+</pre></li>
+
+<li><pre class=3D"student-text">On the first call of the function readMemor=
+yByte, malicious_x equals 40-16 =3D 24. Cache it first time is likely to ma=
+tch the value that was cached during miscalculated branch prediction that w=
+ould be when malicious_x was 24. Therefore, likely value of mix_i is 24.
+
+</pre></li>
+
+<li><pre class=3D"student-text">On the first call to readMemoryByte from ma=
+in, values processed in the code are as follows: tries=3D999 and i=3D0, mix=
+_i=3D13&amp;255=3D13, tries%array1_size=3D999%16=3D7.=20
+
+If on this first call, Spectre registers a cache hit for mix_i, the inequal=
+ity comparison between mix_i and array1[tries%array1_size] holds true since=
+ 13!=3D8. Hence, the likely value for mix_i is 13.</pre></li>
+
+<li><pre class=3D"student-text">Question: Consider line 76 in Appendix A. I=
+f Spectre registers a cache hit for
+mix_i, what is the likely value of mix_i? (Assume that this call to
+readMemoryByte is the first call from main.
+
+Answer:
+
+A cache hit for array2[512 * mix_i] shows that the victim code has just
+speculatively accessed array2[512 * mix_i]. Which in turns implies that the
+value of the secret byte that we're trying to read is mix_i.
+</pre></li>
+
+<li><pre class=3D"student-text">Question: Consider line 76 in Appendix A. I=
+f Spectre registers a cache hit for mix_i, what is the likely value of mix_=
+i? (Assume that this call to readMemoryByte is the first call from main.
+
+Answer: ((i*167)+13) &amp; 255 for that value of i </pre></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 17
+
+Consider line 76 in Appendix A. If Spectre registers a cache hit for mix_i,=
+=20
+what is the likely value of mix_i? (Assume that this call to readMemoryByte=
+=20
+is the first call from main.
+
+The likely value for mix_i is array1[x] where x is the first element out of
+bounds of the array. By training the function on correctly sized x, and the=
+n
+running it on an out-of-bounds x, the victim function leaks this out-of-bou=
+nds
+data in mix_i. </pre></li>
+
+<li><pre class=3D"student-text">Spectre will likely make the branch predict=
+or expect a valid value for the branch statement, but instead it will be in=
+valid. This implies that the value of mix_i will be array1[tries % array1_s=
+ize], the value not allowed by the if statement. Now mix_i will register a =
+cache hit.</pre></li>
+
+<li><pre class=3D"student-text">The "mix_i" variable is the potential "uint=
+_8" value of the first content of "secret". Thus with very high probability=
+ the content is upper characeter "T"(decimal number 84). </pre></li>
+
+<li><pre class=3D"student-text">The cache hit would probably happen the fir=
+st time these codes are executed when the read in the parameter are not in =
+the cache and the system waits for the data read and assume the branch is y=
+es first and go ahead to read the value of mix_i, which should be (0+13)&am=
+p;256.</pre></li>
+
+<li><pre class=3D"student-text">The expected value is 161 or a1 in hex.
+</pre></li>
+
+<li><pre class=3D"student-text">The first character in secret is T, which c=
+orresponds to byte number 84. This byte is likely to have been saved in the=
+ cache from the previous speculative access to victim_function((address of =
+secret[0] relative to array1)), so mix_i =3D 84.=20
+</pre></li>
+
+<li><pre class=3D"student-text">The first run through the code:
+- i =3D 0
+- mix_i =3D 13
+- tries =3D 999 -&gt; tries % array_size =3D 7
+
+(tries % array_size=3D7) !=3D 13 satisfies the if branch, and thus the cach=
+e hit would likely mean mix_i=3D13 if this is the first time running throug=
+h the code.
+</pre></li>
+
+<li><pre class=3D"student-text">The likely value is 84
+</pre></li>
+
+<li><pre class=3D"student-text">The likely value of mix_i is 'T'.=20
+</pre></li>
+
+<li><pre class=3D"student-text">The likely value of mix_i is *(array1 + mal=
+icious_x)
+</pre></li>
+
+<li><pre class=3D"student-text">The likely value of mix_i is 13 since this =
+is the first call to readMemoryByte.</pre></li>
+
+<li><pre class=3D"student-text">The likely value of mix_i is array1[malicio=
+us_x]. This is because the fact that time2 is less than "cache hit threshol=
+d" indicates that the value of mix_i likely corresponds to the value when v=
+ictim_function is called with some x value, and since mix_i is not the vali=
+d value (array1[tries % array1_size]) as indicated by the code, it is likel=
+y to be the malicious value.</pre></li>
+
+<li><pre class=3D"student-text">The likely value of mix_i will be the first=
+ letter of secret "T".
+</pre></li>
+
+<li><pre class=3D"student-text">The most likely value for mix_i would be ar=
+ray1[malicious_x], since the training loop at line 54 causes the only cache=
+d values from array2 to be array2[array1[training_x] * 512] and array2[arra=
+y1[malicious_x] * 512].
+Line 76 gets executed when there is a cached hit at array2[mix_i * 512] and=
+ when mix_i !=3D array1[training_x], so mix_i will likely be array1[malicio=
+us_x] at 76.</pre></li>
+
+<li><pre class=3D"student-text">The value likely is to be the malicious val=
+ue array1[x] (exposed).
+</pre></li>
+
+<li><pre class=3D"student-text">The value mix_i is likely to be 1~16 or the=
+ secret=20
+value k. Because the attacker did 5 training runs=20
+with values 1~16 per attack run with the value k.
+So both 1~16 and k are in the cache, which leads to
+cache hit.</pre></li>
+
+<li><pre class=3D"student-text">The value of mix_i will be the byte value o=
+f S =3D 83.
+This is because i iterates up from 0 and is only recorded
+when there's a cache hit. The only cache hits will be when=20
+the letter was used in secret*. The first cache hit will be
+when i =3D 5 resulting in the letter S which corresponds to
+the value 83.</pre></li>
+
+<li><pre class=3D"student-text">The value of mix_i would be around 119. The=
+ value of i in the loop depends on the timing cycle. A hit should happen on=
+ce every 6 times. </pre></li>
+
+<li><pre class=3D"student-text">The value of of mix_i would be 'T', read as=
+ an integer which I think is 20.
+</pre></li>
+
+<li><pre class=3D"student-text">The value would be the first character of t=
+he string 'secret', which is 'T'.</pre></li>
+
+<li><pre class=3D"student-text">The value would likely be 13. I am assuming=
+ the first round of branch prediction training is successful and causes the=
+ branch to take the intended turn, in which case, the array2 value can be a=
+ccessed in the first attempt, when mix_i has been initialized to 13.</pre><=
+/li>
+
+<li><pre class=3D"student-text">We know that `mix_i =3D ((i * 167) + 13) &a=
+mp; 255` for some `i` in [0, 255]; the value depends on what `i` was when t=
+he `if` statement on line 75 evaluated true. `tries` is initially set to `9=
+99`; `array1_size =3D 16`, so the first value for `array1[tries % array1_si=
+ze]` will be `array1[7]`, which is `8`. Thus on the first iteration through=
+ line 69's loop, we'll have `mix_i =3D 13`, which won't be equal to `array1=
+[tries % array1_size]`, so if there's a cache hit this time then the first =
+value of `mix_i` will be `13`.
+</pre></li>
+
+<li><pre class=3D"student-text">When a cache_hit is registered for mix_i, i=
+ts most likely value is the byte hit by victim_function.
+</pre></li>
+
+<li><pre class=3D"student-text">When we get a cache hit, mix_i is equal to =
+array1[malicious_x]. At first this is going to be array1[secret - (char*) a=
+rray1], which corresponds to some location in the stack for the execution o=
+f the program.</pre></li>
+
+<li><pre class=3D"student-text">array2[array1[malicious_x]*512] is called i=
+n victim_function, which results in the value being present in the cache.
+Thus it is most likely that mix_i =3D array1[malicious_x] which is what the=
+ attacker is trying to find.</pre></li>
+
+<li><pre class=3D"student-text">data at *secret (10011000 if ascii)</pre></=
+li>
+
+<li><pre class=3D"student-text">from running the code, it seems like values=
+ 1-6 have the highest hit rates.</pre></li>
+
+<li><pre class=3D"student-text">lec17.txt
+
+John C. Mclaughlin
+April 23, 2018
+Lecture 17
+
+Question: Consider line 76 in Appendix A. If Spectre registers a cache hit =
+for mix_i, what is the likely value of mix_i? (Assume that this call to rea=
+dMemoryByte is the first call from main.
+
+If the code registers a cache hit for mix_i in the first call from main, th=
+e value of mix_i is likely 0x54. This is because the first byte of the memo=
+ry location they are trying to leak is the secret.=20
+</pre></li>
+
+<li><pre class=3D"student-text">malicious_x =3D (size_t)(secret - (char*)ar=
+ray1)
+            =3D 40 - 16 =3D 24
+
+mix_i =3D ((0 * 167) + 13) &amp; 255 =3D 4021 &amp; 255
+4021 in binary is 000000001101
+255 in binary is  000011111111
+
+the bitwise and of both is: 000000001101
+which in decimal turns out to also be 13
+
+we know that i must be 0 since to have a cache hit mix_i must be part of ar=
+ray1
+which only occurs when mix_i is [0:16]
+
+mix_i =3D 13
+</pre></li>
+
+<li><pre class=3D"student-text">mix_i =3D 0
+</pre></li>
+
+<li><pre class=3D"student-text">mix_i =3D x where x is a small number given=
+ as argument to the victim_function(x)</pre></li>
+
+<li><pre class=3D"student-text">mix_i is likely a smaller number, because w=
+hen performing the Spectre attack, the first couple of values should be cac=
+hed, whereas the memory location for the jump destination needs to come lat=
+er after the compiler believes its going down the right branch, and needs t=
+o be uncached, which will not go into the if statement as mix_i.
+</pre></li>
+
+<li><pre class=3D"student-text">mix_i is likely equal to the value of array=
+1[x] at the top of section 4.
+</pre></li>
+
+<li><pre class=3D"student-text">mix_i is likely the ASCII code for "T", the=
+ first byte of secret. This is
+because we speculatively read array2[*secret * 512] when we fed malicious_x
+into the victim function.
+</pre></li>
+
+<li><pre class=3D"student-text">mix_i is likely to be either array1[trainin=
+g_x] or array1[attacker_x]. However, if it is equal to array1[training_x] w=
+e don't add it to the list of cache hits. Therefore, the value of mix_i wit=
+h the most recorded cache hits is likely to be array1[attacker_x].</pre></l=
+i>
+
+<li><pre class=3D"student-text">mix_i is most likely 13.</pre></li>
+
+<li><pre class=3D"student-text">mix_i is most likely to be the value at the=
+ address the attacker wants to probe - the secret byte k.=20
+
+array2[k * 512] has likely been cached because of optimistic branch executi=
+on, i.e. the program optimistically executed an instruction where it had to=
+ access the value of array2[k * 512]; even though the result of this access=
+ is eventually thrown out because the conditional fails to evaluate to true=
+, it is still cached. Thus if the sequence `addr =3D &amp;array2[mix_i * 51=
+2]; junk =3D *addr;` retrieves this value quickly, the value has likely bee=
+n cached, so mix_i is likely k.</pre></li>
+
+<li><pre class=3D"student-text">mix_i is probably 0, since this would resul=
+t in the first address to be speculatively read after calling `victim_funct=
+ion`.
+</pre></li>
+
+<li><pre class=3D"student-text">mix_i should be the first character in secr=
+et ('T'). As a cache hit means that the speculative execution succeeded and=
+ the first byte was read.=20
+</pre></li>
+
+<li><pre class=3D"student-text">mix_i should evaluate to 's' since that is =
+the most frequently occuring character in the secret</pre></li>
+
+<li><pre class=3D"student-text">mix_i would be 084, since that is the first=
+ character of the secret message.
+</pre></li>
+
+<li><pre class=3D"student-text">mix_i would contain sensitive information t=
+hat the attacker would want the victim to leak into the cache state.
+</pre></li>
+
+<li><pre class=3D"student-text">then mix_i is probably the value of the sid=
+e channel byte
+</pre></li>
+
+<li><pre class=3D"student-text">=E2=80=98mix_i=E2=80=99 is probably an atta=
+cker controlled value at this point, since the cache has been flushed befor=
+e this.</pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--aHrIGBE2TBrQzMuSGv9XxripTdqWY9ksjb3Ov4SQ3d------

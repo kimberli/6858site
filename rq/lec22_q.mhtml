@@ -1,0 +1,843 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-questions/22
+Subject: Questions for lecture 22 - 6.858
+Date: Tue, 21 May 2018 01:46:00 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--vDgnGz3QZZL3jsFO53UQOaVV9hT0pJ7Uy25XJo8eTs----"
+
+
+------MultipartBoundary--vDgnGz3QZZL3jsFO53UQOaVV9hT0pJ7Uy25XJo8eTs----
+Content-Type: text/html
+Content-ID: <frame-1195-b217eb4f-39cb-4ec5-b1d1-a0b1454855ba@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-questions/22
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Questions for lecture 22 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Questions for lecture 22 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text">
+How can any encryption scheme be guaranteed to be safe when there is a poss=
+ibility that the people running the service have built in a backdoor to acc=
+essing the keys.</pre></li>
+
+<li><pre class=3D"student-text">1. Can you go over how we can prevent MITM =
+attacks when establishing trust?</pre></li>
+
+<li><pre class=3D"student-text">1. Could the Ricochet and Pond systems, bot=
+h of which are implemented over Onion Routing networks, be combined to prov=
+ide all desired privacy guarantees (with the exception of protecting angain=
+st a global adversary).
+2. In what way is zero-knowledge authentication expensive?
+3. Have any significant advancements been made in the space of secure messa=
+ging since the release of this paper?
+</pre></li>
+
+<li><pre class=3D"student-text">5/9/18
+
+Lecture 22
+
+What percentage of messaging services use a technique for secure messaging?=
+</pre></li>
+
+<li><pre class=3D"student-text">6.858 - SoK
+
+Has google/other large email servers adopted forms of privacy/security crit=
+eria outlined
+here?
+
+Why does it think that adoption for email is easy? How do different email s=
+ervers
+negotiate their protocols if they differ?
+</pre></li>
+
+<li><pre class=3D"student-text">According to the paper, one round of a DC-n=
+et-based protocol works by having some participants submit messages, and th=
+en everyone receiving the xor of all the messages.
+Doesn't this mean that no one actually sees any of the secret messages, but=
+ instead some garbled xor of all of them, making for a not very effective m=
+essaging scheme?
+I'm pretty sure I'm missing something here, but I don't know what it is.
+
+In a compact, haiku form:
+How do DC-nets
+properly send messages?
+The paper seems sparse...
+
+
+
+A final note:
+To all the course staff, thanks so much for all the work you've put into th=
+e class this semester.
+A lot of the papers were very interesting and covered a wider variety of to=
+pics than I expected coming into this class.
+The labs were also very fun and instructive, and I wish I could do them all=
+ again.
+Would recommend.
+
+In a compact, haiku form:
+I've loved all the labs,
+readings, and haikus from this
+10 out of 10 class.</pre></li>
+
+<li><pre class=3D"student-text">Almost all of these anonymous systems are a=
+lso abused for illegal activity e.g. BitTorrent for pirating, Bitcoin for b=
+lack market stuff, Tor for similarly illicit stuff I'm sure. What are the e=
+thics of doing research on systems that provide full anonymity?
+</pre></li>
+
+<li><pre class=3D"student-text">Although academic research on secure messag=
+ing hadn't really increased, has there at least been more inclusion of the =
+ideas mentioned in this paper in actual programs?</pre></li>
+
+<li><pre class=3D"student-text">Although it is not likely that there will b=
+e a single messaging system that meets every requirement in the paper, have=
+ messaging systems created since its publication improved?</pre></li>
+
+<li><pre class=3D"student-text">Are there any currently widely used messagi=
+ng services that implement the schemes described in the paper?
+</pre></li>
+
+<li><pre class=3D"student-text">Are there any practical approaches to provi=
+de strong transport privacy properties against global adversaries?
+
+</pre></li>
+
+<li><pre class=3D"student-text">Are there other programs that use onion rou=
+ting besides TOR?=20
+
+It also feels like a lot of this security also depends on the user's willin=
+gness to conform to these measures.=20
+</pre></li>
+
+<li><pre class=3D"student-text">As I wrote the answer to question for this =
+lecture, a question came up: why is it that there's no set up system on,say=
+, the protocols of email
+or of the internet itself so that updates are easier to deploy and so on? O=
+f course, it is all distributed and requires updating each node of the grap=
+h and so on - but
+shouldn't it be simple to implement a number of protocols such that, once a=
+ given update is available, it is simply spread through the graph?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Besides blockchain based, are there existin=
+g PKI schemes that make use of fees or economic incentives.
+</pre></li>
+
+<li><pre class=3D"student-text">Could you give an overview of a PIR impleme=
+ntation? Just curious.
+</pre></li>
+
+<li><pre class=3D"student-text">Did the NSA revelations empirically inspire=
+ more development of secure end-to-end messaging systems?
+</pre></li>
+
+<li><pre class=3D"student-text">Do large companies like Google and Yahoo im=
+plement additional security protocol to make their emails more secure?</pre=
+></li>
+
+<li><pre class=3D"student-text">Do services like keybase, which tie public =
+keys to social media identities, solve a lot of the problems of key sharing=
+ / discovery? It seems like they root trust at the level of social media (v=
+erification stamps on accounts) but on services like Twitter and Instagram,=
+ this is almost like a community intelligence level of trust, since many pe=
+ople will follow and attest for the authenticity of an account.
+</pre></li>
+
+<li><pre class=3D"student-text">Email seems to do well in the adoption cate=
+gory, the only things it fails is no additional service and it it=E2=80=99s=
+ not spam/flood resistant. It also does well in the usability category but =
+it doesn=E2=80=99t provide any of the privacy features such as anonymity. T=
+he other suggestions include using onion-routing and blockchain message bro=
+adcast, but these would require major changes to how email is currently sen=
+t, especially the blockchain method, since that requires broadcasting messa=
+ges to everyone.</pre></li>
+
+<li><pre class=3D"student-text">Facebook Messenger is getting more and more=
+ advance features and is probably the most complex messenging application. =
+How will messaging security change to these features? </pre></li>
+
+<li><pre class=3D"student-text">Given the popularity of new messaging apps =
+like WhatsApp, Facebook messenger, and slack, what is the likelihood that e=
+mail is replaced entirely in the future? </pre></li>
+
+<li><pre class=3D"student-text">Has any work been done which utilizes the a=
+nalysis made by this paper?
+Also, their goal was to "create a guide for the research community to help =
+move forward on this important topic." This seems incredibly subjective bas=
+ed on what they're prioritizing. I'm curious how common it is for papers to=
+ have similar goals, and whether these papers do often affect the course of=
+ a research community.</pre></li>
+
+<li><pre class=3D"student-text">Has anyone really implemented a blockchain =
+based messaging system? If so why?</pre></li>
+
+<li><pre class=3D"student-text">Has it become easier to adopt the blockchai=
+ns scheme since there have been a lot of research on blockchains recently?<=
+/pre></li>
+
+<li><pre class=3D"student-text">Has secure messaging raised any legal debat=
+es, such as regarding rules of discovery?
+</pre></li>
+
+<li><pre class=3D"student-text">Has the framework for evaluation of secure =
+messaging been used on other computer systems as well?</pre></li>
+
+<li><pre class=3D"student-text">Have email usage patterns changed recently?=
+ Do people still use email as much as they used to a few years ago? </pre><=
+/li>
+
+<li><pre class=3D"student-text">Have revelations about NSA surveillance led=
+ to actual improved security changes in email?</pre></li>
+
+<li><pre class=3D"student-text">Have there been any studies on how the perc=
+eption of messaging security by end-users has changed over time? For exampl=
+e, does the average user today care more about messaging security than the =
+average user 10 years ago?
+</pre></li>
+
+<li><pre class=3D"student-text">How are deniability and authentication mutu=
+ally compatible? The paper only discussed this briefly.</pre></li>
+
+<li><pre class=3D"student-text">How are the speaker consistency and message=
+ repudiation properties supposed to
+work together? On one hand it seems like we want to be able to determine th=
+at=20
+messages are from a specific speaker, yet we don't want to give any evidenc=
+e that
+some message must have been sent by some user.</pre></li>
+
+<li><pre class=3D"student-text">How can developers overcome the lack of tra=
+nsport security?</pre></li>
+
+<li><pre class=3D"student-text">How can we make the average user care more =
+about security? If users already cared about privacy then we wouldn't be us=
+ing the same insecure emails that we all use today. It seems to me that we'=
+ve been trained as a society not to worry about privacy and the only way to=
+ convince someone to care is with fear/threat of getting their data stolen.=
+ However, this threat does not resonate with a large majority of the popula=
+tion who can not really imagine why being surveilled would be a risk to the=
+m.
+</pre></li>
+
+<li><pre class=3D"student-text">How common is it labs to devote so much tim=
+e to analyzing specific topic and publishing analysis of the field without =
+actually inventing anything/doing any research?
+</pre></li>
+
+<li><pre class=3D"student-text">How do modern providers make massive change=
+s to a system without temporary down-time for their millions or billions of=
+ users?</pre></li>
+
+<li><pre class=3D"student-text">How does DC net work? If participants only =
+recieves XORs of all the messages, how does each participant recover indivi=
+dual message?</pre></li>
+
+<li><pre class=3D"student-text">How does Facebook Messenger fare in this ev=
+aluation?</pre></li>
+
+<li><pre class=3D"student-text">How does iMessage achieve its security/usab=
+ility features?</pre></li>
+
+<li><pre class=3D"student-text">How does the newer Signal app compare to it=
+s predecessor, TextSecure, for secure messaging?
+</pre></li>
+
+<li><pre class=3D"student-text">How does the participant repudiation work? =
+It seems that if a participant can deny that they wrote the message (the me=
+ssage can be forged by other participants), then it means that users who us=
+e the system won't know who they're talking to, since the messages can be f=
+orged? How does repudiation and authentication work together? Why would the=
+ proof convince the people communicating but not outsiders?
+</pre></li>
+
+<li><pre class=3D"student-text">How likely is it that new, more secure mess=
+aging apps will overtake use of email?</pre></li>
+
+<li><pre class=3D"student-text">How much do external factors such as networ=
+k effect contribute to the delayed
+adoption of secure messaging protocols and applications?
+</pre></li>
+
+<li><pre class=3D"student-text">How much has email security changed in the =
+past ~10 years and how much do you think it will change in the next ~10 yea=
+rs?</pre></li>
+
+<li><pre class=3D"student-text">How reasonable are these properties exactly=
+? Sure things don't explicitly protect against these properties, but for st=
+uff like forward or backwards secrecy, that depends on someone else finding=
+ out your secret key which doesn't seem very likely. Especially if it is no=
+t revealed to the user, and it is implemented correctly. I feel like of the=
+ apps out in the wild, a lot won't satisify these strong properties simply =
+because it is a lot to ask for at the price of seemingly very little gain. =
+</pre></li>
+
+<li><pre class=3D"student-text">How secure is Facebook Messenger?</pre></li=
+>
+
+<li><pre class=3D"student-text">I actually don't really understand why emai=
+l and messaging are different... why dont people make an interface for emai=
+l thats just like messenger if email is more secure? If email is less secur=
+e, why does anyone use it?
+</pre></li>
+
+<li><pre class=3D"student-text">I don't really understand key revocation. W=
+hy would we ever revoke a key? If the key is compromised, wouldn't that mea=
+n the attacker already has access? Or is this like an OKWS kind of approach=
+ where we just try to minimize the damage.
+</pre></li>
+
+<li><pre class=3D"student-text">I found the extended version of the paper q=
+uite interesting
+http://cacr.uwaterloo.ca/techreports/2015/cacr2015-02.pdf especially
+since they discuss Web of Trust implementations like keybase.
+
+From personal experience Keybase gets many things in terms of usability tig=
+ht,
+but it is kinda missing integration with other tooling.
+
+What are your recommendations for secure messaging?
+</pre></li>
+
+<li><pre class=3D"student-text">I'm confused by forward secrecy and backwar=
+d secrecy - can you explain what each of them mean, and the different threa=
+t models they encompass?
+</pre></li>
+
+<li><pre class=3D"student-text">I've heard a lot about the app "Signal" in =
+the context of modern secure
+messaging apps.  How does Signal stack up to the criteria laid out by the
+authors?
+</pre></li>
+
+<li><pre class=3D"student-text">If WhatsApp messages are truly unreadable b=
+y the transportation media (network, server, etc), what did Facebook have t=
+o gain through purchasing them?  I guess it would have to be metadata minin=
+g?</pre></li>
+
+<li><pre class=3D"student-text">If people were willing to have their email =
+addresses be public keys, could we have a secure email system by just encry=
+pting (client-side) any message with the recipient's public key, then when =
+they receive the message, they can decrypt (client-side) with their private=
+ key? This seems like it could be added easily on top of existing email inf=
+rastructure (as far as the email provider is concerned, nothing has changed=
+; your message just looks like a mess). Users already need to know each oth=
+ers email addresses in order to send messages, so having the address itself=
+ be the public key would mean there's still only one piece of information n=
+eeded. The obvious downside is that instead of `my_name@mit.edu`, I'd have =
+to be something like `jk8OIJADLFJK98ouaksjdf1aosidfj3OIJAD...@mit.edu`. Thi=
+s would certainly hinder adoption; I wouldn't want to tell you my email add=
+ress, but you could easily copy-paste it into your contacts from, e.g., a t=
+ext message. The encryption/decryption itself could perhaps be done with a =
+browser extension so that there's no difference to the user (then you have =
+to trust the extension, but hopefully the code isn't too long and open-sour=
+ce).</pre></li>
+
+<li><pre class=3D"student-text">In schemes with central servers, how come o=
+nly the intended recipient can read the messages?
+</pre></li>
+
+<li><pre class=3D"student-text">In terms of doing encrypted email, is it an=
+y different than sending messages?
+In the past I've used chrome extensions for key management and used encrypt=
+ed
+email. Its slightly more low-level  than a messaging app, but still does th=
+e
+same thing.=20
+
+Also, do most of the messaging protocols just use public-key encryption for
+encrypting contents of the messages? Or do they use the public-keys for
+distributing symmetric keys? When I used keys with email, it was encrypting=
+ the
+email text with the public/private keys.
+
+PS:
+Thank you for an amazing semester, I have really enjoyed this class :)=20
+
+</pre></li>
+
+<li><pre class=3D"student-text">Is this evaulation scheme actually used? Ar=
+e there more things that are important when it comes to privacy in messagin=
+g that was not discussed?
+</pre></li>
+
+<li><pre class=3D"student-text">It sounds like Signal / TextSecure gets hig=
+h praise, and Whatsapp uses the same protocol.  Do you happen to know what =
+Telegram uses?
+</pre></li>
+
+<li><pre class=3D"student-text">Just like the Internet was not designed wit=
+h security at the forefront, email lacks many security properties desireabl=
+e as
+a reliable communication scheme. However, just like the Internet, it is ver=
+y widely used. Given the footprint of email,
+it would seem easier to have common email clients like Gmail and Yahoo to i=
+ncorporate desireable security features
+than it is to change protocols on the Internet. Has progress been made in t=
+his area, especially given the focus people
+tend to put on emails?</pre></li>
+
+<li><pre class=3D"student-text">Lecture 22 (Question About Paper)
+
+What were the primary design goals of email?</pre></li>
+
+<li><pre class=3D"student-text">Lecture 22: Email Messaging Security
+5/9/18
+
+Emails have unecrypted headers containing information about the sender/reci=
+ever along with some metadata, and this is a privacy concern. However, it s=
+eems as if companies/Google uses this header information, so there doesn't =
+seem to be much motivation for them to stop using headers?</pre></li>
+
+<li><pre class=3D"student-text">Lecture 22: My SoK Messaging Question
+
+How exactly do zero knowledge proofs work?
+
+Thank you!
+</pre></li>
+
+<li><pre class=3D"student-text">New messaging systems have a common challen=
+ge of adoption regardless of the security and privacy features offered, bec=
+ause of a strong network effect. Can you please briefly share the major cha=
+llenges, which vuvuzela.io project has gone through?
+</pre></li>
+
+<li><pre class=3D"student-text">Of the common messaging services used today=
+ (messenger, whatsapp, iMessage...), which hold up the best against the cri=
+teria in the paper?
+</pre></li>
+
+<li><pre class=3D"student-text">Puncturable Encryption has all of the desir=
+able adoption properties in Table 2. It wasn't clear to me from the paper w=
+hat exactly this is and how it could be used to provide secure communicatio=
+n.
+</pre></li>
+
+<li><pre class=3D"student-text">Question about Paper:
+
+This is a bit of an aside from the paper, but I saw that Prof. Zeldovich is=
+ working on Vuvuzela, a private messaging app and would be interested in he=
+aring more about what security guidelines/ideas they've used in creating th=
+e application? </pre></li>
+
+<li><pre class=3D"student-text">Question: Why is destination validation imp=
+ortant for conversation security?</pre></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 22
+
+Who are the key actors who would need to agree to make changes to existing =
+SMTP and SMS protocols?</pre></li>
+
+<li><pre class=3D"student-text">Signal has recently had some issues with ce=
+nsorship after its service providers
+(AWS and formerly Google) decided that they do not want to allow domain
+fronting. Do you think that this is an isolated incident or could it reflec=
+t a
+larger trend of large tech companies backing away from support of end-to-en=
+d
+encrypted messaging systems.
+</pre></li>
+
+<li><pre class=3D"student-text">Some methods such as blockchain-based messa=
+ging seem irrelavant and not even remotely feasible. The authors seem to sh=
+are this sentiment, but what are some of the weirdest messaging schemes tha=
+t people have implemented?
+</pre></li>
+
+<li><pre class=3D"student-text">THe paper talks about key exchange and evol=
+ution schemes such as Authenticated Diffie-Hellman,
+Diffie-Hellman ratchet, Double Ratchet and 3-DH Handshake etc. Which of the=
+se is used in the
+popular messaging systems? Why?
+</pre></li>
+
+<li><pre class=3D"student-text">The authors mention many problems being the=
+oretically solved but industry has not adopted these solutions because deve=
+lopers do not know about the solution or just cannot see a way to implement=
+ them. Would employing these academics in industry help with these issues? =
+Are there companies that employ strategies like these (ie. Google, Microsof=
+t) and do they have luck in these areas?
+</pre></li>
+
+<li><pre class=3D"student-text">The elusive question of adobibility kept st=
+anding out to me while reading this paper. The authors once mentioned in a =
+talk that over 100 other messaging alternatives currently exist (not even i=
+ncluding the big names Gmail, Facebook, WhatsApp, etc). Why do smaller mess=
+aging services keep investing so much time/resource to developing a messagi=
+ng platform when in the end 99% of end users probably don't care about data=
+ encryption or even if they do then they keep their old (not secure messeng=
+er)? Additionally if the technology that they propose is so ideal in terms =
+of security it just seems like the big corporations will simply implement t=
+heir algorithms on their existing platforms (gmail, facebook).=20
+</pre></li>
+
+<li><pre class=3D"student-text">The language this paper uses seems to focus=
+ a lot on crime and preventing authorities from finding out or linking iden=
+tities. Why/is this normal language for the field? I feel like earlier pape=
+rs had a slightly less guilty tone.</pre></li>
+
+<li><pre class=3D"student-text">The paper heavily discusses the tradeoffs b=
+etween security and usability. Is there a point in the future where the pop=
+ulation could be mobilized to adapt to perhaps less usable protocols but th=
+at provide better security?</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that "there is little ev=
+idence suggesting that academic research on secure messaging has dramatical=
+ly increased". Why is that the case? Is it because secure messaging is most=
+ly a (theoretically) solved problem, making further work less interesting?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that Axolotl hasn't been=
+ thoroughly evaluated in an academic
+context. What exactly does 'thoroughly evaluated' mean, here? Have any
+messaging protocols actually been proven to be secure, e.g. through formal
+verification?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that some cutting edge s=
+ystems like iMessage are completely
+proprietary. However, does Apple (or whatever other company) make any claim=
+s about
+their security guarantees? It seems like it would be a decent selling point=
+, if the
+app is the most secure.</pre></li>
+
+<li><pre class=3D"student-text">The paper's concluding remarks state that "=
+an open standard for secure messaging, combining the most promising feature=
+s identified by our survey, would be of immense value." Since this paper wa=
+s published in 2015, has there been any work on open standards for secure m=
+essaging? The paper mentions TextSecure, which has now become Signal, as an=
+ open source protocol that fails to facilitate interoperable implementation=
+s. What would it take for an open source platform like Signal to become an =
+open standard for secure communication?</pre></li>
+
+<li><pre class=3D"student-text">The question is not really related to the p=
+aper's content. But I am really curious. Is this paper useful to the resear=
+chers' community?
+
+I feel like the paper is a broad survey on existing solutions. And I think =
+it is most beneficial to people not familiar with this area. Since the pape=
+r was written in 2015, some of its ideas/beliefs are not up-to-date. Should=
+ people write this kind of paper every 5 to 10 years to keep up?</pre></li>
+
+<li><pre class=3D"student-text">This paper does not talk much about spam an=
+d security. As long as we have end-to-end encryption and decryption, the se=
+rvice provider can no longer filter spams. Even if they build a filter in t=
+he user-side app, it's easier for an attacker to work around. How do existi=
+ng systems do anti-spam?</pre></li>
+
+<li><pre class=3D"student-text">This paper is (in my opinion) both difficul=
+t to parse through because of the ordering, and also fairly uninteresting. =
+It also seems like the conclusions are kind of the same as usual: most user=
+s won't willingly deal with security that is more inconvenient. Is there so=
+mething more to this paper I am missing?</pre></li>
+
+<li><pre class=3D"student-text">What are reasons that a company would choos=
+e to not have end-to-end encryption?  For example, FB owns Messenger and Wh=
+atsApp. WhatsApp uses end to end encryption, but Messenger does not.  Why w=
+ould they choose to do this?
+</pre></li>
+
+<li><pre class=3D"student-text">What are the evaluation criteria in this pa=
+per used for? Does anyone use them when designing a new messaging service?<=
+/pre></li>
+
+<li><pre class=3D"student-text">What are the most reliable ways to verify b=
+etween the two users that there is no MitM?</pre></li>
+
+<li><pre class=3D"student-text">What companies have the most secure messagi=
+ng protocols/what do they do differently? (Apple, Facebook)
+</pre></li>
+
+<li><pre class=3D"student-text">What does a non-global entity mean? It is u=
+sed in the context of transport privacy.
+
+With regards to the suggestion of incorporating store and forward services =
+into onion-routing, how practical or impractical is such a scheme? How prev=
+alent is onion-routing in practice given that the source needs to construct=
+ the whole path?
+
+There are a lot of methods using ephemeral keys that are derived from older=
+ keys that discuss how they don't provide backward secrecy because once a g=
+iven key is compromised, all future keys are known. How often does this hap=
+pen in practice?
+</pre></li>
+
+<li><pre class=3D"student-text">What does the NSA use to communicate?
+
+</pre></li>
+
+<li><pre class=3D"student-text">What is IBC and how does it work?
+</pre></li>
+
+<li><pre class=3D"student-text">What is a "ratchet" or "ratcheting approach=
+", as in IV.C.6 Diffie-Hellman
+Ratchet?
+</pre></li>
+
+<li><pre class=3D"student-text">What is a session key rachet?</pre></li>
+
+<li><pre class=3D"student-text">What is a session key ratchet?</pre></li>
+
+<li><pre class=3D"student-text">What is the difference between synchronized=
+ long-term keys and distinct keys? (mentioned on pg 239 under "Multiple Dev=
+ice Support" -&gt; "The devices might use a synchronized long-term key or d=
+istinct keys")</pre></li>
+
+<li><pre class=3D"student-text">What is the main difference between =E2=80=
+=9Csecurity=E2=80=9D and =E2=80=9Cprivacy=E2=80=9D properties?  Throughout =
+the paper they often refer to them together, but are they always intertwine=
+d? </pre></li>
+
+<li><pre class=3D"student-text">What is the most promising scheme for key m=
+anagement in an encrypted messaging system?
+</pre></li>
+
+<li><pre class=3D"student-text">What is today's most secure messaging mediu=
+m?
+</pre></li>
+
+<li><pre class=3D"student-text">What kind of additional protections do emai=
+l service providers give to email? How can they determine which addresses t=
+hey are routing to would allow
+PGP? Does gmail have a different protocol entirely for delivering between a=
+ccounts?</pre></li>
+
+<li><pre class=3D"student-text">What way of combining conversation security=
+ protocols to get a better design?
+</pre></li>
+
+<li><pre class=3D"student-text">What's the legal significance of message re=
+pudiation? Is there a rigorous technical standard in the US for attributing=
+ a message to a person?</pre></li>
+
+<li><pre class=3D"student-text">Which email providers and messaging service=
+s do the instructors recommend?</pre></li>
+
+<li><pre class=3D"student-text">While thinking about how to apply their cri=
+teria to email, I noticed how unrealistic their definition of "Message Repu=
+diation" is: It seems that since standard email is not authenticated, it is=
+ considered repudiable. However, in practice, if I send an email to someone=
+ and later regret what I wrote, I'll have a hard time repudiating that I've=
+ sent it, probably no one will believe me. Is there a more realistic or pra=
+ctical definition of repudiability?
+</pre></li>
+
+<li><pre class=3D"student-text">Why are self-destructing messages an imposs=
+ible feature? Is it not possible to guarantee a server or client will delet=
+e received messages by using technology like Haven to secure applications r=
+esponsible for deleting them?</pre></li>
+
+<li><pre class=3D"student-text">Why are self-destructing messages not possi=
+ble? I suppose that a malicious client could decide not to destruct a messa=
+ge. Is that what they are thinking about?
+</pre></li>
+
+<li><pre class=3D"student-text">Why is email still widely used? Is it possi=
+ble to switch completely to other=20
+communication way like slack?</pre></li>
+
+<li><pre class=3D"student-text">With the current startup trend and culture,=
+ although more and more apps come into market, it seems that security isn't=
+ on top of the priority (versus cool features and beautiful UI, for example=
+). Are those newer products truly adopt latest security measures?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Would using blockchain technology be an ext=
+remely secure way of privately messaging another person?  Is this feasible,=
+ or would the costs be too much per message?
+</pre></li>
+
+<li><pre class=3D"student-text">sq22.txt
+
+As people work towards a good or working system of end to end encryption, s=
+hould legal considerations such as law enforcement access come into play? <=
+/pre></li>
+
+<li><pre class=3D"student-text">=EF=BF=BD=EF=BF=BDAre there messaging appro=
+aches that attempt to tackle untrusted clients as well as servers, given th=
+at the user expects to be able to enter plain text in whatever interface th=
+ey use to send messages?  Although I recognize this is kinda impossible, in=
+ reality most clients are "untrusted," as very few in popular use are both =
+open source and subject to frequent audit.</pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--vDgnGz3QZZL3jsFO53UQOaVV9hT0pJ7Uy25XJo8eTs------

@@ -1,0 +1,770 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-questions/19
+Subject: Questions for lecture 19 - 6.858
+Date: Tue, 21 May 2018 01:43:21 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--FHMfxybb3lh0QNUaXvPzmBIPPF0gVnDJUGImyZ64nu----"
+
+
+------MultipartBoundary--FHMfxybb3lh0QNUaXvPzmBIPPF0gVnDJUGImyZ64nu----
+Content-Type: text/html
+Content-ID: <frame-1186-6e898b29-6e3c-43d4-b83f-8952117a1b3d@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-questions/19
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Questions for lecture 19 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Questions for lecture 19 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text">Has research been done in predicting what t=
+ypes of bugs a piece of code is most vulnerable to using the ground truth c=
+orpora created by LAVA.</pre></li>
+
+<li><pre class=3D"student-text">Have people managed to get LAVA to inject b=
+ugs other than buffer overflows?
+</pre></li>
+
+<li><pre class=3D"student-text">"Note that TCN is not an ideal measure. The=
+re are obviously situations in which
+the tree of computation is deep but the resulting value is both completely =
+predictable
+and has as much entropy as the original value"
+
+Could you give an example for when this is true?
+</pre></li>
+
+<li><pre class=3D"student-text">* Figure 4 makes no sense to me: The "Taint=
+ Compute Number" is defined as a property of program variables, so the y ax=
+is of Figure 4 should be names of program variables, not input bytes. What =
+am I missing?
+* Also, is it true that the x-axis of Figures 3 and 4 are "number of instru=
+ctions executed"?
+* I think I understand their definition of liveness, but why did they choos=
+e to call this concept "liveness"?
+* Part of this paper reads like a "how to find zero day vulnerabilites more=
+ efficiently" guide and might be too useful for blackhats, were there any c=
+oncerns about publishing it?
+
+</pre></li>
+
+<li><pre class=3D"student-text">1. Based on figure 3, the authors claim tha=
+t bits 4-7 are completely dead. How did they get this from the figure?
+2. Based on the results described in this paper, it seems like both symboli=
+c execution and fuzzing miss most bugs. Has follow-up work been done? Have =
+the performance of fuzzers and Symbolic exection systems at finding lava-li=
+ke bugs improved since the release of this tool?
+</pre></li>
+
+<li><pre class=3D"student-text">1. What is DUA exactly? To be more specific=
+ what does "execution trace locations that do not determine control flow" m=
+ean?</pre></li>
+
+<li><pre class=3D"student-text">4/28/18
+
+Lecture 19
+
+How exactly are the "ground-truth" values generated by LAVA used to train t=
+ools to detect vulnerabilities? Are the
+tools just run on the programs with LAVA injected bugs to see if they can d=
+etect them?</pre></li>
+
+<li><pre class=3D"student-text">6858 - Lava
+
+This is cool! This seems like a useful tool for javascript and other browse=
+r/web
+server related languanges - do these tools exist?
+
+What other work has been done in simulating bugs? What examples of bugs wou=
+ld be
+hard to synthesize?
+</pre></li>
+
+<li><pre class=3D"student-text">A lot of the example vulnerabilities didn't=
+ seem very realistic, how would a 'realistic' vulnerability be defined?
+</pre></li>
+
+<li><pre class=3D"student-text">Are the bugs produced by LAVA meaningfully =
+similar to bugs produced via human
+programmers interpreted by compilers? If not, is LAVA a good test of fuzzin=
+g
+capability?
+</pre></li>
+
+<li><pre class=3D"student-text">Are the measures of "taint" and "liveness" =
+used in this paper concepts invented
+for this purpose, or do they have other applications in source code analysi=
+s?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Are there any sophisticated bugs that LAVA =
+injects other than something like if this variable is this specific value, =
+do something different? I guess it seems like LAVA wouldn't be able to inje=
+ct any complicated bugs. </pre></li>
+
+<li><pre class=3D"student-text">Are there reliable ways of testing for side=
+-channel vulnerabilities and is there a way similar to LAVA that can inject=
+ side-channel vulnerabilities?</pre></li>
+
+<li><pre class=3D"student-text">Are there ways in which a symoblic executio=
+n method for inserting bugs would be more effective than the LAVA approach?
+</pre></li>
+
+<li><pre class=3D"student-text">Aren't bugs in real programs likely to invo=
+lve values with high "liveness"? What techniques could be used to generate =
+bugs that involve more of the control flow of a program.</pre></li>
+
+<li><pre class=3D"student-text">Do DUAs as described in the paper form the =
+basis of all possible attacker-controlled bugs in software? It seems that L=
+AVA relies on this being true to be an effective bug injector.</pre></li>
+
+<li><pre class=3D"student-text">Do people commonly use the LAVA bug corpora=
+ for analysis/developing new fixes? </pre></li>
+
+<li><pre class=3D"student-text">Do researchers in computer security, specif=
+ically working on bug-finding algorithms, often report empirical performanc=
+e?  E.g., in computer vision, one can report on classification performance =
+against a standard dataset like ImageNet compared to some baseline algorith=
+m.  Does the same exist (or if it exists, is it common) in security researc=
+h?  It seems like the motivation for LAVA is to make this happen, so I'm cu=
+rious if it has played out that way.
+</pre></li>
+
+<li><pre class=3D"student-text">Does the fact that symbolic execution typic=
+ally only found bugs in the beginning parts of files indicate that symbolic=
+ execution is simply
+not viable for large file sizes? Is it just that the aspects of a program s=
+ymbolic execution can't evaluate, such as hashing, drastically=20
+limit the extent to which such programs can be evaulated?</pre></li>
+
+<li><pre class=3D"student-text">Dynamic forward symbolic execution automati=
+cally builds a logical formula describing a program execution path, which r=
+educes the problem of reasoning about the execution to the domain of logic.=
+ Dynamic taint analysis can look for misuses of user input during an execut=
+ion. Which is better when trying to discover vulnerabilities/bugs in a prog=
+ram?=20
+</pre></li>
+
+<li><pre class=3D"student-text">For fuzzy testing, some seed testcases are =
+given. What is the=20
+purpose of these testcases and how to choose these testcases?</pre></li>
+
+<li><pre class=3D"student-text">From a program analyze perspective, how int=
+eresting are the bugs introduced by
+LAVA? It seems like they are all quite similar to each other, in that they =
+are
+all guarded by a compare against a "magic" number.
+</pre></li>
+
+<li><pre class=3D"student-text">Has LAVA become a standard way to benchmark=
+ vulnerability-detection tools or are the bugs it introduce too "gamable"?
+</pre></li>
+
+<li><pre class=3D"student-text">Has LAVA been widely used since this paper'=
+s publication? Or have bug finding programs stuck to different techniques f=
+or evaluating their effectiveness?
+</pre></li>
+
+<li><pre class=3D"student-text">Has the concolic execution as suggested by =
+Keromytis been researched further? Also, semi-related, but has there been a=
+ny work done on fuzzing on gpus? I feel like there's enough parallelism to =
+do this.
+</pre></li>
+
+<li><pre class=3D"student-text">Have techniques like LAVA caught on for tes=
+ting software?</pre></li>
+
+<li><pre class=3D"student-text">How are attack points selected?</pre></li>
+
+<li><pre class=3D"student-text">How are vulnerability detection tools teste=
+d normally? Is there a set of previously buggy code that is used to test, o=
+r is it mostly used on current systems looking for new bugs, or is Lava and=
+ other similar systems that introduce bugs into systems the current leading=
+ technique?</pre></li>
+
+<li><pre class=3D"student-text">How can you identify lava bugs from just lo=
+oking at the assembly of a program? </pre></li>
+
+<li><pre class=3D"student-text">How could symbolic execution not identify o=
+ne of these buffer overflows? Is
+it just that it was not able to do so in the 5 hours they gave, or is
+symbolic execution not able to catch some buffer overflow bugs?
+</pre></li>
+
+<li><pre class=3D"student-text">How did your work in aerospace/defence on t=
+he ballistic missile group at lincoln lab prepare you for work in cybersecu=
+rity? How do they relate (other than their relevance to national security)-=
+-in particular, the work you do for both?
+</pre></li>
+
+<li><pre class=3D"student-text">How do they come up with the magic number f=
+or the DUA? Is it just random or does it need to something specific?</pre><=
+/li>
+
+<li><pre class=3D"student-text">How do we disassemble a binary safely witho=
+ut triggering it?
+</pre></li>
+
+<li><pre class=3D"student-text">How do we know LAVA doesn't introduce more =
+bugs than it intends to?</pre></li>
+
+<li><pre class=3D"student-text">How do we read figures 3 and 4?  The replay=
+ is confusing, as it seems like there's a range that the file can be replay=
+ed?  I would have assumed a dot at a particular horizontal location meant t=
+hat many replays, so I'm confused as to how the plot contains horizontal li=
+nes.
+
+</pre></li>
+
+<li><pre class=3D"student-text">How does LAVA compare to other fuzzing tool=
+s in applications?
+</pre></li>
+
+<li><pre class=3D"student-text">How does the taint analysis using PANDA wor=
+k exactly? Why is a *dynamic taint analysis* needed; why does the PANDA tai=
+nt analysis need to be run with many different inputs? Why is an instrument=
+ed taint analysis being run with various inputs, instead of having a static=
+ analyzer track the various taint values? Wouldn't a static analyzer be muc=
+h more complete than a dynamic analysis (which seems akin to fuzzing)?
+</pre></li>
+
+<li><pre class=3D"student-text">How effective is LAVA in practice? (since s=
+ome cases have poor yield / coverage)
+</pre></li>
+
+<li><pre class=3D"student-text">How effective is fuzzing at finding bugs? I=
+ saw the list of bugs on the AFL website, which is impressive, and I've hea=
+rd that Google has many dedicated servers that fuzz all of their services. =
+But, what is the expected number of bugs that are found per cpu-day of fuzz=
+ing? And, crucially, are there naturally arising programs where this number=
+ is far lower than the expected number of bugs found with symbolic executio=
+n (which, once complete, should in theory find all of the bugs in the code)=
+? </pre></li>
+
+<li><pre class=3D"student-text">How effective is it to try to test for LAVA=
+ bugs by searching for comparison with magic numbers?
+</pre></li>
+
+<li><pre class=3D"student-text">How is LAVA different from concolic executi=
+on?=20
+</pre></li>
+
+<li><pre class=3D"student-text">How often/in what situations is LAVA actual=
+ly used in the real world? I'm having a hard time understanding its specifi=
+cs from the paper, but also still just having trouble understanding its use=
+fulness/when it would be used.</pre></li>
+
+<li><pre class=3D"student-text">How practical is Lava for finding vulnerabi=
+lities? What are its limitations in program analysis?
+</pre></li>
+
+<li><pre class=3D"student-text">I am still struggling to understand how tai=
+nt queries are instrumented and also why taint compute numbers and liveness=
+ are the two metrics of interest. I find Figures 3 and 4 (which plot livene=
+ss and taint compute number over time) particularly confusing.</pre></li>
+
+<li><pre class=3D"student-text">I don't quite understand the need for the d=
++(b=3D=3D0x6c617661)*b construction--what's different about LAVA bugs from =
+any other buffer overflow that causes an unrealistic number of possible tri=
+gger inputs?</pre></li>
+
+<li><pre class=3D"student-text">I don't understand what SES did better/wors=
+e as the magic number range increased (see Table III). Why is that?
+</pre></li>
+
+<li><pre class=3D"student-text">I don't understand why they focus so much o=
+n DUAs. It does make sense that bugs are to be found in those places, since=
+ they are virtually "dead" and forgotten - so that it might be teh case tha=
+t programmers just don't pay that much attention to them. But wouldn't the =
+contrary be true? if a given variable is overly used in the code, although =
+it does have more attention, it still has a presence in multiple branching =
+conditions and hence is still a potential source of a number of bugs. So wh=
+y this choice? Mostly efficiency?
+</pre></li>
+
+<li><pre class=3D"student-text">I like how this paper constructs certain re=
+quirements for bugs, but honestly it doesn't seem that concrete. Is that by=
+ design? For example, what constitutes whether a bug manifests in a "small =
+proportion" or how "cheap" must it be? Did the authors leave it vague on pu=
+rpose?
+</pre></li>
+
+<li><pre class=3D"student-text">I played with the afl code for a bit to try=
+ and fuzz the inputs, but was unable to figure out how to take the given bi=
+naries and recompile them so they could be complied with the afl code and t=
+hus never got it working. Was there an easier way to accomplish the same go=
+al?</pre></li>
+
+<li><pre class=3D"student-text">I understand that LAVA makes and injects la=
+rge numbers of realistic bugs, but how does that help us with ground-truth =
+corpora? Don=E2=80=99t we still have an issue of not knowing whether this f=
+inds all bugs or not (as in, we can only compare this to other methods, rig=
+ht?)?</pre></li>
+
+<li><pre class=3D"student-text">In the paper, they were worried about stali=
+ng of the bug corpuses hence they
+created LAVA partly to address that by dynamically generating bugs. However=
+,
+wouldn't exclusively using LAVA data to produce training data result in=20
+bug detectors to overfit to the type/structure of bugs produced by LAVA whi=
+ch=20
+might not represent the real world bug data?</pre></li>
+
+<li><pre class=3D"student-text">Is LAVA completely automated? They say it i=
+s, but I don't understand how that can be. </pre></li>
+
+<li><pre class=3D"student-text">Is LAVA used in real-world scenarios to tes=
+t programs?</pre></li>
+
+<li><pre class=3D"student-text">Is the way LAVA generates inputs similar to=
+ EXE?=20
+</pre></li>
+
+<li><pre class=3D"student-text">It seems LAVA is limited to creating bugs o=
+f a known type, so wouldn't it be possible to create a bug finding tools sp=
+ecifically for those types of bugs, thereby defeating the purpose of LAVA?
+
+</pre></li>
+
+<li><pre class=3D"student-text">It seems like Lava is a dangerous tool. Doe=
+sn't its creation allow all these vulnerabilities easier to exploit?</pre><=
+/li>
+
+<li><pre class=3D"student-text">It seems like the kind of bugs that LAVA ge=
+nerates would not be very
+representative of actual bugs found in-the-wild. Wouldn't that skew the
+evalution if we use LAVA-injected programs to evaluate bug-finding tools?
+</pre></li>
+
+<li><pre class=3D"student-text">It seems unfair to create the tool that cre=
+ates a corpus as well as the metric to determine whether the created corpus=
+ is "good" or not.  Has there been any work in the field to find alternativ=
+e measuring techniques for the validity of the LAVA-generated bugs and whet=
+her they're even feasible for bug-finding solutions to stumble across?</pre=
+></li>
+
+<li><pre class=3D"student-text">It's surprisingly that modern C programs st=
+ill have so much code exploitable by LAVA's requirements (dead, uncomplicat=
+ed, and available) even though a lot of these exploits are related to bag C=
+ programming practices that were found quite a while back. Is this due to t=
+here being a huge body of older C code that hasn't been updated to be more =
+secure, or just general bad programming practices?</pre></li>
+
+<li><pre class=3D"student-text">LAVA seems pretty interesting, but how real=
+istic of a benchmark do you think it will be for bug-finding tools? Since o=
+ne knows exactly how these bugs are generated, it seems like tools could be=
+ made that perform very well at catching these bugs but which perhaps don't=
+ work as well at catching human-generated bugs (where we don't have a speci=
+fic procedure that we know generated the bugs).</pre></li>
+
+<li><pre class=3D"student-text">LAVA seems to require the source code to in=
+ject vulnerabilities. Would it be possible to run input analysis and inject=
+ vulnerabilities with just the binary?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 19 (Question About Paper)
+
+Has LAVA (or another vulnerability addition tool) been used outside the res=
+earch community at Northeastern, New York University, and Lincoln Laborator=
+y?
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 19: LAVA Tim Leek
+4/30/18
+
+Reading the paper, it seems that most of the bugs they are injecting are bu=
+ffer overflows or arithmetic errors arising from unexpected data input. Do =
+most bugs arise from these two reasons/what about isolation bugs or concurr=
+ency or other various bugs that tools might detect?</pre></li>
+
+<li><pre class=3D"student-text">Lecture 19: My Lava Question
+
+If the only type of bug that Lava is able to inject is a buffer overflow, w=
+ouldn't a program
+running baggy bounds be completely unaffected by Lava testing, and render t=
+he approach obsolete?
+
+Thank you!
+</pre></li>
+
+<li><pre class=3D"student-text">Not sure what to ask. Seems to be an intere=
+sting area of research. What are similar types of papers that use program a=
+nalysis for security?</pre></li>
+
+<li><pre class=3D"student-text">Not too related to the paper in itself, but=
+ when trying to answer the question, I could not figure out how to use a fu=
+zzer appropriately to uncover morty's bug. Was there something I could have=
+ done different to set it up and hopefully uncover the bug, or the fuzzer i=
+s just not efficient enogugh to uncover the bugs fast?
+</pre></li>
+
+<li><pre class=3D"student-text">Presumably this tool also has limit on the =
+size of the program?</pre></li>
+
+<li><pre class=3D"student-text">Question about Paper/Assignment
+
+Running ALS made me realize that these fuzzig tools take a long time to eve=
+n complete. Thereby, are they even viable tools in practice on large codeba=
+ses or do people narrow input space greatly to make them more efficient?</p=
+re></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 19=20
+
+Is there any sign of overtraining? Meaning do debuggers start to look speci=
+fically for LAVA injected bugs to look better on evaluation rather than doi=
+ng a more broad analysis of the program?</pre></li>
+
+<li><pre class=3D"student-text">Since LAVA is used to evaluate bug finding =
+tools and LAVA only injects buffer overflow, isn't there a bias towards too=
+ls that are really good at finding buffer overflow?  It seems that LAVA wou=
+ld be good at verifying tools in only the types of bugs it injects.
+</pre></li>
+
+<li><pre class=3D"student-text">Since ML and deep learning have become a hu=
+ge deal recently, they have also been applied to security. I wonder if a te=
+chnique like LAVA would work as a good measure of ability. Wouldn't a model=
+ trained on several LAVA binaries spot the specific way in which LAVA injec=
+ts vulnerabilities and train on that, rather than the actual issue?
+</pre></li>
+
+<li><pre class=3D"student-text">Since the bug finding tools tested found on=
+ly 41 of the injected 2265 bugs, could that mean that LAVA's bugs aren't re=
+alistic because presumably these tools have been trained to find real bugs =
+in systems, rather than meaning that these tools have significant losses id=
+entifying bugs? I am thinking that likely it is some combination of the two=
+.</pre></li>
+
+<li><pre class=3D"student-text">So do companies use LAVA in testing for bug=
+s? What other bug-finding programs
+are there?=20
+</pre></li>
+
+<li><pre class=3D"student-text">The author does not seem to quantify how si=
+milar the bugs that LAVA injects are to real life bugs. Specifically, I thi=
+nk there is still a way to "game" the system by making bug finders designed=
+ (or even trained, in the machine learning sense) to find LAVA bugs and ach=
+ieve high LAVA bug identification accuracy, while still perform poorly in r=
+eal life. I don't see the discussion of correlation of LAVA bug identificat=
+ion performance and real-life bug identification performance.=20
+</pre></li>
+
+<li><pre class=3D"student-text">The author's did not seem to touch on this =
+directly, but is the assumption that the buffer overflows are equally reali=
+stic? As in I would assume that it would be nice to quantify how easily a b=
+ug is to introduce, or moreso the impact the bug would have on the program =
+as a result. Given these intuitively seem hard to categorize does it fall u=
+nder future work discussed at the end of the paper or has other research lo=
+oked into this topic?</pre></li>
+
+<li><pre class=3D"student-text">The bug injection in the example in the pap=
+er seems pretty synthetic: replacing the argument d with d+(b=3D=3D0x6c6176=
+61)*b. It seems unlikely that a bug would actually be like this in the real=
+ world. I'm confused as to how this is okay?</pre></li>
+
+<li><pre class=3D"student-text">The challenges I experienced with the lec19=
+ problem triggered me think whether adding a fuzzying exercise into labs in=
+ the future years can be a good idea.
+ </pre></li>
+
+<li><pre class=3D"student-text">The premise of LAVA seems to rely on the re=
+alism of the synthetic injections. The authors state this in the abstract b=
+ut neglect to actually address how realism is addressed until much later in=
+ the paper. When finally discussed, it seems like the definitions rely heav=
+ily on empirical evaluations to conclude realism but lack any sort of forma=
+l guarantees -- is this correct? Is this seen as a flaw/shortcoming of this=
+ work?
+</pre></li>
+
+<li><pre class=3D"student-text">To what degree are the bugs found by LAVA f=
+ound in the real world?</pre></li>
+
+<li><pre class=3D"student-text">Usually when creating datasets for benchmar=
+king performance of different algorithms (such as in data science/machine l=
+earning) there is concern over synthetic datasets that algorithms might jus=
+t learn to exploit idiosyncracies in the way the dataset was constructed. L=
+AVA claims (convincingly) to be highly realistic --- have there been any ac=
+tual success stories using it in the past 2 years since publication in deve=
+loping new bug testing tools?
+</pre></li>
+
+<li><pre class=3D"student-text">We calculate the liveness of an input bit a=
+s the number of branches it involves. But if we run the code a =3D a + c; a=
+ =3D a - c. Then c's liveness become 2, while it basically has no impact on=
+ a. Is it theoretically hard to detect scenarios like above?</pre></li>
+
+<li><pre class=3D"student-text">We'd previously discussed symbolic executio=
+n. How do they compare in
+practical programs? I was under the impression that symbolic execution
+worked pretty well because constraint solvers are pretty fast in practice.<=
+/pre></li>
+
+<li><pre class=3D"student-text">What are ground-truth corpora?</pre></li>
+
+<li><pre class=3D"student-text">What are some benefits of a system like LAV=
+A over EXE?
+</pre></li>
+
+<li><pre class=3D"student-text">What are the parallels and intersections of=
+ lava and symbolic execution?</pre></li>
+
+<li><pre class=3D"student-text">What does it mean for bugs to be "cheap and=
+ plentiful"? Does it just imply computationally easy to find? Which begs th=
+e question is the bug exhaustive or doing some surface level error checking=
+? Does it miss out on ramfications?
+
+Also isn't plentiful in direct contrast with "manifest for a small fraction=
+ of possible inputs"?. How likely is it that the same set of inputs cause m=
+ultiple bugs?
+</pre></li>
+
+<li><pre class=3D"student-text">What is the most advance libraries for bug =
+finding in a large codebase?
+</pre></li>
+
+<li><pre class=3D"student-text">What is the progress of using machine learn=
+ing, especially deep learning to find bugs? Can this kind of bug generator =
+boost the research in these areas?=20
+</pre></li>
+
+<li><pre class=3D"student-text">What is the safe way to execute these files=
+? Since I cannot see their source,
+I feel like they are not safe to run directly, but if I ran them from a VM =
+would
+it be safe?  =20
+</pre></li>
+
+<li><pre class=3D"student-text">What is the usual definition of a realistic=
+ bug, since the paper claimed to go off the beaten path in that definition?=
+ Why couldn't they use the usual definition?</pre></li>
+
+<li><pre class=3D"student-text">What major contributions since 2016 has LAV=
+A made in the development and evaluation of advanced tools and techniques f=
+or vulnerability discovery?</pre></li>
+
+<li><pre class=3D"student-text">What tools can be used to detect bugged fil=
+es?
+</pre></li>
+
+<li><pre class=3D"student-text">What's the main benefits for using LAVA ver=
+sus using something like Symbolic Execution?  Or in what cirstumstances is =
+each one better?</pre></li>
+
+<li><pre class=3D"student-text">When we were looking at symbolic execution,=
+ I was a little confused about why it's useful if we can't faulty inputs wi=
+thout assert statements. LAVA seems to have a similar problem. How would un=
+anticipated errors be detected if assert statements are necessary to detect=
+ errors. </pre></li>
+
+<li><pre class=3D"student-text">While reading the paper it seemed like it w=
+ould be fairly easy for a human to find the bugs as the triggering mechanis=
+m seemed fairly simple. However, it was very difficult for me to determine =
+the bugs based on the compiled files. Is this simply that it is hard to go =
+back form compiled to source code? Or is it hard to look at the generated c=
+ode by lava and find the injected bugs?
+</pre></li>
+
+<li><pre class=3D"student-text">Why did the authors of the paper decide to =
+focus on buffer overflow bugs? </pre></li>
+
+<li><pre class=3D"student-text">Why do a set of bytes that are "are uninvol=
+ved in branches or computation" "make a fine DUA"?  Wouldn't we want certai=
+n inputs to change the bytes we're using as a DUA, so our buggy inputs can =
+be detected by readings the changed values of the DUA?</pre></li>
+
+<li><pre class=3D"student-text">Why does LAVA take so long to run?
+</pre></li>
+
+<li><pre class=3D"student-text">Why is dead data better for triggering vuln=
+erabilities?</pre></li>
+
+<li><pre class=3D"student-text">Why is it valid to inject bugs and find bug=
+s with the same system? It seems the other bug finders are more authentic i=
+n their search for completely unknown and unseen bugs in foreign code.</pre=
+></li>
+
+<li><pre class=3D"student-text">how well do decompilers work?
+</pre></li>
+
+<li><pre class=3D"student-text">=EF=BB=BFDoes it affect the performance if =
+LAVA tries to insert bugs into source code which has existing bugs?</pre></=
+li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--FHMfxybb3lh0QNUaXvPzmBIPPF0gVnDJUGImyZ64nu------

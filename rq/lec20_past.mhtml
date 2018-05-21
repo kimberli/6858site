@@ -1,0 +1,587 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: http://css.csail.mit.edu/6.858/2018/questions.html?q=q-tor&lec=20
+Subject: 6.858 / Spring 2018 / Paper Reading Questions
+Date: Tue, 21 May 2018 01:44:59 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--hw0abQOmAAZir51c11X024pyvFQ1pK2ns8rH2XcViT----"
+
+
+------MultipartBoundary--hw0abQOmAAZir51c11X024pyvFQ1pK2ns8rH2XcViT----
+Content-Type: text/html
+Content-ID: <frame-1193-010a6731-00c2-447e-8c25-7b0f84bbce05@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://css.csail.mit.edu/6.858/2018/questions.html?q=q-tor&lec=20
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8">
+<title>
+6.858 / Spring 2018
+
+/ Paper Reading Questions
+
+</title>
+<meta http-equiv=3D"pragma" content=3D"no-cache">
+<link rel=3D"stylesheet" type=3D"text/css" href=3D"http://css.csail.mit.edu=
+/6.858/2018/style.css">
+
+
+
+</head>
+
+<body bgcolor=3D"#ffffff" text=3D"#000000">
+
+<table cols=3D"3" width=3D"100%" height=3D"100%" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0">
+<tbody>
+<!-- Header row -->
+<tr height=3D"40px">
+ <td colspan=3D"3">
+ <table width=3D"100%" height=3D"40px" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0">
+ <tbody>
+   <tr>
+    <td bgcolor=3D"#000000">
+      <div align=3D"left" style=3D"padding-left:58px; padding-top: 2px;">
+      <font style=3D"font-size: 28px; color: #ffffff">
+	<a name=3D"top">
+         <b>6.858</b>: Computer Systems Security
+	</a>
+      </font>
+      </div>
+    </td>
+
+    <td bgcolor=3D"#8a0a0a" halign=3D"center" valign=3D"center" width=3D"25=
+0px">
+     <div align=3D"center" style=3D"padding-top: 2px; padding-bottom: 4px;"=
+>
+     <font style=3D"font-size: 28px; color: #ffffff">
+      Spring <b>2018</b>
+     </font>
+     </div>
+    </td>
+  </tr>
+ </tbody>
+ </table>
+ </td>
+</tr>
+
+<!-- horiz line -->
+<tr>
+<td colspan=3D"3" height=3D"5px" bgcolor=3D"#8a0a0a">
+</td>
+</tr>
+
+<tr>
+<!-- Menu -->
+<td bgcolor=3D"#8a0a0a" valign=3D"top" width=3D"180px">
+ <table cols=3D"2" rows=3D"1" border=3D"0" cellspacing=3D"0" cellpadding=3D=
+"0" width=3D"100%" height=3D"100%">
+  <tbody>
+   <tr>
+   <td valign=3D"top">
+   <table cols=3D"1" rows=3D"1" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%">
+    <tbody>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/" class=3D"menuItem=
+">Home</a>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/general.html" class=
+=3D"menuItem">General information</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/schedule.html" clas=
+s=3D"menuItem">Schedule</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/reference.html" cla=
+ss=3D"menuItem">Reference materials</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"https://piazza.com/mit/spring2018/6858" class=3D"menuIt=
+em">Piazza discussion</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/handin.html" c=
+lass=3D"menuItem">Submission</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/quiz.html" class=3D=
+"menuItem">Quizzes</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a class=3D"menuItem">Labs</a><br>
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/lab1.html" cla=
+ss=3D"menuItem">1</a>
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/lab2.html" cla=
+ss=3D"menuItem">2</a>
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/lab3.html" cla=
+ss=3D"menuItem">3</a>
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/lab4.html" cla=
+ss=3D"menuItem">4</a>
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/lab5.html" cla=
+ss=3D"menuItem">5</a>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://ist.mit.edu/network/rules" class=3D"menuItem">MI=
+T network rules</a>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/projects.html" clas=
+s=3D"menuItem">Final projects</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2017/" class=3D"menuItem=
+">2017 class materials</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a rel=3D"license" href=3D"http://creativecommons.org/licenses/by/=
+3.0/us/"><img alt=3D"Creative Commons License" style=3D"border-width:0" src=
+=3D"http://css.csail.mit.edu/6.858/2018/cc-by.png"></a>
+      </div></td></tr>
+    </tbody>
+   </table>
+   </td>
+
+   <td width=3D"3px" bgcolor=3D"#8a0a0a">
+   </td>
+   </tr>
+  </tbody>
+ </table>
+</td>
+<!-- End Menu -->
+
+<td colspan=3D"2">
+
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" heig=
+ht=3D"100%">
+<tbody><tr><td style=3D"padding-left:10px; padding-right:10px; padding-top:=
+ 10px; padding-bottom: 10px" valign=3D"top" align=3D"left">
+
+
+<!-- Begin Page Content -->
+
+
+<!--
+    To add a new question, just put in within a <div> tag, give it
+    some identifier (i.e., 'id=3D"qXX"'), and then add it to the questions
+    array variable below.  To link directly to the question, just use a
+    link to 'questions.html?q=3DqXX'.
+ -->
+
+<h1>
+Paper Reading Questions
+</h1>
+
+<a name=3D"top"></a>
+<p>
+For each paper, your assignment is two-fold.  Before lecture:
+
+</p><ul>
+<li>Submit your answer for each lecture's paper question via the
+    <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/handin.html">submis=
+sion web site</a> in a file named
+    <code>lec<var>n</var>.txt</code>, and
+</li><li>Submit your own question about the paper (e.g., what you find most=
+ confusing about
+    the paper or the paper's general context/problem) in a file named
+    <code>sq<var>n</var>.txt</code>.
+    You cannot
+    use the question below.  To the extent possible, during lecture we will=
+ try to
+    answer these questions.  Below, we have included the questions we've re=
+ceived
+    from students in past years (when available), along with answers to tho=
+se
+    questions, in case you find it helpful.
+</li></ul>
+
+<p id=3D"submit-links" style=3D"visibility: visible; position: static;">
+    Once you submit your own question and answer (or after the deadline
+    has passed), you can view the
+    <a href=3D"https://6858.csail.mit.edu/lec-questions/20" id=3D"question-=
+view-link">questions</a>
+    and
+    <a href=3D"https://6858.csail.mit.edu/lec-answers/20" id=3D"answer-view=
+-link">answers</a>
+    that other students submitted.
+</p>
+
+<p></p>
+
+<div id=3D"questions">
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+  =20
+
+ =20
+
+
+ =20
+
+ =20
+
+ =20
+
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+  <div id=3D"q-tor" class=3D"questionbox"><p><b>Lecture 20</b></p>
+    <p>
+    What are the technical risks and benefits of running an onion router
+    Tor node (i.e., not just a client) on your machine?
+    </p>
+  </div>
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+</div>
+
+<style>
+  div.responsebox {
+    margin: 1pc 4% 0pc 4%;
+    padding: 0.5pc 0.5pc 0.5pc 0.5pc;
+    background-color: #e0e0ff;
+    border: 1px dashed red;
+  }
+
+  pre.responsepre {
+    white-space: pre-wrap;
+  }
+</style>
+
+<div id=3D"responses">
+
+  <div class=3D"lecture-responses">
+    <h2>Questions and answers for lecture 20 from past years</h2>
+
+      <div class=3D"responsebox"><pre class=3D"responsepre">At a high level=
+, because the US Government is a giant entity that
+consists of many sub-organizations including the NSA but also
+including others that are interested in Tor for various reasons (e.g.,
+NSF for basic science research, Department of State for helping
+dissidents communicate, etc).
+
+Nickolai.
+
+On Sun, May 7, 2017 at 5:54 PM, Anonymous wrote:
+&gt; Why is the US Government the largest source of funding for TOR when ag=
+encies like the NSA are
+&gt; busy trying to passively collect as much information about American ci=
+tizens as they can?
+
+</pre></div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- End Page Content -->
+
+</td></tr>
+
+<tr bgcolor=3D"#999999" height=3D"20px">
+<td style=3D"padding-left:10px; padding-top: 10px; padding-bottom: 10px">
+<font style=3D"font-size: 12px;">
+<p>Questions or comments regarding 6.858?  Send e-mail to the course staff =
+at
+<a href=3D"mailto:6858-staff@lists.csail.mit.edu"><i>6858-staff@lists.csail=
+.mit.edu</i></a>.
+
+</p></font><p><font style=3D"font-size: 12px;"><b><a href=3D"http://css.csa=
+il.mit.edu/6.858/2018/questions.html?q=3Dq-tor&amp;lec=3D20#top">Top</a></b=
+> //
+<b><a href=3D"http://css.csail.mit.edu/6.858/2018/">6.858 home</a></b> //=
+=20
+<i>Last updated Thursday, 26-Apr-2018 08:28:18 EDT</i>
+</font>
+</p></td></tr>
+</tbody></table>
+
+</td>
+
+</tr>
+</tbody>
+</table>
+
+
+
+
+</body></html>
+------MultipartBoundary--hw0abQOmAAZir51c11X024pyvFQ1pK2ns8rH2XcViT----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://css.csail.mit.edu/6.858/2018/style.css
+
+@charset "utf-8";
+
+body { background-color: rgb(255, 255, 255); margin: 0px; padding: 0px; fon=
+t-family: verdana, arial, helvetica, sans-serif; }
+
+p { font-size: 13px; }
+
+ol { font-size: 13px; }
+
+ul { font-size: 13px; }
+
+pre { font-family: "courier new", courier, mono; color: rgb(202, 10, 10); f=
+ont-size: 13px; }
+
+.menuHead { text-align: center; padding-top: 8px; padding-bottom: 8px; }
+
+.menuItem { color: rgb(255, 255, 255); text-decoration: none; font-weight: =
+bold; font-size: 16px; }
+
+table.calendar { font-family: arial, helvetica; font-size: 10pt; empty-cell=
+s: show; border: 1px solid rgb(0, 0, 0); }
+
+table.calendar tr td { border: 1px solid rgb(170, 170, 170); }
+
+table.calendar tr { vertical-align: top; height: 75px; background: rgb(238,=
+ 238, 238); }
+
+table.calendar tr.header { font-weight: bold; font-size: 13px; background-c=
+olor: rgb(68, 68, 68); color: rgb(255, 255, 255); height: 25px; text-align:=
+ center; }
+
+.lecture { background: rgb(255, 255, 170); }
+
+.holiday { background: rgb(204, 255, 204); }
+
+.special { background: rgb(170, 170, 255); }
+
+.lab { background: rgb(0, 204, 204); }
+
+.important { background: rgb(255, 170, 170); }
+
+.reading { color: rgb(51, 51, 255); }
+
+.handout { color: rgb(0, 153, 0); }
+
+.deadline { color: rgb(255, 0, 0); }
+
+.note { color: rgb(136, 136, 0); }
+
+.assignment { color: rgb(10, 160, 10); }
+
+.date { color: rgb(68, 68, 68); }
+
+div.questionbox { margin: 1pc 4% 0pc; padding: 0.5pc; background-color: rgb=
+(224, 224, 255); border: 1px dashed red; }
+------MultipartBoundary--hw0abQOmAAZir51c11X024pyvFQ1pK2ns8rH2XcViT----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://css.csail.mit.edu/6.858/2018/cc-by.png
+
+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
+SUVORK5CYII=
+
+------MultipartBoundary--hw0abQOmAAZir51c11X024pyvFQ1pK2ns8rH2XcViT------

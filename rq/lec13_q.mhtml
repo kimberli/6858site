@@ -1,0 +1,951 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-questions/13
+Subject: Questions for lecture 13 - 6.858
+Date: Tue, 21 May 2018 01:33:25 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--Out0gctKwIIkIgz2f2lcKnE3wLi4T1g7ljMYIeEY1G----"
+
+
+------MultipartBoundary--Out0gctKwIIkIgz2f2lcKnE3wLi4T1g7ljMYIeEY1G----
+Content-Type: text/html
+Content-ID: <frame-1168-009f1e3d-d320-4a2c-8fa1-a17ae523ed26@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-questions/13
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Questions for lecture 13 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Questions for lecture 13 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text">What are some other authentication methods =
+that were used before cookies?</pre></li>
+
+<li><pre class=3D"student-text">"Even if the owners of the webmail applicat=
+ion scope their cookies tightly (usually at the expense of complicating the=
+ sign-on process), any attacker who finds a script injection vulnerability =
+on the blogging site can simply overflow the per-domain cookie jar, drop th=
+e current credentials, and set his own *.example.com cookies. These injecte=
+d cookies will be sent to webmail.example.com on all subsequent requests an=
+d will be largely indistinguishable from the real ones."
+
+Could you explain what "per-domain cookie jar" is? Does "overflow" here ref=
+er to
+buffer overflow?
+</pre></li>
+
+<li><pre class=3D"student-text">1. On pg 145, I don't understand how the cr=
+oss-site scripting can be used if the attacker points to a page like addres=
+s_book that requires logging in when loaded.=20
+
+2. Is the use of about:blank considered more secure because attackers can't=
+ navigate directly to the page if it contains sensitive information?=20
+
+3. Have the tools from chapter 9 been replaced now that sandboxing is avail=
+able?=20
+
+4. The document mostly focuses on protecting against Javascript attacks and=
+ plug-ins. Do Perl or PHP not have the same abilities over the DOM, or are =
+they excluded because of JS dominance?
+
+5. How can a website operator correct their website after being made aware =
+of a clickjacking situation on their domain? I feel this is a very common a=
+ttack used on cellphones still, and many people especially the elderly are =
+even less aware of how to escape even though they are often just advertisem=
+ent attacks. </pre></li>
+
+<li><pre class=3D"student-text">6.858 - The Tangled Web
+
+Are there ways for different domains to permit cookie sharing with other do=
+mains
+without allowing other domains with the same document.domain?
+
+It seems like a poor way of permission isolation if cookie sharing is all o=
+r nothing.
+</pre></li>
+
+<li><pre class=3D"student-text">After reading these chapters, I=E2=80=99m v=
+ery worried about how the web works and if it=E2=80=99s even possible to se=
+cure anything I do on the web. Is encryption the only thing preventing ever=
+y most attacks?</pre></li>
+
+<li><pre class=3D"student-text">Any situation we don't want secure flags?
+</pre></li>
+
+<li><pre class=3D"student-text">Are there any attempts to make cookie more =
+protected (non-overwritable by too many mechanism)? For example, can we set=
+ a policy to allow only the intended website to modify cookie?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Are there any client side security measures=
+ one can take to detect/delete cookies that are potentially vulnerable?
+</pre></li>
+
+<li><pre class=3D"student-text">Can overwriting a cookie lead to later leak=
+ing of credentials? Namely, does overflowing and creating a cookie without =
+the httponly and secure flags set
+cause the user to write their credentials to the unsecured cookie, or will =
+those flags be overwritten on the next legitimate login.</pre></li>
+
+<li><pre class=3D"student-text">Can you give example exploits using 3rd-par=
+ty stylesheets or images? Could a
+3rd-party stylesheet do something with opacity, mouse-following, etc.  to
+"clickjack" and steal a user's cookie?
+</pre></li>
+
+<li><pre class=3D"student-text">Could speak more about how browsers set up =
+a secure environment in which to run code and display websites in the first=
+ case? How do browsers sandbox themselves? What setup do they do to run Jav=
+ascript? How do they verify that their environment hasn't been corrupted by=
+ someone messing with their source files on the host OS?
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">Danny Tang
+data1013
+4/1/18
+
+Lecture 13
+
+It seems that an entire overhaul of how the web works would be the best sol=
+ution to the issues described in the reading. Would it be
+possible to slowly phase out the current system of using frames to share da=
+ta/communicate for a more secure system, or are we at a=20
+point where it really isn't feasible since the web has grown so large? </pr=
+e></li>
+
+<li><pre class=3D"student-text">Do ISPs still hijack domain lookups for non=
+existent hosts? </pre></li>
+
+<li><pre class=3D"student-text">Do cookies ever expire? Or do you build up =
+more and more cookies stored on your brower over time?
+</pre></li>
+
+<li><pre class=3D"student-text">Does it help to relate Cookie to a random c=
+hallenge which differs for each computer? In this way, even if the adversar=
+y steals your cookie, he can not use it directly.</pre></li>
+
+<li><pre class=3D"student-text">Even those this reading is 10 years old, (I=
+ know the technical descriptions of
+different internet components are still valid) are the vulnerabilities and =
+bugs
+discussed in the readings still an issue in modern browsers?
+</pre></li>
+
+<li><pre class=3D"student-text">From the readings, it seems like adversarie=
+s are almost intraceable. However, as a user, I was wondering how i might b=
+e able to tell than an adversary is present, beyond simply checking the url=
+.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Given that there are so many deadly securit=
+y vulnerabilities in the web browsers, why are vendors (especially Microsof=
+t) so unwilling to provide fixes? Especially for the content sniffing, whic=
+h seems particularly dangerous.
+</pre></li>
+
+<li><pre class=3D"student-text">Given this book is from 2012, has the brows=
+er security landscape changed dramatically since this time? For example, ho=
+w do modern browsers extend these ideas to Browser applications using somet=
+hing like WebAssembly? I would guess there is some sandboxing involved, but=
+ often these applications also need access to some browsing data. When givi=
+ng these applications permissions are we simply allowing the application to=
+ bypass the security rules discussed?</pre></li>
+
+<li><pre class=3D"student-text">Has the keystroke-redirection attack been s=
+olved since this was published? I can think of some rough heuristics for di=
+sallowing it but it seems very tricky to fix.
+
+
+Bonus question: "Once you submit your own question and answer (or after the=
+ deadline has passed), you can view the questions and answers that other st=
+udents submitted." - somehow just noticed that and I've definitely been see=
+ing a lot of the past questions, so I think I've been turning these in late=
+ all semester. Sorry if I'm missing this on the website somewhere, but when=
+ is the deadline?</pre></li>
+
+<li><pre class=3D"student-text">Have there been any improvements/fixes to t=
+he security vulnerabilities decribed in the book since the book was release=
+d?
+</pre></li>
+
+<li><pre class=3D"student-text">How are cookies constructed?
+</pre></li>
+
+<li><pre class=3D"student-text">How common are successful session hijacking=
+ attacks nowadays?
+</pre></li>
+
+<li><pre class=3D"student-text">How do browsers enforce that cross-domains =
+can=E2=80=99t set cookies? </pre></li>
+
+<li><pre class=3D"student-text">How do the security policy of different bro=
+wsers agree with each other - what if different browsers have disagreements=
+ on security policies, would developers have to design their website in acc=
+ordance to each browser's policy?</pre></li>
+
+<li><pre class=3D"student-text">How have the current systems adapted to the=
+ addition of many new top level domains like .io, .club, etc.?  Is it still=
+ the practice to use a chain of if statements to determine these top level =
+domains?=20
+</pre></li>
+
+<li><pre class=3D"student-text">How prevalent are broswer/web based attacks=
+ still? What are the primary reasons for them? How much are origin related =
+issues still a concern?
+</pre></li>
+
+<li><pre class=3D"student-text">I believe many more top-level domains have =
+been approved by ICANN since this
+book was written.  The author mentions that this would increase the complex=
+ity
+of cookie domain restrictions, has anything much changed to handle these?
+</pre></li>
+
+<li><pre class=3D"student-text">I did not understand most of this reading p=
+robably because of a lack of understanding of web security, and because it =
+was way too long. Is there some other resource that is shorter and assumes =
+less knowledge of web security, that explains some of these concepts?</pre>=
+</li>
+
+<li><pre class=3D"student-text">I don't completely understand the example i=
+n Figure 11.2. The book says that the policy is that navigation of non-same=
+-origin frame is permitted if the requesting party shares the origin with o=
+ne of the ancestors in the targeted view. How does this allow bunnyoutlet.c=
+om to access a frame nested in fuzzbunnies.com? Where is the overlap in ori=
+gin?</pre></li>
+
+<li><pre class=3D"student-text">I don't quite understand this paragraph on =
+p 169:
+
+More interestingly (and far less obviously) than the creation of new
+subresources, navigating existing windows or frames to javascript: URLs wil=
+l
+cause the inlined JavaScript code to execute in the context of the navigate=
+d
+page (and not the navigating document!)=E2=80=94even if the URL is entered =
+man-
+ually or loaded from a bookmark.
+
+In particular, what does "navigated page" and "navigating document" mean?
+
+</pre></li>
+
+<li><pre class=3D"student-text">I dont understand the purpose of the about:=
+blank in the example provided in the text (inside Chapter: 10, Section: "Or=
+igin Inheritance for about:blank"). We could use javascript scripting to ed=
+it the internal HTML source even if the iframe was not set to about:blank, =
+or was not set at all -- or is this not correct?=20
+</pre></li>
+
+<li><pre class=3D"student-text">I still don=E2=80=99t quite understand whet=
+her SOP is used for user authentication securities.</pre></li>
+
+<li><pre class=3D"student-text">I understand that developers use pseudo-url=
+s to store html-content locally for faster retrieval, but I don't understan=
+d why developers started using them in the first place given that they're n=
+ot compatible with SOP. It seems like they have other alternatives for stor=
+ing content locally. Were pseudo-urls a feature?</pre></li>
+
+<li><pre class=3D"student-text">I was really surprised at the long lead-tim=
+es b/w vulnerability acknowledgement and patching in web browsers. Are ther=
+e such notable cases recently where major browsers have failed to address a=
+ major vulnerability in a timely fashion?
+</pre></li>
+
+<li><pre class=3D"student-text">I'm a little confused on the use of postMes=
+sage. Let's say login.example.com wants to send a message to payments.examp=
+le.com - does login.example.com have an iframe with payments.example.com lo=
+aded, or does the user have a tab with both payments.example.com and login.=
+example.com loaded? Neither of these situations seem to make sense to me.
+</pre></li>
+
+<li><pre class=3D"student-text">I'm confused by the httponly flag for cooki=
+es. How can a cookie be accessed at all if not through Javascript?
+</pre></li>
+
+<li><pre class=3D"student-text">I've heard a lot over the years about how b=
+ad Flash is for security, though it seems from the readings that it receive=
+d a substantial security overhaul in 2008. However, modern browsers still d=
+ecided to kill it off. What was the worst aspect of Flash security? Were co=
+nfiguration issues (such as crossdomain.xml) at the heart of why Flash was =
+so unsecure?</pre></li>
+
+<li><pre class=3D"student-text">I've heard that it's a bad idea to click li=
+nks in sketchy emails. Why would clicking a link be dangerous? It seems lik=
+e the web security model assumes that users can safely visit untrusted webs=
+ites. (I understand why one would take precautions *after* clicking a sketc=
+hy link, e.g. to ensure that they are not on a phishing site, but I don't u=
+nderstand why users are discouraged from clicking sketchy links in the firs=
+t place.) Is this just an extra precaution in case the user wouldn't notice=
+ a phishing site?
+</pre></li>
+
+<li><pre class=3D"student-text">If a developper needs to build a website wi=
+th a frontend running on http://localhost:3000 and a backend running on htt=
+p://localhost:8080, since the ports differ, does that mean he cannot (shoul=
+d not) be able to perform an XMLHttpRequest from his frontend to his backen=
+d?
+</pre></li>
+
+<li><pre class=3D"student-text">If someone has the cookies to a website but=
+ does not have a users password, can they still access the site?</pre></li>
+
+<li><pre class=3D"student-text">If subresource is really a problem, why not=
+ let browser access any content without using any cookie? For example, if s=
+ite A links site B, the browser will always request site B in some "incogni=
+to mode", ignoring all previous authentations to site B? </pre></li>
+
+<li><pre class=3D"student-text">If we were to redesign the web from scratch=
+ now with security in mind would it be more secure? Or is a lot of this stu=
+ff need time for bugs to be found and fixed? Has there been any work to red=
+esign the web such that browser bugs don't compromise the security of the w=
+ebsite?
+</pre></li>
+
+<li><pre class=3D"student-text">In the Ch.9 section "Security Policy for Co=
+okies", the author writes that a common stateless way to avoid an attack ov=
+erwriting a cookie with their own copy of the cookie is to store a secret t=
+oken in a client-side cookie and then in a hidden form field and compare th=
+e two. My question is why does this technique fail? My guess was either tha=
+t the attacker could just include this secret key in their new cookie if it=
+ is accessible through the site's html or that the attacker could overwrite=
+ both if they are both stored in the client side.
+</pre></li>
+
+<li><pre class=3D"student-text">Internet Explorer seems to be the most vuln=
+erable browser. Are there reasons this is the case? Do they have a differen=
+t security model when it comes to web security?</pre></li>
+
+<li><pre class=3D"student-text">Is SOP enforced by the web application deve=
+loper or the browser? I was always under the impression that the browser so=
+lved this problem for us.</pre></li>
+
+<li><pre class=3D"student-text">Is `document.domain` secure? If I see that =
+login.bank.com sets `document.domain =3D "bank.com"`, can I just set `docum=
+ent.domain =3D "bank.com"` on my own webpage too and then have access to th=
+e DOM of login.bank.com? It didn't mention this in the reading, but does `d=
+ocument.domain` have some check that your page is actually `*.some_domain` =
+before it lets you set `document.domain =3D some_domain`?</pre></li>
+
+<li><pre class=3D"student-text">Is backporting typically a problem with web=
+ security updates/innovations? The paper mentions several security features=
+ that were not backported to earlier versions of Internet Explorer.=20
+
+Even if the web browser (client) is updated to support most recent security=
+ features, whether those security features will be utilized depends if a pa=
+rticular web server can support them, right? That is, when communication be=
+tween client/server is established, the security settings put in place for =
+that communication are the minimum supported by both? </pre></li>
+
+<li><pre class=3D"student-text">Is document.domain used in practice?  How d=
+o developers deal with the problem that it ties the security of a given web=
+page to the weakest linked page? </pre></li>
+
+<li><pre class=3D"student-text">Is there a better security standard in mode=
+rn browsers, or are
+policies still as varied as they were in 2012?</pre></li>
+
+<li><pre class=3D"student-text">Is there a reason why Internet Explorer doe=
+s not address the various security problems outlined in the chapters when a=
+ll the other browsers do?</pre></li>
+
+<li><pre class=3D"student-text">Is there anything that restricts cookies to=
+ protocols?=20
+	e.g. Any cookie that is https will not respond to http requests.</pre></li=
+>
+
+<li><pre class=3D"student-text">It is not clear to me how the secure flag w=
+orks. It enforces encryption - so then both the browser and the server
+have keys that they must use to decrypt and so on? What happens when this c=
+ookie is sent in another HTTP request? Is the encrypted
+cookie sent, and other servers would never be able to know what it is?
+
+</pre></li>
+
+<li><pre class=3D"student-text">It seems like it's practically impossible t=
+o get web security right, with so many different avenues for attack and dif=
+ferent functionality on different websites. What would be your reccomendati=
+ons on navigating this mess of features and their potential drawbacks?</pre=
+></li>
+
+<li><pre class=3D"student-text">It seems like many of the issues addressed =
+in these chapters were never actually fixed due to outdated browsers / diff=
+erences in web browsers. In the years since have there been any attempts to=
+ standardize browsers or get them all up to date so that security issues ca=
+n be better addressed.
+</pre></li>
+
+<li><pre class=3D"student-text">It seems like plugins have incredible power=
+ over a user. Does Google or any other browser do any security verification=
+s on plugins?
+</pre></li>
+
+<li><pre class=3D"student-text">It seems like there are problems everywhere=
+=EF=BF=BDso we could assume that there=EF=BF=BDs probably something wrong w=
+ith any website/web app?
+</pre></li>
+
+<li><pre class=3D"student-text">It seems like there is a lot that goes on i=
+n creating a secure website / web application, especially if you have a com=
+plex setup with users, their credentials, etc. Are there good frameworks to=
+ use, as a developer, that incorporate some of the good security practices =
+outlined in =E2=80=9CThe Tangled Web=E2=80=9D? I understand not everything =
+is possible, because different functionality requirements will need differe=
+nt security design, but I=E2=80=99m wondering if there exist (and if people=
+ use) frameworks for the basics.</pre></li>
+
+<li><pre class=3D"student-text">It seems like treating authentication cooki=
+es like regular files is a big problem. Major holes like being able to acce=
+ss the cookie through the DOM, or overflow the cookie jar and reset all the=
+ cookies just don't make cookies seem like a viable way of authenticating u=
+sers. Why isn't there more browser-side support for a secure cookie enclave=
+ that would allow for things like strict domain scoping?</pre></li>
+
+<li><pre class=3D"student-text">It seems that Internet Explorer did not pro=
+tect against as many vulnerabilities
+as Chrome or Firefox. Did Microsoft's Edge browser make substantial advance=
+s
+to catch up in terms of security?
+</pre></li>
+
+<li><pre class=3D"student-text">It seems to me that creating a secure web a=
+pp should not require the average developer to read an entire book to have =
+a fighting chance at creating a secure web app. Do you believe this problem=
+ of complexity is more inherent to the complexity of web apps, or instead t=
+hat it's a product of the gradual evolution of web browsers/etc?
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 13 (Question About Paper)
+
+The same origin policy seems too permisive. Wouldn't it be easier if each J=
+avaScript execution context was given one DOM it was allowed to modify (the=
+ HTTP file that loaded the JavaScript initially). What's the advantage of a=
+llowing JavaScript execution contexts to modify several DOMs?
+
+I'm not sure what type of attack the secure flag is supposed to protect aga=
+inst. Is it just designed to prevent an attacker who is eavesdropping on th=
+e communication channel from reading the cookie?
+
+Cookies and =E2=80=9CLegitimate=E2=80=9D DNS Hijacking:
+I didn't understand how an attacker could do someting malicious by exploiti=
+ng an advertising site provided by an ISP. What type of attack could he con=
+duct?
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 13: My Tangled Web Chapters 9-11 Qu=
+estion
+
+Is there a way to prevent cookie jar overflows?
+
+Thank you!
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 13: Web Security Model
+4/2/18
+
+The paper says that by overwriting the cookie with the attackers, they can =
+monitor activity such as searches or purchases. Does this mean that all htt=
+p requests and communication between the user and server will be monitored =
+by the attacker, and perhaps even unecrypted user information such as passw=
+ords?</pre></li>
+
+<li><pre class=3D"student-text">Maintaining the SOP seems like a process th=
+at is very error-prone since bugs are mostly dynamically detected. What kin=
+ds of frameworks and tools help web developers check that they are using th=
+e right practices?
+</pre></li>
+
+<li><pre class=3D"student-text">Many security vulnerabilities seem related =
+to shortcomings in javascript API's and developers' lack of understanding o=
+f these API's. Is there a way to separate the issue of isolation webpages f=
+rom details of the javascript language? </pre></li>
+
+<li><pre class=3D"student-text">Mozilla's CSP is another layer of defense t=
+o help protect users from a variety of attack vectors such as XSS and other=
+ forms of content injection attacks. While it=E2=80=99s not a silver bullet=
+, it does help make it considerably more difficult for an attacker to injec=
+t content and exfiltrate data. Are there any better standards implemented b=
+y other modern browsers too, or is CSP just a Mozilla thing? </pre></li>
+
+<li><pre class=3D"student-text">Neither the content security policy wikiped=
+ia page or the Microsoft edge wikipedia page seem to mention Microsoft edge=
+ using anything like CSP, is Edge similar to IE in that doesn=E2=80=99t rea=
+lly follow a lot of the browser based security behaviors, or was it just no=
+t documented because they didn=E2=80=99t think to mention it?</pre></li>
+
+<li><pre class=3D"student-text">None
+</pre></li>
+
+<li><pre class=3D"student-text">On p. 153 the author refers to security iss=
+ues coming from the "legitimate" DNS hijacking practice. =20
+I'm not sure that I completely understood how an attack can be designed. =
+=20
+
+"Internet service providers that have relied on this practice include Cable=
+vision, Charter, Earthlink, Time Warner, Verizon, and many more. Unfortunat=
+ely, their approach is not only morally questionable, but it also creates a=
+ substantial security risk. If the advertising site contains any script inj=
+ection vulnerabilities, the attacker can exploit them in the context of any=
+ other domain simply by accessing the vulnerable functionality through an a=
+ddress such as nonexistent.example.com. When coupled with the design of HTT=
+P cookies, this practice undermines the security of any arbitrarily targete=
+d services on the Internet."</pre></li>
+
+<li><pre class=3D"student-text">One of the things they mention is its diffi=
+cult to relate websites with different DNS bindings. Say I own poli.com and=
+ polimorphic.com. Would it be possible to come up with a design that uses a=
+n alias for one website and have it actually be a subdomain of some root we=
+bsite to relate them?
+</pre></li>
+
+<li><pre class=3D"student-text">Perhaps a naive question, but why is Intern=
+et Explorer so different from every other browser, as described in various =
+examples in this book?
+</pre></li>
+
+<li><pre class=3D"student-text">Question about Paper
+
+A lot of what is mentioned in the reading seems to be that different browse=
+rs implement common-sense checks in different ways. So, as a security analy=
+st in a corporation, is it industry practice to have individual teams be fo=
+cused on one browser/applciation technology as it seems that writing common=
+ security logic across different platforms leads to disastrous bugs (for ex=
+ample, cookie scoping).
+
+Also, do most security teams try to make their security solutions backwards=
+ compatible so that users using older browsers can still make use of their =
+sofware securely?</pre></li>
+
+<li><pre class=3D"student-text">Question in a compact, haiku form:
+
+DOM is confusing...
+I am not understanding!
+Help, what does it mean?
+</pre></li>
+
+<li><pre class=3D"student-text">Question: Does Chrome have similar security=
+ policies to one of the browsers discussed in the paper? It seems like in m=
+ost of the comparisons Internet Explorer came out the worst, how does Chrom=
+e compare?</pre></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 13
+
+Do single urls with dynamic pages reduce the chance of problems with the SO=
+P?
+I think specifically about Angular techniques of loading different html=20
+content into a fixed bucket in a page with a fixed url.</pre></li>
+
+<li><pre class=3D"student-text">Since IE tends to be way behind in the secu=
+rity race, why don't website limit its availability for IE users to motivat=
+e users to use more secure browsers?</pre></li>
+
+<li><pre class=3D"student-text">So when a document is created with about:bl=
+ank, is the purpose to dynamically generate a webpage? What kind of content=
+ is stored in these about:blank documents? Can it be anything?
+</pre></li>
+
+<li><pre class=3D"student-text">Suppose you are helping the developers of a=
+ complex web site at http://bitdiddle.com/ to evaluate their security. This=
+ web site uses an HTTP cookie to authenticate users. The site developers ar=
+e worried an adversary might steal the cookie from one of the visitors to t=
+he site, and use that cookie to impersonate the victim visitor.
+
+What should the developers look at in order to determine if a user's cookie=
+ can be stolen by an adversary? In other words, what kinds of adversaries m=
+ight be able to steal the cookie of one of the visitors to http://bitdiddle=
+.com/, what goes "wrong" to allow the adversary to obtain the cookie, and h=
+ow might the developers prevent it?
+
+Note: an exhaustive answer might be quite long, so you can stop after about=
+ 5 substantially-different issues that the developers have to consider.
+
+There exist a multitude of exploits available to target users on the web. S=
+ome security pitfalls may be prevented by only supporting certain browsers,=
+ such as Chrome and Firefox, while purposely not supporting browsers such a=
+s Internet Explorer. The adversary may steal the cookie through cross-site =
+framing, proving same origin without truly being of the same origin, embedd=
+ing malicious code in stylesheets, stealing the cookie when the user visits=
+ another page and hijacking the frame.</pre></li>
+
+<li><pre class=3D"student-text">The Tangled Web was written in 2012. How mu=
+ch in the realm of web security has changed since then? Have there been imp=
+rovements since then because it seems very not ideal.</pre></li>
+
+<li><pre class=3D"student-text">The authors write "The key question is how =
+to reliably prevent example.com from setting a cookie for *.com and avoid h=
+aving this cookie unexpectedly sent to every other destination on the Inter=
+net."
+
+Why is it bad for a browser to send a particular cookie to every other dest=
+ination on the Internet?
+</pre></li>
+
+<li><pre class=3D"student-text">The chapters don't talk about AJAX. Now tha=
+t content can be asyn loaded we can avoid some of the pitfalls of frames. D=
+oes AJAX present more opportunity to attackers?</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions popular browers such as =
+Internet Explorer, Firefox, Opera and Chrome; how different is the story fo=
+r browsers
+where security is a more primary concern, like Tor and Microsoft Edge?</pre=
+></li>
+
+<li><pre class=3D"student-text">The reading mentioned that cookies would ne=
+ed to be completely rewritten if we
+began to allow arbitrary top-level domain registrations. We've since done
+that-- has it actually been a motivator for redesigning cookies from scratc=
+h?
+Is this being done?
+</pre></li>
+
+<li><pre class=3D"student-text">The reading mentions that the practice of a=
+dvertisers hijacking domain lookups for nonexistent hosts "undermines the s=
+ecurity of any arbitrarily targeted services on the Internet," but seems to=
+ gloss over some details of how and why this compromises security. What exa=
+ctly is the attack the author had in mind? For example, if an advertiser hi=
+jacks a lookup to nonexistent.example.com to run their own code, an adversa=
+ry can exploit that code to obtain a valid cookie for example.com? If so, h=
+ow does this compromise arbitrary services on the Internet?
+
+In a compact haiku form:
+Morally, I know
+Hijacking lookups is bad,
+but insecure? Why?</pre></li>
+
+<li><pre class=3D"student-text">There are so many things to keep track of f=
+or web security! How is anything
+secure? Even the security engineering cheatsheet has a ton of things to thi=
+nk
+about when working on a website. I know full security isn't possible, but
+is anyone working on a comprehensive univsersal web security plan? At
+minimum, couldn't we have some standard security that all browsers must
+adhere to, if we are going to keep having a ton of browsers?</pre></li>
+
+<li><pre class=3D"student-text">This may seem like a silly question, but I =
+had difficulty understanding what the primary takeaway of this reading was.=
+  The chapters discussed same origin rules in detail, but a lot of the vuln=
+erabilities it discussed were a part of old versions of Internet Explorer. =
+ It also seemed to point out that regardless what same origin rules were im=
+posed, there were always ways to break them due to different web browser pl=
+atforms.  Conversely, it argued that avoiding same origin entirely is even =
+more dangerous than simply using it.  If thsese weren't the main takeaways,=
+ what were?  Is the concept of same origin rules still used or have web bro=
+wsers adopted a more uniform policy?
+</pre></li>
+
+<li><pre class=3D"student-text">Trying to perceive the big picture here reg=
+arding the role and functionality of cookies --=20
+
+- what's the right alternate to the use of cookies? Send the key-value pair=
+s which one wants to store in a cookie instead via POST requests in every c=
+all to the server? Is this "more" secure?
+
+- Besides authentication/identification information, is it justified to sto=
+re any other state-specific information in the cookies, if one has designed=
+ a REST-based web application? On searching the web, the canonical examples=
+ i find are storing shopping-cart related information in cookies. But no se=
+rious e-commerce portal would want to leave such mineable/insight-inducing =
+information on the client side. So not sure why an application developer wo=
+uld want to really force using cookies in the first place. (I ask this out =
+of ignorance, since i haven't spent a lot of time writing front-ends for we=
+b applications)</pre></li>
+
+<li><pre class=3D"student-text">Using the same token for the whole website =
+seems insecure at all, because on a large website, there are always bugs wh=
+ich an adversary can exploit and get users' token. Is setting different tok=
+ens for different subdomains a better plan? Is there a better substitute wa=
+ys for authorization?</pre></li>
+
+<li><pre class=3D"student-text">Was there any great reason for Microsoft es=
+sentially never backporting?</pre></li>
+
+<li><pre class=3D"student-text">What exactly is the cookie jar refered to i=
+n the reading?</pre></li>
+
+<li><pre class=3D"student-text">What exactly is the relationship between XS=
+S attacks and the SOP? Also, how does CORS help solve the problem?
+</pre></li>
+
+<li><pre class=3D"student-text">What kind of actions does big companies tak=
+e to combat these cross site web security vulernabilities? It seems like th=
+ere are so many bugs that adversaries can exploit but you hardly ever see p=
+hishing on google / facebook. </pre></li>
+
+<li><pre class=3D"student-text">What mechanisms exist for updating browser =
+security policies? Are these included in HTML standards? Do all browser pub=
+lishers have to agree?</pre></li>
+
+<li><pre class=3D"student-text">What sorts of defenses exist for the use of=
+ frames to steal and track user information?  Could a site appear to be ano=
+ther site by use of a frame.  How can hidden frames be detected or protecte=
+d against?
+</pre></li>
+
+<li><pre class=3D"student-text">What's a reasonable way to verify that a co=
+okie was set by me? Checksum and then encrypt the cookie?
+</pre></li>
+
+<li><pre class=3D"student-text">When did all of the security issues start b=
+eing a common issue for browers?</pre></li>
+
+<li><pre class=3D"student-text">When talking about domain-level scoping for=
+ cookies, the paper says "The key question is how to reliably prevent examp=
+le.com from setting a cookie for *.com and avoid having this cookie unexpec=
+tedly sent to every other destination on the Internet."
+
+Is this asking how to stop developers from doing this when writing their co=
+de, or how to stop attackers from modifying cookies to change their scope?<=
+/pre></li>
+
+<li><pre class=3D"student-text">Why are some websites served through both H=
+TTP and HTTPS? How can you make it so that HTTP immediately redirects to th=
+e HTTPS version (from the point of view of whoever's configuring the websit=
+e infra)?
+</pre></li>
+
+<li><pre class=3D"student-text">Why can't browsers agree to use the most-re=
+asonably-secure implementation of secure origin policy?  Does IE have some =
+sort of physical limitations that make it more difficult to port to the imp=
+lementation that other modern browsers use?  Or is that a decision of usabi=
+lity &gt; security that they made?  Also, have things converged over the pa=
+st six years (or just specifically with Edge)? </pre></li>
+
+<li><pre class=3D"student-text">Why do browsers seem to implement such diff=
+erent policies regarding security (e.g., Internet Explorer not checking the=
+ port for SOP)? Is there any way to fix this, e.g. some overarching securit=
+y body mandating policies that all browsers need to implement?</pre></li>
+
+<li><pre class=3D"student-text">Why do some websites have both https and ht=
+tp protocal?
+And from my understanding, if the website enforces SSL
+for all its pages, cookie stealing can be more easily=20
+prevented.</pre></li>
+
+<li><pre class=3D"student-text">Why do we even allow a different page to ac=
+cess data across websites.
+That's seems ludicrous to begin with... I can see why that would be helpful
+within a page over frames, but separate pages?
+</pre></li>
+
+<li><pre class=3D"student-text">Why does Internet Explorer not include the =
+port number for the same-origin policy?</pre></li>
+
+<li><pre class=3D"student-text">Why is Internet Explorer so bad when it was=
+ once the most popular browser? What is the safest browser?
+
+</pre></li>
+
+<li><pre class=3D"student-text">Why would Internet Explorer choose to ignor=
+e port number when other browsers don't? Is Internet Explorer inherently le=
+ss secure?</pre></li>
+
+<li><pre class=3D"student-text">Would Domain lookup hijacking (by ISPs) be =
+prevented with HTTPS? It seems that ISPs would not be able to present a leg=
+itimate certificate for a subdomain. </pre></li>
+
+<li><pre class=3D"student-text">sq13.txt
+
+John McLaughlin
+April 2nd 2018
+
+If browser and HTTP standards were to be rewritten from scratch today, what=
+ would change so that things like same origin policy wasn't at odds with th=
+e initial intentions of HTTP? Would you still want feature like the ability=
+ to tweak location.host?=20
+
+</pre></li>
+
+<li><pre class=3D"student-text">the text mentions that:
+
+Because of this risk, and following a lot of trial and error, modern browse=
+rs blacklist a selection of HTTP headers and request methods. This is done =
+with relatively little consistency: While Referer, Content-Length, and Host=
+ are universally banned, the handling of headers such as User-Agent, Cookie=
+, Origin, or If-Modified-Since varies from one browser to another.
+
+What effect does this have for programmers who are implementing and securit=
+y concerns? I just feel like having an unconsistent way of handling sensiti=
+ve headers is not good.
+
+</pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--Out0gctKwIIkIgz2f2lcKnE3wLi4T1g7ljMYIeEY1G------

@@ -1,0 +1,1560 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-answers/15
+Subject: Answers for lecture 15 - 6.858
+Date: Tue, 21 May 2018 01:36:25 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--UY7PNfx6JPFs1Amq6jHI1ZGAiPUKdOKFVEApiRBMmZ----"
+
+
+------MultipartBoundary--UY7PNfx6JPFs1Amq6jHI1ZGAiPUKdOKFVEApiRBMmZ----
+Content-Type: text/html
+Content-ID: <frame-1172-fcb68619-97f4-481a-b8c4-4880082f3c0d@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-answers/15
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Answers for lecture 15 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Answers for lecture 15 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text">Answers to Paper Questions
+
+1. SSL 3.0 accepts SSL 2.0 connections so that 3.0 can be easily integrated=
+ into the Internet. Forcing 3.0 to not be backwards compatible would preven=
+t adoption of the more secure technology.=20
+
+
+2. There are two fixes for the dropping attack in the second figure.=20
+
+	1) Have in step 2' and step 4', the client and server only accept finished=
+ messages once they have received change cipher spec messages. This prevent=
+s the dropping attack from happening.
+
+	2) Have the MAC in the finished message be computed on the change cipher s=
+pec message so that the end users can verify they received the correct mess=
+age. This is the most robust solution to the problem. </pre></li>
+
+<li><pre class=3D"student-text">It accepts SSL 2.0 connections for backward=
+s compatibility. The check should be performed before receiving the finishe=
+d message.</pre></li>
+
+<li><pre class=3D"student-text">1. SSL 2.0 was the de-facto standard for cr=
+yptographically protecting http traffic, so backward compatibility from SSL=
+ 3.0 helped ensure a smoother transition. After all, an insecure cryptograp=
+hic scheme is better than plaintext in-transit.=20
+2. The fix should check that a change cipher spec message was received befo=
+re accepting a finished message.</pre></li>
+
+<li><pre class=3D"student-text"># Lec 15=20
+
+----------------------------------------------------------------
+Two simple questions to make you think about this paper:
+
+1) Why does the SSL 3.0 design accept SSL 2.0 connections? It
+is simpler to only accept SSL 3.0 connections, and it avoids
+the risk of rollback attacks described in Section 4.6.
+
+2) The second figure of Section 4.3 shows the attack flow for
+deleting a change-cipher message. The fix requires an additional
+check. Where in the flow should SSL perform this check?
+----------------------------------------------------------------
+
+1.  As with any web-technology, integration does not happen all at once. Th=
+e
+patch would need to be applied, and then slowly grow its adoption. Thus, it=
+ is
+necessary to allow backwards compatibility, at least in the early stages, s=
+o
+that usability is not hindered. The paper also describes viable counter mea=
+sures
+to prevent rollback attacks when both client and server support v3.0.
+
+2. An additional check needs to be performed before step 5. Here, another c=
+heck
+needs to happen on the cyphertext to make sure that the correct changes to =
+the
+spec have been made.
+</pre></li>
+
+<li><pre class=3D"student-text">(1) Backwards compatibility is very importa=
+nt: browsers and applications can't be expected to update and change overni=
+ght. It might take a while for programmers to adapt.
+(2) Encrypt a/m and k so that the attacker isn't able to extract the key so=
+ easily. The check can be added to step 4 to make sure the changed cipher s=
+pec is legitimate and not from the adversary.</pre></li>
+
+<li><pre class=3D"student-text">(1) We allow for at least some amount of ba=
+ckwards compatibility.
+(2) I believe after step 4.</pre></li>
+
+<li><pre class=3D"student-text">* Why does SSL 3.0 accept SSL 2.0 connectio=
+ns (rollback attacks)
+This backwards compatibility exists as it would allow for gradual adoption =
+of SSL 3.0 without breaking interoperability between those that upgrade and=
+ those that don't. If this did not exist then there would be an added incen=
+tive for people not to upgrade as it would reduce the usability of the upgr=
+aded system. The alternative would be for server's to maintain both SSL 2.0=
+ and SSL 3.0 versions. Again the downside to this is that there is little i=
+ncentive for clients to upgrade to SSL 3.0. With the given system server ma=
+intainers can upgrade immediately with no downside and clients can graduall=
+y update for added security without service interruption.
+
+* Where should one check to fix deleting a change-cipher message
+The check should occur as soon as a finished message is received. When a fi=
+nished message is received one should immediately check that a correspondin=
+g change-cipher message has been received. In this way an attacker could no=
+t simply delete change-cipher messages. </pre></li>
+
+<li><pre class=3D"student-text">- DOS attacks still valid threats.
+- Various forms of sequence prediction attacks are still being found. I'm g=
+uessing these protocols have not been rigorously proved.</pre></li>
+
+<li><pre class=3D"student-text">1 - It's important to support SSL 2.0 for b=
+ackwards compatibility. 2 - It should perform the check in during connectio=
+n.
+</pre></li>
+
+<li><pre class=3D"student-text">1) Although SSL2.0 has some flaws, everyone=
+ does not run SSL3.0. To maintain flexibility, they have 2.0 compatability
+for the short term.
+2) The check should come when the attacker sends the first confirmation mes=
+sage. The server should check
+if it sent a change cipher spec before being able to receive confirmation m=
+essages.
+</pre></li>
+
+<li><pre class=3D"student-text">1) Backwards compatibility. Indeed in the d=
+ocumentation it states:
+
+"Warning: The ability to send Version 2.0 client hello messages will be pha=
+sed out with all due haste. Implementors should make every effort to move f=
+orward as quickly as possible. Version 3.0 provides better mechanisms for t=
+ransitioning to newer versions."
+
+2) Between steps 2' and 2 the server should check that it indeed has receiv=
+ed a  [change cipher spec] from the client before receiving the [finished:]=
+ a message.
+</pre></li>
+
+<li><pre class=3D"student-text">1) By allowing SSL 3.0 to accept SSL 2.0 co=
+nnections, it will be easier for
+people to incrementally adopt SSL 3.0 and therefore ultimately make it more
+widespread. Although it would be simpler and more secure not to include
+backwards compatibility, the paper points out that it is fairly easy to mak=
+e
+backwards compatibility more secure with a few small changes to the protoco=
+l. =20
+
+2) At 2' and 4', the server and client respectively should be checking to s=
+ee
+if they have actually received a change cipher spec message before they acc=
+ept
+the finished message.
+</pre></li>
+
+<li><pre class=3D"student-text">1) For backwards compatibility
+2) In 2', when the server receives a "finished" message, it should check th=
+at it has also received a "change cipher spec" message before, and since it=
+ did not, it would stop the communication. The client should do the same (i=
+n case the server is flawed and did not do it), i.e. in 4', the client shou=
+ld only continue if it has received a "change cipher spec" message.
+</pre></li>
+
+<li><pre class=3D"student-text">1) From the text and intuitively, for backw=
+ards compatibility, at least in the short term. The author of the paper, wh=
+ile aknowledging the short term need for it, says "the right long-term fix =
+is for servers to stop accepting SSL 2.0 connections".=20
+2) The fix involves checking whether a change_cipher message was received b=
+efore accepting a finished message. In the figure, the check should happen =
+at 2' and 4'. The server/client will realize that no change_cipher message =
+was received previously, and will refuse the finished message.
+</pre></li>
+
+<li><pre class=3D"student-text">1) If SSL 3.0 servers only accepted SSL 3.0=
+ connections, the websites they serve would be unavailable to users who hav=
+e not yet upgraded their browsers. This would be unacceptable for many busi=
+nesses.
+
+2) When a finished message arrives, SSL should check that a change-cipher m=
+essage has been received. Otherwise, it should conclude that it is under ac=
+tive attack.</pre></li>
+
+<li><pre class=3D"student-text">1) It accepts 2.0 connections for support a=
+nd convenience for users, as some sides may not support SSL 3.0 yet (but co=
+nnections can then still be established).
+
+2) The fix would be to include the =E2=80=98change cipher spec=E2=80=99 mes=
+sage in the message authentication calculation of the =E2=80=98finished=E2=
+=80=99  message. Thus, SLL would perform this by incorporating it in the pl=
+ace where it does the =E2=80=98finished=E2=80=99 messages=E2=80=99s message=
+ authentication calculation.</pre></li>
+
+<li><pre class=3D"student-text">1) It would be very difficult to convert ev=
+erything to SSL 3.0 immediately so in order to keep everything working it w=
+ould initially be necessary to allow SSL 2.0 and SSL 3.0 to work together s=
+o that nothing would be broken while things are converted to SSL 3.0
+2) SSL should perform the check before accepting any finished messages, so =
+it would have to perform the check before each finished message (like betwe=
+en steps 1 and 2) so that it can verify the change cipher spec message befo=
+re it receives a finished message.
+</pre></li>
+
+<li><pre class=3D"student-text">1) It's simpler to only accept SSL 3.0 conn=
+ections, but adoption takes some time and since SSL is so widespread, many =
+applications had been built with that specification in mind.
+
+2) As the paper states SSL could require receipt of a change cipher spec me=
+ssage before accepting a finished message.
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">1) Logically, the simplest fix would to be =
+not sent any data by checking if the connection encryption suite has been u=
+pgraded in addition to the finished command. So, the check can be done eith=
+er right before sending a message or after receiving a finished command.
+2) Although it is not safe to accept SSL 2.0, it might be the only practica=
+l solution to actually upgrade the systems to 3.0. If not, a lot of existin=
+g and/or old systems won't be able to connect to the servers, resulting in =
+horrendous consequences. </pre></li>
+
+<li><pre class=3D"student-text">1) Many clients will not have switched to S=
+SL 3.0 so accepting SSL 2.0 connections allows support for these clients.=
+=20
+2) There should be an additional check before 4' for the client C to receiv=
+e [change cipher spec] from M. This enforces the check that a change cipher=
+ spec message be received before a finished message.</pre></li>
+
+<li><pre class=3D"student-text">1) SSL 2.0 was basically the standard for c=
+ryptographic protection, and changing the standard would take a while... So=
+ SSL 3.0 sort of had to accept 2.0 in order for things to work.
+
+2) After 2', the server should check to see if it received a "change cipher=
+ spec" message previously, and then not accept the "finished" message/
+</pre></li>
+
+<li><pre class=3D"student-text">1) SSL 3.0 accepts 2.0 connections for back=
+wards compatibility, since many clients were coded to use 2.0. However, the=
+ paper recommends that eventually 3.0 should stop accepting 2.0.
+
+2) The fix involves requiring the implementation to check that a change cip=
+her spec message was received before accepting a finished message.</pre></l=
+i>
+
+<li><pre class=3D"student-text">1) SSL 3.0 accepts SSL 2.0 connections for =
+backwards compatibility. It is to make the transitional user experience as =
+seamless as possible, and because the security vulnerabilities in SSL 2.0 a=
+re not worth breaking the Internet for. 2) The fix requires the SSL impleme=
+ntation receive a change cipher spec message before accepting a finished me=
+ssage, before step 4.=20
+</pre></li>
+
+<li><pre class=3D"student-text">1) SSL 3.0 accepts SSL 2.0 for backwards co=
+mpatibility. If SSL 3.0 was not backwards compatible with SSL 2.0, it would=
+ discourage people from switching over. (E.g. if you=E2=80=99re the first o=
+ne to switch, you can=E2=80=99t connect to anyone else.)
+2) SSL can perform a check before accepting a =E2=80=98finished=E2=80=99 me=
+ssage to make sure it=E2=80=99s already received a =E2=80=98change cipher=
+=E2=80=99 message.</pre></li>
+
+<li><pre class=3D"student-text">1) SSL 3.0 can deny connections to SSL 3.0 =
+connections which contain some fixed redundancy bytes which indicates that =
+this is an attempted rollback attack.=20
+
+2) The simplest fix requires that SSL implementations requires a change cip=
+her spec message before accepting a finished message.=20
+</pre></li>
+
+<li><pre class=3D"student-text">1) SSL 3.0 design accepts SSL 2.0 connectio=
+ns for convenience and usability sake.
+2) SSL should perform the check that the change cipher spec message was rec=
+eived at step 2', when receiving the finished message.</pre></li>
+
+<li><pre class=3D"student-text">1) SSL 3.0 may accept SSL 2.0 connections i=
+n order to be backwards-compatible, flexible and easier to adopt.=20
+
+2) The fix requires checking for a =E2=80=9Cchange cipher spec=E2=80=9D mes=
+sage before accepting a finished message.  In the attack flow, this check s=
+hould happen before the =E2=80=9Cfinished=E2=80=9D messages are received by=
+ S and C, i.e. before step 2 and 4.=20
+</pre></li>
+
+<li><pre class=3D"student-text">1) SSL 3.0 probably accepts SSL 2.0 connect=
+ions as a temporary thing so that clients that were using SSL 2.0 could sta=
+rt using SSL 3.0 and hopefully transition to SSL 3.0 in the future. Otherwi=
+se I can't really think of any reasons why SSL 3.0 should accept SSL 2.0 co=
+nnections.
+
+2) Between steps 2 and 3, the server should check that the client sent a "c=
+hange cipher spec" message in addition to the "finished" message.=20
+Similarly, between steps 4 and 5, the client should do the same check again=
+st the server.</pre></li>
+
+<li><pre class=3D"student-text">1) SSL3.0 accepts SSL2.0 messages to encour=
+age adoption of the new protocol. If only servers could only communicate wi=
+th the same SSL protocol than adoption of a new SSL would require everyone =
+to adopt or there would be risk of servers not being able to communicate se=
+curely. Further, some servers are not actively updated. If the service runs=
+ on SSL2.0 backward compatibility allows new services to communicate with t=
+hem.=20
+2) SSL should require use of 'chage cipher spec' message to decipher a 'fin=
+ish' message. If the server does not recieve the 'change cipher spec' messa=
+ge, then it will not be able to recieve a 'finish' message.</pre></li>
+
+<li><pre class=3D"student-text">1) The SSL 3.0 design accepts 2.0 connectio=
+ns for usability purposes, since it may take some time for all SSL 2.0 prot=
+ocols to transition to SSL 3.0.
+2) At steps 2' and 4', the server and client should be checking that they r=
+eceived a change cipher spec message.</pre></li>
+
+<li><pre class=3D"student-text">1) The SSL 3.0 design accepts SSL 2.0 conne=
+ctions because it understands that not everyone will have switched over to =
+the new design, and instead of not supporting the old connections (which wo=
+uld cause connectivity issues) they decided to allow backward compatibility=
+. This shows that they focus on reliability over security, which is true fo=
+r the internet in general. They do keep in mind some precautions must be ta=
+ken due to this choice, such as not letting clients mix SSL version across =
+session resumption.
+
+2) I believe that before step 3, the sever should check to see that it has =
+received a change cipher spec message fore it accepts the finished message.=
+</pre></li>
+
+<li><pre class=3D"student-text">1) The SSL 3.0 design accepts SSL 2.0 conne=
+ctions for backwards compatibility. It would be great if all clients/server=
+s switched over, but since not all have, they wanted clients with SSL 2.0 t=
+o be still able to connect to SSL 3.0 servers. It would be great to only ac=
+cept SSL 3.0 connections, but unfortunately many clients would stop working=
+ then, and they didn't want that to happen.
+
+2) The simple fix is to add a check that "change cipher spec" is always per=
+formed before accepting the "finished" message. This check would be perform=
+ed at 2' and 4'. S would not accept M's "finished" message because no "chan=
+ge cipher spec" was sent to S (since M dropped the one from C). Similarly, =
+C would not accept M's "finished" message, since no "change cipher spec" wa=
+s sent to C (since M dropped the one from S). A better check that requires =
+changing the SSL spec would be to simply include "change cipher spec" messa=
+ges in the "finished" message's MAC.
+</pre></li>
+
+<li><pre class=3D"student-text">1) The SSL 3.0 design accepts SSL 2.0 conne=
+ctions to allow numerous older clients who are running 2.0 to still connect=
+. Removing support for this would put all of these older clients at a great=
+er risk.
+
+2) The check should go between 2 and 2' as well as between 4 and 4'</pre></=
+li>
+
+<li><pre class=3D"student-text">1) The protocol likely supports SSL 2.0 bec=
+ause it makes SSL 3.0 more transparent. With many systems out there that on=
+ly support SSL 2.0, it is important that SSL 3.0 machines can still communi=
+cate with them.
+
+2) The paper states that a check to make sure that the change cipher spec w=
+as recieved would fix the problem. So after line 2 in figure 3 S should sen=
+d a message back to C saying it received the change cipher spec and after l=
+ine 4 C should send a message to S saying it received the change cipher spe=
+c. If the attacker deletes the change cipher spec in this scheme, then C an=
+d S will know something isn't right.
+</pre></li>
+
+<li><pre class=3D"student-text">1) The tradeoff being made is that, if SSL =
+3.0 design does not accept SSL 2.0 connections, then presumably both entiti=
+es must fall back to communicating over an unsecure channel and sending pla=
+intext messages. Given the wide adoption of SSL 2.0, it seems worth avoidin=
+g this potentially disastrous fallback in exchange for a risk of vulnerabil=
+ities to rollback attacks and other attacks which we take on in allowing SS=
+L 3.0 to accept SSL 2.0 connections.
+2) Both the server and the client need to check that they have actually rec=
+eived the change cipher spec message (before lines 3, 5).</pre></li>
+
+<li><pre class=3D"student-text">1) This is because it takes some time for a=
+ll the servers to change from SSL 2.0 to SSL 3.0, in the short term it must=
+ be necessary for both SSL 2.0 and SSL 3.0 connections to be accepted.
+
+2) The check is performed after step 2' and after step 4'. The client and s=
+erver checks that a 'change cipher spec' messaged was indeed received befor=
+e accepting a finished messsage.</pre></li>
+
+<li><pre class=3D"student-text">1) To encourage adoption, since backwards c=
+ompatibility means a gradual transition can take place. Don't want to rejec=
+t users stuck on SSL 2.0
+2) The check for the change cipher message should be performed before accep=
+ting a finished message, i.e. after 2 &amp; 4 in the figure.
+</pre></li>
+
+<li><pre class=3D"student-text">1) Why does the SSL 3.0 design accept SSL 2=
+.0 connections? It is simpler=20
+    to only accept SSL 3.0 connections, and it avoids the risk of rollback
+    attacks described in Section 4.6.=20
+
+	I think this might be because the designers wanted to accomodate SSL 2.0
+	so that things will still work when people inevitably don't change over.=
+=20
+
+2) The second figure of Section 4.3 shows the attack flow for deleting a=20
+   change-cipher message. The fix requires an additional check. Where in=20
+   the flow should SSL perform this check?
+
+	One check SSL can perform is receiving a change cipher spec=20
+	message right before accepting a finished message
+</pre></li>
+
+<li><pre class=3D"student-text">1) Why does the SSL 3.0 design accept SSL 2=
+.0 connections? It is simpler to only accept SSL 3.0 connections, and it av=
+oids the risk of rollback attacks described in Section 4.6.
+
+Presumably to allow hosts enforcing SSL 3.0 to accept a wider range of clie=
+nts (specifically, as SSL 3.0 is a new protocol, those who are still using =
+SSL 2.0). This will allow for a larger, less hesitant adoption.
+
+2) The second figure of Section 4.3 shows the attack flow for deleting a ch=
+ange-cipher message. The fix requires an additional check. Where in the flo=
+w should SSL perform this check?
+
+Between steps two and three. The server should double check that it's recei=
+ved a change cipher spec message from the client before accepting a finish =
+message.
+</pre></li>
+
+<li><pre class=3D"student-text">1) Why does the SSL 3.0 design accept SSL 2=
+.0 connections? It is simpler to only accept SSL 3.0 connections, and it av=
+oids the risk of rollback attacks described in Section 4.6.
+
+SSL 3.0 accepts SSL 2.0 connections for backwards compatibility, at least i=
+n the short term until servers using SSL 2.0 switch to 3.0. If two endpoint=
+s are trying to communicate with each other, and one supports 3.0 while the=
+ other supports only 2.0, the endpoint supporting 3.0 should be able to acc=
+ept 2.0 connections in order for the communication to work.
+
+2) The second figure of Section 4.3 shows the attack flow for deleting a ch=
+ange-cipher message. The fix requires an additional check. Where in the flo=
+w should SSL perform this check?
+
+The fix required is that SSL should ensure that a 'change cipher spec' mess=
+age is received before a 'finished' message can be accepted. In terms of th=
+e flow shown in Section 4.3, this check would need to be performed during s=
+teps 2' and 4' -- where the client and the server receive 'finished' messag=
+es respectively. Both would need to ensure that they had previously receive=
+d 'change cipher spec' messages (which, in the attack flow, they haven't, a=
+s M had intercepted the messages in steps 1 and 3).
+
+</pre></li>
+
+<li><pre class=3D"student-text">1) Why does the SSL 3.0 design accept SSL 2=
+.0 connections? It is simpler to only accept SSL 3.0 connections, and it av=
+oids the risk of rollback attacks described in Section 4.6.
+If SSL 3.0 would not support SSL 2.0 connection it would have seriously slo=
+wed down adoption and provided no clear upgrade path on the server-side. Mo=
+st likely we would live in a
+world where SSL 2.0 and SSL 3.0 service would co-exist and live on differen=
+t ports, just to be able to deploy SSL 3.0 server-side. Clients are slow to=
+ upgrade and legacy clients
+are always a thing. So either you split the system or you provide downwards=
+ compability.=20
+
+2) The second figure of Section 4.3 shows the attack flow for deleting a ch=
+ange-cipher message. The fix requires an additional check. Where in the flo=
+w should SSL perform this check?
+The authors propose two alternative fixes. The first one is to require a `[=
+change chipher spec]` to be received before accepting a `[finished]` messag=
+e.
+The second alternative is to include the `[change chiper spec]` message in =
+the the message authentication calculation for the `[finished]` message.
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">1) Why does the SSL 3.0 design accept SSL 2=
+.0 connections? It is simpler to only accept SSL 3.0 connections, and it av=
+oids the risk of rollback attacks described in Section 4.6.
+
+It is better for SSL 2.0 to still be supported so that legacy code using it=
+ will not have to be changed, but will also not lose security entirely.
+
+2) The second figure of Section 4.3 shows the attack flow for deleting a ch=
+ange-cipher message. The fix requires an additional check. Where in the flo=
+w should SSL perform this check?
+
+The check should happen in between sending a change cipher spec message and=
+ sending a finished method, and the check should ensure that a chance ciphe=
+r spec message was also received before sending a finished method.</pre></l=
+i>
+
+<li><pre class=3D"student-text">1) Why does the SSL 3.0 design accept SSL 2=
+.0 connections? It is simpler to only accept SSL 3.0 connections, and it av=
+oids the risk of rollback attacks described in Section 4.6.
+-This is probably for backwards compatibility. Not everyone will upgrade to=
+ SSL 3.0 at once, so it's important for them to still be able to communicat=
+e in the meantime.
+
+
+2) The second figure of Section 4.3 shows the attack flow for deleting a ch=
+ange-cipher message. The fix requires an additional check. Where in the flo=
+w should SSL perform this check?
+-You need to check to make sure that you receive a change cipher spec messa=
+ge before receiving a finished message. So it needs to be before 2' and 4' =
+because the MITM therefore can't only send a finished.</pre></li>
+
+<li><pre class=3D"student-text">1) Why does the SSL 3.0 design accept SSL 2=
+.0 connections? It is simpler to only accept SSL 3.0 connections, and it av=
+oids the risk of rollback attacks described in Section 4.6.=20
+This is a convenience to speed up adoption. Services are unlikely to upgrad=
+e a system to something that isn't backward-compatible just in case "client=
+s" (in this case, users on the internet for the most part) don't have brows=
+ers that support the other end of the protocol.
+That being said, the article specified that the "long-term" solution is to =
+completely get rid of SSL 2.0 support.
+
+
+2) The second figure of Section 4.3 shows the attack flow for deleting a ch=
+ange-cipher message. The fix requires an additional check. Where in the flo=
+w should SSL perform this check?
+SSL should perform this check whenever it receives (and before it accepts) =
+a finish message. Essentially, before line 2/2' and 4/4', the receiver (S a=
+nd C, respectively) would check to make sure it received a change cipher sp=
+ec message
+
+</pre></li>
+
+<li><pre class=3D"student-text">1) Why does the SSL 3.0 design accept SSL 2=
+.0 connections? It is simpler to only accept SSL 3.0 connections, and it av=
+oids the risk of rollback attacks described in Section 4.6. 2) The second f=
+igure of Section 4.3 shows the attack flow for deleting a change-cipher mes=
+sage. The fix requires an additional check. Where in the flow should SSL pe=
+rform this check?
+
+
+1) Probably for backwards compatibility? In the software world it's really =
+hard to roll anything out because so many people are still stuck on the old=
+ standard. If you don't make the old standard available it's really hard fo=
+r people.
+
+2) After step 1, need to make sure that the change cipher spec message is p=
+resent and encrypted before accepting any finish
+</pre></li>
+
+<li><pre class=3D"student-text">1) Why does the SSL 3.0 design accept SSL 2=
+.0 connections? It is simpler to only accept SSL 3.0 connections, and it av=
+oids the risk of rollback attacks described in Section 4.6. 2) The second f=
+igure of Section 4.3 shows the attack flow for deleting a change-cipher mes=
+sage. The fix requires an additional check. Where in the flow should SSL pe=
+rform this check?
+
+Servers that support SSL 3.0 will include some bytes in the PKCS padding by=
+tes that indicate they support SSL 3.0. A client will reject the connection=
+ if an attacker attempts to downgrade the connection to SSL 2.0 and these b=
+ytes are present.
+
+</pre></li>
+
+<li><pre class=3D"student-text">1.
+It's considered a short term fix. This is likely the case so that it is ado=
+pted by more users faster.
+
+2.
+The fix is to require SSL to receive a change cipher spec instruction befor=
+e accepting a finished message.  This would go between (2.) and (2'.) in th=
+e flow.=20
+
+</pre></li>
+
+<li><pre class=3D"student-text">1.  The SSL 3.0 design accepts SSL 2.0 conn=
+ections in order to provide some layer of security to machines that can do =
+no better than SSL 2.0.  Not allowing SSL 2.0 could cut out users only capa=
+ble of 2.0, making the internet less accessible to certain people.
+
+2.  The check should be performed before the SSL implementation accepts a f=
+inished message.
+</pre></li>
+
+<li><pre class=3D"student-text">1. A key aspect of a good security design i=
+s usability. If SSL 3.0 did not accept SSL 2.0 connections, it would make t=
+he protocol less usable and therefore less likely to be used.=20
+
+2. The paper notes that a fix for this attack would be for SSL to check if =
+it received a change cipher spec message before the finish message, which w=
+ould occur in step 4, when the finish message is received. </pre></li>
+
+<li><pre class=3D"student-text">1. Because if there were no backwards compa=
+tibility, the (secure) internet would be partitioned between devices runnin=
+g 2.0 and 3.0.
+
+2. The additional check would be requiring the receipt of a change cipher s=
+pec message before accepting a finished message, or even including it in th=
+e calculation of the finished message's authentication. This check should b=
+e performed upon receipt of a finished message, i.e. steps 2 and 4 of the s=
+ample flow in 4.3.</pre></li>
+
+<li><pre class=3D"student-text">1. I believe they did this to encourage ado=
+ption of SSL 3.0. If it wasn't backwards compatible in the short term, all =
+converters to 3.0 would be unable to securely communicate with systems that=
+ hadn't converted yet, and there would be a vicious cycle of people waiting=
+ for other vital services to convert. This way, people could take steps on =
+their own and at the very least maintain the level of security they had bef=
+ore while operating on a higher security level with websites that also conv=
+erted.
+
+2. Once they receive a finished message, both the server and the client nee=
+d to check that they received a change cipher spec message.
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">1. I think it is important to have backward=
+ compatablity because at the time SSL3
+was just released and there might be a lot of servers out there only suppor=
+t SSL2.
+So it needed time for the servers to change. So if SSL3 didn't accept SSL2 =
+connection,
+that would prevent the servers that use it from being able to connect to a =
+lot of servers.
+
+2. I believe SSL receives a change cipher spec first and uses that to check=
+ the finished message.
+</pre></li>
+
+<li><pre class=3D"student-text">1. Is because security is upgraded in two p=
+hases. Because immediately switching over the SSL 3.0 would require everyon=
+e to first switch to SSL 3.0 and then make it standard. Here the advantage =
+is SSL 2.0 is allowed which allows for a transition to SSL 3.0 after which =
+the backwards compatibility can be removed.=20
+
+2. On steps 2 and 4 you include the cipher message n the finished message's=
+ MAC
+</pre></li>
+
+<li><pre class=3D"student-text">1. It was necessary to accept SSL 2.0 conne=
+ctions to provide compatibility with existing clients that only supported S=
+SL 2.0. If the protocol was incompatible with existing software, it would h=
+ave hindered adoption.
+2. SSL should perform this check immediately before steps 2 and 4 in the fl=
+ow, by rejecting `finished` messages before `change cipher spec` messages.
+</pre></li>
+
+<li><pre class=3D"student-text">1. SSL 2.0 had already been released to the=
+ public. If clients or servers were configured to only accept SSL 3.0 conne=
+ctions, it would cause a "fragmenting" in the internet of the time where se=
+rvers with SSL 2.0 could not accept SSL 3.0 client connections and vice-ver=
+sa, thus causing an interruption of service until everyone had switched ove=
+r to SSL 3.0.
+
+2. In steps two and four, when a finished message is sent from the client t=
+o the server and then from the server to the client, a check needs to be pe=
+rformed by the receipient that a "change cipher spec" message has been rece=
+ived before accepting the "finished" message. If a "change cipher spec" mes=
+sage is not received, the communication process does not continue.</pre></l=
+i>
+
+<li><pre class=3D"student-text">1. SSL 3.0 accepts SSL 2.0 connections for =
+backwards compatibility and usability purposes. There are also steps taken =
+like the fixed redundancy in RSA PKCS padding bytes described in section 4.=
+6 and not mixing SSL versions that prevent some rollback attacks.=20
+2. SSL should perform the check for an change cipher spec message before ac=
+cepting a finished message.
+</pre></li>
+
+<li><pre class=3D"student-text">1. SSL 3.0 accepts SSL 2.0 connections in o=
+rder to provide backwards compatibility. In the future, the hope of the aut=
+hors is that SSL 3.0 will eventually stop accepting SSL 2.0.
+2. In order to prevent this attack the negotiated cipher suit should includ=
+e encryption. This is because the attacker will be unable to to strip off t=
+he MAC field and therefore, will not be able to recover {m}.</pre></li>
+
+<li><pre class=3D"student-text">1. SSL 3.0 must be backwards compatible wit=
+h interacting with implementations that have not yet been upgraded from 2.0=
+ otherwise everyone would be forced to update their implementation at the s=
+ame time.
+2. The check should occur at step 2'. S has not received a change cipher sp=
+ec message so it should not accept a finished message. Similarly the check =
+should occur at step 4' as C has not received a change cipher spec message.=
+=20
+</pre></li>
+
+<li><pre class=3D"student-text">1. SSL 3.0 needed to accept SSL 2.0 connect=
+ions to have any hope of widespread
+adoption. If SSL 3.0 didn't accept SSL 2.0 connections, a server which upda=
+ted
+from 2.0 to 3.0 would be unable to connect to any of their clients who hadn=
+'t
+yet updated.=20
+
+2. When the receiver receives a 'finished' message, it should check that it
+received a 'change cipher spec' message immediately prior to the 'finished'
+message.
+</pre></li>
+
+<li><pre class=3D"student-text">1. SSL 3.0 needs to be backwards compatible
+2. There must be a check to receive a change cipher spec message before
+accepting a finished message.
+</pre></li>
+
+<li><pre class=3D"student-text">1. SSL 3.0 servers are designed to accept S=
+SL 2.0 connections, probably to help
+SSL 3.0 become accepted early on. If SSL 3.0 servers were only compatible w=
+ith
+fellow 3.0 servers, they wouldn't have an incentive to go to 3.0 and would =
+instead
+stick with 2.0. With this backwards compatibility, each server can switch o=
+ver
+whenever it can, while stil maintaining compatibility.
+
+2. The fix is to obtain a change cipher spec message before accepting a fin=
+ish
+message, and make sure that session data (such as the change cipher spec me=
+ssage)
+is authenticated. SSL should perform this check by refusing any session dat=
+a=20
+change without authentication.
+</pre></li>
+
+<li><pre class=3D"student-text">1. The SSL 3.0 design accepts SSL 2.0 conne=
+ctions to maintain backwards compatibility. It is unlikely that all clients=
+ will switch protocols immediately.
+
+2. SSL 3.0 should perform the check at step 2' and step 4'.</pre></li>
+
+<li><pre class=3D"student-text">1. The SSL 3.0 design accepts SSL 2.0 conne=
+ctions to make SSL 3.0 easier to adopt. Being able to accept SSL 2.0 connec=
+tions allows applications that have upgraded to 3.0 to still communicate wi=
+th those that haven't upgraded yet, and so everyone can gradually adopt SSL=
+ 3.0 without risking being isolated from the rest of the Internet using 2.0=
+.
+
+2. The proposed check should happen immediately before flows 3 and 5.
+Putting the check before flow 3 ensures that S does not send messages to C =
+without knowing that C has agreed to change its cipher spec, and will not a=
+ccept a tampered message and MAC.
+Putting the check before flow 5 ensures the same guarantee for C.</pre></li=
+>
+
+<li><pre class=3D"student-text">1. The design assumes SSL 2.0 will only sup=
+port RSA key exchange so version rollback attacks can be detected.
+2. Before the client accepts a finished message, check for a change cipher =
+spec message.
+</pre></li>
+
+<li><pre class=3D"student-text">1. The only reason I can think of is backwa=
+rd compatibility. SSL 2.0 is better than nothing, and the SSL 3.0 designers=
+ did not want to prevent two machines from using SSL 2.0 in the case that o=
+ne of the machnes dd not use SSL 3.0.
+2. When SSL recieves a finished message, it should check that it already re=
+cieved a change sipher spec message.
+</pre></li>
+
+<li><pre class=3D"student-text">1. They want backward compatibility so that=
+ existing browsers and servers are not required to switch. If SSL 3.0 does =
+not provide backward compatibility, adoption rate might be much lower.=20
+2. change-cipher-spec should be required before the finishes of 4' and 5'.=
+=20
+</pre></li>
+
+<li><pre class=3D"student-text">1. This is for the purpose of backwards com=
+patibility. If a server supports SSL 3.0 but its client doesn't, there's no=
+ way for them to communicate unless the server accepts SSL 2.0 connections.
+
+2. An additional step is added before the client accepts a "FINISH" message=
+, which checks to make sure that a "change cipher spec" has been received. =
+</pre></li>
+
+<li><pre class=3D"student-text">6.868 - SSL
+
+Even though SSL 2.0 would be prone to attacks, not allowing back-compatibil=
+ity
+would penalize early adopters of SSL 3.0, as they would not be able to comm=
+unicate
+with basically anyone.
+
+This part is unclear to me if SSL's change spec is part of the handshake. B=
+ut I think
+the paper said "at any time" this could be done, so this check could be don=
+e in the
+record layer.
+</pre></li>
+
+<li><pre class=3D"student-text">Answer #1:
+I believe that they still accept those connections because deployment to th=
+e web is slow and=20
+generally unfeasible to ever be complete - a simple example is the multitud=
+e of browser interpretations
+etc. The paper does point out to some potential weakenesses of this approac=
+h - such as rolling back to
+SSL 2.0 in the middle of an open connection - but it also describes methods=
+ of avoiding this. In any case, it=20
+seems not to be a major problem.
+
+
+Answer #2:
+
+The paper describes the necessary check for this: it must be required that =
+the change cipher spec
+be received before the finish is accepted; hence, we can fix the second fig=
+ure attack by having a check before [finished:]
+is received so that the right change cipher spec is received before.
+
+</pre></li>
+
+<li><pre class=3D"student-text">Backwards compatibility is important becaus=
+e it would not be possible for all
+users and servers to upgrade at once. Eventually however, old protocol supp=
+ort
+must be removed to prevent downgrade attacks like the one described.
+
+The additional check described should appear immediately after receiving ea=
+ch of
+the `finished` messages (but before processing them).
+</pre></li>
+
+<li><pre class=3D"student-text">By allowing for SSL 2.0 connections, the cr=
+eators of SSL 3.0 can make sure that communication with systems that have n=
+ot been updated to support 3.0 will still be possible. In order to correct =
+the vulnerability highlighted in section 4.3, the system must perform the c=
+heck whenever it receives a finished message. If it has received a change c=
+ipher spec, it can accept the message, otherwise it will reject it.</pre></=
+li>
+
+<li><pre class=3D"student-text">Danny Tang
+
+data1013
+
+4/10/18
+
+
+
+Lecture 15
+
+Question:
+
+Two simple questions to make you think about this paper: 1) Why does the SS=
+L 3.0 design accept SSL 2.0 connections? It is simpler to only accept SSL 3=
+.0 connections, and it avoids the risk of rollback attacks described in Sec=
+tion 4.6. 2) The second figure of Section 4.3 shows the attack flow for del=
+eting a change-cipher message. The fix requires an additional check. Where =
+in the flow should SSL perform this check?
+
+Answer:
+
+1) SSL 3.0 accepts SSL 2.0 connections because if it didn't, everyone who d=
+idn't immediately switch to the new version would be
+rendered unable to communicate. This backwards compatibility is especially =
+important during the phase where users switch to the
+new version.
+
+2) The extra check is to make sure that a change cipher spec message was re=
+ceived before accepting a finished message. So, you
+would check this before accepting a finished message.</pre></li>
+
+<li><pre class=3D"student-text">For the first question, I believe it's a se=
+curity and=20
+compatibility trade-off in the short term. With easy
+fix, the server can refuse client SSL2.0 connections=20
+if they support SSL3.0, for example, by checking some
+particular bytes in RSA-encrypted key-exchanges. But
+of course, there are still vulnerabilities for server=20
+to accept SSL2.0 connections and this should be disabled
+in long term.
+For the second question, in the flow 2 and 4, before=20
+accepting the "finish" message, the "change cipher spec"
+should be checked. Or a more complicated fix is to
+include "change cipher spec" in the "finish" message.
+</pre></li>
+
+<li><pre class=3D"student-text">For the sake of backward-compability
+
+During the key exchange protocol, before accepting a "finished" message.
+</pre></li>
+
+<li><pre class=3D"student-text">Internet protocols, as we learned when talk=
+ing about TCP/IP, are extremely hard to update as nearly everybody uses the=
+m and no updating process is in place. So, it is almost essential for the v=
+ast internet to continue to work that SSL 3.0 must accept SSL 2.0 connectio=
+ns. A way of detecting version rollback is provided that works in some case=
+s.
+
+To prevent the dropping of a `change cipher spec` message, `finished` messa=
+ges should not be accepted unless a `change cipher spec` message has been r=
+eceived. This check can be inserted when a `finished` message is received.
+</pre></li>
+
+<li><pre class=3D"student-text">Jun Wan 991032935
+
+1. I think the key reason is flexibility. Some applications/servers might s=
+till be using SSL 2.0 and it is hard to make everyone updates to 3.0 all at=
+ once.
+
+2. The check should happen before the server receives the finished message.=
+ Before step 2' in the control flow, the server should check to make sure t=
+hat it indeed has received a change cipher spec message.</pre></li>
+
+<li><pre class=3D"student-text">Lecture 15
+
+Two simple questions to make you think about this paper: 1) Why does the SS=
+L 3.0 design accept SSL 2.0 connections? It is simpler to only accept SSL 3=
+.0 connections, and it avoids the risk of rollback attacks described in Sec=
+tion 4.6. 2) The second figure of Section 4.3 shows the attack flow for del=
+eting a change-cipher message. The fix requires an additional check. Where =
+in the flow should SSL perform this check?
+
+ SSL 3.0 design accept SSL 2.0 connections simply for the sake of supportin=
+g backwards compatibility. It is annoying to suddenly switch over, but in t=
+he long run, it is much more secure to only accept SSL 3.0 connections.
+
+ SSL implementation should have a check where it receives a change cipher s=
+pec message before accepting a finished message.</pre></li>
+
+<li><pre class=3D"student-text">Lecture 15 (Answer to Paper Question)
+
+Question:
+
+Two simple questions to make you think about this paper: 1) Why does the SS=
+L 3.0 design accept SSL 2.0 connections? It is simpler to only accept SSL 3=
+.0 connections, and it avoids the risk of rollback attacks described in Sec=
+tion 4.6. 2) The second figure of Section 4.3 shows the attack flow for del=
+eting a change-cipher message. The fix requires an additional check. Where =
+in the flow should SSL perform this check?
+
+
+1) SSL 3.0 accepts SSL 2.0 connections to maintain backwards compatibility.
+2) The server can check who sent the the finished message (message 2') to e=
+nsure that the message comes from the correct client.
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 15: SSL 3.0 Reading Question
+
+1) As stated in the paper, SSL 2.0 became a standard for web security, mean=
+ing that it is assumed to
+be widely used throughout the internet. If they were to employ a hard trans=
+ition from one version to
+the next without backwards compatibility, they could risk leaving a lot of =
+systems unprotected, or
+even making them nonoperational for some time, which would be a poor busine=
+ss move. It is also stated
+that they will support backwards compatibility in the short term, meaning t=
+hat they probably understand
+the value in exclusively serving the 3.0 version and will transition to tha=
+t in time.
+
+2) The flow should require a "change cipher spec" message before accepting =
+a "finished", so the system
+should check for the CCS message before every finished message.
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 15: Secure Channels
+4/11/18
+
+Two simple questions to make you think about this paper: 1) Why does the SS=
+L 3.0 design accept SSL 2.0 connections? It is simpler to only accept SSL 3=
+.0 connections, and it avoids the risk of rollback attacks described in Sec=
+tion 4.6. 2) The second figure of Section 4.3 shows the attack flow for del=
+eting a change-cipher message. The fix requires an additional check. Where =
+in the flow should SSL perform this check?
+
+1.=20
+backwards compatibility
+
+2.=20
+check after stage 4</pre></li>
+
+<li><pre class=3D"student-text">Many services usually back support to make =
+the transition easier between the 2: it is hard to instantaneously switch t=
+o a new design unless you have complete control over the system and how oth=
+er people interact with the system. It has a changed cipher spec message be=
+ing sent, so we need to check that.
+</pre></li>
+
+<li><pre class=3D"student-text">Question: Two simple questions to make you =
+think about this paper: 1) Why does the SSL 3.0 design accept SSL 2.0 conne=
+ctions? It is simpler to only accept SSL 3.0 connections, and it avoids the=
+ risk of rollback attacks described in Section 4.6. 2) The second figure of=
+ Section 4.3 shows the attack flow for deleting a change-cipher message. Th=
+e fix requires an additional check. Where in the flow should SSL perform th=
+is check?
+
+1) It could be that SSL 2.0 is so widely used and reasonably secure that it=
+ would be a pain / cause a lot of services to fail if they had to enforce t=
+he SSL 3.0 connections. A service whos service requires security will most =
+likely be up to date with SSL 3.0 but services that don't really matter mig=
+ht still keep SSL 2.0 for convinence.=20
+
+2) The checks should be done after changed cipher spec message is sent from=
+ C-&gt;S and S-&gt;C respectively. Specifically, S and C respectively shoul=
+d make sure they check for the chagned cipher spec message before accepting=
+ finished messages.</pre></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 15
+
+Two simple questions to make you think about this paper: 1) Why does the SS=
+L 3.0 design accept SSL 2.0 connections? It is simpler to only accept SSL 3=
+.0 connections, and it avoids the risk of rollback attacks described in Sec=
+tion 4.6. 2) The second figure of Section 4.3 shows the attack flow for del=
+eting a change-cipher message. The fix requires an additional check. Where =
+in the flow should SSL perform this check?
+
+SSL 2.0 connections are permitted at the moment because SSL 3.0 has the abi=
+lity to detect when an attacker is capable of using SSL 3.0 but is spoofing=
+ only SSL 2.0 capabilities. RSA on SSL 3.0 capable devices include some non=
+-random padding bytes which cannot be changed, signaling to the receiver wh=
+en the sender has SSL 3.0 capabilities.
+
+The fix required to avoid deleted change-cipher attacks adds a check before=
+ a "finished" message to confirm that the change cipher message was success=
+fully received beforehand.=20
+</pre></li>
+
+<li><pre class=3D"student-text">SSL 2.0 was very broadly used; you can't ge=
+t everybody to transition at once, so backwards compatible servers are nece=
+ssary until SSL 3.0 becomes more popular.
+
+Two potential fixes for the attack in the second figure of 4.3 are mentione=
+d; the fix that doesn't require changing the SSL specification is to requir=
+e a `change_cipher_spec` message before a `finished` message will be accept=
+ed. This could be implemented on the server side (S) by S not sending its o=
+wn `change_cipher_spec` and `finished` messages until it receives both, in =
+that order, from the client (C). On the C's side, it can wait for both mess=
+ages from S before it begins to send data.
+</pre></li>
+
+<li><pre class=3D"student-text">SSL 3,0 accepts SSL 2.0 connections to main=
+tain backwards compatibility with services that do not support the new form=
+at. Here, a tradeoff was made in favor of usability and reliability over se=
+curity.
+This can be fixed by having the receiveer send a hash of the received ciphe=
+r spec back signed with a mutual secret.</pre></li>
+
+<li><pre class=3D"student-text">SSL 3.0 accepts 2.0 connections in order to=
+ smooth over the transition.  In addition, it is somewhat protected against=
+ attacks that aim to make SSL3 connections look like SSL2 ones, by putting =
+some redundant non random bits in.  If those bits appear in the SSL2 connec=
+tion, it is rejected, because it is probably a modified SSL3 connection.
+
+The additional check with change cipher spec messages is that a change ciph=
+er spec message is received before accepting a finished message.  This shou=
+ld probably happen before attempting to decrypt the finished message.
+</pre></li>
+
+<li><pre class=3D"student-text">SSL 3.0 accepts SSL 2.0 connections for bac=
+kwards compatibility. It is indeed better to support 3.0 only, but that wou=
+ld mean 3.0 clients/servers being unable to talk to 2.0 clients/servers. Fo=
+rtunately, 3.0 is always used if both client/server support it; support is =
+detected using non-random padding bytes at the end of messages.
+
+The check for detecting deleted change-cipher messages should be done befor=
+e line 3 and line 5 of the second figure. Essentially, the server should ch=
+eck for a change-cipher before sending a 'change cipher spec' message back,=
+ and the client should check for a change-cipher before sending the {m}_k t=
+ext.=20
+
+</pre></li>
+
+<li><pre class=3D"student-text">SSL 3.0 accepts SSL 2.0 connections to prov=
+ide temporary backwards compatibility as SSL 3.0 is deployed.
+The check should happen in 4', before the client accepts the finished messa=
+ge.</pre></li>
+
+<li><pre class=3D"student-text">SSL 3.0 accepts SSL 2.0 mainly for compatib=
+ility. It will take some time for all the clients to upgrade to SSL 3.0. Al=
+so SSL 3.0 provides some defense against rollback attacks.
+
+On step 2' M-&gt;S, the server should check that it receives a [change ciph=
+er spec] before it accept [finished].
+
+</pre></li>
+
+<li><pre class=3D"student-text">SSL 3.0 allows SSL 2.0 connections for back=
+wards compatibility with older systems that have not switched. It takes a h=
+uge effort to force the entirety of the internet to make an upgrade. SSL sh=
+ould perform the check for a change cipher spec between 2' and 3 and betwee=
+n 4' and 5.
+</pre></li>
+
+<li><pre class=3D"student-text">SSL 3.0 design accepts SSL 2.0 connections =
+because of the backwards compatibility. Some browsers will still be useing =
+SSL 2.0 and if server is migrated to version 3.0, we still want the connect=
+ion to be successful. Additional check for deleting a change-cipher message=
+ should be done on server side.
+</pre></li>
+
+<li><pre class=3D"student-text">SSL 3.0 design accepts SSL 2.0 connections =
+for backwards compatibility. Although there are security flaws in the mixin=
+g, they can still be resolved with minor modifications to the specification=
+s of backwards-compatible usage.
+
+For the deleting change cipher spec message attack, before reading a finish=
+ed message, a change cipher spec message should be expected and received.</=
+pre></li>
+
+<li><pre class=3D"student-text">SSL 3.0 is backwards compatible so that web=
+ hosts have an incentive to deploy it incrementally, without fear of incomp=
+atibility. To fix the change-cipher message deletion vulnerability, have bo=
+th parties require that they receive a `change-cipher` message before accep=
+ting a `finished` message.
+</pre></li>
+
+<li><pre class=3D"student-text">SSL 3.0 needs to accept SSL 2.0 at least fo=
+r a short while when
+the protocol is being transitioned. Otherwise, many websites which
+are not particularly concerned about SSL 2.0 vulnerabilities will
+break until updated to SSL 3.0.
+
+To fix the attack involving deleting a change-cipher message, the=20
+protocol simply needs to check that a change cipher spec message
+was recieved before accepting a finished message. So, it should=20
+happen directly before considering a finished message in the flow.</pre></l=
+i>
+
+<li><pre class=3D"student-text">SSL 3.0 probably accepts 2.0 connections in=
+ order to make the rollout of the new system easier. Otherwise if it was ri=
+gid, it might not ever be rolled out.
+
+The check should be right before message 4, when it recieves the finished m=
+essage.</pre></li>
+
+<li><pre class=3D"student-text">SSL 3.0 provides backwards compatibility be=
+cause otherwise clients that did not or perhaps could not update would be u=
+nable to interact with servers running
+it and vice versa. Clients and servers should check that a change cipher sp=
+ec is performed before accepting a finished message.</pre></li>
+
+<li><pre class=3D"student-text">Seems like SSL 3.0 builds on top of 2.0(for=
+ backward compatibility) mainly because: 1. for gradual transition into 3.0=
+ as not all clients will have 3.0 standard 2. it just happens to support it
+
+The check basically checks that each finished is preceded by a "change ciph=
+er spec". I think this can be done before the connection is establised (ste=
+p 5), by both client and server. </pre></li>
+
+<li><pre class=3D"student-text">The SSL 3.0 design accept SSL 2.0 connectio=
+ns as part of backwards compatibility. The paper states that the eventual g=
+oal is for SSL 3.0 to no longer accept SSL 2.0 connections.=20
+
+The simplest fix is to require that a SSL implementation receive a change c=
+ipher spec message before accepting a finished message in the flow.
+</pre></li>
+
+<li><pre class=3D"student-text">The SSL 3.0 design accepts SSL 2.0 as backw=
+ards compatibility, in a fashion akin to deprecation in programming languag=
+es. Eventually, SSL 2.0 connections
+will no longer be accepted by SSL 3.0 according to the paper. The check for=
+ deleting the change-cipher message should happen at the endpoints of the
+connection after the attacker attempts to send finished messages without th=
+e change cipher spec. Namely, after 2' and 4', the server and client,
+respectively, should check whether they were asked to change their cipher s=
+pec.</pre></li>
+
+<li><pre class=3D"student-text">The SSL 3.0 design most likely accepts SSL =
+2.0 connections in order to be flexible and work with servers that have not=
+ updated to support SSL 3.0. This allows the Internet to remain connected, =
+at the slight cost of some security issues.</pre></li>
+
+<li><pre class=3D"student-text">The fix is to require the SSL implementatio=
+n to receive a change cipher spec message before accepting a finished messa=
+ge. The SSL 3.0 design accepts SSL 2.0 connections to be backwards compatib=
+le, because when 3.0 is released you can't expect every server to have alre=
+ady transitioned to 3.0, so you need to be able to accept 2.0 to continue b=
+eing able to talk to some servers.</pre></li>
+
+<li><pre class=3D"student-text">The idea behind supporting it might have ju=
+st been backwards compatibility because you don't want to expect everyone t=
+o have upgraded to using SSL 3.0
+
+Check for a cipher change before accepting any finished messages. Possibly =
+also look for an ACK from the endpoint receiving the change cipher before s=
+ending a finished message.
+</pre></li>
+
+<li><pre class=3D"student-text">The most likely reason I can think of for m=
+aintaining this kind of backwards compatibility with SSL 3.0 -&gt; 2.0 is t=
+o guarantee that older clients can still access webpages.
+
+The check should be performed after step 3.
+</pre></li>
+
+<li><pre class=3D"student-text">The new system should also be able to accom=
+modate for the old ones since the internet is huge and not every machine is=
+ going to be updated. The check should happen before the finished message i=
+s sent.</pre></li>
+
+<li><pre class=3D"student-text">They support SSL 2.0 because perhaps otherw=
+ise it would be hard to encourage adoption of SSL 3.0, so having more diffi=
+culty and potentially less security is better than no adoption. Also it sou=
+nds like there are minor fixes that fix most of the rollback attacks that c=
+an be easily adopted so it=E2=80=99s not a major security concern.=20
+
+SSL should perform this check by storing a stateful variable as to whether =
+a change-chipper spec was received, and then perform a check of that variab=
+le after receiving a finished message and before changing the spec.</pre></=
+li>
+
+<li><pre class=3D"student-text">They wanted backwards compatibility, since =
+SSL 2.0 was the defacto standard at the time. It will help with adoption of=
+ SSL 3.0, since it won't break 2.0.=20
+
+SSL should check send a change cipher message before accepting the end of a=
+ message.</pre></li>
+
+<li><pre class=3D"student-text">Two simple questions to make you think abou=
+t this paper:
+1) Why does the SSL 3.0 design accept SSL 2.0 connections? It is simpler to=
+ only accept SSL 3.0 connections, and it avoids the risk of rollback attack=
+s described in Section 4.6.
+ - SSL 2.0 is still widely used and its important that these connections do=
+n't simply break with the introduction of SSL 3.0. Instead SSL 3.0 can reco=
+gnize an SSL 2.0 client hello and fall back to
+SSL 2.0.
+2) The second figure of Section 4.3 shows the attack flow for deleting a ch=
+ange-cipher message. The fix requires an additional check. Where in the flo=
+w should SSL perform this check?
+  - We would need to add a check to make sure that that the changed cipher =
+spec message was received before accepting a finished message
+</pre></li>
+
+<li><pre class=3D"student-text">Two simple questions to make you think abou=
+t this paper:
+1) Why does the SSL 3.0 design accept SSL 2.0 connections?
+It is simpler to only accept SSL 3.0 connections, and it avoids the risk of=
+ rollback attacks described in Section 4.6.
+The design accepts SSL 2.0 connections in order to allow smooth transitioni=
+ng.  Essentially, if only SSL 3.0 connections were allowed, this would not =
+support any backwards compatibility which would greatly limit connection ab=
+ilities.
+2) The second figure of Section 4.3 shows the attack flow for deleting a ch=
+ange-cipher message. The fix requires an additional check. Where in the flo=
+w should SSL perform this check?
+This fix should be applied at 3 to check that if a change spec was sent aga=
+in after one has already been sent, that it matches the previous one sent.<=
+/pre></li>
+
+<li><pre class=3D"student-text">Two simple questions to make you think abou=
+t this paper:=20
+1) Why does the SSL 3.0 design accept SSL 2.0 connections? It is simpler to=
+ only accept SSL 3.0 connections, and it avoids the risk of rollback attack=
+s described in Section 4.6.=20
+2) The second figure of Section 4.3 shows the attack flow for deleting a ch=
+ange-cipher message. The fix requires an additional check. Where in the flo=
+w should SSL perform this check?=20
+
+---
+
+1) Because it is unrealistic to assume that all parties will make the switc=
+h to SSL 3.0 at the same time - In order to allow migration from one to the=
+ other, it is important to offer some backwards compatibility.
+2) In the second figure, this should happen before line 2' and 4': In parti=
+cular, the server and client should first check to make sure they have rece=
+ived a change cipher spec message before they accept the finished message
+
+</pre></li>
+
+<li><pre class=3D"student-text">Two simple questions to make you think abou=
+t this paper:=20
+1) Why does the SSL 3.0 design accept SSL 2.0 connections? It is simpler to=
+ only accept SSL 3.0 connections, and it avoids the risk of rollback attack=
+s described in Section 4.6.=20
+	Back compatibility can allow some members of a system to adopt SSL 3.0 whi=
+le others are slow moving without requiring one big rollout of changes. SSL=
+ protects can detect rollback attacks and protects against them by refusing=
+ some SSL 2.0 connections.
+=09
+2) The second figure of Section 4.3 shows the attack flow for deleting a ch=
+ange-cipher message.=20
+The fix requires an additional check. Where in the flow should SSL perform =
+this check?
+	A check should be added on the cipher check message to ensure that it has =
+stronger message authentication and a check on both ends to ensure that the=
+ ciphersuite is updated before sending finish message.=20
+	Another potential change would include the change cipher spec message in t=
+he finish message authentication calculation. </pre></li>
+
+<li><pre class=3D"student-text">Two simple questions to make you think abou=
+t this paper: 1) Why does the SSL 3.0 design accept SSL 2.0 connections? It=
+ is simpler to only accept SSL 3.0 connections, and it avoids the risk of r=
+ollback attacks described in Section 4.6. 2) The second figure of Section 4=
+.3 shows the attack flow for deleting a change-cipher message. The fix requ=
+ires an additional check. Where in the flow should SSL perform this check?
+
+1) Backward-compatibility.  You can't immediately switch off old technology=
+ and expect everyone to quickly adopt it without breaking all sorts of impo=
+rtant things.
+2) The check should be inserted before message 3 to ensure that the server =
+receives a valid &lt;change cipher spec&gt; message before accepting any &l=
+t;finished&gt; message.</pre></li>
+
+<li><pre class=3D"student-text">Two simple questions to make you think abou=
+t this paper: 1) Why does the SSL 3.0 design accept SSL 2.0 connections? It=
+ is simpler to only accept SSL 3.0 connections, and it avoids the risk of r=
+ollback attacks described in Section 4.6. 2) The second figure of Section 4=
+.3 shows the attack flow for deleting a change-cipher message. The fix requ=
+ires an additional check. Where in the flow should SSL perform this check?
+
+1. There are billions of people in the world using SSL 2.0. Forcing SSL 3.0=
+ compliance would break major parts of the internet for days on end. That's=
+ not something the authors think is worth doing.=20
+
+2. The SSL should not send a finished message until receiving a change ciph=
+er spec message.
+
+</pre></li>
+
+<li><pre class=3D"student-text">Two simple questions to make you think abou=
+t this paper: 1) Why does the SSL 3.0 design accept SSL 2.0 connections? It=
+ is simpler to only accept SSL 3.0 connections, and it avoids the risk of r=
+ollback attacks described in Section 4.6. 2) The second figure of Section 4=
+.3 shows the attack flow for deleting a change-cipher message. The fix requ=
+ires an additional check. Where in the flow should SSL perform this check?
+
+---
+
+(1) I'm assuming the reason is support/compatibility issues. It sounds like=
+ at the time this paper was written, SSL 3.0 was rather new, and adoption t=
+akes some time. Not all client/servers would have been able to support SSL =
+3.0 connections right away. It would also explain why the paper mentions th=
+at implementations will accept SSL 2.0 connections 'at least in the short t=
+erm'. Once adoption is widespread enough, it would make less sense to allow=
+ SSL 2.0 connections.
+
+
+(2) Between 2' and 3 - before accepting the [finished:] message from the cl=
+ient, the server should check that it has already received a [change cipher=
+ spec] message. Between 4' and 5 - before accepting the [finished:] message=
+ from the server and completing the handshake, the client should check that=
+ it has received a [change cipher spec] message.</pre></li>
+
+<li><pre class=3D"student-text">Two simple questions to make you think abou=
+t this paper: 1) Why does the SSL 3.0 design accept SSL 2.0 connections? It=
+ is simpler to only accept SSL 3.0 connections, and it avoids the risk of r=
+ollback attacks described in Section 4.6. 2) The second figure of Section 4=
+.3 shows the attack flow for deleting a change-cipher message. The fix requ=
+ires an additional check. Where in the flow should SSL perform this check?
+
+The lack of support of SSL 2 would have made many Internet resources unavai=
+lable due to the lack of backward compatibility. However, we could see that=
+ the POODLE exploit in SSL was able to force stopping the support of SSL as=
+ well as TLS 1.0.=20
+
+S should check a "change cipher spec" before accepting "finished". So a che=
+ck should be performed before #3 and server should reject "finished".
+
+</pre></li>
+
+<li><pre class=3D"student-text">Why does the SSL 3.0 design accept SSL 2.0 =
+connections?
+
+  Just because SSL 3.0 improves on SSL 2.0 doesn't mean that service=20
+  providers will switch to it right away. In general, when a new=20
+  security standard is designed, it's difficult to get people to=20
+  conform to the new security standards, because it might be
+  expensive and difficult to do so.
+
+The second figure of Section 4.3 shows the attack flow for deleting a chang=
+e-cipher
+message. The fix requires an additional check. Where in the flow should SSL=
+ perform
+this check?
+ =20
+  The check should occur between the 4 and 4' steps.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Why does the SSL 3.0 design accept SSL 2.0 =
+connections? It is simpler to only accept SSL 3.0 connections, and it avoid=
+s the risk of rollback attacks described in Section 4.6. 2) The second figu=
+re of Section 4.3 shows the attack flow for deleting a change-cipher messag=
+e. The fix requires an additional check. Where in the flow should SSL perfo=
+rm this check?
+
+1) Accepts SSL 2.0 connections for compatibility.
+
+2) To fix the issue, SSL should perform the check after steps 1 and 3, befo=
+re each side sends a "finished" message.
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">backwards compatability is important so tha=
+t websites still using SSL 2.0 don't break.=20
+</pre></li>
+
+<li><pre class=3D"student-text">lec15
+1. SSL 3.0 accepts SSL 2.0 connections as some SSL 2.0
+connections will still exist as they will not want to
+perform key management.
+2. The additional check should occur before the server
+sends the client the finished change-cipher message</pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--UY7PNfx6JPFs1Amq6jHI1ZGAiPUKdOKFVEApiRBMmZ------

@@ -1,0 +1,855 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-questions/15
+Subject: Questions for lecture 15 - 6.858
+Date: Tue, 21 May 2018 01:36:18 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--sYVzikTqJ9tFWptVa9xcjnTfFLZX0tBaXpjIUJ602b----"
+
+
+------MultipartBoundary--sYVzikTqJ9tFWptVa9xcjnTfFLZX0tBaXpjIUJ602b----
+Content-Type: text/html
+Content-ID: <frame-1172-5f933dd5-0d30-43a0-86bc-b0440fe9bad2@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-questions/15
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Questions for lecture 15 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Questions for lecture 15 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text">What are some current security issues with =
+SSL?</pre></li>
+
+<li><pre class=3D"student-text"> What stops an attacker from dropping the f=
+ixed bytes set in the PKCS padding that attempt to stop downgrade attacks?
+
+</pre></li>
+
+<li><pre class=3D"student-text">" In practice, users typically consider the=
+ threat of this kind of coarse-grained tracking to be relatively harmless, =
+so SSL does not attempt to stop this kind of traffic analysis. Ignoring coa=
+rse-grained traffic analysis seems like a reasonable design decision."
+
+Where is the point where users start to care about their traffic being anal=
+yzed, particularly in light of the recent Facebook scandal? As in, where do=
+es "coarse-grained" become "fine-grained"?</pre></li>
+
+<li><pre class=3D"student-text">"A wide variety of strong algorithms used i=
+n standard modes is available to suit local preferences; reasonable applica=
+tions should be able to find an encryption algorithm meeting the required l=
+evel of security, US export laws permitting."
+
+What export laws are they talking about?
+</pre></li>
+
+<li><pre class=3D"student-text">"SSL will provide a lot of known plaintext =
+to the eavesdropper ... the encryption algorithm is required to be strong a=
+gainst known-plaintext attacks" - what is this known plaintext, why is a lo=
+t of it provided, and what sort of attacks are made using it against which =
+the encryption algorithm has to be strong?</pre></li>
+
+<li><pre class=3D"student-text">"SSL will provide a lot of known plaintext =
+to the eavesdropper, but there seems to be no better alternative; since the=
+ encryption algorithm is required to be strong against known-plaintext atta=
+cks anyway, this should not be problematic."
+
+So known-plaintext attacks are attacks where the adversary has access to bo=
+th the plaintext and
+the encrypted version. If SSL already encrypts the text, why does it also s=
+end the plaintext over
+the network?
+</pre></li>
+
+<li><pre class=3D"student-text">"The SSL 2.0 protocol has become a de facto=
+ standard for cryptographic protection of Web http traffic."
+
+Does HTTP also use SSL? I thought only HTTPS used SSL...
+
+Also, why does the RSA key exchange support the random PKCS padding, and wh=
+y does Diffie-Helman key exchange not support it?
+</pre></li>
+
+<li><pre class=3D"student-text">- How does SSL 3.0 prevent the following at=
+tack: Suppose the list of supported ciphersuites in the hello message of th=
+e client contains a weak and a strong ciphersuite, and the hello message of=
+ the server contains the same two ciphersuites, and both the client and the=
+ server send a "change cipher spec" message indicating that they want to us=
+e the strong ciphersuite, but the man in the middle replaces these two mess=
+ages by "change cipher spec" messages indicating that they want to use the =
+weak cipher suite. It seems that this attack would be possible because the =
+"change cipher spec" messages are not authenticated in the "finished" messa=
+ge. What am I missing?
+- Why are we reading a paper about SSL, which apparently is deprecated, ins=
+tead of reading a paper about its successor TLS?
+</pre></li>
+
+<li><pre class=3D"student-text">- What is an active attack (vs. a non-activ=
+e attack)?
+
+- Is =E2=80=9Cthe Horton Principle=E2=80=9D to say more, or less, of what w=
+as actually sent? In other words, is it to provide context, or to remove it=
+?</pre></li>
+
+<li><pre class=3D"student-text">1. Do modern servers still accept SSL 2.0 c=
+onnections?</pre></li>
+
+<li><pre class=3D"student-text">6.858 - SSL
+
+What issues did TLS solve over SSL? Are there still issues in TLS?
+</pre></li>
+
+<li><pre class=3D"student-text">According to https://tools.ietf.org/html/rf=
+c7568, SSL 3.0 should be deprecated and replaced by TLS 1.2.
+What exactly changed between SSL 3.0 and TLS 1.2 to cause this to happen? D=
+id TLS just implement some of the suggested changes from the reading, or ar=
+e there issues the reading either didn't address or addressed incorrectly t=
+hat TLS fixed?
+
+In a compact, haiku form:
+IEFT says,
+"TLS, not SSL."
+Why is this safer?</pre></li>
+
+<li><pre class=3D"student-text">Accordung to some sources, OpenSSL seems to=
+ have around 500k lines of code. Is it possible (or viable) to implement su=
+ch a system in a significantly smaller number of lines of code? Although it=
+ is a system, it doesn't seem to require so many lines of code.</pre></li>
+
+<li><pre class=3D"student-text">Apparently the IETF has prohibited the use =
+of SSL protocol (according to Wikipedia page for TLS). Why and what else is=
+ done instead?</pre></li>
+
+<li><pre class=3D"student-text">Are Trust On First Use (TOFU) techniques re=
+liable extensions to TLS? For example, Public Key Pinning (PKP) and HTTP St=
+rict Transport Security (HSTS) are gaining traction, but is it really worth=
+ it since a human must validate every initial interaction between client an=
+d server?</pre></li>
+
+<li><pre class=3D"student-text">Are a lot of internet vulnerabilities built=
+ upon existing tools? (As in, because it was designed in some fashion in th=
+e past, it's hard to instantaneously switch to a more secure and upgraded s=
+ystem because you don't want to break what currently exists?)=20
+</pre></li>
+
+<li><pre class=3D"student-text">Are there any measures companies take to pr=
+otect against mistakes in secure channels? For example, if a vulnerability =
+were found in today's SSL, is there anything companies can do other than sh=
+utting down their websites until a nonvulnerable channel were found and imp=
+lemented?
+</pre></li>
+
+<li><pre class=3D"student-text">Are there more protocols or attempts/moves =
+to fix the issues with SSL 3.0?
+Do people still use SSL 2.0 today? </pre></li>
+
+<li><pre class=3D"student-text">As I understand, TLS is now the preferred p=
+rotocol over SSL.  What are some of the vulnerabilities in SSL that TSL add=
+ressed?  Why was a new protocol developed, rather than a new version of SSL=
+ released?
+</pre></li>
+
+<li><pre class=3D"student-text">Can you please briefly speak on POODLE and =
+the most recent ROBOT https://robotattack.org/?
+
+</pre></li>
+
+<li><pre class=3D"student-text">Currently, what proportion of browsers impl=
+ement the SSL despite it being deprecated? Have these resulted in significa=
+nt attacks in recent years? Are other protocols built to accept SSL connect=
+ions in general still?</pre></li>
+
+<li><pre class=3D"student-text">Danny Tang
+data1013
+4/10/18
+
+Lecture 15
+
+SSL 3.0 is compatible with SSL 2.0. How are other protocols in terms of the=
+ir compatibilities with each other? Is this a
+priority in design?</pre></li>
+
+<li><pre class=3D"student-text">Did Netscape's incorrect implementation of =
+SSL 3.0 lead to any issues (with the change spec attack)?</pre></li>
+
+<li><pre class=3D"student-text">Did the IETF Transport Layer Security make =
+any changes in the spec for SSL 3.0 as a result of this document? Or was th=
+e result mostly implementation-level changes?
+</pre></li>
+
+<li><pre class=3D"student-text">Diffie-hellman key exchange is really cleve=
+r and cool and secure, but it was invented in 1976.  Why did SSL2 not use D=
+H key exchange?
+</pre></li>
+
+<li><pre class=3D"student-text">Do all sites use SSL? Who implements it?
+</pre></li>
+
+<li><pre class=3D"student-text">Do modern SSL implementations prevent these=
+ kinds of attacks?
+</pre></li>
+
+<li><pre class=3D"student-text">Does the authenticated but unencrypted mode=
+ of SSL 3.0 still exist in modern
+versions of TLS?
+</pre></li>
+
+<li><pre class=3D"student-text">Export-weakened cryptography comes up numer=
+ous times in the paper. Assuming I'm interpreting it correctly to mean cryp=
+tography that complies to U.S. export law, why is it that security is weake=
+ned. Is there an upper-limit to how export-controlled data can be encrypted=
+? In other words why is it not export-strengthened? Or is it just that only=
+ cryptographic methods verified as strong enough are allowed for use, so mo=
+re modern algorithms cannot be immediately used?</pre></li>
+
+<li><pre class=3D"student-text">GitHub recently removed support for old cry=
+ptographic standards when connecting to github.com (https://githubengineeri=
+ng.com/crypto-removal-notice/). Although they gave a year's notice about th=
+is change, it still resulted in a signficant amount of breakage, presumably=
+ because many users were relying on old protocols somewhere in their stack =
+without realizing it. Is there a reason that cryptographic protocols such a=
+s SSL/TLS are generally implemented in userland (resulting in many differen=
+t implementations/bundled OpenSSL versions for different apps that would al=
+l need to be upgraded), rather than being implemented in the kernel like TC=
+P is (where it would only be necessary to update the kernel)?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Have SSL3.0 servers stopped accepting SSL2.=
+0 requests now?
+</pre></li>
+
+<li><pre class=3D"student-text">Have there been any very significant securi=
+ty flaws in SSL 3.0 since this paper has been written?=20
+</pre></li>
+
+<li><pre class=3D"student-text">How does TLS compare to SSLv3 in terms of f=
+ixing these potential vulnerabilities?
+</pre></li>
+
+<li><pre class=3D"student-text">How does TLS supercede SSL and fix vulnerab=
+ilities?
+</pre></li>
+
+<li><pre class=3D"student-text">How exactly does the US government designat=
+e which encryption algorithms are fit for exportation? Is it possible for a=
+ non-US entity to simply increase
+the number of bbits of complexity used in an algorithm to get around this?<=
+/pre></li>
+
+<li><pre class=3D"student-text">How hard is it to introduce the random padd=
+ing to all cryptographic schemes? Is it just impossible to be exhaustive?
+
+How much work is stripping off the authentication layer from finished messa=
+ges as a man in the middle trying to convince two endpoints to communicate =
+with no ciphertext?
+
+What does a level of security mean? Just computation cost of brute forcing?
+</pre></li>
+
+<li><pre class=3D"student-text">How has SSL changed in view of the demise o=
+f "export-weakened" cryptographic protocols?</pre></li>
+
+<li><pre class=3D"student-text">How has SSL changes since this publication?=
+</pre></li>
+
+<li><pre class=3D"student-text">How is a secure channel established in the =
+first place? That is, how do the sender and receiver agree on some way to e=
+stablish a cryptographic connection over an observable network assuming no =
+prior information exchanged between the sender and receiver?</pre></li>
+
+<li><pre class=3D"student-text">How is the pre_master_secret generated?
+</pre></li>
+
+<li><pre class=3D"student-text">How many vulnerabilities does one have to f=
+ind before replacing the current version of SSL/TLS?</pre></li>
+
+<li><pre class=3D"student-text">How widely used is SSL now of days when we =
+have newer standards such as TSL?</pre></li>
+
+<li><pre class=3D"student-text">I didn't understand the informal analysis u=
+sing the horton principle. How does the horton principle apply to cryptogra=
+phy?</pre></li>
+
+<li><pre class=3D"student-text">I don't really understand short-block attac=
+ks. The paper states that:
+
+Knowledge of the corresponding plaintext
+for a correctly guessed replacement ciphertext block
+enables the enemy to recover the unknown plaintext
+byte.
+
+why is this? Is this because there's a one to one mapping between trailing =
+plaintext bytes and encrpyted bytes?
+</pre></li>
+
+<li><pre class=3D"student-text">I don't think I fully understand the idea b=
+ehind the Horton principle. Is it just the idea that you should encrypt mor=
+e than just the content you are sending? Additionally, during the key excha=
+nge is there anything preventing a man in the middle attack where a man in =
+the middle establishes a session with the client an d the server seperately=
+ and simply echos messages from the client to the server and back?
+</pre></li>
+
+<li><pre class=3D"student-text">I found the use of the terms 'domestic' and=
+ 'export-weakened' crypto odd in the paper. What's the context for this?
+</pre></li>
+
+<li><pre class=3D"student-text">I have to admit that while reading thi pape=
+r, I realized that my understanding of SSL was lacking. Are there any parti=
+cular resources that the staff recommends for me to catch up on SSl/TLS ?
+</pre></li>
+
+<li><pre class=3D"student-text">I noticed this paper was written in 1996. I=
+s SSL still in use and if so, how much has it changed since this paper was =
+written?</pre></li>
+
+<li><pre class=3D"student-text">I see that SSL 2.0 and 3.0 have both been d=
+eprecated/prohibited from use, and that they were replaced with TLS. What's=
+ different about TLS that makes it better than SSL? And why did it take so =
+long to kill off SSL 2.0?
+</pre></li>
+
+<li><pre class=3D"student-text">I was going to ask if SSL3 is still used at=
+ all or if all connections now use
+TLS. But, I was able to Google myself and find that SSL 3.0 was also later
+prohibited in June 2015.=20
+
+Has TLS also been a series of ad-hoc patches and bugs popping up? Or was TL=
+S
+better designed and is aging better than SSL?=20
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">I would like to see more of the attacks exp=
+lained in depth during lecture.</pre></li>
+
+<li><pre class=3D"student-text">I'm having trouble differentiating between =
+TLS and SSL besides the fact that TLS seems to supersede SSL.  Is there a r=
+eason we're focusing on SSL here instead?  Or is it just more interesting o=
+f a vessel for the conversation we're going to be having?</pre></li>
+
+<li><pre class=3D"student-text">If SSL 3.0 first implements diffie hellman =
+for key exchange, what did
+earlier versions, such as SSL 2.0 use for that purpose?</pre></li>
+
+<li><pre class=3D"student-text">If someone intercepts the initial SSL messa=
+ges then isn't the protocol useless. Because an underlying setting of param=
+s is required to create the secure connection right? So is the upgrade even=
+ safe?
+</pre></li>
+
+<li><pre class=3D"student-text">In a short-block attack, how does the attac=
+ker have access to plaintext/ciphertext pairs?</pre></li>
+
+<li><pre class=3D"student-text">In dropping the change cipher spec message =
+attack, how do an attacker make sure that [change cipher spec] does not go =
+directly from Client to Server? Does this kind of attack require a compromi=
+sed router?</pre></li>
+
+<li><pre class=3D"student-text">In the change cipher spec scheme, what exac=
+tly does {a}_k represent? It seems that the attacker
+has full access to `a` and can somehow decript it. Moreover, it is not comp=
+letely clear to me how=20
+a MITM can get teh chiper spec and still not be able to decode messages bei=
+ng passed;
+</pre></li>
+
+<li><pre class=3D"student-text">In the diagrams that explain the attack flo=
+ws, it is clear to me that C and S=20
+represent the client and server respectively, but it was unclear what M mea=
+nt.=20
+It is also unclear what the text following the flow means. I also noticed t=
+hat
+this paper assumes knowledge of SSL, which I don't have, so this lack of=20
+background might be why these diagrams aren't familiar to me.
+</pre></li>
+
+<li><pre class=3D"student-text">In the version rollback attacks, I'm confus=
+ed how the attacker can create a resume session on a lower level of securit=
+y without having to renegotiate session. Where does the weaker key that the=
+ attacker brute-forces come from?
+</pre></li>
+
+<li><pre class=3D"student-text">Is SSL still being used commonly? I read so=
+mewhere that TLS is the new version of SSL and more commonly used, but if s=
+o, did it make sense to update SSL to 3.0 rather than to switch to TLS? I=
+=E2=80=99m assuming the update to SSL 3.0 was relatively recent since the p=
+aper was from 2013.</pre></li>
+
+<li><pre class=3D"student-text">Is SSL still in use? According to wikipedia=
+, it has been replaced by TLS. I happened upon this article (https://pulsej=
+et.github.io/blog/posts/https-with-github-pages-custom-domain/) which seems=
+ to be implying support of SSL. So, is SSL still in use?
+</pre></li>
+
+<li><pre class=3D"student-text">Is SSl 3.0 also be replaced soon with a new=
+er version?
+</pre></li>
+
+<li><pre class=3D"student-text">Is TLS much more complex to study than SSL?
+</pre></li>
+
+<li><pre class=3D"student-text">Is everyone ready and able to adapt to SSL =
+3.0, or is it what we use now?</pre></li>
+
+<li><pre class=3D"student-text">Is there a general way of designing protoco=
+ls so that when the protocol is
+updated, the new protocol is safe against version rollback attacks? Paul
+Kocher's strategy seems to rely on the particulars of RSA encryption.
+</pre></li>
+
+<li><pre class=3D"student-text">It seems like the need for backwards compat=
+ibility causes a lot of big problems - how do you get the community to quic=
+kly update to the new standard?</pre></li>
+
+<li><pre class=3D"student-text">It's pretty surprising to me that a secure =
+connection protocol is completely fine with not seeing the basic constructi=
+on that makes the protocol CCA secure. What good is having support for a ma=
+liciously secure cryptographic protocol if an active adversary can just cha=
+nge the 'mode' to remove the message authentication? Why would the designer=
+s allow this to be possible?</pre></li>
+
+<li><pre class=3D"student-text">Lecture 15 (Question About Paper)
+
+On page 6 the paper talks about { }k representing the keyed cryptographic t=
+ransforms useed by the record layer. What do they mean by keyed cryptograph=
+ic transforms? Is the transform of a message the same as the encryption of =
+message? If this is correct, how did the two parties negotiate the key used=
+ for this transform? { }k was introduced in the context of sending change c=
+ipher spec messages, but when this happens, aren't the two parties still ne=
+gotiating the encryption key?
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 15: My SSL 3.0 Question
+
+The authors mention that their SSL protocol has vulnerabilities that are on=
+ly a threat for
+active attacks. What exactly is an active attack? How is it different than =
+any other type
+of possible attack.
+
+Thank you!
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 15: Secure Channels
+4/11/18
+
+SSL 3.0 has since become deprecated, but how often do these cryptographic p=
+rotocols change, and how much effort/overhead does it require to rehaul the=
+ connections of the internet as bugs are discovered.</pre></li>
+
+<li><pre class=3D"student-text">Looking at modern day TLS, it seems like SS=
+L is no longer considered secure enough for use. If that is the case, why d=
+oes the term SSL still seem to be synonymous with secure connection?</pre><=
+/li>
+
+<li><pre class=3D"student-text">Question about Paper
+
+1. They mention that 3.0 uses HMAC, but I remember reading that HMAC is not=
+ 100% verifiably secure. Is this is a current issue being discussed in SSL'=
+s design or is it assumed HMAC is a secure MAC scheme?
+
+</pre></li>
+
+<li><pre class=3D"student-text">Question: Does SSL 3.0 still accept SSL 2.0=
+ connections? Is there a newer version of SSL than 3.0?</pre></li>
+
+<li><pre class=3D"student-text">Question: In the description of dropping th=
+e change cipher spec message, the paper states that the attacker can interc=
+ept the short encryption key and do an online attack against this key. I'm =
+a bit confused about where this happens in the flow. What is the time windo=
+w that they would have to perform this online attack in?
+</pre></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 15
+
+What is the process to get a new internet protocol accepted and implemented=
+? </pre></li>
+
+<li><pre class=3D"student-text">SSL 3.0 was originally released in 1996, an=
+d while I understand that SSL 2.0 should still be supported for backwards c=
+ompatibility issues. Are there plans to officially discontinue SSL 2.0 inte=
+ractions? It seems like Mozilla, IE, Chrome already disable SSL 2.0 by defa=
+ult on their browsers.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Since this paper is written in 1995, I wond=
+er how is the current status of SSL 2.0? Are there any system that still ac=
+cepts 2.0 for backward compatibility?</pre></li>
+
+<li><pre class=3D"student-text">The master secret is a weak point in this p=
+rotocol. Are there alternatives to SSL that avoid creating this single poin=
+t of failure?</pre></li>
+
+<li><pre class=3D"student-text">The paper is written over 20 years ago. Has=
+ the technique evolved in recent years? If so, what is the focused research=
+ direction in this area nowadays?</pre></li>
+
+<li><pre class=3D"student-text">The paper notes a number of issues surround=
+ing active attacks that could compromise SSL 3.0. Were these the major poin=
+ts of concern when replacing SSL with TLS as the standard, were new vulnera=
+bilities discovered, or did SSL become less secure as compute power increas=
+ed?</pre></li>
+
+<li><pre class=3D"student-text">The paper notes that there can be many diff=
+erent implementations of SSL that still satisfy the specification of SSL 3.=
+0, some of which are safe
+from the exploits noted in the paper. In addition, the backwards compatibil=
+ity for SSL 2.0 adds even more different implementations of SSL that
+have varying security properties. Is it inevitable when dealing with the In=
+ternet and its various levels of technological progress that we have
+many implementations of the same protocol? Won't the staggered progress alw=
+ays leave exploits in their wake, especially as exploits are found
+for antiquated techniques?</pre></li>
+
+<li><pre class=3D"student-text">The paper often references export-weakened =
+security and domestic-grade
+security. How much is that still a thing? Have the US-export laws that
+treat encryption as ammunition been amended?
+</pre></li>
+
+<li><pre class=3D"student-text">The =E2=80=9Ccipher spec=E2=80=9D attack in=
+ 4.3 assumes the ciphersuite doesn=E2=80=99t include encryption.  But I tho=
+ught the SSL protocol encrypts all data and messages?  What is and isn=E2=
+=80=99t guaranteed to be strongly encrypted? </pre></li>
+
+<li><pre class=3D"student-text">This paper asserts that SSL 3.0 was a signi=
+ficant improvement over SSL 2.0. A quick search online indicates that SSL 3=
+.0 vulnerabilities were found and had to do with padding vulnerabilties. Wh=
+y does it seem difficult to enforce padding constraints to minimize vulnera=
+bilities? </pre></li>
+
+<li><pre class=3D"student-text">This paper talks about making improvments t=
+o a protocol of that time that make signifcant improvements with relatively=
+ feasible fixes. Are there feasible fixes that can make significant improve=
+ments in today's Internet Protocols, or has internet protocol security plat=
+eaued?
+</pre></li>
+
+<li><pre class=3D"student-text">Was it known originally how insecure SSL wa=
+s or was it another case where security really just wasn't considered?</pre=
+></li>
+
+<li><pre class=3D"student-text">Were changes made to SSL 3.0 after the pape=
+r was written, or would that have required an SSL 4.0?  Is the new TLS simi=
+lar to SSL 3.0, or does TLS run off of a completely new conceptual base?=20
+</pre></li>
+
+<li><pre class=3D"student-text">What are block cipher modes vs stream ciphe=
+r modes?
+What is cipher-block chaining?=20
+I read online that SSL 3.0 was also deprecated later on - was that due to s=
+ome of the security flaws mentioned in this paper?</pre></li>
+
+<li><pre class=3D"student-text">What are some problems that prevent SSL fro=
+m being used today?</pre></li>
+
+<li><pre class=3D"student-text">What does "export-weakened" entail, beyond =
+shorter keys? How are these export laws enforced?</pre></li>
+
+<li><pre class=3D"student-text">What does MAC mean in this context?
+</pre></li>
+
+<li><pre class=3D"student-text">What does change-cipher-spec do? The paper =
+says it "simply alerts the other to upgrade the status of the pending sessi=
+on state to current". But what is the session state?=20
+</pre></li>
+
+<li><pre class=3D"student-text">What does export-weakened mode mean? Is thi=
+s to allow for governments to view international connections? If so, how is=
+ this enforced? If not, what does this refer to?
+</pre></li>
+
+<li><pre class=3D"student-text">What does it mean for an attack to be "acti=
+ve" or "passive"?
+</pre></li>
+
+<li><pre class=3D"student-text">What improvements did TLS make over SSL 3.0=
+?</pre></li>
+
+<li><pre class=3D"student-text">What is a good resource to read about the S=
+SL protocol in general? I generally understood this paper, but I think know=
+ing more concrete details about the protocol would be useful. </pre></li>
+
+<li><pre class=3D"student-text">What is context?
+
+For example, the paper says "The SSL record layer depends on a lot of conte=
+xt to interpret, decrypt, decompress, de-multiplex, and dispatch data from =
+the wire."
+
+Does that mean it uses different algorithms to perform these actions depend=
+ing on where the packet is coming from?</pre></li>
+
+<li><pre class=3D"student-text">What is strong authentication of packets as=
+ mentioned in section 3.3?=20
+
+Would it have been reasonable to require SSL to upgrade to the newest HMAC =
+format before implementing it as standard?=20
+
+What are the benefits of using short-lived cryptographic parameters for con=
+nections? </pre></li>
+
+<li><pre class=3D"student-text">What is the current state of nodes in the n=
+etwork using SSL 2.0 vs 3.0?
+</pre></li>
+
+<li><pre class=3D"student-text">What is the difference between a master_sec=
+ret and a pre_master_secret? What's the point of a pre_master_secret?
+
+The author refers to Diffie-Hellman as 'ephemerally-keyed'. What exactly do=
+es that mean?
+
+Given that the acronym is used a lot, what is MAC in this context?</pre></l=
+i>
+
+<li><pre class=3D"student-text">What was the original implementer's reasoni=
+ng for not putting change cipher spec and alert messages inside the finishe=
+d message? It seems to violate the Horton principle.=20
+</pre></li>
+
+<li><pre class=3D"student-text">What's the differnece between TLS and SSL 3=
+.0?
+</pre></li>
+
+<li><pre class=3D"student-text">What's the main difference between SSL and =
+TLS and what motivated the change to the newer protocol?</pre></li>
+
+<li><pre class=3D"student-text">What's the overhead of SSL? It seems SSL do=
+es lots of=20
+authentication and encryption. Will this significantly
+slow down the communication?</pre></li>
+
+<li><pre class=3D"student-text">When compatibility can be such a problem fo=
+r developing new secure systems, how do large companies or open-source proj=
+ects go about checking that they are not vulnerable to side-attacks from th=
+ose? Does code dealing with compatibility tend to have more security vulner=
+abilities in general than other portions of the code base?</pre></li>
+
+<li><pre class=3D"student-text">When new protocols like SSL 3.0 are/were cr=
+eated, how are they adopted?</pre></li>
+
+<li><pre class=3D"student-text">When researchers describe attacks like the =
+ones in this paper, how do they make
+sure that they are not actualy explited by attackers? Do attackers read sec=
+urity
+papers and try this kind of thing? Do researchers wait to submit to a journ=
+al
+until after an adequate amount of time for developers to fix their bugs?
+</pre></li>
+
+<li><pre class=3D"student-text">Who designs the SSL protocols? Does anyone =
+enforce whether or not people use the protocols?</pre></li>
+
+<li><pre class=3D"student-text">Why are some fieldsheaders in SSL methods l=
+eft unencrypted (aside from those necessary for delivery)?</pre></li>
+
+<li><pre class=3D"student-text">Why are the 2 layers in SSL separated the w=
+ay they are? What's the purpose of having 2 layers?</pre></li>
+
+<li><pre class=3D"student-text">Why can't SSL protect agianst evesdropping?
+</pre></li>
+
+<li><pre class=3D"student-text">Why does SSL 3.0 allow different key exchan=
+ge algorithms? </pre></li>
+
+<li><pre class=3D"student-text">Why does SSL not support random padding for=
+ stream cipher nodes? What is different about padding end of a stream vs en=
+d of a known length url?</pre></li>
+
+<li><pre class=3D"student-text">Will there be a new SSL version?
+</pre></li>
+
+<li><pre class=3D"student-text">With the end of export controls on encrypti=
+on, are some of the attacks in this paper outdated (i.e., ciphersuite rollb=
+ack attacks)?  Said differently, is there any reason why modern SSL would e=
+ven allow weak encryption as an option?
+</pre></li>
+
+<li><pre class=3D"student-text">sq15
+Is SSL a protocol that is used on top of TCP for all or
+almost all client-server connections, or is SSL only used
+for authentication-sensitive applications such as web apps?</pre></li>
+
+<li><pre class=3D"student-text">why havent the flaws in SSL 3.0 been fixed?
+
+</pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--sYVzikTqJ9tFWptVa9xcjnTfFLZX0tBaXpjIUJ602b------

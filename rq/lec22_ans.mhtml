@@ -1,0 +1,1697 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-answers/22
+Subject: Answers for lecture 22 - 6.858
+Date: Tue, 21 May 2018 01:46:08 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--wrUIKwjHX4Kt5IaPrQhxQ3utrKa25wVJBk1Ewar85o----"
+
+
+------MultipartBoundary--wrUIKwjHX4Kt5IaPrQhxQ3utrKa25wVJBk1Ewar85o----
+Content-Type: text/html
+Content-ID: <frame-1195-1c503ca3-7371-464f-a5cb-7353bb72f50c@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-answers/22
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Answers for lecture 22 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Answers for lecture 22 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text">
+Email doesn't have as strong cryptographic properties. A lo tof the securit=
+y proposals take away from usability, which is one of the features that is =
+different about email.  </pre></li>
+
+<li><pre class=3D"student-text">Email is different from normal messaging sy=
+stems in that email servers are usually hosted in open cloud services rathe=
+r than privately controlled so it would be difficult to apply these methods=
+ to email.</pre></li>
+
+<li><pre class=3D"student-text">Email is different than many of the messagi=
+ng systems mentioned in the paper, because you need a trusted server for em=
+ail. This makes certain criteria like confidentiality hard to implement/enf=
+orce (server can intercept and potentially read emails) and anonymity (the =
+server can probably figure out who's sending what)... while it also would m=
+ake other things like "global transcript" easier to enforce (the server can=
+ control/enforce the order in which messages are sent/received by participa=
+nts).
+
+It doesn't seem like it would be that hard to adopt some techniques listed =
+in this paper. For example, some sort of key evolution seems feasible.
+</pre></li>
+
+<li><pre class=3D"student-text">"How does email stack up against the propos=
+ed criteria for messaging? How hard
+would it be to adopt the techniques used in the various messaging systems t=
+o improve
+email security? What makes email different, if anything?"
+
+Email is less secure because it doesn't use the fancy key exchange and evol=
+uton schemes and end-to-end encryption
+and so on. Moreover, it not clear whether features like network MitM preven=
+tion, operator MitM prevention,
+operator MitM detection, operator accountability are not there. Also, the s=
+ecurity guarantees
+are not always reliable considering the occurrences of password leaks and u=
+ser infomation. It would very hard
+to adopt the technique used in various messaging systems because of various=
+ reasons such as backward compatablity.
+I am not sure what makes email different.
+</pre></li>
+
+<li><pre class=3D"student-text">1) email isn't very secure (and only passwo=
+rd protected), and it's hosted on the cloud. I also don't think there is en=
+d-to-end encryption going on in email.=20
+
+2) it would be really hard to adopt these techniques in email if we want it=
+ to be attractive and usable to typical users, which is one of the main fea=
+tures of email.
+</pre></li>
+
+<li><pre class=3D"student-text">1. To avoid MitM, email providers use TLS o=
+r even S/MIME to encrypt=20
+emails.=20
+2. We normally trust the service providers.=20
+3. Some email providers like Gmail has used transparency log for user
+keys.
+The main problem of email is there are multiple email providers and
+they are only required to implement the basic protocol. If one mail
+provider implements lots of secure protocols but another doesn't, the=20
+secure provider should still communicate with the one that only implements
+the basic protocol.</pre></li>
+
+<li><pre class=3D"student-text">5/9/18
+
+Lecture 22
+
+Question:
+
+As you are reading the paper on secure messaging schemes, try to figure out=
+: how does email stack up against the proposed criteria for messaging? How =
+hard would it be to adopt the techniques used in the various messaging syst=
+ems to improve email security? What makes email different, if anything?
+
+Answer:
+
+It would be more difficult to adopt techniques for use in sending emails. O=
+ne possible reason is that in emails, you have to be very
+clear about who you are and who you want to send an email to. This makes an=
+onymity hard.</pre></li>
+
+<li><pre class=3D"student-text">6.858 - SoK
+
+Email has no security guarantees - email headers display sender and recipie=
+nt
+so there's no privacy, and it is prone to mitm attacks. However, the paper =
+argues
+that it should be easy to adopt new security protocols. That then leaves th=
+e
+question of why emails do not adopt security protocols (especially larger
+email servers like Gmail).
+</pre></li>
+
+<li><pre class=3D"student-text">&gt; As you are reading the paper on secure=
+ messaging schemes, try to figure out: how does email stack up against the =
+proposed criteria for messaging? How hard would it be to adopt the techniqu=
+es used in the various messaging systems to improve email security? What ma=
+kes email different, if anything?
+
+One of the central challenges for E-Mail is that it is an asynchronous=20
+protocal and a variety of trust established protocols fail in that situatio=
+n
+or a prone to MITM attacks.
+
+But I am not sure how you mean your question, E-Mail is per default an
+unencrypted protocol that fails on many of these security fronts.
+
+One way is to use e-mail as a delivery system of OpenPGP messages, but that
+effectivly delegates all security concerns to the OpenPGP.=20
+</pre></li>
+
+<li><pre class=3D"student-text">According to table 3, email systems fall in=
+to the store-and-forward scheme, which doesn't provide any privacy properti=
+es,
+but does very well in usability and adoption compared to other schemes. Emp=
+loying multilayered encryption like Tor would increase latency
+and require a network of intermediary servers.
+</pre></li>
+
+<li><pre class=3D"student-text">Answer to Paper Question
+
+Email (for exmample gmail) stakcs up decently against the proposed criteria=
+. It provides some form of trust establishment with a central authority, ha=
+s end-to-end encryption for conversation security, but does not do much for=
+ transport privacy since metadata is not hidden (i.e. time sent, etc.).=20
+
+In terms of trust establishment, there is trust established between the ema=
+il server and the users. Next, end to end encryption on email is possible i=
+f you have an email certificate, which requires purchase. The methods in th=
+ese two categories are adoptable by email since email uses these security p=
+aradigms. Finally, for transport privacy, email does not do much to hide me=
+tadata as this ruins the purpose of email. Tactics such as onion-routing, e=
+tc. prevent fast-communcication which is needed for email. For email, delay=
+s/etc are not acceptable system parameters, making it difficult to provide =
+transport privacy. Thus, it is hard to adopt these schemes for email.=20
+</pre></li>
+
+<li><pre class=3D"student-text">As you are reading the paper on secure mess=
+aging schemes, try to figure out: how does email stack up against the propo=
+sed criteria for messaging?
+Public opinion of security varies, but many other apps rely on email to ver=
+ify users, so this decreases security of their system.  Latency introduced =
+in store and forward
+
+ How hard would it be to adopt the techniques used in the various messaging=
+ systems to improve email security?=20
+ end-to-end encryption would be useful but difficult given decentralized na=
+ture of email
+=20
+ What makes email different, if anything?
+ Email is different because not everyone is using a single application or c=
+losed system. You must be able to share across organizations/domains secure=
+ly</pre></li>
+
+<li><pre class=3D"student-text">As you are reading the paper on secure mess=
+aging schemes, try to figure out: how does email stack up against the propo=
+sed criteria for messaging? How hard would it be to adopt the techniques us=
+ed in the various messaging systems to improve email security? What makes e=
+mail different, if anything?
+
+- Trust Establishment
+    Email does not make it easy to establish that your are talking to the i=
+ntended party.
+
+- Conversation Security
+    While some email services attempt to provide some level of conversation=
+ security via the use of HTTPS, this is not baked into email by default
+
+- Transport Privacy
+    Metadata related to email is not hidden at all and is widely used by th=
+e NSA
+</pre></li>
+
+<li><pre class=3D"student-text">As you are reading the paper on secure mess=
+aging schemes, try to figure out: how does email stack up against the propo=
+sed criteria for messaging? How hard would it be to adopt the techniques us=
+ed in the various messaging systems to improve email security? What makes e=
+mail different, if anything?
+
+Adopting the techniques used in various messaging systems to improve email =
+security would be a difficult feat, although possibly worth it. Email is su=
+ch a massive client with billions of users that any significant change to i=
+t's fundamental use would have to be rolled out slowly. Email is simply a s=
+ubset of messaging and thus the secure schemes mentioned in the paper.</pre=
+></li>
+
+<li><pre class=3D"student-text">As you are reading the paper on secure mess=
+aging schemes, try to figure out: how does email stack up against the propo=
+sed criteria for messaging? How hard would it be to adopt the techniques us=
+ed in the various messaging systems to improve email security? What makes e=
+mail different, if anything?
+
+Both email and instant messaging need security measures for establishing tr=
+ust between senders, privacy for transport, and the conversation itself.
+
+Conversation security can be applicable to email security. For example, asy=
+nchronous communication is present in both email and messaging - both parti=
+cipants do not have be online at the same time.=20
+
+In email, there is no trust establishment between the sender and recipients=
+, since any users can forward mail to others, and receive spam. Since there=
+ are so many email domains and applications, it is hard to maintain uniform=
+ security across all of them.=20
+</pre></li>
+
+<li><pre class=3D"student-text">As you are reading the paper on secure mess=
+aging schemes, try to figure out: how does email stack up against the propo=
+sed criteria for messaging? How hard would it be to adopt the techniques us=
+ed in the various messaging systems to improve email security? What makes e=
+mail different, if anything?
+
+Email is different because emails get copied all over the internet - on the=
+ sender's email account, on the recipient's email account, on the server th=
+at sends the email and on the server that receives the email. Email uses en=
+cryption much less than secure messaging, and emails are often sent/stored =
+in plain text.
+It will be hard to improve email security with techniques mentioned because=
+ many of them would make email more of a hassle/pain for people using it. I=
+n terms of usability, efforts to improve security more negatively impact em=
+ail than they do messaging.</pre></li>
+
+<li><pre class=3D"student-text">As you are reading the paper on secure mess=
+aging schemes, try to figure out: how does email stack up against the propo=
+sed criteria for messaging? How hard would it be to adopt the techniques us=
+ed in the various messaging systems to improve email security? What makes e=
+mail different, if anything?
+
+Email is more approachable (only need to remember/know a human-readable add=
+ress) than the other proposed messaging protocols, but is also significantl=
+y less secure than some.  While it wouldn't be too hard to adopt some of th=
+e techniques used in the various discussed messaging system, it would raise=
+ the bar for usage to a point that may be untenable for its current uses.  =
+For instance, email is meant to be a "lowest-bar" sort of messaging system =
+wherein anyone can message anyone given they know their address.  Putting e=
+xtra "fluff" on it would inhibit this ability.  For better or worse, people=
+ have come to be used to and rely oh this ability.  Not everything needs to=
+ be end-to-end public/private key encrypted with self-deleting messages tha=
+t are password-protected on a person-to-person basis where if you forget so=
+mething you lose all access.  I just want a way to send a message to my gra=
+ndparents that they can understand.</pre></li>
+
+<li><pre class=3D"student-text">As you are reading the paper on secure mess=
+aging schemes, try to figure out: how does email stack up against the propo=
+sed criteria for messaging? How hard would it be to adopt the techniques us=
+ed in the various messaging systems to improve email security? What makes e=
+mail different, if anything?
+
+First of all, email is generally quite insecure when stacked up against the=
+se proposed criteria, but enjoys high usability.  In terms of trust establi=
+shment and conversation security, we are following a protocol with a centra=
+l server - Alice establishes a TLS connection with Google's Servers, tells =
+that server to send an email to Bob, and Bob receives it on a similar TLS c=
+onnection.  Thus, the central server can listen in on our messages, and we =
+trust that we are talking to Bob if he has provided his gmail address in an=
+ out-of-band conversation.  Transport privacy seems no different than any o=
+ther internet browsing we do (that is, there is none).
+
+What makes email different, and correspondingly difficult to secure, is it'=
+s place as a universally usable platform for communication.  If I did not g=
+ive Google access to the plaintext of my email, for example, then I presuma=
+bly could not log into a Google account from any computer in the world and =
+see my messages, or use Google's search functions in Gmail.  Similarly (on =
+a meta-note), without allowing Google to profit off my personal information=
+ for targeting advertisements, they might decide not to offer Gmail as a se=
+rvice in the first place. =20
+</pre></li>
+
+<li><pre class=3D"student-text">As you are reading the paper on secure mess=
+aging schemes, try to figure out: how does email stack up against the propo=
+sed criteria for messaging? How hard would it be to adopt the techniques us=
+ed in the various messaging systems to improve email security? What makes e=
+mail different, if anything?
+
+---
+
+trust establishment:
+I'm not sure there's trust establishment for email...? You simply trust tha=
+t the email you have for someone belongs to the person you think it does. T=
+here's trust establishment for logging on to an email service between the u=
+ser and the service (certificates, etc.)
+
+
+Conversation Security:
+I'm assuming email relies on a trusted server to get messages to the intend=
+ed recipient and the
+trusted central server model is the baseline for the evaluation in the pape=
+r.
+Email's also dependent on username and passwords. If a username or password=
+ is compromised, the attacker can read any of the victim's emails.
+
+Transport Privacy:
+Email is explicitly mentioned as the baseline in the paper.
+
+
+The paper talks a lot about the tradeoff between usability and security. Be=
+cause of that tradeoff I would
+think that it would be difficult to adopt the more secure schemes since the=
+ average user will either be very=20
+annoyed and/or very confused. Scalability and flood resistance would be ver=
+y important for email.
+A lot of the transport privacy schemes in table 3 are not spam resistant. S=
+omething like blockchain would be
+hard to adopt because it's not scalable (and not great on the usability sid=
+e either).
+
+</pre></li>
+
+<li><pre class=3D"student-text">As you are reading the paper on secure mess=
+aging schemes, try to figure out: how does email stack up against the propo=
+sed criteria for messaging? How hard would it be to adopt the techniques us=
+ed in the various messaging systems to improve email security? What makes e=
+mail different, if anything?
+
+1. Trust establishement=20
+- There's actually almost zero trust between email exchange recepients, tak=
+ing into account how easy the sender's email address can be spoofed.
+- A TOFU based approach can be used for an initial key exchange, but a nece=
+ssity to establish email communications with various recepients ad hoc make=
+s the approach inconvenient. =20
+2. Conversation security
+While traditional email doesn't provide end-to-end encryption, it's possibl=
+e to achieve secure communication between two recepients relatively simple =
+using OpenPGP or something like that. However, the biggest challenge arises=
+ in case of group conversations. Sharing the same public key among all part=
+icipants can partially solve the problem, but changes in the group during o=
+ne conversation triggers reinitialization of the protocol every time when i=
+t happens.=20
+3. Transport privacy
+SMTP doesn't provide much privacy, but onion routing can be a way to provid=
+e reasonable sender and participant anonimity. However, not all mail server=
+s accept messages from known tor-exit node mail servers.=20
+  =20
+</pre></li>
+
+<li><pre class=3D"student-text">As you are reading the paper on secure mess=
+aging schemes, try to figure out: how does email stack up against the propo=
+sed criteria for messaging? How hard would it be to adopt the techniques us=
+ed in the various messaging systems to improve email security? What makes e=
+mail different, if anything?
+
+SMTP is the main protocol for sending emails, especially for emails that ar=
+e going from one proprietary service to another (ie from a gmail address to=
+ a yahoo address), whereas internal to one service they don't necessarily u=
+se SMTP.
+
+Trust establishment: there is no trust establishment for emails because SMT=
+P has only a RCPT command which is the email address to which it should be =
+sent and a MAIL command which establishes who sent the email. There is no w=
+ay in the protocol to establish if the email was actually sent by who the M=
+AIL command says or was sent to who you think holds that email. Thus there =
+is no security in trust establishment, but there is usablity.
+
+Conversation security: the DATA command in SMTP holds the message, but ther=
+e is no scheme for encrypting that data. This is usable but not secure.=20
+
+Transport privacy: there is no transport privacy for email, as anyone who s=
+ees the SMTP message can see who is communicating to whom. They can see all=
+ associated metadata.
+
+It would be very hard to adopt the techniques to improve email security bec=
+ause email is so engrained in the world and is necessary for many corporati=
+ons to function. However, all different email services need to be able to c=
+ommunicate to others, so any changes need to be backwards compatible. The m=
+ain thing that makes email different is just how popular it is and how nece=
+ssary it is for businesses, whereas general "chat" can be done in various w=
+ays. It would be incredibly hard to get everyone to adopt a new system for =
+email.</pre></li>
+
+<li><pre class=3D"student-text">Based on the reading and a little bit of di=
+gging around to figure out how email works, it seems like email is not secu=
+re in terms of establishment of trust, conversation security, and transport=
+ privacy by default, although there are a lot of add-ons that can make emai=
+l slightly more secure. Email skips any notion of establishing a trusted co=
+nnection. The only wide-spread authentication strategies that do exit (such=
+ as SPF and DKIM) seem to work on the email server and provider level rathe=
+r than the end user level. Since we do not establish exchange keys with peo=
+ple we email, we do not have any conversation security guarantees, and are =
+dependent on our email servers and the servers of our recipients for conver=
+sation security (i.e. we cannot send secure emails if our recipient's serve=
+r does not use security add-ons).  Furthermore, email does not implement an=
+y transport privacy schemes at all.
+
+I think it would be pretty difficult to adopt the techniques used in the va=
+rious messaging systems to make email more secure, although the paper menti=
+oned that google is developing an end-to-end encrypted email extension. I t=
+hink the main issue is that email is a legacy system, and as such, we have =
+a lot of expectations for how easy it is to use that would make it difficul=
+t to make meaningful security enhancements. We expect to be able to send an=
+ email to anyone we have an email address for. Since the email protocol is =
+very old, it is difficult to make changes while still allowing for backward=
+s compatibility. It is also a very fractured space, with many different ema=
+il service providers.
+
+It also seems like the amount of security we can hope to achieve in terms o=
+f anonymity is limited by us having to trust our email service providers. W=
+hile it would be possible to implement end-to-end encryption, this function=
+ality would have to be implemented by all the email service providers of an=
+yone we hope to communicate with including our own.
+
+Here are is the main site I used to learn about email:
+https://www.viget.com/articles/email-is-completely-insecure-by-default/
+
+</pre></li>
+
+<li><pre class=3D"student-text">Challenges associated with email:=20
+- emails have host servers where all your emails are stored, this is more o=
+f a liability and could allow the host to potentially read your email.
+- emails have a lot of additional data like the headers, sender and recipie=
+nt which are expected to be displayed in plain text, so normal encryption-t=
+ype measured don=E2=80=99t provide any privacy properties for this.=20
+- everyone uses email and it=E2=80=99s hard to get people to adopt a less w=
+idely used but more secure protocol or insist that everyone encrypt their e=
+mails.  </pre></li>
+
+<li><pre class=3D"student-text">Email can use public key encryption. This m=
+atches some of the messaging criterion, but does not involve interactive pr=
+otocols such as zero knowledge proofs or computational intensive protocols =
+to preserve history such as blockchains. Email servers could involve intera=
+ctive protocols but probably couldn't sustain constant computation. Email i=
+s different from messaging in that it has been politically much more long l=
+ived form of evidence. Thus the email record should be immutable.
+</pre></li>
+
+<li><pre class=3D"student-text">Email compares poorly to most of the criter=
+ia supplied in the paper, and this will probably continue for the forseeabl=
+e future. Part of the difficulty in changing the standards is that email is=
+ inherently decentralized. Email servers all have their own standards of au=
+thentication, and it's difficult to coordinate them to all agree on one sta=
+ndard.
+
+Therefore, email fares poorly in trust establishment and authentication (fe=
+w emails are even encrypted, and it's possible to spoof the sender), as wel=
+l as almost all the criteria in the paper. It is certianly not a messaging =
+platform that you would rely on for secure communication.=20
+
+</pre></li>
+
+<li><pre class=3D"student-text">Email does not allow for anonymous senders,=
+ recipients, or participants overall.
+It does not unlink any given message from its conversation, and is not resi=
+stant
+to global adversaries. However, it is very easy to use.  It is also
+topology-independent and has low storage, bandwidth, and computational
+requirements. It is not resistant to spam, though.
+
+Email is the "baseline" example against which Tor-like methods, DC-Nets, an=
+d
+message broadcast are compared. Among these, only the Tor-like methods have=
+ any
+ability to scale storage and bandwidth reasonably.
+
+It would not be too hard for some email providers to improve email security=
+.
+For example, transparency logs are compatible with email, and Google is
+reportedly planning to use them for its email encryption tool.
+
+OpenPGP and S/MIME can also be used on top of email, but their lack of usab=
+ility
+prevents them from being widely adopted.
+
+Email is widely adopted and provided as a service by many different large
+companies. This makes it hard to agree on new security standards and their
+implementations.
+</pre></li>
+
+<li><pre class=3D"student-text">Email does not meet most of the goals outli=
+ned in this paper. It has weak end to end security and does little to ensur=
+e that users are talking to the person they think they are talking to.
+</pre></li>
+
+<li><pre class=3D"student-text">Email does not stack up very well because i=
+t is not secure. It inherently does not provide privacy. When trying to pro=
+vide privacy, there are many usability concerns that occur. For example, if=
+ someone tries to cryptographically sign their emails then they have to mak=
+e their public key available to everyone and people will still know that th=
+ey are sending an email to another person. However, email is easily usable =
+regardless of the security issues.
+</pre></li>
+
+<li><pre class=3D"student-text">Email does not stack up well against the ot=
+her messaging schemes because it cannot guarantee things like authenticatio=
+n and confidentiality. Email also requires the user to put a lot of trust i=
+n the email provider. It would be difficult to adopt some of the techniques=
+ used in the various messaging systems because usability would be impacted =
+greatly since email is so widely deployed.</pre></li>
+
+<li><pre class=3D"student-text">Email doesn't provide end-to-end encryption=
+. It also is not private; sender and recipient are displayed in the header.=
+ Email could be changed to be more ssecure, but it would be expensive to im=
+plement and less usable.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Email falls behind the secure message proto=
+cols described in the paper in that it does not allow for user privacy beca=
+use both the sender and receiver are listed in the email header, and that m=
+ost messages are subject to global adversarial attacks. Email is different =
+from most messaging protocols that are improving their current security bec=
+ause it is not proprietary but is instead used by a large number of product=
+s. </pre></li>
+
+<li><pre class=3D"student-text">Email goes between different websites (like=
+ gmail and hotmail). Thus its not dependent on trusting a single company.=
+=20
+</pre></li>
+
+<li><pre class=3D"student-text">Email has been around since the beginning o=
+f time, and getting any chunk of the internet to adopt new email protocols =
+would be a huge pain. Email is currently extremely insecure, and little has=
+ been done to, say, hide the fact that two people are communicating. It wou=
+ld take a massive overhaul of these ancient protocols.
+</pre></li>
+
+<li><pre class=3D"student-text">Email has been well adopted despite having =
+little security security benefits. It seem like encrypting messages using e=
+xisting systems should provide more security at little cost to usability. M=
+ore cautious user can also use tor tp help hide their traffic. That being s=
+aid emails are stored all over the place so forward secrecy is also importa=
+nt.
+
+</pre></li>
+
+<li><pre class=3D"student-text">Email has many of the usability properties =
+discussed in this paper with almost none of the security properties. Email =
+is also decentralized, which makes it hard to do large-scale security impro=
+vements while remaining compatible with existing clients.
+</pre></li>
+
+<li><pre class=3D"student-text">Email headers include data about the sender=
+ and receiver, making them unsuitable for this end. This makes email diffic=
+ult.
+
+Google planned to introduce a feature called End-to-End to prevent it from =
+vouching for fradulent keys -- all of the certificates used are stored in a=
+ public log.
+
+Long-term asymmetric keypairs (such as PGP) are a simple way to encrypt ema=
+il. This makes the contents of the email difficult to read by an attaker, t=
+here is no anonymity or repudiation. Additionally there is no forward or ba=
+ckwards secrecy.
+
+</pre></li>
+
+<li><pre class=3D"student-text">Email is a much more standard information t=
+ransmission platform that is implemented by a lot of providers. Thus, proto=
+col-level change is much harder than individual messaging platforms. In add=
+ition, since email addresses are relatively public information, weak email =
+password in the beginning is more prone to attack.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Email is decentralized. Gmail is trying to =
+make it centralized by making it harder for end users to run their own emai=
+l servers.
+</pre></li>
+
+<li><pre class=3D"student-text">Email is different.It wouldn't really make =
+sense to apply all the principles we have on messaging to email because the=
+ ecosystem has different objectives. For instance, there's no need for hidi=
+ng origins of emails, and you don't need permissions to send emails to anyo=
+ne. Any kind of headers of an email can't really be hidden. Therefore, I gu=
+ess the restrictions on email are sightly more lax. It's harder to implemen=
+t transport security because the headers can't be encrypted.
+</pre></li>
+
+<li><pre class=3D"student-text">Email is generally less secure than the pro=
+posed mechanism. It would be hard to adopt some of these techniques because=
+ of the sheer volume of users of email. Some of the techniques are not scal=
+able to this volume. </pre></li>
+
+<li><pre class=3D"student-text">Email is inherently distributed, with many =
+different server and software providers. Thus any change to security protoc=
+ols would require worldwide consensus. In particular, end-to-end encryption=
+ with secure key exchange would require many different email software provi=
+ders to agree on a protocol. Moreover, email is often used between stranger=
+s, making initial key exchange very difficult.</pre></li>
+
+<li><pre class=3D"student-text">Email is managed by centralized servers suc=
+h as Gmail, Yahoo, and Outlook. While email is very usable, these servers c=
+an read all our emails if they wanted to. Adopting email security may be di=
+fficult because encrypting emails on these servers would require a key stor=
+age system, not on these servers. This would make multi-device usage more d=
+ifficult, if every user had to store their own keys on their devices.</pre>=
+</li>
+
+<li><pre class=3D"student-text">Email is not a particular secure messaging =
+system. Primarily, this is because it
+uses a simple store-and-forward messaging protocol. Because email headers s=
+tore
+sender and recipient information, email fails to maintain transport privacy=
+.
+This also makes it hard to adopt techniques used in other more secure messa=
+ging
+system to email.
+</pre></li>
+
+<li><pre class=3D"student-text">Email is not very secure compared to the pr=
+oposed criteria for messaging.  It would make it pretty difficult to adopt =
+the various messaging system techniques as described.  Email is different i=
+n one way that it contains a header with sender and receiver information so=
+ simple store-and-forward mechanisms do not provide any security.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Email is pretty different because emails ca=
+n be sent to a variety of people each with different access. However, if yo=
+u simply do the preprocessing for cc's and bcc's and then send the message =
+with those it could work because there is one sender. This issue is however=
+, for keys and encryption you would need to establish some group secret.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Email is pretty good for usability and adop=
+tion, but fails at privacy; I think email is
+somewhat unique because it supports very little anonymity. Something like o=
+nion routing
+seems difficult to implement, and something like Message broadcasting would=
+ be easier to
+implement but expensive for bandwidth.</pre></li>
+
+<li><pre class=3D"student-text">Email is pretty inseure by the proposed cri=
+teria for messaging. Email, for instance does not have confidentiality (ema=
+il providers can access your accounts if necessary), authentication (spoofe=
+d emails), participant consistency, destination validation, forward secrecy=
+ (password), backwards secrecy (password compromises entire account), anony=
+mity (no anonymity), causality preserving (emails can arrive out of order; =
+I've received emails hours late periodically, sometimes even months late), =
+global transcript (out of order), message unlinkability (emails have userna=
+mes that link them), message repudiation (username), participation repudiat=
+ion (username), trust equality (server is trusted).
+
+Basically, email fails almost all of the security and privacy features. Ema=
+il security could, in theory, be improved, but setting up your own email se=
+rvers is hard, and once you rely on trusting a central server, you lose mos=
+t security and privacy. End-to-end encryption helps, but only if it's done =
+on your computer, not on the server. Anonymity would be difficult (though s=
+ince you can register multiple emails, pseudonymity could be possible, but =
+that makes it hard for people to know who you are (authentication). Not sur=
+e how repudiation or unlinkability would work. PGP solves some of the issue=
+s, but fails at many others.
+
+Email is not fundamentally different. If anything, emails should be easier =
+than messaging, because messaging must happen in real time, but email can h=
+appen asynchronously, so it should be strictly easier to secure than text m=
+essaging. It's just that many usability problems plague email just like mes=
+saging, and that makes security difficult (because users prefer usability o=
+ver security).
+</pre></li>
+
+<li><pre class=3D"student-text">Email is pretty terrible with regards to se=
+curity and privacy being provided by a third party. Additionally, email pro=
+vides little anonymity. It would be quite difficult as users are resistant =
+to change. Email is different because of mass adoption and looser privacy e=
+xpectations. =20
+</pre></li>
+
+<li><pre class=3D"student-text">Email is quite insecure. The biggest proble=
+m with email is that email protocols are old, so it is difficult to integra=
+te new standards into them. Key management may also be an issue in email, a=
+s people contact many different people and locating the correct key pair fo=
+r encryption could be a problem. </pre></li>
+
+<li><pre class=3D"student-text">Email is routed by recipient, so the email =
+address has to be visible in the
+transport layer. This means a conversation over email can't preserve anonym=
+ity,
+except via temporary anonymous inboxes, like the paper mentions in Section =
+5E.
+Any form of message encryption can use email as the transport layer, but th=
+at
+leaves key management to the user (and by default, the message is plaintext=
+).
+</pre></li>
+
+<li><pre class=3D"student-text">Email is significantly less secure, but mor=
+e convenient for users. Email relies on central servers for the storage and=
+ delivery of messages. Secure messaging is different because of its often d=
+ecentralized nature, alongside its end-to-end encryption. Many challenges e=
+xist politically as well, as services like Lavabit have been examples of th=
+e lengths to which the government will go in this realm.</pre></li>
+
+<li><pre class=3D"student-text">Email is similar to the proposed systems th=
+at rely on a trusted third party, as the email server is trusted by clients=
+ to send/receive messages w/o tampering.  Adding encryption protocols on to=
+p of email would enable detection of tampering and prevent passive eavesdro=
+pping, so long as users exchanged / verified keys in a "external channel" a=
+s mentioned in some of the protocols in the paper.
+
+Briefly touching on the 3 main topics in the paper:
+- Trust establishment: the user could follow the TOFU protocol, but this is=
+ vulnerable to the server being malicious on this first connection.  Some p=
+rotocol with key exchange (preferably external to the email server) is idea=
+l for establishing trust.
+- Conversation security in email: the use of a trusted central server (in t=
+his case email) makes asynchronicity and multi-device support trivial.
+- Transport privacy - I don't think senders/receivers and metadata can be h=
+idden from the server, but the server can certainly protect users from exte=
+rnal threats.
+
+</pre></li>
+
+<li><pre class=3D"student-text">Email is similar, but I think the usability=
+ requirements would be a little different, in that delivering messages quic=
+kly would be less of a concern. Also, messaging often requires both parties=
+ to "know" each other or agree to communicate (being friends on fb for exam=
+ple), whereas anyone can send anyone email. The discussion on group chats w=
+ould not apply to email (the usability concerns are different from that of =
+mailing lists)</pre></li>
+
+<li><pre class=3D"student-text">Email is weak compared to the proposed crit=
+eria for messaging. It may be hard to adopt the techniques to improve email=
+ security, since people prioritize connectivity over security, and some of =
+the techniques require both ends to adopt them to stay connected. Email is =
+weak compared to the proposed criteria for messaging. It may be hard to ado=
+pt the techniques to improve email security, since people prioritize connec=
+tivity over security, and some of the techniques require both ends to adopt=
+ them to stay connected.</pre></li>
+
+<li><pre class=3D"student-text">Email performs badly in terms of security a=
+gainst the proposed criteria due to the weak encryption. However email is m=
+uch more usable and adoptable than other protocols, so it would be hard to =
+adopt other secure technologies.</pre></li>
+
+<li><pre class=3D"student-text">Email provides partial security with regard=
+s to Trust Establishment. Email is usually communicated over HTTPS, however=
+, since it is opened and displayed by the browser, it is susceptible to vul=
+nerabilities and malicious code in the browser. Furthermore, the use of key=
+s is limited to what HTTPS offers; services like Gmail don't usually provid=
+e users with extra sets of keys.
+
+Email offers partial security in conversation security. Because of HTTPS, e=
+mail can provide confidentiality, authentication, and integrity. However, t=
+he more esoteric properties that the paper describes, such as message unlin=
+kability, are not present.
+
+Lastly, email is not secure with respect to transport privacy. Senders and =
+recipients are not anonymous; the server must know who messages are sent to=
+.
+
+The main difficulty in implementing these security features for email is th=
+at email is not peer-to-peer. It is based on a centralized server that mess=
+ages are sent to. Furthermore, the server must know the identities of the s=
+ender and recipient so it knows how to route messages. Perhaps some anomymi=
+ty can be provided by the use of private keys in lieu of identity like bloc=
+kchain uses, but in the end, the fact that a centralized authority is neede=
+d makes it difficult to implement all the security properties mentioned in =
+the paper.</pre></li>
+
+<li><pre class=3D"student-text">Email provides some chain-of-trust that end=
+s with a central authority. It provides end-to-end encryption for conversat=
+ion security with S/MIME, but does not do much for transport privacy since =
+metadata is not hidden (i.e. time sent, etc.).=20
+
+There is trust established between the email server and the users. Next, en=
+d-to-end encryption on email using S/MIME is possible with an X.509 certifi=
+cate, which requires purchase. The methods in these two categories are adop=
+table by email since email uses these security paradigms. For transport pri=
+vacy, email does not do much to hide metadata since it is practically impos=
+sible. Methods such as mixnets, etc. slows it down, which may or may not be=
+ acceptable for email. For email, delays/etc are usually not acceptable sys=
+tem parameters, making it difficult to provide transport privacy which make=
+s it hard to adopt these schemes for email.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Email relies on a trusted central server to=
+ relay messages between clients -- the central server is trusted to enforce=
+ confidentiality and integrity if messages are relayed using a transport-la=
+yer protocol like TLS. The presense of the trusted central server enables a=
+synchronicity and multi-device support. In regards to conversation security=
+, email can support content encryption through OpenPGP and S/MIME. However,=
+ it is lacking in transport privacy, as email largely employs a store-and-f=
+orward messaging protocol that exposes sender and recipient information and=
+ doesn't provide any privacy properties.=20
+
+Email requires usability and ease of adoption, which renders some of the se=
+cure messaging techniques in the paper less applicable to email. For trust =
+establishment, TOFU with the email server could be considered. For conversa=
+tion security, S/MIME could be used for more enhanced encryption than just =
+transmitting email over TLS. For transport privacy, there may not be much t=
+hat could be adopted, as the server needs to access sender/recipient inform=
+ation in order to successfully route email.</pre></li>
+
+<li><pre class=3D"student-text">Email relies on standard Store-and-Forward =
+architecture where intermediate nodes try to stay light weight. For that re=
+ason sender/recipient information stored in the headers can be exposed. Sen=
+der can apply the encryption to protect the email. However, to do that one =
+needs to know the receiver's encryptino certificate. This itself introduces=
+ extra overhead but it is adopted by current modern email servers. However,=
+ adversaries monitoring a local network or large segment of internet can ea=
+sily mess up with one's emails.
+</pre></li>
+
+<li><pre class=3D"student-text">Email roughly corresponds to messaging syst=
+ems with trusted central servers, as email is sent from clients to mail ser=
+vers and then forwarded to the recipient.
+So email seems like it meets and doesn't meet approximately the criteria th=
+at the trusted central servers model does.
+In particular, it has the same challenges in ensuring properties like forwa=
+rd and backward secrecy.
+Email is slightly different from messaging, in that emails contain larger a=
+ttachments more often than instant messages, but there is often a less stri=
+ngent expectation that messages arrive on time.
+As a result, secure protocols for email would ideally be designed to be mor=
+e performant around these constraints.</pre></li>
+
+<li><pre class=3D"student-text">Email seems clearly well suited for adoptio=
+n, but not for any of the security properties discussed. It seems that modi=
+fying email in any meaningful way would require cooperation of many softwar=
+e / server providers to work in unison. There is also a possibility to add =
+security on top of email, but this requires much additional work by the use=
+rs of this system and risk the recipient of their email not having the corr=
+ect tools to interpret the message.
+</pre></li>
+
+<li><pre class=3D"student-text">Email seems to stack up poorly. </pre></li>
+
+<li><pre class=3D"student-text">Email seems to, generally, not stack up aga=
+inst all of the proposed criteria. I don't see why it would be  hard to ado=
+pt many of the various secure techniques, however. One advantage of email, =
+however, is that its protocol is so simple (and not secure). This allows us=
+ers to easily communicate over different email providers (gmail --&gt; aol =
+--&gt; hotmail, etc). Usability and adoption (getting people to use email c=
+lients that can all exchange keys etc) seems hard. Also, email is generally=
+ not meant to be read soon, so keys might expire.
+</pre></li>
+
+<li><pre class=3D"student-text">Email shares the same foundation that messa=
+ging is built on, with some added features. Thus, the proposed criteria may=
+ be a bit simplified but could be applied to add some security to email. Fu=
+rther protocols would have to be added to cover all aspects of email securi=
+ty. This is because we have added features (e.g. email folders / filtering =
+/ different storage mechanisms / different content capabilities) which give=
+ way to new attacks (e.g. different side channel attacks).</pre></li>
+
+<li><pre class=3D"student-text">Email stacks up very poorly as a secure mes=
+saging protocol, and it would be
+extremely difficult to widely adopt the techniques described. Email message=
+s are
+frequently sent between mail servers over plaintext, and are practically ne=
+ver
+end to end encrypted. Worse, even when encryption is possible and supported
+insecure fallbacks are allowed (generally without even triggering warnings)=
+.
+</pre></li>
+
+<li><pre class=3D"student-text">Email uses PGP, which works in densely-conn=
+ected clusters but not strong outside those clusters. Poor usability (relat=
+ive to not using it), no repudiation, no forward/backward secrecy (as of th=
+is paper). Difficult to adopt new techniques in email because all clients a=
+nd mailservers need to be able to communicate and there's no centralized en=
+tity that can update everyone at once. To the extent that email is fundamen=
+tally different, seems limited to policy/business reasons; no fundamental d=
+ifference in the goal it's trying to achieve.</pre></li>
+
+<li><pre class=3D"student-text">Email uses a store-and-forward security sch=
+eme, which does not include sender, recipient, or participant anonyminity, =
+unlinkability, or global adversary resistance. It trades these for more usa=
+bility. Other messaging methods posess some of these privacy benefits, but =
+lose some usability such as contact discovery or instant messaging.
+</pre></li>
+
+<li><pre class=3D"student-text">Email was never designed to be a secure sys=
+tem, just to relay messages over the Internet. I cannot think of an email c=
+lient that allows message repudiation, for example. To analyze email along =
+each of the proposed criteria:
+- Trust establishment: It's quite easy to spoof the "from" field in an emai=
+l, and depending on the quality of your email client, they may or may not f=
+lag the message. The design is very user-friendly though; you establish tru=
+st by looking at the sender's email address, which is often accompanied in =
+email clients by their name.
+- Conversation security: Most emails are not encrypted at all, as that was =
+not a priority in the original design. There are several encryption options=
+ though, as described on the Wiki page. If we consider the user's password =
+as the private key, knowing the password will give you all the access to th=
+e user's previous messages. Message and participation repudiation are also =
+not available features.
+- Transport privacy: Emails are very susceptible to the network. If you are=
+n't using something like Tor, someone sniffing on the network can tell wher=
+e messages are being sent to and from. Again, it's very usable in terms of =
+cost and setup time.
+
+</pre></li>
+
+<li><pre class=3D"student-text">Emails differ in that it is sometimes used =
+for a mass target audience, for example when the principal of a school wish=
+es to send information to all the students in the school. In this case, it =
+will be infeasible for all pairs of people to exchange keys, and an authori=
+ty will need to be used to facilitate these messages. Other aspects such as=
+ bcc also make it harder to encrypt email contents, as bcc participants sho=
+uld not be allowed to know who the other recipients of the email are. Besid=
+es that, emails are pretty much similar to other forms of messaging.</pre><=
+/li>
+
+<li><pre class=3D"student-text">Emails specifically allows public listing o=
+f sender and receiver address, which is in part why it is useful (so that I=
+ can display an address on my personal webpage for someone to contact me). =
+Therefore, I don't think along the stack we should alter or even make sense=
+ to obtain sender/receiver anonomity. On the other hand, it might be possib=
+le to remove the central service by using, for example, decentralized servi=
+ce center such as blockchain. Messages can be encrypted using standard cryp=
+to techniques(GPG is one example though not so well spread according to the=
+ paper). For spam/flooding resistant, some level of protection can be achie=
+ved by adding throttling control. </pre></li>
+
+<li><pre class=3D"student-text">For emails, its hard to implement any secur=
+ity where there's anonimity/privacy of users can be maintained. It doesn't =
+hold under the attack of a global adversary either.
+Cryptographic measures can ensure confidentiality and authenticity of messa=
+ges. But key exchange is a problem, since the email server always is involv=
+ed. Moreover, consistency/replay attacks are always possible in such a work=
+flow.</pre></li>
+
+<li><pre class=3D"student-text">For trust establishment, email seems usable=
+ (e.g. no need for out of band communication or shared secrets) and adoptab=
+le (e.g. asynchronous, scalable) but I'm not sure how it stands in terms of=
+ security features; I use an HTTPS page when connecting to my email client,=
+ but I don't know exactly what happens when I send an email - is my message=
+ sent encrypted to be stored in some server(s) and then sent to the recipie=
+nt once they log in to view it? The passwords for email accounts would perh=
+aps replace keys in this setting. There's a good deal of trust in the email=
+ provider to not steal my information and to get it to the proper person (w=
+ho is identifiable as the one knowing the password for the account to which=
+ I sent the email; the provider is trusted also to maintain a table of emai=
+l addresses and passwords to log in). When I send email to somebody using a=
+ different email provider, I'm also not sure how the two handle the transfe=
+r of my message; thus I have to trust not only my own email provider (e.g. =
+Google) but also the provider of the recipient (e.g. Yahoo) with whatever m=
+essage I send.</pre></li>
+
+<li><pre class=3D"student-text">How does email stack up against the propose=
+d criteria for messaging?=20
+
+Trust establishment: As far as I can tell, *most* email clients use wrap IM=
+AP/POP3 with SSL or TLS and thus use certificates/certificate authorities t=
+o access email. CA trust establishment, as discussed in the paper, is vulne=
+rable to MITM attacks by the used certificate authorities.
+
+Conversation Security: For example, TLS lacks in a bunch of places as in ta=
+ble 2...
+
+Transport Privacy: Most email clients use Store-And-Foreward, which provide=
+s no privacy whatsoever.=20
+
+How hard would it be to adopt the techniques used in the various messaging =
+systems to improve email security?
+
+Trust establishment: A blockchain might be feasible, but it's not clear how=
+ easy this would be to implement. Other schemes doesn't seem feasible.
+
+Conversation Security: Not too difficult. For example, ProtonMail does this=
+ to an extent. Their SRP protocol uses ADH, and they have end-to-end encryp=
+tion.
+
+Transport Privacy: I think this would be harder to do. For example, using o=
+nion routing seems like excessive overhead that most email hosts wouldn't b=
+e interested in partaking in.
+
+What makes email different, if anything?=20
+
+You, the user, are not communicating directly with your target. That is to =
+say, you're trusting a third party with your information and emails, and th=
+is third party is receiving emails.
+</pre></li>
+
+<li><pre class=3D"student-text">I don't think that the actual techniques wo=
+uld be difficult to adopt for email in the technical sense, but I think it =
+would be very hard to gain user adoption of these techniques.  Messaging ap=
+ps are typically built and controlled by a single entity and can impose the=
+se security techniques.  For email, there are many providers and they would=
+ all need to agree to make these changes.  This would be much more difficul=
+t and is most likely the reason we have yet to see global adoption of more =
+secure email protocols.
+</pre></li>
+
+<li><pre class=3D"student-text">I feel like email lives up to many of the s=
+tandards presented, though is not as strongly encrypted or keyed as somethi=
+ng like TextSecure/Signal. It's very easy to target an individual or a spec=
+ific group (for example, if someone wanted to spam everyone at MIT, they kn=
+ow to use the @mit.edu suffix). It also depends on how much you trust the c=
+entral servers: I may trust Google/GMail servers more than hotmail, for exa=
+mple, to be more resilient to global adversaries and to not drop my message=
+s. I feel like it would be difficult for most email services to adopt sende=
+r/receiver anonymity due to the nature of using consistent usernames. Maili=
+ng lists are one way to help, but are not effective since they basically se=
+rve as a proxy for individuals with certain characteristics.</pre></li>
+
+<li><pre class=3D"student-text">I think email already does pretty well simp=
+ly because it is based on the internet which has had a lot of security work=
+ done on it. A lot of stuff on conversation and transport privacy for examp=
+le has already been worked on, HTTPS, TLS, Tor, etc already provide very go=
+od performance with respect to these properties. Other things such as compu=
+tational equality and trust equality might not be as important for emails b=
+ecause they are taken care of by the service. I think services are also the=
+ primary difference between messaging and emails. In emails, we give some t=
+rust to the services to allow them to provide some level of security on our=
+ end (spam detection, encryption, reliability) but still be able to accept =
+all sorts of incoming traffic. In messaging you need both users to be using=
+ the same service which allows them to be very restrictive in what they can=
+ or cannot do. </pre></li>
+
+<li><pre class=3D"student-text">I think email is lacking in a lot of the pr=
+oposed criteria for messaging. It
+lacks built-in methods for trust establishment, conversation security, as w=
+ell
+as transport privacy. One can maintain conversation security by encrypting
+one's message themselves with an assymetric cipher (as people often do with
+PGP), but this fails to meet the criteria of usability that the authors set=
+.=20
+
+In general, since email is an old design that's already supported in so man=
+y
+instances, it would be very difficult to fundamentally change it to improve=
+=20
+security. One thing about email that makes it different from the messaging=
+=20
+systems discussed in the paper is that it does not require all end-users=20
+use the same client application.
+</pre></li>
+
+<li><pre class=3D"student-text">I think that nowadays, email has switched t=
+o a model where a great amount of trust is placed in the email provider. Al=
+l of the messaging solutions discussed here assume that the actual messagin=
+g service provider could be compromised, or influenced to try and break the=
+ system themselves, and thus these messaging services should be protected f=
+rom that. Today (and for a while now) we just trust email providers like gm=
+ail, outlook, and yahoo to handle the safety with us. We give them power ov=
+er our information, but trust that is the extent of the leakage -&gt; they =
+won't spread the information further.
+
+This is somewhat similar to the Apple model of security. Because Apple cont=
+rols so much of a user's technology stack (computer, phone, email, music, e=
+tc) they can build secure solutions that solve a lot of the bootstrapping s=
+olutions other systems have. They are a central authority with full knowled=
+ge of identities and thus can easily negotiate secret/key exchanges between=
+ users for secure messaging. That convenience doesn't exist in the the worl=
+d as a whole, and is a huge problem for email.
+</pre></li>
+
+<li><pre class=3D"student-text">I'll distinguish two kinds of email:
+
+1) Traditional email where my email client does not use encryption,
+   and email servers relay messages between each other in plaintext:
+   * Security: Low, none of the discussed features is provided
+   * Usability: High, no special effort needed
+   * Ease-of-adoption: Easy, already adopted
+
+2) Idealized email of today where my client uses STARTTLS or I use
+   HTTPS webmail, and my email provider only talks to other email relay
+   servers over STARTTLS
+   * Security: Network MitM is prevented (if all relay servers use STARTTLS=
+),
+     but no more security features than that
+   * Usability: High, no special effort needed
+   * Ease-of-adoption: Easy, already adopted my most major email servers
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">In all categories, unencrypted email ranks =
+highly on usability and ease of adoption but very poorly on security. In tr=
+ust establishment, encrypted email is less usable and not much more secure.=
+ In conversation security, encrypted email is slightly more secure and very=
+ usable and easy to adopt, as it provides confidentiality guarantees. In tr=
+ansport privacy, encrypted email is not very secure, since sender/recipient=
+ data needs to be known for email servers to route messages.
+</pre></li>
+
+<li><pre class=3D"student-text">In terms of trust establishment, email meet=
+s the criteria because it goes through a trusted email server, so users can=
+ trust the email service. In addition, recipients of email have to publicly=
+ broadcast their email address, so trust can be established. In terms of co=
+nversation security, email senders can trust that only intended recipients =
+are able to read the message if they trust the email server (which seems li=
+ke a reasonable assumption). As with iMessage, we can use long-term keys fo=
+r messages. In terms of transport privacy, metadata is not protected becaus=
+e email headers publicly contain information about the sender and receiver,=
+ etc. Transport privacy typically comes with high latency costs, which is p=
+robably unoptimal for email. </pre></li>
+
+<li><pre class=3D"student-text">In terms of trust establishment, email reli=
+es on user judgment to determine whether senders and receivers are legitima=
+te parties they intend to communicate with.
+The user has to share their email, either directly through spoken word or p=
+osting anywhere, to indirectly like on a mailing list. They then have to ju=
+dge
+whether the emails they receive are from legitimate parties, and if the ema=
+ils they send emails to are legitimate as well.
+This is integral to email's efficiency, and any non-automatic methods of ve=
+rifying correct senders and receivers is likely too user dependent. Adding
+any verification synchronous verification scheme defeats the purpose of hav=
+ing an inbox be treated like a mailbox. It would be a hassle for
+users to manually verify each email sender they receive from, and there are=
+ likely scripts in place on most clients that do some heuristic
+based filtering of legitimate and illegitimate senders. As for conversation=
+ security, email by default is not encrypted but there are
+options for encryption for users seeking more secure methods of communicati=
+on. Email clients offer a variety of encryption methods,=20
+with the most widely used ones using HTTPS for encryption of messages. As f=
+or transport privacy, email provides no privacy at all. As mentioned, in
+the paper, the sender and receiver are found in the email headers. Most of =
+the lack of security features stems from a usability and historical
+standpoint. Email remains one of the easiest forms of communication to lear=
+n and use, and therefore propogate its usage throughout generations.
+Modifications to email as a whole is nigh impossible for similar reasons to=
+ modifying Internet protocols.
+</pre></li>
+
+<li><pre class=3D"student-text">It is hard to adopt the technique mentioned=
+ in this paper to email. First of all, there are just too many email users =
+and constantly new accounts are created. This makes key-exchanging infeasib=
+le. Secondly, email is a communication tool where each user is allowed to s=
+end to another user. Therefore, things like authentication and restricting =
+access are hard to apply. Finally, the most important problem for email rig=
+ht now is spamming. However, we can't prevent it the way we prevent DDos wi=
+thout being able to detect spams (which is hard).</pre></li>
+
+<li><pre class=3D"student-text">It seems that email security would be gener=
+ally easier than messaging, except for maybe techniques that require that u=
+sers be online and active in the session. Therefore, I think that technique=
+s used are roughly going to be the same. The main difference is that emails=
+ can be received while a user is offline.</pre></li>
+
+<li><pre class=3D"student-text">Lecture 22
+
+As you are reading the paper on secure messaging schemes, try to figure out=
+:
+how does email stack up against the proposed criteria for messaging? How
+hard would it be to adopt the techniques used in the various messaging=20
+systems to improve email security? What makes email different, if anything?
+
+-------------------------------------------------
+
+At a high level, the functionality of a messaging and email app are the sam=
+e.
+In fact, email has fewer constraints on latency, so it should be easier tha=
+n=20
+messaging. One caveat is that these protocols are device specific, where yo=
+ur
+private keys are only ever on one device. Since I typically check my email=
+=20
+from multiple devices, using these protocols for email could degrade user
+accessibility slightly.
+
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 22
+
+As you are reading the paper on secure messaging schemes, try to figure out=
+: how does email stack up against the proposed criteria for messaging? How =
+hard would it be to adopt the techniques used in the various messaging syst=
+ems to improve email security? What makes email different, if anything?
+
+Email has several features are inconsistent with the security enhancements =
+presented. For one, sender and recipient are included with every email, so =
+it is not very good at preserving privacy. The parties could use random ema=
+il addresses, but these still leak some information. Additionally either pa=
+rty can forward copies of an email to other parties without the first party=
+ knowing this.
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 22
+
+As you are reading the paper on secure messaging schemes, try to figure out=
+: how does email stack up against the proposed criteria for messaging? How =
+hard would it be to adopt the techniques used in the various messaging syst=
+ems to improve email security? What makes email different, if anything?
+
+Trust establishment might be a problem in emails because of low participant=
+ consistency with people constantly being added(cc'd) and leaving email thr=
+eads. Also I don't know how it would work for private mailing lists where t=
+he sender might not directly know the receiver and just sending the email t=
+o the mailing list address.
+Conversation security is also a problem since if there is conversation secu=
+rity there is no way to distinguish spam from genuine email and people's in=
+box will be flooded with hundreds of spam email everyday.
+Transport security might be an issue as well since each server in the path =
+of an email might need to know where it needs to send the email and the ser=
+ver might not always belong to the same company, in which case the metadata=
+ must not be encrypted.</pre></li>
+
+<li><pre class=3D"student-text">Lecture 22 (Answer to Paper Question)
+
+Question:
+
+As you are reading the paper on secure messaging schemes, try to figure out=
+: how does email stack up against the proposed criteria for messaging? How =
+hard would it be to adopt the techniques used in the various messaging syst=
+ems to improve email security? What makes email different, if anything?
+
+
+One security limitation of email: Email relies on trustworthy service provi=
+ders. If the service providers are adversaries, you cannot have trust estab=
+lishment, conversation security, nor transportation privacy.
+
+It doesn't seem like it would be too difficult to implement Trust-On-First-=
+Use or other techniques that improve email security. It would require a cha=
+nge in the protocol though, so it would probably be difficult to get a larg=
+e part of the population to adopt it.
+
+Email doesn't seem to be too different from other types of messaging system=
+s, although I don't think security was a primary design consideration. I th=
+ink scalability was the primary design objective of email.
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 22: Email Messaging Security
+5/9/18
+
+As you are reading the paper on secure messaging schemes, try to figure out=
+: how does email stack up against the proposed criteria for messaging? How =
+hard would it be to adopt the techniques used in the various messaging syst=
+ems to improve email security? What makes email different, if anything?
+
+
+Email is different as there are headers with the users info and not as much=
+ of a need for speed as messaging. </pre></li>
+
+<li><pre class=3D"student-text">Lecture 22: SoK Messaging Reading Question
+
+Email is different because it was made without security in mind at all. It =
+dates back to the
+development and creation of the internet, starting as an academic network. =
+It was the internets
+original form of communication, and given its academic nature, had no conce=
+rn for malicious users
+as all users were contributing academics.
+
+Now several decades later, email is still a central part of the internet, a=
+nd maintained its low
+security implementation for maximized compatibility with other technologies=
+ and maximized adoption.
+
+As a result, email is lacking when compared to more centralized application=
+s' secure messaging protocols.
+We can look at the three different areas that the paper analyzed to evaluat=
+e email's ability to adapt.
+
+
+
+
+Trust Establishment
+
+It would be hard for email to adopt any of the features mentioned in the pa=
+per. As stated on page 6, the
+trust establishment feature are binary in that they either favor the user e=
+xperience or security, struggling
+to do both, however. Email, being universal and user oriented, would not be=
+ able to sacrifice its compatibility
+for properly increased security.
+
+Conversation Security
+
+Again, given emails universal nature, it would be hard to adopt the most se=
+cure procedures. Fortunately though,
+the more basic procedures could be implemented and actually have been imple=
+mented by companies like Google, such
+as simple encryption and cryptography approaches for email security. The mo=
+re complex approaches though would
+again from the user experience and would negatively impact adoption and com=
+patibility.
+
+Transport Privacy
+
+Yet again, use of these implementations hinders adoption and usability, and=
+ so is not feasible to include as
+security for email.
+</pre></li>
+
+<li><pre class=3D"student-text">One key difference between SoK and many com=
+mon email services is the fact that most email services transmit emails in =
+plain text and do not perform text encryption. Until recently (2010) this w=
+as even the case for Google. While this encryption would only protect the d=
+ata from the servers but not while it is being transmitted between other se=
+rvers on the internet.
+Virtru [https://www.virtru.com/blog/encrypt-gmail/] works with Gmail, allow=
+ing true client-side encryption. From the user perspective you must just do=
+wnload the plugin and sign up for an account.
+</pre></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 22
+
+As you are reading the paper on secure messaging schemes, try to figure out=
+: how does email stack up against the proposed criteria for messaging? How =
+hard would it be to adopt the techniques used in the various messaging syst=
+ems to improve email security? What makes email different, if anything?
+
+It seems like the majority of these messaging apps are made from scratch, a=
+nd operate as a messaging service between different users on the same app. =
+This gives them the freedom to define their own protocols and cryptographic=
+ schemes. Email, however, needs to be able to be sent between different typ=
+es of email servers found somewhere on the internet. Email therefore uses a=
+ lot of the same protocols as normal internet traffic, and already has encr=
+yption protocols defined (speed is not as big of a factor in emails, so thi=
+s encryption can be more computationally expensive as well). Because an ema=
+il needs to be routed to other email servers, it also has an unencrypted he=
+ader, so communication between two parties can be recognized (but not read)=
+.</pre></li>
+
+<li><pre class=3D"student-text">Talking about anonymity in the sense of tra=
+nsactions made more sense to me than in this context, messaging. Is it as i=
+mportant in emails, where the purpose is to correspond?</pre></li>
+
+<li><pre class=3D"student-text">Text messages are encrypted in air whereas =
+emails move through the internet in servers. System admins of email could p=
+otentially read emails whereas it would hard to read an individual text whi=
+le it's being sent. But messaging carriers like Facebook can read all the m=
+essages and decrypt them automatically, but the encruption of facebook migh=
+t be more secure than an email provider's. Emails are stored in different p=
+laces and it's on servers on the internet, which make it easier for a hacke=
+r to access. But messages are usually stored on one secure location which m=
+eans there aren't copies but if that one location gets compromised, all the=
+ data is lost.=20
+</pre></li>
+
+<li><pre class=3D"student-text">The emails are more complicated because the=
+re is a lot of 3rd parties involved. When sending an email, it comes throug=
+h 1) the browser web page of the email client, 2) the email server of the s=
+ender, 3) stored on the email server of receiver, 4) displayed in the web b=
+rowser of received. In between each of these, there are also points of inte=
+rnet providers, and in the cases with interprises, some internal barriers. =
+It becomes very hard to protect it from MitM attacks given so many intermid=
+iate barriers.</pre></li>
+
+<li><pre class=3D"student-text">The original SMTP protocol provided no real=
+y mechanisms for trust establishment. Even if the individual connections be=
+tween servers in the route are
+protected through secure channels, the individual servers in the network, i=
+ncluding the operator, can intercept and MITM the communication. Use of TLS
+does provide some protection of messages, but again do not provide an end-t=
+o-end solution. PGP and S/MIME can vastly improve these properties, providi=
+ng
+end-to-end authentication and integrity, but do not see universal adoption.=
+ Thus, there are not a lot of privacy features to email at all, but the
+system remains rather usable.
+</pre></li>
+
+<li><pre class=3D"student-text">The three problems - trust establishment, c=
+onversation security, and transport privacy - are all applicable problems f=
+or email security.=20
+
+However, email differs from messaging in that:
+- There is no real trust establishment between the sender and recipient of =
+an email -&gt; only trust establishment between a user and the email applic=
+ation. This enables users to send to any other email, but also means that u=
+sers can receive spam.
+
+It would be hard to implement trust establishment between sender and recipi=
+ent of an email because there are many different email applications, and yo=
+u would have to make sure all email applications can securely present/verif=
+y user keys.
+
+Conversation security techniques seem pretty transferrable to email securit=
+y. Asynchronous communication is already in place because email does not re=
+ly on participants being online at the same time. Forward secrecy may be ha=
+rd because emails are stored in users' inboxes so if a user's "key", or pas=
+sword, is hacked, the attacker can just read all past emails.
+
+</pre></li>
+
+<li><pre class=3D"student-text">There are a number of differences with rega=
+rds to email that make it harder to secure. For instance, email is used for=
+ both business and personal purposes, with people not often segregating the=
+m. With most of the messaging apps, a fixed number of them are almost exclu=
+sively used for communicating with friends while some are used for business=
+ purposes. This makes it a little mroe challenging to adopt a consistent se=
+curity practice.
+
+For instance, with emails, you might have mailing groups that are huge (aro=
+und 1000 members or so) while with messaging groups, you're unlikely to see=
+ such a large group because physical creation is difficult. In such a setti=
+ng, something like TextSecure seems fairly impractical if you have to excha=
+nge even one tiny message between all participants before being able to dow=
+nload a broadcase message from a central server. Similarly, it might be ver=
+y difficult to establish a prior key with everyone that you possibly want t=
+o communicate with expecially if these are things like customer support for=
+ a service that you've never used before.
+
+It seems to make more sense to come up with different levels of security ba=
+sed on the usecase for email, but this seems harder to implement too.
+</pre></li>
+
+<li><pre class=3D"student-text">Though the paper proposes some methods used=
+ in email, email is less secure compared to this proposed criteria. It woul=
+d be hard to adopt techniques discussed due to adoption/usability/scalabili=
+ty issues.
+</pre></li>
+
+<li><pre class=3D"student-text">Trust Establishment:
+- The encryption baseline I believe already exists at least for gmail and a=
+t least could be added.  However, it's fairly easy to spoof the trust facto=
+r of who you're talking to by changing the name to match a person but have =
+the underlying email not.
+Conversation Security:
+- Emails do have some security, in terms of Gmail for example not allowing =
+javascript to be sent, but overally, there's not much security for items th=
+at can be sent.  I believe it does exist for the server not being able to r=
+ead the messages.  There's no guarantee though for the same participant lis=
+t due to the ability to bcc.  In order to send messages to a subset of the =
+groups, a new email would be necessary, though it could live in the same th=
+read.  There just isn't a clear divide there.
+Transport privacy:
+The email header does provide a lot of information such as who is receiving=
+ what emails, the subject line, and to where they are being sent.  There is=
+n't much privacy there, especially when it comes to things like forwarding.
+Groups:
+- I think it would probably be possible to follow the pairwise encryption s=
+ccheme, but that would grow pretty large when considering emails sent to ma=
+ssive mailing lists.</pre></li>
+
+<li><pre class=3D"student-text">Trust establishment: email requires the int=
+ended recipient to explicitly state its email address so you can determine =
+and trust that the email is being sent to the correct person. Additionally,=
+ email involves a trusted emailing service so by trusting the service there=
+ is trust in the end user.
+
+Conversation security: the user must trust the emailing service not to read=
+ the contents of the email. Because emails will be sent back and forth, lon=
+g-term keys can be used to achieve end-to-end conversation security.
+
+Transport privacy: the sender, receiver and subject line are all visible so=
+ there's little metadata privacy. Existing methods to introduce greater tra=
+nsport privacy also have higher latency, which is inconvenient for email us=
+ers.</pre></li>
+
+<li><pre class=3D"student-text">We can trust end user because email require=
+s the recipient to make their email address known. Services such as gmail p=
+rovide additional trust (as the medium in between) because it enforces some=
+ set of rules (for example, each user must have a unique email address).
+</pre></li>
+
+<li><pre class=3D"student-text">email seems to be the best option when comp=
+aring most of the parameters that we have specified in this paper. In parti=
+cular,
+we note that, if we do manage to avoid the general end platforms that provi=
+de most of the email services, in general we need
+only to trust the network (message transfer agent) - encryption, as describ=
+ed in the paper, is easily implemented, while a number of=20
+privacy and security goals of interest are achieved through the protocols. =
+Given those, it also makes it virtually impossible to widely
+change how email works (like for the case of the internet, we would necessa=
+rily have to implement changes in a multitude of machines
+without any set up or centralized system for such).=20
+</pre></li>
+
+<li><pre class=3D"student-text">how does email stack up against the propose=
+d criteria for messaging?
+	1. trust establishment: users can use TLS to verify the email service prov=
+ider but can't prevent provider from doing funny business.=20
+	2. conversation security: emails are transferred in plain text. So email c=
+an't protect content from MITM and malicious service provider.=20
+	3. transport privacy: message meta is exchanged in plain text. So there's =
+no protection on transport privacy.=20
+
+How hard would it be to adopt the techniques used in the various messaging =
+systems to improve email security?=20
+	1. email is not designed for end-to-end secure communication. So an extra =
+key exchange is required to get end-to-end security. Key exchange is diffic=
+ult.=20
+	2. email, since it is in plain text, is very flexible. It support multi-gr=
+oup chatting, anonymous message, etc. It's hard to find a technology which =
+keeps all these features and provide good security.=20
+
+What makes email different, if anything?
+	1. Legacy protocol, it's hard to update all the email servers.=20
+	2. Multiple email systems collaborate. So it's hard to deploy new security=
+ features. </pre></li>
+
+<li><pre class=3D"student-text">lec22</pre></li>
+
+<li><pre class=3D"student-text">lec22.txt
+
+Question: As you are reading the paper on secure messaging schemes, try to =
+figure out: how does email stack up against the proposed criteria for messa=
+ging? How hard would it be to adopt the techniques used in the various mess=
+aging systems to improve email security? What makes email different, if any=
+thing?
+
+According to the paper we can evaluate email on three different topics: tru=
+st establishment, conversation security, and transport privacy.=20
+
+First trust establishment. Email provides no trust establishment, meaning t=
+hat email can be man in the middled at a number of points, from domain name=
+ resolution to the routing of the email. There's no way for you to guarante=
+e that you're communicating with who you expect using email.=20
+
+Second conversation security, there are things like PGP but they suffer fro=
+m usability issues and a weak initial trust establishment. So long as you a=
+re sure you have the right key, you can encrypt your emails, but ensuring t=
+hat the two emailers have the appropriate keys is difficult. Improvement he=
+re wouldn't take much so long as there is a good initial trust.
+
+Lastly, transport privacy. Because of the way email is routed, metadata abo=
+ut who sent an email and who the recipient is would be very difficult to hi=
+de. This is the area that would be hardest to improve on email, if not impo=
+ssible.</pre></li>
+
+<li><pre class=3D"student-text">=EF=BF=BD=EF=BF=BDEmail security is not gre=
+at, as MitM attacks are easily implementable by infrastructure operators, a=
+s well as viewing message contents and metadata.  However, it fits all of t=
+he papers criteria for usability and adoption.  Security could be improved =
+by implementing static asymmetric cryptography, however this alone would no=
+t allow access to a users messages to expire or be rescinded.  The paper's =
+solution of issuing short term keys could partially remedy this.</pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--wrUIKwjHX4Kt5IaPrQhxQ3utrKa25wVJBk1Ewar85o------

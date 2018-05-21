@@ -1,0 +1,914 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-questions/14
+Subject: Questions for lecture 14 - 6.858
+Date: Tue, 21 May 2018 01:34:01 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--Z5eXd8GTHWip8bfECnPFPPRGSY53xrcTqea0AaHGe9----"
+
+
+------MultipartBoundary--Z5eXd8GTHWip8bfECnPFPPRGSY53xrcTqea0AaHGe9----
+Content-Type: text/html
+Content-ID: <frame-1169-7162fa2d-99d1-4172-85da-297c8705ef7a@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-questions/14
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Questions for lecture 14 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Questions for lecture 14 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text">1. Are RIP attacks still possible in today'=
+s protocol? I have never heard of one that happened recently.
+2. Can you also go a bit in detail about Subnet mask attacks?
+3. Can you also go over the section "Remote Booting"?</pre></li>
+
+<li><pre class=3D"student-text">1. One confusing thing about this paper was=
+ the diagrams that explained the
+	 TCP sequence number prediction attacks. It may be obvious to other people=
+,
+	 but it wasn't obvious for me to see what packets/acks were being sent.
+=09
+2. "Defense against routing attacks must still be considered a research pro=
+blem."
+	 Since this paper was effectively published in 1989, what is the overall s=
+tatus
+	 of defending against routing attacks today? Is it still an active researc=
+h problem?
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">1. The author writes "AT&amp;T=E2=80=99s di=
+al-up Internet service was knocked off the air for many hours when another =
+ISP started advertising a route to a small, internal network." What is the =
+connection between AT&amp;T getting knocked off air and another ISP adverti=
+sing a route to a small, internal network?
+
+2. How do ISPs protect against RIP attacks today?
+</pre></li>
+
+<li><pre class=3D"student-text">1. Today, is there any way for a gateway to=
+ prove it can reach the endpoints it advertises it can reach in the routing=
+ protocol?=20
+
+2. Could you explain what he means when he says that priviledged ports are =
+a bad idea? Does he mean that they should be priviledge separated, where ha=
+ving the priviledge to one port means you cannot access another?
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">6.858 - TCP/IP
+
+- Are there famous cases where TCP prediction caused a serious issue with a=
+n online
+service? e.g. web connection disruption, spoofing the server, etc.
+
+- I'm not very clear as to how finger can be used to give away data. For ex=
+ample,
+  on Athena's AFS system what can finger do that a security engineer would =
+consider
+  "giving away data"?
+</pre></li>
+
+<li><pre class=3D"student-text">AFAIK, the current solution to DDoS attack =
+is using scalable systems that are simply able to absorb the attack. Howeve=
+r, not a lot of web servers can afford such infrastructure. Has there been =
+any recent advances in research in preventing DDoS attacks in other ways?</=
+pre></li>
+
+<li><pre class=3D"student-text">Are ARP and DHCP still a problem today? It =
+seems like we can do pretty decently by just letting the switch be in charg=
+e of them.</pre></li>
+
+<li><pre class=3D"student-text">Are BGP attacks only a subset of the RIP at=
+tacks? In what other settings do attacks akin to BGP route hijacking still =
+take place?
+</pre></li>
+
+<li><pre class=3D"student-text">Are TCP sequence number attacks still relev=
+ant today? Have there been major
+changes in the way that TCP sequence numbers are generated since 2004?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Are any of these protocols/systems no longe=
+r in use today?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Are there better alternatives to the TCP/IP=
+ protocol?
+</pre></li>
+
+<li><pre class=3D"student-text">Are there proposals for authenticating a us=
+er sending mail from an address? Or if a server recieves mail from another =
+service, is there a way to authenticate the message from the source mail se=
+rver?</pre></li>
+
+<li><pre class=3D"student-text">Are these the methods present day hackers w=
+ould still use to hack into systems? Are all of these defenses implemented?=
+</pre></li>
+
+<li><pre class=3D"student-text">Assuming that there is some difference from=
+ the time this paper was published,
+what are the most relevant network attacks today?
+</pre></li>
+
+<li><pre class=3D"student-text">Could you explain in more detail the source=
+ routing attack Bellovin talks about in section 3.1?
+I understand the assumption he's making about a target host using the rever=
+se of source route, and its motivation.
+But I don't quite understand how that lets an attacker gain access to trust=
+ed machines, perhaps because I'm missing some details about how routing wou=
+ld happen in this scenario.
+
+In a compact, haiku form:
+3.1 describes
+an attack using few words.
+Could you provide more?</pre></li>
+
+<li><pre class=3D"student-text">Danny Tang
+data1013
+4/9/18
+
+Lecture 14
+
+The paper itself and the question for this paper show that there are obviou=
+sly still quite a few problems remaining
+from quite a while ago. What can be done, in general, to speed up the proce=
+ss of fixing many these issues?</pre></li>
+
+<li><pre class=3D"student-text">Do you think Cloudfare's encrypted DNS redu=
+ces the attack surface of DNS significantly?</pre></li>
+
+<li><pre class=3D"student-text">Does SFTP address the security problems in =
+FTP?
+</pre></li>
+
+<li><pre class=3D"student-text">Does publishing papers on all the vulnerabi=
+lites act as a good resources for hackers to find new ways to exploit a sys=
+tem? More than help people fix the problems since the vulnerabilities are n=
+ot implementation bugs but protocol issues which would take more effort and=
+ time to fix?
+
+</pre></li>
+
+<li><pre class=3D"student-text">For sequence number guessing, why can't TCP=
+ encrypt the counter for more security against guessing? </pre></li>
+
+<li><pre class=3D"student-text">Given how hackily everything is put togethe=
+r, is there a push to eventually try to transition to a more cohesive, and =
+safer protocol?</pre></li>
+
+<li><pre class=3D"student-text">Has the author looked back on this paper (m=
+aybe not as a direct response) and given an update as to how TCP/IP securit=
+y has changed in the last 14 years?</pre></li>
+
+<li><pre class=3D"student-text">Have there been proposed alternatives to TC=
+P/IP that place a greater emphasis on security? Although clearly none have =
+gained any sort of traction, is there some sort of "academic consensus" on =
+more secure suggestions that may have been wiser choices for the basis of t=
+he internet?</pre></li>
+
+<li><pre class=3D"student-text">How are security improvements and new polic=
+ies brought about? How are decisions made about changes in TCP/IP?</pre></l=
+i>
+
+<li><pre class=3D"student-text">How can TCP/IP stack expected to protect it=
+self against exploitation when used with unsecure routing protocols set up =
+by uncontrollable users?=20
+
+At what point did encryption of messages and other data-leaking elements li=
+ke the TCP handshake become mainstream?=20
+
+</pre></li>
+
+<li><pre class=3D"student-text">How come we never moved on from TCP and sta=
+rted using some other protocol widely after decades?
+</pre></li>
+
+<li><pre class=3D"student-text">How common are these "reflection" papers? I=
+ would be interested in reading
+others if they exist.</pre></li>
+
+<li><pre class=3D"student-text">How common is it for third party authentica=
+tion servers to be used nowadays for a client to authenticate itself to a s=
+ervice. I haven't really heard of such a thing before.</pre></li>
+
+<li><pre class=3D"student-text">How difficult is it to make a change to TCP=
+/IP protocols? Does the difficulty mostly lie in backwards compatibility? <=
+/pre></li>
+
+<li><pre class=3D"student-text">How do BGP attacks happen in the real world=
+?</pre></li>
+
+<li><pre class=3D"student-text">How do most DNS servers today handle resour=
+ce record requests? Are they still vulnerable to address spoofing if DNSsec=
+ isn't implemented?</pre></li>
+
+<li><pre class=3D"student-text">How do you detect compromises such as the o=
+nes in the paper on idle machines in your network?</pre></li>
+
+<li><pre class=3D"student-text">How do you go about instantiating an improv=
+ed protocol across the internet? For example, DNSSEC has been deployed to m=
+aybe ~20% of hosts despite being formulated 20 years ago.
+</pre></li>
+
+<li><pre class=3D"student-text">How effective are bounty programs really, f=
+or fixing security bugs?
+</pre></li>
+
+<li><pre class=3D"student-text">How relevant do you think machine learning =
+techniques are becoming in reducing DoS and spam compared to current securi=
+ty techniques?</pre></li>
+
+<li><pre class=3D"student-text">I am confused about the FTP attacks because=
+ I am not as familiar with how that protocol works and how those attacks ar=
+e orchestrated.</pre></li>
+
+<li><pre class=3D"student-text">I had a hard time answering today's questio=
+n because I don't have much
+experience in the network security field outside of 6.033. What's an
+approachable way to learn about these things (a news website or blog, etc.)=
+?
+</pre></li>
+
+<li><pre class=3D"student-text">I wonder how scalable are updates to intern=
+et protocols. Consider the scenario in which they do discover a better way =
+of=20
+performing all the functions of TCP/IP, and they (inception-question: who a=
+re they?) decide to update how it works.
+What would need to change? Browsers are clearly a key thing in this, as are=
+ any authorities involved in the routing. But
+are there hardware level changes? Can the updates be delivered through the =
+soon-to-change internet itself? How feasible is modifying the internet?
+</pre></li>
+
+<li><pre class=3D"student-text">I'm interested in the IETF. Who makes up th=
+e IETF? I know that the IETF deals with internet standards and things like =
+TCP/IP, but their standards are supposedly voluntary, so what encourages th=
+em to be adopted? What internet security-related things lie outside of the =
+role of the IETF?</pre></li>
+
+<li><pre class=3D"student-text">I'm mostly confused about TCP sequence numb=
+er Predication. I'm still confused about why true random increment generati=
+on versus pseudo random still doesn't fully solve the issue.
+</pre></li>
+
+<li><pre class=3D"student-text">I'm not sure I understood how the "source r=
+outing" attack described in section 3.1 works.=20
+How is the attacker able to "pick any IP source address" and access any fac=
+ilities of that
+machine?
+</pre></li>
+
+<li><pre class=3D"student-text">I've seen in the news very recently that Cl=
+oudflare launched their own DNS at
+  1.1.1.1. Their service has lower latency, and offers DNS or TLS.=20
+
+Is DNS over TLS still vulnerable to cache contamination attacks? Do you nee=
+d a
+cryptographically secure system like DNSSEC to prevent it?
+
+Also, I see that Cloudflare now offers DNSSEC as a service, but I dont
+understand how thats possible if the rest of the internet doesn't use it?
+
+</pre></li>
+
+<li><pre class=3D"student-text">If someone could hijack DNS servers they co=
+uld destabilize the world. I'm sure there are more "doomsday" scenarios in =
+existance. Are there plans in place for these kind of attacks?</pre></li>
+
+<li><pre class=3D"student-text">If someone has control of a network gateway=
+ can they basically conduct a MITM attack on any website? Assuming they und=
+erstand how the website they want to attack works. It would just seem like =
+TCP packets are being dropped or delayed.
+</pre></li>
+
+<li><pre class=3D"student-text">In one of the past answers you say that ISP=
+s don't have an incentive to prevent
+DDOS attacks because they get paid to transmit any traffic. Is the payment
+scheme really established like this? I thought ISPs were generally paid a f=
+ixed
+amount per month to provide a certain amount of network capacity (say a 100=
+ Mb/s
+connection). Given that their own networks tend to be oversubscribed, I'd e=
+xpect
+contributing to a large DDOS attack would lead to degraded service for thei=
+r
+other customers. Am I missing something?
+</pre></li>
+
+<li><pre class=3D"student-text">In regard to the section on finger, how hav=
+e we spent 30 years giving
+away user data at increasingly terrifying scales and only rarely
+stopped to think about the consequences?  Do you think there will ever
+be good solutions for balancing the ability to
+socialize/communicate/share safe information easily, and the ability
+to keep things private?
+</pre></li>
+
+<li><pre class=3D"student-text">In regards to trusted/encrypted emails, wha=
+t are some of the leading factors that hindered mass adoption of schemes ad=
+dressing this problem i.e. PGP
+</pre></li>
+
+<li><pre class=3D"student-text">In the 15 years or so since the reprint of =
+the original paper, have any more serious networking attacks risen? I'm gue=
+ssing that CDN networks are also vulnerable to a range of attacks. </pre></=
+li>
+
+<li><pre class=3D"student-text">In the TCP connection messages in section 2=
+, part of the message sometime includes =E2=80=9CSRC =3D T=E2=80=9D even th=
+ough the source is X. How does X change its source (itself) such that it be=
+comes T for these messages?
+
+On page 4, it mentions =E2=80=9Canother solution to sequence number attacks=
+: randomizing the increment.=E2=80=9D What was the previous solution? Opera=
+ting the counter at a true rate of 250,000 Hz?</pre></li>
+
+<li><pre class=3D"student-text">In the edits the author made he mention tha=
+t DNS vulnerabilites remain to be an issue due to the fact that an attacker=
+ simply needs to lie to create a false record. Has filtering gotten better =
+since he wrote this note in 2004? If so, what has been done to fix these is=
+sues?
+</pre></li>
+
+<li><pre class=3D"student-text">In the paper, Bellovin mentioned the use of=
+ TCP sequence numbers for the initialization vector for counter mode encryp=
+tion. I looked it up, but I don't really understand what he's trying to say=
+ here. Why would the sequence number be used for encryption? Was this a thi=
+ng?
+</pre></li>
+
+<li><pre class=3D"student-text">Instead of randomizing the increment for TC=
+P sequence number, why is the "sequence" number not just randomized?</pre><=
+/li>
+
+<li><pre class=3D"student-text">Is it feasible that internal network attack=
+s may go away as our network infrastructure changes? As people become incre=
+asingly reliant on personal=20
+computing devices and internet services become more robust, it seems like t=
+he use cases for internal networks is largely becoming more about performan=
+ce.</pre></li>
+
+<li><pre class=3D"student-text">Is routing information protocols (RIP) stil=
+l used?
+</pre></li>
+
+<li><pre class=3D"student-text">Is source routing an issue if the attacker =
+cannot read the packets (i.e if they are SSL-encrypted)?
+</pre></li>
+
+<li><pre class=3D"student-text">Is there a good reference for how routing g=
+enerally works?  E.g., from the perspective of a computer trying to connect=
+ to google.com, all the various players involved in establishing that conne=
+ction?  I didn't fully grasp some of the details re: routing attacks in par=
+ticular.
+</pre></li>
+
+<li><pre class=3D"student-text">Is there now a widely deployed method for a=
+uthenticating email? There still seems to be ways for people to make emails=
+ appear as though they were sent by someone else.</pre></li>
+
+<li><pre class=3D"student-text">It seems from this read that TCP/IP is not =
+a secure layer.
+Were the protocols for this layer conceived with the idea that upper layers=
+ would take care of the security?
+</pre></li>
+
+<li><pre class=3D"student-text">It seems like DNS is a really big attack su=
+rface that is also really vulnerable and valuable. Has there been any succe=
+ssful research on how to actively make DNS more secure?</pre></li>
+
+<li><pre class=3D"student-text">It seems like the paper assumes the network=
+ infrastructure (routers, switches, etc.) can generally be trusted to imple=
+ment the protocols correctly. Why is this a safe assumption? Can there be a=
+ny security guarantees in the presence of a rogue router?</pre></li>
+
+<li><pre class=3D"student-text">It seems that in 1989, email, DNS, and FTP =
+was considered part of the "TCP/IP Protocol Suite", or why would section 5 =
+discuss them otherwise, given the title of the paper? Is this classificatio=
+n still made like this today?
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">It seems that some of the vulnerable protoc=
+ols described in the paper still exist because of the difficulty in rolling=
+ out a replacement. Bellovin mentions this in regard to DNSsec, and I was w=
+ondering if it is possible at this point to replace the protocols in this s=
+uite with better versions, or if it is necessary to continue trying to patc=
+h what is already there?
+</pre></li>
+
+<li><pre class=3D"student-text">It seems that the reason we still use these=
+ old protocols is mostly due to their widespread use. Is there anyone at MI=
+T working on secure protocols and changing to a more secure protocol around=
+ the world?
+</pre></li>
+
+<li><pre class=3D"student-text">It's interesting to me that the most secure=
+ systems that we've learned about in this class have come from large tech c=
+ompanies, while systems that arise from consumers are far less organized an=
+d secure. How much power does an organization like the IETF have over the a=
+ctual protocols that are run on the internet? How difficult would it be for=
+ a centralized task force like the IEFT to overhaul a protocol like ICMP? I=
+t seems like improving the rate at which we can adopt new, better protocols=
+ and abandon old, insecure protocols would do wonders for the security of t=
+he Internet...</pre></li>
+
+<li><pre class=3D"student-text">Lecture 14
+Out of the issues described in the paper, which is the most dangerous in to=
+day's context?</pre></li>
+
+<li><pre class=3D"student-text">Lecture 14 (Question About Paper)
+
+Have there been any serious efforts to modernize the internet infrastructur=
+e to deal with security issues? It seems like there have been lots of effor=
+ts to add security features to a system that wasn't originally designed wit=
+h security in mind, so there will always be loopholes.
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 14: My TCP/IP Question
+
+With so many vulnerabilities and threats, how is it that the whole system d=
+idn't break down
+completely at some point? And who exactly is in charge of measuring the sys=
+tem's performance,
+fixing bugs, and making the system more secure?
+
+Thank you!
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 14: Network Security
+4/9/18
+
+This paper points out that using IP addresses as authentication is not a gr=
+eat practice and is rather bug-prone, yet it seems rather necessary to one,=
+ be backwards compatible if it does change, and two to easily navigate thro=
+ugh the web with minimal overhead. Are there other ways beng explored today=
+?</pre></li>
+
+<li><pre class=3D"student-text">Looking at the paper's list of vulnerabilit=
+ies, which do you see as (a) having the most impact due to its severity, an=
+d (b) the hardest to fix?
+</pre></li>
+
+<li><pre class=3D"student-text">Many of the security vulnerabilities descri=
+bed in this paper result from security misconfigurations that are left to t=
+he implementor or system admin to take care of (e.g. properly setting up an=
+d monitoring firewalls, enabling encryption options in email/POP/IMAP). Hav=
+e there been any steps to centralize network security upgrades as opposed t=
+o leaving many features up to sysadmins to implement? (one example that com=
+es to mind is IETF's DNSSEC which seems to have encountered slow deployment=
+... is deployment typically an obstacle in centralizing development of new =
+security features?)</pre></li>
+
+<li><pre class=3D"student-text">Modern websites rely on application level p=
+rotocols to secure data. These protocols generally assume that TCP connecti=
+ons are not reliable. Then are these security improvements on TCP protocol =
+redundant? What's the threaten model to TCP/IP protocol? Specifically, what=
+ security issues should be addressed on application level rather than TCP/I=
+P level?
+</pre></li>
+
+<li><pre class=3D"student-text">My understanding is that CDNs such as Akama=
+i and Cloudflare work by somewhat abusing the DNS protocol; when a site is =
+served over a CDN, a DNS lookup for the site will return the address of an =
+edge server located physically close to the client. This seems like it migh=
+t violate some assumptions that were in place when DNS was originally desig=
+ned (e.g. that a lookup for a given domain would always return the same IP =
+address regardless of the client's location).
+
+Violating the original assumptions behind a protocol often leads to securit=
+y or interoperability issues, because code or infrastructure which relied o=
+n those assumptions might stop working correctly. Has the presence of CDNs =
+caused any significant problems along these lines?
+</pre></li>
+
+<li><pre class=3D"student-text">Question about Paper
+
+What network level authentication mechanisms are commonly used in industry =
+to prevent source address verification attacks? </pre></li>
+
+<li><pre class=3D"student-text">Question: Are there alternative protocol to=
+ TCP which have looked promising from a security standpoint or which have g=
+ained any traction or adoption in the last few decades? </pre></li>
+
+<li><pre class=3D"student-text">Question: Would it be feasible for TCP/IP t=
+o be replaced with a new system from the ground up with security concerns b=
+uilt in? It seems like many parts of the internet infrastructure were desig=
+ned with very different needs in mind, and they have been piece-by-piece ad=
+apted to fit modern needs and modern security concerns. Perhaps it would be=
+ better to redesign from the ground up, though it also seems extremely diff=
+erent to change the entire infrastructure without reducing many people's in=
+ternet access in the process.</pre></li>
+
+<li><pre class=3D"student-text">Recently, there has been a rise of decentra=
+lized computer-computer distributed systems that operate on protocols as we=
+ll.=20
+
+What kinds of security issues arise when protocols are designed with no cen=
+tral authority like this (or do we have to view people who build software a=
+s "centralized" authorities?)
+
+Essentially, could decentralized models be _less_ secure due to this shortc=
+oming?
+</pre></li>
+
+<li><pre class=3D"student-text">Since FTP is not quite safe, why not enforc=
+e STP for all
+file transfer services? Is there any drawback of STP?</pre></li>
+
+<li><pre class=3D"student-text">So, the Berkley implementation is often men=
+tioned--though it seems be often mentioned for its many security flaws--but=
+ I was wondering for what purpose it was initially developed?</pre></li>
+
+<li><pre class=3D"student-text">The commentary in this paper was quite fun =
+to read. What's a good reference to read on how "Kevin Mitnick reimplemente=
+d Morris=E2=80=99idea and used it to attack Tsutomu Shimomura"?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions a detector for uucp acti=
+vity. What kind of software is there to monitor and detect malicious activi=
+ty on your machine? Any useful command-line tools?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions routing protocol vulnera=
+bilities. How do modern routing protocols improve security, and what proble=
+ms still exist?</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that "BGP is easier to a=
+ttack, since it=E2=80=99s conveying more complex information." What specifi=
+cally is meant by this, and what kinds of attacks are targeted towards BGP =
+that would have been infeasible with EGP?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that anyone who can laun=
+ch a DHCP attack can launch a local network attack just as easily, so there=
+ is little worth in securing DHCP. Why does a vulnerability to a DHCP attac=
+k mean a vulnerability to a local network attack? How are they related?</pr=
+e></li>
+
+<li><pre class=3D"student-text">The paper states that an attacker could use=
+ the netstat service to figure out the TCP sequence number and not have to =
+guess it.
+
+I thought netstat is a utlity that displays open ports on a computer. Is th=
+at what he is referring to? How would one use netstat to figure out a TCP s=
+equence number?</pre></li>
+
+<li><pre class=3D"student-text">The paper states that =E2=80=9CThere is sti=
+ll no widely-deployed method of
+authenticating email; one is likely to be deployed in the near future, thou=
+gh arguably for the wrong reason.=E2=80=9D Why does the author claim that i=
+t will arguably be for the wrong reason?</pre></li>
+
+<li><pre class=3D"student-text">There seem to be a fair amount of vulnerabi=
+lities that are still around today.  Being that not much has changed to pre=
+vent these attacks , how common are are attacks using these vulnerabilities=
+ that have not been resolved and are mentioned in the paper?
+</pre></li>
+
+<li><pre class=3D"student-text">There's not a lot of said about OSPF &amp; =
+BGP vulnerabilities. Can you briefly touch upon them?=20
+</pre></li>
+
+<li><pre class=3D"student-text">This paper is structured a little different=
+ly than most of the other papers we've read. Is it common for authors to ta=
+ke a second look at a paper they wrote like this, and add in new informatio=
+n they've learned and correct their past self, or is this unusual?</pre></l=
+i>
+
+<li><pre class=3D"student-text">What are the Berkeley r-utilities?</pre></l=
+i>
+
+<li><pre class=3D"student-text">What are the different security levels B1, =
+B2, C1, etc? Are these military security ratings like Unclassified, Confide=
+ntial, Secret, Top Secret? Or are they something completely different?
+
+What are Orange Book and Red Book?
+</pre></li>
+
+<li><pre class=3D"student-text">What are the main differences between BSD a=
+nd other mainstream OS? In some cases I wasn=E2=80=99t sure which attacks h=
+e mentioned were only relevant to BSD.  </pre></li>
+
+<li><pre class=3D"student-text">What are the most common attacks against TC=
+P/IP today?</pre></li>
+
+<li><pre class=3D"student-text">What are the r-utilities?</pre></li>
+
+<li><pre class=3D"student-text">What changes have been made to DNS since a =
+look back? I remember from 6.033 that DNS has many security issues since it=
+ wasn't designed with security in mind. Are there any plans to replace DNS =
+with something more robust in the future?
+</pre></li>
+
+<li><pre class=3D"student-text">What do these TCP/IP vulnerabilities mean f=
+or "secure channels" established on top of TCP/IP? Eavesdropping and interc=
+epting traffic secured with TLS/SSL?
+
+Also, what prevents an adversary A from simply eavesdropping on the SYN(SN_=
+s) packet sent from S -&gt; C in the TCP handshake and using that sequence =
+number? Is it encrypted somehow?
+</pre></li>
+
+<li><pre class=3D"student-text">What does it mean for TCP packets to be "ho=
+nored"?</pre></li>
+
+<li><pre class=3D"student-text">What exactly are gateways? How does a gatew=
+ay know about all the routes reachable from
+it? Also, what is the difference between exterior and core gateways?</pre><=
+/li>
+
+<li><pre class=3D"student-text">What exactly is the purpose of a worm? Is i=
+t just a demonstration that a network can be hijacked? Can it be used in a =
+positive manner to distribute data or information?</pre></li>
+
+<li><pre class=3D"student-text">What happened to DNSsec? Are there modern p=
+lans for secure DNS, and are they
+being implemented? If not, why not? When I took 6.033 last year we talked a=
+bout
+how DNS was terribly insecure, but I don't recall hearing about any solutio=
+ns
+with popularity.
+</pre></li>
+
+<li><pre class=3D"student-text">What is an alternative protocol to DNS that=
+ could solve the problems it has?
+</pre></li>
+
+<li><pre class=3D"student-text">What is an r-utility?</pre></li>
+
+<li><pre class=3D"student-text">What is the Berkeley system/version?
+</pre></li>
+
+<li><pre class=3D"student-text">What is the current status of DNSsec? Is it=
+ deployed anywhere/do you think it'll become widely used at any time in the=
+ near future?
+</pre></li>
+
+<li><pre class=3D"student-text">What is the difference between POP3 and IMA=
+P, both in terms of security and how the protocol works? Is PCMAIL no longe=
+r used because of the requirement to transmit unencrypted passwords or for =
+some other reason?
+</pre></li>
+
+<li><pre class=3D"student-text">What is the general rule for preventing han=
+dshake protocol exploits?</pre></li>
+
+<li><pre class=3D"student-text">What was the primary motivation of publishi=
+ng this paper (not the 2004 followup but rather the original 1989 paper)? I=
+t seems like outlining many of the potential security problems may lead to =
+increased attacks to exploit such problems. If the focus was on exposing th=
+e problems to promote fixing them, why not share this as a report internal =
+to Bell Labs?=20
+</pre></li>
+
+<li><pre class=3D"student-text">What's the motivation for revisiting a pape=
+r previously published?  Is it typical for an author to revisit papers 10 y=
+ears later and provide comments in this fashion?  I'm curious b/c I've neve=
+r seen this done before.
+</pre></li>
+
+<li><pre class=3D"student-text">While not directly-applicable to the paper,=
+ what kind of defenses have been developed (at the protocol-level) to comba=
+t the ever-growing threat of DDoS-based attacks and why aren't they being f=
+ully adopted?  I know there are CDNs that protect against it through things=
+ such as proof-of-work cookies before setting aside resources to fully esta=
+blish a connection, but that seems more like just a band-aid than a real so=
+lution.  </pre></li>
+
+<li><pre class=3D"student-text">Why did the designers of TCP/IP not predict=
+ the need for better built-in
+security properties?
+</pre></li>
+
+<li><pre class=3D"student-text">Why does the author make such a big deal ab=
+out what Berkeley is doing? He consistently mentions their version of Unix,=
+ their network mechanisms, kernel, something called "r-utilities", etc.</pr=
+e></li>
+
+<li><pre class=3D"student-text">Why is email still so insecure even today?<=
+/pre></li>
+
+<li><pre class=3D"student-text">Why the initial sequence number (ISN) gener=
+ated by the server not be a purely random number? Does the ordering of ISN =
+have any significance?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Why were BOOTP, TFTP, and RARP replaced wit=
+h DHCP? And could you elaborate a bit more on the DHCP vulnerabilities, and=
+ how they compare to BOOTP+TFTP+RARP? The paper doesn't really compare/cont=
+rast them.
+</pre></li>
+
+<li><pre class=3D"student-text">Would Man-in-the-Middle attacks count as a =
+security flaw of TCP/IP protocols?</pre></li>
+
+<li><pre class=3D"student-text">sq14
+
+At what point do protections against spoofing / counterfeit authentificatio=
+n
+become so time-consuming that attackers might be able to use that as a
+denial of service attack? Is the scenario above even possible?=20
+
+</pre></li>
+
+<li><pre class=3D"student-text">sq14
+
+DoS attacks have been around for a long time, and remain
+a prominent attack.  What progress has been made to stop
+DoS attacks, and are there any noteworthy techniques being
+developed and/or researched to stop or at least further
+hinder such attacks?</pre></li>
+
+<li><pre class=3D"student-text">the text mentions that:
+
+the TCP checksum is not
+cryptographically strong; it=E2=80=99s pretty easy to
+launch a variety of attacks against such a
+weak integrity protection mechanism.
+
+Why is that? And have we fixed that since the old days of the internet? See=
+ms like something as important as TCP should have a "strong" checksum.
+</pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--Z5eXd8GTHWip8bfECnPFPPRGSY53xrcTqea0AaHGe9------

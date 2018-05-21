@@ -1,0 +1,1304 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-answers/20
+Subject: Answers for lecture 20 - 6.858
+Date: Tue, 21 May 2018 01:45:17 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--viPvzvjvDRUuxC35CexbXzrLGlySEawg2rQrtQbBYc----"
+
+
+------MultipartBoundary--viPvzvjvDRUuxC35CexbXzrLGlySEawg2rQrtQbBYc----
+Content-Type: text/html
+Content-ID: <frame-1193-7408189b-6c25-47f5-b37e-800fe2674ab9@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-answers/20
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Answers for lecture 20 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Answers for lecture 20 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text">A benefit is anonymity. A technical risk is=
+ lack of security because anyone could use your machine to make connections=
+ to malicious servers on the internet.</pre></li>
+
+<li><pre class=3D"student-text">Some technical risks of running an onion ro=
+uter Tor node on a machine include being vulnerable to DoS attacks, bringin=
+g down the
+usefulness of the machine and disrupting circuits containing the OR. Runnin=
+g an OR also requires intimate knowledge of the Tor
+network or else runs the risk of abuse and attacks being linked to the OR. =
+Some benefits of running an onion router include
+allowing a longer circuit to be made for OP to send data through, making it=
+ harder for an attacker who can compromise ORs
+from compromising whole circuits before the ORs discard the relevant inform=
+ation.</pre></li>
+
+<li><pre class=3D"student-text">- risks:
+  - You could go to jail if you're running an exit node and the traffic isn=
+'t legal--your IP is "responsible".
+  - Your node could be subject to attacks (ex. DDOS).
+- Benefits:
+  - You can analyze traffic patterns and will have an encrypted version of =
+potentially private data. This isn't really much of a positive, and if it i=
+s, it's a bit of a creepy one.
+  - You're contributing to keeping tor usable.
+  - You technically could have an easier time spoofing MITM attacks. Unclea=
+r if this is a positive, though.
+</pre></li>
+
+<li><pre class=3D"student-text">1. For personal security, running a OR on t=
+he same machine as your own OP can help defend against timing attacks that =
+look for correlations between client and server activity. An observer woudl=
+dn't be able to differentiate between locally generated traffic and routing=
+ traffic.
+
+2. Running your own node, assuming you are trustworthy, increases N, the nu=
+mber of OR nodes. Adding more nodes to the network reducing the amount of t=
+raffic an attacker (controlling m nodes) can completely control through the=
+ir own nodes.
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">6.858 - Tor
+
+Benefits:
+  - Having a large number of routers mean that you can use them as rendevou=
+s points?
+  - You can use the router as a start point to mitigate end-to-end attacks
+
+Risks:
+  - Prone to DOS/TLS handshake attacks that eat up computation
+  - Falsely accused of illegal activities that tor users might be doing
+ =20
+</pre></li>
+
+<li><pre class=3D"student-text">A benefit of operating a Tor node is that i=
+t helps to make the overall Tor network faster and more secure. The authors=
+ also state that it may also offer the operator better anonymity. It does n=
+ot always have identifiable benefits for the person running the node, howev=
+er.
+
+Risks of running a Tor node may include legal action by governments (seizur=
+e of hardware) or blacklisting of the node's IP address by government or ot=
+her non-Tor-friendly sites, particularly for exit node operators.</pre></li=
+>
+
+<li><pre class=3D"student-text">A benefit of running an onion router on my =
+own machine is for better anonymity, to make it harder for adversaries to a=
+nalyze my traffic patterns. A risk is that if my node goes down, all the ci=
+rcuits going through my node will also be broken. In addition, there may po=
+ssibly be the risk of being associated with illegal criminal activity.</pre=
+></li>
+
+<li><pre class=3D"student-text">A benefit of running the OR on your machine=
+ is that it is easier to compromise if it is run remotely, which would comp=
+romise all future connections through it. A risk is that an attacker compro=
+mising an OR vs. just a client will have a lot more power.</pre></li>
+
+<li><pre class=3D"student-text">Advantage:
+Running a node would give volunteer with publicity and better anonymity.=20
+
+Disadvantage:
+There may be a source of abuse and there is a concern about running a node =
+on the machine in affecting performance of your own machine for other tasks=
+.
+</pre></li>
+
+<li><pre class=3D"student-text">Advantages and disadvantages of running a t=
+or node:=20
+
+Advantages:=20
+    Encryted traffic
+    Hidden entry point to network
+    Low bandwidth
+Disadvantages
+    some websites ban tor?=20
+
+</pre></li>
+
+<li><pre class=3D"student-text">An attacker might be able to use timing att=
+acks to infer the indentity of a user/client. Thus, if the client has its o=
+wn onion router, it can possibily foil the attacker by routing packages som=
+ewhat randomly to defense against such attacks. On the other hand, adding a=
+nother router adds up the brittleness of the system(especially the circuit =
+around that node), therefore one might need the custom router to be strong =
+enough against possible attacks.
+ </pre></li>
+
+<li><pre class=3D"student-text">Answer about Paper Question
+
+The benefits are that it allows you to get around censorship, allows you to=
+ to be anonymous to websites as well as hide IP address, and then also prov=
+ides anonymity through obfuscating traffic. The risks are that it gives fal=
+se-sense of security (leaked information), exit/entry nodes see the the pla=
+intext traffic, and authorities can still monitor/track a users' ISP connec=
+tions leading to other privacy losses. </pre></li>
+
+<li><pre class=3D"student-text">Attackers could implicate your OR in illega=
+l activities. Your OR might also have to process many connections to the re=
+quested destinations and relay data. Running an OR node on your machine pro=
+vides the best anonymity because traffic coming from your own node could pl=
+ausibly have come from elsewhere.</pre></li>
+
+<li><pre class=3D"student-text">Benefit of running onion router is that you=
+ promote anonimity (anonymous browsing experience). Technical risk is that =
+it gives a lot of traffic.
+</pre></li>
+
+<li><pre class=3D"student-text">Benefit: The user maintains TCL connections=
+ to all other onion router. So if the user wants to use Tor himself, it wil=
+l be faster. Also, the user doesn't have to worry about being deceived on t=
+he router membership list. Most importantly, running your own OR is safer a=
+gainst end-to-end traffic confirmation, because traffic coming from your no=
+de could plausibly have come from elsewhere.
+
+Risk:=20
+1. A lot of information flow goes through your PC, costing a lot of bandwid=
+th.=20
+2. Tor's code might not be perfect, leaving you vulnerable to potential att=
+acks.
+3. Attackers might decide to DoS you.
+4. The FBI might decide to arrest you.</pre></li>
+
+<li><pre class=3D"student-text">Benefits
+    - Improve security of the overall Tor system
+    - Can have a private, anonymized web experience
+    - Increase the performance of the Tor system
+
+Risks
+    - Experience significant traffic which can be used to deanonymize you
+    - Drains battery life due to CPU=20
+    - Likely to be a point of attack for deanonymizing other users
+</pre></li>
+
+<li><pre class=3D"student-text">Benefits include convenience. Being directl=
+y on the Onion Network is helpful because it lowers latency for yourself, b=
+ut it comes at the drawback that you might be attacked by DoS attacks or ot=
+her maliciousness.
+</pre></li>
+
+<li><pre class=3D"student-text">Benefits of running a node:
+ - Make the Tor network more robust to attackers (for example, the more nod=
+es there are on the network, the more nodes an attacker needs to control in=
+ order to correlate a significant fraction of traffic; the more nodes, the =
+more resilient the network is to DoS)
+ - Makes the Tor network more performant (greater total bandwidth)
+ - Provides better privacy for users
+
+Risks of running a node:
+ - legal concerns: running an "exit relay" exposes the administer to legal =
+risk depending on the content that is being passed through
+ - exposure to attacks: for example, someone running a node is more likely =
+to be targeted for a DoS attack.</pre></li>
+
+<li><pre class=3D"student-text">Benefits of running an onion router Tor nod=
+e include increased privacy in the sense that it is harder for communicatio=
+n links to be tracked. Risks include being a targeted point of attack -- be=
+ it through bandwidth overload in cases of dynamic conditions (accidential =
+or intentional congestion) on the Tor network, denial-of-service attacks mo=
+unted on a node by forcing it to continously perform expensive cryptographi=
+c operations, and being susceptible to the brittleness of the network (if c=
+onnected nodes to the Tor node go down, all streams are broken and the Tor =
+node is left isolated as it has to rebuild its circuits/streams). Any Tor n=
+ode is susceptible to attackers performing "antisocial" activites in attemp=
+ts to bring down reliable nodes and undermining the reliability of the netw=
+ork.</pre></li>
+
+<li><pre class=3D"student-text">Benefits:
+    it'll be hard for other people to tell what traffic is your stuff and w=
+hat traffic is others' stuff.
+
+Risks:
+    you'll probably be a high(er)-priority target for various attacks.
+</pre></li>
+
+<li><pre class=3D"student-text">Benefits:
+- Traffic through me, could possibly get paid for it if its a BGP like setu=
+p
+- Don't have to do much routing or path construction like a normal router, =
+just path extension, decrypt and follow path suggested by the packet itself=
+ since the user has already created it
+- Token bucketing on the tor servers end to prevent bandwidth hogging
+
+Risks:
+- Sources will know my existence, so can potentially overwhelm me or DoS me=
+ and affect other traffic of mine
+- Overhead of key exchange with individual sources and potentially storing =
+all this information
+- Onus is on you to be highly protective of keys etc. This is even higher i=
+f you are a guard node.
+- Need some support for congestion control in addition to traffic shaping
+</pre></li>
+
+<li><pre class=3D"student-text">Benefits:
+	- You're a good person
+
+Risks
+	- could be a target of a DoS attack</pre></li>
+
+<li><pre class=3D"student-text">Benefits:
+-circumvent censorship
+-provides anonymity by routing traffic through three relay servers (somewha=
+t like using three proxies)
+-can be utilized to provide anonymity to websites (.onion TLD available onl=
+y within Tor, and there is no exhaustive directory/search) which are only a=
+ccessible by other Tor users (hidden services)
+-hides your IP address
+
+Risks:
+-Authorities can monitor and track users' ISP connections even if they can=
+=E2=80=99t find the real IP addresses hence:
+-May provide a false sense of security to non-technical users, especially t=
+hrough leakages such as DNS, applications not configured to use the local T=
+or proxy port, etc
+-Low latency anonymizers are prone to traffic analysis
+-Exit nodes see traffic in plain (no encryption, unless encrypted at applic=
+ation layer)</pre></li>
+
+<li><pre class=3D"student-text">Benefits:
+Anonymity
+Can transfer traffic, contributes to the network
+
+Disadvantages:
+Risk of abuse from other nodes
+IP marked
+</pre></li>
+
+<li><pre class=3D"student-text">Benefits: Privacy --&gt; Hard to tell origi=
+n of packets
+Risks: DoS attacks, implication in illegal activity if packet involved in t=
+he said activity routed through user=20
+</pre></li>
+
+<li><pre class=3D"student-text">Benefits: There will be a lot of traffic co=
+ming out of your machine so it will be even more difficult to tell which tr=
+affic is yours.
+Risks: You don't control what traffic is coming through, so illegal traffic=
+ may come through your network.
+</pre></li>
+
+<li><pre class=3D"student-text">Benefits: You get to use TOR. If run an exi=
+t node, you can sniff the traffic.=20
+
+Not-Benefits: If you are an exit node, you bear more of the burden because =
+you are connected to the outside world and not to another TOR node. Attacke=
+r could trick your OR to run software that provide users with less anonymit=
+y.A benefit of running an exit node would be that you can sniff the exit tr=
+affic.
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">Benefits: allows you to send/receive traffi=
+c anonymously, risks: possible legal liability
+</pre></li>
+
+<li><pre class=3D"student-text">Benefits: slightly stronger anonymity becau=
+se traffic is never traveling alone out of your machine; it originates mixe=
+d in with everyone else's. No risk of attacker controlling start and end no=
+de since the start one is yours (hopefully).
+
+Risks: Everyone else's packets are now passing through your machine and hav=
+e the opportunity to attempt to exploit it. Having all of your traffic alwa=
+ys originate from the same node may leak information.</pre></li>
+
+<li><pre class=3D"student-text">By running a TOR node, you increase the tot=
+al capacity of the network.
+
+One risk of running a Tor node is that your ISP may not be pleased, and you
+could otherwise attract unwanted attention. Another risk is that if you are=
+ also
+using Tor, a sophisticated attack might be able to correlate the two source=
+s of
+traffic and compromise your privacy.
+</pre></li>
+
+<li><pre class=3D"student-text">By running a tor node, the user is connecti=
+ng to the network not just from their own traffic, but also by connecting d=
+ifferent circuits. This can help frustrate traffic analysis. However, this =
+also means tha the user is more susceptible to DDOS attacks or being implic=
+ated in the wrongdoings of others using the network. In essence, by connect=
+ing yourself tighter to the network, it is harder to determine what actions=
+ are yours, but also you take increased liability of the actions of the net=
+work as a whole.
+</pre></li>
+
+<li><pre class=3D"student-text">By running an OR Tor node you sacrifice ban=
+dwidth on your machine. The OR is
+also run as a normal user-level process without special privileges, so if y=
+ou
+mistakenly downloaded a malicious fake version of the software you could ha=
+ve
+your private files read.
+
+If you are an exit node you could be implicated in the legal actions of the
+clients whose traffic you relay. If you are a location-hidden service, thou=
+gh,
+you do not even expose your IP address.
+
+Overall Tor is designed to minimize exposure from running the service to
+encourage adoption, which increases anonymity for everyone.
+
+As far as gain, you gain more anonymity in your communications because it i=
+s
+less clear which cells originate from you and which you are merely relaying=
+.
+</pre></li>
+
+<li><pre class=3D"student-text">By running your own OR, you run the risk of=
+ somebody claiming that some illegal activity actually came from your machi=
+ne, or of some service blocking your IP when malicious traffic comes throug=
+h it - hopefully TOR helps mitigate this!
+</pre></li>
+
+<li><pre class=3D"student-text">By running your own router you have more an=
+onymity. However if the node
+is used by someone else and is somehow tracked, your network could be
+compromised.</pre></li>
+
+<li><pre class=3D"student-text">Collaborated with Claire Nord
+
+The technical benefits of running an onion router include increased anonymi=
+ty
+since there would be more traffic running through your access point.=20
+
+The technical risks of running an onion router include being implicated in
+potentially illicit activities occurring over the network (if you're an exi=
+t
+node), and use of bandwidth. =20
+</pre></li>
+
+<li><pre class=3D"student-text">I belive that middle relays are in general =
+safe from major risks, since they only have packets passing through them - =
+they are not able to open those packets and so on. A bigger problem probabl=
+y occurs in the exit relays, since now this IP is the one that is critical =
+for communicating. This means that an "attacker" or "evil user" going throu=
+gh this relay might do bad stuff that is then labeled with this exit relay.=
+ So in the general the risk is legal and social. I couldn't find any specif=
+ic reasons for why anyone would become a node if not though the general hac=
+ker feeling and general mission that Tor embraces. An interesting blog post=
+ wrote: "In the grand scheme of things, Tor is pretty benign. I fluctuate b=
+etween 2-5 Mb/s depending upon how much transit I've consumed for that bill=
+ing period. Tor's bandwidth controls are surprisingly accurate. When I conf=
+igure Tor to consume 1.8TB of transit over 30 days, it'll do it and not a b=
+yte more." although they did *not* mention why it was benign or how.
+</pre></li>
+
+<li><pre class=3D"student-text">It seems like the only "benefits" of runnin=
+g a Tor node is that you contribute to the overall Tor project, and feel go=
+od for doing so.
+
+Technical risks include: High usage of your machine's bandwidth through ser=
+ving other relay requests (or worse, DoS attacks), you probably will end up=
+ on a government blacklist, you won't be able to watch Netflix.
+</pre></li>
+
+<li><pre class=3D"student-text">It's necessary to distinguish between runni=
+ng a relay node and running an exit
+node. Running a relay node helps strengthen the anonymity of the Tor networ=
+k
+overall, and it can be used as a guard and therefore protect user IPs.
+Disadvantages include large banwidth usage, and the risk of getting blocked
+from websites that dislike Tor.
+
+Running an exit node is riskier. It's technically beneficial in that it fur=
+ther
+strengthens network security by increasing the number of Tor exits, and it
+increases your own anonymity (i.e. protects you against end-to-end attacks)=
+ in
+that traffic coming from your node could plausibly have come from somewhere
+else. However, it opens you up to loss of anonymity in another sense becaus=
+e
+all traffic from the exit can be traced to your IP address (and this can ca=
+use
+severe legal issues since you can't control what content is held in the tra=
+ffic
+coming through your node).
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 20 (Answer to Paper Question)
+
+Question:
+
+What are the technical risks and benefits of running an onion router Tor no=
+de (i.e., not just a client) on your machine?
+
+
+Risks: Many use Tor's anonymity guarantees to do something illegal. Because=
+ of this, in the past, the NSA and FBI have specifically targeted Tor users=
+. Although nobody has been sued or prosecuted for running Tor, it's somethi=
+ng to keep in mind.
+
+Benefits: Tor allows users to browse the web anonymously. This is especiall=
+y useful in authoritarian states, where governments censor their citizens' =
+access to the web.</pre></li>
+
+<li><pre class=3D"student-text">Lecture 20: Anonymous Communication Nick Ma=
+tthewson
+5/2/18
+
+What are the technical risks and benefits of running an onion router Tor no=
+de (i.e., not just a client) on your machine?
+
+- increased risk of getting attacked as by getting control of a machine tha=
+t runs an OR they can observe traffic
+- DNS attacks, though user specifies how much resources they're willing to =
+give
+
++ increased anonymity because traffic from user node might not necessarily =
+be user traffic (diverted from elsewhere)</pre></li>
+
+<li><pre class=3D"student-text">Lecture 20: Tor Reading Question
+
+Risks
+
+  This is more of a detriment than risk, but increased latency.
+  On a related note, attackers could make matters worse by running a DoS at=
+tack by initiating numerous fake handshakes across the system.
+  There is also the worry of accidental or intentional congestion if enough=
+ users choose the same OR to OR connection.
+  There are more attacks possible, but I would not qualify them as risks, b=
+ecause they do not put users at more risk than they would be without Tor.
+
+Benefits
+
+  Encrypted traffic, mostly preventing attackers from seeing exactly what u=
+sers or doing, or making it hard to see at least.
+  This also provides user anonymity, again preventing or at least making it=
+ harder for attackers to know which user's traffic they are interacting wit=
+h.
+</pre></li>
+
+<li><pre class=3D"student-text">One of the benefits of running an onion rou=
+ter is increased anonymity. It becomes more difficult for an adversary to d=
+etermine if traffic coming from your machine is generated by you or by othe=
+rs on the Tor network. The risk is that you will have to give up some of yo=
+ur bandwidth and memory in order relay cells in the Tor network. It now bec=
+omes possible to be the victim of DoS attacks on the Tor network. Furthermo=
+re, it is possible to be "framed" or smeared for bad behavior on the intern=
+et - for example if someone on the Tor network conducts an attack or access=
+es bad content through your router.</pre></li>
+
+<li><pre class=3D"student-text">One of the dangers is that you as the user =
+will be associated with that onion node.
+</pre></li>
+
+<li><pre class=3D"student-text">One risk of running a Tor router on your ma=
+chine is that you're allowing other people's traffic to use your network, w=
+ithout knowing what the traffic is or if it is legal.=20
+One benefit is that running a Tor router adds a router to the network, whic=
+h helps the anonymity of the Tor community as a whole.
+</pre></li>
+
+<li><pre class=3D"student-text">One risk of running an onion router Tor nod=
+e is that an ISP might notice that a node sends messages to potentially-ske=
+tchy domains (on behalf of other clients), and incorrectly conclude that th=
+e node administrator is malicious. A potential upside is that the node admi=
+nistrator would be able to plausibly deny having sent any given traffic.
+</pre></li>
+
+<li><pre class=3D"student-text">One risk of running an onion router Tor nod=
+e on your machine is that you could be the exit node, meaning that your IP =
+would be recorded and you could be identified as someone passing illegal pa=
+ckets of other Tor users. One benefit is that it could provide extra anonym=
+ity because you can't tell if packets from your node are from other users o=
+r from you.</pre></li>
+
+<li><pre class=3D"student-text">Pros
+- You are adding more nodes to hop through in the system. This will help in=
+ sharing load/bandwidth and will reduce access time of requests sent over t=
+he network.
+
+Cons
+- Running such a network requires work -- need to install a dedicated serve=
+r, respond to copyright violation notices, risk having your AP being blocke=
+d by your ISP, etc.</pre></li>
+
+<li><pre class=3D"student-text">Pros:
+- You are contributing to making Tor better and faster
+- You get faster service due to your participation
+Cons:
+- Running a Tor relay takes up computational resources
+- Your ISP could think that you are doing suspicious stuff and you could ge=
+t into trouble
+- Random data (though encrypted) is going through your computer</pre></li>
+
+<li><pre class=3D"student-text">Question: What are the technical risks and =
+benefits of running an onion router
+Tor node (i.e., not just a client) on your machine?
+
+Answer: Risk-wise, setting up your machine as a onion router node can open
+yourself up to potential DDoS attacks. Benefit-wise, by running an addition=
+al
+onion router, you make the Tor network bigger, and therefore more resilient=
+ from
+hostile union router attacks as described in Section 7.
+</pre></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 20
+
+What are the technical risks and benefits of running an onion router Tor no=
+de (i.e., not just a client) on your machine?
+
+There are only 32 nodes on the TOR network at the time of this paper.=20
+
+Some benefits of running an onion router node are:
+-ORs can write to packet headers or rename itself to give warning to receiv=
+ing servers that the packets have gone trough an anonymity network and thus=
+ may be risky
+-Your OR can see routing information on packets and filter hostile sources
+
+Some risks of running an onion router node are:
+-At risk of DoS attacks
+-An attacker who learns your OR TLS private key can impersonate you
+-You are at risk of iterated compromise where an adv. compromises ORs down =
+the path. </pre></li>
+
+<li><pre class=3D"student-text">Risks of running an onion router:
+* If someone uses my OR as an exit point to perform illegal activities, it =
+looks like I'm performing the illegal activities and I might get into troub=
+le for that. To prevent this, I could change my exit policy from "open" to =
+"middleman" or "private", but then I'm less useful for the Tor network
+* "Each onion router maintains a TLS [17] connection to every other onion r=
+outer" -- this might result in (too?) many open TCP connections on my machi=
+ne
+* An attacker can fake the start of a TLS handshake, which requires me to m=
+ake some expensive cryptographic calculations at no cost for the attacker, =
+so an attacker could run a DoS attack against my CPU
+
+Benefits of running an onion router:
+* Feeling cool
+* Helping users who want to or have to stay anonymous
+
+</pre></li>
+
+<li><pre class=3D"student-text">Risks:
+- If running an exit node, you have to set exit policies to mitigate exit a=
+buse.
+
+Benefits:
+- If running an exit node, you can sniff traffic that goes through the node=
+.</pre></li>
+
+<li><pre class=3D"student-text">Risks:
+- Worst when running an open exit node, which makes all traffic coming out =
+seem like it was sent by you (lots of spam, serving illegal content, etc.)
+   - Could result in legal consequences
+   - Could result in network bans / censorship (for spam or censored conten=
+t)
+- Takes up network bandwidth (although token-limited)
+- Takes up computational resources
+- If there are weaknesses in the node software, attackers could exploit the=
+m (just like running any web server)
+
+Benefits:
+- Altruism: enabling others' anonymity (political dissidents, etc.)
+- Can study traffic coming through network
+- Can attack network if you get enough (ability as a benefit?) - government=
+ nodes
+</pre></li>
+
+<li><pre class=3D"student-text">Risks:
+1. DoS attack can be performed on Tor node.
+2. Overhead to their machine if there are many connections
+through it.
+3. May leak some private information.
+
+Benefits:
+1. The machine running node may also use Tor service.=20
+2. Volunteers running node are rewarded with publicity=20
+and possibly better anonymity.=20
+3. More nodes means fast speed and each node itself=20
+benefits from that.  </pre></li>
+
+<li><pre class=3D"student-text">Risks: malicious users (who may abuse the n=
+etwork/conduct attacks), exposure to malware, abuse complaint emails, may g=
+et blocked from services that censor Tor users, normal home router may be o=
+verwhelmed/unable to handle the quantity of connections =20
+
+Benefits: cheaper to run than other types of servers (ie. on AWS), makes th=
+e Tor network more stable and anonymous </pre></li>
+
+<li><pre class=3D"student-text">Risks=3Dpotentially being responsible for t=
+raffic that exits your tor exit node. Benefits=3Dhelping tor project become=
+ more efficient
+</pre></li>
+
+<li><pre class=3D"student-text">Running Tor as an Onion Router would provid=
+e a theoretically ideal privacy - since many different packets from differe=
+nt origins pass through the router, it would be hard for an adversary to te=
+ll which packets were actually send from the router hoster.
+
+On the other hand, hosting a router can provide multiple implications: 1) D=
+oS attacks can significantly impact the hosting machine's performance. 2) I=
+f the router is hosted as an exit node, and some illigeal activity is being=
+ performed through the node, the hoster might be implicated.</pre></li>
+
+<li><pre class=3D"student-text">Running a OR on your own machine helps cont=
+inue the existence of the tor network.</pre></li>
+
+<li><pre class=3D"student-text">Running a Tor node on your machine puts you=
+ in the lime light of attackers because it is easier for an
+attacker to mask his trace in an anonymous network like Tor. Running a Tor =
+node on your machine, however=20
+distributes the load across your machine and improves performance of the ov=
+erall network
+</pre></li>
+
+<li><pre class=3D"student-text">Running a Tor node will put you at risk of =
+experiencing a denial of service attack. In reality, the reason most people=
+ are hesitant to host nodes is that they are worried about dealing with abu=
+se flags. I'm not entirely sure what the technical benefit of hosting a nod=
+e is. It seems like hosting is a service that people on their volition beca=
+use they care about the cause. </pre></li>
+
+<li><pre class=3D"student-text">Running a Tor server allows you to help the=
+ world gain anonymity on the Internet, including yourself. However, your co=
+mputers will spend a lot of time doing encryption tasks which will just tak=
+e a lot of time. Also, you might be putting your computer at risk of a DoS =
+because of the amplification of a single request that it takes to forward i=
+t onwards.</pre></li>
+
+<li><pre class=3D"student-text">Running an Onion router node on your networ=
+k would allow you to have faster network connectivity, but would cause more=
+ attackers to target you.</pre></li>
+
+<li><pre class=3D"student-text">Running an exit node presents one as the so=
+urce of all exiting traffic whether it be malicious or not. This means a cl=
+ient running a node of this type can expose themselves as a criminal target=
+ if investigation occurs into the source of network activity from the node.=
+ Acting as an OR also exposes ones machine to DOS attacks, though there are=
+ some mitigations built into TOR's design.
+At the end of the paper, the author's mention that those who run ORs benefi=
+t from publiticty from volunteering. Along with this they may also have gre=
+ater secutiry as they do not have to interact with middlemen to use the TOR=
+ network as they can communicate directly with other OR.</pre></li>
+
+<li><pre class=3D"student-text">Running an onion router Tor node on a machi=
+ne comes with the possibility that the node will be one of the central ones=
+ that is bottleneck. Therefore, there is a chance that the node will be con=
+gested by too much traffic. On the other hand, the node owner can monitor t=
+he traffic and gather an important information about the network.
+</pre></li>
+
+<li><pre class=3D"student-text">Running an onion router on your own machine=
+ improves your anonymity, since it will be harder for an attacker who sees =
+traffic to and from your machine to tell whether that traffic is yours or b=
+eing forwarded for other people.
+On the other hand, it adversely affects your performance, since your machin=
+e has to do all the extra things a router supports to forward traffic that =
+isn't yours.
+On a network topology with relatively few router nodes, being a router your=
+self also makes you more of a target for attackers who are trying to compro=
+mise the network.</pre></li>
+
+<li><pre class=3D"student-text">Running your own OR provides better end-to-=
+end anonymity.
+However if the number of paths is not random, an attacker could observe tha=
+t we use only 5 hops and conclude we are running and OR
+</pre></li>
+
+<li><pre class=3D"student-text">Section 6 of the Tor paper outlines various=
+ design choices of Tor and presents some possible risks:=20
+- Opportunities for denial-of-service attacks against the network running T=
+or
+- Exit abuse by attackers by implicating exit servers for their abuse
+</pre></li>
+
+<li><pre class=3D"student-text">Some major risks include that traffic that =
+uses your OR as an end node could be attributed to you, including illegal a=
+ctivities, as well as=20
+the fact that your computer may become targetted by hostile actors. However=
+, running an OR locally makes it much more difficult for other
+parties to analyze your traffic since it cuts down one of the entry/exit po=
+int pairs that are aware of user/recipient related data, and makes
+it difficult to distinguish between traffic originating from the user and t=
+raffic routed to the user.</pre></li>
+
+<li><pre class=3D"student-text">Some risks of running a TOR node include po=
+ssible DDOS attacks, and threats from attackers
+trying to abuse the TOR network, such as those using it to sniff packets or=
+ send illegal
+packets. By running a TOR node, you help to increase the size of the networ=
+k boosting the=20
+capacity and reliability of the network.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Technical risks and benefits of running an =
+onion router Tor node:
++ Can set up a private exit, allowing client to connect to a given host or =
+network more securely.  An external adversary cannot eavesdrop traffic betw=
+een the private exit and the final destination.
+- Exit node can be abused and potentially face legal trouble.
+</pre></li>
+
+<li><pre class=3D"student-text">Technical risks include exposing yourself t=
+o adversaries, excessive bandwidth expenditure, and possible blacklisting i=
+f a service/ISP marks your OR as suspicious.
+Benefits include participation in network concensus and faster time to conn=
+ect to OR peers.
+</pre></li>
+
+<li><pre class=3D"student-text">Technical risks: An adversary may try to co=
+mpromise your machine in an effort to be able to deanonymize chains.
+
+Benefits: If you know your server is not compromised, this offers better se=
+curity as you can use it as an endpoint. This also helps improve the overal=
+l security of the Tor network, which will come back and help you.</pre></li=
+>
+
+<li><pre class=3D"student-text">The benefits of running an onion router Tor=
+ node is that you can support privacy rights when browsing the internet. Th=
+e main risk, especially if you're running an exit node, but also if you're =
+running a relay node, is that it may look like illegal activity is coming f=
+rom your IP address if you reroute packets of people using Tor for nefariou=
+s reasons.
+
+</pre></li>
+
+<li><pre class=3D"student-text">The benefits of running an onion router Tor=
+ node: volunteers who run nodes are rewarded with publicity and possibly be=
+tter anonymity. Some dangers of running a Tor node: there may be hostile OR=
+ that alters traffic at other nodes, other adversaries that try to compromi=
+se the Tor node such as by trying to learn its TLS private key. If director=
+y servers are compromised, then malicious Tor nodes can be included in the =
+network.</pre></li>
+
+<li><pre class=3D"student-text">The disadvantages are that if you're runnin=
+g a node, you'll bear the brunt of attacks against Tor. Especially troubles=
+ome would be denial-of-service attacks, which could clog up your network re=
+sources.
+
+The advantages are that you can set your own settings (like what services y=
+our node allows connection to) and you can be inherently closer to a servic=
+e since your node can find itself in the middle of a network</pre></li>
+
+<li><pre class=3D"student-text">The risk is that a certain amount of resour=
+ce (CPU, bandwidth, etc.) will be taken. In addition, a node is more prone =
+to attacks than simply a client. The benefit is that adding a node contribu=
+tes to the annonymity of the whole system since it makes patterns used by p=
+assive attacks harder to find.=20
+</pre></li>
+
+<li><pre class=3D"student-text">The risks are that it can use your resource=
+s on your machine and that there is a risk of security attack.</pre></li>
+
+<li><pre class=3D"student-text">The risks of running a OR on your machine i=
+s that these machines are targets of different sorts of attacks, so your ma=
+chine would become a target of attackers to the TOR network.  The benefit i=
+s that the overall TOR network will have more machines to distribute its lo=
+ad between.
+</pre></li>
+
+<li><pre class=3D"student-text">The technical benefit or running a OR (onio=
+n router) Tor node on your machine is that you get increased anonymity, sin=
+ce traffic originating from your machine may be your own traffic or it may =
+be traffic that is being routed by your OR.
+
+The technical risk of running an OR on your machine is that it may be subje=
+ct to attacks. Attackers may try to DOS your machine, or send illicit activ=
+ity along your machine to try to frame you and get you in legal trouble.
+</pre></li>
+
+<li><pre class=3D"student-text">The technical benefits are you being able t=
+o help out clients with their anonymous browsing; either improving their la=
+tency or increasing the speed at which they browse. You would also increase=
+ the fraction of legitimate Tor nodes in the system and thereby decrease th=
+e probability of compromise.=20
+
+Some technical risks include having your machine overloaded with malicious =
+traffic (especially if you're listed by the Tor directory as an entry). You=
+r machine would also be at increased risk of attacks from attempts to compr=
+omise a Tor node. If the client is engaging in any illegal activity and you=
+'re hosting an exit node, you would be communicating directly with the dest=
+ination website. </pre></li>
+
+<li><pre class=3D"student-text">The technical risks of running a Tor router=
+ node is that you accept connections and route traffic to and from strange =
+machines that are only verified with the Tor protocols. If you trust these =
+protocols, then you still are allowing potentially criminal traffic to move=
+ through your machine. If there is a bug in these protocols, then a machine=
+ that is not another Tor node or a Tor client could connect to your machine=
+ and run more insidious processes.=20
+
+The benefits of running a Tor node is deniability. If you would like to run=
+ suspicious traffic on your machine, you can set up that machine as a Tor n=
+ode, and then if anyone asks about this traffic you can believably claim th=
+at this traffic does not originate on your machine. </pre></li>
+
+<li><pre class=3D"student-text">Tor nodes forward packets containing all ki=
+nds of information. Moreover, it is accepting connections from numerous mac=
+hines. The benefit is that the data source is very hard to de-anonymize.
+</pre></li>
+
+<li><pre class=3D"student-text">Tor provides greater anonymity when it has =
+more nodes to use for chains, so you would be help make Tor better at accom=
+plishing its goals. You might have some legal trouble as an exit node since=
+ any abuses by users would appear to originate from your node.
+
+</pre></li>
+
+<li><pre class=3D"student-text">Tor traffic exiting through the user's comp=
+uter would appear to originate from that user's computer. That could expose=
+ the user to legal (including criminal) liability for the activities mediat=
+ed by this traffic.</pre></li>
+
+<li><pre class=3D"student-text">Tor tries to make a node volunteer's job as=
+ pleasant as possible, allowing them flexibility in how much bandwidth they=
+ provide and what kind of node they want to be e.g. middleman or exit. Bein=
+g a node can be kind of burdensome, especially if under attack. A malicious=
+ person could accuse the node and shut it down (see exit policy abuse). The=
+ node could get backlash for shutting down because it harms the anonynimity=
+ of anyone who was routing their traffic through this node, and now needs t=
+o spend time rerouting the traffic.
+
+The pro of being a node is free publicity (which may also be a con), as use=
+rs must know your IP to route your traffic to you. The paper also claims gr=
+eater anonymity for nodes. Also, the more nodes there are in the system, th=
+e more people using the system and the more anonymous the system is, so tha=
+t's an indirect anonymity benefit for you.
+</pre></li>
+
+<li><pre class=3D"student-text">Traffic that leaves the TOR network at the =
+onion router you are running
+will look like the traffic originates from your machine. This might mean
+that any malicous traffic will be associated with you and you might receive
+angr e-mails from administators. If you are using TOR anyway running a
+router node instead of just a proxy gives you plausible denialability,
+since traffic originaing from your host and traffic routed through your
+host is not easily distibguishable.
+</pre></li>
+
+<li><pre class=3D"student-text">Using onion routers can be more expensive a=
+nd can lead to application leaks. It also forces users to trust the client =
+and can cause DoS attacks or offline attacks such as law enforcement seizin=
+g a machine. However, some of the benefits include the fact that onion rout=
+ers allow for more anonymity which protects data traffic.=20
+
+</pre></li>
+
+<li><pre class=3D"student-text">What are the technical risks and benefits o=
+f running an onion router
+Tor node (i.e., not just a client) on your machine?
+
+Risks: performance, denial of service, exit abuse
+Benefits: anonymity</pre></li>
+
+<li><pre class=3D"student-text">What are the technical risks and benefits o=
+f running an onion router Tor node (i.e., not just a client) on your machin=
+e?
+
+Benefits include increasing the overall anonymity of the system (more OR =
+=3D more secure), enabling a private web experience from authoritarian gove=
+rnments, ISPs and advertisers, and allows web servers to be hosted anonymou=
+sly on it.
+
+Risks include a variety of attackers from an adversary that can compromise =
+the identity of users.
+- Passive attacks to monitor network traffic, and correlate traffic volumes=
+ of various exit nodes can correlate initiator and responder correspondence=
+.
+- Websites users connect to that aren't secure (i.e. Facebook, Google) can =
+introduce timing attacks to find more patterns.
+- Onion proxies can be compromised, and traffic to it analyzed to reveal wh=
+o users are.
+- Hostile Onion Routers can correlate up to (cm/N)^2 nodes, if there are N =
+total nodes, and the attacker controls m. However, the constant c can be &g=
+t; 1 for more permissive permission policies.=20
+</pre></li>
+
+<li><pre class=3D"student-text">What are the technical risks and benefits o=
+f running an onion router Tor node (i.e., not just a client) on your machin=
+e?
+
+Benefits:
+    - Running your own onion router gives you a trusted relay that you can =
+initially connect to thus reducing the probability of a compromised circuit
+
+Risks:
+    - Your node will be targeted by state actors trying to gain access of y=
+our machine
+    - Your node will be subject to traffic analysis
+    - The NSA will try to hack you
+    - Your ISP will question why you're looking at sketchy stuff
+   =20
+</pre></li>
+
+<li><pre class=3D"student-text">What are the technical risks and benefits o=
+f running an onion router Tor node (i.e., not just a client) on your machin=
+e?
+
+Risks:
+- Need to keep identity key and onion key safe
+- IP address is revealed if serve as an exit node
+- Giving away bandwidth for Tor traffic
+
+Benefits:
+- Improving the speed/robustness of the Tor network
+- If running a middle relay, you don't look like the source of traffic</pre=
+></li>
+
+<li><pre class=3D"student-text">What are the technical risks and benefits o=
+f running an onion router Tor node (i.e., not just a client) on your machin=
+e?
+
+The technical risks involve being DoS'd or framed as someone performing ill=
+egal activities. Benefits include potentially de-anonymizing other users (i=
+f that's what you're into) and contributing to a worldwide anonymizing netw=
+ork to help others in need!</pre></li>
+
+<li><pre class=3D"student-text">What are the technical risks and benefits o=
+f running an onion router Tor node (i.e., not just a client) on your machin=
+e?
+
+You risk having to explain why you're running an anonymity network to your =
+network administrator. You might also get implicated for wrongdoing as an e=
+xit server. </pre></li>
+
+<li><pre class=3D"student-text">What are the technical risks and benefits o=
+f running an onion router Tor node (i.e., not just a client) on your machin=
+e?
+
+- Opportunity to make sense of the patterns of connections made to an OR ca=
+n be used for different purposes.=20
+- Profiling users' connection patterns is another opportunity.=20
+- Better anonimity &amp; protection against attackers trying to explot end-=
+to-end timing correlation. =20
+- Higher risk for getting an IP address being blacklisted in case of a Tor =
+node serves as an exit point and used for abuse opportunities.=20
+- There's also  a higher risk for a computer being compromized, because it =
+can become an object of a targetted attack.=20
+</pre></li>
+
+<li><pre class=3D"student-text">What are the technical risks and benefits o=
+f running an onion router Tor node (i.e., not just a client) on your machin=
+e?
+
+---
+
+Risks:
+ - Getting 'smeared' (end-point ORs are seen as originators of connection; =
+can get blamed for misuse/shut down)
+ - Could be a target for DOS attacks
+
+Benefits:
+ - Each onion router runs as user-level process (no special privileges) &lt=
+;-- not a benefit, but less risky
+ - Running a OR node gives you increased anonymity in the network
+</pre></li>
+
+<li><pre class=3D"student-text">What are the technical risks and benefits o=
+f running an onion router Tor node (i.e., not just a client) on your machin=
+e?
+
+Risks:
+-Traffic appears to originate from your OR to people outside the network, s=
+o you can be blamed for abuse. However, you could set your exit policy so t=
+hat you only talk to other Tor nodes or your local network.
+
+Benefits:
+-Connections are throttled to prevent using up all of your bandwidth.
+-This increases your anonymity because it means that connections coming fro=
+m your node may not come from you at all - they could be forwards from some=
+where else.
+-This increases everyone's anonymity because the more ORs, the larger the n=
+etwork can be, and with more users comes more anonymity.</pre></li>
+
+<li><pre class=3D"student-text">What are the technical risks and benefits o=
+f running an onion router Tor node (i.e., not just a client) on your machin=
+e?
+
+Risks: Must give up bandwidth for other user's traffic, DoS, requires separ=
+ate IP address, must update system or risk traffic analysis by hackers, lac=
+k of HTTPS security capabilities, cannot inspect packets or senders
+
+Benefits: Help Tor's network grow and be faster, publicity and anonymity, <=
+/pre></li>
+
+<li><pre class=3D"student-text">What are the technical risks and benefits o=
+f running an onion router Tor node (i.e., not just a client) on your machin=
+e?
+
+Risks: Your machine will be subjected to a lot of bandwidth in order to han=
+dle other connections. It will also consume a lot of power as it needs to m=
+ake a lot cryptographic computations. At a higher of risk of getting DoSed
+Benefits: You have anonymity as no one is able to "sniff" your connection t=
+o the tor network. Only need to connect to one less node to route to a dest=
+ination so it would be slightly faster. </pre></li>
+
+<li><pre class=3D"student-text">What are the technical risks and benefits o=
+f running an onion router Tor node (i.e., not just a client) on your machin=
+e?
+Risks:
+- unknownlingly participcate in criminal activity
+-exposed to hosting malicious/illegal content
+
+Benefits:
+-able to browse anonymously
+-able to have internet in repressed countries (bypassing security measures)
+-almost impossible to determine user's point of origin
+-anonymity for servers creating hidden services</pre></li>
+
+<li><pre class=3D"student-text">What are the technical risks and benefits o=
+f running an onion router Tor node (i.e., not just a client) on your machin=
+e?=20
+
+The primary benefit is improved anonymity, reducing the risk of end-to-end =
+timing attacks.  By using your own node as either an entry or exit node, yo=
+u can prevent an adversary from owning both the entrance and exit nodes, an=
+d any traffic out of your node could plausibly have come from another sourc=
+e.=20
+
+One technical risk is that your machine is now trying to route a lot of tra=
+ffic, and could be subject to `accidiental DDoS' if the various routing alg=
+orithms do not work properly to constrain traffic routed through your node.=
+  The more salient risk in my mind, but maybe less `technical' is that if y=
+ou have an open exit policy, then you might be blamed for malicious or unde=
+sirable traffic that exits your node.
+</pre></li>
+
+<li><pre class=3D"student-text">What are the technical risks and benefits o=
+f running an onion router Tor node?
+
+Running the tor node allows the user to be encrypted, it helps guard users =
+IPs, you can mix your traffic with relay traffic so a dedicated IP is not r=
+equired. The risks are that for an exit node, you need a dedicated ip and m=
+ahcine, there could be abuse complaints, some website will ban the IP becau=
+se they don't recongize the tor access.=20
+
+</pre></li>
+
+<li><pre class=3D"student-text">When running a Tor node on my machine, I ge=
+t to control the traffic to block. But encryption does not happen between a=
+n exit node and target server, so that traffic can be leaked.</pre></li>
+
+<li><pre class=3D"student-text">When running a Tor node on your machine, yo=
+u use a lot of bandwith and you open up you machine to a lot of attacks.  I=
+ once knew a guy who ran a Tor Exit node on a dorm server, and the amount o=
+f attempted attacks on that machine as insane.
+</pre></li>
+
+<li><pre class=3D"student-text">When running a Tor router, you might experi=
+ence significant bandwidth usage, and you might be a target for compromise =
+by adversaries. However, the benefit is that you get to guarantee that user=
+s routed through your node experience privacy and anonymity when browsing o=
+nline.
+</pre></li>
+
+<li><pre class=3D"student-text">When running an onion router on Tor node, y=
+ou are risking the many attacks from adversaries that could attempt to take=
+ down your node.  You are also risking the fact the informatin passing thro=
+ugh the node could be very illegal and could get you in trouble with govern=
+ments depending on the laws.  The benefits of running a node are that you a=
+re providing a meens for anonymous activity for those who are attempting to=
+ use the internet through oppressive governments.
+</pre></li>
+
+<li><pre class=3D"student-text">benefits: the network becomes safer if ther=
+e are more ORs
+drawbacks: you have to relay traffic, so more bandwidth usage</pre></li>
+
+<li><pre class=3D"student-text">risks:
+DDos attack, like CPU-consuming attacks.
+Anonymous users can use these servers to attack other services without bein=
+g traced.
+
+benefits:
+Running a router node potential increase the amount of network data which m=
+akes the adversarial even more difficult to figure out what data are sent f=
+rom the user of the machine. </pre></li>
+
+<li><pre class=3D"student-text">=EF=BB=BFlec20.txt
+What are the technical risks and benefits of running an onion router Tor no=
+de (i.e., not just a client) on your machine?
+
+
+
+
+Risks include denial of service through bandwidth usage and processing and =
+implication in client activity (for exit nodes).=20
+
+
+ Benefits include scaling out the network and helping to anonymize your own=
+ traffic.</pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--viPvzvjvDRUuxC35CexbXzrLGlySEawg2rQrtQbBYc------

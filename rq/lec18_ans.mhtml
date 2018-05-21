@@ -1,0 +1,1168 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-answers/18
+Subject: Answers for lecture 18 - 6.858
+Date: Tue, 21 May 2018 01:42:24 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--gYWlBCgsYZVp7U1ZOw71ahKccEFtYUnjSAryyQzUic----"
+
+
+------MultipartBoundary--gYWlBCgsYZVp7U1ZOw71ahKccEFtYUnjSAryyQzUic----
+Content-Type: text/html
+Content-ID: <frame-1185-020430e9-9d5d-447d-b0b4-9dc702262f0c@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-answers/18
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Answers for lecture 18 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Answers for lecture 18 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text">They can prevent recursive queries on their=
+ domains in order to make crawling more difficult.</pre></li>
+
+<li><pre class=3D"student-text">This study requires a lot of web crawling, =
+so if the operators of the spam value chain notice lots of requests coming =
+from the same source, they should probably block all requests from there, s=
+ince "normal" users shouldn't make *that* many requests...=20
+</pre></li>
+
+<li><pre class=3D"student-text"> How could the operators of the spam value =
+chain, studied in this paper, make it more difficult to repeat such studies=
+ in the future?
+
+Taking the example of Pharmacy Express in the paper, the operators of the s=
+pam value chain could take steps to hide the business chain of their spam. =
+For example, they could register under a fake corporation for DNS and find =
+a way to hide the bank account that the online payment would route to. This=
+ would mean that the people studying their spam value chain would have much=
+ less information about the spammers. In this paper, there is a pretty clea=
+r map of where the money is flowing.
+</pre></li>
+
+<li><pre class=3D"student-text"># Lecture 18
+
+------------------------------
+How could the operators of the spam value chain, studied in this paper,
+make it more difficult to repeat such studies in the future?
+------------------------------
+
+It's possible that an initial link could redirect to a CAPTCHA page, which
+after completion then redirects to the ad. This would make it more costly
+to crawl all the links received. As there for nearly a billion URLs crawled=
+, a
+CAPTCHA at each would seriously slow down crawling (although it also may hu=
+rt
+their sales as well).
+
+Additionally, it seems that the botnet operators could use a TOR based botn=
+et to
+send emails anonymously from random TOR exit nodes. This would not hide the
+click trajectories, as spam targets most likely don't use TOR, but it could
+obfuscate more information about the perpetrator.
+</pre></li>
+
+<li><pre class=3D"student-text">- Spam advertisers can fan out the ASes the=
+y choose to host their domain names on, and not select the ones with high d=
+ensity.
+- Ensure non US banks for transactions, and ensure they aren't the three ba=
+nks listed in the paper. Enforcing payment blockages are weaker.
+-  Even in choosing registrars, ensure there's a global spread, since media=
+ting/law enforcement with global resources is harder.</pre></li>
+
+<li><pre class=3D"student-text">- Use patterns common to legitimate website=
+s to hinder program tagging based
+on strange hosting conventions or storefront templates
+- Diversify ASes and registrar sources
+- Diversify payment processing &amp; fulfillment between different affiliat=
+e programs
+- Create more bots like Rustock to "blacklist poison" and make more junk da=
+ta
+</pre></li>
+
+<li><pre class=3D"student-text">- hide information about the merchant bank =
+=20
+- introduce more variance into the HTML text on web pages to make it harder=
+ to cluster them. Or perhaps make some of the text into images, making it h=
+arder to collect information about them.
+- include captchas or other checks to prevent crawling by bots
+- limit querying servers repeatedly (which the authors had to do in order t=
+o get the whole set of domains used to handle clicks) </pre></li>
+
+<li><pre class=3D"student-text">- make it harder to content cluster - chang=
+e up the structure of their web pages
+- more levels of URL redirects</pre></li>
+
+<li><pre class=3D"student-text">4/24/18
+
+
+
+Lecture 18
+
+Question:
+
+How could the operators of the spam value chain, studied in this paper, mak=
+e it more difficult to repeat such studies in the future?
+
+Answer:
+
+Randomize url redirects to make it harder to web crawl extensively, use eve=
+n more ip addresses for the same domain to make it harder
+to track, acquire more urls, hide links so that your webpage cant be crawle=
+d and only the relevant buttons (ie. to purchase) can be
+clicked.</pre></li>
+
+<li><pre class=3D"student-text">6.858 - Spam
+
+The spam value chains can try any of these measures:
+  - Locate and fill honeypots/other collection sources with garbage urls
+  - Have servers that deny http gets to web crawlers/similar bots
+  - Randomize page layout to make clustering harder
+</pre></li>
+
+<li><pre class=3D"student-text">&gt; How could the operators of the spam va=
+lue chain, studied in this paper, make it more difficult to repeat such stu=
+dies in the future?
+
+They are already using a very decentralised system to avoid scrutiny,
+and they fact that the value chain has been so stratified makes it harder
+to analyse.=20
+
+One aspect that they mention is that the payment infrastructure used in the
+value chain is very slowly changing in comparision to the E-Mail/DNS/Hostin=
+g
+side of things. So finding ways to become more flexible w.r.t to banking
+providers would increase resilience in the spam value chain and make it=20
+harder to analyse.
+</pre></li>
+
+<li><pre class=3D"student-text">A simple way to prevent a robot from crawli=
+ng is to add captchas, as this would increase time/cost of performing this =
+type of analysis.
+</pre></li>
+
+<li><pre class=3D"student-text">A spam value chain operator could diversify=
+ the avenues through which they emit spam to make it harder to collect data=
+. Email makes it really easy to collect data. Using other sources would mak=
+e it harder to conduct a study. </pre></li>
+
+<li><pre class=3D"student-text">A spamming website could impose captchas so=
+ that they cannot be automatically scraped by bots, which this analysis rel=
+ies on. </pre></li>
+
+<li><pre class=3D"student-text">Although significantly more difficult than =
+using a botnet, a sufficiently powerful spammer could infiltrate and exploi=
+t legitimate sites. This would then insert a legitimate source into the spa=
+m value chain and therefore help the email from being regarded as spam in t=
+he first place as the study gathered spam urls from anti-spam providers.
+In addition a spam link could slow down the web-crawling portion of the stu=
+dy by adding some mechanism to ensure an actual user is clicking through th=
+e spam. Possibly by inserting some mechanism the user must interact with to=
+ gain access to the actual content (i.e. clicking a legitimate looking "ent=
+er site" button) and then reject any clicks that seem non-human.</pre></li>
+
+<li><pre class=3D"student-text">Among the different methods possible, one w=
+ay to make this kind of=20
+study harder in the future is for affiliate programs to make dissimilar
+templates for their users. Currently, users which use the same affiliate
+program will end up with very similar websites in terms of realization,
+so it's easy to deduce the influence of different affiliate programs and=20
+to deduce information about them.</pre></li>
+
+<li><pre class=3D"student-text">Answer to Paper Question:
+
+They need to obfuscate name-records more. They could use the premium hosts =
+discussed in the reading to furhter obfuscate their DNS information. Furthr=
+more, they could add more "blacklist-poisoning" to hamper the researher's a=
+bilities. Finally, they could obfuscate URL extraction in some manner to pr=
+event a bot from easily collecting this data but still letting consumers ge=
+t to the website. </pre></li>
+
+<li><pre class=3D"student-text">As time goes by, there will be deeper level=
+s of spam services as the operators sign contract to let spammers do their =
+work. The center of the spam will also change.</pre></li>
+
+<li><pre class=3D"student-text">Avoid sending spam to known spam researcher=
+s. </pre></li>
+
+<li><pre class=3D"student-text">Consistently change the urls they use and m=
+igrate their website to a new domain though this might be hard to do in pra=
+ctice.=20
+Some form of obfuscation via blacklist-poisoning
+More legitimate looking templates that make it harder to decipher what a sp=
+am is
+</pre></li>
+
+<li><pre class=3D"student-text">Detect physical mail addresses ordering man=
+y products in a short timeframe and block these orders
+</pre></li>
+
+<li><pre class=3D"student-text">First, the operators of these websites coul=
+d provide some kind of rate-limiting delay between traversing pages, slowin=
+g down the web crawler.=20
+The site can also attempt to identify the parser, and blacklist the associa=
+ted IP address. Second, they could try and limit the ability to classify=20
+these webpages by removing identifying key phrases or text, or even by usin=
+g images instead which would then not be parsable. They could also attempt
+to avoid displaying information that places their sites as part of a larger=
+ program, thus making it more difficult to target the spammers specific
+platform.</pre></li>
+
+<li><pre class=3D"student-text">Firstly, they could add a lot of randomizat=
+ion to the layout of their webpages. The authors were able to associate pag=
+es as belonging to certain programs because of they attributes of the under=
+lying page. Perhaps these server could instead serve pages with machine-opt=
+imised code and certain amounts of variation to make such association harde=
+r.
+
+Secondly, they could try to split their payment systems. The use of a small=
+ number of bank accounts and processors made it very easy for the authors t=
+o track these programs, even when the sites appeared to be from two separat=
+e affiliates. The spam operators should try to have their affiliate program=
+s operate on completely different payment networks, or even incorporate oth=
+er less regulated forms of payment, like cryptocurrencies. Cryptocurrencies=
+ like monero would also make it harder to track these payments on the autho=
+rs' side.
+</pre></li>
+
+<li><pre class=3D"student-text">From my understanding, there are several wa=
+ys the operators
+can do:
+1. Use diverse URLs or URLs that look official. Make URLs
+collecting harder.
+2. Use dynamic contents, which makes content clustering really
+hard and impossible. Maybe have different contents for different
+users.
+3. Overall, the goal is to make everything hard to track and=20
+not to display any certain pattern.</pre></li>
+
+<li><pre class=3D"student-text">Given that they ignore IPv4 domains, perhap=
+s hosting sites on IPv4 addresses is the way to go?
+</pre></li>
+
+<li><pre class=3D"student-text">How could the operators of the spam value c=
+hain studied in this paper, make it more difficult to repeat such studies i=
+n the future?
+
+The operators can have their own protections set in place that block an ip =
+from cclicking their links if it has already clicked on a bunch of links (i=
+e collecting 11m links that corresponded to 348 domains means that each dom=
+ain had many links and their protection should prevent someone from clickin=
+g on more than some threshold of links). They could also make their website=
+s harder to crawl by obfusicating the website code.=20
+</pre></li>
+
+<li><pre class=3D"student-text">How could the operators of the spam value c=
+hain, studied in this paper, make it
+more difficult to repeat such studies in the future?
+
+They could rent their services to spammers on a contract basis, and let the
+spammers have more flexibly of switching between different domains so that
+researchers cannot track their activities.
+</pre></li>
+
+<li><pre class=3D"student-text">How could the operators of the spam value c=
+hain, studied in this paper, make it more difficult to repeat such studies =
+in the future?
+
+
+Make the chain more difficult to access by placing webstites on unreachable=
+ name servers.</pre></li>
+
+<li><pre class=3D"student-text">How could the operators of the spam value c=
+hain, studied in this paper, make it more difficult to repeat such studies =
+in the future?
+
+Blacklisting can prevent successful crawling of the spam websites, although=
+ it requires identification of the crawler. Operators of the spam web pages=
+ could try to mess up the content clustering that the study did. I'm not su=
+re whether/how this is possible, but they could possibly add a lot of hidde=
+n HTML text so that the clustering tool can't accurately create the cluster=
+ fingerprint.</pre></li>
+
+<li><pre class=3D"student-text">How could the operators of the spam value c=
+hain, studied in this paper, make it more difficult to repeat such studies =
+in the future?
+
+Key to their analysis is a collection of spam-advertised URLs, by setting u=
+p their own honeypots or using commericial anti-spam providers.  This works=
+, I would imagine, because email spam is indiscriminate, and it is feasible=
+ to set up a honeypot that should get hit with a representative sample of a=
+ll spam.
+
+However, as operators of the affiliate marketing value chain move to platfo=
+rms like Facebook, the spam (in the form of advertisements) becomes much mo=
+re targeted, and it is also correspondingly more difficult to set up fake a=
+ccounts as honeypots.  Thus, I would imagine a broad study of the value cha=
+in is much harder in the era of Facebook ad targeting.
+</pre></li>
+
+<li><pre class=3D"student-text">How could the operators of the spam value c=
+hain, studied in this paper, make it more difficult to repeat such studies =
+in the future?
+
+Operators could have heuristics in place to notice fast flux suppression te=
+chniques (in this case the authors "[queried] servers repeatedly to enumera=
+te the set of domains collectively used for click support") and remove acce=
+ss to people using them.  This shouldn't be actual user behavior and should=
+ effectively.  Also, operators could just move to IPv6-only addressing whic=
+h would make the namespace significantly more difficult to enumerate.  This=
+ might make it tougher for every user to be be able to access the site thou=
+gh.</pre></li>
+
+<li><pre class=3D"student-text">How could the operators of the spam value c=
+hain, studied in this paper, make it more difficult to repeat such studies =
+in the future?
+
+The operators can make it more difficult to repeat these studies by targeti=
+ng researchers with spam and malware. Additionally, the operators could hid=
+e behind more layers of obfuscation i.e. a larger network of providers that=
+ do not provide information
+</pre></li>
+
+<li><pre class=3D"student-text">How could the operators of the spam value c=
+hain, studied in this paper, make it more difficult to repeat such studies =
+in the future?
+
+They would do just the same thing anti-spammers do! Funny enough, they'd wa=
+nt to verify that their users are real humans instead of botnet scrapers. E=
+ven more sinister, they could try to destabilize the system that rewards pe=
+rforming such studies and thereby defeat the studies at their bottleneck!</=
+pre></li>
+
+<li><pre class=3D"student-text">How could the operators of the spam value c=
+hain, studied in this paper, make it more difficult to repeat such studies =
+in the future?
+
+---
+
+Unsure of how to interfere with the web crawling process, but I would imagi=
+ne that continuing to do blacklist-poisoning at increasingly greater scale =
+would make the process of filtering out the 'garbage' URLs more difficult a=
+nd time-consuming.
+
+For the content clustering and tagging stage, spammers could use images for=
+ the frontend design instead of text that contains keywords in order to mak=
+e it more difficult to classify html content automatically.</pre></li>
+
+<li><pre class=3D"student-text">How could the operators of the spam value c=
+hain, studied in this paper, make it more difficult to repeat such studies =
+in the future?
+
+The technique involved relied on the traceability of bank records. Using an=
+onymous transfers via cyptocurrencies and buying DNS records using untracea=
+ble methods as well.=20
+The centralization of the current infrastructure of payment (around banks) =
+and DNS (url leasing) hinders the ability of spam providers to be untracked=
+. </pre></li>
+
+<li><pre class=3D"student-text">How could the operators of the spam value c=
+hain, studied in this paper, make it more difficult to repeat such studies =
+in the future?
+
+There're severar layers of protections, which the operations can apply:
+
+1. Make it difficult/impossible to track down payments by accepting payment=
+s in cryptocurrencies. Broadly speaking, it will hide the final recepients =
+of the payments to.=20
+
+2. Some possible protection from web crawling will prevent easy extraction =
+of data from the websites as an attempt to recreate a holistic picture.
+
+3. The authors mentioned that crawling all unique websites can be an unfeas=
+ible exercise. Therefore, spam operators may want to create unique landing =
+pages for each email they sent, though it can be an overkill taking into ac=
+count the volume of the emails sent. Content delivery systems can be also o=
+f a good help.
+
+4. Tracking down the physical originators of shipping can be blocked by usi=
+ng proxies - shipping handlers &amp; fulfillment processors.</pre></li>
+
+<li><pre class=3D"student-text">How could the operators of the spam value c=
+hain, studied in this paper, make it more difficult to repeat such studies =
+in the future?
+
+They could use machine learning to try to detect fraudulent clicks on their=
+ links (ie clicks by researchers instead of by people who are actually inte=
+rested customers) and direct them to alternate fake sites.</pre></li>
+
+<li><pre class=3D"student-text">How could the operators of the spam value c=
+hain, studied in this paper, make it more difficult to repeat such studies =
+in the future?
+One way that they could make it harder to repeat such studies in the future=
+ would be to routinely/consistently change their page information such as n=
+aming.  Further, they could provide false information about hosting or be m=
+ore savvy with their URL redirection.
+</pre></li>
+
+<li><pre class=3D"student-text">I have a few ideas, but I am not sure if th=
+ey would actually make repeating such studies more difficult. Perhaps using=
+ sites with embedded content make it more difficult to do DNS and Web crawl=
+ing. Also, using images instead of text would make it more difficult to uti=
+lize automatic approaches for extracting page content. Randomizing page con=
+tent would also make these automatic clustering approaches more difficult.<=
+/pre></li>
+
+<li><pre class=3D"student-text">In order to make it more difficult to repea=
+t a similar study of the spam monetization infrastructure, operators of the=
+ spam value chain could try to detect crawlers and botnets trying to sabota=
+ge or snoop on the spam click trajectory chain. Spam value chain operators =
+could also induce delays into purchase and/or payment processing in the rea=
+lization stage -- to slow down data collection on payment tiers that could =
+be useful in further studies.</pre></li>
+
+<li><pre class=3D"student-text">In order to make it more difficult to repea=
+t such studies, more spam providers
+could make use of fast-flux DNS, and do things such as not use certain keyw=
+ords
+on their pages to make it harder for researchers to perform such automated
+wide-scale studies.=20
+</pre></li>
+
+<li><pre class=3D"student-text">In section III.B of the paper, it describes=
+ the process of crawling.
+The operators of the spam value chain could take advantage of the=20
+fact that the methods in the paper don't look at every single URL,
+because as described in the paper, it would be very inefficient.
+</pre></li>
+
+<li><pre class=3D"student-text">It seems that a crucial step in the data co=
+llection for this paper was the DNS crawling (Figure 2 step 3). The authors=
+ of the spam chain could make this approach less feasible by creating a mec=
+hanism on the landing site that would only accept a connection if it actual=
+ly came from a human click. Captchas or other similar technology could be v=
+ery effective in preventing this large-scale collection of spam website dat=
+a, as it would severely reduce the effectiveness of botnets in this collect=
+ion process.</pre></li>
+
+<li><pre class=3D"student-text">It would be possible to hinder their experi=
+ments if the links they used to crawl expired after some time.=20
+</pre></li>
+
+<li><pre class=3D"student-text">It's difficult to prevent studies like this=
+ from being made in the future. The websites hosting the front-end of spam =
+(i.e. not the payment processes) are decentralized, so websites coordating =
+and focusing on rules targeting a specific IP conducting the study would be=
+ difficult. Workarounds such as VPNs are plentiful and can also hide the id=
+entity of web crawlers performing the search.=20
+
+One possible method is to block prepaid Visa payment cards, which would dis=
+courage studies from being undertaken.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Jun Wan 991032935
+
+1. The operator can use more distinct domains and try to create a better "m=
+akeup" for the url link. This make the spam url link harder to detect. It a=
+lso increases the workload for a researcher to DNS-crawl all the domains.
+
+2. Spammers should use anonymous transfer network like ToR such that the re=
+searcher can not tell where the spam emails come from.</pre></li>
+
+<li><pre class=3D"student-text">Lecture 18
+
+How could the operators of the spam value chain, studied in this paper, mak=
+e it more difficult to repeat such studies in the future?
+
+One way in which they can make it more difficult to repeat such studies is =
+by not fulfilling the HTTP requests of web crawlers. If the spammer has con=
+trol over the URL domain or some intermediate domain before redirect, he ca=
+n deny access to crawlers.
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 18
+
+How could the operators of the spam value chain, studied in this paper, mak=
+e it more difficult to repeat such studies in the future?
+
+They could try to blacklist any web crawling, they could maybe try to block=
+ their domains in some way? </pre></li>
+
+<li><pre class=3D"student-text">Lecture 18 (Answer to Paper Question)
+
+Question:
+
+How could the operators of the spam value chain, studied in this paper, mak=
+e it more difficult to repeat such studies in the future?
+
+
+The researchers who performed the study relied on the HTML text of an adver=
+tiser's website to group Web pages with similar content. To make it more di=
+fficult to repeat such studies in the future, advertiser's can add hidden H=
+TML elements or meaningless comments to their Web pages in order to confuse=
+ the clustering tool.
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 18: Security Economics
+4/25/18
+
+How could the operators of the spam value chain, studied in this paper, mak=
+e it more difficult to repeat such studies in the future?
+
+- prevent the bot from crawling through their websites by using a human ver=
+ifier, sign up form, or some additional barrier
+- shipping all the packages to a central distributor to prevent leaking out=
+ the location of the supplier
+- limit the number of IP addresses the user sees by passing all the informa=
+tion through a central IP address/site</pre></li>
+
+<li><pre class=3D"student-text">Lecture 18: Spam Value Chain Reading Questi=
+on
+
+Operators of spam value chains could make it more difficult to repeat such =
+studies in the future
+by taking steps to significantly limit crawling efforts on their sites. The=
+y could do so by incorporating
+the annoying "I'm not a robot" checks that a lot of websites include now to=
+ validate that the party
+attempting to access their site is not a machine. This could greatly limit =
+crawling efforts in the future,
+and could in turn prevent studies at this level from being repeated.
+</pre></li>
+
+<li><pre class=3D"student-text">Not really sure, but some way to make extra=
+ction of embedded URLs more difficult; improve fast flux techniques.
+</pre></li>
+
+<li><pre class=3D"student-text">One of the weaknesses reported in the paper=
+ was that these spammers would often use a limited number of domain name pr=
+oviders or bank institutions. The spammers could diversify making it harder=
+ to trace exactly where they are based or just to rely on fewer points of f=
+ailure. The spammers could blacklist IP sources from the associated univers=
+ities or research institutions who performed this study. The paper mentions=
+ trying to make purchases from some of these websites, and having them igno=
+red because they thought the spammers recognized the high load of purchases=
+ as fraudulent -- spammers could use pattern recognition to detect similar =
+purchasing patterns. Spammers already use fast flux to obscure their DNS an=
+d avoid web crawlers -- more techniques like this could also make it harder=
+ for researchers to repeat such a study.
+</pre></li>
+
+<li><pre class=3D"student-text">One thing they could do is add in a human-v=
+erifiable captcha before loading pages. This would prevent webcrawling, and=
+ thereby partially thwart the entire operation. Another thing that could be=
+ done is if too many pages are being requested by the same server (e.g. sur=
+passing a threshold), refuse more requests from this server. This would als=
+o prevent the webcrawling.
+</pre></li>
+
+<li><pre class=3D"student-text">One way to make studies difficult would be =
+for them to blacklist honeypots in the same way legitimate parties blacklis=
+t spam domains/addresses/etc.</pre></li>
+
+<li><pre class=3D"student-text">Operators could have their botnet servers s=
+hut down when taken captive.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Operators of Spam Value chains could potent=
+ially obfuscate certain pieces of
+information from researchers like in this paper if they were aware of the
+particular situation happening, but like many side channel attacks, this se=
+ems
+difficult to do.
+</pre></li>
+
+<li><pre class=3D"student-text">Operators of the spam value chain can look =
+at the paper and examine the techniques used by the researchers and diminis=
+h the usefulness
+of their techniques to make it more difficult to repeat such studies in the=
+ future. For example, in the clustering and tagging section
+of Web pages, by using the same set of words throughout each page, even for=
+ disparate services, while only visibly showing the pertinent
+information can cause the clustering to be less effective. As another examp=
+le, to minimize the usefulness of a web crawler, operators
+on the spam value chain can implement a human-ness test before they show an=
+y HTML content pertinent to the researchers.</pre></li>
+
+<li><pre class=3D"student-text">Operators of the spam value chain could mak=
+e it more difficult by augmenting their existing fast flux techniques and u=
+sing even more IP addresses for a given domain. They could also add more in=
+direction to the DNS crawling by rotating their DNS servers.</pre></li>
+
+<li><pre class=3D"student-text">Operators of the spam value chain could mak=
+e studies like this difficult to repeat in the future by making web crawlin=
+g their web pages harder.</pre></li>
+
+<li><pre class=3D"student-text">Operators of the spam value chain could mon=
+itor the same feeds that were used by the researchers and immediately take =
+down any urls that appear on the feed.
+</pre></li>
+
+<li><pre class=3D"student-text">Operators of the spam value chain could pre=
+vent web crawling by making their domains unreachable. They could also obfu=
+scate the bank codes to avoid having the banks the use be identified.</pre>=
+</li>
+
+<li><pre class=3D"student-text">Operators of the spam value chain could try=
+ to use more rapid domain flux to thwart the web crawler. There isn=E2=80=
+=99t much they can do to stop the collection of spam-advertised URLs since =
+these are meant to be widely distributed. Also there=E2=80=99s not much the=
+y can do to prevent their goods from being purchased.</pre></li>
+
+<li><pre class=3D"student-text">Perhaps spammers could also create a shared=
+ list of undercover buyers - something like their own "financial blacklist"=
+. Once they start to notice a certain address "falling for" multiple spam a=
+ttacks, they could try to block that address from accessing the research da=
+ta (i.e. bank info).</pre></li>
+
+<li><pre class=3D"student-text">Question: How could the operators of the sp=
+am value chain, studied in this
+paper, make it more difficult to repeat such studies in the future?
+
+Answer:=20
+
+Spammer can certainly use image-based websites instead of text-based websit=
+es to
+make automatic tagging and clustering much more difficult. Note that this
+technique is mentioned in the paper -- however, not many websites currently
+employ it, as mentioned in Footnote 6.
+</pre></li>
+
+<li><pre class=3D"student-text">Question: How could the operators of the sp=
+am value chain, studied in this paper, make it more difficult to repeat suc=
+h studies in the future?
+
+It seems like this study was already quite hard to do given all the work to=
+ automate and yet they still had to manually tag/check things. One way they=
+ could make it harder is to separate the domains more so it makes it harder=
+ for researchers to cluster the same company together. Perhaps using more d=
+istinc URLs could work too but it seems like they already do a good job of =
+that. Also it says that they were able to cluster by similarities in hostin=
+g and DOM elements so varying those would make it more difficult to repeat.=
+ They mention how only a few programs that use a variety of resources so if=
+ all sites spread out and used a little bit of every resource it would make=
+ it harder. Granted, it would make hosting more costly. </pre></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 18
+
+How could the operators of the spam value chain, studied in this paper, mak=
+e it more difficult to repeat such studies in the future?
+
+The crawler exhaustively enumerates all A, NS, SOA, CNAME, MX, and TXT reco=
+rds linked to a particular domain, so if the operators used a more diverse =
+selection of records, they will go unsearched.=20
+
+The operators could also spam for a more diverse market to make it more dif=
+ficult to cluster the sites based on content.</pre></li>
+
+<li><pre class=3D"student-text">Similar to how non-spam ISPs and email prov=
+iders blacklist spam servers, spam servers could create a network that infe=
+rs unreasonable use of spam sites by single IP addresses and blacklists the=
+m. The url crawling was done with 100 firefox instances, likely on the same=
+ network - so spammers could prevent researchers from learning more about t=
+heir network by filtering out addresses that crawl many associated spam sit=
+es, more than any single user would.
+</pre></li>
+
+<li><pre class=3D"student-text">Since a lot of the data is obtained by craw=
+ler, the operators can block access based on accessing frequency. In partic=
+ular, the paper requires querying servers repeated to obtain the set of dom=
+ains used for click support, which pattern the operator can observe and blo=
+ck.=20
+The operator can also make their website mostly purely image based, and wit=
+h only very few texts --- this will confuse the content clustering process =
+as it relies on text data. It might also be possible to flood documents wit=
+h excess words(i.e. cat, dot etc that does not carry any negatigve categori=
+zation), then make them invisible using CSS or even just hidden by javascri=
+pt. So for an end user he/she won't see these words but the flood of such w=
+ord will also confuse the categorizor.
+</pre></li>
+
+<li><pre class=3D"student-text">Since the crawler ignores IPv4 addresses, a=
+nalysis can be stopped by using IPv4 addresses instead.</pre></li>
+
+<li><pre class=3D"student-text">Since the operators of the spam value chain=
+ were disclosed in this paper, anti-spam services are likely to augment and=
+ evolve their own resources to account for these operators. Therefore, in t=
+he future, many of these same operators will not be applicable anymore.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Since the study is based mostly on data acq=
+uired by means of web crawlers, it would make sense for the people involved=
+ with the spam value chain to make it harder for webcrawlers to function. T=
+his may involve trying to filter out webcrawlers from accessing the page, o=
+r maybe adding levels of complexity that would confuse the webcrawler.
+</pre></li>
+
+<li><pre class=3D"student-text">Some actions the spam operators take to obs=
+truct such studies are:
+* Poison the URL blacklists with random domains.
+* Diversify the DOM structures to avoid automated content clustering.
+* Create multiple aliases for the same brand so it=E2=80=99s difficult to i=
+dentify the affiliation unless purchases are made.</pre></li>
+
+<li><pre class=3D"student-text">Spam value chain operators could continue t=
+he process of creating more and more garbage domains to make it more diffic=
+ult for the studies to farm useful results. Additionally, maybe it is someh=
+ow possible for websites to prevent screenshotting of their content, or oth=
+erwise mask it in some way, to prevent future studies from easily automatin=
+g the process of grabbing the contents of the website the way this one did.=
+ According to the papers, scammers also try to blacklist security companies=
+ who are doing the crawling, so this is another option. Storefronts could a=
+lso make their page entirely images so that the text is not scannable for c=
+ategorization.</pre></li>
+
+<li><pre class=3D"student-text">Spammers could avoid being detected in such=
+ a study by improving their ability
+to get around spam filters, which would avoid their URL getting picked up b=
+y
+the researcher's botfarm. They could also employ more complicated strategie=
+s,
+such as frequency switching domain name servers to confuse the DNS crawler.
+</pre></li>
+
+<li><pre class=3D"student-text">Spammers could modify their webpages in way=
+s that are visible to crawlers but invisible to end-users; for instance, ra=
+ndomize the exact patterns of capitalization/indentation/spacing/tags in th=
+e HTML to confound content clustering, include irrelevant keywords in small=
+ fonts or non-displayed elements to confound category tagging.
+</pre></li>
+
+<li><pre class=3D"student-text">Spammers could use short DNS records to mak=
+e it harder to track.
+</pre></li>
+
+<li><pre class=3D"student-text">The "attack" that the authors of this paper=
+ executed against the spam "system" can be outlined as:
+1. Spam data collection (and analysis)
+2. Crawling of naming/hosting infrastructure (and clustering/analysis)
+3. "Following the money" when actually purchasing from these sites (and ana=
+lysis)
+
+To combat these "attacks," spammers can try a variety of tactics, but I wou=
+ld anticipate the persistence of the researchers to quickly overcome the si=
+mple changes that could beat some of the research processes.
+
+First, the researchers already enumerate small annoyances such as redirects=
+ (HTML, javascript, and even Flash) and outline fairly complete nameserver =
+connections with their crawler. Simple changes like new kinds of redirects =
+wouldn't have much effect (the researchers are using emulated firefox brows=
+ers, which are fairly standard).
+
+Another way to make it difficult would be to add more noise to the sites, s=
+o the content clustering algorithm would have more difficulty grouping adve=
+rtisements.
+
+And finally, they could mess with the selective purchasing by adding a pseu=
+do-fraud protection system in order to filter out purchases from researcher=
+s (though this would be extremely difficult to implement in practice).
+</pre></li>
+
+<li><pre class=3D"student-text">The authors of the spam value chain paper w=
+ill make it more difficult to perform these kinds of studies in the future,=
+ because their paper being published will cause spammers to be more careful=
+ about hiding their tracks and protecting themselves from researchers who t=
+ry to study their value chains and undermine their monetization. Thus, the =
+attackers will defend against the methods the researchers use and make it h=
+arder to conduct similar studies in the future.
+
+</pre></li>
+
+<li><pre class=3D"student-text">The main source of data was the countless s=
+pam messages/email etc. that they were previously able to acquire.=20
+The authors then would get the URLs contained in these emails and have a we=
+b crawler go through them in order
+to characterize the websites, IPs etc. So here's an interesting idea: since=
+ those links are themselves
+already links to websites that will eventually transfer the user to the act=
+ual website, one can have those intermediate
+steps expire after a while that the spam was sent. So we would be virtually=
+ cutting the connection between future researchers/users=20
+that would try to access the website. Another idea, although harder to impl=
+ement, would be to have the operators share information across
+them. So that if any username with a peak of random (from pharmacy to cyber=
+crime) activity would appear, they could simply not allow the=20
+realization phase to occur.
+</pre></li>
+
+<li><pre class=3D"student-text">The main way the researchers of this paper =
+studied the spam chain was through web crawling. If the operators of the sp=
+am chain can hide their URLs better or make it more difficult to crawl the =
+web then this study would be harder to repeat. </pre></li>
+
+<li><pre class=3D"student-text">The operators could change the domains of t=
+he pages that the spam leads to.  This would mean that it would be harder t=
+o track the relationship or frequency of how spam is distributed.
+</pre></li>
+
+<li><pre class=3D"student-text">The operators of the spam value chain can m=
+ake it more difficult to repeat such studies in the future by increasing th=
+e variety of the resources they use, such as involving more banks and compa=
+ny names within the chain.
+</pre></li>
+
+<li><pre class=3D"student-text">The operators of the spam value chain could=
+ construct a system in which the redirection process requires some amount o=
+f additional computation work that would need to be performed by a machine =
+before the redirect occurs. Although this additional computation would be s=
+mall for a single machine with a single browser instance and thus lead to l=
+ittle slowdown in the redirect process for individuals (perhaps one second =
+per redirect), this would significantly slow down a machine running hundred=
+s of browser instances since each redirect would require up to one second o=
+f computation.</pre></li>
+
+<li><pre class=3D"student-text">The operators of the spam value chain could=
+ make future studies harder to repeat by installing Captcha on their websit=
+es to prevent defenders from crawling them as efficiently.</pre></li>
+
+<li><pre class=3D"student-text">The operators of the spam value chain could=
+ make it difficult to repeat such studies by applying the fast flux idea to=
+ more than just ip addresses. A large part of the data is using the domain =
+names and capturing their redirects and info. However, if the domain names =
+themselves change what they point to over time just as the backing IPs do, =
+it would be difficult to conduct such a study without repeatedly polling al=
+l domain names in the spam content.
+</pre></li>
+
+<li><pre class=3D"student-text">The operators of the spam value chain could=
+ try to conceal the details of their operations, e.g. by using a hosting se=
+rvice or faking a postmark on a package.
+</pre></li>
+
+<li><pre class=3D"student-text">The operators of the value chain could make=
+ it more difficult to repeat this study by banning IP addresses that access=
+ the URLs that appear to be crawlers.  This could prevent ever getting to t=
+he distinct domains after clicking on the Received URLs as well as accessin=
+g websites that have different domain names but are run by the same entity.
+</pre></li>
+
+<li><pre class=3D"student-text">The paper discusses the entire data collect=
+ion and processing workflow in detail, so the operators could use this info=
+rmation and change aspects of what they are doing (e.g. make it harder to i=
+dentify the name server via crawling) to make it difficult to repeat such s=
+tudies.</pre></li>
+
+<li><pre class=3D"student-text">The spam operators can share among themselv=
+es a list of known bots (characterized by IP address, MAC address, user-age=
+nt string, etc.) that have accessed links in spam emails and block those bo=
+ts in the future.=20
+ </pre></li>
+
+<li><pre class=3D"student-text">The spam operators could make a study like =
+this harder to execute by adding some protection against web crawlers to th=
+eir sites, like blacklisting the domain of the people conducting the study =
+when they notice that one domain has been making a large number of requests=
+ or by making things like payment more difficult with captchas or something=
+ similar.
+</pre></li>
+
+<li><pre class=3D"student-text">The spam value chain could investigate traf=
+fic coming from the same IP address, so that if the spam chain realizes tha=
+t one investigator is crawling all the domains that the spam chain owns, th=
+ey can blacklist the IP address.
+This only works if the investigator crawls from a small set of IP addresses=
+ and the spam chain controls a significant number of domain names.</pre></l=
+i>
+
+<li><pre class=3D"student-text">The spam value chain operators could obfusc=
+ate the URLs of their clients by wrapping target pages in JavaScript redire=
+ct pages, which the HTTP crawler might miss out on.
+</pre></li>
+
+<li><pre class=3D"student-text">The spam value chain study methodology was =
+highly automated (crawling millions of urls). People wishing to make this h=
+arder in the future could employ bot defensive measures common in other web=
+sites (like captchas etc).
+</pre></li>
+
+<li><pre class=3D"student-text">The spammers could add some kind of captcha=
+ layer before redirecting to the final server. This would make collecting f=
+eed data more difficult because the researchers would need to pass the capt=
+cha tests for each feed they explore.</pre></li>
+
+<li><pre class=3D"student-text">The spammers could change the redirects of =
+the intermediate and final servers so that the results of this paper are di=
+fficult to reproduce
+</pre></li>
+
+<li><pre class=3D"student-text">The spammers could make the research more d=
+ifficult by obfuscating some stages of the data gathering pipeline.
+1) URL parsing: Spammers could use trusted, free resources such as bit.ly t=
+o shorten their urls. Moreover, attackers could make them temporary, so it'=
+s harder for researchers to analyze them in retrospect.
+2) Stop using DNS redirection: Web Content redirections are much harder to =
+analyze, since they can take more time and multiple redirects to be complet=
+ed. While it is unlikely to affect the victim's experience, it will obfusca=
+te the research.
+3) Sell products on well known websites such as Amazon and Ebay, so url par=
+sing bring little benefit. It should be possible to do so while having no l=
+egal impact on the companies selling products.</pre></li>
+
+<li><pre class=3D"student-text">The spammers could set up crawl delays on t=
+heir sites to make it harder for researchers to crawl through the site.
+</pre></li>
+
+<li><pre class=3D"student-text">The use of onion services for purchasing of=
+ goods would anonymize providers. Additionally the use of privacy-oriented =
+cryptocurrencies would make it hard to track where the money is going and w=
+ho is actually creating the spam.
+</pre></li>
+
+<li><pre class=3D"student-text">There are 6 steps the authors of the paper =
+used to perform analyze the spam network.
+
+One way spammers could counteract this is by securing their websites and ma=
+king
+them more difficult to automatically crawl.
+
+Spammers could also try to prevent efficient clustering by making the lexic=
+ographical
+structure of their websites more unique, but this takes quite a bit of manu=
+al work.</pre></li>
+
+<li><pre class=3D"student-text">They can spam using images which makes it h=
+arder for content analysis. They can also use domain generation algorithms =
+(DGAs) to dynamically generate URLs which makes it harder to block via DNS.=
+</pre></li>
+
+<li><pre class=3D"student-text">They could try to more easily blend in with=
+ other kinds of merchants by not selling such weird wares and also not maki=
+ng their pages so blatantly obvious. Also sourcing from certain countries c=
+an also make them pretty clear targets for this study.</pre></li>
+
+<li><pre class=3D"student-text">They could use anonymous DNS records such t=
+hat their information doesn't show up on whois databases. They could also d=
+esign their web infrastructure such that they handle all communications wit=
+h the client during a transaction; i.e. not forwarding the client to a paym=
+ents website or any other third-party websites so as not to expose the serv=
+ices they use.</pre></li>
+
+<li><pre class=3D"student-text">They mention in the paper that "scammers ..=
+. blacklist IP addresses they suspect are crawlers. We mitigate this effect=
+ by tunneling requests through proxies running in multiple disparate IP add=
+ress ranges." It seems difficult in general to distinguish between a real U=
+RL-clicker and a crawler, but the authors' crawlers do seem to send a lot o=
+f requests in total;  maybe if the scammers worked together (shared data ab=
+out potentially suspicious requests), they could more easily spot the crawl=
+ers.</pre></li>
+
+<li><pre class=3D"student-text">This study relied on automated tagging and =
+classification of web content to identify affiliate programs. The spam affi=
+liate programs could introduce more randomness into their HTML content to m=
+ake this automated analysis much harder.</pre></li>
+
+<li><pre class=3D"student-text">To make this kind of study more difficult, =
+they can hinder the data collection process - maybe by having some kind of =
+randomized set of urls supporting this kind of behavior.
+</pre></li>
+
+<li><pre class=3D"student-text">To make this type of study more difficult, =
+spam providers could go to greater lengths to prevent crawling and data col=
+lection from their pages. By obfuscating or somehow randomizing the HTML su=
+ch that the appearance is the same but information gathering is more diffic=
+ult. Additionally, while it seems like this is already addressed and might =
+not have had a large impact on the current study, running one site only in =
+the short term will limit the chances for someone to investigate after the =
+fact, though this does come with the drawback of potentially limiting reven=
+ue.</pre></li>
+
+<li><pre class=3D"student-text">To prevent a similar study to happen, spamm=
+ers will want to improve fraud detection, at the level of the webserver.
+</pre></li>
+
+<li><pre class=3D"student-text">To prevent such studies in the future, the =
+operators of the spam value chain could add more indirection in order to ma=
+ke it harder for people to effectively crawl through all of their domains a=
+nd DNS servers. For example, they could continously change their DNS server=
+s.</pre></li>
+
+<li><pre class=3D"student-text">Using bitcoin or cryptocurrency can hide th=
+e transaction information, or using other means to mask the bank informatio=
+n. Also using more server such as google cloud or aws to constantly be chan=
+ging ip and location may help decrease the ability to pinpoint the spam ope=
+rators.</pre></li>
+
+<li><pre class=3D"student-text">Yes, they could make it more difficult to c=
+rawl the URL links.
+</pre></li>
+
+<li><pre class=3D"student-text">lec18
+
+The operators of the spam value chain could advertise more
+diverse products, making the clustering of products more
+difficult</pre></li>
+
+<li><pre class=3D"student-text">they could try to block the crawler, by tra=
+cking the crawler's visits to the list of domains that the spam service own=
+s. </pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--gYWlBCgsYZVp7U1ZOw71ahKccEFtYUnjSAryyQzUic------

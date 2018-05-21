@@ -1,0 +1,929 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-questions/12
+Subject: Questions for lecture 12 - 6.858
+Date: Tue, 21 May 2018 01:29:15 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--CoTCli56X9QWGFbGzyRDgIvdI01I7oeHUBnohy9DU7----"
+
+
+------MultipartBoundary--CoTCli56X9QWGFbGzyRDgIvdI01I7oeHUBnohy9DU7----
+Content-Type: text/html
+Content-ID: <frame-1156-e762ed5b-ac54-410c-bf33-a7be587e2bd2@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-questions/12
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Questions for lecture 12 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Questions for lecture 12 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text">Do people use EXE to check real-world syste=
+ms?
+
+If multiple values/a range of values can cause a path to terminate, could E=
+XE reflect that in its output? Or can it only ever return a single specific=
+ input of death?
+</pre></li>
+
+<li><pre class=3D"student-text">"The main advantage of using bitvectors is =
+that they, like the C memory blocks that
+they represent, are essentially untyped. This property allows us to easily =
+express
+constraints that refer to the same memory in different ways; each read of m=
+emory
+generates constraints based on the static type of the read (e.g., int, unsi=
+gned, etc.)
+but these types do not persist."
+
+I am not sure if I understand why being untyped make bitvectors good. Could=
+ you please
+explain?
+</pre></li>
+
+<li><pre class=3D"student-text">"The search server examines all blocked pro=
+cesses and picks the best one in terms of some heuristic that is more globa=
+l than simply picking a random branch to follow."
+
+The text states this. What are some typical examples of heuristics that are=
+ "more global" and would be used in this sort of scenario?
+
+</pre></li>
+
+<li><pre class=3D"student-text">- What has the adoption of EXE (and similar=
+ bug-finding tools) looked like, since this paper was written?
+
+- Has this STP constraint solver been used in other tools, or is its design=
+ too tuned to the needs of EXE?</pre></li>
+
+<li><pre class=3D"student-text">1. Are EXE and similar systems typically us=
+ed to test entire applications or are application components usually isolat=
+ed and tested individually?=20
+
+2. Does EXE have a concept of cache eviction? For example for an expression=
+ a =3D p[i] that is evaluated at two different points, how is the cache upd=
+ated if the value of i is changed in between the occurrances? Am I wrong in=
+ believing that this expression would hash to the same value both times?
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">1. Can you go over the EXE Optimization sec=
+tion please?</pre></li>
+
+<li><pre class=3D"student-text">1. This is so cool! Is it actually used in =
+practice?
+2. Is it possible to use for languages other than C? I was a little confuse=
+d about how the authors used EXE on the packet filter libraries because the=
+y mentioned these were written in a pseudo-assembly language, and I thought=
+ using EXE required running code through the EXE compiler.</pre></li>
+
+<li><pre class=3D"student-text">6.858 - EXE
+
+Cool tool! It seems really relevant to lab 3's symbolic execution. Some que=
+stions:
+- With all of its optimizations, how does this tool scale with size? e.g. l=
+arger
+  systems like maybe Facebook's front-end
+
+- Are there similar tools for more complex languages (e.g. Python, Javascri=
+pt, etc.)
+</pre></li>
+
+<li><pre class=3D"student-text">Are false positives (saying there is a bug =
+where there is none) or false negatives (saying there is no bug where there=
+ is one) worse in a program like EXE?
+</pre></li>
+
+<li><pre class=3D"student-text">Are there any types of programs for which E=
+XE is not well-suited (perhaps because its run-time is too long), such as p=
+rograms that read files, where there is no telling what values will be read=
+ in?</pre></li>
+
+<li><pre class=3D"student-text">Because EXE forks at every symbolic branch =
+point, is it possible for the checking process to use exponentially as much=
+ memory as the original program? Is EXE designed to handle computationally =
+expensive programs?
+</pre></li>
+
+<li><pre class=3D"student-text">Can EXE actually be used for a real program=
+? Given that the number of branches blows up exponentially, it does not see=
+m practical. If not, what were ways they tried to make this practical?</pre=
+></li>
+
+<li><pre class=3D"student-text">Can EXE detect bugs that most commonly effe=
+ct distributed systems i.e. deadlock, shared memory accesses, etc..,?
+</pre></li>
+
+<li><pre class=3D"student-text">Can EXE remember paths it has seen in betwe=
+en executions? For example, if a developer has a really long program, could=
+ the developer run EXE for a day or two, halt the program, and then run it =
+again without having it reexplore all the same paths? </pre></li>
+
+<li><pre class=3D"student-text">Could EXE potentially be extended to suppor=
+t floating point numbers? Can
+floating point arithmetics be easily represented with a moderate number of =
+bit
+operations?
+</pre></li>
+
+<li><pre class=3D"student-text">Danny Tang
+data1013
+3/16/18
+
+Lecture 12
+
+Couldn't a tool like EXE also be used by attackers to more easily find bugs=
+ in software (that they have the code to eg.=20
+open source software) to exploit?</pre></li>
+
+<li><pre class=3D"student-text">Do hacker use similar tools to find vulnera=
+bilities? And can this be extended to more blackbox-like scenarios? </pre><=
+/li>
+
+<li><pre class=3D"student-text">Does EXE become not useful when evaluating =
+a program with many floating point operations?
+</pre></li>
+
+<li><pre class=3D"student-text">Does EXE goes down to system libraries to c=
+heck code there? For example, can it detect buffer overflow due to the unsa=
+fe strcpy() function? What if the included code is already compiled for whi=
+ch no source is available (e.g. proprietary code)?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Does dividing by zero do anything an attack=
+er would find useful other than crashing the program and potentially causin=
+g denial of service?</pre></li>
+
+<li><pre class=3D"student-text">Does symbolic execution work differently fo=
+r compiled vs interpreted code?
+</pre></li>
+
+<li><pre class=3D"student-text">EXE is used to find bugs, and in the paper =
+they find bugs in well tested and developed code.  Therefore a hacker could=
+ take advantage of this tool and use it to find bugs in open-source code.  =
+Is it standard practice now, that all major open-source code is generally c=
+hecked with a tool like EXE?  Were there cases when this paper first came o=
+ut, that hackers were using EXE to find bugs in open-source code?
+</pre></li>
+
+<li><pre class=3D"student-text">EXE seems a good solution for a small code =
+with sophisticated branches. But I think it doesn't work on code using blac=
+k-box libraries, because we can't do symbolic execution on a compiled binar=
+y. How can we improve that?
+</pre></li>
+
+<li><pre class=3D"student-text">EXE sounds good in theory, but there has to=
+ be a bound on program complexity before it becomes unfeasible.  Can EXE be=
+ run on modern programs, or only against the toy examples or things the pap=
+er's authors built it towards?  What about something like zookfs or other p=
+arts of the zoobar application from previous labs?</pre></li>
+
+<li><pre class=3D"student-text">Given knowledge that the user will use EXE =
+to detect bugs, is it possible for the adversary to reconstruct the code su=
+ch that bugs are much harder to find?</pre></li>
+
+<li><pre class=3D"student-text">Has there ever been the case that an attack=
+er used EXE to exploit bugs?</pre></li>
+
+<li><pre class=3D"student-text">Have attackers been known to use systems li=
+ke EXE to find exploits?
+
+</pre></li>
+
+<li><pre class=3D"student-text">Have there been attempts to use a STP/EXE l=
+ike system for static checking of checking of less strictly typed languages=
+ or higher level langues? Does the amount of variance in for each variable =
+make symbolic execution non-feasible.</pre></li>
+
+<li><pre class=3D"student-text">How and where does EXE store all the inform=
+ation about the branches and constraints? </pre></li>
+
+<li><pre class=3D"student-text">How are the errors translated back to a lan=
+guage readable by a progammer? If the original code is compiled by exe-cc b=
+efore gcc. Then EXE runs and the outputs are stored in files. After this co=
+nversion, how does the programmer determine which series of inputs led to t=
+he error and where the error occurs? </pre></li>
+
+<li><pre class=3D"student-text">How does EXE deal with memory that is acces=
+sed as different data types? For example reading the first 8 bits of a 32-b=
+it int as a character? Does this mean that constraints will be placed on th=
+e first 8 bits of this int32? How are these constraints on these values sto=
+red?
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">How does EXE deal with situations where STP=
+ fails to terminate (i.e., yields neither a positive nor a negative result)=
+. It seems like this is a design consideration for lab 3.</pre></li>
+
+<li><pre class=3D"student-text">How does EXE manage to check code quickly w=
+hen the code can branch in computation a lot? For example, code could conta=
+in a switch statement which can do a different thing for each value of a va=
+riable, or it could index into an array of function pointers.
+</pre></li>
+
+<li><pre class=3D"student-text">How does EXE scale to very large code bases=
+?</pre></li>
+
+<li><pre class=3D"student-text">How efficient is EXE for large programs wit=
+h lots of branches and computation steps? It seems like it could balloon in=
+to a lot of branches very quickly.  </pre></li>
+
+<li><pre class=3D"student-text">How exactly does EXE generate test cases an=
+d detect errors? I get that it branches along every symbolic case but all t=
+he examples in the paper were arithmetic conditions or buffer overflows. Ca=
+n it detect any other types of errors?
+</pre></li>
+
+<li><pre class=3D"student-text">How exactly does STP apply mathematical and=
+ logical constraints? Does it simply look throught the current logical cons=
+traints and through a table of identities and then if a subset of the const=
+raints fits a case in the table it uses that identity?
+</pre></li>
+
+<li><pre class=3D"student-text">How frequently are tools like EXE used in i=
+ndustry? And what limitations do you
+think keep it from being adopted more widely?
+</pre></li>
+
+<li><pre class=3D"student-text">How is a symbolic variable different than w=
+hat would normally be considered in terms of storage in C and how the STP/E=
+XE system handles constraints around the variable?</pre></li>
+
+<li><pre class=3D"student-text">How much, if at all, would the accuracy and=
+ efficiency of EXE improve if we were to introduce machine learning to find=
+ code that's buggy. Would the primary difficulty here be finding an labelin=
+g data with enough specificity?</pre></li>
+
+<li><pre class=3D"student-text">How scalable is EXE? Is it possible for lar=
+ge companies to utilize the methods in the paper for larger software?</pre>=
+</li>
+
+<li><pre class=3D"student-text">I don't really understand how the symbolic =
+input (i.e. "anything") can be used to exhaust all the possible sources of =
+bugs. How can you test every input?
+</pre></li>
+
+<li><pre class=3D"student-text">I found this ready to be really cool; have =
+any of the limitations been expanded upon and met now?  Also, how come symb=
+olic execution doesn't seem to be something that used commonplace in workpl=
+aces, etc.?  Is it due to the limitations and also language limitations?</p=
+re></li>
+
+<li><pre class=3D"student-text">I noticed this paper is a decade old, but i=
+t's ideas seem incredibly
+useful especially for c programming. Has this been widely used or did it
+fail to get adapted for some reason?</pre></li>
+
+<li><pre class=3D"student-text">I still don't understand how practically EX=
+E is able to be run quickly. There seems to be a tremendous amount of overh=
+ead in detailing all execution paths/keeping track of constraints. Even tho=
+ugh the authors detail the optimizations they make to STP in their paper th=
+e fact that EXE is practically usable is still crazy to me!
+
+</pre></li>
+
+<li><pre class=3D"student-text">I understand that EXE won't catch bugs when=
+ are technically legal in the
+program but not what the programmer intended-- but I'm not sure I understan=
+d
+exactly how powerful the system is. Supposing EXE checks a particular path
+through the program, are we guaranteed that no input which executes that
+particular branch will cause a crash?
+
+</pre></li>
+
+<li><pre class=3D"student-text">I understand that there are a wide range of=
+ optimizations, but my understanding
+is that the number of cases to check should still be roughly exponential wi=
+th
+regard to the length of the program. Is EXE still effective for longer prog=
+rams?</pre></li>
+
+<li><pre class=3D"student-text">I was quite surprised to learn that EXE was=
+ able to find bugs in so many highly reviewed pieces of software. What effo=
+rts have there been to expand EXE-type analysis to more languages and proje=
+cts?
+</pre></li>
+
+<li><pre class=3D"student-text">I'd like to explore an opportunity to apply=
+ static analysis to finding bugs in smart contracts. At what extent the sym=
+bolic execution method might be applicable to this?  </pre></li>
+
+<li><pre class=3D"student-text">I'm currently taking 6.822 (formal verifica=
+tion). I haven't actually heard about concolic testing before, but it looks=
+ like a more practical method of verifying at least *some* of the correctne=
+ss of a program (without having to completely redesign it in a functional l=
+anguage and then write proofs). Do you have any recommendations for concoli=
+c testing software? After a quick Google search, I found this program calle=
+d KLEE.
+</pre></li>
+
+<li><pre class=3D"student-text">I've not taken a class on computability, bu=
+t is exploring every possible branch
+(like in the question, not just reachable paths as described in the paper) =
+even
+possible / computable?
+Finding all reachable paths (with STP) is already an
+NP-hard problem (I think).
+</pre></li>
+
+<li><pre class=3D"student-text">If EXE did not use STP and tried all branch=
+es, it would take an infeasibly long
+amount of time for it to run more complex programs that have a lot of branc=
+hes.
+On the other hand, if EXE randomly selected branches to check it would not =
+meet
+its goal of finding all possible problematic code paths.=20
+</pre></li>
+
+<li><pre class=3D"student-text">In Section 3, the authors describe how STP =
+uses a SAT solver to verify logical formulas. Since STP does not perform ap=
+proximations, are there performance limitations associated with fully solvi=
+ng SAT problems (in the worst case and in the average case)? Out of curiosi=
+ty, can adversarial code/input pairs be constructed which cause STP/the SAT=
+ solver to perform poorly?</pre></li>
+
+<li><pre class=3D"student-text">In section 3.2, the paper says "when EXE en=
+counters a double-dereference **p of a symbolic pointer it concretizes the =
+first dereference (*p), fixing it to one of the possibly many storage locat=
+ions it could refer to." So, why is this a problem exactly?=20
+</pre></li>
+
+<li><pre class=3D"student-text">In the questions from last year, it was men=
+tioned that modern symbolic execution systems use heuristics to determine w=
+hich branches to execute. What sorts of heuristics are used in these cases?=
+ How can a program determine which branch is 'more likely' or 'more error-p=
+rone' in a general setting?</pre></li>
+
+<li><pre class=3D"student-text">Is EXE able to find bugs related to infinit=
+e loops? For example, if it searched along a branch that resulted in an inf=
+inite loop.</pre></li>
+
+<li><pre class=3D"student-text">Is EXE used nowadays instead of Fuzz testin=
+g for the current libraries/services?
+</pre></li>
+
+<li><pre class=3D"student-text">Is STP only used as a part of EXE or is it =
+sometimes used independently of EXE?</pre></li>
+
+<li><pre class=3D"student-text">Is STP used in this paper used beyond just =
+this paper? It seems reasonably efficient. Or is Z3 just better nowadays? O=
+r was Z3 influenced by STP?</pre></li>
+
+<li><pre class=3D"student-text">Is it possible to handle non-deterministic =
+inputs by just marking those
+memory locations with make_symbolic()? Is EXE's correctness dependent on
+the programmer marking all vulnerable inputs with make_symbolic()?
+</pre></li>
+
+<li><pre class=3D"student-text">Is something like EXE implemented on real-s=
+ystems? I have trouble understanding how it could be applied to complex sys=
+tems that with large codebases.
+</pre></li>
+
+<li><pre class=3D"student-text">Is symbolic execution fundamentally sound? =
+I was under the impression that it is generally undecidable to determine wh=
+ether there is an input that causes an arbitrary program to produce a given=
+ output.
+</pre></li>
+
+<li><pre class=3D"student-text">Is there a point where using EXE would be m=
+ore inefficient compared to other techniques described in the introduction?
+</pre></li>
+
+<li><pre class=3D"student-text">Isn't it a bit of a stretch to say that "ex=
+ecution generated executions" turns into "EXE"?</pre></li>
+
+<li><pre class=3D"student-text">It seems as if the constraint solver can ge=
+t really complicated, what kind of programs does this work well with? How m=
+any constraints can STP handle reliably?</pre></li>
+
+<li><pre class=3D"student-text">It seems from the paper that EXE is more-or=
+-less guaranteed to report existing buffer overflow errors if they exist (a=
+ssuming that the testing process is set up correctly). What, then, are reas=
+ons for continuing to use dynamic solutions (such as Baggy Bounds Checking)=
+ instead of using a static solution such as this (if they are used at all)?=
+ Are not all buffer overflows necessarily found by this design? </pre></li>
+
+<li><pre class=3D"student-text">It seems like EXE will struggle to find bug=
+s or exploits in the code if there is faulty logic, rather than just someth=
+ing like a buffer overflow. Is this the case and if so, could EXE be extend=
+ed to catch some of these types of bugs?</pre></li>
+
+<li><pre class=3D"student-text">It seems like knowing what is symbolic data=
+ can be very tricky in a large system.  Are there simple concrete ways for =
+programmers to be able to find and mark all their symbolic data?
+</pre></li>
+
+<li><pre class=3D"student-text">It seems like the main constraint on the sc=
+alability of something like EXE is that satisfiability is a difficult probl=
+em to solve, and the increased efficiency of STP is what even makes EXE pos=
+sible in the first place. In the decade since this paper was published, hav=
+e there been any substantial improvements that make something like EXE more=
+ practical on larger programs?
+</pre></li>
+
+<li><pre class=3D"student-text">It souns like Symbolix execution si only pr=
+actical for smallish programs, what ara alternatives to use when exploring =
+big programs, say, the Linux kernel?
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 12 (Question About Paper)
+
+If I understood correctly, it seems like EXE only catches two types of erro=
+rs, illegal memory writes and divisions by zero. If this is correct, it see=
+ms like EXE is insufficient to guarantee that a program is secure (i.e. an =
+attacker can still compromise a program that was validated using EXE by exp=
+loiting a buffer overflow). Have any other tools been developed that provid=
+e stronger guarantees than EXE?
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 12: My EXE Question
+
+For systems that have not used EXE to find bugs and fix them, can't EXE als=
+o be useful for
+attackers to more easily find bugs and exploit them? Does anything prevent =
+attackers from
+using EXE maliciously?
+
+Thank you!
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 12: Symbolic Execution
+3/19/18
+
+In the paper, they mention using heuristics, specifically least number of t=
+imes run, to choose the best branch to explore. Accordingly, using this heu=
+ristic EXE tends to explore more unique paths than pure DFS, which they sho=
+wed. However, what sort of other heuristics would be appropriate? Unique pa=
+ths are good for code coverage, but doesn't seem like an indicator of risky=
+ code?</pre></li>
+
+<li><pre class=3D"student-text">Question about Paper
+
+
+What is the current state of smart "bug-finding" algorithms? What improveme=
+nts have been made on EXE in the last 10 years?</pre></li>
+
+<li><pre class=3D"student-text">Question about Paper
+
+How does EXE compare to modern fuzzing tools?</pre></li>
+
+<li><pre class=3D"student-text">Question: EXE seems very useful and this pa=
+per came out in 2006. Are there systems like EXE that are used in practice?=
+ What improvements have been made to similar systems since?</pre></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 12
+
+What is the runtime for EXE on an averaged sized industry application?=20
+
+</pre></li>
+
+<li><pre class=3D"student-text">Symbolic execution seems to work well on sm=
+all applications: the authors apply it to udhcpd, pcre and tcpdump, and we =
+apply it to the zoobar app in lab 4.
+However it seems to be too slow to be applied with real-world apps. Is that=
+ the case or are there other reasons why it is not more widespread?
+</pre></li>
+
+<li><pre class=3D"student-text">The authors state that STP lacks pointer su=
+pport. To work around this it seems as though they use pointers as referenc=
+es to memory that can be concretized in the future. The authors then state =
+that this complicates the support of doulble pointers. The paper states tha=
+t STP "concretizes the first dereference to one of the many possible storag=
+e locations it could refer to." How is this in any way correct? It seems as=
+ though STP is just guessing. Does this mean any program that utilizes doub=
+le pointers could be misanalyzed by STP if it guesses the first dereference=
+ concretization incorrectly?</pre></li>
+
+<li><pre class=3D"student-text">The logic of the programs can be complicate=
+d. Are there constraints on the size or flow of the program? </pre></li>
+
+<li><pre class=3D"student-text">The paper describes some of their search op=
+timizations for checking branch paths. They say, "In order to overcome this=
+ problem, we use search heuristics to drive the execution along =E2=80=9Cin=
+teresting=E2=80=9D execution paths (e.g., that cover unexplored statements)=
+." How sophisticated are these heuristics? Has anyone tried any interesting=
+ machine learning approaches?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions how EXE gives no false n=
+egatives and is better at finding bugs than the static analysis, but also s=
+ays that the performance of static analysis improved recently and is more l=
+ightweight. Objectively how much better does EXE really perform and is it w=
+orth the tradeoff?</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that a downside of EXE i=
+s that it lacks pointer support and discusses that this issue comes up when=
+ dealing with double dereferences, but I didn't fully understand the paper'=
+s explanation. Why do double dereferences of a symbolic pointer not work wi=
+th EXE?</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that programmers need to=
+ mark memory locations that should be treated as holding symbolic data. Thi=
+s requirement
+does not seem difficult in the small example given, but in large codebases,=
+ how is it feasible for a programmer to hand locate
+all the possible memory locations that EXE should recognize as symbolic dat=
+a?</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that the main bottleneck=
+ in STP when used in EXE is reasoning about arrays. Section 3.3 then descri=
+bes STP eliminitating array expressions through transformations such as rea=
+d-over-write, and additional optimizations aimed at reducing number of arra=
+y variables or delaying array reads. Why is reasoning about arrays a bottle=
+neck and how do the optimizations mentioned help? I found this section diff=
+icult to understand.</pre></li>
+
+<li><pre class=3D"student-text">The paper says that before evaluating an ex=
+pression, EXE checks if it involves any symbolic expressions, and if yes, a=
+ constraint is added, and if no, the expression is evaluated normally. I wo=
+nder how likely the "no" case is at all? It seems that if a value does not =
+depend on the input, its calculation would already have been constant-propa=
+gated away by the compiler?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper seems to restrict itself to memor=
+y out-of-bounds and division by zero errors. What fraction of errors are ca=
+used by just these two types? Can EXE be extended to detect other kinds of =
+bugs including program validity, plausible denial of service and so on?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper states in the caption for figure =
+1 that they "assume it runs on a 32-bit little endian
+machine." Does this same logic work for other architectures, and does EXE d=
+epend on the computer
+architecture? Does it have some way of detecting it?</pre></li>
+
+<li><pre class=3D"student-text">They briefly mention why fuzzing isn't the =
+best tactic in the intro, but how would we say fuzzing compares to a system=
+ like this? (It seems like it's pretty commonly used in industry - in my pa=
+st internship I remember a few people working on that)
+</pre></li>
+
+<li><pre class=3D"student-text">They mention in EXE you can make other chec=
+ks. How does this interface with STP though. Would you need to add more fun=
+ctionality to STP to make it work. Say I wanted to implement EXE for a webs=
+erver that accepts input and wanted to make sure its in a specific format. =
+STP mentions it uses library solvers, how would this interface with the new=
+ checks I want in EXE?
+</pre></li>
+
+<li><pre class=3D"student-text">They mention that floating point is hard to=
+ solve,
+as far as I understand it the only types they support
+are booleans, integers and bitvectors. It should be possible
+to use a software floating point implementation to work with floating
+point numbers since in the end they are also just bitvectors?
+</pre></li>
+
+<li><pre class=3D"student-text">This category of tools seems super valuable=
+, but I've never encountered it or read about it in my time as a software e=
+ngineer. Is there a reason why it's not in common usage?
+</pre></li>
+
+<li><pre class=3D"student-text">This seems like a system that grows exponen=
+tially with the number of branches- how does EXE and STP deal with the scal=
+ability issue? Most bases of code these days are huge with lots of dependen=
+cies on each other.
+</pre></li>
+
+<li><pre class=3D"student-text">This seems like a very useful tool, is it c=
+urrently being used to find bugs? What would be applications where you woul=
+dn=E2=80=99t use it or would want to use some other tool, like a static bug=
+ checking tool?</pre></li>
+
+<li><pre class=3D"student-text">This tool seems incredibly powerful, though=
+ it was written back in 2006.  What improvements have been made on this con=
+cept since this paper came out?
+</pre></li>
+
+<li><pre class=3D"student-text">What advancements have been made since 2006=
+ in automated bug finding?</pre></li>
+
+<li><pre class=3D"student-text">What are the consequences of concretizing t=
+he first dereference in the case of a double dereference. Does that affect =
+the validity of EXE's outcomes?</pre></li>
+
+<li><pre class=3D"student-text">What is the advantage of keeping track of c=
+onstraints instead of replacing them with concrete values during execution?=
+</pre></li>
+
+<li><pre class=3D"student-text">What would happen if EXE was presented with=
+ code that had a non-deterministic input (ex. the time of day)? Would it si=
+mply treat this as a symbolic field in the STP solver?
+</pre></li>
+
+<li><pre class=3D"student-text">Why EXE generates inputs that cause errors =
+instead fixes the errors=20
+or gives suggestions to developers?</pre></li>
+
+<li><pre class=3D"student-text">Why are floating point operations rarely re=
+levant for security bugs? Is it because most sources of input bugs come fro=
+m improper pointer arithmetic and buffer overflows? </pre></li>
+
+<li><pre class=3D"student-text">Why are systems like EXE not more commonly =
+deployed. Is it simply due to the
+performance tradeoff versus something like fuzzing?
+</pre></li>
+
+<li><pre class=3D"student-text">Why are techniques like EXE not more broadl=
+y used (for example in big tech companies) for bug finding?
+</pre></li>
+
+<li><pre class=3D"student-text">Why aren't systematic code checkers like EX=
+E more widespread? Systematic checking seems like a no-brainer for code rev=
+iew and even just linting code, but this is the first time I've actually re=
+ad about one.
+</pre></li>
+
+<li><pre class=3D"student-text">Why can=E2=80=99t STP and standard bounds c=
+heckers handle pointers directly?</pre></li>
+
+<li><pre class=3D"student-text">Why did no one else do this first? I know t=
+his sounds foolish and presumptuous, but I'm genuinely curious. The idea se=
+ems pretty straightforward - trying all inputs and paths to find faults. I =
+imagine some recent hardware/software innovations at the time (around 2006)=
+ made the development possible, but I couldn't figure out what. Do you have=
+ any clue, or am I just pompous?</pre></li>
+
+<li><pre class=3D"student-text">Why doesn't EXE and STP handle floating-poi=
+nt? It seems that most operations these days are floating point (speed is n=
+ow usually measured in FLOPs), and floating point operations are extremely =
+important. Also, even if real numbers are infinite, floating point numbers =
+are finite and deterministic and it should be possible to have constraints =
+on floating point numbers. If EXE and STP can handle aggresive bit operatio=
+ns like shifting, masking, and byte swapping, why can't it handle floating =
+point operations?
+
+Since EXE and STP rely on determinstic execution, does that mean they canno=
+t be used to debug concurrent programs? Most programs these days run on mul=
+tiple threads or multiple machines, and concurrency/distributed systems is =
+absolutely essential.
+</pre></li>
+
+<li><pre class=3D"student-text">With tools like EXE, why are QAs even neces=
+sary?
+</pre></li>
+
+<li><pre class=3D"student-text">Would it be feasible to make a program like=
+ EXE for a higher-level language (e.g. Python)? They always represented dat=
+a as bitvectors, and I don't know if that would work as well when, e.g., an=
+ integer in Python can be arbitrarily large (until your machine runs out of=
+ memory). (For the CPython implementation, you could just convert the Pytho=
+n code to C code, but I'm wondering about when that isn't the case (other i=
+mplementations of Python or other high-level languages)).</pre></li>
+
+<li><pre class=3D"student-text">Wouldn't the greater than 1 branching facto=
+r of EXE make evaluating complex programs very compute-intensive, if even p=
+ossible?  In order for this to be sustainable, wouldn't most branches would=
+ have to die off, such that you don't have an explosion of branches and thu=
+s processes?  If so, how can you guarentee this?
+</pre></li>
+
+<li><pre class=3D"student-text">You've mentioned that EXE is not complete; =
+ That is, it is infeasible to check every branch in a complex real-life pro=
+gram.  You also mention that symbolic execution is used in practice.
+
+So how do people deal with the non-completeness?  The paper says "The searc=
+h server examines all blocked processes and picks the best one in terms of =
+some heuristic that is more global than simply picking a random branch to f=
+ollow." - What heuristic might this be?  Do people who use symbolic executi=
+on in practice design their code to be more "friendly" to it a-priori? =20
+</pre></li>
+
+<li><pre class=3D"student-text">is there a way to make EXE or something sim=
+ilar compatible with floating point operations since floating points are no=
+t binary?
+</pre></li>
+
+<li><pre class=3D"student-text">sq12
+
+I'm confused about the read-over-write transformation. Why do they include =
+the intersection
+symbols in the formula? It feels like it's making things more complicated?=
+=20
+
+
+Also I'm assuming these formula transformations are for the input constrain=
+ts?=20
+
+</pre></li>
+
+<li><pre class=3D"student-text">sq12
+
+If a user must designate locations in memory for testing,
+and the program the user wishes to test contains potentially
+thousands of locations, then wouldn't the overhead for the
+programmer make EXE less time efficient than using other
+tools such as static analysis?</pre></li>
+
+<li><pre class=3D"student-text">sq12.txt
+
+John C. McLaughlin
+March 19th 2018
+
+Question: Could the instrumentation that they apply be changed to work on a=
+n intermediate language that is provided by something like LLVM, or is the =
+source requirement a strict one?</pre></li>
+
+<li><pre class=3D"student-text">the paper describes quite well the cases wh=
+ere constraits seem to be fairly limited and when the extreme opposite - co=
+nstraints
+are independent - are true. But what if we have a situation in which we hav=
+e a small set of symbols/variables, yet constraints
+are not so limiting (imagine a situation in which many corners cases are pr=
+esent, yet those corner cases are a small set of=20
+the alphabets of our variables). Would this mean that the SAT problem would=
+ be quickly untrackable/the tree would be too large/the system wouldnt be
+able to handle it? Since we force the system to branch many times (it's eas=
+y to satisfy constraints) per decision=20
+</pre></li>
+
+<li><pre class=3D"student-text">what if some input has a lot of constraints=
+ but the input space is still extremely large? I feel like there are a lot =
+of cases where this will run out of memory such as while loops? For example=
+ in our lab servers there is code that could read an indefinite amount of c=
+ode.</pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--CoTCli56X9QWGFbGzyRDgIvdI01I7oeHUBnohy9DU7------

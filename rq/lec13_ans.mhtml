@@ -1,0 +1,2744 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-answers/13
+Subject: Answers for lecture 13 - 6.858
+Date: Tue, 21 May 2018 01:33:30 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--6RyOTaeEvpQvsUMgQGpxYFM3sYaRgjYUAqqRDgg24t----"
+
+
+------MultipartBoundary--6RyOTaeEvpQvsUMgQGpxYFM3sYaRgjYUAqqRDgg24t----
+Content-Type: text/html
+Content-ID: <frame-1168-b13f883d-3e75-4843-a14d-68523353e49c@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-answers/13
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Answers for lecture 13 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Answers for lecture 13 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text">- adversary injects evil script that obtain=
+s the cookie via document.cookie.
+    - prevented by the "httponly" flag
+
+- user downloads evil HTML file, and then opens the local file in their bro=
+wser. This HTML file, assumed to be secure, can access the DOM and obtain t=
+he cookie.
+    - prevented by restricting file:* domains' access permissions.
+
+- user allows a Flash applet to run code from some adversary's origin, and =
+the adversary messes with the Flash execution context and obtains the user'=
+s cookie.
+    - severely punish people who use Security.allowDomain(..) to discourage=
+ them from using it and making themselves vulnerable.
+
+- evil site uses content (a fake stylesheet) from another domain, which the=
+ browser requests using the user's cookie, and then the evil site parses th=
+e response and gets the cookie.
+    - don't allow fake stylesheets (stylesheets that don't begin with a val=
+id CSS rule or are served with a bad content type header)
+
+- user uses Internet Explorer 6 or 7, and this unsuspecting user blindly ag=
+rees to most requests to access some third party code or download/install s=
+omething, which the adversary constructed to obtain the user's cookies.=20
+    - ... don't use Internet Explorer.=20
+</pre></li>
+
+<li><pre class=3D"student-text">1) The developer should look at the APIs in=
+ common user browsers for interacting with the localStorage and sessionStor=
+age browser databases since they will likely be using these to store things=
+ like the users cookies. If requests can be forged to these databases or a =
+MITM attack is possible, additional security measures might need to be intr=
+oduced.
+
+2) Probably the biggest vulnerability would be cookie scoping. Make sure th=
+at the scope is not too broad. If it is the user could trust websites not i=
+ntended by the developer and download a malicious script to their browser. =
+This is a prime example of a vulnerability that would lead to damage throug=
+h cross site scripting.
+
+3) The site hopefully uses HTTPs, so it would be a good idea to make sure t=
+hat the secure flag is set on the cookie so that the cookie can only be sen=
+t over encrypted protocols. Otherwise, the attacker could intercept a TCP h=
+andshake and then extract the cookie once it is being sent over an unencryp=
+ted channel.
+
+4) The site needs to be able to protect against cookie overwriting attacks,=
+ for example the attack might do a overflow attack on the per-domain cookie=
+ jar, overwriting the cookie with a cookie that has no 'secure' flag. This =
+is a non-trivial problem to solve, because even some other secret key can s=
+till be stolen and rewritten if an overflow is allowed.
+
+5) adversaries who attack the type of content (html, css, other assets) tal=
+ked about in ch. 11, "Cross-Domain Content Inclusion". This is a problem if=
+ there is information related to user authentication or cookies that can be=
+ accessed through a CSS syntax hack or something similar.
+</pre></li>
+
+<li><pre class=3D"student-text">An attacker might be able to steal a frame =
+which displays a page protected by login. The attacker might also be able t=
+o take over a service that has read permissions on the cookie. Another atta=
+ck is to spy on the user=E2=80=99s authentication and forge the cookie. Add=
+itionally, an attacker can forge an authenticated user via another site by =
+using the cookie for that site. Lastly, an attacker can inject code that al=
+lows the attacker to steal the cookie.</pre></li>
+
+<li><pre class=3D"student-text"> Suppose you are helping the developers of =
+a complex web site at http://bitdiddle.com/ to evaluate their security. Thi=
+s web site uses an HTTP cookie to authenticate users. The site developers a=
+re worried an adversary might steal the cookie from one of the visitors to =
+the site, and use that cookie to impersonate the victim visitor.
+
+What should the developers look at in order to determine if a user's cookie=
+ can be stolen by an adversary? In other words, what kinds of adversaries m=
+ight be able to steal the cookie of one of the visitors to http://bitdiddle=
+.com/, what goes "wrong" to allow the adversary to obtain the cookie, and h=
+ow might the developers prevent it?=20
+
+1) Ben uses Internet Explorer and is a yes-man. He then downloads a comprom=
+ised html document because Internet Explorer wanted him to. An adversary ca=
+n now use the html document to acccess all Ben's files including his local =
+version of cookies. Correct this by explicilty not supporting Microsoft pro=
+ducts like Internet explorer.
+2) An adversary could overflow the cookie jar with js code via script injec=
+tion into bitdiddle.com, allowing the adversary to overwrite Ben's cookie, =
+thereby in the process obtaining Ben's cookie. Preventable by not having js=
+ injection vulernabilities in bitdiddle's js code.
+3) Ben Bitdittle visits bitdiddle.com and obtains a cookie. He then searche=
+s for bitdittle, and this time, because the hostname was not fully qualifie=
+d and DHCP, resolves to bitdittle.com.adversary. At this point Ben sends ov=
+er his cookie for bitdittle.com, thinking it is actually bitdittle.com, and=
+ is compromised.
+4) An adversary could have a third party app execute js to allow him access=
+ to ben's cookie via a localhost loopback to get him into the context of bi=
+tdibble's domain. Corrected by being careful that ben doesn't use random th=
+ird-party software.
+5) Ben accidentally types in bittwiddle.com, is redirected to an advertisem=
+ent by DNS service which happens to be vulnerable to script injection, and =
+then the adversary may use this script injection to access other domain con=
+texts and therefore ben's cookies. Preventable by making DNS service provid=
+ers feel bad about what they have done.
+</pre></li>
+
+<li><pre class=3D"student-text">* Determine if cookie can be stolen
+	* One way in which a site may use cookies insecurely is by relying on the =
+path prefix parameter for security purposes. Because there are no security =
+checks on the path, only the domain and origin, an attacker could simply im=
+personate the path in order to have a victim's cookie sent to their server.
+	* Using too broad of a cookie domain could lead to issues. A remote advers=
+ary could exploit a vulnerability on any subdomain of the cookie domain in =
+order to steal the cookie. This means that the site creators should be as r=
+estrictive as possible with cookie domains in order to reduce their scope.
+	* Insecure use of plugins on site could lead to cookie leakage. For exampl=
+e, a permissive crossdomain policy could allow malicious access from some o=
+ther attacker controlled domain. If the site had a crossdomain policy that =
+allowed access from some attacker controlled domain, then the attacker coul=
+d use this access to steal a cookie.
+	* A Java applet on the site could allow an attacker to bypass SOP because =
+Java uses IP-based origin checking rather than domain name. Because of this=
+ an attacker could impersonate the site if they can get a domain name under=
+ the same virtual host. This could be fixed if the site creators self-host =
+their site and therefore avoid the potential situation where arbitrary site=
+s could share their IP.=20
+	* If the Java applet itself is vulnerable the attacker could even send arb=
+itrary requests to the origin as a client. This kind of code execution coul=
+d allow an attacker to then mannipulate client to leak it's cookie. To prev=
+ent these the site creator should just avoid using Java applets altogether =
+due to large attack plane given any bug.</pre></li>
+
+<li><pre class=3D"student-text">* Developers need to ensure that there are =
+no script injection vulnerabilities on their website. If not, adversaries c=
+an simply inject their own cookies.
+* Due to the domain level scope of cookies, developers should avoid delegat=
+ing hostnames within a sensitive domain to any vulnerable parties. This tie=
+s the security of the cookies in the domain to the security of the vulnerab=
+le party.
+
+</pre></li>
+
+<li><pre class=3D"student-text">* Even though some cookies may be protected=
+ by the secure flag, an adversary can just overflow it and write it to nons=
+ecure
+* If two pages share a domain, an adversary can overflow the per domain "co=
+okie jar" and use the cookies from one page for use on a more sensitive pag=
+e
+* An adversary can break security on your local system through thirdparty s=
+oftware if there exists a cookie tied to your localhost.
+* If the page uses a practice where resolving a mistyped host could lead to=
+ the ISP's site, then if thi site has a script injection vulnerablity, the =
+original site is also vulnerable.
+* An adversary can steal a cookie from storage that has the same origin sto=
+rage as mentioned in chapter 9, especially in Internet Explorer.
+
+</pre></li>
+
+<li><pre class=3D"student-text">* There could be an XSS vulnerability in th=
+e site that allows the cookie to be stolen from JavaScript code. In this ca=
+se, an attacker with the ability to post content to the site would be able =
+to steal the cookie.
+* There could be a buffer overflow vulnerability in a browser that allows J=
+avaScript on a different site to read the browser's memory, including the c=
+ookie. In this case, an attacker with an unrelated website could steal the =
+cookie.
+* The user could be vulnerable to social engineering attacks (e.g. they cou=
+ld be convinced to type malicious JavaScript into their own developer conso=
+le that sends the cookie to an adversary, perhaps under the belief that the=
+y are unlocking extra site features).
+* If the site is ever loaded over an insecure connection, a local attacker =
+could steal the cookie by inspecting network traffic.
+* The site could be vulnerable to CSRF attacks. (This would not allow the c=
+ontents of the cookie to be stolen directly, but it would allow an attacker=
+ with a different website to use the cookie to impersonate the user.)=20
+</pre></li>
+
+<li><pre class=3D"student-text">- Adversaries with physical access to the c=
+omputer of the victim may steal her cookies
+- Victim using outdated browsers are subject to attacks
+- Adversaries that can host a website at a subdomain of bitdiddle.com
+- Developpers who incorrectly set the domain parameter of their cookies (or=
+ the secure flag, or the httponly flag)
+- Overflow of the cookie jar
+
+</pre></li>
+
+<li><pre class=3D"student-text">- An adversary could control a subdomain of=
+ bitdiddle.com (like funstuff.bitdiddle.com) and obtain a cookie that can b=
+e used for bitdiddle.com. One way to prevent this is to make the cookies  f=
+or bitdiddle.com exactly host-scoped (omitting the domain parameter on non-=
+IE browsers), although this may hinder functionality, as then funstuff.bitd=
+iddle.com cannot use a cookie from bitdiddle.com.
+
+- An adversary could inject a malicious script on bitdiddle.com and read th=
+e document.cookie API to retrieve the user's cookie. One way to prevent thi=
+s is to set the "httponly" flag for each cookie issued by bitdiddle.com.
+
+- An adversary could trick a user's browser as described in the text to sen=
+d cookies for bitdiddle.com over an unencrypted protocol, and just read the=
+ cookies through this protocol. One way to prevent this is to set the "secu=
+re" flag for each cookie issued by bitdiddle.com, preventing them from bein=
+g sent over unencrypted protocols.
+
+- An adversary could exploit a user's HTTP services running on their localh=
+ost, if such services are exposed to the Internet without being properly se=
+cured. If the local service has domain name localhost.bitdiddle.com, it is =
+possible for the adversary to obtain a cookie for bitdiddle.com. One way to=
+ prevent this is to exactly host-scope cookies for bitdiddle.com.
+
+- An adversary could exploit pages for subdomains of bitdiddle.com that are=
+ not intended to exist (e.g. nonexistent.bitdiddle.com), but have valid res=
+olutions because of other parties. Then, they may be able to obtain a valid=
+ cookie for bitdiddle.com from nonexistent.bitdiddle.com, if the other part=
+ies did not properly secure nonexistent.bitdiddle.com. One way to prevent t=
+his is to exactly host-scope cookies for bitdiddle.com. </pre></li>
+
+<li><pre class=3D"student-text">- DNS rebinding--attacker communicates with=
+ client using an IP recently used by the legitimate host. Client sends thei=
+r cookie to the attacker, thinking it's the host. Prevent by limiting time =
+for which an IP is associated with a domain.
+- Attacker registers a domain that, when URL parsers, matches the parsed re=
+sult of a legitimate domain and gets same-origin access. Prevent by parsing=
+ consistently throughout the HTTP stack.
+- Attacker compromises a vulnerable webpage with the same document.domain v=
+alue. This webpage has same-origin access and can read the client's cookie.=
+ Prevent by not using document.domain.
+- Attacker tricks developer into including malicious frame in mashup applic=
+ation, allowing attacker to subvert everything else in the page. Prevent by=
+ encouraging user not to use IE6?
+- Attacker presents user with harmless text box, guesses what letter they'l=
+l type next, and reroutes the keypress to targeted web app (wow). Prevent b=
+y introducing rules about focusing in and out of element between some numbe=
+r of keystrokes?</pre></li>
+
+<li><pre class=3D"student-text">- Domain attribute:
+Unless the designer has a specific use-case in mind, it's best to leave the=
+ Domain field of the cookie blank, so that it defaults to the URL of the se=
+rver.
+
+- Secure attribute:
+It is best practice to set the Secure flag to be true.
+If the server has been configured to listen on a non-80 port, and does not =
+have Domain, Secure set. Because the developers and/or deployers did not sp=
+ecify that the cookie should be Secure, the browser has no reason to think =
+that it should be. Since the server is not listening on port 80, the client=
+ cannot create a TCP connection to it, and thus cannot send the cookie. But=
+ an attacker can set up a=20
+
+- Expires attribute:
+Depending on the application, would want to keep this as short as possible.
+
+- Cookie guessing:
+The session ID/user ID/any unique identifier being set by the server should=
+ have high entropy. Brute-force guessing should not allow an adversary to g=
+uess patterns in the way this ID is being assigned to users.
+
+- HTTPS:
+If the exchange between client-server is not encrypted via HTTPS, the desig=
+ner would have to ensure that there exist no exchanges where the cookie is =
+exchanged. If so, it can be read in plaintext by a packet-sniffer
+
+</pre></li>
+
+<li><pre class=3D"student-text">- If the bitdiddle website uses a cookie th=
+at is not locked to encrypted protocols, the attacker can wait until the vi=
+ctim navigates to the attacker's site (which is an http site, not https), s=
+ilectly inject a frame pointing to the bitdiddle website, and then intercep=
+t the TCP handshake. The brower will then send cookies from bitdiddle's web=
+site over the unencrypted channel, and the attacker can read the cookie. Th=
+e bitdiddle website can prevent this attack by using the "secure" flag to s=
+top the cookie from being submitted on requests over unencrypted protocols,=
+ and by changing their website to use https.
+
+- The attacker injects malicious Javascript onto the bitdiddle website page=
+ and uses the document.cookie API to read the cookie. The bitdiddle website=
+ can prevent this by using the "httponly" flag to prevent access to the coo=
+kie via the document.cookie API.
+
+- The attacker injects Javascript code that overflows the per-domain cookie=
+ jar and then sets a new cookie, allowing the attacker to masquerade as the=
+ victim.=20
+
+- Internet Explorer 6 and 7 have not implement fixes to country-code top-le=
+vel domain handling, so an adversarial website could set more generic cooki=
+es on Bitdiddle's website. The website could fix this issue by not making t=
+heir website available on Internet 6 and 7.
+
+- Adding a "localhost" entry to a domain often points to 127.0.0.1, which m=
+eans that all HTTP services on the victim's own machine are within the same=
+ domain as the remainder of the site. The attacker could exploit this with =
+a Javascript injection to a not particularly secure third-party system on t=
+he victim's machine, allowing the attacker to read the victim's cookie.</pr=
+e></li>
+
+<li><pre class=3D"student-text">- Path-bound cookies are not meant as a sec=
+urity meassure, since javascript can freely hop between any URLs on a singl=
+e host and inject malicious payloads into such targets.
+- The httponly flag prevents malicious scripts from copying user credential=
+s via the document.cookie API.
+- The secure flag ensures that cookies are only submitted over encripted pr=
+otocols. A HTTPS website is not sufficient for this, since attackers can in=
+tercept TCP handshakes from HTTP sites, which would allow them to send the =
+unencripted cookie over an unencrypted channel.
+- The integrity of a cookie is only as secure as the weakest sundomain with=
+in the cookie's defined domain, since the per-domain cookie jar can be over=
+flowed from any of these subdomains via script injection.
+- DNS providers sometimes hijack domain lookups for nonexistent hosts. If t=
+he higher level domains of one such hijack match the domain of the website,=
+ an attack on the DNS provider website could compromise legitimate cookies =
+on the specified subdomain.
+</pre></li>
+
+<li><pre class=3D"student-text">- Stealing the cookie in-transit when the c=
+lient-server communication is over an unencrypted channel. Fix: use TLS.
+- Publish a false sub-domain to a particular domain of interest, allowing s=
+ame-origin access to the cookie. Fix: cry?
+- XSS-based: run malicious client-side code that pulls the client's cookies=
+ and sends them to the attacker. Fix: HttpOnly cookies.
+- CSRF: utilize (rather than steal) the user's cookies by embedding a reque=
+st in a site the victim visits. Fix: e.g. cookie-to-header token.
+- Victim-installed browser extensions have full access to victim cookies. F=
+ix: HttpOnly cookies (?).
+</pre></li>
+
+<li><pre class=3D"student-text">- The URL http://bitdiddle.com suggests tha=
+t it's unencrypted, so an attacker could intercept the cookie by looking at=
+ the network traffic.
+- An attacker could inject the javascript code "document.domain =3D '*.com'=
+", and then load some script from the attacker's server with a .com domain =
+to send the cookie to the attacker.
+- If the attacker can modify the javascript code sent from the server to th=
+e client, the attacker can insert code to send a copy of the cookie to some=
+ server controlled by the attacker.
+- On a website where users can upload their own javascript code, an attacke=
+r could put cookie-stealing javascript code on their own account, and then =
+get an already logged-in victim to log into the attacker's account, which w=
+ould execute the cookie-stealing code and might obtain the old cookie of th=
+e victim.
+- A variant of the above: No login into the attackers account is needed if =
+the attacker can simply make a logged-in victim load an html page with cook=
+ie-stealing javascript code which is stored on the same server.
+- An attacker who can inject javascript code could set many cookies, thus o=
+verflowing the per-domain cookie jar and deleting the victim's login cookie=
+, then set a new one which logs the victim into an attacker-controlled acco=
+unt, so that the attacker could see all the actions the victim performs on =
+that account.
+- If the victim's IPS does "Legitimate DNS Hijacking", the victim requests =
+a mistyped site such as "mai.google.com" (instead of "mail.google.com") and=
+ is then given a fake DNS entry leading to an ad site, and assuming the ad =
+site was compromised by an attacker, the attacker can execute javascript to=
+ obtain a cookie assigned to "*.google.com", and the browser thinks that th=
+is respects the same-origin policy.
+
+</pre></li>
+
+<li><pre class=3D"student-text">- an adversary may overflow the per-domain =
+cookie jar and set new cookies without the secure flag
+- if some mechanisms are proteted with url paths in cookies, this will not =
+work because Javascript can go to any url
+- adversaries can set cookies for domain-level cookies
+- setting localhost and having it point to 127.0.0.1 is unsafe somehow
+- accessing mistyped domain names is also unsecure for cookies</pre></li>
+
+<li><pre class=3D"student-text">- steal cookie from evil javascript. block =
+with only allow cookies from same origin
+- hijack frame of user
+- make user fill in fake forms overlayed on the real one
+- quickly change location of http address really quickly
+- change focus of window while user is usuing it</pre></li>
+
+<li><pre class=3D"student-text">1) The developers should consider what happ=
+ens if an attacker controls a
+subdomain of bitdiddle.com, and they do not set the cookie domain parameter=
+ to
+scope the cookie properly.=20
+
+2) The developers should be sure to set the 'httponly' cookie flag to be su=
+re
+that users' cookies can't be stolen by a malicious Javascript injection.
+
+3) The developers should consider switching to https and if the do so, sett=
+ing
+the 'secure' cookie flag to true, to prevent an attacker from learning the
+cookie value by sniffing unencrypted traffic.
+
+4) The developers should be careful to not include a loopback domain record
+such as localhost.bitdiddle.com, because this can potentially be exploited =
+to
+run arbitrary Javascript in the context of bitdiddle.com, and therefore ste=
+al
+cookies.
+
+5) The developers could consider the practice of ISPs of hijacking mistyped
+domain names to provide insecure advertising sites, and perhaps consider
+registering mispellings of bitdiddle.com.=20
+</pre></li>
+
+<li><pre class=3D"student-text">1. A compromised server. If the web server =
+is compromised, and the services on the server side are not properly isolat=
+ed, the adversary may be able to download the database of cookies. The deve=
+loper should consider better isolation such as OKWS.=20
+
+2. Insecure data-transfer over Internet (MITM attack). If the website uses =
+http to transfer the data, the adversary can easy read cookie as plain text=
+ when they are transferring over the Internet. The developer should correct=
+ly encrypt data transfer using https.
+
+3. Set cookie as http only to prevent javascript accessing cookie. This rai=
+ses the bar for an adversary to gain access to the cookie.=20
+
+4. Properly set document domain. The website should prevent leaking cookie =
+unintentionally to a broader domain. If bitdiddle.com leaks cookie to `.com=
+` domain (which is not possible if the browser is implemented correctly, th=
+e adversary may be able to load cookie by simply set the document domain of=
+ a script as `.com`
+
+5. DNS Attacks. The developer should protect the DNS records of their websi=
+te. The adversary may change the DNS to their own fake website to cheat bro=
+wsers to send users' cookie to the fake website.=20
+</pre></li>
+
+<li><pre class=3D"student-text">1. An adversary on the network intercepts t=
+he cookie as it is not transmitted on a secure channel. If they are worried=
+ about a cookie being stolen, they should use https cookies and mark the co=
+okie as secure.
+2. If an attacker is able to exploit a less secure section of the site (suc=
+h as blog.bitdiddle.com), they can steal the http cookie to be able to acce=
+ss a more secure section (or write their own cookies)
+3. An attacker can trick the browser to consider a site same-origin to bitd=
+iddle.com and then transmit the cookie back from this site
+4. An attacker could set up a similar looking url such as bitdiddle.com. an=
+d trick users into logging in to this site. They can then transmit these cr=
+edentials to bitdiddle.com to obtain their own cookie
+5. An attacker could attempt to execute arbitrary javascript on the site by=
+ exploiting a frame or other browser bug.
+</pre></li>
+
+<li><pre class=3D"student-text">1. An attacker could inject a frame in an i=
+nsecure page that points to http://bitdiddle.com that asks for the cookie. =
+When the client's browser performs the TCP handshake with http://bitdiddle.=
+com, the attacker could intercept the handshake, and when the client sends =
+the cookie to bitdiddle.com, the attacker can steal the cookie. The website=
+ team can prevent this by marking the cookie as secure, which only allows t=
+he cookie to be sent in an https channel.
+
+2. If the site has components written in Java, those components should be c=
+arefully reviewed to make sure they don't use the java.net.URLConnection cl=
+ass. This class allows arbitrary request headers to be at by the code, incl=
+uding the Host header, which the attacker could override with a malicious h=
+ost. The Java Socket class should also not be used, as it allows connection=
+ from any port on the original server.=20
+
+3. An attacker could try to steal the cookie by accessing it through the Do=
+cument Object Model of the webpage. The website team can prevent this by se=
+tting the cookie to by httponly, which prevents the document.cookie from be=
+ing used to directly read the cookie.
+
+4. An attacker could overflow the per-domain cookie jar and reset the cooki=
+e on bitdiddle.com with insecure flags. The website team could prevent this=
+ by storing a random nonce with each cookie that is checked on the server s=
+ide. This check cannot be performed on the client side.=20
+
+5. An attacker could use any of a variety of domain scoping attacks to read=
+ the cookie. The website team could prevent this by monitoring DNS for doma=
+in names ending in bitdiddle.com.</pre></li>
+
+<li><pre class=3D"student-text">1. Check the domain of the cookie.=20
+2. Check the window and frame of the document.=20
+3. Be careful about sibling domain.=20
+4. Cookie stealing in URL.=20
+5. Cookie from foreign origins.=20
+</pre></li>
+
+<li><pre class=3D"student-text">1. Cookie injection
+2. Other domains setting your cookies, since browser permissions around thi=
+s are very confusing and complicated.
+3. Overflow of the per-domain cookie jar with an insecure website that shar=
+es domain.
+4. Someone reading the document.cookie API that copies user=E2=80=99s crede=
+ntials after injection of a malicious script.
+5. JavaScript code delivered over HTTP to overflows the per-domain cookie j=
+ar and sets a new cookie without the secure flag.
+
+</pre></li>
+
+<li><pre class=3D"student-text">1. Cookies are domain scoped so they can't =
+be limited to a=20
+single hostname. So, a malicious user can hop between any=20
+URLs on a single host if they obtain access to any URL.
+Developers can try to mitigate this by use true scoping=20
+features and independently operated flags such as httpopen=20
+and secure
+
+2. Another problem is that it's unsafe to delegate hostnames
+to any untrusted party as a result of the domain scoping. That means
+that if the a localhost entry is added pointing to 127.0.0.1
+then it puts HTTP services from the user's own machine onto the=20
+same domain as the rest of the website. Then these services
+can be exploited. This can be avoided by not having entries pointing
+back to 127.0.0.1
+
+3. Some ISPs will hijack domain lookups for nonexistent hosts
+and redirect to an advertising site. This means that an attacker
+who can exploit that advertising site can compromise the arbitrary
+services. This can be avoided by having ISPs not redirect to those
+vulnerable sites.
+
+4. Domain scoping also causes issues for country level tlds such as
+example.com.pl. The problem is that setting permissions to that site
+could allow permissions to be set to *.com.pl. To avoid this,=20
+browser developers are using patchwork conditionals to work around this
+
+5. Path scoping is sometimes used to attempt to restrict the domain
+scope of cookies. However, the paths don't take into account SOP
+checks and can be avoided easily by an attacker. A developer can avoid
+this issue by using different methods to restrict the domain of
+cookies</pre></li>
+
+<li><pre class=3D"student-text">1. Cross-origin JS DOM access needs to be r=
+estricted. If this is broken, HTTP cookies could be stolen.
+
+2. Even if cross-origin JS DOM access is restricted, if the same host is us=
+ed, JavaScript code can simply hop between any URLs on that host at will an=
+d inject malicious payloads into such targets, abusing any functionality pr=
+otected with path-bound cookies.=20
+
+3. If a HTTPS site uses a cookie that is not locked to encrypted protocols,=
+ the attacker may simply wait until the victim navigates to a site the atta=
+cker controls, silently inject a frame pointing to the another site on that=
+ page, and then intercept the resulting TCP handshake. The browser will the=
+n send all the attacked site=E2=80=99s cookies over an unencrypted channel.
+
+4. JavaScript code delivered over HTTP can overwrite the per-domain cookie =
+jar to set it to be an insecure cookie (removing the secure flag). An attac=
+ker could also trick another user into logging in using a dummy account (th=
+at the attacker controls) by injecting the account info. After the victim l=
+ogs in, their actions could be recorded and information could be gleaned ab=
+out their account (i.e. username, password) that can be used to get their c=
+ookies.
+
+5. If domain restrictions (i.e. the three period rule) are not implemented =
+correctly, websites could be able to set cookies for a large number of othe=
+r sites in the same TLD.</pre></li>
+
+<li><pre class=3D"student-text">1. Developers should make sure their cookie=
+s cannot be sent over an unencrypted protocol where an attacker could steal=
+ them (by using the secure flag for example). It is not enough to simply re=
+ly on a certain page being safe because it is only offered via https. This =
+is because an attacker can wait until the user accesses a site via the http=
+ protocol, and then silently inject a frame pointing to the "safe" page usi=
+ng the http protocol. The attacker can intercept the resulting TCP handshak=
+e and read off the cookie sent over the unencrypted channel. The attacker w=
+ould then be able to sign on as the user!
+2. Developers should protect against an attacker successfully injecting a m=
+alicious script onto a page that allows them to copy the user's credentials=
+ (perhaps by setting the httponly flag which prevents access to the cookie =
+via the document.cookie API). The attacker would be able to log in with the=
+ user's credentials.
+3. Developers should protect their cookies against over-writng. For example=
+, an attacker can overwrite a cookie and sets the secure flag to false, all=
+owing the cookie to be sent over an unsecure channel. The attacker would th=
+en be able to read off the cookie and sign in as the user.
+4. Developers should make sure their cookies are stored in a secure way.
+5. Developers should make sure cookies cannot be stolen by malicious 3rd-pa=
+rty software running on the user's own machine. This could happen if entrie=
+s are included that point back to 127.0.0.1 (localhost).
+</pre></li>
+
+<li><pre class=3D"student-text">1. Developers try to use path-bound cookies=
+, not realizing that paths aren't useful as security checks since they aren=
+'t taken into account during same-origin policy checks.
+2. Developers use a domain cookie for bitdiddle.com but delegate a hostname=
+ within bitdiddle.com (such as help.bitdiddle.com) to a third-party. This t=
+hird-party could abuse access or be insecure.
+3. Developers for web site didn't use httponly flag so cookie can be access=
+ed by document.cookie, which could be accessed by an adversary through scri=
+pt injection.
+4. Attacker could watch network traffic and read the session cookie for a u=
+ser's session on bitdiddle.com if it is not encrypted. Encryption, even aft=
+er logging in, would prevent this attack.
+5. Adversary can overflow the "per-domain cookie jar" by sending JS code ov=
+er http and set the cookie to one with no secure flag. For a http site such=
+ as bitdiddle, the developers could simultaneously store a secret token in =
+a client-side cookie and in a hidden form field and compare them as a check=
+.</pre></li>
+
+<li><pre class=3D"student-text">1. Ensure that `document.domain` is unset.
+  - Prevents access from rogue subdomains
+  - prevents access from not the same origin domains
+
+2. Use PostMessage and check that EventListner's verify origin domains corr=
+ectly
+
+3. Protect against XSS (even benign self-inflicted ones)
+4. Prohibit using your website in a frame: X-Frame-Options:deny
+5. Generally use https=20
+</pre></li>
+
+<li><pre class=3D"student-text">1. First, the developers would need to make=
+ sure that the scope of the cookie was within the desired scope, as a cooki=
+e without a well defined scope would just be accesible to anyone.=20
+2. However, a cookie's scope can be set to be a certain path prefix, but th=
+is does not actually protect it from all of the path restrictions. To actua=
+lly protect it the developer could use the flags httponly and secure.=20
+3. The developers would also have to watch out for attacks that overflow th=
+e cookie jar and simply add new cookies of their own, as this would allow a=
+n attacker to overcome the secure flag by constructing a cookie without it.=
+ Thus the developers would have to make sure that there were no overflow ex=
+ploits in their code.
+4. The developer would have to make sure that the user's localhost was not =
+given the same scope as the rest of the site, otherwise they would be able =
+to steal any cookies in scope.
+5. An attacker could abuse the DNS hijacking and use the falsified record g=
+iven by the ISP to get the user to visit their site while the browser think=
+s it is visiting the intended site.
+</pre></li>
+
+<li><pre class=3D"student-text">1. If a site uses a cookie that's not locke=
+d to only be used on encrypted protocols, then a site owner could steal som=
+eone's cookie for a different site by injecting a frame that points to that=
+ site.  Then they can intercept the TCP handshake.
+
+2. Cross-origin JS DOM access, if unrestricted, can steal cookies.
+
+3. Even with SOP in place, if the same host is used for different things, t=
+here is no defence agains the attack in 2.
+
+4. js code can overwrite the per-domain cookie jar by overflowing it.  They=
+ can use this to replace a cookie with an insecure one.  Then they could us=
+e this to make the user log into a dummy account and track their actions, s=
+tealing data.
+
+5. Bad implementations of domain restrictions (especially nowadays) can res=
+ult in cookies being set for huge swaths of other sites, via specs like *.a=
+l, etc.  This could be used to do overwriting of cookies to do attacks like=
+ 4.
+</pre></li>
+
+<li><pre class=3D"student-text">1. If all URL paths are taken into account =
+during same-origin policy checks. If not, a malicious site on the same host=
+ can steal the cookies.
+2. If the cookie has the secure flag. If not, login credentials can be sent=
+ via unencrypted networks and be easily stolen.
+3. If the cookie under the right domian. All websites under that domain has=
+ access to the cookie.
+4. For all script injection vulnerabilities, like buffer overflows. If the =
+adversary is able to inject their own script, they can write their own cook=
+ies to overwrite the legitimate ones.
+5. If localhost is an entry in the domain. If so, local malware can steal t=
+he cookies.
+</pre></li>
+
+<li><pre class=3D"student-text">1. If your site is an iframe embedded in a =
+parent site, your parent site could
+intercept your messages and inject messages between you and your embedded
+gadgets to get your cookie.
+
+2. The parent could also cover your iframe with some transparent document a=
+nd
+position it such that the user thinks they're inputting information into yo=
+ur
+iframe, but are really giving it to the parent, so the parent can log in wi=
+th
+the victim's credentials and get their cookie.
+
+There is not a great prevention method for either of these: you could set
+X-Frame-Options: deny or X-Frame-Options: same-origin, but this is also
+restrictive.
+
+3. If you have separate URL-parsing routines for the HTTP stack vs those fo=
+r
+determining JavaScript origins, the attacker could get past the more lenien=
+t one
+while you expect your site to be protected by the stricter one. This is
+prevented by using the same one everywhere.
+
+4. Old versions of IE don't check ports for the same-origin policy, so an
+attacker on http://bitdiddle.com:81 could interact with http://bitdiddle.co=
+m and
+steal the cookie. This could be prevented by requiring users to use certain
+modern browsers.
+
+5. If you use a 3rd-party stylesheet on your site, the site could be inject=
+ing
+code that not only gives your website a nice style, but also possibly steal=
+s
+your users' cookies. This interaction happens outside of the JavaScript obj=
+ect
+hierarchy and does not have origin-based security controls, so the best way=
+ to
+prevent it today is just to be careful when trusting 3rd-party stylesheets.
+</pre></li>
+
+<li><pre class=3D"student-text">1. Make sure the document.domain setting is=
+ restrictive enough. If it is set
+to, for example, *.com, then any .com webpage can load your page in an ifra=
+me,
+access your DOM, and steal cookies from bitdiddle.com.
+
+2. We should be careful of browser-specific security issues, such as how in
+Internet Explorer there is no way to prevent *.foo.example.com from being i=
+n
+the scope of a cookie if we want foo.example.com to be in scope (this explo=
+it
+would allow the attacker to obtain a cookie forwarded to a compromised
+subdomain.
+
+3. We want to be sure to encrypt our authentication cookies and to set the
+'secure' flag on them, since otherwise an attacker could wait for us to
+navigate to a malicious page, inject a frame pointing to bitdiddle.com, and
+grab our cookie transferred in the resulting TCP handshake.
+
+4. We may want to disallow loading bitdiddle.com into an iframe, since this
+would open us up to cross-site scripting vulnerabilities (and many other
+vulnerabilities). For example, if we have two iframes on an attacker's webs=
+ite
+for bitdiddle.com, one of which we log into, the attacker could access thei=
+r
+own bitdiddle.com account, run a pre-fabricated exploit script, and access =
+our
+authentication cookie.
+
+5. We would want to check that bitdiddle.com isn't relying on path scoped
+cookies of any kind as a security measure, since JavaScript code can hop fr=
+om
+any two URLs on a single host at will. An attacker could exploit such a
+reliance by hopping between URLs, injecting a malicious payload which allow=
+ed
+them to obtain an authentication cookie.
+</pre></li>
+
+<li><pre class=3D"student-text">1. Shared origin via payment.bitdiddle.com =
+and login.bitfiddle.com - some browswers would automatically grant access t=
+o one from the other and the attacker can use a redirection to one to get t=
+he cookie from the other. Rather, use an explicit post message mentioning w=
+hich websites are filtered "in" or permitted.
+
+2. Broad hostname matching in the post-message API which could allow any tw=
+o websites matching the regular expression to share credentials. Rather, ma=
+ke the matching string fairly specific so that adversaries aren't able to g=
+et browsers to execute arbitrary code (using the cookie in this context) wh=
+en there isn't a request from a matching website.
+
+3. Maintaining old frame data when user logs out and logs into a different =
+account. This could be exploited via an adversary trying to get a user to l=
+og into an account that they control and use that to get data from their le=
+gitimate account. Clearing of all existing frames upon log out could help w=
+ith this.
+
+4. Exploit the possibility of tweaking the location.host on a page after th=
+e fact to redirect the cookie to an attacker site. This can be fixed by not=
+ allowing this to be changed.
+
+5. Similar to above, hijack the frame of a user's adress bar and make it po=
+int elsewhere while still logged in. This could be avoided by locking some =
+of these frames to a single window and not letting obstructions or hijackin=
+g.=20
+</pre></li>
+
+<li><pre class=3D"student-text">1. The IP of a particular host intentionall=
+y is changed, and the attacker can talk to the new destination through the =
+user=E2=80=99s browser. If they are able to interact with the user=E2=80=99=
+s internal network they may be able to launch a man-in-the-middle attack to=
+ get the cookies.=20
+2. The website uses document.domain =3D bitdiddle.com, but there=E2=80=99s =
+a much less secure page at cats.bitdiddle.com.  If the attacker is able to =
+compromise cats.bitdiddle.com, the security of the whole domain is compromi=
+sed.  Developers would either have to ensure the same level of security acr=
+oss all x.bitdiddle.com pages or set document.domain to be more selective.
+3. A similar attack can arise through post messages, if instead of explicit=
+ checking the origin of the message, it checks for a substring in the domai=
+n name (i.e. =E2=80=98bitdiddle.com=E2=80=99).  This again allows compromis=
+ing messages from cats.bitdiddle.com. This could be prevented by explicitly=
+ specifying acceptable URLs and not using substring matching.=20
+4. For either of the above attacks, the attacker can also access a user=E2=
+=80=99s actions not even by explicitly stealing their cookies, but by overw=
+riting their cookies with JavaScript sent over HTTP.  The user then accesse=
+s a bogus session that the attacker also has access to. If the user inputs =
+any sensitive information in this session the attacker will have it.=20
+5. Adding localhost to a domain may make it point to 127.0.0.1. This means =
+that services on the user=E2=80=99s machine have the same domain as the rem=
+ainder of the site. These local services may be insecure and allow easy ins=
+ertion of attacker-supplied JS. Localhost should not be allowed as a valid =
+domain.</pre></li>
+
+<li><pre class=3D"student-text">1. The adversary could use the document.coo=
+kie API to access the cookie which can be prevented using the httponly flag=
+.
+2. An attacker could listen to cookie request sent over unencrypted protoco=
+ls which can be prevented using the secure flag.
+3. The attacker can overflow the per-domain cookie and set his own cookies,=
+ so cookies should be tightly scoped.
+4. Avoid setting domain-level cookies like *.com
+5. Don't delegate hostnames with sensitive domain to untrusted party which =
+lets destinations that you don't have control over to access cookie
+6. Ensure ISP doesn't hijack domain lookups for nonexistent hosts which red=
+uces risk of adversary exploiting vulnerabilities on advertising site in or=
+der to access user cookie.</pre></li>
+
+<li><pre class=3D"student-text">1. The attacker could execute a cross-site =
+request forgery attack by getting the user to click on a URL that have HTTP=
+ values entered in it. The developers can prevent this by including some ra=
+ndom data in the URL that the attacker will not be able to guess.=20
+2. The attacker can execute a DNS rebinding attack. Developers can prevent =
+this by ensuring that DNS resolvers never resolve to an internal IP address=
+.=20
+3. An attacker could try to set *.com as a cookie so that the cookie can be=
+ used for all sites ending in .com. Developers can mostly prevent this by u=
+sing conditionals such as the three-period rule.=20
+4. Localhost is often included in the domain of cookies. This is dangerous =
+because it can potentially give access to untrusted parties. Developers sho=
+uld avoid tying cookies to local host.=20
+5.A screensharing attack where the attacker can see the victims screen and =
+access cookies. A possible method of prevention would be to allow an origin=
+ to screen-capture content from its own origin. </pre></li>
+
+<li><pre class=3D"student-text">1. The developers may restrict a cookie to =
+a top level domain such as .co.uk. Although browsers try to protect against=
+ this, as the book says, those protections are a 'patchwork of conditional =
+expressions', and is complicated by the recent introduction of unlimited TL=
+D's. To fix this, developers should not assign cookies to top level domains=
+.
+
+2. An attacker who can inject a script can "overflow the cookie jar", repla=
+cing a cookie with one of his own choosing. To protect against this, develo=
+pers should protect against script injection techniques or perhaps not use =
+cookies as a token of authentication.
+
+3. Attackers can inject a script that runs in a given domain (allowed by th=
+e SOP) but in a different path. It will thus be able to affect cookies in t=
+he user's path. The solution is again to be aware of script injections and =
+not consider path isolation to be secure.
+
+4. If the web application can be accessed by IP Address, an attacker can se=
+t a cookie for an ip address has the same last two numbers, and it will byp=
+ass the SOP and TLD checks of browsers. The solution is to not make web app=
+s accessible using IP Address.
+
+5. An attacker can use bugs in privileged code or a rogue add-on that they =
+give away as a game to re-write cookies. The solution can be to not assume =
+cookies haven't been tampered with and perhaps use cryptographic hashing to=
+ verify this.</pre></li>
+
+<li><pre class=3D"student-text">1. The developers need to consider the http=
+only and secure flags. Without the httponly flag set, an attacker could use=
+ the document.cookie api to get a cookie. Without the secure flag, the cook=
+ie could be transmitted through an unsecure, unencrypted protocol via a con=
+nection the attacker can listen into. The attacker could then just read the=
+ cookie.
+
+2. I'm not sure how much the developer can do to stop this, but perhaps the=
+y can detect the "overflowing the cookie jar" situation and prevent the use=
+r from going on the site until the original cookie is restored, or at least=
+ tell the user that the cookie has been changed. Otherwise, the attacker ca=
+n overwrite the cookie for some website and now has access to metadata that=
+ the victim created on that account (search history).
+
+3. A developer should watch out for the various scoping formats browsers us=
+e to ensure that no mistake occurs where the scope of a cookie is too permi=
+ssive.
+
+4. The developer should be aware of third party software running on his/her=
+ domain. If local services have entries that point to local host, an attack=
+er can craft a request that has a valid domain but routes to a weak third p=
+arty service and use that to compromise the cookies.
+
+5. The developer should be vary of DNS hijacking attacks where an ISP will =
+serve an advertiser page for a nonexistant domain and then exploit a known =
+vulnerability in that page to insert a script.
+</pre></li>
+
+<li><pre class=3D"student-text">1. The developers should consider the diffe=
+rences between major browsers. For example, IE 8 doesn't use the protocol t=
+o compute the origin, so http and https share the same context, rendering l=
+ocalStorage/sessionStorage less secure.
+2. The developers should look for xss vulnerabilities, making sure to prope=
+rly validate and escape untrusted inputs.
+3. The developers should use the httponly flag, so attackers cannot directl=
+y invoke document.cookie api.
+4. Even if attackers are unable to read cookies, they might try to overwrit=
+e them, so developers should cryptographically sign their cookies to at lea=
+st limit attacker to overwriting with valid credentials.
+5. For particularly sensitive actions, the developers should assume that a =
+users cookie may have been compromised and ask their users to reauthenticat=
+e.
+</pre></li>
+
+<li><pre class=3D"student-text">1. The network is not encrypted. So the att=
+acker can
+uses packet sniffing to read network traffic to steal
+the session cookie.=20
+2. Even the login page is SSL encrpted. But once authenticated,
+other pages might not use SSL and the cookie can still
+be stolen. For the first two attacks, the developers can
+enforce SSL for all their pages.
+3. The attacker can use JavaScript to overwrite the cookie jar=20
+and set a cookie without secure flag even SSL is enforced.=20
+The developers can store a secret token in the cookie and=20
+in a hidden form field, then compare them.
+4. The attacker can set a user's session id to one known to him
+and send the link with the session id to the user via email,
+if the user logins the page via the link, the attacker has the=20
+cookie. Maybe this can be prevented if the session id is set
+on the server side.
+5. "localhost" attack. The attacker may trick local services
+to run arbitrary JavaScript code and even steal the cookie.=20
+The developers can separate all the local services from the
+web server.=20
+</pre></li>
+
+<li><pre class=3D"student-text">1. They should make sure not to set documen=
+t.domain so as not to falsely claim another site as having the same origin.
+2. Other sites open should not be able to login into a attacker-controlled =
+account to get a frame to a page with sensitive information.
+3. Frames could be accessible to other applications, which could then try t=
+o overwrite links for phishing or other purposes.
+4. They should not allow other frames to obstruct information on their site=
+ by correctly setting x-frame-options.
+5. Ensure that other sites cannot eavesdrop on postMessages sent between di=
+fferent parts of the site.</pre></li>
+
+<li><pre class=3D"student-text">1. To prevent injecting malicious JavaScrip=
+t code to steal cookies via the document.cookie API, set the httponly cooki=
+e.
+2. To prevent outdated browsers with poor security policies from compromisi=
+ng the security of your site, detect which browser the user is on and warn =
+them to not use the website on i.e. Internet Explorer 6.
+3. To prevent dodgy local services on the user's OS from doing something ba=
+d to the user, remove localhost from the cookie's domains.
+4. To prevent advertisers from participating in DNS hijacking, remove adver=
+tisements from your website and rely on a different revenue model.
+5. Finally, serve your website through HTTPS only so you don't have to deal=
+ with browsers that allow HTTPS cookies to be accessed over HTTP.
+</pre></li>
+
+<li><pre class=3D"student-text">1. Use URL Paths in an request to get cooki=
+es.=20
+	ex. cookie for example.com/some/path included on request to=20
+	    example.com/some/path/subdirectory/
+	Counter: httponly, secure: protects data against reading,
+				   however does not protect against overwriting
+
+2. Using a script injection vulnerability to overflow the per-domain cookie=
+ jar,=20
+   and set their own cookies.=20
+	Counter: Er, make sure there isn't any super exploitable browser vulns.
+
+3. Using XMLHttpRequest.getResponseHeader() to asking for server-supplied S=
+et-Cookie
+   values that are flagged as httponly.
+	Counter: Add special exception or if branch preventing such requests=20
+
+4. Attacker can use documents loaded from 1.2.3.4 to set or inject cookies=
+=20
+for *.3.4. Then the attacker can possibly pretend to be a user.=20
+	Counter: Unclear? Maybe adding specific checks might be helpful?=20
+
+5. Access cookies via document.cookie ( via local file origin vulnerability=
+)=20
+	Counter: disallow cross-document DOM / XMLHttpRequest, ignore
+		 document.cookie calls, etc. </pre></li>
+
+<li><pre class=3D"student-text">1.The attacker could have access to a subdo=
+main that can then request the cookie, allowing them to copy the cookie. Th=
+is can be prevented by making sure that the attacker does not have control =
+of subdomains of the site.
+2.If only certain sections of the site are secure, and the developer is rel=
+ying on the path value, then the attacker can use the same-origin policy ch=
+ecks to still extract the cookie with malicious code.
+3. If the httponly flag is not set on the cookies, then injected code can a=
+ccess the cookie via the document.cookie javascript API.
+4.Not setting the domain parameter may improve the security against dangero=
+us subdomains for most browsers however this will still leave a vulnerabili=
+ty to dangerous subdomains for users using internet explorer.=20
+5. Because the site uses http instead of https, the channels of communicati=
+on to the server, that contain the cookies, will not be be secure against n=
+etwork level attackers.</pre></li>
+
+<li><pre class=3D"student-text">6.858 - The Tangled Web
+
+Some attacks that you should be wary of:
+
+- HTTP without ecnryption, which means MITM attacks are effective for
+  listening to the conncection and retrieving the cookie when it is passed
+
+- If the document.domain in JS is specified (e.g. bitdiddle.com), then subd=
+omains can steal the cookies
+
+- iFrame attacks (bitdiddle.com is iframed) might occur (origin inheritance=
+)
+
+- If bitdiddle.com allows text to be written but not sanitized (e.g. writin=
+g in HTML),
+  you can get a XSS attack
+
+- Not a cookie specific attack, but phishing/spoofing is always an issue on
+  the internet.
+</pre></li>
+
+<li><pre class=3D"student-text">A few ways an adversary could steal a cooki=
+e from http://bitdiddle.com/:
+
+- A script injected into a site, as in the ability to inject &lt;script&gt;=
+ tags into a zoobar user's profile that run in the user's browser and send =
+document.cookie to another server
+- An attacker may somehow be able to register a subdomain, attack.bitdiddle=
+.com (this is more probable in a case like script.mit.edu or csail.mit.edu)=
+ and run code with the authority of bitdiddle.com to steal the cookie
+- A link, perhaps posted by a user of bitdiddle.com, could redirect to anot=
+her website that inherits cookies
+- If the cookie is sent unencrypted over http, it can be snooped
+- A javascript file from an attacker domain can be disguised as an image fi=
+le and import in an image tag. This script may send document.cookie to anot=
+her server
+</pre></li>
+
+<li><pre class=3D"student-text">A number of things could go wrong to allow =
+the adversary to obtain the cookie.  The adversary could perfrom a man in t=
+he middle attack with HTTP, already have access to your root file system, f=
+ind a bug in the browser parser and is able to provide an origin that is de=
+emed as correct, find a bug in the website, or taking advantage of local se=
+rvices with localhost.  The developers can prevent a most of the above atta=
+cks by using HTTPS and having correct code.  However, for attacks using oth=
+er services and computers already hacked, there is little the developers ca=
+n do.
+</pre></li>
+
+<li><pre class=3D"student-text">A user's cookie can be stolen by an advasar=
+y several ways:
+1. Phishing attack where the user enters information into a similar site. T=
+he site makes the correct request to the server and loads cookies.
+2. An attack where an iframe is loaded with the correct site content inside=
+ the attackers site. The user enters information and the=20
+3. With cross-domain sharing. If the domain is set to a particular value, t=
+he attacking site can launch a pop-up windows and access shared cookies.
+4. Hijacker can cause a page to load the wrong js file (using change of IP)=
+ and provide the hijacker with programmatic access to the main site.
+5. If the user has an older browser with known exploits, the hijacker can t=
+ake advantage.
+
+This issues can be addressed by ensuring the browser is up-to-date before l=
+oading the page. The developer may also set the domain based on the user so=
+ that no general domain can set to access information across multiple users=
+. The developer may opt-out of cross-frame.</pre></li>
+
+<li><pre class=3D"student-text">Adversaries could potentially exploit a DNS=
+ rebinding attack, cross-site scripting attacks, cross-site request forgery=
+ attacks, directory traversals, and SQL injections.</pre></li>
+
+<li><pre class=3D"student-text">An HTTP cookie can be scoped to domains or =
+paths. Several issues arise from this, because the domain parameters may ma=
+tch the current hostname or any subdomain. For paths, Javascript can inject=
+ malicious payloads. Thus, developers should consider/protect:
+
+- cookies that belong to one site from being tampered with (either read or =
+overwritten) by unrelated pages
+- cross-domain interactions
+- attackers copying user credentials after injecting malicious script
+- HTTP contexts having access to HTTPS contexts
+- code injection
+- overflow of a cookie (setting another cookie in the process with less sec=
+urity)
+
+Some prevention techniques include:
+
+- appropriate cross-domain interactions (e.g. use =E2=80=98postMessage=E2=
+=80=99 instead of =E2=80=98document.domain=E2=80=99)
+- =E2=80=98httponly=E2=80=99 flag
+- =E2=80=98secure=E2=80=99 flag
+- scope cookies as tightly as possible (do not supply =E2=80=98domain=E2=80=
+=99 at all)
+- be prepared for code injection (have checks in place)
+- cryptographic cookie signing
+</pre></li>
+
+<li><pre class=3D"student-text">An adversary can inject malicious code on a=
+ page and access the cookie via the document.cookie API. Developers can pre=
+vent this by using a special flag, httponly which prevents access to the co=
+okie via the document.cookie API.=20
+
+An attacker can intercept the TCP handshake between a targeted website and =
+another one under their control. If the cookie is sent over an unencrypted =
+channel, the cookie information can be learned. A developer can combat this=
+ by using a special flag, secure, which stops the cookie from being submitt=
+ed on request over unencrypted protocols.
+
+An attacker can deliver JavaScript code over HTTP to overflow the per-domai=
+n cookie jar and effectively steal the cookie by overwriting it with a new =
+one without the secure flag. The best way to prevent this attack is to simu=
+ltaneously store a secret token in a client-side cookie and in a hidden for=
+m field.
+
+An attacker could register a cookie for *.com and use this to access http:/=
+/bitdiddle.com/. To prevent this only hosts within the specified domain can=
+ set a cookie for a domain and domains must have at least two or three peri=
+ods within them.
+
+An attacker could access a vulnerable site that is redirected to if you mis=
+type http://bitdiddle.com/. If the site contains any script-injection vulne=
+rabilities, then the cookies can be stolen using one of the tricks used abo=
+ve.</pre></li>
+
+<li><pre class=3D"student-text">An adversary can steal a cookie from a visi=
+tor to http://bitdiddle.com/ in the following ways:
+- a frame can overwrite a cookie
+- an adversary can provide a path in the url and inject a malicious payload
+- an adversary can steal the cookie by matching it to a subdomain
+- an adversary could steal the cookie if the domain parameter is too wide s=
+coped=20
+- an adversary can utilize any script-injection vulernabilities to steal or=
+ overwrite the cookie
+
+These attacks could be prevented by setting the httponly and secure flags o=
+n the cookies. Additionally, cookies can be tightly scoped by not setting a=
+ domain parameter at all. </pre></li>
+
+<li><pre class=3D"student-text">An attacker could try to retrieve a cookie =
+by using javascript to access the DOM of another unrelated site. The same-o=
+rigin policy attempts to prevent this.
+
+An attacker could inject malicious content into a site using the Content-Le=
+ngth header through the XMLHttpRequest API. They could forward users to a m=
+alicious site where their cookies may be collected.
+
+A cookie can be accessed using through document.cookie. The secure and http=
+only flags make it harder to access cookies.=20
+
+If scope-matching parameters aren't specific enough, JavaScript code can ho=
+pe between unrelated sites, fetching cookies along the way.
+
+Small bugs have large ramifications. For example, using the "localhost" dom=
+ain appends "localhost" to the beginning of any domain name, granting an at=
+tacker broad access to webpages.=20
+
+</pre></li>
+
+<li><pre class=3D"student-text">Answer to Reading Question
+
+
+1. Cookie Theft - set httponly flag (helps mitigate the risk of client side=
+ script accessing the protected cookie if browser supports it)
+
+2. Sniffing - set secure flag so that cookie is transmitted over HTTPS chan=
+nel
+
+3. MITM - strong TLS options, including long HTTP Strict Transport Security=
+ (HSTS) duration or Public Key Pinning to enforce strong guarantees on serv=
+er identity
+
+4. Arbitrary Script Execution/Cross-Site Scripting - adversaries attempting=
+ to run arbitrary Javascript on the site may be able to access the cookies.=
+ Need to encode all user-supplied input
+
+5. Other cookie concerns (scope, shadowing/overflow) - If the site secure.b=
+itdiddle.com sets a cookie with scope example.com, then the site blog.bitdi=
+ddle.com can overwrite that cookie arbitrarily. Whenever browsers see a coo=
+kie with the same name and scope as one that's already in the cookie jar, t=
+hey discard the old cookie value and overwrite it with the new cookie. Thus=
+, blog.bitdiddle.com can overwrite any cookie whose scope is bitdiddle.com.=
+ Worse still, one cookie can shadow a cookie with another scope. Suppose se=
+cure.bitdiddle.com sets a cookie with scope secure.bitdiddle.com and name S=
+ESSIONID. Next suppose blog.bitdiddle.com sets a cookie with scope example.=
+com and the same name. Finally, suppose the user visits the site secure.bit=
+diddle.com. The browser sends both cookies, in some undefined order, and th=
+e server has no reliable way to tell which cookie value came from which sit=
+e. So, the server can detect that it is in a confusing situation, but has n=
+o good way to un-confuse itself. Worse, some web application frameworks may=
+ conceal the confusion from application code, using one of the cookie value=
+s and silently ignoring the other. This can lead to something that behaves =
+effectively like blog.bitdiddle.com overwrote the cookie from secure.bitdid=
+dle.com, in a situation where no one would reasonably expect that it might =
+be able to. This is an important aspect that the developer should consider.
+
+6. Conflicts with DOM same-origin policy rules: cookies have scoping mechan=
+isms that are broader and essentially incompatible with same-origin policy =
+rules - sometimes undoing some content security compartmentalization mechan=
+isms that would otherwise be possible under DOM rules.
+
+</pre></li>
+
+<li><pre class=3D"student-text">Answer to Reading Question
+
+1. The analyst should look at the cookie type.=20
+
+	1a. If the cookie type does not have httponly flag, a malicious attack can=
+ use the document.cookie API to copy a user's credential upon injecting a m=
+alicious script on the target page.
+
+	1b. If the cookie type does not have secure flag, a malicious attack can o=
+pen up a TCP handshake with the target website from their own web page and =
+copy the cookies over from this unecnrypted channel.
+
+To prevent these attacks, the developer should specify these flags for auth=
+entication cookies.
+
+2. Overwriting the cookie data through javascript code could lead to the cr=
+eation of a cookie without a secure flag. An analyst should check for such =
+javascript injection attacks.
+
+3. Overflow attacks can work across parts of the different domains (i.e. we=
+bmail.example.com and blog.example.com). An analyst should ensure all compa=
+rtments are secure as cross-site attacks are possible to overflow the cooki=
+e jar.
+
+4. Cookie domain restrictions are improperly set allowing misintended acces=
+s to cookies. For example, since browsers implemented lots of conditional l=
+ogic about domain restrictions, cookies could actually be set to scope to *=
+com.pl, which would render the cookie useless as an authetnication token. S=
+o, an analyst should ensure all important cookies are properly scoped.
+
+5. Avoid using localhost for your services as it ties the security of cooki=
+es back to third party services you cannot control. The example given in th=
+e reading is 127.0.0.1. The same issue applies with cross-site forgeries us=
+ing DNS hijacking.=20
+
+</pre></li>
+
+<li><pre class=3D"student-text">As the book says, "A secure cookie set by h=
+ttps://webmail.example.com/ can still be clobbered and replaced by a made-u=
+p value set by a spoofed page at http://webmail.example.com/, even if there=
+ is no actual web service listening on port 80 on the target host." - thus =
+it needs to be checked whether the cookie was made by http or https.=20
+(http only)
+
+The cookie may be submitted on request over unencryted protocols, and thus =
+be stolen. Thus this should not be don.e=20
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">As the http protocol is not encrypted, the =
+attacker might intercept the request and steal the cookie directly. This ca=
+n be circumvented using https protocol.
+
+An attacker can also send the user to a false website, and trick the user i=
+nto entering details and obtaining the cookie that way.
+
+Developers also need to consider the domain scope of the cookie set, making=
+ sure that it is not too general such that other websites can also obtain t=
+he cookie.</pre></li>
+
+<li><pre class=3D"student-text">Check domain restrictions
+</pre></li>
+
+<li><pre class=3D"student-text">Cookies can be stolen by an attacker which =
+has injected code into another page within the scope that the cookie is set=
+ to. Thus the developers should restrict the cookie to the most specific sc=
+ope that they can.
+
+Similarly, if the adversary injects one page on a host, it can make javascr=
+ipt code fetch other pages on the host and access their cookies. Likewise, =
+this can be prevented by restricting the cookie to a tighter domain scope t=
+hat doesn't include the owned page.
+
+Cookies with the httponly and the secure flags won't be sent through other =
+protocols but the cookies can be overwritten by another cookie, and it is e=
+ssentially impossible to verify where a cookie came from. Developers should=
+ assume that the cookies sent back by the client weren't necessarily issued=
+ by them.
+
+Because all matching cookies are sent, if an attacker can inject code into =
+one page on the domain (even a different subdomain), the attacker can spoof=
+ cookies to another page since cookies sent back by the client don't contai=
+n the domain restriction parameter.
+
+An attacker can try to attack the client by issuing a HTTP request to a url=
+ that looks like the same domain but is on the client's computer such as lo=
+calhost.ebay.com which could be mapped to 127.0.0.1. The solution here is t=
+o not map entries to 127.0.0.1.
+</pre></li>
+
+<li><pre class=3D"student-text">Danny Tang
+
+data1013
+
+4/1/18
+
+
+
+Lecture 13
+
+Question:
+
+Suppose you are helping the developers of a complex web site at http://bitd=
+iddle.com/ to evaluate their security. This web site uses an HTTP cookie to=
+ authenticate users. The site developers are worried an adversary might ste=
+al the cookie from one of the visitors to the site, and use that cookie to =
+impersonate the victim visitor.
+
+What should the developers look at in order to determine if a user's cookie=
+ can be stolen by an adversary? In other words, what kinds of adversaries m=
+ight be able to steal the cookie of one of the visitors to http://bitdiddle=
+.com/, what goes "wrong" to allow the adversary to obtain the cookie, and h=
+ow might the developers prevent it?
+
+Note: an exhaustive answer might be quite long, so you can stop after about=
+ 5 substantially-different issues that the developers have to consider.
+
+Answer:
+
+1) Check if it is possible for a malicious service with the same document.d=
+omain as your service to access your website's information
+(ie. abusing the document.domain SOP implementation). This can be used to s=
+teal the user's cookie. Solution: use postMessage.
+
+2) Check if frames in your document can change the location of the overall =
+window where they live. This can be used to trick the user
+to visit a malicious website that may steal their cookies. Solution: Disall=
+ow navigation to the window field handle.
+
+3) Check if frames in your website can run scripts to modify other frames. =
+If this is possible, users may unknowingly enter information
+into a text box that will actually be sent to the malicious service. Soluti=
+on: Use origin checking for frame communication and access.
+
+4) Even if number 3 is fixed, some malicious frames may still be able to "g=
+uess" the origin of the frames that they want to hijack. In
+this case the attack in number 3 is still possible. Solution: don't use fra=
+mes for inputting user data.
+
+5) Unsolicited framing may trick users into clicking on hidden malicious bu=
+ttons that fit in with the rest of the UI. Solution: use
+X-Frame-Options, although the reading states that this solution is not real=
+ly a real solution.</pre></li>
+
+<li><pre class=3D"student-text">Developers look to see that the site doesn'=
+t have XSS vulnerabilities which may give the cookie to an adversary. Make =
+sure that cookies aren't directly accessible by scripts running on a page. =
+Developers should serve the authentication cookies with the secure flag, se=
+rve their domain over https, and scope their domain tightly (i.e. not at al=
+l, or to auth subdomains)
+</pre></li>
+
+<li><pre class=3D"student-text">Do not use domain-level cookies (weak secur=
+ity). You also want to scope cookies to small areas to control where it is =
+sent and also who can access the cookies (setting special flags also helps)=
+. Additionally, avoid having any kind of cross0site scripting vulnerabiliti=
+es (an example of this situation is if an attacker can maintain a window on=
+ side and steal user login info when logging into the attacker's site. You =
+don't want to point back to lcoations that you cannot control (name untrust=
+ed parties). Avoid script-injection vulnerabilities - ISP doesn't hijack do=
+main lookups for hosts that don't exist.
+</pre></li>
+
+<li><pre class=3D"student-text">First, the domain of cookies are very broad=
+ - an attacker on a different subdomain within the same subdomain can acces=
+s a cookie if its domain is set to the common domain. Example: two web-site=
+ hosted on something like AWS - good.aws.com and evil.aws.com. If good sets=
+ a credential cookie with domain =3D"aws.com", evil will be able to steal i=
+t.
+Second, domain restriction on cookies doesn't protect it from being overwri=
+tten - js injection can create fake cookie to perform MITM-like attacks.
+Third, a cross-origin request forgery attack might make the browser to use =
+the user's cookie in the request, thus making the attacker able to perform =
+actions on the victim
+s behalf.
+Forth, ISP providers may overload non-existing pages, returning a positive =
+result to the user. A vulnerability in such page (or using a malicious page=
+) may allow the attacker to perform actions on the user's behalf within te =
+same domain
+Fifth, the attacker can use localhost.* domains to access cookies bound to =
+any unrestricted subdomain (like *.google.com -&gt; localhost.google.com), =
+which would allow the attacker to send requests to local service installed =
+on the user machine - be it a 3rd-party app or a virus, using which the att=
+acker could potentially hijack the cookie from the request.
+</pre></li>
+
+<li><pre class=3D"student-text">Here are the problems that a developer woul=
+d need to consider and how to solve them:
+
+1. Storing cookies at a known location on the user's computer. Solve by ran=
+domizing the location to store the cookie.
+
+2. Adversary pretending to be the original server. Solve with SOP and other=
+ well known techniques for handling XSS.
+
+3. MITM - checking the packets for cookie information. Solve by encrypting =
+the sent packets.
+
+4. Malicious user inputs which execute code to steal cookie. Solve by being=
+ more security-aware (like handling SQL injection).
+
+5. Perhaps the cookie is just being sent to another server somewhere in the=
+ code. Solve by making sure not to send the cookie everytime. Again, make s=
+ure the code is not so buggy.</pre></li>
+
+<li><pre class=3D"student-text">If I were to help developers of http://bitd=
+iddle.com/ evaluate their security when they use cookies to authenticate us=
+ers, there
+are many issues to be considered:
+
+1. The scoping of their cookies can lead less trusted HTML on a different p=
+age to overflow the per-domain cookie jar and set
+   their own credentials. As such, it is preferable to not specify domain f=
+or the cookie.
+2. The plug-ins that the developers need for their website may cause a risk=
+ in leaking credentials, and should be used with care from trusted sources,
+   with Java plug-ins being avoided like the plague.
+3. Javascript can have direct access to the cookies, and proper flags shoul=
+d be chosen so that Javascript does not have direct access.
+4. Using localhost can lead to attackers being able to control parts of the=
+ user's system, by pointing to 127.0.0.1, the security of
+   the website is tied to third-party software, and the developers should a=
+void using localhost.
+5. Any advertising site that may be linked to http://bitdiddle.com/ may hav=
+e script-injection vulnerabilities, and the developers
+   should note of any possible sites that exist and assess the security of =
+these sites to ensure the security of their users.</pre></li>
+
+<li><pre class=3D"student-text">In context of a user=E2=80=99s HTTP cookie =
+being stolen by an adversary, five issues that developers would have to con=
+sider include:
+- if the cookie has not been scoped tightly enough (e.g. if a domain has be=
+en set), an attacker could try to create a webpage bound to an address in t=
+he subdomain, force a redirect to that subdomain address, and the cookie in=
+ question would be sent to that subdomain address.
+- an attacker could try to use a script injection vulnerability on a webpag=
+e to overflow a per-domain cookie and inject another set of legitimate cred=
+entials.
+- if cookie settings are not sufficiently constrained, example.com could se=
+t a cookie for *.com, in which case the cookie would be unexpectedly sent t=
+o all *.com destinations on the Internet, including those being controlled =
+by attackers.
+- through DNS hijacking, an attacker could falsify a DNS record and rebind =
+an address to a new IP under the attacker=E2=80=99s control; the cookie wou=
+ld be checked against DNS names, not underlying IP addresses, and would be =
+sent to the rebound address
+- since HTTP cookies are port-agnostic, if a "localhost" entry is added to =
+a domain and made to point to 127.0.0.1, HTTP services on the user=E2=80=99=
+s machine become accessible (within the same domain) as the site; the attac=
+ker could presumably gain access to these services and the actions they per=
+form (e.g. sending cookies, headers, etc).
+
+To prevent these attacks, developers could take steps to tighten the scope =
+of sensitive cookies (e.g. by not specifying any domain at all), set enough=
+ domain restrictions on cookies, refrain from adding "localhost" to domains=
+, mitigate cross-site scripting vulnerabilities such as script injection bu=
+gs, and use cookie flags like httponly (to prevent accessing the cookie thr=
+ough the document.cookie API) and secure (to prevent cookie transmission ov=
+er unencrypted protocols).</pre></li>
+
+<li><pre class=3D"student-text">In general, adhering to the same-origin pol=
+icy is good practice to ensure that cookies and JavaScript contexts are not=
+ shared unintentionally. Some concerns to keep in mind: using document.doma=
+in allows another potentially malicious domain to set the same document.dom=
+ain, setting it to a shared origin with your site and potentially exposing =
+cookies. Developers also should be careful with cookie scoping, making sure=
+ that scopes are as specific as possible and don't accidentally allow
+for unintended domains to share access. Care should be taken when using plu=
+gins, as many plugin frameworks like Adobe Flash, Silverlight, and Java hav=
+e settings that expose your site to potentially malicious execution context=
+s. Developers also need to consider the use of third-party content--some im=
+plementations may leak passive credentials into cross-domain contexts. Fina=
+lly, care must be taken to prevent third-party hidden frame insertion, and =
+a simple way to prevent this is by setting
+the X-Frame-Options header.
+</pre></li>
+
+<li><pre class=3D"student-text">Jun Wan 991032935
+
+1. We need to consider how to prevent a website from setting a cookie for a=
+nother website and avoid having this cookie unexpectedly sent to every othe=
+r destination on the Internet.=20
+
+2. We should not delegate any hostnames within a sensitive domain to any un=
+trusted (or simply vulnerable) party. This may allow the adversary to put n=
+ot well-designed service into the same bucket as your HTTP service.
+
+3. We should prevent some ISPs and other DNS service providers from hijacki=
+ng domain lookups for nonexistent hosts. Otherwise, the adversary can falsi=
+fy a record and point you to malicious services.
+
+4. We should make sure that URL paths are not taken into account during all=
+ same-origin policy checks. Otherwise, the adversary can simply hop between=
+ any URLs on a single host at will and inject malicious payloads into such =
+targets.
+
+5. The adversary might overflow the per-domain cookie jar and then set a ne=
+w cookie without the secure flag. Because the Cookie header sent by the bro=
+wser provides no metadata about the origin of a particular cookie or its sc=
+ope, such a trick is very difficult to detect. This should be taken into co=
+nsideration.</pre></li>
+
+<li><pre class=3D"student-text">Lecture 13
+---------------------------------------------------
+
+Suppose you are helping the developers of a complex web site at
+http://bitdiddle.com/ to evaluate their security. This web site uses an
+HTTP cookie to authenticate users. The site developers are worried an
+adversary might steal the cookie from one of the visitors to the site,
+and use that cookie to impersonate the victim visitor.
+What should the developers look at in order to determine if a user's cookie
+can be stolen by an adversary? In other words, what kinds of adversaries
+might be able to steal the cookie of one of the visitors to
+http://bitdiddle.com/, what goes "wrong" to allow the adversary to
+obtain the cookie, and how might the developers prevent it?
+---------------------------------------------------------------------------=
+--
+
+On the web, cookies are used for maintaining authenticated sessions between
+a client and server. There are many holes in the Cookie policy that allow
+sessions to be hijacked by adversaries.
+
+It is still possible for JavaScript code delivered over HTTP to simply over=
+flow
+the per-domain cookie jar and then set a new cookie without the secure flag=
+.
+Because the Cookie header sent by the browser provides no metadata about th=
+e
+origin of a particular cookie or its scope, such a trick is very difficult =
+to
+detect.
+
+Additionally, some ISPs and other DNS service providers hijack domain looku=
+ps
+for nonexistent (typically mistyped) hosts. While some may argue this leads=
+ to
+better user experience, it also opens up a
+
+The reading does not outline very many approaches for mitigating cookies be=
+ing
+hijacked. Rather, it lists off things to avoid doing as well as vulnerabili=
+ties
+that can be patched such as those in CUPS. As the reading is now almost 10 =
+years
+old, I doubt these vulnerabilities are up to date.
+One thing mentioned is HttpOnly and Secure flagged cookies, which can not a=
+ccess
+JavaScript/DOM APIs directly. This can close holes for XSS but still keeps =
+other
+holes open such as cross-site-tracing.
+
+From the client-side, users should block requests for third-party frames on=
+ all
+sites they visit using some sort of script blocker like uBlock or NoScript.
+Also, users should user services like HTTPS-everywhere which force websites=
+ to
+use TLS encrypted channels.
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 13 (Answer to Paper Question)
+
+Question:
+
+Suppose you are helping the developers of a complex web site at http://bitd=
+iddle.com/ to evaluate their security. This web site uses an HTTP cookie to=
+ authenticate users. The site developers are worried an adversary might ste=
+al the cookie from one of the visitors to the site, and use that cookie to =
+impersonate the victim visitor.
+
+What should the developers look at in order to determine if a user's cookie=
+ can be stolen by an adversary? In other words, what kinds of adversaries m=
+ight be able to steal the cookie of one of the visitors to http://bitdiddle=
+.com/, what goes "wrong" to allow the adversary to obtain the cookie, and h=
+ow might the developers prevent it?
+
+Note: an exhaustive answer might be quite long, so you can stop after about=
+ 5 substantially-different issues that the developers have to consider.
+
+
+The developers should make sure the web server outputs cookies with the htt=
+ponly and secure flags. The httponly flag will make it more difficult to co=
+py a user's credentials after sucessfully injecting a malicious script on a=
+ page by preventing access to the cookie via the document.cookie API. The s=
+ecure flag will prevent the cookie from being sent over an unencrypted prot=
+ocol such as HTTP.
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 13: The Tangled Web Chapters 9-11 R=
+eading Question
+
+Problems
+
+  1) Developers should check that the JS code setting cookies does not cont=
+ain vulnerabilities that could be exploited.
+  2) Developers should check that the set domain and path for created cooki=
+es do not allow for inclusion of malicious domains.
+  3) Developers should check that default hostname matching checks are in p=
+lace or that their document.domain usage is unexploitable.
+  4) Developers should check that if there are any frames, that they do not=
+ import potentially malicious/vulnerable JS.
+  5) Developers should check that cookies are created with the "secure" tag=
+ to better protect them.
+
+Solutions
+
+  1) The developers can prevent this by hiring pentesters to ensure that th=
+e code is full-proof.
+  2) The developers can prevent this by making their domain and path as res=
+trictive as possible to include only what is necessary.
+  3) The developers can prevent this by using default hostname matching or =
+making sure that all of the pages in the domain have JS could not be used t=
+o retrieve a cookie.
+  4) The developers can prevent this by checking each frame thoroughly and =
+having periodic checks to make sure that if the frame's origin code changes=
+ in any way, it has not become malicious/vulnerable.
+  5) The developers can prevent this by making "secure" the default tag, un=
+less there is some other specific need for a less restrictive tag.
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 13: Web Security Model
+4/2/18
+
+Suppose you are helping the developers of a complex web site at http://bitd=
+iddle.com/ to evaluate their security. This web site uses an HTTP cookie to=
+ authenticate users. The site developers are worried an adversary might ste=
+al the cookie from one of the visitors to the site, and use that cookie to =
+impersonate the victim visitor.
+
+What should the developers look at in order to determine if a user's cookie=
+ can be stolen by an adversary? In other words, what kinds of adversaries m=
+ight be able to steal the cookie of one of the visitors to http://bitdiddle=
+.com/, what goes "wrong" to allow the adversary to obtain the cookie, and h=
+ow might the developers prevent it?
+
+
+1.
+The attacker using the same computer and browser as the user, thereby havin=
+g the same origin as the user, which means the cookie's path is not checked=
+, allowing attacker to run malicious javascript. This can be prevented by f=
+lagging the keys as httponly or secure to prevent them from being read by t=
+he attacker.
+
+2.
+Attacker creates a html doc that accesses the user's local files including =
+the cookies, and user downloads this html doc. Solved by preventing accesse=
+s to file from html docs by using browsers.
+
+3.=20
+The attacker downloads buggy local software that uses localhost and makes a=
+ http request for cookies.Solved by not setting localhost to 127.0.0.1.=20
+
+4.
+Attacker taking advantage of dodgy sites internet service providers redirec=
+t users to when accessing a site that doesn't exist by sending and injectin=
+g javascript code to a site that doesn't exist (which the company will then=
+ redirect to the dodgy site and can then get the cookie). Solved by checkin=
+g security of redirected websites, or not redirecting at all.
+
+5.
+Attacker creating a malicious flash app and tricks the user into allowing i=
+t to access to any js code or other apps.</pre></li>
+
+<li><pre class=3D"student-text">Man in the middle -- If TLS is not used, th=
+e cookie could be intercepted as it
+travels along the network.
+
+Downgrade attack -- The user could be tricked into accessing a HTTP version=
+ of
+the site and the the above attack could be used.
+
+Cross Site Scripting -- The cookie could be stolen by Javascript injected i=
+nto
+the target web page
+
+Insufficient Entropy -- The cookie might be generated by a psuedorandom num=
+ber
+generator seeded with insufficient entropy.
+
+Insider Attack -- a malicious employee of the website may be able to gain a=
+ccess
+to user cookies directly.
+</pre></li>
+
+<li><pre class=3D"student-text">One attack is if there is a way to create s=
+ubdomains. Like slack allows [yourorg].slack.com. You can prevent it by mak=
+ing sure cookies for bitdiddle.com are not from subdomains.
+
+There is also the danger of localhost. This can be prevented by simply not =
+having localhost.bitdiddle.com
+
+They also mentioned problems with top level domains and dns hijacking where=
+ a binding that shouldnt resolve, resolves to a malicious site. This is kin=
+d of unavoidable so if someone mistypes bitdiddle to something related and =
+acts as your website...well its trouble. You could prevent this by having u=
+sers login and signup and since the accounts system is separate it could sa=
+ve some trouble.
+</pre></li>
+
+<li><pre class=3D"student-text">One primary issue is that of domain scoping=
+. If the implementers foolishly decide to use the near universal ".com" sco=
+ping, the cookies could be sent
+nearly anywhere. Otherwise, if set the domain is set to bitdiddle.com, secu=
+rity issues could allow pages other than the authentication one to leak the=
+=20
+cookie. They should set the domain scoping as tightly as possible, ideally =
+to the authentication page only.
+
+Another issue is whether or not the httponly flag is set. If it is not, mal=
+icious javascript can trick the user into transmitting their credentials. T=
+hey
+should definitely set the flag.
+
+A third issue comes from the common policy where ISPs provide a failstate p=
+age at a non-existent hostname rather than a NXDOMAIN error. If those
+sites allow for malicious code injection, this allows attackers to compromi=
+se virtually any cookies on a website that are not scoped to a specific
+page. They should again scope the cookie to the specific authentication pag=
+e if possible.
+
+HTTP facilitates cookie transfer over unencrypted protocols, allowing liste=
+ners on the path between the host and client to intercept the data. Using
+HTTPS ensures those communications remain encrypted.
+
+Even though cookies are securely transmitted in HTTPS, any use of HTTP coul=
+d leak a cookie if it is sent. The developers should set the secure tag to
+ensure the cookie is only transmitted over HTTPS.
+
+Loading HTTP resources on an HTTPS page can allow attackers to intercept co=
+mmunications and perform code injection thus leaking the cookie. Developers=
+ should
+simply mixing such content.
+
+</pre></li>
+
+<li><pre class=3D"student-text">Other active web-pages might gain access on=
+ cookie. Besides, attacket might be a middle man listening to the packets, =
+own extension on the web browser, be a malware on the issuing machine, etc.=
+ Once the cookie is gained, an adversary will be able to authenticate witho=
+ut problem. To avoid it, developer can ask the server to sign and encrypt e=
+very packet and reduce the time of cookie regeneration.
+</pre></li>
+
+<li><pre class=3D"student-text">Potential problems that may allow adversari=
+es to target cookies:
+  - javascript should not access authentication cookies directly. Instead, =
+scope as tightly as possible and dont specify domain.
+  - in the event that an attacker attempts to modify a cookie, checking the=
+ cryptographic signature of the cookie can help identify if it has been tam=
+pered with.
+
+ =20
+</pre></li>
+
+<li><pre class=3D"student-text">Problems with cookies:
+1. Access might not be set the way you think it is. If a cookie is set at
+foo.example.com that might mean that bar.foo.example.com has full access,
+which may or may not be desired.
+2. Domain parameter may be set to *\.com, which would mean pretty much
+anyone can access this cookie! That's no good! The domain value should neve=
+r
+be set to this.
+3. A cookie could be accessed via the document.cookie API if a malicious
+script was successfully injected by some other bug. This can be prevented b=
+y
+the httponly flag on the cookie.
+4. Someone could snoop and copy the cookie if they are watching the request=
+s
+on an unencrypted line. The flag secure prevents this by requiring encrypti=
+on,
+which is good for https services.
+5. A cookie could be overwritten by an overflow and one of the flags could
+be removed. Identically named cookies are also a problem here. You could
+separate the cookie jars into httponly and non-httponly, but the different
+names could still cause issues here.
+also a problem.</pre></li>
+
+<li><pre class=3D"student-text">Question: Suppose you are helping the devel=
+opers of a complex web site at http://bitdiddle.com/ to evaluate their secu=
+rity. This web site uses an HTTP cookie to authenticate users. The site dev=
+elopers are worried an adversary might steal the cookie from one of the vis=
+itors to the site, and use that cookie to impersonate the victim visitor.
+
+What should the developers look at in order to determine if a user's cookie=
+ can be stolen by an adversary? In other words, what kinds of adversaries m=
+ight be able to steal the cookie of one of the visitors to http://bitdiddle=
+.com/, what goes "wrong" to allow the adversary to obtain the cookie, and h=
+ow might the developers prevent it?
+
+Note: an exhaustive answer might be quite long, so you can stop after about=
+ 5 substantially-different issues that the developers have to consider.
+
+
+It is possible for an adversary to create a bad website with javascript tha=
+t injects malicious code into bitdiddle.com which would allow the adversary=
+ to obtain the user's cookie.=20
+
+If there are more subdomains to bitdiddle.com, then the developer should sc=
+ope the cookies finely enough such that access to a cookie does not give ac=
+cess to other parts of the site.=20
+
+The developer needs to change the domain to be offered over https instead o=
+f http to securely send information.
+
+Still, even with https on, the developer needs to ensure that the cookie is=
+ locked over encrypted protocols as other sites can intercept the TCP conne=
+ction.
+
+The developer must address script injection vulernabilities, else an advers=
+ary can exploit the nxdomain response to forward the user's cookie when the=
+ user accesses a nonexistent domain similar to bitdiddle.com
+
+</pre></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 13
+
+Suppose you are helping the developers of a complex web site at=20
+http://bitdiddle.com/ to evaluate their security. This web site uses an=20
+HTTP cookie to authenticate users. The site developers are worried an=20
+adversary might steal the cookie from one of the visitors to the site,=20
+and use that cookie to impersonate the victim visitor.
+
+What should the developers look at in order to determine if a user's=20
+cookie can be stolen by an adversary? In other words, what kinds of=20
+adversaries might be able to steal the cookie of one of the visitors=20
+to http://bitdiddle.com/, what goes "wrong" to allow the adversary to=20
+obtain the cookie, and how might the developers prevent it?
+
+Note: an exhaustive answer might be quite long, so you can stop after=20
+about 5 substantially-different issues that the developers have to=20
+consider.
+
+
+Under standard SOP, if a message is sent from one page to another, it=20
+can generally also be read by other third parties, even with most security
+checks. Thus a message transmitted with the cookie could be intercepted.=20
+This is mitigated by postMessage.
+
+postMessage can be misconfigured to accidentally identify adersary websites
+as intended recipients. For example,=20
+if (msg.origin.indexOf(".example.com") !=3D -1) {...}
+will allow www.example.com.bad.com.
+
+A user could have their cookie stolen if http://bitdiddle.com/ declared=20
+a document.domain =3D "bitdiddle.com". Then an adversary could declare the=
+=20
+same document.domain to access information.
+
+SOP is not synchronized across credentials. If one user is logged off and
+another is logged in, the connection remains valid and a cookie could still
+be stolen from the previous user.
+
+SOP is not synchronized across certificates. If the user enters a valid=20
+site with a valid certificate, but then is redirected to an uncertified=20
+part of the website, a man in the middle could then intercept the requests
+and get the user's cookie.
+
+</pre></li>
+
+<li><pre class=3D"student-text">Some Issues:
+IE sometimes has different cookie scopes than other browsers
+Rely on domain restrictions which aren't taken into account w/ SOP
+It's possible to overwrite cookies even w/o read access
+bitdiddle.com is probably fine, but other upper level domain names may run =
+into issues with scoping
+Some ISPs have done insecure DNS hijacking of some non-existant URLs, which=
+ might happen
+if the website is popular and sometimes mispelled.
+
+What can go wrong:
+Cookies are often used as credentials
+Fake cookies can bypass the SOP</pre></li>
+
+<li><pre class=3D"student-text">Suppose you are helping the developers of a=
+ complex web site at http://bitdiddle.com/ to evaluate their security. This=
+ web site uses an HTTP cookie to authenticate users. The site developers ar=
+e worried an adversary might steal the cookie from one of the visitors to t=
+he site, and use that cookie to impersonate the victim visitor.
+
+What should the developers look at in order to determine if a user's cookie=
+ can be stolen by an adversary? In other words, what kinds of adversaries m=
+ight be able to steal the cookie of one of the visitors to http://bitdiddle=
+.com/, what goes "wrong" to allow the adversary to obtain the cookie, and h=
+ow might the developers prevent it?
+
+
+1.) Developers should check that the Cookie has the httponly flag set which=
+ prevents access to the cookie via the document.cookie API
+2.) Developers should set the the secure flag on a cookie which only allows=
+ cookies to be submitted on an encrypted protocol
+3.) Developers should check that an attack can not inject scripts on their =
+site or another that overwrite the cookie
+4.) Malicious browser plug-ins could hijack the cookie
+5.) Developers with an international site such as 'example.com.au' are open=
+ to cross-site cookie attacks due to some browsers only checking for a mini=
+mum of two periods in order to prevent an attack on a root domain.
+</pre></li>
+
+<li><pre class=3D"student-text">Suppose you are helping the developers of a=
+ complex web site at http://bitdiddle.com/ to evaluate their security. This=
+ web site uses an HTTP cookie to authenticate users. The site developers ar=
+e worried an adversary might steal the cookie from one of the visitors to t=
+he site, and use that cookie to impersonate the victim visitor.
+
+What should the developers look at in order to determine if a user's cookie=
+ can be stolen by an adversary? In other words, what kinds of adversaries m=
+ight be able to steal the cookie of one of the visitors to http://bitdiddle=
+.com/, what goes "wrong" to allow the adversary to obtain the cookie, and h=
+ow might the developers prevent it?
+
+Note: an exhaustive answer might be quite long, so you can stop after about=
+ 5 substantially-different issues that the developers have to consider.
+
+Developers could accidentally...
+1) Allow bypasses to the same origin policy through the use of an overly-va=
+gue document.domain, allowing arbitrary users to execute javascript in the =
+context of their session which would mae it possible to steal a user's cook=
+ie
+2) Not specify their postMessage receiver strictly enough, allowing for arb=
+itrary attackers to communicate over the SOP boundary and steal a user's co=
+okie.
+3) Incorrectly check the postMessage origin (using something akin to msg.or=
+igin.indexOf(".example.com") !=3D =E2=88=921), which would allow any origin=
+ including the string ".example.com" to pass the SOP and potentially steal =
+a user's cookie
+4) Use a browser's localStorage or sessionStorage to store secrets or parts=
+ necessary to compute a cookie, assuming that it would protect the informat=
+ion across an HTTP/HTTPS boundary, not knowing that somewhat popular browse=
+rs (&lt;=3D IE8) will share that context
+5) Cookies set with a not-specific-enough domain value will potentially be =
+shared across too-wide of a subset of subdomains, unnecessarily increasing =
+the attack surface for an attack such as XSS to escalate to cookie disclosu=
+re. </pre></li>
+
+<li><pre class=3D"student-text">Suppose you are helping the developers of a=
+ complex web site at http://bitdiddle.com/ to evaluate their security. This=
+ web site uses an HTTP cookie to authenticate users. The site developers ar=
+e worried an adversary might steal the cookie from one of the visitors to t=
+he site, and use that cookie to impersonate the victim visitor.
+
+What should the developers look at in order to determine if a user's cookie=
+ can be stolen by an adversary? In other words, what kinds of adversaries m=
+ight be able to steal the cookie of one of the visitors to http://bitdiddle=
+.com/, what goes "wrong" to allow the adversary to obtain the cookie, and h=
+ow might the developers prevent it?
+
+Note: an exhaustive answer might be quite long, so you can stop after about=
+ 5 substantially-different issues that the developers have to consider.=20
+
+----
+
+First, they should look at moving to HTTPS, to prevent an adversary from ex=
+ecuting a MITM attack to obtain the cookie, and couple this with setting th=
+e secure flag, to prevent cookies from being submitted over unencrypted pro=
+tocols
+Second, they should look at setting the httponly flag, to ensure that an ad=
+versary cannot access the cookie using a malicious script injected onto the=
+ page, which looks in the document.cookie API
+Third, they should ensure that all cross-domain communication happens over =
+postMessage(), and specify the full domains as far as possible.  If they in=
+stead use SOP loopholes like document.domain, they may allow another site t=
+o set it's document.domain to the same domain, and communicate / hijack the=
+ relevant pages, to steal the cookie.
+Fourth, they should examine their code for implicit about:blank, data:, and=
+ javascript: URLs.  For instance, if these pages are treated as the same or=
+igin as other about:blank documents, then a malicious attacker can inject a=
+rbitrary content from another about:blank document they control, without mo=
+difying the URL seen by the user.  This code could concievably do things li=
+ke steal cookies, I believe. =20
+Fifth, they should check whether or not they include any entries in the sco=
+ping of the cookies that point back to 127.0.0.1, and remove them.  An adve=
+rsary could insert malicious javascript into a page that exploits bugs in l=
+ocalhost services on the user machine, to steal a cookie.
+</pre></li>
+
+<li><pre class=3D"student-text">Suppose you are helping the developers of a=
+ complex web site at http://bitdiddle.com/ to evaluate their security. This=
+ web site uses an HTTP cookie to authenticate users. The site developers ar=
+e worried an adversary might steal the cookie from one of the visitors to t=
+he site, and use that cookie to impersonate the victim visitor.
+
+What should the developers look at in order to determine if a user's cookie=
+ can be stolen by an adversary? In other words, what kinds of adversaries m=
+ight be able to steal the cookie of one of the visitors to http://bitdiddle=
+.com/, what goes "wrong" to allow the adversary to obtain the cookie, and h=
+ow might the developers prevent it?
+
+Note: an exhaustive answer might be quite long, so you can stop after about=
+ 5 substantially-different issues that the developers have to consider.
+
+
+*****
+
+1. Consider using HTTPS for bitdiddle.com and ensure that http://*.bitdiddl=
+e.com can't be easily spoofed. =20
+
+2. Enforce allowing the use of the website to the "safe" versions of the br=
+owsers. It can be tricky, but since there is a desired specific security ob=
+jective, the critea for defining "safe" becomes more streightforward.
+
+3. Train the developers and check if they're aware of the platforms' specif=
+ic risks, which may create a vulnerability through embedding the third-part=
+y content. E.g. issues like java.net.URLConnection class on p. 158 in the b=
+ook.=20
+
+4. Set the "HttpOnly" flag to disallow to read the cookie through the docum=
+ent.cookie API.
+
+5. Set the "Secure" attribute to rpevent the cookie from being sent over no=
+nencrypted connections. It'll work only if the bitdiddle.com is an HTTPS we=
+bsite.
+
+6. Limit the critical functionality to a subdomain, e.g. "bank.bitdiddle.co=
+m" and set a domain to this subdomain, thus avoid providing a broader right=
+ to all domains at bitdiddle.com, which might be vulnerable.
+
+7. Hash a cookie stored in a user's browser with a salt, so make it difficu=
+lt for an attacker to create a fake cookie to impersonate a user or avoid s=
+ituations when a user will take actions under the credentials of an attacke=
+r, while being authenticate through a malicious cookie. Alternatively, we c=
+an cryptographically sign the cookie's content with a different private key=
+ for each individual application.=20
+
+8. Exotic way to secure. Set a "path" to a deterministic + a random value, =
+so malicious code won't be able to access the functionality of bitdiddle.co=
+m under user's credentials using just the user's cookie. The attacker shoul=
+d have known the random value generated by a server. Put the same random va=
+lue as a "hidden" value to a webform passed to a client, so it will be inse=
+rted into a URL.=20
+e.g. http://foo.example.com/&lt;random value&gt;/path/subdirectory/hello_wo=
+rld.txt. However, it might be tricky to create dynamic mapping on the serve=
+r's side.
+
+9. After user log out, a server should re-place an "authentication" with an=
+ cookie which has an "expires" date in the past, so it will be immediattely=
+ dropped.
+
+10. "Expires" value - to a meaningul number, according to the statistic of =
+how much time users spend on bitdiddle.com. e.g. no need to keep a cookie f=
+or 4 hrs if 95% of users spend 5 minutes of the site.
+
+11. Require explicit authentication for performing sensitive operations on =
+bitdiddle.com.
+
+12. Try to set "Domain" value to "", while keeping it tight to a hostname u=
+sed for authentication.=20
+
+13. Consider applying "multi factor authentication" in addition to a cookie=
+. E.g. checking the user's IP or something more specific to a computer/brow=
+ser will reduce a probability to use a stolen cookie to impersonate a user =
+on a different machine.</pre></li>
+
+<li><pre class=3D"student-text">Suppose you are helping the developers of a=
+ complex web site at http://bitdiddle.com/ to evaluate their security. This=
+ web site uses an HTTP cookie to authenticate users. The site developers ar=
+e worried an adversary might steal the cookie from one of the visitors to t=
+he site, and use that cookie to impersonate the victim visitor.
+
+What should the developers look at in order to determine if a user's cookie=
+ can be stolen by an adversary? In other words, what kinds of adversaries m=
+ight be able to steal the cookie of one of the visitors to http://bitdiddle=
+.com/, what goes "wrong" to allow the adversary to obtain the cookie, and h=
+ow might the developers prevent it?
+
+Note: an exhaustive answer might be quite long, so you can stop after about=
+ 5 substantially-different issues that the developers have to consider.
+
+----
+
+1. Domain Parameter
+The developers should keep sensitive cookies, such as a user authentication=
+ cookie, tightly scoped. The book suggests leaving the domain parameter uns=
+pecified so that the scope must be an exact match of the origin. This keeps=
+ cookies isolated and prevents them from being sent to any unnecessary subd=
+omains, especially ones that could potentially have security risks. For exa=
+mple, a cookie set at payments.bitdiddle.com should not have its domain par=
+ameter set to bitdiddle.com since the resulting scope would be *.bitdiddle.=
+com.
+
+2. Path Parameter
+The developers should not rely on the path value of the cookie to form a go=
+od security boundary. Attackers can inject payloads into URLs on a host and=
+ send the cookie where they want it to go. This is because URL paths are no=
+t considered during SOP checks.
+
+3. Javascript access
+The developed should always set the httponly flag. This prevents the cookie=
+ from being accessed through javascript. If malicious code is injected, an =
+attacker can easily access the cookie via the document.cookie API if the fl=
+ag is not set.
+
+4. Encrypted Protocols
+The developer can set a 'secure' flag to prevent a cookie from being sent o=
+ver an unencrypted protocol. This prevents an attacker from being able to g=
+et all the http://bitdiddle.com/ cookies if the user visits some site with =
+a frame injected by the attacker pointing back to http://bitdiddle.com/.
+
+5. Cookie Jar Overflow
+An attacker can set enough cookies on http://bitdiddle.com/ to overflow the=
+ cookie jar and then set a new cookie without the 'secure' flag for HTTP, a=
+llowing it to be sent over an unencrypted channel, undoing the defense desc=
+ribed in the previous example. The book suggests that this can be prevented=
+ by having separate jars for httponly and normal cookies, but that there ar=
+e still complications to this approach.</pre></li>
+
+<li><pre class=3D"student-text">Suppose you are helping the developers of a=
+ complex web site at http://bitdiddle.com/ to evaluate their security. This=
+ web site uses an HTTP cookie to authenticate users. The site developers ar=
+e worried an adversary might steal the cookie from one of the visitors to t=
+he site, and use that cookie to impersonate the victim visitor.
+
+What should the developers look at in order to determine if a user's cookie=
+ can be stolen by an adversary? In other words, what kinds of adversaries m=
+ight be able to steal the cookie of one of the visitors to http://bitdiddle=
+.com/, what goes "wrong" to allow the adversary to obtain the cookie, and h=
+ow might the developers prevent it?
+
+Note: an exhaustive answer might be quite long, so you can stop after about=
+ 5 substantially-different issues that the developers have to consider.
+
+1. Check for the type of HTTP headers that can be used and ensure do not in=
+sert custom headers that might present security vulnerabilities, like Conte=
+nt-Length exploit=20
+=20
+2. Check of self-inflicted cross-site scripting vulnerablities with other d=
+omains that would be considered same origin
+
+3. If using  PostMessage, ensure that the checks for the correctly limiting=
+ domain do not allow a broader range of domains than required - using regex=
+ rather than simple existence checks would be better to limit outsiders rea=
+ding of sensitive data
+
+4. If using SOP with document.domain method, subdomains like stolen.bitdidd=
+le.com can read the cookies if document.domain is set to "bitdiddle.com" fo=
+r both
+
+5. In addition to being stolen, the cookies can be overwritten with another=
+ valid cookie obtained from a subdomain like overwritten.bitdiddle.com
+
+</pre></li>
+
+<li><pre class=3D"student-text">The developer need to be aware of
+1. cross domain transmitting token information and avoid man in the middle =
+attack
+2. adversary stoling token information stored.
+3. Frame Hijack Risks. Developers need to be more aware of transmitting inf=
+ormation.
+4. Click hijack attack that stoles login informations
+5. between services transmitting login information need to be encrypted.</p=
+re></li>
+
+<li><pre class=3D"student-text">The developers should be careful when setti=
+ng up the cookie domain: as the Tangled Web shows, specific set ups might a=
+llow
+for attackers to only need to *match* a fragment of the domain, which might=
+ easily facilitate matching the cookie with an attacker's website and so on=
+.
+If the developers are worried about in-site cookie access through JavaScrip=
+t (they might be using untrusted sources of code etc.) they can set up
+their cookies to be `httponly` and have a guarantee that no malicious JS ca=
+n access them. Such access would allow attackers to more easily=20
+have access to users' cookies, and, in this case, would allow attackers to =
+virtually impersonate those users.=20
+More than that, the developers should avoid having a *HTTP* cookie, and use=
+ the secure flag to force encryption over the cookies. In this way, phishin=
+g (and interception) then
+become avoidable (attackers would otherwise be able to have the victims go =
+to their website and instantly get access to the cookies).
+</pre></li>
+
+<li><pre class=3D"student-text">The developers should first look at the dom=
+ain parameter set by the cookies. If the domain parameter is set to just bi=
+tdiddle.com, then any compromised subdomains can read the cookie set by the=
+ original website. The solution would be to (at least for non-IE browsers) =
+is omit the domain parameter to narrow the scope.
+
+One peril arising from domain hijacking (arising from ISPs and DNS provider=
+s) is the pages they return may be filled with exploitable script vulnerabi=
+lities. For example, if the user goes to any subdomain nonexistent.bitdiddl=
+e.com, and the page returned by the ISP is exploitable, then the adversary =
+can steal any cookie that a subdomain has access to. A solution would be to=
+ scope cookies more tightly.=20
+
+Another peril involves the localhost redirect. localhost.bitdiddle.com redi=
+rects to 127.0.0.1, but also counts as a subdomain for bitdiddle.com. Any f=
+law in software running on localhost (which was CUPS in the example) can ex=
+pose the cookie to an adversary. A solution would be to scope cookies more =
+tightly.=20
+
+Another peril would simply be using http as the default protocol. HTTP is i=
+nsecure, so any adversary sniffing wifi packets near the victim, or even an=
+y router can steal the cookie since no traffic is encrypted. The solution w=
+ould be to use HTTPS instead.=20
+
+Another peril would be cross-site scripting attacks located on http://bitdi=
+ddle.com. Any script successfully encoded into the website would be able to=
+ steal cookies (no matter what the cookie security policy is set to). The s=
+olution would be to clean up the webpages by sanitizing any input, and foll=
+ow good coding practices.
+
+</pre></li>
+
+<li><pre class=3D"student-text">The developers should look at browser used =
+by user and the protocol it follows.
+Should look at if any plugins that can compromise security are also running
+Should see if httponly flag is set.=20
+Should check to see what, if any, domain is specified.=20
+Should check for any script injection vulnerabilities in their website.
+</pre></li>
+
+<li><pre class=3D"student-text">The site owners should check the scope of e=
+ach cookie. Ideally, each cookie should be scoped as generally as possible;=
+ the worst case scenario would be for the auth cookies to be scoped with *.=
+bitdiddle.com. If this were the case, then if any subdomain in the entire w=
+ebsite were compromised, an attacker could potentially steal the cookie.
+
+A compromised "legitimate" DNS hijacking capture page ran by an ISP or DNS =
+provider could also enable an attacker to capture cookies, if they can coax=
+ a user into accessing a nonexistent subdomain, such as nonexistent.login.b=
+itdiddle.com. Unfortunately, the developers can't really do anything to pre=
+vent this.
+
+The developers must also ensure that the secure flag is set for cookies. Th=
+is will ensure that the attacker cannot intercept traffic, as described in =
+the reading.
+
+</pre></li>
+
+<li><pre class=3D"student-text">There are a number of things that could go =
+wrong and cause a cookie to be able to be stolen.
+
+1. XSS attacks that could allow an adversary to inject code into the websit=
+e that sends a request with the user's cookie to another server. This can b=
+e fixed by securing possible XSS vulnerabilities caused by user-entered inf=
+ormation on the site.
+
+2. Interception of cookies. An adversary-controlled website could point to =
+bitdiddle.com and intercept the TCP handshake, allowing the adversary acces=
+s to the user's cookie. This can be prevented by setting the secure flag of=
+ the cookie.
+
+3. Packet sniffing attacks, which could allow someone who has access to the=
+ user's traffic to steal their cooie if the session traffic is unencrypted.=
+=20
+
+4. The owners of bitdiddle.com should ensure that they don't hand out subdo=
+mains to just anyone, as a subdomain could set their cookie to have the dom=
+ain .bitdiddle.com and allow the owner of the subdomain to hijack cookies f=
+or bitdiddle.com
+
+5. Different subdomains should all be secure, as cookies for blog.bitdiddle=
+.com could be exploited to access the usually more secure webmail.bitdiddle=
+.com, for example.</pre></li>
+
+<li><pre class=3D"student-text">There are many issues that http://bitdiddle=
+.com might need to consider to evaluate their security regarding the advers=
+ary stealing the user's cookies.
+
+1) The cookie is scoped to *.bitdiddle.com, so if a certain subdomain (say =
+blog.bitdiddle.com) is less secure than other subdomains (like login.bitdid=
+dle.com), the adversary can compromise the less secure subdomain and use it=
+ to retrieve the user's cookies, since it will have the same origin and be =
+permitted by the same origin policy.=20
+
+2) The adversary can compromise a plugin on bitdiddle.com that doesn't do p=
+roper URL parsing (for example http://bitdiddle.com:80@evil.com will be con=
+sidered same-origin as bitdiddle.com, despite being evil.com), and use that=
+ to access bitdiddle.com.
+
+3) If bitdiddle.com uses insecure practices like innerHTML =3D &lt;user-inp=
+ut&gt;, document.write, or eval(), the adversary can inject javascript into=
+ the website and compromise the security.
+
+4) The adversary can load bitdiddle.com into an iframe, and navigate it to =
+javascript:evil_function() (since the adversary owns the top-level frame, i=
+t can navigate it's subframes).
+
+5) The adversary can use clickjacking/frame hijacking and trick the user in=
+to clicking a button that will expose their session cookie, by overlaying t=
+heir own UI elements on top of the bitdiddle.com iframe.
+</pre></li>
+
+<li><pre class=3D"student-text">They can limit the scope of their cookies, =
+and use https so DNS is confirmed via a certificate. With the cookie inform=
+ation adversaries can impersonate a user using the token stored in the cook=
+ie. With physical access to the computer an adversary could steal the token=
+s.</pre></li>
+
+<li><pre class=3D"student-text">They could extend the domain of the malicio=
+us site to have the end match
+the same pattern as the developers website.  If allow for cookie informatio=
+n
+to be shared to similar domains, the cookie could be stolen this way.
+Also, they could steal a cookie using the localhost trick that would also m=
+imick
+the same suffix of domain, but then be passed to a user process.
+</pre></li>
+
+<li><pre class=3D"student-text">They should look at their document.domain a=
+nd ensure that they are not making it so wide open that anyone could access=
+ their cookies (ie. *.com).
+They should ensure that when using HTTP vs. HTTPs, HTTP cannot read or over=
+written sensitive date from HTTPs cookies.
+They should ensure that the cookie jar cannot be overflowed and thereby all=
+ow an adversary to set cookies/create cookies as they desire.
+If other frames can write cookies for other frames, then an attacker could =
+log the victim into the attacker's personal account and possibly read email=
+s sent by the user.  So, then need to ensure that other frames cannot write=
+ cookies for their site with malignant code.
+They need to ensure that a site such as bitdiddle.com. with an extra dot do=
+es not have the ability to access cookies through script injection (ie. lik=
+e how other sides use similarly mispelled domains for ad revenue, where ads=
+ were sometimes harmful.)</pre></li>
+
+<li><pre class=3D"student-text">This is a kind of session hijacking attack.=
+ One kind of session hijacking attack involves having the attacker source-r=
+oute IP packets (going from the client to the web server) through its own m=
+achine, and steal the cookie from there. SSL should help here.
+
+An attacker with access to the network that the victim is using could sniff=
+ packets sent over the network and grab the HTTP cookie from there. Some we=
+bsites only use SSL to secure the login process, so the cookie would be vis=
+ible in plaintext. Using SSL for everything should help here.
+
+The attacker could launch an XSS attack against the victim, which would all=
+ow the attacker run arbitrary JS code on the client's machine. Then the att=
+acker could have the victim send him/her a copy of the cookie, or just perf=
+orm some other action on the client's machine while they are already authen=
+ticated. Securing against XSS attacks will probably prevent this from happe=
+ning -- sanitizing user input, properly configuring CORS, and *not* setting=
+ domain.domain to a clobbered value can help here.
+
+A somewhat more indirect method could involve the attacker sending the user=
+ a link to a service with a pre-existing session id encoded in the URL. In =
+a way, this is the opposite of "stealing" a cookie; the user is now perform=
+ing all of their actions on a compromised session. Having a timeout on old =
+session IDs can help mitigate this problem -- alternatively, just avoid put=
+ting the session ID in HTTP headers.
+
+If the user's computer is already compromised, pre-existing malware could s=
+teal the cookie by observing the memory owned by the browser. Perhaps somet=
+hing like Intel SGX would help prevent these attacks?
+</pre></li>
+
+<li><pre class=3D"student-text">Threats:
+	1- The document.domain associated with the cookie might acquire a value th=
+at could allow an adversary to have one that matches. This way, the adversa=
+ry will be able to access it. Using PostMessage() helps guaranteeing the or=
+igin of the requester.
+	2- If the user uses Opera, a given about:blank URL could inherit its origi=
+n from the redirecting party, instead of the caller. If an adversary redire=
+cts the said URL, the SOP check would match if trying to access the cookie.=
+ As for 1, using the PostMessage() would solve this issue.=20
+	3- An adversary can create a "mashup" website, including a nested frame co=
+ntaining the webpage we want to steal the cookies from. If the user logs in=
+ the malicious website, the adversary can then change the location of the c=
+ookie and steal it. Since the url will be that of the malicious website and=
+ not  http://bitdiddle.com/, it is the user's responsability to not fall fo=
+r it. Also, new browsers now require that navigation of non-same-origin fra=
+mes is permitted only if the party requesting the navigation shares the ori=
+gin with one of the ancestors of the targeted view.
+	4- Similar attack shown in Figure 11.3 in the reading. If we frame an appl=
+ication arranged in a way described in the figure in a malicious website, w=
+e'll be able to inject messages between the two parties. Not sure how to so=
+lve this issues, and to be honest, not sure I fully understand it.=20
+	5- Assuming some users are still on old browser versions (not too far fetc=
+hed given some people still use windows XP), there is a risk of frame hijac=
+king, i.e., the aversary opening up simultaneously a second window that int=
+eracts with the main desired application. To solve it, we shoudl disallow i=
+nteractions between frames in different windows.=20
+
+
+What goes wrong? The adversary will be able to authenticate in the website =
+as if it were the original user
+</pre></li>
+
+<li><pre class=3D"student-text">To steal a cookie, an adversary will most l=
+ikely to need to access to javascript of the site in order to obtain cookie=
+s. More concretely, one imaginary attack is: the attacker creates some webs=
+ite and lures the victim; the attacker embed javascript that comes from the=
+ attacked website(e.g. by simply reading off the source from the attacked s=
+ite, which is available if the attacker himself can authenticate to the sit=
+e). However, simple approach fails if the javascript comes frome a differen=
+t site due to same origin policy. For example, our adversary won't be able =
+to obtain the cookie of our site by creating his/her own site which has jav=
+ascript that attempts to read off our site's cookie --- the browser will si=
+mply block it.
+Alternatively, the attacker can make subresources to use. He/she can create=
+ a site that has a subresource link the attacked website. In some ways, the=
+ attacker might be able to read off secret values inside the page. The secr=
+et value again might give the attacker access to cookies(e.g. via normal lo=
+gin method).
+Other, more "bruteforced" attempts includes gaining access to the victims c=
+lient. For example, a buggy web browser, or exploit in the victim's OS or f=
+ile system. This might easily allow an attacker to gain cookie stored on di=
+sk. But the issue is not mentioned in the appointed chapters for this week'=
+s reading.</pre></li>
+
+<li><pre class=3D"student-text">Ways cookies might be stolen by an adversar=
+y:
+
+1) Sending unencryted cookies over the wire might be susceptible to packet =
+sniffing. Using SSL for all communications would defend against this (set t=
+he secure flag).
+
+2) Cookie can be read in a XSS attack. Using HttpOnly flag to make cookies =
+unreadable from scripts would defend against this.
+
+3) Track the origin of cookies and make sure that new requests with the coo=
+kie match the same origin. Cookie signing could help with this or pinning t=
+he session to the originating IP.
+
+4) If the domain path is not scoped then redirects (social engineering atta=
+cks) could read the cookie. Make sure to set scoped cookie domains.
+
+5) An attacker might come to the victim's computer and log in. Set expirati=
+ons on the cookies.
+</pre></li>
+
+<li><pre class=3D"student-text">What kinds of adversaries might be able to =
+steal the cookie of one of the visitors to http://bitdiddle.com/, what goes=
+ "wrong" to allow the adversary to obtain the cookie, and how might the dev=
+elopers prevent it?
+
+If bitdiddle.com set its document.domain to *.com (a bad idea), then any ot=
+her site which sets its document.domain to *.com could access the cookie be=
+cause it would treat them as having the same origin and allow them to execu=
+te JS. The developers should not set the document.domain to anything that c=
+ould possibly be untrusted.
+
+If bitdiddle.com is embedded in a frame in a malicious website and its cook=
+ie is not protected via secure, then the attacker can intercept the cookie =
+being sent over TCP and read it. The developers should set no framing in th=
+eir header.
+
+If bitdiddle.com is vulnerable to XSS attacks, an attacker could inject JS =
+that will print out its document.cookie. The developers should sanitize the=
+ir inputs.
+
+An attacker could man-in-the-middle the connection where the cookie is init=
+ially sent from the server to the browser and read the cookie. The develope=
+rs should encrypt the cookie when sending it and use an anti-replay nonce.
+
+An attacker who has physical access to the user's computer that they want t=
+o steal a cookie from can inspect the memory on the computer to get to the =
+cookie. This attack is hard to prevent.</pre></li>
+
+<li><pre class=3D"student-text">What should the developers look at in order=
+ to determine if a user's cookie can
+be stolen by an adversary?
+
+- If the website relies on http cookies for authentication, check that it u=
+ses
+the httponly flag.
+- Use the secure flag to help protect against cookie modification.
+- Make sure that the scoping of cookie works as expected even when the user=
+ uses
+browsers like IE.
+- Don't delegate any hostnames within a sensitive domain to any vulnerable =
+party.
+- Separate the jars for httponly and normal cookies.
+</pre></li>
+
+<li><pre class=3D"student-text">What should the developers look at in order=
+ to determine if a user's cookie can be stolen by an adversary? In other wo=
+rds, what kinds of adversaries might be able to steal the cookie of one of =
+the visitors to http://bitdiddle.com/, what goes "wrong" to allow the adver=
+sary to obtain the cookie, and how might the developers prevent it?
+
+Cookies are scoped domains. The Adversary can pretend to be a subdomain. De=
+velopers could set a path prefix. The browser only sneds back the cookie on=
+ requests to matching directories, and the developers could set the permiss=
+ions on the directory to be strict. Developers can also output the cookie w=
+ith the flag httponly which prevents access to the cookie document which ma=
+kes it more difficult for an adversary to copy the user's credentials.=20
+Another way to steal cookies would be through using localhost. The practice=
+ of adding Localhost entry to a domain and point it to 127.0.0.1 is a secur=
+ity risk because it puts all the HTTP services on the user's own machine wi=
+thin the same domain.=20
+</pre></li>
+
+<li><pre class=3D"student-text">What should the developers look at in order=
+ to determine if a user's cookie can be stolen by an adversary? In other wo=
+rds, what kinds of adversaries might be able to steal the cookie of one of =
+the visitors to http://bitdiddle.com/, what goes "wrong" to allow the adver=
+sary to obtain the cookie, and how might the developers prevent it?
+
+Note the website uses http not https =3D&gt; it uses a cookie that is not l=
+ocked to encrypted protocols, and can thus be transmitted as plain text.  T=
+his leads to several exploitable vulnerabilities:
+
+1) The attacker may perform a MITM attack, waiting to intercept a handshake=
+ and log the user's cookie, then use it to log in.
+2) If the browser is untrustworthy (e.g. an attacker exploited a bug in the=
+ broswer), it can log the unencrypted cookie and send it to the attacker.
+3) A mistake in setting domain restrictions - e.g. setting a cookie for *.c=
+om, which would then mean this cookie is sent unexpectedly to every other d=
+estination on the Internet.
+4) If DNS hijacking occurs, script-injection vulnerabilities used to perfor=
+m said hijacking could be exploited and the user's cookies could be stolen.
+5) If the website administrators add a =E2=80=9Clocalhost=E2=80=9D entry to=
+ a domain and have it point to 127.0.0.1, then the website code gets placed=
+ in a bucket with all other HTTP services on the administrator's computer. =
+ If some other malicious website is also installed and located in the same =
+bucket, the attacker has access to all the same origin access privileges th=
+at the bitdiddle webbsite has.
+
+
+I think the simplest thing for the developers to do to improve security is =
+to use https rather than http, tighten domain restrictions, and avoid any l=
+ocalhost access.
+However, I am not sure how the website could protect against DNS hijacking.
+</pre></li>
+
+<li><pre class=3D"student-text">What should the developers look at in order=
+ to determine if a user's cookie can be stolen by an adversary? In other wo=
+rds, what kinds of adversaries might be able to steal the cookie of one of =
+the visitors to http://bitdiddle.com/, what goes "wrong" to allow the adver=
+sary to obtain the cookie, and how might the developers prevent it?
+
+Webservers should output cookies with httponly and secure flags to hinder a=
+dversaries. </pre></li>
+
+<li><pre class=3D"student-text">Why not use RPC calls to request resources =
+and isolate calls in sandboxes in the browser?=20
+
+Why not re-write a browser that's not full of mangled legacy code, making i=
+t simple to address these security concerns?
+
+</pre></li>
+
+<li><pre class=3D"student-text">lec13.txt
+
+John C. McLaughlin
+April 2nd 2018
+
+Suppose you are helping the developers of a complex web site at http://bitd=
+iddle.com/ to evaluate their security. This web site uses an HTTP cookie to=
+ authenticate users. The site developers are worried an adversary might ste=
+al the cookie from one of the visitors to the site, and use that cookie to =
+impersonate the victim visitor.
+
+What should the developers look at in order to determine if a user's cookie=
+ can be stolen by an adversary? In other words, what kinds of adversaries m=
+ight be able to steal the cookie of one of the visitors to http://bitdiddle=
+.com/, what goes "wrong" to allow the adversary to obtain the cookie, and h=
+ow might the developers prevent it?
+
+Note: an exhaustive answer might be quite long, so you can stop after about=
+ 5 substantially-different issues that the developers have to consider.
+
+1. If an attacker tried to access the DOM with cookies from a webpage from =
+a different domain (XSRF). The developers could mark the cookies as HTTP on=
+ly so that javascript would not be able to acces the cookies.
+2. Browser extension reads the cookies
+3. If any cross site scripting vulnerabilities exist on bitdiddle.com, atta=
+ckers could run javascript in the context of a victims browser and send out=
+ the victim's cookies. The developers could mitigate this with proper input=
+ sanitization.
+4. Get the victim  to go to a malicious website that embeds bitdiddle.com i=
+n a frame and have the user login, and steal their cookies. The developers =
+could stop this by setting the X-Frame-Options: same-origin. (Clickjacking)
+5. An attacker provides a resource that the developers want to include (suc=
+h as a javascript library), if the developers use a scheme such as location=
+.hash, window.name, or frameElements, it could be the case that the attacke=
+r is able to bypass the same origin policy and read the user's cookies.</pr=
+e></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--6RyOTaeEvpQvsUMgQGpxYFM3sYaRgjYUAqqRDgg24t------

@@ -1,0 +1,776 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-questions/20
+Subject: Questions for lecture 20 - 6.858
+Date: Tue, 21 May 2018 01:45:08 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--Q6Xbp7cdvWrrhAapYvB4iw5DyzQEdPUnOHt2wI7W6c----"
+
+
+------MultipartBoundary--Q6Xbp7cdvWrrhAapYvB4iw5DyzQEdPUnOHt2wI7W6c----
+Content-Type: text/html
+Content-ID: <frame-1193-f22e02e5-daec-40dc-b0bf-ce423f2b9cef@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-questions/20
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Questions for lecture 20 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Questions for lecture 20 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text"></pre></li>
+
+<li><pre class=3D"student-text">Can exit nodes eavesdrop on communications?
+</pre></li>
+
+<li><pre class=3D"student-text">Why were services like Tor originally creat=
+ed.</pre></li>
+
+<li><pre class=3D"student-text">"But running BitTorrent while doing anonymo=
+us web browsing is an especially bad idea. An exit node can find the user's=
+ IP address in the BitTorrent payload then trivially de-anonymize all strea=
+ms sharing the circuit."
+
+Why is it trivial to de-anonymize all streams from here? Won't all the othe=
+r users streams still be anonymized because they have different origins?
+
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">- There are several other systems mentioned=
+ in Related Work, including those in the same category as Tor. How is Tor u=
+nique? Is it the most successful, and why is that?
+
+- What is a censorship-resistant system? How does it relate to public block=
+chains?
+
+- What is the difference between circuit and stream level?
+
+- What is a smear attack? Is it in the social engineering category (since i=
+t is related to rumors and ruining the reputation of a network)?
+
+- What is the difference between the OR and OP? How do they work together?<=
+/pre></li>
+
+<li><pre class=3D"student-text">1) What makes a Tor node a "trusted" Tor no=
+de?
+2) Why would someone use Tor in the United States?
+</pre></li>
+
+<li><pre class=3D"student-text">6.858 - Tor
+
+What does the Tor ecosystem look like today? e.g. how many users, routers, =
+directories,
+etc.?
+
+What does Tor do to prevent a group with large computation power (e.g. Amaz=
+on, Google,
+the NSA?) from learning too much information by creating lots of routers in=
+side
+the network?
+</pre></li>
+
+<li><pre class=3D"student-text">&gt; as an optimization, the first two byte=
+s of the integrity check
+are zero, so in most cases we can avoid computing the hash
+
+What does this mean? What does it mean to have the first two bytes be zero?=
+ How does that help avoid computing the hash? Maybe if the first two bytes =
+get corrupted, we can avoid computing the hash, but in the common case when=
+ the data is uncorrupted, we would still need to compute the hash, right?
+
+Since the paper is from 2004, what improvements have been made to Tor in th=
+e meantime? Have the issues with low-latency timing attacks and other end-t=
+o-end attacks been addressed? How large is the Tor network today?
+</pre></li>
+
+<li><pre class=3D"student-text">Are Sybil attacks possible on the Tor netwo=
+rk?</pre></li>
+
+<li><pre class=3D"student-text">Are there people who use Tor as a "primary"=
+ web browser (for viewing all web content, even content that isn't privacy-=
+sensitive)? Or does the increased latency and the likelihood that a site bl=
+ocks Tor exit nodes make this a non-option?
+</pre></li>
+
+<li><pre class=3D"student-text">Are tor nodes banned in some countries?
+</pre></li>
+
+<li><pre class=3D"student-text">Can authoritarian countries do anything to =
+prevent Tor adoption? I know that China is very paranoid about what citizen=
+s can access on the web and I'm wondering if they do anything to prevent To=
+r adoption which is popular in the Middle East.
+</pre></li>
+
+<li><pre class=3D"student-text">Can the adversary defeats anonymity by obse=
+rving the traffic patterns in the network? </pre></li>
+
+<li><pre class=3D"student-text">Do most networks use TOR today?</pre></li>
+
+<li><pre class=3D"student-text">Does CSAIL run a TOR exit node and if not d=
+o you know why?
+</pre></li>
+
+<li><pre class=3D"student-text">Does TOR also inadvertently provide benefit=
+s other distrbuted overlay networks do. One of the ones that comes to mind =
+is Resilient Overlay Networks which
+try to avoid AS routing issues by allowing traffic to travel along alternat=
+ive pathways.</pre></li>
+
+<li><pre class=3D"student-text">Does TOR use mutual TLS connections between=
+ nodes? </pre></li>
+
+<li><pre class=3D"student-text">For the perspective of a company like Googl=
+e, which supposedly cares deeply about security, why doesn't Chrome run alg=
+orithms like Tor by default to improve user anonymity?
+</pre></li>
+
+<li><pre class=3D"student-text">Given the discussion of attacks in the pape=
+r, now that TOR is more well-known have their been any high-profile attacks=
+ of the type discussed in the paper or otherwise?</pre></li>
+
+<li><pre class=3D"student-text">Given the risks associated with running an =
+onion router Tor node on your machine, how does Tor have enough onion route=
+rs to support all of their traffic?</pre></li>
+
+<li><pre class=3D"student-text">Have there been any examples of Tor users w=
+ho've been compromised by law enforcement? It seems that effective end-to-e=
+nd timing correlation attacks makes investigations into targeted individual=
+s possible.
+</pre></li>
+
+<li><pre class=3D"student-text">Have there been any reports of government a=
+gencies like the NSA being able to determine where users of Tor are connect=
+ing to?</pre></li>
+
+<li><pre class=3D"student-text">How are duplicate families in the same circ=
+uit being controlled now that IPv6 is taking over and disjoint IP address a=
+re common?</pre></li>
+
+<li><pre class=3D"student-text">How are path lengths chosen in practice? Wh=
+at is the latency, and have these quantities changed over time since the in=
+ception of Tor?
+</pre></li>
+
+<li><pre class=3D"student-text">How are traffic confirmation attacks differ=
+ent from traffic analysis attacks?
+</pre></li>
+
+<li><pre class=3D"student-text">How do websites determine if they want to b=
+e run on Tor or the traditional internet?=20
+
+Other than a Tor-supported browser, what do users need to connect? How can =
+the number of unique users be understood if everything is anonymous?</pre><=
+/li>
+
+<li><pre class=3D"student-text">How does each onion router know if a relay =
+packet is coming from the onion proxy's direction?  </pre></li>
+
+<li><pre class=3D"student-text">How does having open exit vs middleman vs p=
+rivate exit nodes mitigate the issue of anonymous users abusing the network=
+?=20
+</pre></li>
+
+<li><pre class=3D"student-text">How does running a Tor node on the same com=
+puter as a Tor client/proxy affect the proxy's anonymity? Would the fact th=
+at it's an intermediate node in the network increase the shielding from tra=
+ffic analysis attacks (as well as the possibility of directly entering the =
+data into the network without the end-to-end attack risk)? Or could it make=
+ the traffic less anonymous since it didn't "originate" externally?
+</pre></li>
+
+<li><pre class=3D"student-text">How has Tor performed overall today?  Is ha=
+s it proven to be robust to adversaries who wish to uncover what data is be=
+ing sent through the network?
+</pre></li>
+
+<li><pre class=3D"student-text">How has the TOR network changed since 2004?
+</pre></li>
+
+<li><pre class=3D"student-text">How has the Tor ecosystem grown in terms of=
+ developers, users, et cetera over the years?
+</pre></li>
+
+<li><pre class=3D"student-text">How many union routers are there currently =
+in the Tor network?
+</pre></li>
+
+<li><pre class=3D"student-text">How much more security do you get by adding=
+ another node to your circuit? Is there an ideal number, and are there dimi=
+nishing returns? I guess it's also important to not have the same number of=
+ nodes each time, as that would also reveal information, so how does that f=
+it in?
+</pre></li>
+
+<li><pre class=3D"student-text">How scalable is Tor? It seems like there is=
+n't much incentive to use it unless you believe in the cause. Are there any=
+ projects aimed at subsidizing the cost of running a relay (such as by taki=
+ng some sort of bit-coin approach...)?
+</pre></li>
+
+<li><pre class=3D"student-text">How slow is the Tor network currently?</pre=
+></li>
+
+<li><pre class=3D"student-text">How was advertising done to get volunteers =
+for Tor?</pre></li>
+
+<li><pre class=3D"student-text">How will Tor continue to scale? It seems li=
+ke it relies heavily on volunteers -- how will they incentivize more volunt=
+eers besides just security? How has Tor's usage grown?</pre></li>
+
+<li><pre class=3D"student-text">I find it very odd that Tor requires the fu=
+ll network topology to be known, I'd imagine that having every individual h=
+ave incomplete view of the network would be more effective at providing ano=
+nymity. Why is it necessary for every OR to know the entire topology?
+</pre></li>
+
+<li><pre class=3D"student-text">I know that it is still possible to trace s=
+omeone through tor, as there have been cases in the past (Silk Road). Is th=
+is usually due to faults in Tor or faults on the part of the user?
+</pre></li>
+
+<li><pre class=3D"student-text">I once had a conversation with someone at I=
+S&amp;T who noted that MIT runs some number of TOR nodes, and gets complain=
+ts about the traffic that exits them.  Does that mean that MIT has an open =
+exit policy?
+</pre></li>
+
+<li><pre class=3D"student-text">I remember reading about how CMU had "broke=
+n Tor's anonymity". How did their attack work and has it been patched? Is t=
+he design of Tor considered correct and without significant known vulnerabi=
+lities (I understand that implementations are hard to reason about)?
+</pre></li>
+
+<li><pre class=3D"student-text">I remember when Tor was very talked about b=
+ut now it doesn't seem to be as popular. Is there a reason for this? Or per=
+haps Tor is still as popular as before and just not as talked about?</pre><=
+/li>
+
+<li><pre class=3D"student-text">I still couldn't find the appropriate answe=
+r for the question above. Could it be because of this whole hacker-cypherpu=
+nk-anarchist ideology that surrounds Tor the reason for why the network is =
+so strong/has so many nodes? Are there any precisely concrete benefits of h=
+elping the network? Moreover, it seems that exit nodes *are* critical in th=
+e final delivery part, which seems to make them potential targets for, say =
+the government - couldn't a malicious agent just impersonate/become an exit=
+ node and spy?
+</pre></li>
+
+<li><pre class=3D"student-text">I still don't quite understand how one can =
+protect against a large number of compromized routers, (i.e. a large agency=
+ hosting a ton).  What scale of machines serving as Tor routers would be ne=
+cessary to meaningfully be able to track someone?
+</pre></li>
+
+<li><pre class=3D"student-text">I still don't understand how investigators =
+are able to trace certain illegal traffic through the Tor network aside fro=
+m having a "spy" participate as a Tor host/relay. I feel like side channel =
+attacks would't be effective since so much encrypted traffic goes through t=
+he system.</pre></li>
+
+<li><pre class=3D"student-text">I would like to see more details about the =
+Tor design, cells, circuits and streams.</pre></li>
+
+<li><pre class=3D"student-text">I'm a little confused about how ciruits are=
+ created. How do nodes find optimal, or even efficient, paths if they don't=
+ know the full topology of the network?</pre></li>
+
+<li><pre class=3D"student-text">I've mostly heard of Tor in the context of =
+doing illegal things online. Is this association well founded?
+</pre></li>
+
+<li><pre class=3D"student-text">I've used tor only once or twice, and notic=
+ed that the URLs are quite different from normal URLs. From the system the =
+paper designed, I don't intuitively see why this should be the case -&gt; f=
+rom the client's perspective they are still submitting a normal HTTPs reque=
+st. So what is the cause of these very weird URLs? Are these URLs part of t=
+he "leaky faucet" and correspond to directly sending a message to an OR?
+</pre></li>
+
+<li><pre class=3D"student-text">If Bob is a user of the TOR network, are hi=
+s requests to Alice sent to the same initial OR that the responses are retu=
+rned?  Does he send requests and get responses from the same OR, or does he=
+ send to one OR and get responses from another?
+</pre></li>
+
+<li><pre class=3D"student-text">If a client sets up their own onion proxy w=
+ith a private exit node, can't that node be attributed to them?  How does t=
+his help maintain their anonimity?
+</pre></li>
+
+<li><pre class=3D"student-text">If my OR is used to route illegal content, =
+is my OR illegal?
+</pre></li>
+
+<li><pre class=3D"student-text">In order to prevent traffic analysis, can t=
+he protocol introduce a very small random amount of delay and message paddi=
+ng? While this would increase latency, it would increase the anonymity of u=
+sers on the network which is one of the main goals
+</pre></li>
+
+<li><pre class=3D"student-text">In section 10, under Incentives, it says, "=
+Volunteers who run nodes are rewarded with publicity..." How is publicity a=
+ reward?
+</pre></li>
+
+<li><pre class=3D"student-text">In the 6 years since the set of blog posts,=
+ have any new attacks on the Tor network been carried out and has this led =
+to any changes in the protocol?</pre></li>
+
+<li><pre class=3D"student-text">Is TOR commercialized for the private use f=
+or the companies?
+</pre></li>
+
+<li><pre class=3D"student-text">Is Tor really anonymous? If government want=
+ to trace back
+to the user, can it still track a package from the exit node
+to the user? </pre></li>
+
+<li><pre class=3D"student-text">Is Tor still useful for any security purpos=
+es? I thought that it had been completely broken...
+</pre></li>
+
+<li><pre class=3D"student-text">Is it *only* possible to use timing/volume =
+side channel attacks if you control the start and end node, or is it just t=
+hat it's less useful to do so otherwise since you'd only be drawing connect=
+ions between streams of encrypted traffic?</pre></li>
+
+<li><pre class=3D"student-text">Is it known if TOR is used internally for t=
+he government (ie. NSA)? How likely is it that they have something better?<=
+/pre></li>
+
+<li><pre class=3D"student-text">Is it worth the technical risks of using a =
+VPN-then-Tor connection? (e.g. fixed entry node)</pre></li>
+
+<li><pre class=3D"student-text">Is tor more or less active now than when th=
+is paper was published? </pre></li>
+
+<li><pre class=3D"student-text">Isn't there a tension between gaining fame =
+and reputation from running an OR Tor
+node and losing anonymity from running one? Shouldn't there not be an incen=
+tive=20
+to publicize that you are also an OR Tor node?
+</pre></li>
+
+<li><pre class=3D"student-text">It is mentioned that Tor does not defend ag=
+ainst timing attacks. Have timing attacks been a problem for Tor users?
+
+</pre></li>
+
+<li><pre class=3D"student-text">It seems like the Tor network attempts to h=
+ide some important meta-data from adversaries. However, this hiding is not =
+cryptographically secure. Are there systems that achieve such meta-data hid=
+ing with cryptographic security?</pre></li>
+
+<li><pre class=3D"student-text">Lecture 20 (Question About Paper)
+
+The paper mentioned that each onion router maintains a long-term identity k=
+ey, which is used to sign TLS certificates, to sign the OR's router descrip=
+tor, and to sign directories. When would an OR have to sign a TLS certifica=
+te? When would an OR have to sign a router descriptor? When would an OR hav=
+e to sign a directory?
+
+The paper also mentioned that each onion router maintains a short-term onio=
+n key, which is used to decrypt requests from users to set up a circuit and=
+ negotiate ephermal keys. How do users know which key to encrypt their requ=
+ests with?
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 20: Anonymous Communication Nick Ma=
+tthewson
+5/2/18
+
+They mentioned that routing directories were distributed by directory autho=
+rities after reaching a consensus, yet wouldn't users betray where they wer=
+e located if they had to reach out to the closest directory authority?</pre=
+></li>
+
+<li><pre class=3D"student-text">Lecture 20: My Tor Question
+
+How much power does anonymity have? I was wondering this because I imagine =
+that if I ever get attacked, it would be
+because I was randomly selected by some attacker, and not ever targeted by =
+someone I know. So in the field of security,
+how does anonymity stack up against other qualities, such as performance, i=
+nformation security (as in attackers won't
+be able to see or access information), etc?
+
+Thank you!
+</pre></li>
+
+<li><pre class=3D"student-text">Other than to sniff messages, why would any=
+one want to run an exit node? It also seems like most ISPs won't let you ru=
+n one. So who runs these?
+</pre></li>
+
+<li><pre class=3D"student-text">Question about TOR
+
+Is it advisable to use a VPN with TOR?</pre></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 20
+
+What are common mistakes made in configuring TOR clients to use TOR?</pre><=
+/li>
+
+<li><pre class=3D"student-text">Scalability of a network seems critical for=
+ increased deployment. The paper claims that Tor is expected to support onl=
+y a few hundred nodes before it needs to become more distribuetd. What work=
+ has been done in designing a more distributed version of Tor?</pre></li>
+
+<li><pre class=3D"student-text">The Tor paper mentions that Tor is not inte=
+nded to protect against a sufficiently powerful, global adversary. What rea=
+l adversaries relevant to anonymity fit the more limited threat model Tor c=
+onsiders?</pre></li>
+
+<li><pre class=3D"student-text">The paper briefly mentions website fingerpr=
+inting, but I'm not sure how much
+that technology has recently changed-- I know that it's possible to identif=
+y a
+user pretty reliably just based on the fonts that their browser has downloa=
+ded.
+With this sort of tracking/identifying ability in mind, is there actually a=
+ way
+to safely browse the Internet as one normally would using Tor? Or must you =
+also
+limit yourself to only safe websites, running safe languages, etc? Can you
+safely run JavaScript in Tor and retain anonymity guarantees?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper claims that with the telescoping =
+path-building design, the onion replay detection
+is no longer necessary. How does the replay detection work originally?</pre=
+></li>
+
+<li><pre class=3D"student-text">The paper mentioned that a server will main=
+tain TLS connections to every other onion router. It is not scalable for a =
+large network. If the network is not large enough, the adversary can easily=
+ know that the request comes from one of the not many users of Tor. This un=
+dermines the property of anonymous. Why do they leave this bottleneck in th=
+eir design? </pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that an application usin=
+g Tor should not do DNS resolution before specifying the destination to Tor=
+, and that Mozilla and SSH make this mistake.
+It states that with Mozilla, this problem is easy, but with SSH, it is hard=
+er.
+What exactly are the differences between the two that make this DNS resolut=
+ion problem easy or hard?
+I don't know enough about their inner workings to see exactly why.
+
+In a compact, haiku form:
+Using DNS
+before Tor leaks, but only
+sometimes a quick fix?</pre></li>
+
+<li><pre class=3D"student-text">The paper proposes scanning the traffic for=
+ common attacks such as XSS and spam, but doesn't it goes against the priva=
+cy proposal in the first place? Second, it's possible to mitigate this scan=
+ns by using end-to-end encryption, so why even bother?</pre></li>
+
+<li><pre class=3D"student-text">Tor has gotten a lot bigger since this pape=
+r was written. What was done to address the scalability concerns outlined b=
+y the authors in section 10?</pre></li>
+
+<li><pre class=3D"student-text">Tor mentions that few failures occur with d=
+irectory servers, but the ones that do would be fixed manually. This does n=
+ot seem scalable should Tor
+desire to be even more widespread nor does it seem safe to introduce the po=
+ssibility of human error to a growing number of directory servers.
+Has Tor's stance on directory servers and deriving a consensus from them ev=
+olved since the 2012 blog post?</pre></li>
+
+<li><pre class=3D"student-text">Tor seems to be a very convenient tool for =
+online illegal activities due to its hard-to-track nature. How are such act=
+ivities prevented?=20
+</pre></li>
+
+<li><pre class=3D"student-text">What are main techniques used to track down=
+ criminals for crimes committed over the tor network?</pre></li>
+
+<li><pre class=3D"student-text">What are other incentives/benefits for volu=
+nteers who run nodes other than better anonymity?
+</pre></li>
+
+<li><pre class=3D"student-text">What are some possible ways to make Tor mor=
+e scalable in the future?</pre></li>
+
+<li><pre class=3D"student-text">What are the Federal Government's policies =
+on tor nowadays? I remember seeing it in the news a while back.=20
+</pre></li>
+
+<li><pre class=3D"student-text">What does the author mean by "leaky pipe to=
+pology"?</pre></li>
+
+<li><pre class=3D"student-text">What exactly is the distinction between gen=
+eral Onion Routing and the features
+that Tor adds?
+</pre></li>
+
+<li><pre class=3D"student-text">What have been the biggest changes in Tor s=
+ince the 2012 blog post?
+</pre></li>
+
+<li><pre class=3D"student-text">What is the incentive for someone to run a =
+Tor node? In practice, are most nodes administered by volunteer individuals=
+ who simply align with the Tor mission, or are they administered by institu=
+tions/entities that either have some relationship with the Tor project or e=
+lse some incentive to see the Tor network operate successfully?</pre></li>
+
+<li><pre class=3D"student-text">What is the point of leaky-pipe circuit top=
+ology? I see how it makes traffic shape unpredictable, but=20
+how does the traffic ever reach its target destination if it's only being s=
+ent partway down the circuit?
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">What is the state of art on ToR usage? What=
+ fraction of overall internet traffic goes through ToR nodes? How censored =
+is it?
+
+</pre></li>
+
+<li><pre class=3D"student-text">What makes public key encryption slower tha=
+t symmetric key?
+</pre></li>
+
+<li><pre class=3D"student-text">What's the performance cost of an Onion Net=
+work versus a classic TCP communication? I assume there's some overhead.
+</pre></li>
+
+<li><pre class=3D"student-text">When all client owns a node, is it function=
+ally equivalent to a fully dicentralized network?</pre></li>
+
+<li><pre class=3D"student-text">When browsing over Tor, one ends up getting=
+ a large number of captcha requests
+(from Google, Cloudflare, etc.) to the point that usabilty suffers. Do you =
+think
+that this will change in the future?
+</pre></li>
+
+<li><pre class=3D"student-text">When describing the threat model, what did =
+the paper mean by "global passive adversary" and
+why did it not bother to try and guard against it?
+</pre></li>
+
+<li><pre class=3D"student-text">Who invented TOR and why? Is it really that=
+ important for regular users to use TOR?
+
+</pre></li>
+
+<li><pre class=3D"student-text">Why are cells only 512 bytes? Doesn't this =
+make the ratio between payload and headers and administrative details quite=
+ inefficient?
+</pre></li>
+
+<li><pre class=3D"student-text">Why are they called onion routers?</pre></l=
+i>
+
+<li><pre class=3D"student-text">Why did Tor retain use of the term "Onion R=
+outer" (it's even in the name) when it says at the start of the paper that =
+it's not an onion structure like the original Onion Routing design and inst=
+ead is a telescoping design?</pre></li>
+
+<li><pre class=3D"student-text">Why do you think no one has been sued or pr=
+osecuted in the US just for running a Tor relay?  Is it essentially the ide=
+a of innocent until proven guilty where the service itself is perfectly acc=
+eptable, but the question is how the service is actually being used?</pre><=
+/li>
+
+<li><pre class=3D"student-text">Why should I use Tor</pre></li>
+
+<li><pre class=3D"student-text">how does one defend / make it harder to exe=
+cute end-to-end attacks?</pre></li>
+
+<li><pre class=3D"student-text">how does the invent of guard nodes help sol=
+ve the problem of attackers de-anonymizing users when the attacker owns the=
+ first and last hop in the circuit? couldn't attackers just make guard node=
+s and then it would make it even easier since they would know that they own=
+ the first hop in node?
+</pre></li>
+
+<li><pre class=3D"student-text">=EF=BB=BFsq20.txt
+
+
+What can be done to make sure the applications using Tor dont leak deanonym=
+izing data?</pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--Q6Xbp7cdvWrrhAapYvB4iw5DyzQEdPUnOHt2wI7W6c------

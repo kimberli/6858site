@@ -1,0 +1,1885 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: http://css.csail.mit.edu/6.858/2018/questions.html?q=q-exe&lec=12
+Subject: 6.858 / Spring 2018 / Paper Reading Questions
+Date: Tue, 21 May 2018 01:29:32 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--ivGxFKYXuLjNFnHD82lVwZaWmlSw00czgkVFClJKSA----"
+
+
+------MultipartBoundary--ivGxFKYXuLjNFnHD82lVwZaWmlSw00czgkVFClJKSA----
+Content-Type: text/html
+Content-ID: <frame-1161-c1ab8217-8829-4a5e-8ffb-33d1dc34a210@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://css.csail.mit.edu/6.858/2018/questions.html?q=q-exe&lec=12
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8">
+<title>
+6.858 / Spring 2018
+
+/ Paper Reading Questions
+
+</title>
+<meta http-equiv=3D"pragma" content=3D"no-cache">
+<link rel=3D"stylesheet" type=3D"text/css" href=3D"http://css.csail.mit.edu=
+/6.858/2018/style.css">
+
+
+
+</head>
+
+<body bgcolor=3D"#ffffff" text=3D"#000000">
+
+<table cols=3D"3" width=3D"100%" height=3D"100%" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0">
+<tbody>
+<!-- Header row -->
+<tr height=3D"40px">
+ <td colspan=3D"3">
+ <table width=3D"100%" height=3D"40px" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0">
+ <tbody>
+   <tr>
+    <td bgcolor=3D"#000000">
+      <div align=3D"left" style=3D"padding-left:58px; padding-top: 2px;">
+      <font style=3D"font-size: 28px; color: #ffffff">
+	<a name=3D"top">
+         <b>6.858</b>: Computer Systems Security
+	</a>
+      </font>
+      </div>
+    </td>
+
+    <td bgcolor=3D"#8a0a0a" halign=3D"center" valign=3D"center" width=3D"25=
+0px">
+     <div align=3D"center" style=3D"padding-top: 2px; padding-bottom: 4px;"=
+>
+     <font style=3D"font-size: 28px; color: #ffffff">
+      Spring <b>2018</b>
+     </font>
+     </div>
+    </td>
+  </tr>
+ </tbody>
+ </table>
+ </td>
+</tr>
+
+<!-- horiz line -->
+<tr>
+<td colspan=3D"3" height=3D"5px" bgcolor=3D"#8a0a0a">
+</td>
+</tr>
+
+<tr>
+<!-- Menu -->
+<td bgcolor=3D"#8a0a0a" valign=3D"top" width=3D"180px">
+ <table cols=3D"2" rows=3D"1" border=3D"0" cellspacing=3D"0" cellpadding=3D=
+"0" width=3D"100%" height=3D"100%">
+  <tbody>
+   <tr>
+   <td valign=3D"top">
+   <table cols=3D"1" rows=3D"1" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%">
+    <tbody>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/" class=3D"menuItem=
+">Home</a>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/general.html" class=
+=3D"menuItem">General information</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/schedule.html" clas=
+s=3D"menuItem">Schedule</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/reference.html" cla=
+ss=3D"menuItem">Reference materials</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"https://piazza.com/mit/spring2018/6858" class=3D"menuIt=
+em">Piazza discussion</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/handin.html" c=
+lass=3D"menuItem">Submission</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/quiz.html" class=3D=
+"menuItem">Quizzes</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a class=3D"menuItem">Labs</a><br>
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/lab1.html" cla=
+ss=3D"menuItem">1</a>
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/lab2.html" cla=
+ss=3D"menuItem">2</a>
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/lab3.html" cla=
+ss=3D"menuItem">3</a>
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/lab4.html" cla=
+ss=3D"menuItem">4</a>
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/lab5.html" cla=
+ss=3D"menuItem">5</a>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://ist.mit.edu/network/rules" class=3D"menuItem">MI=
+T network rules</a>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2018/projects.html" clas=
+s=3D"menuItem">Final projects</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a href=3D"http://css.csail.mit.edu/6.858/2017/" class=3D"menuItem=
+">2017 class materials</a><br>
+      </div></td></tr>
+      <tr><td><div class=3D"menuHead">
+         <a rel=3D"license" href=3D"http://creativecommons.org/licenses/by/=
+3.0/us/"><img alt=3D"Creative Commons License" style=3D"border-width:0" src=
+=3D"http://css.csail.mit.edu/6.858/2018/cc-by.png"></a>
+      </div></td></tr>
+    </tbody>
+   </table>
+   </td>
+
+   <td width=3D"3px" bgcolor=3D"#8a0a0a">
+   </td>
+   </tr>
+  </tbody>
+ </table>
+</td>
+<!-- End Menu -->
+
+<td colspan=3D"2">
+
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" heig=
+ht=3D"100%">
+<tbody><tr><td style=3D"padding-left:10px; padding-right:10px; padding-top:=
+ 10px; padding-bottom: 10px" valign=3D"top" align=3D"left">
+
+
+<!-- Begin Page Content -->
+
+
+<!--
+    To add a new question, just put in within a <div> tag, give it
+    some identifier (i.e., 'id=3D"qXX"'), and then add it to the questions
+    array variable below.  To link directly to the question, just use a
+    link to 'questions.html?q=3DqXX'.
+ -->
+
+<h1>
+Paper Reading Questions
+</h1>
+
+<a name=3D"top"></a>
+<p>
+For each paper, your assignment is two-fold.  Before lecture:
+
+</p><ul>
+<li>Submit your answer for each lecture's paper question via the
+    <a href=3D"http://css.csail.mit.edu/6.858/2018/labs/handin.html">submis=
+sion web site</a> in a file named
+    <code>lec<var>n</var>.txt</code>, and
+</li><li>Submit your own question about the paper (e.g., what you find most=
+ confusing about
+    the paper or the paper's general context/problem) in a file named
+    <code>sq<var>n</var>.txt</code>.
+    You cannot
+    use the question below.  To the extent possible, during lecture we will=
+ try to
+    answer these questions.  Below, we have included the questions we've re=
+ceived
+    from students in past years (when available), along with answers to tho=
+se
+    questions, in case you find it helpful.
+</li></ul>
+
+<p id=3D"submit-links" style=3D"visibility: visible; position: static;">
+    Once you submit your own question and answer (or after the deadline
+    has passed), you can view the
+    <a href=3D"https://6858.csail.mit.edu/lec-questions/12" id=3D"question-=
+view-link">questions</a>
+    and
+    <a href=3D"https://6858.csail.mit.edu/lec-answers/12" id=3D"answer-view=
+-link">answers</a>
+    that other students submitted.
+</p>
+
+<p></p>
+
+<div id=3D"questions">
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+  =20
+
+ =20
+
+
+ =20
+
+ =20
+
+ =20
+
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+  <div id=3D"q-exe" class=3D"questionbox"><p><b>Lecture 12</b></p>
+    <p>
+      Each time EXE adds a branch constraint it
+      queries STP to check that there exists at least one solution for the
+      current path's constraints.  What would go wrong if EXE did not use S=
+TP,
+      and instead tried all branches?  What would go wrong if EXE randomly
+      selected a branch to check?
+    </p>
+  </div>
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+ =20
+
+</div>
+
+<style>
+  div.responsebox {
+    margin: 1pc 4% 0pc 4%;
+    padding: 0.5pc 0.5pc 0.5pc 0.5pc;
+    background-color: #e0e0ff;
+    border: 1px dashed red;
+  }
+
+  pre.responsepre {
+    white-space: pre-wrap;
+  }
+</style>
+
+<div id=3D"responses">
+
+  <div class=3D"lecture-responses">
+    <h2>Questions and answers for lecture 12 from past years</h2>
+
+      <div class=3D"responsebox"><pre class=3D"responsepre">They're somewha=
+t complicated and non-algebraic (e.g., floating point
+addition is non-associative in general because adding two small values
+works "as you might expect" but adding a small value to a large value
+might be a no-op since the small value might be too small to represent
+at the large value's exponent).  Also, they're rarely used in contexts
+that might cause security bugs that this paper is looking for.
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 8:03 PM, Anonymous wrote:
+&gt; Why doesn't STP handle floating-point constraints?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Floating point =
+is somewhat complicated and non-algebraic (e.g.,
+floating point addition is non-associative in general because adding
+two small values works "as you might expect" but adding a small value
+to a large value might be a no-op since the small value might be too
+small to represent at the large value's exponent).  Also, floating
+point is rarely used in contexts that might cause security bugs that
+this paper is looking for.
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 8:40 PM, Anonymous wrote:
+&gt; Rotem Hemo
+&gt; Apr 2
+&gt; LEC 12: Question
+&gt;
+&gt; What so complexed about floating points that the authors of EXE weren'=
+t able to support it?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">This process ke=
+eps track of queries that have been issued before
+(using hashes to detect when queries are the same), and if it detects
+a repeat query, it just returns the saved results.
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 9:57 PM, Anonymous wrote:
+&gt; I don=E2=80=99t see why creating a server process to coordinate EXE pr=
+ocess using hash optimizes EXE.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">EXE takes C sou=
+rce code.  As it explores branches (in practice, for
+any non-trivial program, it would be unlikely to explore all of them),
+and finds some branch that triggers an error, it asks STP to generate
+an example input that satisfies the constraints of that branch, and
+reports that example input to the user.
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 9:18 PM, Anonymous wrote:
+&gt; Question about EXE/STP
+&gt; I=E2=80=99m a little confused how the checks happen/the work flow - do=
+es it take in a binary to explore all the branches, or does it take in the =
+source code? And is generating the test code after it=E2=80=99s explored al=
+l the branches?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">EXE can catch a=
+ny bug that the developer (or EXE user) can flag.  If
+you can write an assert() statement that captures your bug condition,
+EXE will flag any executions that fail that assertion.  You'll
+actually write such things in lab 3 (looking for more app-level bugs
+using symbolic execution).
+
+The limits of EXE are more in terms of constraint complexity than
+program size.  Even a small program could generate complex constraints
+that are hard for EXE/STP to solve (e.g., a program that dereferences
+a null pointer if the SHA1 hash of its input is a certain value).
+
+Nickolai.
+
+On Sat, Mar 25, 2017 at 10:54 PM, Anonymous wrote:
+&gt; Lec 12 Student Question
+&gt;
+&gt; Exe seems to catch bugs which involve errors in what is computationall=
+y allowed.For example it can catch buffer overflow bugs, overflowing reads,=
+ divide-by-zero errors. However, am I correct that it is unable to, and was=
+ not designed to, catch bugs where execution doesn't violate a memory rule =
+or computational rule (e.g. divide by zero) but causes unwanted execution? =
+(I'm thinking, for example, a logical error in zoobar that allows a person =
+to steal zoobars by putting the transfer amount as negative.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">On Thu, Mar 16,=
+ 2017 at 3:36 PM, Anonymous wrote:
+&gt; - What happens if there is a bug in a loop somewhere that results in a=
+n infinite loop? Would  one of the EXE processes get stuck in this loop? If=
+ so, would it just halt after some pre-set timeout? Would it be able to rep=
+ort the infinite loop?
+
+I suspect they have heuristics that kill a forked process after some time.
+
+&gt; - Are there variants of EXE that work for other programming languages?
+
+Lab 3 is an EXE-like system for Python.  There's also a system that
+does symbolic execution for an entire virtual machine, so it's
+language-agnostic (check out "S2E").
+
+&gt; - Is EXE commonly used in industry? I would imagine that large compani=
+es like Google have hundreds of thousands of lines of code written in C or =
+C++, and EXE seems like it would be a useful tool in validating code before=
+ pushing production code.
+
+EXE itself is not (it was just a research prototype).  The techniques
+are, though; many bugfinding companies use symbolic execution, and I
+know Microsoft uses similar tools internally.
+
+Nickolai.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">The limits of E=
+XE are more in terms of constraint complexity than
+program size.  Even a small program could generate complex constraints
+that are hard for EXE/STP to solve (e.g., a program that dereferences
+a null pointer if the SHA1 hash of its input is a certain value).
+
+Nickolai.
+
+On Sat, Mar 25, 2017 at 10:56 PM, Anonymous wrote:
+&gt; Is there a max programme size that EXE can run until completion?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Symbolic execut=
+ion systems (though not EXE in particular) deal with
+external I/O by modeling stubs that, effectively, have some kind of an
+assert() inside there to tell the symbolic execution system which
+calls are "bad" or not.  So that might be a fine way to look for
+errors that allow opening arbitrary files.
+
+Nickolai.
+
+On Thu, Mar 30, 2017 at 4:41 PM, Anonymous wrote:
+&gt;
+&gt; Is there something like EXE that combines user input? In other words, =
+it develops a mapping of paths, and visually provides it to a user to now b=
+etter reason about what edge cases may come up, to test for, especially for=
+ things like system file open calls that EXE simply can't reason about?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I imagine an ef=
+fective approach would be to pin down all the sources
+of non-determinism (e.g., getting random numbers, thread scheduling,
+etc), and make them deterministic.  This is doable (and there's lots
+of systems that do it) but mostly orthogonal to EXE.
+
+Nickolai.
+
+On Mon, Mar 27, 2017 at 1:36 PM, Anonymous wrote:
+&gt; 6.858 Paper Question for Lecture #12
+&gt; EXE: Automatically Generating Inputs of Death
+&gt; 03/25/17
+&gt; Ismael 'Izzy' Gomez
+&gt; -----
+&gt;
+&gt; What would need to change about EXE to make it an effective bug-findin=
+g tool for non-deterministic code too?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">There's two gen=
+eral ways symbolic execution systems like EXE deal with
+state.  The first is to run on a symbolic state (e.g., any database
+contents).  This would likely require the programmer to write some
+assertions about what are valid database states; otherwise the program
+will crash due to some nonsense coming back as a result of a SQL
+query.  The second is to include the database in the "symbolic world"
+and run several requests, keeping track of the symbolic values of any
+affected database rows after each run.
+
+Nickolai.
+
+On Sun, Mar 26, 2017 at 10:59 PM, Anonymous wrote:
+&gt; How does EXE reason about programs that contain some kind of state fro=
+m run to run? E.g. in the lab we only were able to have our concolic execut=
+ion analyzer complete one run request per test run, what if we needed a few=
+ specially designed requests in succession?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I'm not entirel=
+y sure what attack scenario you have in mind.
+
+The intended use case of EXE is app developers (or security auditors)
+looking for potential bugs in software that's well-meaning but buggy.
+
+If the app developer doesn't want a security auditor to run EXE to
+discover bugs, I suppose they could write code that builds constraints
+that EXE/STP has trouble solving.
+
+It's not an isolation/sandboxing system, though one could probably
+combine it with a sandboxing/isolation mechanism to make it safe to
+run EXE over untrusted code.
+
+Nickolai.
+
+On Fri, Mar 24, 2017 at 5:42 PM, Anonymous wrote:
+&gt; 6.858 Lecture 12 - Symbolic Execution
+&gt; 4/3/17
+&gt;
+&gt; In Section 4.1 of the paper, the constraint cache optimization for EXE=
+ is
+&gt; described. Could the cache be a potential point of attack against EXE?
+&gt; Since the server process stores the cache in a file, if someone were t=
+o
+&gt; gain control of this file, he/she could presumably craft some "solved"
+&gt; constraints, insert them into the cache, and cause EXE to miss out on
+&gt; bugs in the code using these phony solved constraints.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">On Tue, Mar 28,=
+ 2017 at 11:00 AM, Anonymous wrote:
+&gt; However, the way EXE does it seems to be different. I don't really und=
+erstand it, but there's something about a table mapping concrete bytes to S=
+TP bitvectors, and STP has these read and write primitives, and so on. Why =
+do they do it this way? Is it basically the same approach? Is it more effic=
+ient?
+
+It gives the SMT solver (STP in their case) more semantic
+understanding of what's going on in the program, so it can apply
+various optimizations.  At some level, the basic plan is roughly what
+you described, but EXE/STP makes it actually work in practice with a
+variety of optimizations.  These days, SMT solvers are pretty
+sophisticated engines and I don't fully understand all their
+optimizations..
+
+Nickolai.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">EXE is not actu=
+ally complete: in practice, for any non-trivial
+program, it is infeasible to try all possible paths, for two reasons:
+first, there's exponentially many of them (as a function of how many
+if statements the program has in its execution), and second, the
+SAT/SMT solver might not be able to solve the constraint on some path
+(e.g., a program that crashes if the input has a specific SHA1 hash
+value).
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 8:58 PM, Anonymous wrote:
+&gt; How does EXE efficiently keep track of all of the branches and constra=
+ints? Wouldn't a complex program have an exponentially large number of bran=
+ches to keep track of?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">The format is n=
+ot relevant.  But yes, for every possible choice of
+"if" statement branches, etc, they generate a separate fork of the
+process, and the process gets its own directory.  So, after running
+EXE for a while, you'll get a bunch of directories each corresponding
+to a possible input that goes down a different control flow path, and
+EXE will check if that input triggers something interesting.
+
+Nickolai.
+
+On Fri, Mar 31, 2017 at 4:36 PM, Anonymous wrote:
+&gt; In the more detailed explanation of how EXE works mechanically (page 4=
+), I didn't
+&gt; really understand their explanation of how EXE, "for each path, create=
+s two files:
+&gt; one to hold the concrete bytes it generates, the other to hold the val=
+ues for
+&gt; each decision". Does "each path" here refer to any branch that happens=
+ during
+&gt; the code's execution? So each possible path of execution, even if it d=
+iffers
+&gt; by a single "If ___, print 'hello'" gets its own two files? I don't re=
+ally
+&gt; understand how the format of these files works either, if that's relev=
+ant.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Symbolic values=
+ come from two sources: either the developer explicitly
+makes a value symbolic using make_symbolic(), as in Figure 1, or the
+program assigns the result of some expression involving symbolic
+values to some memory location.  A symbolic value is not a sequence of
+bits but rather a logical expression describing what values may appear
+in those bits.  (E.g., this 4-byte integer value can be anything
+greater than 5.)
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 7:26 PM, Anonymous wrote:
+&gt; The paper never seems to explain what a 'symbolic value' is. How are s=
+ymbolic values assigned?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">For their Figur=
+e 1 example, make_symbolic(&amp;i) stores a symbolic value
+"i" in the memory location of variable i (or, more precisely, since
+it's a 4-byte value, it stores "i[0:8]" in the first byte, "i[8:16]"
+in the second byte, etc).
+
+Variable "a" is concrete, so let's say it has address 0x1000.
+
+On line 8, variable "p" gets a+i*4.  "a" is concrete but "i" is
+symbolic, so the resulting expression for "p" is 0x1000+4*i.  EXE
+stores this symbolic expression in the memory location of "p" (or,
+again, to be more precise, it stores the individual 8-bit byte pieces
+of that 4-byte pointer).
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 8:03 PM, Anonymous wrote:
+&gt; So, what exactly happens when a token in a line of code is assigned a
+&gt; symbolic value? What is stored in memory and what of it is what the te=
+rm
+&gt; actually refers to?
+&gt;
+&gt;
+&gt; On 04/02/2017 07:44 PM, Nickolai Zeldovich wrote:
+&gt;&gt;
+&gt;&gt; Symbolic values come from two sources: either the developer explic=
+itly
+&gt;&gt; makes a value symbolic using make_symbolic(), as in Figure 1, or t=
+he
+&gt;&gt; program assigns the result of some expression involving symbolic
+&gt;&gt; values to some memory location.  A symbolic value is not a sequenc=
+e of
+&gt;&gt; bits but rather a logical expression describing what values may ap=
+pear
+&gt;&gt; in those bits.  (E.g., this 4-byte integer value can be anything
+&gt;&gt; greater than 5.)
+&gt;&gt;
+&gt;&gt; Nickolai.
+&gt;&gt;
+&gt;&gt; On Sun, Apr 2, 2017 at 7:26 PM, Anonymous wrote:
+&gt;&gt;&gt;
+&gt;&gt;&gt; The paper never seems to explain what a 'symbolic value' is. H=
+ow are
+&gt;&gt;&gt; symbolic values assigned?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Nelson and Oppe=
+n's paper talks about two things, from what I remember:
+one is how to turn a program into a constraint (which EXE does as
+well, using forking instead of building up one large expression), and
+the second is how to try to solve this complex constraint.  The first
+is not super interesting; EXE's plan of forking at every if statement
+works well in practice, and then each fork just has to maintain the
+constraint about its control flow path.  The second is what the EXE
+authors are complaining about (they think STP is a much better SAT/SMT
+solver).  Though, in practice, none of these solvers are "complete":
+if some query is running for a long time (e.g., more than a second),
+EXE just kills it and ignores that branch.
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 4:37 PM, Anonymous wrote:
+&gt; The paper mentions Nelson and Oppen=E2=80=99s cooperating decision pro=
+cedures framework- I skimmed their paper, but am still confused as to how e=
+xactly it works. It seems like they simply collapse execution into a functi=
+onal Lisp-like representation, but how does this guarantee that all branche=
+s are taken? Isn=E2=80=99t some kind of fuzzer or input solver still necess=
+ary?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">On Sun, Apr 2, =
+2017 at 2:23 AM, Anonymous wrote:
+&gt; 1. I understand how the program try to use symbolic expression in gene=
+ral, but I'm not quite sure how this expression get checked on each branch.
+&gt;
+&gt; For example if the constriants on branch are (int) a&gt;2 and the othe=
+r branch is a&lt;=3D2. Won't the program end up computing all possible valu=
+e of int&gt;2 in the first branch? If so, does the purpose this program is =
+generating automated, exhausive tests?
+
+EXE doesn't actually compute a concrete value after an if statement;
+it asks STP if some value exists.  If the program later hits an error,
+then EXE asks STP for a concrete assignment of values to every
+symbolic variable (like "a"), so that it can tell the user an example
+of an input that triggers an error.
+
+&gt; 2. What is the unconstrained symbolic array mentioned in 4.2 last sent=
+ence?
+
+I think they mean A and B are both arrays that contain arbitrary
+symbolic values (i.e., values that have no constraints placed on them
+from earlier execution).
+
+Nickolai.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Symbolic execut=
+ion is reasonably widely used for finding bugs.
+There's open-source systems like S2E (http://s2e.systems/), symbolic
+execution is used by various bug-finding companies (like GrammaTech),
+and it's used in internal tools at Microsoft (e.g., the SAGE system).
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 9:36 PM, Anonymous wrote:
+&gt; Is EXE used regularly in industry or has it not really been adopted?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">In practice, fo=
+r any non-trivial program, it is infeasible to try all
+possible paths, for two reasons: first, there's exponentially many of
+them (as a function of how many if statements the program has in its
+execution), and second, the SAT/SMT solver might not be able to solve
+the constraint on some path.
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 5:01 PM, Anonymous wrote:
+&gt; The paper devotes a section to discussing alternative search heuristic=
+s for which branches to follow first.  Isn't the advantage of EXE's method =
+to actually try all of the branches though, not just achieve high block cov=
+erage?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">S2E (http://s2e=
+.systems/) does symbolic execution of an entire virtual machine.
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 8:26 PM, Anonymous wrote:
+&gt; Doesn't modelling the environment / libraries become an issue. Are the=
+re any clever ways people have circled around this problem ?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">On Sun, Apr 2, =
+2017 at 7:22 PM, Anonymous wrote:
+&gt; How much branching is too much?
+
+Undefined. :-)  The more a program branches, the more cases EXE has to
+explore.  In practice, this means for any non-trivial program, EXE
+likely can't explore all possible branches, and has to use heuristics
+to decide which branches are worth exploring.
+
+&gt; Why 8-bit sized bitvectors to represent each symbolic data block?
+
+EXE models each byte of memory separately, and each byte is modeled as
+an 8-bit vector.
+
+Nickolai.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">EXE is not actu=
+ally complete: in practice, for any non-trivial
+program, it is infeasible to try all possible paths, for two reasons:
+first, there's exponentially many of them (as a function of how many
+if statements the program has in its execution), and second, the
+SAT/SMT solver might not be able to solve the constraint on some path
+(e.g., a program that crashes if the input has a specific SHA1 hash
+value).
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 9:52 PM, Anonymous wrote:
+&gt; Very cool paper. What are the downsides/limitations to EXE? From what
+&gt; I understand EXE can be used as a silver bullet for eliminating a
+&gt; large number of bugs. Are there bugs that it cannot detect?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Symbolic execut=
+ion is reasonably widely used for finding bugs.
+There's open-source systems like S2E (http://s2e.systems/), symbolic
+execution is used by various bug-finding companies (like GrammaTech),
+and it's used in internal tools at Microsoft (e.g., the SAGE system).
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 9:36 PM, Anonymous wrote:
+&gt; How often is EXE used in the real world?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">On Sun, Apr 2, =
+2017 at 12:35 PM, Anonymous wrote:
+&gt; EXE does not seem to be capable of finding bugs that are "legal" code,=
+ but just not what the creator intended. Is that correct?
+
+To catch such bugs, the developer would have to add some assert()
+statements, so that EXE knows when it's hit an error.  (Lab 3 involves
+something like this too.)
+
+&gt; Does EXE work on non-deterministic code? For instance, something with =
+multi threading? If not, can it be modified to do so, and if so how and why=
+ does it work?
+
+I suspect the main thing to modify would be to add a deterministic
+threading system, something like
+https://people.cs.umass.edu/~emery/pubs/dthreads-sosp11.pdf
+
+Nickolai.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">EXE has its own=
+ set of "bug conditions", such as out-of-bound writes,
+divide by zero, etc.  EXE has a memory model kind-of like what Baggy
+and fat-pointer systems use; it knows the bounds of arrays, and does
+not treat the entire memory as a single flat array, which helps them
+detect what "out-of bounds" is.  Programmers can define their own
+app-level bug conditions using assert() statements.
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 6:54 PM, Anonymous wrote:
+&gt; How do you define a bug in general in EXE? specifically regarding buff=
+er overflows do we use fat pointers or baggy bounds? What does EXE misses o=
+ther than floating points operations? How does STP performs inequalities if=
+ it has no notion of type in the first place?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Symbolic execut=
+ion is reasonably widely used for finding bugs.
+There's open-source systems like S2E (http://s2e.systems/), symbolic
+execution is used by various bug-finding companies (like GrammaTech),
+and it's used in internal tools at Microsoft (e.g., the SAGE system).
+S2E is probably the place to look if you want to know more about
+state-of-the-art symbolic execution.
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 9:11 PM, Anonymous wrote:
+&gt; Samantha Briasco-Stewart; erosolar@mit.edu
+&gt; 6.858 Paper Question 12; Due 2017.04.02 @ 10:00PM
+&gt;
+&gt;  - EXE seems like a really useful system - how widely is it used in in=
+dustry or
+&gt;    academia today? What caveats are there to the system that might not=
+ be
+&gt;    discussed in the paper? Also, this was published in 2006 - have the=
+re been
+&gt;    improvements made more recently/other systems based on this created=
+? What
+&gt;    can I read to learn more?
+&gt;
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">The paper doesn=
+'t really say; one possibility is that it will simply
+not process any floating-point operations symbolically, and run them
+as if all operands were concrete.
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 8:53 PM, Anonymous wrote:
+&gt; Max Lancaster
+&gt; Lecture 12 Question
+&gt;
+&gt; How will EXE react to a line of code that uses a floating point?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">As-is, probably=
+ EXE would not, but it's not hard to make it work:
+"just" capture all the sources of non-determinism (like reading
+/dev/urandom for randomness), and feed in the same value every time
+(or treat it as a symbolic value, and then figure out for which random
+values the program might crash).
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 7:02 PM, Anonymous wrote:
+&gt; Would this system be compatible with nondeterministic programs?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Symbolic execut=
+ion is reasonably widely used for finding bugs.
+There's open-source systems like S2E (http://s2e.systems/), symbolic
+execution is used by various bug-finding companies (like GrammaTech),
+and it's used in internal tools at Microsoft (e.g., the SAGE system).
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 8:49 PM, Anonymous wrote:
+&gt; Has this been used in industry, or did it fail to gain traction (possi=
+bly due to migration away from C)?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">On Thu, Mar 30,=
+ 2017 at 10:20 PM, Anonymous wrote:
+&gt; Why is it difficult for STP to support floating point numbers?
+
+They're somewhat complicated and non-algebraic (e.g., floating point
+addition is non-commutative in general because adding two small values
+works "as you might expect" but adding a small value to a large value
+might be a no-op since the small value might be too small to represent
+at the large value's exponent).  Also, they're rarely used in contexts
+that might cause security bugs that this paper is looking for.
+
+&gt; Another question, does the user of EXE have to explicitly mark all exp=
+ressions they define as symbolic (if they area indeed symbolic) or does EXE=
+ also infer the symbolism/concrete status of some variables when initialize=
+d?
+
+The EXE user just has to flag the initial user input; any subsequent
+copies of that input by the program (e.g., int a =3D b) is handled by
+EXE without further user input.
+
+Nickolai.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Yes: in practic=
+e, for any non-trivial program, it is infeasible to try all
+possible paths, for two reasons: first, there's exponentially many of
+them (as a function of how many if statements the program has in its
+execution), and second, the SAT/SMT solver might not be able to solve
+the constraint on some path.
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 6:05 PM, Anonymous wrote:
+&gt; For more complicated programs (like pcre, bpf, etc.) with very deep br=
+anches,
+&gt; does EXE just "tend towards" full coverage but not necessarily attain =
+it? For
+&gt; example, if you have a for-loop somewhere that runs a 100 times and ex=
+ecutes an
+&gt; if-else conditional, that's technically 2^100 different branch combina=
+tions, so
+&gt; there's no way that it can cover them all -- or does this never really=
+ happen
+&gt; in practice because most of the branches end up being unreachable (as
+&gt; determined by the STP constraints).
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">As-is, probably=
+ EXE would not, but it's not hard to make it work:
+"just" capture all the sources of non-determinism (like reading
+/dev/urandom for randomness), and feed in the same value every time
+(or treat it as a symbolic value, and then figure out for which random
+values the program might crash).
+
+Nickolai.
+
+On Fri, Mar 31, 2017 at 10:07 PM, Anonymous wrote:
+&gt; Does EXE work with non-deterministic code? For example, if I have some=
+ code that checks a variable x is less than a randomly generated number, wo=
+uld EXE work with that?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">If STP can't so=
+lve constraints, EXE can't explore that part of the
+program.  Bugs in any part of the system that's not being checked by
+EXE also wouldn't show up.  If an adversary guesses a user's password,
+EXE has little to say about it.  Etc.  :)
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 2:18 PM, Anonymous wrote:
+&gt; What kinds of attacks are not detectable by EXE?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Yes: in practic=
+e, for any non-trivial program, it is infeasible to try all
+possible paths, for two reasons: first, there's exponentially many of
+them (as a function of how many if statements the program has in its
+execution), and second, the SAT/SMT solver might not be able to solve
+the constraint on some path.
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 5:11 PM, Anonymous wrote:
+&gt; Lecture 12
+&gt;
+&gt; Is it possible for EXE to miss an input that causes a bug?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">On Sun, Apr 2, =
+2017 at 7:36 PM, Anonymous wrote:
+&gt; If EXE is meant to find bugs that can crash real code, then how does o=
+ne ensure its practical correctness (not theoretical)? I.e its practical ef=
+fectiveness is only as good as the correctness of its own code. So how in p=
+ractice do people in the field ensure practical correctness of such a progr=
+am? (would they have to resort to the methods described in the intro that t=
+hey are trying to outdo?)
+
+You mean figuring out if EXE itself is correct?  A fair question but
+one that I haven't seen much work on.
+
+Formal methods people do worry about the correctness of their tools,
+and build systems where, say, proofs about program correctness are
+checked using a small "proof-checking kernel".
+
+Bug-finding people have two possible classes of problems: missing bugs
+and reporting false bugs.  EXE deals with false reports by trying a
+proposed input on the real program, and if it doesn't crash, EXE
+doesn't report it.  EXE in general isn't complete, so it's not a
+disaster if there's some bug in EXE that causes EXE to miss some path
+or forget to report it.
+
+Nickolai.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">On Sun, Apr 2, =
+2017 at 2:34 PM, Anonymous wrote:
+&gt; =E2=80=9CThis ability lets it show that external forces can exploit a =
+bug, improving on static analysis, which often cannot distinguish minor err=
+ors from showstoppers.=E2=80=9D This line did not really make sense to me, =
+how does EXE distinguish =E2=80=9Cminor errors=E2=80=9D from =E2=80=9Cshows=
+toppers=E2=80=9D?
+
+The authors are talking about what reports a developer might get from
+running a static analysis tool on their program.  A static analysis
+tool might say "you didn't check if this pointer is NULL in this
+function!".  Whether that's a "minor error" or "showstopper" depends
+on whether the program might actually crash as a result of this
+missing check, due to a carefully crafted input, or if there's no
+input that can cause this crash.  EXE only reports inputs that cause a
+crash.
+
+Nickolai.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">EXE is not actu=
+ally complete: in practice, for any non-trivial
+program, it is infeasible to try all possible paths, for two reasons:
+first, there's exponentially many of them (as a function of how many
+if statements the program has in its execution), and second, the
+SAT/SMT solver might not be able to solve the constraint on some path
+(e.g., a program that crashes if the input has a specific SHA1 hash
+value).
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 8:25 PM, Anonymous wrote:
+&gt; What sort of bugs are able to bypass EXE checks, as in it allows the S=
+TP to either detect there is no branch or that the branch is safe?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Yes, symbolic e=
+xecution is reasonably popular in bug-finding; there's
+a bunch of companies that build symbolic execution tools for finding
+bugs; Microsoft uses symbolic execution internally for finding bugs in
+their software; etc.
+
+Nickolai.
+
+On Tue, Mar 28, 2017 at 10:17 PM, Anonymous wrote:
+&gt; The paper mentions that EXE has been used to construct disks that coul=
+d crash the Linux kernel. Have EXE or other similar systems been used to ev=
+aluate other OSes for similar vulnerabilities, and have EXE or similar syst=
+ems become very popular in the 10 years that have elapsed since this paper =
+was written?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">It will never f=
+inish.  Too many paths, and the constraints are too hard.
+
+This is the reason why EXE has various heuristics for which paths are
+worth exploring: for any non-trivial program, it will never explore
+all paths, so it must try to be somewhat clever about which paths to
+pick, so as to aim to find more bugs.
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 7:51 PM, Anonymous wrote:
+&gt; How long would it take EXE to verify a code base with similar complexi=
+ty to that of the Linux kernel, assuming no bugs?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Symbolic execut=
+ion is reasonably widely used for finding bugs.
+There's open-source systems like S2E (http://s2e.systems/), symbolic
+execution is used by various bug-finding companies (like GrammaTech),
+and it's used in internal tools at Microsoft (e.g., the SAGE system).
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 9:35 PM, Anonymous wrote:
+&gt; Are there any improvements on EXE since and how widely used is EXE for
+&gt; developement?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Probably not mu=
+ch harder/easier than what EXE's developers did (so,
+moderately hard).  Lab 3 does one variant of this.
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 2:21 PM, Anonymous wrote:
+&gt; How difficult would it be to build something like EXE directly into a =
+language and would that offer any benefits over the current approach?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Probably the ma=
+in thing to add would be a deterministic threading
+system, something like
+https://people.cs.umass.edu/~emery/pubs/dthreads-sosp11.pdf
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 2:15 AM, Anonymous wrote:
+&gt; How does EXE handle multi-threaded programs? (It doesn't seem like it =
+does?) If it doesn't, what sort of changes to EXE would have to be made to =
+add multi-thread support?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Not a big deal;=
+ floating point numbers are almost never used in
+security-critical code, which is why they don't bother implementing
+them (it's also kind-of tricky, since floating point number are weird:
+addition is non-associative, etc).
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 8:08 PM, Anonymous wrote:
+&gt; Paper: EXE
+&gt;
+&gt; My Question: EXE says that it doesn't handle floating point
+&gt; numbers. How big of a problem is this? How many programs use floating
+&gt; point?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">In their case, =
+"A" is not the variable referencing the array, but
+rather a symbolic expression specifying the contents of the array at a
+particular time.  So, if there were other writes, it would be read(A,
+i) and read(write(A, x, y), j).
+
+What do you mean about blind writes?  Maybe I missed something in the
+paper, but I didn't see them mention blind writes..
+
+Nickolai.
+
+On Sat, Apr 1, 2017 at 3:03 PM, Anonymous wrote:
+&gt; Question about section 3.3 of the paper
+&gt;
+&gt; It=E2=80=99s said in the paper for the second transformation that =E2=
+=80=9C if two indexes i and j are the same then read(A,i) and read(A,j) sho=
+uld return the same value=E2=80=9D. Why is this so? Array can always be mod=
+ified right? For example in the case of read-write-read. The second read wo=
+uld return the write. Does this have anything to do with the first transfor=
+mation (read-over-write)?
+&gt;
+&gt; Also how are blind writes eliminated?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I haven't seen =
+floating-point symbolic execution systems; I think in
+addition to the fact that floating point is weird (e.g.,
+non-commutative addition), it's rarely used in contexts where security
+matters.
+
+The scalability constraint, in some sense, is the complexity of
+constraints generated by EXE when it executes the program;
+NP-completeness is not directly the reason why it's hard (plenty of
+poly-time problems are expensive to solve and don't scale well, and
+many SAT instances generated by symbolic execution are efficiently
+solved despite the general-case solution being NP).
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 4:39 AM, Anonymous wrote:
+&gt; Have there been any attempts to implement EXE with floating point supp=
+ort by using approximations to deal with the tractability of the solutions?=
+ It appears that the main scalability constraint the system faces is the fa=
+ct that SAT is NP-complete.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">EXE is not actu=
+ally complete: in practice, for any non-trivial
+program, it is infeasible to try all possible paths, for two reasons:
+first, there's exponentially many of them (as a function of how many
+if statements the program has in its execution), and second, the
+SAT/SMT solver might not be able to solve the constraint on some path
+(e.g., a program that crashes if the input has a specific SHA1 hash
+value).
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 7:14 PM, Anonymous wrote:
+&gt; Was there any sort of pen testing on EXE to figure out vulnerabilities=
+ within it such that it doesn=E2=80=99t generate input of deaths for vulner=
+able code?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">EXE as describe=
+d in the paper doesn't deal with randomness; solving it
+would presumably require enumerating all possible sources of
+randomness (e.g., getting a random number from the OS by reading
+/dev/urandom), and turning that randomness into a symbolic expression.
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 6:43 PM, Anonymous wrote:
+&gt; How does EXE handle creating an input file with a program that will cr=
+ash due to a randomly generated dynamic variable?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">They're somewha=
+t complicated and non-algebraic (e.g., floating point
+addition is non-commutative in general because adding two small values
+works "as you might expect" but adding a small value to a large value
+might be a no-op since the small value might be too small to represent
+at the large value's exponent).  Also, they're rarely used in contexts
+that might cause security bugs that this paper is looking for.
+
+Nickolai.
+
+On Sat, Apr 1, 2017 at 11:00 PM, Anonymous wrote:
+&gt; Why doesn't STP support floating-point numbers? Doesn't this restrict =
+the use of EXE in checking programs?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">There's certain=
+ly some work on symbolic execution for different
+languages.  There's a bunch of low-level symbolic execution tools that
+work at even lower levels than EXE (e.g., S2E runs an entire virtual
+machine in symbolic execution mode), so that they're language
+agnostic.  There's some symbolic execution for Java and C#, I believe,
+the latter at Microsoft.  There's some work also on adding symbolic
+execution to the Python interpreter (as opposed to implementing it
+inside of Python, as in lab3); that has some downsides (complexity)
+and upsides (completeness).
+
+Nickolai.
+
+
+On Sat, Apr 1, 2017 at 4:31 PM, Anonymous wrote:
+&gt; I've started on lab3 and I see we are building something similar to EX=
+E for Python programs. Are symbolic execution programs often used when deve=
+loping applications in Python and other high-level languages? I'd never hea=
+rd of them before but they do seem really useful so I'm curious about the p=
+revalence.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">On Sun, Apr 2, =
+2017 at 12:47 PM, Anonymous wrote:
+&gt; Why don't the creators of EXE use BFS rather than DFS with some heuris=
+tics? In terms of coverage, it appears as though BFS gets to a higher perce=
+ntage faster than DFS. Does it just come down to the heuristics the DFS sea=
+rch uses to prune and that being better than DFS in the long run?
+
+One intuition might be that, in a complex program, BFS would never get
+very far from the input -- you would immediately create tons of
+different branches, and BFS would keep exploring a little bit of each
+one, but would never get to an actual bug that's a number of steps
+down one branch.
+
+There's a bunch of research on what heuristics to use for symbolic
+execution.  Nothing definitive, though; different heuristics work
+better/worse for different programs.
+
+Nickolai.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">The EXE develop=
+ers worked closely with SAT solver developers (the STP
+SAT solver) to make the SAT solver fast enough for their needs.  The
+authors are these two developers together: Dawson, Cristian, and Pavel
+were building EXE and working on finding bugs, and Vijay and David
+were building their SAT solver, STP, at the time.  This paper is, in
+part, why SAT solvers are now good enough to tackle these kinds of
+tasks.
+
+Nickolai.
+
+On Fri, Mar 31, 2017 at 6:44 PM, Anonymous wrote:
+&gt; Why weren't general SAT solvers considered for use in programs like EX=
+E before STP? Were the
+&gt; existing implementations of SAT solvers too slow, or was there not a g=
+ood way to convert specialized
+&gt; decision procedures into general satisfiability constraints?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Floating point =
+is somewhat complicated and non-algebraic (e.g.,
+floating point addition is non-associative in general because adding
+two small values works "as you might expect" but adding a small value
+to a large value might be a no-op since the small value might be too
+small to represent at the large value's exponent).  Representing the
+FPU as a boolean circuit is possible but really inefficient, compared
+to how most SAT solvers deal with integer operations.  Also, floating
+point is rarely used in contexts that might cause security bugs that
+this paper is looking for.
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 9:22 PM, Anonymous wrote:
+&gt; 6.858 Lecture Question 12
+&gt; Marcus Boorstin
+&gt;
+&gt; Why doesn't STP support floating-point arithmetic?  Even accounting fo=
+r traditionally problematic areas like rounding errors, the processor still=
+ has a set of rules for each floating-point operation built into its silico=
+n that operates deterministically on given areas of memory, so it seems tha=
+t that same set of rules (which as far as I know is documented) could be wr=
+itten into STP in software.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">If the function=
+ pointer is a concrete value, it runs as it would in a
+regular execution environment.
+
+For symbolic function pointers, EXE treats it the same way as a double
+dereference (asks STP for some value that matches the current
+constraints, and runs with that, instead of considering every possible
+value allowed by the symbolic constraints).
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 3:43 PM, Anonymous wrote:
+&gt; How does EXE handle function pointers?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Any complex pro=
+gram likely has too many control flow paths to explore
+in a reasonable amount of time.  Or, the constraints might be too hard
+to solve: e.g., a program that dereferences a null pointer if the SHA1
+of its input is a certain value.
+
+Nickolai.
+
+On Sat, Apr 1, 2017 at 2:15 PM, Anonymous wrote:
+&gt; Are there programs for which EXE could not exhaustively determine the =
+safety of all paths?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">This paper ment=
+ions they ran an earlier version of EXE on file system
+code from the Linux kernel and found a number of bugs in it.  So,
+yeah, kernel code isn't much different from any other code that EXE
+could run.
+
+EXE is not actually complete: in practice, for any non-trivial
+program, it is infeasible to try all possible paths, for two reasons:
+first, there's exponentially many of them (as a function of how many
+if statements the program has in its execution), and second, the
+SAT/SMT solver might not be able to solve the constraint on some path
+(e.g., a program that crashes if the input has a specific SHA1 hash
+value).
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 9:07 PM, Anonymous wrote:
+&gt; I found the idea of instrumenting system code quite interesting. Is it=
+ possible to
+&gt; instrument core kernel subsystems? As in, the subsystems that are gene=
+rally not exported
+&gt; to userspace in an microkernel design.
+&gt;
+&gt; From the paper it appears that the only major limitations are the lack=
+ of pointer and floating
+&gt; point support. Is it, therefore, safe to assume that EXE can find bugs=
+ in any program the does
+&gt; not use floating point and double dereferences?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">EXE is not actu=
+ally complete: in practice, for any non-trivial
+program, it is infeasible to try all possible paths, for two reasons:
+first, there's exponentially many of them (as a function of how many
+if statements the program has in its execution), and second, the
+SAT/SMT solver might not be able to solve the constraint on some path
+(e.g., a program that crashes if the input has a specific SHA1 hash
+value).
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 9:18 PM, Anonymous wrote:
+&gt; What are the types of vulnerabilities that EXE cannot find?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Symbolic execut=
+ion is reasonably widely used for finding bugs.
+There's open-source systems like S2E (http://s2e.systems/), symbolic
+execution is used by various bug-finding companies (like GrammaTech),
+and it's used in internal tools at Microsoft (e.g., the SAGE system).
+It's usually used in focused ways, though (e.g., taking a Windows
+driver and testing it on symbolic inputs); it's not practical to run
+all of Windows through symbolic execution with completely symbolic
+input.
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 9:32 PM, Anonymous wrote:
+&gt; EXE seems like a very useful tool. How much use does it (or similar sy=
+stems) see in the industry? Is it common to run all code through it? Or per=
+haps critical routines?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">In practice, sy=
+mbolic execution cannot explore all paths in any
+reasonably interesting program, but despite that, it seems reasonably
+effective at searching program executions for bugs.  In terms of
+scaling, there's a cool system called S2E (http://s2e.systems/) that
+does symbolic execution for an entire qemu virtual machine.
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 9:53 PM, Anonymous wrote:
+&gt; Zane Markel
+&gt; Reading Question for Lecture 12
+&gt;
+&gt; How well does EXE scale? Beyond the performance metrics listed in the =
+paper, I'm trying to get a sense of what programs can be realistically test=
+ed with symbolic execution. I get that most command line utilities could be=
+ checked. What about bigger user applications like word processors (especia=
+lly ones that take macros) or browsers? Perhaps closer to the line edge of =
+feasibility, what about utilities with large, complex input like image tran=
+sformers and gzip?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">If EXE has accu=
+mulated a bunch of constraints, but they consist of
+several independent groups, it considers each group's query
+independently, and if it already issued a query for that group's
+constraint, it doesn't bother issuing it again (even if some other
+group's constraint did change).
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 12:19 AM, Anonymous wrote:
+&gt; I don't understand the constraint independence optimization very well.=
+ How does it let us avoid rerunning repeated queries?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">NP-completeness=
+ has little to do with the practical running time of any
+particular SAT solver implementation.  None of them are trying to
+contradict NP-completeness; they just aim to efficiently implement
+heuristics that work well for constrains that arise in practice (and there
+has been a huge amount of progress in this direction).
+
+Nickolai.
+
+On Apr 2, 2017 8:24 PM, Anonymous wrote:
+
+&gt; Shouldnt the SAT-solver still cause STP to run in a similar amount of =
+time
+&gt; as the Nelson-Oppen approach, because 3-SAT is still unsolvable in
+&gt; polynomial time, so the problems being solved by this approach are sim=
+ilar
+&gt; to the downsides of the Nelson-Oppen approach?
+&gt;
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Symbolic execut=
+ion is reasonably widely used for finding bugs; the
+ideas are not really tied to C.  There's open-source systems like S2E
+(http://s2e.systems/), symbolic execution is used by various
+bug-finding companies (like GrammaTech), and it's used in internal
+tools at Microsoft (e.g., the SAGE system).
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 9:44 PM, Anonymous wrote:
+&gt; Do other programming languages have similar testing tools?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Lab 3 will get =
+you to build an EXE-like thing for Python.  The most
+expensive parts of symbolic execution are queries to the SMT solver,
+and the choice of static vs runtime typing doesn't affect that very
+much.
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 8:58 PM, Anonymous wrote:
+&gt; Could EXE be ported to work on dynamically typed or interpreted langua=
+ges, or
+&gt; does the kind of checks that EXE perform is most efficient for statica=
+lly
+&gt; typed or compiled languages?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I don't believe=
+ so.  There's a lot of work on race detectors, such as
+Eraser (http://cseweb.ucsd.edu/~savage/papers/Tocs97.pdf) and many
+more tools since then.
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 9:39 PM, Anonymous wrote:
+&gt; Does EXE have any mechanism for detecting (possible) race conditions?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Yup, gzip, imag=
+e processing libraries, etc seem like a good potential
+use cases for symbolic execution.  For any non-trivial program, EXE is
+unlikely to explore all possible paths, because there's just too many
+of them, and EXE/STP might encounter complex constraints that take a
+long time to solve.  But it doesn't have to explore all paths to find
+some paths that lead to bugs.
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 9:24 PM, Anonymous wrote:
+&gt; The benchmarks given in the paper are given relative to different opti=
+mizations in EXE. How computationally expensive is this sort of system? In =
+class it was mentioned that compression / decompression software often has =
+errors in it. How feasible would it be to run EXE or a similar system on th=
+e entire utility?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">http://klee.git=
+hub.io is from the same authors.
+
+http://s2e.systems is a different open source symbolic execution system.
+
+Nickolai=E2=80=8B.
+
+On Apr 2, 2017 8:23 PM, Anonymous wrote:
+
+&gt; Is the code they produced for the paper available anywhere? I.e. the E=
+XE
+&gt; system.
+&gt;
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">Yup, EXE is not=
+ actually complete: in practice, for any non-trivial
+program, it is infeasible to try all possible paths, for two reasons:
+first, there's exponentially many of them (as a function of how many
+if statements the program has in its execution), and second, the
+SAT/SMT solver might not be able to solve the constraint on some path
+(e.g., a program that crashes if the input has a specific SHA1 hash
+value).
+
+So, in your example, EXE's heuristics might de-prioritize the
+exploration of that loop, and probably not find the bug in question.
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 9:23 PM, Anonymous wrote:
+&gt; Suppose EXE encounters a loop which runs n times, where n is an input.=
+ Can EXE catch a bug which would be triggered only at the last pass of the =
+loop only when n satisfies some condition (e.g. n%1024 =3D=3D 0)? I feel th=
+is is a tricky case since EXE would probably give low priority to running t=
+he same loop n times, and such bugs might represent weird corner cases for =
+buffer overflows and the like.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">I think there i=
+sn't actually much to it: they effectively unroll the
+loop, so that the loop turns many "if" statements that might or might
+not break out of the loop.  And then they handle these "if" statements
+just like any other "if" statement.
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 9:56 PM, Anonymous wrote:
+&gt; The paper only briefly mentions how they handle loops. I would be inte=
+rested to know more specific details.
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">EXE takes a pro=
+gram like this:
+
+  int i;
+  make_symbolic(&amp;i);
+  if (i &gt; 5)
+    return;
+  if (i &lt; 2)
+    return;
+  /* somehow trigger an error here, perhaps using assert() */
+
+and generates queries for STP that look like this (for the branch
+where both if statements didn't return):
+
+  (NOT (i &gt; 5)) AND (NOT (i &lt; 2))
+
+now STP says either "no, that's not possible", in which case EXE
+determines there's no way to get to that error, or it says "yes,
+that's possible, and here's an example assignment (e.g., i=3D3)", in
+which case EXE tells the user "if you plug in i=3D3, the program will
+hit an error".
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 9:34 PM, Anonymous wrote:
+&gt; I don't really understand how STP works - it generates test cases, rig=
+ht? But I don't really understand what it's solving. Why is it like a SAT s=
+olver?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">That's roughly =
+what the paper describes.  Could you be more specific?
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 9:54 PM, Anonymous wrote:
+&gt; How does the EXE generate all possible values that could cause a bug i=
+n input?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">One hardness st=
+ems from the fact that floating-point operations are
+"weird": e.g., addition can be non-commutative/non-associative when
+dealing with operands of very different magnitude.
+
+It's also not super relevant because floating point is rarely used in
+security-critical code.
+
+Nickolai.
+
+On Sun, Apr 2, 2017 at 2:05 PM, Anonymous wrote:
+&gt; What is so hard about floating-point operations such that EXE does not=
+ support floating-point?
+
+</pre></div>
+      <div class=3D"responsebox"><pre class=3D"responsepre">There's three g=
+eneral approaches: stub out the external interface with
+a simple replacement (e.g., return "timed out" for every RPC, or
+include a more sophisticated model that tries to play along), allow
+external calls if they're stateless, or include the RPC server in the
+"symbolic world" and execute everything together.
+
+Nickolai.
+
+On Mon, Mar 27, 2017 at 2:46 AM, Anonymous wrote:
+&gt; How does EXE handle the fact that exploring branches may have external=
+ side effects (RPC calls, etc)?
+
+</pre></div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- End Page Content -->
+
+</td></tr>
+
+<tr bgcolor=3D"#999999" height=3D"20px">
+<td style=3D"padding-left:10px; padding-top: 10px; padding-bottom: 10px">
+<font style=3D"font-size: 12px;">
+<p>Questions or comments regarding 6.858?  Send e-mail to the course staff =
+at
+<a href=3D"mailto:6858-staff@lists.csail.mit.edu"><i>6858-staff@lists.csail=
+.mit.edu</i></a>.
+
+</p></font><p><font style=3D"font-size: 12px;"><b><a href=3D"http://css.csa=
+il.mit.edu/6.858/2018/questions.html?q=3Dq-exe&amp;lec=3D12#top">Top</a></b=
+> //
+<b><a href=3D"http://css.csail.mit.edu/6.858/2018/">6.858 home</a></b> //=
+=20
+<i>Last updated Thursday, 26-Apr-2018 08:28:18 EDT</i>
+</font>
+</p></td></tr>
+</tbody></table>
+
+</td>
+
+</tr>
+</tbody>
+</table>
+
+
+
+
+</body></html>
+------MultipartBoundary--ivGxFKYXuLjNFnHD82lVwZaWmlSw00czgkVFClJKSA----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://css.csail.mit.edu/6.858/2018/style.css
+
+@charset "utf-8";
+
+body { background-color: rgb(255, 255, 255); margin: 0px; padding: 0px; fon=
+t-family: verdana, arial, helvetica, sans-serif; }
+
+p { font-size: 13px; }
+
+ol { font-size: 13px; }
+
+ul { font-size: 13px; }
+
+pre { font-family: "courier new", courier, mono; color: rgb(202, 10, 10); f=
+ont-size: 13px; }
+
+.menuHead { text-align: center; padding-top: 8px; padding-bottom: 8px; }
+
+.menuItem { color: rgb(255, 255, 255); text-decoration: none; font-weight: =
+bold; font-size: 16px; }
+
+table.calendar { font-family: arial, helvetica; font-size: 10pt; empty-cell=
+s: show; border: 1px solid rgb(0, 0, 0); }
+
+table.calendar tr td { border: 1px solid rgb(170, 170, 170); }
+
+table.calendar tr { vertical-align: top; height: 75px; background: rgb(238,=
+ 238, 238); }
+
+table.calendar tr.header { font-weight: bold; font-size: 13px; background-c=
+olor: rgb(68, 68, 68); color: rgb(255, 255, 255); height: 25px; text-align:=
+ center; }
+
+.lecture { background: rgb(255, 255, 170); }
+
+.holiday { background: rgb(204, 255, 204); }
+
+.special { background: rgb(170, 170, 255); }
+
+.lab { background: rgb(0, 204, 204); }
+
+.important { background: rgb(255, 170, 170); }
+
+.reading { color: rgb(51, 51, 255); }
+
+.handout { color: rgb(0, 153, 0); }
+
+.deadline { color: rgb(255, 0, 0); }
+
+.note { color: rgb(136, 136, 0); }
+
+.assignment { color: rgb(10, 160, 10); }
+
+.date { color: rgb(68, 68, 68); }
+
+div.questionbox { margin: 1pc 4% 0pc; padding: 0.5pc; background-color: rgb=
+(224, 224, 255); border: 1px dashed red; }
+------MultipartBoundary--ivGxFKYXuLjNFnHD82lVwZaWmlSw00czgkVFClJKSA----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://css.csail.mit.edu/6.858/2018/cc-by.png
+
+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
+SUVORK5CYII=
+
+------MultipartBoundary--ivGxFKYXuLjNFnHD82lVwZaWmlSw00czgkVFClJKSA------

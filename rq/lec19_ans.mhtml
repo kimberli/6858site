@@ -1,0 +1,1227 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-answers/19
+Subject: Answers for lecture 19 - 6.858
+Date: Tue, 21 May 2018 01:43:31 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--loqA1uSzrzfdPB1cHlv5CS8lnMh1WoZ3LG72uLcLSP----"
+
+
+------MultipartBoundary--loqA1uSzrzfdPB1cHlv5CS8lnMh1WoZ3LG72uLcLSP----
+Content-Type: text/html
+Content-ID: <frame-1186-bf9a5b82-82c3-40dc-bc85-4e0712ad13a8@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-answers/19
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Answers for lecture 19 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Answers for lecture 19 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text"></pre></li>
+
+<li><pre class=3D"student-text"></pre></li>
+
+<li><pre class=3D"student-text">Morty is the program that contains a bug.</=
+pre></li>
+
+<li><pre class=3D"student-text"># Lecture 19:
+
+--------------------------------------------------
+This ZIP file contains two versions of a simple program. One is called rick=
+,
+the other morty. They are generated from the same source code and should pr=
+ocess
+the included sample input in the same way. However, one of the programs has=
+ a
+number of LAVA bugs injected. Can you figure out which? Can you construct i=
+nputs
+that demonstrate a difference in execution between rick and morty?
+
+You might spend some time looking at the disassembly for each program,
+identifying bugs and trying to find inputs to trigger them.
+Or you might try fuzzing, e.g., using afl. We will go over the two versions
+and dissect the triggering inputs at lecture.
+---------------------------------------------------
+
+I am unsure how to execute this two files. I first tried to `scp` them into=
+ a
+VM before executing them, as I don't feel comfortable executing these binar=
+ies
+blindly on my main machine. Afterwards, I could not get them to run. I am
+also unfamiliar with fuzzing technologies. Looking at the binaries files ra=
+w,
+the rick file is slightly larger in size, so I am guessing that rick has th=
+e
+extra code inserted.
+</pre></li>
+
+<li><pre class=3D"student-text">4/28/18
+
+Lecture 19
+
+Question:
+
+This ZIP file contains two versions of a simple program. One is called rick=
+, the other morty. They are generated from the same source code and should =
+process the included sample input in the same way. However, one of the prog=
+rams has a number of LAVA bugs injected. Can you figure out which? Can you =
+construct inputs that demonstrate a difference in execution between rick an=
+d morty?
+
+You might spend some time looking at the disassembly for each program, iden=
+tifying bugs and trying to find inputs to trigger them. Or you might try fu=
+zzing, e.g., using afl. We will go over the two versions and dissect the tr=
+iggering inputs at lecture.
+
+Answer:
+
+I believe that morty contains the LAVA bugs. This is because LAVA bug injec=
+tion leaves extra instructions inside of the program
+that it is affecting. Specifically, I used gdb to disassemble both programs=
+. Inside of the function "parse_record," I found a cmp
+instruction in morty that does not exist in rick, which I believe is an if =
+statement that checks the value inside of eax. Thus, an
+input that might cause the program to crash would be one that satisfies thi=
+s statement, and you can check how to make this happen
+by using gdb to check the value of eax to see what it corresponds to in you=
+r input.</pre></li>
+
+<li><pre class=3D"student-text">6858 - Lava
+
+Looking at the dissasembly, I would think that morty is the lava bugged ver=
+sion
+because it has more lines of instructions, but this I cannot confirm. I tri=
+ed
+the fuzzer afl and looking through the disassembly to figure out what bugs =
+are
+in, but I have not been successful :(=20
+</pre></li>
+
+<li><pre class=3D"student-text">After disassembling both of the programs, i=
+t's possible to tell that Morty was created based on Rick's assembly. The b=
+iggest difference is in the proccess-record function, which is the possible=
+ source of bugs.</pre></li>
+
+<li><pre class=3D"student-text">After following instructions in afl's Quick=
+StartGuide, README.qemu and instructions printed by afl-fuzz, I got stuck o=
+n the following error, which did not go away even with increased memory lim=
+it:
+
+
+$ ./afl-fuzz -m 1600 -Q -i ./for_6_858/testcases/ -o for_6_858/output/ -- .=
+/for_6_858/rick @@
+afl-fuzz 2.52b by &lt;lcamtuf@google.com&gt;
+[+] You have 8 CPU cores and 1 runnable tasks (utilization: 12%).
+[+] Try parallel jobs - see docs/parallel_fuzzing.txt.
+[*] Checking CPU core loadout...
+[+] Found a free CPU core, binding to #0.
+[*] Checking core_pattern...
+[*] Setting up output directories...
+[+] Output directory exists but deemed OK to reuse.
+[*] Deleting old session data...
+[+] Output dir cleanup successful.
+[*] Scanning './for_6_858/testcases/'...
+[+] No auto-generated dictionary tokens to reuse.
+[*] Creating hard links for all input files...
+[*] Validating target binary...
+[*] Attempting dry run with 'id:000000,orig:testsmall.bin'...
+[*] Spinning up the fork server...
+
+[-] Hmm, looks like the target binary terminated before we could complete a
+    handshake with the injected code. There are two probable explanations:
+
+    - The current memory limit (1.56 GB) is too restrictive, causing an OOM
+      fault in the dynamic linker. This can be fixed with the -m option. A
+      simple way to confirm the diagnosis may be:
+
+      ( ulimit -Sv $[1599 &lt;&lt; 10]; /path/to/fuzzed_app )
+
+      Tip: you can use http://jwilk.net/software/recidivm to quickly
+      estimate the required amount of virtual memory for the binary.
+
+    - Less likely, there is a horrible bug in the fuzzer. If other options
+      fail, poke &lt;lcamtuf@coredump.cx&gt; for troubleshooting tips.
+
+[-] PROGRAM ABORT : Fork server handshake failed
+         Location : init_forkserver(), afl-fuzz.c:2253
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">After having disassembled both binaries, Mo=
+rty's main method does seem to have  alot more instructions that Rick's. Mo=
+reover, there's a lot more %ebx manip which Morty does which doesn't seem t=
+o be present in Rick's code, which seems suspicious. Only in cases of stack=
+/buffer management will i need to meddle with ebx a lot.=20
+Best guess is its evil Morty at play here.</pre></li>
+
+<li><pre class=3D"student-text">Answer about Paper Question:
+
+By examing the assembly dump, I found that morty has a lot more '=3D=3D' ch=
+ecks than rick, which suggests it has LAVA corruptions as this follows LAVA=
+ bug injection methodology. I also found removing 'AVAL' from the beginning=
+, caused both programs to exit. I ran the fuzzer for a while, but it was no=
+t able to produce an input that led to program failure. I'm assuming I have=
+ to give it more interesting test cases to narrow the testing range space. =
+</pre></li>
+
+<li><pre class=3D"student-text">Based on the disassembly Morty is the injec=
+ted one. </pre></li>
+
+<li><pre class=3D"student-text">Both files gave me segmentation faults when=
+ I tried to run them with the sample input, so I didn't construct inputs th=
+at show different results. However, I think `rick` may have the LAVA bugs i=
+nserted because it defines a global character buffer (which is a way that L=
+AVA might get a DUA into a function where an attack is made) that `morty` d=
+oes not. This buffer is used in `main`, in a for loop that only `rick` has,=
+ and in `parse_header`.</pre></li>
+
+<li><pre class=3D"student-text">I approached this problem by diassembling t=
+he programs in gdb and looking for lines of the form "comp &lt;const&gt;, %=
+eax", since I figured the bug might be caused by some invalid value of the =
+input that would cause the program to crash. I looked for differences in th=
+ese cmp statements between rick and morty, and found that there was a diffe=
+rent in the cmp statements in the function "parse_record." Specifically, mo=
+rty had the assembly instruction cmp $0x58716472,%eax. Therefore, I think m=
+orty is the program that has LAVA bugs injected, and that constructing an i=
+nput that would cause the value in eax to be $0x58716472 would cause a diff=
+erence in execution between rick and morty.
+</pre></li>
+
+<li><pre class=3D"student-text">I believe that morty has the LAVA instrumen=
+tation, as the objdump -d is longer, indicated additional instructions. Sin=
+ce LAVA adds bugs, this would make seem to make sense.
+</pre></li>
+
+<li><pre class=3D"student-text">I believe that morty has the bug from looki=
+ng at a bit of the disassembly.</pre></li>
+
+<li><pre class=3D"student-text">I cannot figure out which file has the LAVA=
+ bugs. I=EF=BF=BDve tried many different inputs, and not sure how to use af=
+l.
+</pre></li>
+
+<li><pre class=3D"student-text">I could not find anything</pre></li>
+
+<li><pre class=3D"student-text">I couldn't figure out how to reverse engine=
+er inputs that would trigger the bugs, but I believe Rick is the code w/ LA=
+VA injections as the file size is larger than Morty, since code had to be i=
+njected and thus increase the number of bytes in the file.
+</pre></li>
+
+<li><pre class=3D"student-text">I couldn't get the afl fuzzing to work, but=
+ ran objdump on each of them. They seemed to both import libc functions
+like malloc so I think I could analyze that further and see if I could make=
+ the malloc inputs smaller to cause a buffer overflow.
+</pre></li>
+
+<li><pre class=3D"student-text">I didn't have a linux vm readily available =
+so I analyzed the files using the hopper disassembler. I believe morty is l=
+oaded with LAVA vulnerabilities. I believe this is the case because of the =
+significant assembly bloat it has compared to rick
+</pre></li>
+
+<li><pre class=3D"student-text">I didn't manage to figure out how afl works=
+, or how to disassemble the program... :(</pre></li>
+
+<li><pre class=3D"student-text">I disassembled both files are compared the =
+different instructions between them.
+
+I believe rick is the buggy file.
+
+I couldn't figure out exactly what each file was doing (couldn't quite get =
+afl to run on either my Windows or Mac), but I believe rick had certain ins=
+tructions replaced with less correct ones.
+
+For example, in line 18, rick has a sub instruction while morty has an sbb =
+instruction. So rick performs a subtraction without a carriage return.
+
+In line 575, morty performs a movzx instruction while while rick performs a=
+ mov instruction, so rick is neglecting to perform the instruction with a s=
+ign extension.
+
+Furthermore, the rick file is longer, a sign that LAVA was used to inject c=
+ode and new functions.
+
+Thus, I believe rick is the buggy file and inputs that could cause bugs inc=
+lude negative numerical inputs, such as -50 and inputs that would cause a l=
+oss of a carriage return when performing arithmetic operations, such as -21=
+47483648 and -2147483648.</pre></li>
+
+<li><pre class=3D"student-text">I disassembled both programs, and using som=
+e simple heuristics (e.g., more lines of disassembly =3D extra instructions=
+ added), it seems as though Morty is the modified program.  However, I am u=
+nable to determine what the assembly code does precisely enough to suggest =
+different inputs - and the suggested fuzzer did not return any unique crash=
+-inducing inputs for either program after running for an hour.
+</pre></li>
+
+<li><pre class=3D"student-text">I disassembled the two programs, and diff-e=
+d the disassmblies. I found a
+injected bug in `morty` in the `parse_record` function.
+</pre></li>
+
+<li><pre class=3D"student-text">I don't know...I couldn't get the fuzzer to=
+ work.</pre></li>
+
+<li><pre class=3D"student-text">I don't think either `rick` or `morty` have=
+ AFL's instrumentation embedded in it? Either way, I looked at a disassembl=
+y of both files using objdump, and it also doesn't appear like debug flags =
+were on during compilation, which means that there's not much source to go =
+off of. `rick` appears to do a bit of extra computation on the sample input=
+ and outputs a 1. This implies that `rick` has injected bugs.
+</pre></li>
+
+<li><pre class=3D"student-text">I first turn the machine code into assembly=
+ code using an online reader. Hard as I have tried, it is just impossible t=
+o understand what these codes are doing. I couldn't even distinguish whethe=
+r the machine code is in x86 format or x64 format, which would result in di=
+fferent assembly codes.
+
+I also tried to run afl. Afl isn't effective on mac, with almost half of it=
+s functions not applicable on my system. Then I tried running it on Linux a=
+nd unfortunately could not find a solution.</pre></li>
+
+<li><pre class=3D"student-text">I had no idea where to start with this.</pr=
+e></li>
+
+<li><pre class=3D"student-text">I have no idea how to figure this out. I am=
+ able to run the two programs with the test code, but I don't know how to r=
+un it with my own inputs. I tried using 'hexdump' to look at them and I'm a=
+ble to find differences but don't know what to do beyond that to figure out=
+ inputs to trigger bugs.</pre></li>
+
+<li><pre class=3D"student-text">I honestly cannot figure out which one has =
+the LAVA bugs injected into it.</pre></li>
+
+<li><pre class=3D"student-text">I looked at the source code of the two file=
+s, but couldn=E2=80=99t find any inputs that resulted in different values. =
+I believe Rick is the one with LAVA inputs because it is longer than Morty.=
+</pre></li>
+
+<li><pre class=3D"student-text">I originally thought that the rick program =
+has lava bugs injected because it is larger than the morty program. I tried=
+ to find inputs that trigger the bug using afs, but after letting afs run f=
+or 30 hours on blind mode, it had not found any bugs. I tried to inspect th=
+e program using gdb, but did not find any code that looked suspicious as pe=
+r the description in the lava paper. I was looking for some sort of compari=
+son against a random value.
+
+However, (with the help of a friend) I realized that maybe the reason I was=
+ unable to find any bugs is because I was looking at the wrong place the wh=
+ole time! Even though the rick executable was larger than the morty executa=
+ble, the disassembly for the rick program was actually smaller than it was =
+for the morty program (still not sure how this is possible). However, I rea=
+lized this too late to find a triggering input with afs.</pre></li>
+
+<li><pre class=3D"student-text">I ran afl with Qemu support so that binary =
+programs could be evaluated. For both the rick and morty files, I received =
+a program crash so I'm having trouble figuring out which file contains erro=
+rs.=20
+
+The output from afl states that 'The test case causes known crashes under n=
+ormal working conditions. If so, please remove it. The fuzzer should be see=
+ded with interesting inputs - but not ones that cause an out right crash.' =
+I also tried changing the memory limit of the program to be 800mb. That did=
+n't help either.
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">I suspect that rick is the bugged binary, d=
+ue to the sidechannel of final binary size. I found it difficult to figure =
+out how to interpret
+the dumps of the binaries, and run afl to attempt to determine bugs.</pre><=
+/li>
+
+<li><pre class=3D"student-text">I think Morty has the LAVA bugs injected. A=
+fter decompiling the programs and looking at the C code, I noticed that the=
+re were some extra variables introduced in Morty and lines that could lead =
+to bugs =E2=80=94 for example=20
+
+    if (*(int32_t *)20 !=3D v1) {
+        // 0x8048818
+        __stack_chk_fail();
+        // branch -&gt; 0x804881d
+    }
+
+vs the corresponding lines in Rick,=20
+
+   if (*(int32_t *)20 !=3D *(int32_t *)20) {
+        // 0x804879a
+        __stack_chk_fail();
+        // branch -&gt; 0x804879f
+    }
+
+</pre></li>
+
+<li><pre class=3D"student-text">I think it's Morty.
+First, the assembler code is longer (483 vs 432)
+Then, in morty, we see instruction
+`80485e4:       3d 72 64 71 58          cmp    $0x58716472,%eax`
+and=20
+`80486ce:       3d 41 42 67 6d          cmp    $0x6d674241,%eax`
+They indicate potential LAVA-injected vulnerabilities
+</pre></li>
+
+<li><pre class=3D"student-text">I think that morty has the LAVA bugs inject=
+ed after playing around with various types of inputs. </pre></li>
+
+<li><pre class=3D"student-text">I think the rick program has LAVA bugs inje=
+cted as its hexdump is longer
+and it seems like applying LAVA would strictly increase the size of the=20
+binary. I was unable to figure out how to get the fuzzer to work to=20
+construct inputs.</pre></li>
+
+<li><pre class=3D"student-text">I tried fuzzing with afl, but was not able =
+to find which has lava bugs injected in it.
+
+</pre></li>
+
+<li><pre class=3D"student-text">I tried fuzzing. I really did. Things I tri=
+ed:
+- using qemu instrumentation on rick and morty. This worked, I was able to =
+successfully run the bash script. However, it would complain about not havi=
+ng enough virtual memory upon forking. I tried to add in a -m flag to corre=
+ct this, but even with 16 gig, it wasn't enough. Feels like a bug with alf.
+- Running the dumb version. I've been running this program on 16 individual=
+ cores for 8 hours. Only one path has been taken and still zero failures. I=
+ don't think this is the way to go.
+- Ideally, I would have parallelized over my two machines and 16 cores with=
+ the dirty flag. But I would have needed the qemu instrumentation that didn=
+'t seem to work....
+I kind of placed all my marbles in the afl working.=20
+
+I did a bit of static analysis. Upon disassembling both binaries and diffin=
+g them, one of the things that jumped out at me was that variables in rick =
+were a little lower in memory than variables in morty. It's not immediately=
+ clear why this would make a difference. Maybe morty struggles with larger =
+inputs?
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">I tried using the afl fuzzer but I was unab=
+le to find any bugs after over 24 hours. I also posted on piazza multiple t=
+imes but I just couldn't find any bugs. I also tried examining the binaries=
+ using nm and objdump but they appeared identical to me. </pre></li>
+
+<li><pre class=3D"student-text">I understand what this question is asking b=
+ut execution is hard so I don't know
+who it is
+
+It might be rick because it's bigger?=20
+</pre></li>
+
+<li><pre class=3D"student-text">I use https://retdec.com/decompilation-run/=
+ to decompile the binary code. I figure out that bugs are injected into mor=
+ty. Specifically parse_record (0x80485e4), consume_record (0x80486ce), and =
+main (0x80487c8).=20
+
+I tried to afl. It runs for several hours but can't find an input which cra=
+shed the program.=20
+
+</pre></li>
+
+<li><pre class=3D"student-text">I used afl qemu mode to do fuzzy testing. H=
+owever, after running for 4
+hours, neither morty nor rick crashed. After decompiling the binary code,
+I found there might be an error in morty and I didn't find a test case that
+could crash the program. The problem might be that there is only one testca=
+se
+for afl and it's not exhaustive. </pre></li>
+
+<li><pre class=3D"student-text">I was having issues running this code :(  I=
+ even changed it to a '.c' file which is what is pasted below.
+
+=7FELF=01=01=01         =02 =03 =01   p=04=084   =18=19      4   	 ( =1F =
+=1C =06   4   4=04=084=04=08 =01   =01  =05   =04   =03   T=01  T=04=08T=04=
+=08=13   =13   =04   =01   =01        =04=08 =04=08x
+  x
+  =05    =10  =01   =08=0F  =08=04=08=08=04=08,=01  0=01  =06    =10  =02  =
+ =14=0F  =14=04=08=14=04=08      =06   =04   =04   h=01  h=04=08h=04=08D   =
+D   =04   =04   Ptd=04	  =04=04=08=04=04=08D   D   =04   =04   Qtd         =
+           =06   =10   Rtd=08=0F  =08=04=08=08=04=08      =04   =01   /lib/=
+ld-linux.so.2  =04   =10   =01   GNU     =02   =06       =04   =14   =03   =
+GNU ]?~Ey!c?X\(=7F=02  =20
+   =01   =05          =20
+   K                6           =12   \           =12   %           =12   D=
+           =12   =3D           =12   a               =1A           =12   J =
+          =12   =1F           =12  =20
+   =04=08=04   =11 =10  libc.so.6 _IO_stdin_used exit fopen __stack_chk_fai=
+l printf malloc fread __libc_start_main free __gmon_start__ GLIBC_2.1 GLIBC=
+_2.4 GLIBC_2.0   =02 =02 =03 =02 =02   =02 =02 =04 =01 =01 =03 =01   =10   =
+    =11ii
+  =04 p   =10   =14ii
+  =03 z   =10   =10ii
+  =02        =04=08=06=06  =0C=04=08	=01  =10=04=08	=02  =14=04=08	=03  =18=
+=04=08	=04  =1C=04=08	=05   =04=08		  $=04=08	=08  (=04=08		  S=08   O=1C  =
+t=05   =08[     5=04=04=08%=08=04=08    %=0C=04=08h    %=10=04=08h=08   %=
+=14=04=08h=10   %=18=04=08h=18   %=1C=04=08h    % =04=08h(   %$=04=08h0   %=
+(=04=08h8   p%=04=08f        1^PTRh=04=08h0=04=08QVh=04=08fffffff=1C$ffffff=
+7=04=08-4=04=08=06v=1A    t=11U=14h4=04=08?=10=EF=BF=BDt&amp; 4=04=08-4=04=
+=08=02=1F=01t=1B    t=12U=10Ph4=04=08?=10=EF=BF=BDt&amp; '    =3D4=04=08 u=
+=13U=08|=054=04=08=01f=10=04=08=10u=05?v     tU=14P?=10uU=08u=0Cj=01j=10u=
+=10=10=01t
+j=01E=10 =3DAVALt
+j=01U=18j=18e=10EE=0C@=04t=0FE=0C@=04 ?E=08=10E=08=10E=08 =3DrdqX=0F=0F=0Fi=
+?   E=0C=01Pj=01j=18u=06=10=01t
+j=01=14EU=08E=0C=08Ph=04=08=10E=0C@=10=01u=1FE=0C@=14=04d$=1C$h?=04=08=10YE=
+=0C@=10=02u-E=0Ct
+E=08P=08E=0C =02E=0C@=14=08Ph?=04=08H=10!E=0C@=10=08Ph?=04=08/=10j=01rE=08=
+=04=10E=08=04 =3DABgm=0F=0F=0F??=01=01=03?E=0C=01?P=10=EF=BF=BDL$=04qUQD?@=
+=04Ee=14   E1E    E    E    EE?E?=04 =08h=04=08P=10E?=04EPuu=01=10E=08Ph=04=
+=08b=10E    q=08uu=13=10E?E?@=04t=10E?P=04E?@=04 =02E?=08=10E?=08 =3DmqUd=
+=0F=0F=0F??=01=01=03?E=01?=08Pu-=10E=01=0FE=0F;Ew    Me3
+=14   t=05M?afffffUWVSg=17  l$ W=08)=02t%1    =04t$,t$,U=08=01=109u[^_]=EF=
+=BF=BDv   S=08=03c=17  =08[=03   =01 =02 Entry: bar =3D %s,  fdata =3D %f
+ intdata =3D %u
+ Unknown type %x
+ rb File timestamp: %u
+ =01=1B=03;@   	   \   g      =1D      ,=10=01  \=01  =14       =01zR =01|=
+=08=01=1B=0C=04=04=01      =1C   h    =0E=08F=0E=0CJ=0F
+t=04x ?=1A;*2$"=1C   @   @    A=0E=08=02B
+=05|=04=04  =1C   `   v    A=0E=08=02B
+=05=02r=04=04 =1C      U    A=0E=08=02B
+=05=02=04=04 ,      =11(=01   D=0C=01 G=10=05=02u C=0F=03u|=06=03=15=01=0C=
+=01 AC=0C=04=04   H      =14]    A=0E=08=02A=0E=0C=03A=0E=10=04A=0E=14=05N=
+=0E i=0E$D=0E(D=0E,A=0E0M=0E G=0E=14A=0E=10A=0E=0CA=0E=08A=0E=04  =10   =1C=
+=01  (=02                                                                  =
+                                                                           =
+                                                                           =
+                                                                           =
+                                                                           =
+                                                                           =
+                                                                           =
+                                                                           =
+                                                                           =
+                                                                           =
+                                                                           =
+                                                                           =
+                                                                           =
+                                                                           =
+                                                                           =
+                                                               @=04=08 =04=
+=08    =01   =01   =0C   =04=08
+   =04=08=19   =08=04=08=1B   =04   =1A   =0C=04=08=1C   =04   o=04=08=05  =
+ |=04=08=06   ?=04=08
+     =20
+   =10   =15       =03    =04=08=02   @   =14   =11   =17   h=04=08=11   `=
+=04=08=12   =08   =13   =08   o =04=08o=01   o
+=04=08                                                    =14=04=08        =
+=04=08=04=08=06=04=08=16=04=08&amp;=04=086=04=08F=04=08V=04=08        GCC: =
+(Ubuntu 5.4.0-6ubuntu1~16.04.9) 5.4.0 20160609                     T=04=08 =
+   =03 =01     h=04=08    =03 =02     =04=08    =03 =03     =04=08    =03 =
+=04     ?=04=08    =03 =05     |=04=08    =03 =06    =20
+=04=08    =03 	      =04=08    =03 =08     `=04=08    =03 	     h=04=08    =
+=03=20
+     =04=08    =03=20
+     ?=04=08    =03 =0C     `=04=08    =03=20
+     p=04=08    =03 =0E     =04=08    =03 =0F     =04=08    =03 =10     =04=
+=04=08    =03 =11     H=04=08    =03 =12     =08=04=08    =03 =13     =0C=
+=04=08    =03 =14     =10=04=08    =03 =15     =14=04=08    =03 =16     =04=
+=08    =03 =17      =04=08    =03 =18     ,=04=08    =03 =19     4=04=08   =
+ =03 =1A             =03 =1B =01           =04    =10=04=08    =01 =15 =19 =
+  =04=08    =02 =0E =1B   =04=08    =02 =0E .    =04=08    =02 =0E D   4=04=
+=08=01   =01 =1A S   =0C=04=08    =01 =14 z   @=04=08    =02 =0E    =08=04=
+=08    =01 =13            =04 =01           =04    t=04=08    =01 =12    =
+=10=04=08    =01 =15             =04    =0C=04=08      =13    =14=04=08    =
+=01 =16    =08=04=08      =13    =04=04=08      =11 =05=01   =04=08    =01 =
+=18 =1B=01  =04=08=02   =12 =0E +=01              G=01  =04=08=04   =12=02=
+=0E ]=01  k=04=08@   =12 =0E =01  ,=04=08      =19 j=01          =12   |=01=
+          =12   =01  4=04=08    =10 =19 %=01  =04=08    =12 =0F =01        =
+  =12   =01          =12   =01          =12   =01  ,=04=08    =10 =19 =01  =
+!=04=08   =12 =0E =01              =01          =12  =20
+=02  0=04=08    =11=02=19 =1A=02  =04=08=04   =11 =10 )=02          =12   F=
+=02  0=04=08]   =12 =0E V=02          =12   g=02  =04=08v   =12 =0E    8=04=
+=08    =10 =1A =01  p=04=08    =12 =0E t=02  =04=08=04   =11 =10 {=02  4=04=
+=08    =10 =1A =02  =04=08(=01  =12 =0E =02              =02  4=04=08    =
+=11=02=19 =02              P=02  =04=08    =12=20
+  crtstuff.c __JCR_LIST__ deregister_tm_clones __do_global_dtors_aux comple=
+ted.7209 __do_global_dtors_aux_fini_array_entry frame_dummy __frame_dummy_i=
+nit_array_entry toy.c __FRAME_END__ __JCR_END__ __init_array_end _DYNAMIC _=
+_init_array_start __GNU_EH_FRAME_HDR _GLOBAL_OFFSET_TABLE_ __libc_csu_fini =
+_ITM_deregisterTMCloneTable __x86.get_pc_thunk.bx parse_header printf@@GLIB=
+C_2.0 free@@GLIBC_2.0 _edata __stack_chk_fail@@GLIBC_2.4 fread@@GLIBC_2.0 m=
+alloc@@GLIBC_2.0 __data_start consume_record __gmon_start__ exit@@GLIBC_2.0=
+ __dso_handle _IO_stdin_used __libc_start_main@@GLIBC_2.0 __libc_csu_init f=
+open@@GLIBC_2.1 parse_record _fp_hw __bss_start main _Jv_RegisterClasses __=
+TMC_END__ _ITM_registerTMCloneTable  .symtab .strtab .shstrtab .interp .not=
+e.ABI-tag .note.gnu.build-id .gnu.hash .dynsym .dynstr .gnu.version .gnu.ve=
+rsion_r .rel.dyn .rel.plt .init .plt.got .text .fini .rodata .eh_frame_hdr =
+.eh_frame .init_array .fini_array .jcr .dynamic .got.plt .data .bss .commen=
+t                                         =1B   =01   =02   T=04=08T=01  =
+=13           =01       #   	   =02   h=04=08h=01              =04       1 =
+  	   =02   =04=08=01  $           =04       D   o=02   =04=08=01      =05 =
+      =04   =04   N  =20
+   =02   ?=04=08=01     =06   =01   =04   =10   V   =03   =02   |=04=08|=02=
+             =01       ^   o=02  =20
+=04=08
+=03  =16   =05       =02   =02   k   o=02    =04=08 =03  @   =06   =01   =
+=04       z   	   =02   `=04=08`=03  =08   =05       =04   =08      	   B  =
+ h=04=08h=03  @   =05   =18   =04   =08      =01   =06   =04=08=03  #      =
+     =04          =01   =06   ?=04=08=03             =10   =04      =01   =
+=06   `=04=08`=04  =08           =08          =01   =06   p=04=08p=04  "=04=
+          =10          =01   =06   =04=08=08  =14           =04          =
+=01   =02   =04=08=08  \           =04          =01   =02   =04=04=08=04	  =
+D           =04          =01   =02   H=04=08H	  0=01          =04          =
+=0E   =03   =08=04=08=08=0F  =04           =04          =0F   =03   =0C=04=
+=08=0C=0F  =04           =04          =01   =03   =10=04=08=10=0F  =04     =
+      =04          =06   =03   =14=04=08=14=0F     =06       =04   =08     =
+ =01   =03   =04=08=0F  =04           =04   =04      =01   =03    =04=08 =
+=10  ,           =04   =04      =01   =03   ,=04=08,=10  =08           =04 =
+         =08   =03   4=04=084=10  =04           =01       =01=01  =01   0  =
+     4=10  4           =01   =01   =11   =03           =0E=18 =20
+=01          =01       =01   =02           h=10  =04  =1E   /   =04   =10  =
+ 	   =03           H=15  =02          =01      =20
+</pre></li>
+
+<li><pre class=3D"student-text">I was not able to generate a bug for either=
+ program using AFL. The input format was not clear, so I could not create m=
+y own inputs to the program. I also played around with disassemblers and de=
+compilers, but I couldn't find one that produced something that was not ass=
+embly.  </pre></li>
+
+<li><pre class=3D"student-text">I was unable to construct inputs that demon=
+strate a difference, though I believe that rick is the file with LAVA bugs =
+based on the disassembly that I observed, which appears to copy DUA's so th=
+at they are available for later in the code.
+</pre></li>
+
+<li><pre class=3D"student-text">I wasn't able to find an input that created=
+ caused a bug in one of the programs, but I spent a good amount of time exa=
+mining the difference in the disassembly of both files. I noticed that Mort=
+y had many more comparator checks than Rick does. From the LAVA paper, we k=
+now that LAVA uses such statements to trigger an injected vulnerability (so=
+ that the bytes much match exactly with the intended vuln) so it would make=
+ sense that Morty would be the instrumented file.
+</pre></li>
+
+<li><pre class=3D"student-text">I will guess that rick is the modified vers=
+ion.
+I ran afl (in blind mode) but after 10 minutes it still hadn't identified a=
+ny bugs. When I tried inspecting the binary by hand, I'm not sure how to in=
+terpret it. When I look at the number of bytes in the file, morty is 7664 b=
+ytes and rick is 7680 bytes, so from that information I can guess that rick=
+ is the modified version because LAVA adds extra structures to the code (su=
+ch as global static variables) to keep DUAs in scope at the attack point. I=
+ would assume that this makes the binary longer becaue it makes the code lo=
+nger.</pre></li>
+
+<li><pre class=3D"student-text">I would guess that rick is the program with=
+ bugs injected as it has a slightly lrger file size.=20
+</pre></li>
+
+<li><pre class=3D"student-text">I would guess that rick is the program with=
+ the LAVA bugs injected, although I
+haven't had much time to play with the binary files.
+
+</pre></li>
+
+<li><pre class=3D"student-text">If we run this:
+
+4156414c0000000003000000991580577264715800000000000000000000000002000000587=
+16471
+
+on morty (after running xxd -r -p on the above string), it triggers a segfa=
+ult. A Lava bug was introduced and is triggered whenever the input to a buf=
+fer is 0x58716472.=20
+</pre></li>
+
+<li><pre class=3D"student-text">In the zip file, morty binary code has a nu=
+mber of LAVA bugs injected in it. I have used american fuzzy lop to identif=
+y the bugs. This fuzzing library (I have also used it before) is truly amaz=
+ing.
+</pre></li>
+
+<li><pre class=3D"student-text">It looks like rick may be altered. In a few=
+ places, unmodified input values seemed to change. I'm confused about how t=
+o generate inputs of the right format. I can run the programs with testsmal=
+l.bin but I can only see the binaries of all the programs so I'm confused a=
+bout what needs to be in the inputs. </pre></li>
+
+<li><pre class=3D"student-text">It seems from the disassembly that morty's =
+main, parse_record and consume_record have been injected with a lot more co=
+de than rick's. While this is nothing conclusive, this seems to suggest tha=
+t code may have been injected into morty.=20
+
+I also tried working with AFL, but ended up causing crashes for both progra=
+ms. Hence, it wasn't helpful for either. I also couldn't get the QEMU suppo=
+rt working, which further complicated this approach.
+</pre></li>
+
+<li><pre class=3D"student-text">It's been a challenge. Despite I reversed t=
+he apps &amp; even reconstructed original C code, as much as it's possible =
+to "turn hamburger back into cows", I didn't find an input which can cause =
+the exploitation a vulnerability, though there have been some guesses. Prob=
+ably, "morty" should have some vulnerabilities, at least just because of th=
+e its name. =20
+American fuzzy lop is great, but it looks like I need some practice in sett=
+ing the tool up to fuzz binaries. </pre></li>
+
+<li><pre class=3D"student-text">Lecture 19
+
+This ZIP file contains two versions of a simple program. One is called rick=
+, the other morty. They are generated from the same source code and should =
+process the included sample input in the same way. However, one of the prog=
+rams has a number of LAVA bugs injected. Can you figure out which? Can you =
+construct inputs that demonstrate a difference in execution between rick an=
+d morty?
+
+You might spend some time looking at the disassembly for each program, iden=
+tifying bugs and trying to find inputs to trigger them. Or you might try fu=
+zzing, e.g., using afl. We will go over the two versions and dissect the tr=
+iggering inputs at lecture.
+
+When I ran the code I got segmentation fault for both the executables. I tr=
+ied to dissemble the code using Hopper but didn't understand much.=20
+I could have used more instructions on how to run the code and understand t=
+he input.</pre></li>
+
+<li><pre class=3D"student-text">Lecture 19
+
+This ZIP file contains two versions of a simple program. One is called rick=
+,=20
+the other morty. They are generated from the same source code and should=20
+process the included sample input in the same way. However, one of the=20
+programs has a number of LAVA bugs injected. Can you figure out which?=20
+Can you construct inputs that demonstrate a difference in execution between=
+=20
+rick and morty?
+
+You might spend some time looking at the disassembly for each program,=20
+identifying bugs and trying to find inputs to trigger them. Or you might=20
+try fuzzing, e.g., using afl. We will go over the two versions and dissect=
+=20
+the triggering inputs at lecture.
+
+
+After decompiling the two binaries, I beleive that morty is the file with
+injected LAVA bugs. In morty, parse_header, parse_record, and consume_recor=
+d
+are called with an additional function argument. This argument is only used
+when the input meets a specific condition in parse_record and is used to=20
+change a few conditionals throughout the file. This makes me think it can=
+=20
+be exploited. </pre></li>
+
+<li><pre class=3D"student-text">Lecture 19 (Answer to Paper Question)
+
+Question:
+
+This ZIP file contains two versions of a simple program. One is called rick=
+, the other morty. They are generated from the same source code and should =
+process the included sample input in the same way. However, one of the prog=
+rams has a number of LAVA bugs injected. Can you figure out which? Can you =
+construct inputs that demonstrate a difference in execution between rick an=
+d morty?
+
+You might spend some time looking at the disassembly for each program, iden=
+tifying bugs and trying to find inputs to trigger them. Or you might try fu=
+zzing, e.g., using afl. We will go over the two versions and dissect the tr=
+iggering inputs at lecture.
+
+
+I tried running rick and morty with different inputs, but wasn't able to de=
+monstrate a difference in execution between the two programs.
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 19: LAVA Tim Leek
+4/30/18
+
+This ZIP file contains two versions of a simple program. One is called rick=
+, the other morty. They are generated from the same source code and should =
+process the included sample input in the same way. However, one of the prog=
+rams has a number of LAVA bugs injected. Can you figure out which? Can you =
+construct inputs that demonstrate a difference in execution between rick an=
+d morty?
+You might spend some time looking at the disassembly for each program, iden=
+tifying bugs and trying to find inputs to trigger them. Or you might try fu=
+zzing, e.g., using afl. We will go over the two versions and dissect the tr=
+iggering inputs at lecture.
+
+
+It seems that rick has had lava bugs injected into it, because looking at t=
+he dissambly it has an extra function in it that seemingly manipulates a gl=
+obal array, which LAVA likes to do in order to give attack points access to=
+ DUAs.</pre></li>
+
+<li><pre class=3D"student-text">Lecture 19: Lava Reading Question
+
+After some reasoning based on my Rick and Morty familiarity and assuming th=
+at the code developers
+are also Rick and Morty enthusiasts, I came to the conclusion that Morty is=
+ the program with Lava
+bugs injected into it. In Rick and Morty, Rick plays the role of the genius=
+ demi-god character
+that knows absolutely everything there is to know about all universes, whil=
+e Morty is the silly,
+relatable character that finds himself completely lost most of the time. Th=
+is leads me to believe
+that the developers made Morty the program with bugs, while Rick is the pre=
+stine program with no
+bugs or errors.
+
+Unfortunately I was unable to find specific inputs that prove either progra=
+m has bugs, but when
+I ran test.bin in both, they had different outputs, leading me to believe t=
+hat there are bugs in
+one program.
+</pre></li>
+
+<li><pre class=3D"student-text">Looking at the disassembly, it looks like t=
+he Morty code has some inserted code that compares the input values to cons=
+tants and performs a lot of extra operations, making it seem like the more =
+likely lava output. </pre></li>
+
+<li><pre class=3D"student-text">Morty has LAVA bugs injected. </pre></li>
+
+<li><pre class=3D"student-text">Morty has a bug which causes the system to =
+hang. The hexdump of binary input file is=20
+
+0000000 5641 4c41 0000 0000 f375 f3f3 f3f3 f3f3
+0000010 f3f3 f3f3 f3f3 f3f3 f3f3 6f6c 00eb 1599
+0000020 5780 7568 ff03 00eb 4099 8024 6400 79c0
+0000030 0965 0000 0020 2000 2df3 0040
+000003b
+</pre></li>
+
+<li><pre class=3D"student-text">Morty has the LAVA bugs injected, because t=
+here are extra if statements comparing parts of the input to seemingly rand=
+om values that don't exist in rick. So you can set the input so that %eax (=
+which is based off the input) in parse_record corresponds to 0x58716472 in =
+order to trigger the bug (in general just set the input so that the compare=
+d register equal to the various constants).</pre></li>
+
+<li><pre class=3D"student-text">Morty has the injected lava bugs.
+
+</pre></li>
+
+<li><pre class=3D"student-text">Morty is the file that has bugs injected in=
+to it based on inspection of the disassembly. Morty has lines that correspo=
+nd to the injected code explained in the paper.
+</pre></li>
+
+<li><pre class=3D"student-text">Morty is the file with the injected bugs. I=
+t has extra lines in the assembly in main that seem to be doing stuff.
+</pre></li>
+
+<li><pre class=3D"student-text">Morty is the injected file. In morty, there=
+'s a line (cmp eax, 58716472h) in parse_record which initiates a segfault i=
+f a line in the input is equal to 0x58716472h.=20
+
+Our test case ended up looking line this (note we feed it in backwards):
+4156 414c 0000 0000 0300 0000 7264 7158 7264 7158 6f00 0000 0000 0000 0000 =
+0000 0100 0000 c3f5 4840 676f 6f64 6279 6500 0000 0000 0000 0000 0200 0000 =
+2a00 0000 6575 6c65 7200 0000 0000 0000 0000 0000 0100 0000 b6f3 2d40=20
+</pre></li>
+
+<li><pre class=3D"student-text">Morty is the program with LAVA bugs injecte=
+d into it. I had a hard time constructing custom input, but based off the t=
+he Rick &amp; Morty show, it seems that it is most plausible that Morty is =
+the bug-infected program!</pre></li>
+
+<li><pre class=3D"student-text">Morty was the bugged binary.
+</pre></li>
+
+<li><pre class=3D"student-text">Morty? Rough guess on the grounds that it's=
+ longer and has a lot of odd multiplies and compares; can't get the binary =
+thing for afl to run in a vm to tell for sure :(</pre></li>
+
+<li><pre class=3D"student-text">No bugs found. ./rick is a few bytes larger=
+, which could indicate a bit of instrumentation to trigger bugs, but I was =
+unable to figure it out with afl.
+</pre></li>
+
+<li><pre class=3D"student-text">Not too sure but looking at the disassembly=
+, rick and morty differ by a quite a bit. I am guessing that rick is the on=
+e with the injected bugs because it has a weird push 0x18 %esp. If you pass=
+ the inputs as rick or morty, rick outputs 2 and morty outputs nothing. </p=
+re></li>
+
+<li><pre class=3D"student-text">Of the two, rick is a larger binary than mo=
+rty and likely the one containing injected code with LAVA bugs.=20
+
+I was unable to construct triggering inputs as experimenting with replaced =
+inputs in testsmall.bin did not yield conclusive results (output from rick =
+and morty were not distinct from each other for those tested inputs). I als=
+o could not determine how to get a dissamebly of the binary without having =
+it immediately run to completion.</pre></li>
+
+<li><pre class=3D"student-text">Pointer dereference to cause buffer overflo=
+w
+- morty: _ITM_deregisterTMCloneTable=20
+- morty: __frame_dummy_init_array_entry=20
+- morty: _DYNAMIC </pre></li>
+
+<li><pre class=3D"student-text">Rick likely has the LAVA bugs injected. You=
+ can create different output behaviors by feeding the opposite script to th=
+e other:
+
+$ ./rick morty
+2
+
+$ ./morty rick
+$
+</pre></li>
+
+<li><pre class=3D"student-text">Running rick outputs extraneous "	1" on tes=
+tsmall.bin input
+	Seems to occur for random non-empty .txt files as well
+
+Looking at the code more closely in gdb;
+	0x8048597 &lt;parse_header+44&gt; Check for "AVAL" as first bytes in file=
+=20
+	This is an example of string checks in the code. Looking at the diffs for =
+the hexdumps of rick and morty, the dump for morty shows more strings of th=
+e similar form "=3DAVAL". To me this indicates that morty has LAVA checks i=
+nserted as the paper discussed how every bug inserted has a wrapper inserte=
+d at it's attack point to detect when the bug is being tested for.</pre></l=
+i>
+
+<li><pre class=3D"student-text">The binary file "morty" has LAVA bugs injec=
+ted into it as indicated by the extra instructions shown by disassembling i=
+n gdb.=20
+</pre></li>
+
+<li><pre class=3D"student-text">The binary morty has LAVA bugs injected bec=
+ause there are DUAs right before the fopen call, so this can be manipulated=
+ to cause a buffer overflow.</pre></li>
+
+<li><pre class=3D"student-text">The correct place to look would be under pa=
+rse_record. We see here that we are comparing %eax to some constant, which =
+would cause a crash. Therefore, an input that would mess up this line is th=
+e correct input to crash the program. This comparison can be found in Morty=
+ but not Rick
+</pre></li>
+
+<li><pre class=3D"student-text">The elf32-i386 file "rick" has LAVA bugs in=
+jected. For example, the code block at 0x80485a6 evaluates to:
+
+	unsigned byte b =3D *(char *)((int32_t)*data + (int32_t)&amp;0x804a060);
+	printf(" %d\n", (int32_t)b;
+
+where "data" is the first 16 bytes read from the filestream. The input can =
+be constructed such that it leaks an unsigned char at address ((int32_t)*da=
+ta + (int32_t)&amp;0x804a060).
+
+</pre></li>
+
+<li><pre class=3D"student-text">The one code with LAVA bugs injected is mor=
+ty. We would actually normally expect this from the naming choices. We can =
+infer that injected code is present from the shift of some fragments of the=
+ code in morty when compared to rick (in which pieces occur earlier).
+</pre></li>
+
+<li><pre class=3D"student-text">The provided input, testsmall.bin, already =
+leads to different execution for both of them... `rick` will print out an a=
+dditional line with " 1", and morty will not. I'm guessing this is the one =
+with LAVA inputs? Truthfully, not sure how I'm supposed to tackle this sinc=
+e I don't even know how to edit the input to the program or what the progra=
+m is supposed to do, and I do not know x86 well enough to tell from the dum=
+p
+</pre></li>
+
+<li><pre class=3D"student-text">The rick binary prints out an extraneous li=
+ne containing " 1" when one of the
+input values is 0x58716472. It thus seems to be the one processed with LAVA=
+.
+</pre></li>
+
+<li><pre class=3D"student-text">The rick file has the injected LAVA bugs-- =
+it contains injected code in the
+&lt;parse_header&gt; function, and we are able to trigger a print statement=
+ in this
+code that outputs '1' where the morty equivalent does not.
+
+This is how vim displays the input binary that shows this output difference=
+:
+AVAL^@^@^@^@^C^@^@^@&lt;99&gt;^U&lt;80&gt;
+
+This is just a truncation of testsmall.bin.
+</pre></li>
+
+<li><pre class=3D"student-text">The rick program has bugs injected.</pre></=
+li>
+
+<li><pre class=3D"student-text">They are generated from the same source cod=
+e and should process the included sample input in the same way. However, on=
+e of the programs has a number of LAVA bugs injected. Can you figure out wh=
+ich? Can you construct inputs that demonstrate a difference in execution be=
+tween rick and morty?
+
+Morty</pre></li>
+
+<li><pre class=3D"student-text">This ZIP file contains two versions of a si=
+mple program. One is called rick, the other morty. They are generated from =
+the same source code and should process the included sample input in the sa=
+me way. However, one of the programs has a number of LAVA bugs injected. Ca=
+n you figure out which? Can you construct inputs that demonstrate a differe=
+nce in execution between rick and morty?
+
+I tried using the fuzzer afl, but it can only work on binaries that have be=
+en instrumented with their specific C compiler. I believe they made some sl=
+ight changes to the compiler in order to have their program inspect the exe=
+cution flow of the binary. Anyways, without the original file, I don't know=
+ how to recompile an instrumented binary.=20
+
+I looked over the assembly dumps of the code. Both chunks of code contain s=
+uspicious jump equals commands. I think they're both buggy.</pre></li>
+
+<li><pre class=3D"student-text">This ZIP file contains two versions of a si=
+mple program. One is called rick, the other morty. They are generated from =
+the same source code and should process the included sample input in the sa=
+me way. However, one of the programs has a number of LAVA bugs injected. Ca=
+n you figure out which? Can you construct inputs that demonstrate a differe=
+nce in execution between rick and morty?
+
+Rick never makes mistakes and thus Morty must be the program with bugs
+</pre></li>
+
+<li><pre class=3D"student-text">This ZIP file contains two versions of a si=
+mple program. One is called rick, the other morty. They are generated from =
+the same source code and should process the included sample input in the sa=
+me way. However, one of the programs has a number of LAVA bugs injected. Ca=
+n you figure out which? Can you construct inputs that demonstrate a differe=
+nce in execution between rick and morty?
+
+You might spend some time looking at the disassembly for each program, iden=
+tifying bugs and trying to find inputs to trigger them. Or you might try fu=
+zzing, e.g., using afl. We will go over the two versions and dissect the tr=
+iggering inputs at lecture.
+
+Morty has the injected bug.  If the file header is "LAVA", the program will=
+ exit(1).</pre></li>
+
+<li><pre class=3D"student-text">Using the afl fuzzing tool on qemu mode, I =
+found that morty is the file
+with the Lava bug injected because the fuzzer found a number of inputs that
+cause the program to hang. For example:
+
+id:000000,src:000000,op:havoc,rep:4
+id:000003,src:000000,op:havoc,rep:2
+id:000006,src:000000,op:havoc,rep:2
+id:000001,src:000000,op:havoc,rep:4
+id:000004,src:000000,op:havoc,rep:4
+id:000007,src:000000,op:havoc,rep:8
+id:000002,src:000000,op:havoc,rep:4
+id:000005,src:000000,op:havoc,rep:32
+id:000008,src:000000,op:havoc,rep:32
+</pre></li>
+
+<li><pre class=3D"student-text">We can insert code into the program for mor=
+ty.
+</pre></li>
+
+<li><pre class=3D"student-text">Yes, by looking at the disassembly of the f=
+iles, or trying random inputs, an input can be generated that causes a bug =
+to appear in one but not the other.  Since LAVA adds bugs to the files, the=
+ file that contains a bug that the other doesn't, is the file that has LAVA=
+ bugs injected.  If there were a bug in both files, that would be a bug tha=
+t was not injected by LAVA.
+</pre></li>
+
+<li><pre class=3D"student-text">morty
+
+I actually have no clue, did not have enough time to do this homework :/</p=
+re></li>
+
+<li><pre class=3D"student-text">morty has code injected in it. Diffing the =
+objdumps yield that morty has additional computations and makes comparisons=
+ to magic numbers (cmp $0x58716472,%eax).
+</pre></li>
+
+<li><pre class=3D"student-text">morty has more lines in disassembly, so I'd=
+ guess it's the one with LAVA bugs
+injected... I don't know exactly how to construct valid inputs that will tr=
+igger
+those bugs.
+</pre></li>
+
+<li><pre class=3D"student-text">morty is bugged by LAVA. It is easy to tell=
+ since it has more instructions. You can probably construct an input that l=
+eads to a different execution by scanning through the instructions and tryi=
+ng to back-solve for inputs.</pre></li>
+
+<li><pre class=3D"student-text">morty is the one with LAVA bugs injected, b=
+ecause it has 4 CMP instructions that compare with magic numbers, while ric=
+k has only 1 CMP instruction that compares to magic numbers.
+</pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--loqA1uSzrzfdPB1cHlv5CS8lnMh1WoZ3LG72uLcLSP------

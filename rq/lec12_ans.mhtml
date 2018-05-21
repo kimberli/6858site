@@ -1,0 +1,1487 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-answers/12
+Subject: Answers for lecture 12 - 6.858
+Date: Tue, 21 May 2018 01:29:27 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--yheLnTYP6E8vvjHRUQLCJAuKwcd0l4kdDRCAZDroa9----"
+
+
+------MultipartBoundary--yheLnTYP6E8vvjHRUQLCJAuKwcd0l4kdDRCAZDroa9----
+Content-Type: text/html
+Content-ID: <frame-1162-9a56ff2c-6a2f-459b-9817-9021cf8464df@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-answers/12
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Answers for lecture 12 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Answers for lecture 12 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text">-------------------------------------------=
+---------------------------------
+Lecture 12
+
+Question: Each time EXE adds a branch constraint it queries STP to check th=
+at there exists at least one solution for the current path's constraints. W=
+hat would go wrong if EXE did not use STP, and instead tried all branches? =
+What would go wrong if EXE randomly selected a branch to check?
+
+Answer: There are a ton of indepdent branches, that introduce undeed additi=
+onal constraints. With the constraint caching and other methods, STP reduce=
+s the number of path constraints that need to be computed. It would take ex=
+ponential time to check all of the independent branches. If STP randomly se=
+lected a branch to check, this would defeat the purpose because it could ea=
+sily miss a bug.
+
+
+---------------------------------------------------------------------------
+</pre></li>
+
+<li><pre class=3D"student-text">If EXE didn't use STP to check that there e=
+xists at least one solution for the current path's constraints, then EXE mi=
+ght try an impossible path (one where the branch constraints can never be s=
+atisfied). Then EXE will try to find inputs that satisfy the constraints an=
+d break the program in some way. However, because no input can satisfy conf=
+licting constraints, then EXE will just waste time checking a path with no =
+valid inputs.=20
+
+If EXE randomly selected branches to check, then it might take a while to f=
+ind lots of bugs. EXE uses some heuristic that encourages checking "interes=
+ting" paths, which should help it find bugs more quickly, so without it (i.=
+e. if it checked branches randomly), we won't be searching very efficiently=
+.
+</pre></li>
+
+<li><pre class=3D"student-text"># Lecture 12
+--------------------------------------------
+Each time EXE adds a branch constraint it queries STP to check that
+there exists at least one solution for the current path's constraints.
+What would go wrong if EXE did not use STP, and instead tried all
+branches? What would go wrong if EXE randomly selected a branch to check?
+--------------------------------------------
+
+If the software just randomly selected branches, it would have no purpose.
+One of EXE's key features is that it produces concrete test cases with
+values that are actually reachable. Allowing random branches would complete=
+ly
+break the assumption that the path is possible. For instance, the paper inc=
+ludes
+a code snippet with `assert()` statements which do not cause errors because=
+ the
+software determined that the asserts will never fail. If branches were take=
+n
+randomly, there would be false positives inputs which crash the system.
+</pre></li>
+
+<li><pre class=3D"student-text">- By using STP, EXE can detect branches tha=
+t would fail the execution before the execution fails, allowing EXE to regi=
+ster what values cause a failure, and to continue execution of the other br=
+anches afterwards.
+
+- Selecting a branch at random could:
+  - Lead to executing a branch that generates a failure
+  - Prevent EXE from finding all possible execution branches.
+</pre></li>
+
+<li><pre class=3D"student-text">- If EXE did not use STP, and instead tried=
+ all branches: It would fork exponentially many processes, and use so much =
+resources that it would become unusable.
+- If EXE randomly selected a branch to check: It would most likely miss the=
+ interesting cases, and become as bad as previous approaches based on rando=
+mized testing.
+</pre></li>
+
+<li><pre class=3D"student-text">- If EXE does not use STP and tries all bra=
+nches, the number of branches to evaluate will grow exponentially with the =
+number of decision-making brnaches in the source code. For even small piece=
+s of code, this will become computationally expensive.
+- If EXE selects a random branch, there is a chance that the branch does no=
+t contain the bug/edge case that might trigger a bug/fail an assert stateme=
+nt.</pre></li>
+
+<li><pre class=3D"student-text">6.858 - EXE
+
+It seems that if we were to explore all branches (e.g. not use the nice opt=
+imizations
+that STP provides), then the blowup of test cases would be expontential and=
+ EXE
+would run for a ridiculously long period of time. On the flipside, randomly=
+ picking
+a branch without using a heuristic or a search method (e.g. BFS) seems to s=
+ignificantly
+reduce code coverage.
+</pre></li>
+
+<li><pre class=3D"student-text">&gt; What would go wrong if EXE did not use=
+ STP and instead tried all branches?
+1. Loops
+2. Exploration of impossible branches
+
+&gt; What would go wrong if randomly selects a branch.
+1. Not taking random branches is kinda the point..., we might be missing in=
+teresting branches
+2. Exploration of impossible branches.
+
+</pre></li>
+
+<li><pre class=3D"student-text">Answer to Paper Question
+
+If no solution exists, it would pass the assert statement and go down the b=
+ranch assuming it was correct. This would break the correctness of EXE.=20
+
+In this case, it would inefficiently check code blocks and would waste time=
+ compared to using the heuristic described in the paper as it would get stu=
+ck in useless loops. </pre></li>
+
+<li><pre class=3D"student-text">Answer to Paper Question
+
+
+
+It would pass the assert statement and exec the branch assuming it was corr=
+ect, which would break the correctness of EXE.=20
+
+It would check code blocks inefficiently and would waste time compared to u=
+sing the heuristic described in the paper, since it gets stuck in useless l=
+oops. </pre></li>
+
+<li><pre class=3D"student-text">Checking STP to make sure that at least one=
+ solution for the current path's constraints exists is really just an optim=
+ization for EXE. If EXE did not check to make sure that at least one soluti=
+on existed, then it would spend a lot of time checking a path that can neve=
+r be realized in any possible execution, so it is pointless to check anythi=
+ng in that path, and would just be wasted time. If EXE did not use STP and =
+instead tried all branches, it would not lead to incorrect results, but it =
+would make EXE a lot more inefficient because it would try many paths that =
+are impossible to reach and waste a lot of time on those paths. If EXE find=
+s an error in any of these paths, it will still run STP to find a concrete =
+test case where the error occurs (and if the constraints are unsatisfiable,=
+ no such test case will be found), so it will not report spurious errors.
+
+If EXE instead randomly selected a branch to check instead of checking all =
+branches, then it will miss a lot of possible erros, since you have to chec=
+k all possible branches (some branches may be impossible because the constr=
+aints have no solution, but any branch that has at least one solution must =
+be checked) to find all possible errors that can result from the symbolic i=
+nput. Thus, this is more dangerous than trying all branches; it can lead to=
+ errors not being found, not just slowing down the execution.
+</pre></li>
+
+<li><pre class=3D"student-text">Checking all possible branches can be extre=
+mely time intensive. The example in the text descibes an if statement where=
+ there only exists two branches. But in practical code this number can be s=
+ubstantially higher. Nesting if or loops inside of each other can cause it =
+to exponentially increase. STP provides the speed needed to make this probl=
+em tractable. Similarly, randomly checking branches may lead the checker do=
+wn the wrong path and cause it to get stuck.
+</pre></li>
+
+<li><pre class=3D"student-text">Danny Tang
+
+data1013
+
+3/16/18
+
+
+
+Lecture 12
+
+Question:
+
+Each time EXE adds a branch constraint it queries STP to check that there e=
+xists at least one solution for the current path's constraints. What would =
+go wrong if EXE did not use STP, and instead tried all branches? What would=
+ go wrong if EXE randomly selected a branch to check?
+
+Answer:
+
+If EXE did not use STP, I would imagine that EXE could get stuck in a branc=
+h with no solution, since it uses some form of a DFS=20
+with heuristics.
+
+If EXE randomly selected a branch to check, then it's possible that it may =
+get unlucky and end up stuck in a really long branch or
+loop for a really long time (which is what the optimization heuristics try =
+to avoid).</pre></li>
+
+<li><pre class=3D"student-text">EXE could detect false positives if it trie=
+d all branches. This is because it would find errors when branched to a pat=
+h that cannot even be reached. For example, maybe the programmer did a part=
+icular sanity check to throw an exception when going to a path that they kn=
+ow is not possible. Or alternatively, the programmer can just be doing ques=
+tionable pointer arithmetic in that unreachable section of code.
+
+If a random branch is tried then there are some positives that are missed.<=
+/pre></li>
+
+<li><pre class=3D"student-text">EXE will hardly terminate in big programs d=
+ue to combinatorial explosion of (unreachable in reality) branches if it si=
+mply goes down each branch.=20
+EXE will have very bad path coverage if it simply goes down a random branch=
+.=20
+</pre></li>
+
+<li><pre class=3D"student-text">EXE would then run areas of the program tha=
+t normal program execution could never reach. This could lead it to running=
+ and reporting code that is actually safe.
+</pre></li>
+
+<li><pre class=3D"student-text">Each time EXE adds a branch constraint it q=
+ueries STP to check that there exists
+at least one solution for the current path's constraints. What would go wro=
+ng if
+EXE did not use STP, and instead tried all branches? What would go wrong if=
+ EXE
+randomly selected a branch to check?
+
+If EXE did not use STP, and instead tried all branches, it will fork an
+exponential number of times. For example, 10 layers of branching would resu=
+lt in
+1024 processes from being created. Also, exploring branches that do not hav=
+e
+solutions might give false positives, as what looks like a potential BUG mi=
+ght
+actually be unreachable.
+
+If EXE just randomly selected a branch, it would potentially miss BUGs on t=
+he
+other branch.
+</pre></li>
+
+<li><pre class=3D"student-text">Each time EXE adds a branch constraint it q=
+ueries STP to check that there exists at least one solution for the current=
+ path's constraints.=20
+What would go wrong if EXE did not use STP, and instead tried all branches?=
+ What would go wrong if EXE randomly selected a branch to check?
+
+Without checking that there is a solution at each branch constraint, EXE wo=
+uld create false paths through the program and finding inputs that produce =
+bugs in the code would require back-tracking to each point of decision to t=
+ry to create new constraint set. This would create a huge performance decre=
+ase. </pre></li>
+
+<li><pre class=3D"student-text">Each time EXE adds a branch constraint it q=
+ueries STP to check that there exists at least one solution for the current=
+ path's constraints. What would go wrong if EXE did not use STP, and instea=
+d tried all branches?=20
+
+This would take a really long time/be far more inefficient (we would be che=
+cking paths that we know already to be not satisfiable). STP eliminates che=
+cking these paths thus saving time.
+
+What would go wrong if EXE randomly selected a branch to check?=20
+This would take an unreasonable time to cover all code. Randomly generating=
+ million test cases only covered half the code in the example in the paper.=
+ 75 test cases generated an equivalent amount of code coverage via BFS.
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">Each time EXE adds a branch constraint it q=
+ueries STP to check that there exists at least one solution for the current=
+ path's constraints. What would go wrong if EXE did not use STP, and instea=
+d tried all branches? What would go wrong if EXE randomly selected a branch=
+ to check?
+
+
+The execution path for a dynamic program can be exponentially large. Withou=
+t the additional constraints added by STp, choosing all branches or explori=
+ng one randomly selected possible would take an extremely large amount of t=
+ime and computational resources
+</pre></li>
+
+<li><pre class=3D"student-text">Each time EXE adds a branch constraint it q=
+ueries STP to check that there exists at least one solution for the current=
+ path's constraints. What would go wrong if EXE did not use STP, and instea=
+d tried all branches? What would go wrong if EXE randomly selected a branch=
+ to check?
+
+If EXE did not use STP to ensure there's at least one solution before tryin=
+g the branch, the system would waste time and resources working on the cons=
+traints to something that's meaningless.  Furthermore, if the branch is imp=
+ossible but the logic contained within its code path is sufficiently comple=
+x, it could bog the entire EXE system down to the point of being useless.  =
+If EXE randomly chose branches to check, it could end up in states that are=
+n't possible given the original starting conditions.  Maybe one branch reli=
+es on data created within a different one that wasn't randomly chosen.</pre=
+></li>
+
+<li><pre class=3D"student-text">Each time EXE adds a branch constraint it q=
+ueries STP to check that there exists at least one solution for the current=
+ path's constraints. What would go wrong if EXE did not use STP, and instea=
+d tried all branches? What would go wrong if EXE randomly selected a branch=
+ to check?
+
+If EXE tried all branches, the runtime would be considerably longer and mak=
+e this technique infeasible to use.
+
+If EXE randomly selected a branch to check, it would fall prey to the same =
+coverage problems as that of random and manual testing - it could potential=
+ly miss a branch with a key vulnerability.
+</pre></li>
+
+<li><pre class=3D"student-text">Each time EXE adds a branch constraint it q=
+ueries STP to check that there exists at least one solution for the current=
+ path's constraints. What would go wrong if EXE did not use STP, and instea=
+d tried all branches? What would go wrong if EXE randomly selected a branch=
+ to check?
+
+If EXE tried all the branches, then EXE may run into a a lot of impossible =
+paths which would take a long time to check. If EXE randomly selected a bra=
+nch to check, then it may miss an error or take too long performance wise, =
+which allows an attack to slip through. By using STP, EXE reasons through e=
+very possible value a path can be run with to expose potential exploitable =
+inputs.=20
+
+</pre></li>
+
+<li><pre class=3D"student-text">Each time EXE adds a branch constraint it q=
+ueries STP to check that there exists at least one solution for the current=
+ path's constraints. What would go wrong if EXE did not use STP, and instea=
+d tried all branches? What would go wrong if EXE randomly selected a branch=
+ to check?
+
+If EXE tried to execute branches with no solution that satisfy current cont=
+raints, it be inefficient and have no way of generating inputs that exploit=
+ whatever bugs it might find on those branches.  If EXE randomly selected a=
+ branch to check, it would not be able to guarantee finding all possible bu=
+gs.
+</pre></li>
+
+<li><pre class=3D"student-text">Each time EXE adds a branch constraint it q=
+ueries STP to check that there exists at least one solution for the current=
+ path's constraints. What would go wrong if EXE did not use STP, and instea=
+d tried all branches? What would go wrong if EXE randomly selected a branch=
+ to check?
+
+If STP were not used, EXE would take a very long time resolving all the bra=
+nches. If a branch is selected at random, there's no gaurantee that bugs wo=
+uld be found, as STP reasons about
+all potential inputs to the system.
+</pre></li>
+
+<li><pre class=3D"student-text">Each time EXE adds a branch constraint it q=
+ueries STP to check that there exists at least one solution for the current=
+ path's constraints. What would go wrong if EXE did not use STP, and instea=
+d tried all branches? What would go wrong if EXE randomly selected a branch=
+ to check?
+
+if EXE did not use STP and instead tried all branches, it would waste a lot=
+ of time executing paths that could never occur in a real runtime situation=
+, thereby draining performance of the program. If the performance lags are =
+high enough it could make EXE a useless tool. If EXE randomly selected a br=
+anch to check, without trying all branches, it may miss certain executions =
+that could lead to bugs. </pre></li>
+
+<li><pre class=3D"student-text">Each time EXE adds a branch constraint it q=
+ueries STP to check that there exists at least one solution for the current=
+ path's constraints. What would go wrong if EXE did not use STP, and instea=
+d tried all branches? What would go wrong if EXE randomly selected a branch=
+ to check?
+
+----
+
+If EXE tried all branches, it would end up checking paths in the code that =
+are never possible. This is very inefficient and it might also make EXE rep=
+ort back irrelevant 'bugs' that would never be reached given the input cons=
+traints.
+
+If EXE randomly selected a branch to check, it could miss a potential bug o=
+n the branches that it didn't check.</pre></li>
+
+<li><pre class=3D"student-text">Each time EXE adds a branch constraint it q=
+ueries STP to check that there exists at least one solution for the current=
+ path's constraints. What would go wrong if EXE did not use STP, and instea=
+d tried all branches? What would go wrong if EXE randomly selected a branch=
+ to check?
+
+If it tried all branches, then there are cases where it is potentially wast=
+ing a lot of resources for impossible branches. Additionally, some inputs m=
+ight not make it to branches and if it didn't use STP it might falsely say =
+that the program breaks with an input that actually doesn't break it. If EX=
+E randomly selected branch rather than use DFS or BFS, it might not check a=
+ branch at all or spend all its resources on a subset of branches. </pre></=
+li>
+
+<li><pre class=3D"student-text">Each time EXE adds a branch constraint it q=
+ueries STP to check that there exists at least one solution for the current=
+ path's constraints. What would go wrong if EXE did not use STP, and instea=
+d tried all branches? What would go wrong if EXE randomly selected a branch=
+ to check?
+
+Withouht using STP EXE would generate a lot of false positives and it's exa=
+ctly what the creators tried to avoid. The randomness of the checks would l=
+ead to the lack of comprehensiveness and exhaustiveness of the tests of pos=
+sible scenarious. The authors referred to static &amp; fuzzy tests analysis=
+ tools having this disadvantage.  </pre></li>
+
+<li><pre class=3D"student-text">Finding a possible solution given the path =
+constraints is an NP-Hard problem (boolean satsifiability). We can do bette=
+r with a SMT solver -- according to the paper, modern SAT solvers are good =
+enough. If we randomly selected a branch to check, then we would not be com=
+pletely exploring the space of possible executions.
+</pre></li>
+
+<li><pre class=3D"student-text">Finding an existing branch is a 3-SAT probl=
+em, which is NP-complete. As stated in the paper, even a simple int compari=
+son can have billions of possible inputs. On the other hand, the solution s=
+pace to the 3-SAT problem is not always convex, meaning that a random branc=
+h choice can yield only a low probability of success. Although, some of the=
+ best 3-SAT solvers use randomization, but it's done in a very clever way.<=
+/pre></li>
+
+<li><pre class=3D"student-text">IF EXE did not use STP and instead tried al=
+l branches, the program might run into false positives when it goes down pa=
+ths that are not possible given the valid input space.
+</pre></li>
+
+<li><pre class=3D"student-text">If EXE checked all branches instead of usin=
+g STP, then it would blow up in the number of conditions that it would be c=
+hecking because there are possibly too many conditions to check. If EXE ran=
+domly selected a branch to check it might just end up missing the essential=
+ branches.</pre></li>
+
+<li><pre class=3D"student-text">If EXE continued to execute unreachable bra=
+nches, it would produce false positives (inputs that it believes produce bu=
+gs, but which would never produce bugs in actual code). If EXE randomly sel=
+ected a branch, it would also produce many more false negatives because it =
+would not have as-high code coverage.</pre></li>
+
+<li><pre class=3D"student-text">If EXE did not check STP, it might continue=
+ looking for a buggy input along a path that isn't actually reachable. Cons=
+ider, for example, code like:
+
+```
+if x &gt; 5:
+  if x &lt; 3:
+    # bug in this block
+```
+
+To get to the block with a bug, one has the constraints that `x &gt; 5` and=
+ `x &lt; 3`. However, these can't both be true (there doesn't exist at leas=
+t one solution to the constraints on the path to that code block), so EXE w=
+ill not be able to generate an input at the end that gets to this region of=
+ the code and should just stop searching this path immediately to focus eff=
+orts elsewhere. If EXE randomly selected branches to check, it might miss a=
+ branch that has a bug; even if you keep randomly selecting a branch, so th=
+at eventually you'll pick all of them, it will take longer than using a mor=
+e considered approach.</pre></li>
+
+<li><pre class=3D"student-text">If EXE did not check for a solution for a p=
+ath's constraints, it may find false positives, as it can take a path which=
+ is mathematically impossible ue to following two incompatible branches. So=
+, to cut down the search space of bugs, it prunes any paths which cannot be=
+ taken.</pre></li>
+
+<li><pre class=3D"student-text">If EXE did not check that there was at leas=
+t one solution for the current path's
+constraints, then it would run into considerable trouble dealing with
+loops. There is no input that makes for(int i=3D0; i&lt;5 &amp;&amp; i&lt;j=
+; i++) {...} run more
+than 5 times, yet the proposed variant would try to symbolically execute it=
+ an
+infinite number of times.
+
+If EXE tried random branches then it might waste a considerable amount of t=
+ime
+checking branches with non-sensible constraints because it doesn't yet know=
+ what
+constraints are enforced by the code paths leading up to them.
+</pre></li>
+
+<li><pre class=3D"student-text">If EXE did not use STP and instead tried al=
+l branches, EXE could incorrectly identify a bug (one or more of the branch=
+es can contain impossible inputs). If EXE randomly selected a branch to che=
+ck, it would miss possible values/test cases that could lead to a bug.
+</pre></li>
+
+<li><pre class=3D"student-text">If EXE did not use STP and instead tried al=
+l branches, it could continue down execution paths that would not be possib=
+le, since STP tells EXE which paths are still feasible (i.e. have at least =
+one solution to the branch constraints). If EXE chose a branch at random, i=
+t wouldn't comprehensively find bugs in symbolic input, instead only sampli=
+ng a subset of possible bad inputs.
+</pre></li>
+
+<li><pre class=3D"student-text">If EXE did not use STP and instead tried al=
+l branches, the run time would dramatically increase.  STP allows the progr=
+am to only consider branch when there are possible inputs that would lead t=
+o that branch.  If EXE randomly selected a branch to test (instead of keepi=
+ng track of all valid branches) it might miss possible bugs. </pre></li>
+
+<li><pre class=3D"student-text">If EXE did not use STP and instead tried al=
+l branches, then it is likely EXE would end up exploring paths, that, once =
+terminated and solved for concrete values, would yield no solution. When a =
+program reaches a symbolic branch point, EXE inserts code to fork execution=
+ in order to explore every possibility of the symbolic branch condition. De=
+pending on how many possibilities there are for the symbolic branch, this c=
+ould result in a significant number of forks -- which would increase the ru=
+ntime of EXE and could result in EXE going down a rabbit hole exploring a p=
+ath that is in fact unfeasible.=20
+
+If EXE randomly selected a branch to check (without checking the remaining =
+symbolic branch conditions), it would likely miss out on paths with dangero=
+us operations whose path constraints DO have at least one valid solution --=
+ this would undermine the success of EXE, since the tool would fail to repo=
+rt potential code path bugs and the concrete values triggering them. </pre>=
+</li>
+
+<li><pre class=3D"student-text">If EXE did not use STP and instead tried al=
+l branches, then there would be a
+large unnecessary performance hit with EXE (assuming the branch can even fi=
+nish
+executing). If EXE picked a random branch, it could miss bugs in potential
+branches with solutions.
+</pre></li>
+
+<li><pre class=3D"student-text">If EXE did not use STP and instead tried al=
+l the branches, EXE may run extremely slowly, by not using the optimization=
+s and thought
+put into making STP performant. If EXE randomly selected a branch to check,=
+ then EXE may wander down a branch that can never be
+satisfied, or not wander down a branch that would result in a bug (that STP=
+ would find).</pre></li>
+
+<li><pre class=3D"student-text">If EXE did not use STP and tried all branch=
+es it may find bugs that actually do not exist due to conflicting ifs. It w=
+ould also complain about redundant checks. For example if I had:
+if ( x &gt; 2) {
+	if (x &gt; 1) {
+
+}
+EXE is now considering irrelevant branches. If EXE randomly selected branch=
+es that would also not be great because the test cases would not be exhaust=
+ive. Especially for complex code which branches often, random testing would=
+ not expose like single case failures which are actually critical to find a=
+nd something random testing often doesnt find.
+</pre></li>
+
+<li><pre class=3D"student-text">If EXE did not use STP and tried all branch=
+es it might waste time by exploring branches that have no possibility of co=
+ntaining a solution. It might also end up on an infinite loop because it wo=
+uld always keep taking a branch that continues a loop.
+
+If EXE randomly selected a branch to check, it would lose a lot of value be=
+cause it would risk missing the effect of many possible inputs each time it=
+ ran. This would effectively have the same utility as a fuzzer (which gener=
+ates random input states but only tests a small sample of the entire input =
+space).
+</pre></li>
+
+<li><pre class=3D"student-text">If EXE did not use STP and tried all branch=
+es, it could end up trying a number of branches that can never be hit by an=
+y input. While an eventual constraint check would prove that this particula=
+r path couldn't be reached, the constraint could have grown really large at=
+ that point.
+
+If it randomly selected a branch to check, its possible that it may miss so=
+me buggy branches or miss parts of a path, which would imply that the code =
+was not entirely verified.
+</pre></li>
+
+<li><pre class=3D"student-text">If EXE did not use STP and tried all branch=
+es, then checking each branch would take too much time. If EXE randomly sel=
+ected a branch to check, then it would not necessarily find all possible bu=
+gs.</pre></li>
+
+<li><pre class=3D"student-text">If EXE did not use STP and tried all of the=
+ branches, it could grow the execution tree to be very large. Additionally,=
+ if EXE only checked path constraints at the end of the branches, it could =
+miss bugs within the path. If EXE randomly selected a branch to check, it c=
+ould skip bugs on other paths and would not be very thorough.</pre></li>
+
+<li><pre class=3D"student-text">If EXE did not use STP and tries all branch=
+es, it will take too much time to check all possible branches. If EXE rando=
+mly selected a branch to check, the chance of that branch generating a bug =
+is very low, defeating the purpose of EXE.</pre></li>
+
+<li><pre class=3D"student-text">If EXE did not use STP to check if a branch=
+ is actually reachable then EXE could potentially go down a branch that wou=
+ld never actually be reached and discover a bug in that code (even though t=
+he code is effectively dead code), and if it returned this bug it would act=
+ually be returning a false positive. Similarily, if EXE randomly selected a=
+ branch it could end up in a region of code that could never actually be re=
+ached by the program and return a false positive.
+</pre></li>
+
+<li><pre class=3D"student-text">If EXE did not use STP to check that there =
+exists at least one solution for the current path's constraints, and instea=
+d just executed the branch anyway, it could become very ineffiecient. With =
+a highly branched program it may need to spawn exponentially many processes=
+. It would also have to keep track of a long list of constraints, and may a=
+rrive at a satisfiability problem at the end of a path that is expensive to=
+ check.
+
+On the other hand, if EXE randomly checked branches, then it could miss bug=
+s.
+</pre></li>
+
+<li><pre class=3D"student-text">If EXE did not use STP to solve branch cons=
+traints and instead just tried every branch for a given input, if the input=
+ caused an error in some branch, then EXE would not know if it was possible=
+ for that branch to be executed with that input. This would result in a lot=
+ of false-positives reported to the programmer.=20
+
+If EXE randomly selected the branches to be executed, this would lead to th=
+e problem described above as well as risk EXE missing a valid branch (one t=
+hat is possible to run on the given input) on which the input caused an err=
+or.</pre></li>
+
+<li><pre class=3D"student-text">If EXE did not use STP, and instead tried a=
+ll branches,=20
+then the it would be extremely slow and it didn't scale
+up very well. And the time complexity is probably exponential.
+If EXE just chose one path randomly, the search would not
+be exhaustive. And the cases that might cause problems would
+not be detected. </pre></li>
+
+<li><pre class=3D"student-text">If EXE did not use STP, and instead tried a=
+ll branches, it might end up
+taking a very long time to finish. If EXE randomly selected a branch to che=
+ck,
+it might end up exploring the path that isn't "interesting" so might end
+up wasting time and having to backtrack a lot.
+</pre></li>
+
+<li><pre class=3D"student-text">If EXE did not use STP, and instead tried a=
+ll branches, it would be very easy to find bugs that were never reachable, =
+which would lead to false positives being produced.
+
+If EXE randomly selected a branch to check, a similar problem would occur w=
+hich could lead to both bugs that might never be reachable, as well as a lo=
+w confidence in whether EXE selected all possible paths that actually could=
+ generate a bug.</pre></li>
+
+<li><pre class=3D"student-text">If EXE did not use STP, and instead tried a=
+ll branches, it would lead to a significant decrease
+in performance because it would waste time diving down branches whose const=
+raints were impossibe
+to satisfy. If EXE randomly selected a branch to check, it would miss many =
+bugs that could occur
+in the branches that it skipped.</pre></li>
+
+<li><pre class=3D"student-text">If EXE did not use STP, and instead tried a=
+ll branches, then we would analyze every banch even if the execution path r=
+esulted by the banch is not possible. Clearly, it introduces exponential gr=
+owth of time overhead as number of branches increase.
+On the other hand, if we only randomly choose a branch, then we will miss l=
+ots of possible execution paths that would be allowed for certain inputs th=
+at won't be analyzed against possible failures.
+</pre></li>
+
+<li><pre class=3D"student-text">If EXE did not use STP, and instead tried a=
+ll the branches, it could get stuck in while loops, even if during proper e=
+xecution of the code the while loop terminates. In general, if it tried all=
+ the branches it would execute branches that are impossible to get to.
+
+If EXE randomly selected a branch to check, then it would miss certain bugs=
+. The whole benefit of EXE is that it is able to systematically go through =
+all possible values for symbolic variables, unlike other forms of testing w=
+hich are more random.</pre></li>
+
+<li><pre class=3D"student-text">If EXE did not use STP, and tried all of th=
+e branches instead, testing would take a lot longer.  It could also result =
+in false positives if after finding a "bug" in an unreachable branch, it di=
+dn't check what inputs could actually get it there.  If EXE randomly select=
+ed a branch to check, it could miss out on bugs for branches that contain b=
+ugs since these branches aren't checked.
+</pre></li>
+
+<li><pre class=3D"student-text">If EXE did not use STP, it could end up wit=
+h infinitely many paths by mistake.
+For example, if processing a while loop. This could lead to EXE never findi=
+ng
+any bugs because it is busy trying impossible paths or self-loops. If EXE
+randomly selected a path, that would entirely defeat the purpose of finding
+all possible bugs, and be little better than randomly generating the input.=
+</pre></li>
+
+<li><pre class=3D"student-text">If EXE did not use STP, it would add the co=
+nstraint even if there was no
+solution for it.  That would add many unnecessary branches that are impossi=
+ble
+to solve, slowing down program execution. If EXE just randomly selected one
+branch, it could choose one of these unsolveable branches as described abov=
+e.
+It could also miss other viable (possibly vulnerable) branches to check, or
+choose a branch that STP cannot solve in a reasonable amount of time and ju=
+st
+exits.
+</pre></li>
+
+<li><pre class=3D"student-text">If EXE did try all branches, without checki=
+ng that at least one solution exists, it may create many more branches lead=
+ing to more computation time.=20
+But more importantly, it could lead to false positives (that would then hav=
+e to be checked by EXE).
+
+If EXE randomly selected a branch to check, it would not achieve as high co=
+de coverage, which leads to false negatives.
+</pre></li>
+
+<li><pre class=3D"student-text">If EXE didn't use STP and instead tried all=
+ branches, then there would be an exponential blow-up in the number of path=
+s tried, even if the majority of those paths weren't relevant/not possible =
+to be executed.=20
+If EXE randomly selected a branch to check, then its guarentee of executing=
+ all potential paths in the code would not be true. The main boon of EXE is=
+ that it's not a randomized code checker--it systematically is able to chec=
+k all of the possible execution paths.
+</pre></li>
+
+<li><pre class=3D"student-text">If EXE didn't use STP and tried all branche=
+s, we wolud be wasting time because we'd be checking branches that would ne=
+ver actually get executed (since STP usually filters out any branches that =
+are unreachable by the input). If EXE just tried to use a random branch, th=
+en we'd have issues because we'd miss potential errors and bugs on the bran=
+ches we didn't elect to check.
+</pre></li>
+
+<li><pre class=3D"student-text">If EXE didn't use STP to check, it would ge=
+nerate false positives for errors in branch paths where the branch is unrea=
+chable. If EXE did not use STP, it would not have a clear set of constraint=
+s for variable values. Checking a random branch without context would be im=
+possible - you would need to know the ranges of variable values.=20
+</pre></li>
+
+<li><pre class=3D"student-text">If EXE didn't use STP, EXE could not solve =
+for concrete symbolic values that lead to crashes or benign execution. If E=
+XE randomly selected a branch to check, it would not provide the degree of =
+exhaustive coverage EXE provides.</pre></li>
+
+<li><pre class=3D"student-text">If EXE didn't use STP, it could potentially=
+ go down impossible branches instead of stopping the execution, which could=
+ lead to a lot of wasted time. If instead EXE randomly selected a branch to=
+ check rather than all possible branches, it could again go down an impossi=
+ble branch or miss a possible branch.</pre></li>
+
+<li><pre class=3D"student-text">If EXE didn't use STP, it would be trying b=
+ranches that could not be reached by the code. This could give false positi=
+ves. STP constrains the input and also solves for what the input was when a=
+ bug is reached. If EXE randomly chose branches to check instead of doing i=
+t systematically, it could miss a branch that contains a bug.
+</pre></li>
+
+<li><pre class=3D"student-text">If EXE doesn't use STP and instead tried al=
+l branches, it would take longer and might go down branches that should nev=
+er be reached (making it find bugs that aren=E2=80=99t actually there). If =
+it randomly selected a branch to check, it might not find anything or miss =
+a bug.</pre></li>
+
+<li><pre class=3D"student-text">If EXE explored all branches without using =
+STP, it could report that there is a security problem when one does not act=
+ually exist, since there were no possible solutions to that branch path and=
+ thus it would never be reached. If a branch was randomly selected to check=
+, it's possible that security issues would be missed on the branches that w=
+ere not checked.</pre></li>
+
+<li><pre class=3D"student-text">If EXE had to try all branches, it would be=
+ far too slow to be useful.  If EXE randomly selected, it may miss many dan=
+gerous inputs.
+</pre></li>
+
+<li><pre class=3D"student-text">If EXE just try all branches, EXE will take=
+ a long time and that cause lower performance than using STP.
+
+EXE will not be able to detect all the possible inputs that crashes the pro=
+gram if it only randomly select one branch to check. It will miss some bugs=
+ in the branches it didn=E2=80=99t check.</pre></li>
+
+<li><pre class=3D"student-text">If EXE randomly chose a branch it could eas=
+ily miss a bug in the code, since each branch point decreases the probabili=
+ty that a bug is found by half. If STP is not used it will be impossible to=
+ constrain the possibilities of a variable after a variable, which can lead=
+ to false positives. There are also a ton of branches, and each increases t=
+he number of paths EXE has to evalute. STP helps reduce both false positive=
+s and false negatives.</pre></li>
+
+<li><pre class=3D"student-text">If EXE tried all branches instead of using =
+STP, it could find a false positive since not all branches may be reachable=
+ from an input. If EXE randomly selected a branch to check, it could still =
+find false positives, and it's also less plausible that we've exhaustively =
+searched all bad executions.
+</pre></li>
+
+<li><pre class=3D"student-text">If EXE tried all branches instead of using =
+STP, it would spend the majority of its time interacting with unreachable s=
+tates. Trying all branches would make the search space intractably large, a=
+nd randomly selecting branches would leave many execution paths unstudied.<=
+/pre></li>
+
+<li><pre class=3D"student-text">If EXE tried all branches then it would run=
+ very slowly because the number of paths would increase exponentially. This=
+ would be a huge performance bottleneck and could prevent EXE from finding =
+bugs quickly. Also, if ECE does not query STP to check if there exists at l=
+east one solution for the current path=E2=80=99s constraints, then EXE coul=
+d go down a path that is impossible and is a waste of time. Therefore, chec=
+king all possible paths or checking random paths could cause EXE to return =
+bugs that cannot actually happen in real execution. </pre></li>
+
+<li><pre class=3D"student-text">If EXE tried all branches without using STP=
+ to check the branches' constraints first, then EXE would likely run signif=
+icantly slower. Indeed, if EXE does not use STP in this scenario, then it c=
+ould check down a branch that never actually gets executed (according to th=
+e path constraints), and make many redundant calls to STP to check for erro=
+rs along the way. Each of these calls will determine that there is no input=
+ that can cause an error, since the path constraints are unsatisfiable, cau=
+sing EXE to run slower (as compared to the actual version).
+
+Similarly, if EXE randomly chose branches to check, then it could miss prun=
+ing an expensive branch that would never be executed (like the one above), =
+and run slower.</pre></li>
+
+<li><pre class=3D"student-text">If EXE tried all branches without using STP=
+, it might come up with constraints for some paths that are impossible to r=
+each, giving false positives or test cases that do not make sense. It would=
+ also be a waste of time to check paths that cannot be reached.
+
+
+If EXE randomly selected a branch to check, it might overlook constraints t=
+hat would cause errors for some paths. This goes against one of EXE=E2=80=
+=99s goals which is to give no false negatives.</pre></li>
+
+<li><pre class=3D"student-text">If EXE tried all branches, it might incorre=
+ctly report a bug when there isn't one, since the "bug" would be the result=
+ of following a branch that would never happen in real-life use. Also, EXE =
+would take much longer to complete its job.
+
+If EXE randomly selected branches to take, it might miss branches that cont=
+ain bugs, so it would fail to report bugs. This would make it lose the adva=
+ntage of symbolic execution vs. just random unit testing with random inputs=
+.</pre></li>
+
+<li><pre class=3D"student-text">If EXE tried all branches, it would take a =
+really long time since the search space grows exponentially. If EXE randoml=
+y selected a branch to check, it would likely not find bugs because most in=
+puts probably work fine and only select edge cases don't.
+</pre></li>
+
+<li><pre class=3D"student-text">If EXE tried all branches, it would take a =
+very long time to finish, because even a simple assignment such as a[i] =3D=
+ 1, where 0&lt;=3Di&lt;=3D40 would generate 40 branches.
+If EXE randomnly selected a branch to check, it could miss execution paths =
+that lead to errors.</pre></li>
+
+<li><pre class=3D"student-text">If EXE tried all branches, the program coul=
+d possibly have a very large number of branches making traversal of all suc=
+h branches infeasible. A randomly selected branch may skip prior constraint=
+s and lead to a situation were many branches may be traversed or insufficie=
+nt evidence is present to form a test case.=20
+</pre></li>
+
+<li><pre class=3D"student-text">If EXE tried all branches, then it would ev=
+entually converge to the same solution, however it would take much longer s=
+ince STP acts as an optimization in this case. STP simply early terminates =
+EXE for unexecutable paths. Another possibility is that EXE would simply de=
+tect codepaths that lead to errors, but be unable to tell what inputs lead =
+to the situation.
+If EXE randomly selected branches to check it would need to reconstruct exe=
+cution paths that lead to errors, which is a much more difficult problem th=
+an traversing execution paths until it is determined whether some set of in=
+puts could lead to error on the path.</pre></li>
+
+<li><pre class=3D"student-text">If EXE tried all branches, there would be a=
+ lot of branches that are not possible to actually take because no assignme=
+nt would satisfy the constraints needed to reach that branch. Performance w=
+ould be very negatively impacted. Likewise, if EXE randomly selected a bran=
+ch it might not be one that can be reached with an actual assignment of val=
+ues. </pre></li>
+
+<li><pre class=3D"student-text">If EXE tried every path, it may introduce f=
+alse positives as it traverses paths which would be impossible in current e=
+xecution, this could also lead to issues as it would be
+impossible to derive an input to trigger the bug. It may also introduce non=
+-terminating paths in the case of loop conditions. Choosing randomly also h=
+as the issue of traversing
+impossible paths, on top of possibly missing valid paths if they are not ch=
+osen, making it difficult or impossible to achieve full coverage.</pre></li=
+>
+
+<li><pre class=3D"student-text">If EXE tries all branches, there are some c=
+ases where a valid code ends up as an infinite loop.=20
+	eg.=20
+		make symbolic(&amp;x);
+		for (;;) {
+			if (!--x)=20
+				break;
+			else
+				continue;
+		}
+There will always be a process go to the `continue` branch and keep the loo=
+p run.=20
+It may also trigger some conditional branches which no data can actually tr=
+igger.=20
+
+If EXE randomly select a branch to check, it can not cover all the possibil=
+ities.=20
+</pre></li>
+
+<li><pre class=3D"student-text">If EXE were to not use STP and instead reli=
+ed on checking all branches, it would be a significant hit to the performan=
+ce, which is what allows the accuracy of EXE to be more useful than normal =
+constraint solvers. Similarly, if EXE randomly selected one branch, then it=
+ could lose the accuracy that was aimed for when it was created. </pre></li=
+>
+
+<li><pre class=3D"student-text">If all path were taken, the efficiency of E=
+XE would suffer since the number of branches is exponential in the number o=
+f if statements.
+If EXE selected a random path to go down, it wouldn't get systematic covera=
+ge and would miss a lot of bugs.
+
+</pre></li>
+
+<li><pre class=3D"student-text">If exe didn't check that there existed at l=
+east one solution for the current path's constraints, it could generate a l=
+ot of false positives, like discovering errors in parts of code that should=
+n't be reached in that way. Also, assert statements that are never satisfie=
+d would be treated as acting correctly. When the system checks that there a=
+re solutions, it is able to detect when it is impossible to satisfy an asse=
+rt statement.
+
+If EXE randomly selected a branch to check instead of using the heuristics,=
+ it could get stuck in a very long loop and increase the time it takes to e=
+xplore "interesting" parts of the code. The system it currently uses is int=
+ented to cover as many blocks of code as possible while being efficient and=
+ not getting stuck in troublesome loops that are less likely to lead to bug=
+s.=20
+</pre></li>
+
+<li><pre class=3D"student-text">If it didn't use STP and tried all branches=
+, it would end up checking way too many branches, and it would be the same =
+as trying to exhaust the input space. If EXE randomly selected a branch to =
+check, it would not be able to find bugs reliably, and it would behave the =
+same way as selecting random inputs to the program and seeing if it breaks.=
+</pre></li>
+
+<li><pre class=3D"student-text">If it tried all braches, the verification w=
+ould be way too slow. If it only tried 1 it would be inaccurate, becuase th=
+e one path might not be valid even if others are.</pre></li>
+
+<li><pre class=3D"student-text">If it tried all branches, we would over-exp=
+lore the tree, and execution would take way too long. If we randomly select=
+ed branches, we would most likely miss the edge cases that we want to hit a=
+nyways. The beauty of STP is its ability to systematically explore the exec=
+ution tree as shown in Figure 3.
+</pre></li>
+
+<li><pre class=3D"student-text">If it tries all branches it might go down a=
+ branch which has no possible solutions given the path constraints, thus wa=
+sting time and running for no reason. I'm assuming when you say "does not u=
+se STP" you mean that it simply tries running down each path with every pos=
+sible input because it would be unable to solve the constraints to find a c=
+oncrete test case. Instead it must just look for exit cases with every poss=
+ible input and track when things crash or errors are detected. This would t=
+ake an unreasonable amount of time to try every possible input.
+
+If it tried randomly selecting a branch to check it would possibly miss fai=
+lure cases. I am assuming that in this case you mean that it still does use=
+ STP but instead of using DFS + search heuristics and checking every reason=
+able branch that has a solution that instead each time it branches it rando=
+mly picks one of the two to follow and ignores the other one entirely. It w=
+ill miss failure cases on the skipped branches and it may randomly choose t=
+o follow a path which has no possible solution, which is pointless to follo=
+w because that means that no possible inputs could trigger it.</pre></li>
+
+<li><pre class=3D"student-text">If it weren't to use STP, it would try all =
+possible inputs, and the could potentially run for an extremely long time. =
+On the other, hand, if it randomly choses branches, it is possible that som=
+e paths remain unexplored and some bug is ignored.
+</pre></li>
+
+<li><pre class=3D"student-text">If the EXE did not use STP and instead trie=
+d all branches, this could mean that the program would create branches and =
+paths that would never actually be possible to hit.  In doing this, it woul=
+d greatly expand the number of branches and render it impossible to actuall=
+y complete all of it in a timely manner.  Further, if there was never a tes=
+t to check if the constraints were actually possible to meet, some items mi=
+ght be reported as errors or bugs that might never occur.
+If the EXE randomly selected a branch to check, it might not check a branch=
+ where an error occurs, or further, it might check a branch where the const=
+raints were never actually satifisable by any input--therefore never reache=
+d.  Not checking constraints and/or randomly selecting a branch to check mi=
+ght lead to branches being checked that are not needed or never checking a =
+branch that is possible that might actually have bugs.</pre></li>
+
+<li><pre class=3D"student-text">Jun Wan 991032935
+
+If we try all branches, the program would become very slow since there are =
+exponential many branches. Moreover, without STP to select the right branch=
+es, our speed of finding bugs would reduce dramatically.=20
+
+Similarly, if we select a random branch, the program will miss most of the =
+bugs. Even if it does something like depth-first search, the program is sti=
+ll way less efficient than using STP.</pre></li>
+
+<li><pre class=3D"student-text">Lecture 12
+
+Each time EXE adds a branch constraint it queries STP to check that there e=
+xists at least one solution for the current path's constraints. What would =
+go wrong if EXE did not use STP, and instead tried all branches? What would=
+ go wrong if EXE randomly selected a branch to check?
+
+If it tried all the branches, it could lead to expansion blowup which might=
+ require a lot of computation power.=20
+If it randomly selected a branch, it can number of paths can still blowup b=
+ut the blowup will be lower in this case.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 12 (Answer to Paper Question)
+
+Question:
+
+Each time EXE adds a branch constraint it queries STP to check that there e=
+xists at least one solution for the current path's constraints. What would =
+go wrong if EXE did not use STP, and instead tried all branches? What would=
+ go wrong if EXE randomly selected a branch to check?
+
+
+If EXE did not query STP to check that there exists at least one solution f=
+or the current path's contraints, EXE would take longer to analyze programs=
+, since it would waste time executing paths that are impossible to reach.
+
+If EXE randomly selected a branch to check, it might miss bugs on other bra=
+nches.
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 12: EXE Reading Question
+
+If EXE tried all branches, it could greatly increase runtime for the EXE co=
+de if it were
+testing a very lengthy code base and checked branches that weren't possible=
+. EXE might
+also point to a "bug" that doesn't actually exist because it's not actually=
+ possible to
+reach that code unless conditions are met beforehand that prevent the "bug"=
+, meaning it
+is be a false positive.
+
+If EXE randomly selected a branch to check, it could miss a branch that con=
+tains a bug
+and would leave the tester thinking that their program has no bugs when in =
+fact it does.
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 12: Symbolic Execution
+3/19/18
+
+Each time EXE adds a branch constraint it queries STP to check that there e=
+xists at least one solution for the current path's constraints. What would =
+go wrong if EXE did not use STP, and instead tried all branches? What would=
+ go wrong if EXE randomly selected a branch to check?
+
+If EXE tried all branches then at the very least, performance would suffer,=
+ or quite simply it would be impossible for the program to finish running a=
+s there are so many paths to check. Not only would EXE not try to select th=
+e best paths to explore, EXE would explore paths that should have been term=
+inated, which means that the path being explored is simply not possible or =
+already triggered a bug in the program or EXE itself.
+
+If EXE randomly selected a branch, EXE would miss many potential bugs. </pr=
+e></li>
+
+<li><pre class=3D"student-text">Many branches are actually not possible, as=
+ prior forking conditions will constrain the possible space of inputs.  Wit=
+hout STP EXE would report far too many bugs because of this, and in complex=
+ programs real bugs would be a needle in a haystack.  In complex programs i=
+t might also be the case that without STP the branching factor would be too=
+ high, and EXE would take a very very long time to run.
+</pre></li>
+
+<li><pre class=3D"student-text">Queries STP to see if there exists at least=
+ one solution for current path's constraints. If not, path impossible and E=
+XE stops executing it. If it doesn't check that means it explores the paths=
+ even when there is no solution, so it might generate errors and test cases=
+ that are not actually true or necessary to be detected.
+If it selected a random branch to check, we might not be generating all the=
+ possible attacks along one branch. We wouldn't be doing an in-depth analys=
+is of one branch but rather jumping around and as a result might not detect=
+ all the errors possible. Path wouldn't be verified safe under all possible=
+ input values.
+</pre></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 12
+
+Each time EXE adds a branch constraint it queries STP to check that there e=
+xists at least one solution for the current path's constraints. What would =
+go wrong if EXE did not use STP, and instead tried all branches? What would=
+ go wrong if EXE randomly selected a branch to check?
+
+EXE runs with symbolic inputs representing the constrained input space. STP=
+ takes these constrained symbolic links and generates specific input which =
+will cause bugs within the input space. Without the use of STP and these sy=
+mbolic links, EXE could not map all possible inputs and memory management o=
+f all these inputs and their derived operations. If  instead inputs were ch=
+osen at random, they would not map all possible input space (fuzzers).</pre=
+></li>
+
+<li><pre class=3D"student-text">STP is a constraint solver so it can more e=
+fficiently try to find if the constraint can be solved by some input using =
+an SAT solver, it provides the speed needed to make perfect accuracy useful=
+. Otherwise, EXE would have to try a single set of concrete values from an =
+individual test case for each branch. If it randomly selected a branch to c=
+heck, there is no guarantee that this is the branch that is going to succee=
+d or fail, and EXE should still check other attacks on other branches to co=
+me up with (and recreate) all possible attacks that could cause the code to=
+ fail.</pre></li>
+
+<li><pre class=3D"student-text">STP is a method for determining satisfiabil=
+ity using bitvector operations. If EXE tried all branches, it might perform=
+ checks on branches that are valid.  If EXE randomly selected a branch, it =
+might not be valid or it might not find the correct branch in which a probl=
+em lies.=20
+</pre></li>
+
+<li><pre class=3D"student-text">STP is able to produce concrete solutions t=
+o the given constraints and it has been intensely customized to the problem=
+ at hand so it runs much more efficiently than other constraint solvers. (T=
+he paper mentions it can be 100 times faster) If we select paths randomly, =
+we may have a nondetermistic set of responses rather than a deterministic p=
+ath.
+</pre></li>
+
+<li><pre class=3D"student-text">STP keeps track of which paths are viable f=
+or execution. If EXE did not use STP it could possibly run forever, or it m=
+ay find bugs in the code that aren't possible through normal execution. If =
+EXE randomly selected branches to check it may miss errors that occur with =
+specific inputs. It would determine certain branches are error-free when th=
+ere may be errors. Further running the code multiple times will results in =
+different set of errors, which could lead EXE to exit early and not fully v=
+et the code path.</pre></li>
+
+<li><pre class=3D"student-text">Suppose that EXE did not use STP. EXE may t=
+hen report a bug via a branch which is too constrained to have any solution=
+. The fact that this branch is over-constrained may translate to some seman=
+tic check or constraint written by the original writer of the code to defen=
+d against the bug; thus EXE would be reporting a false positive.
+
+If EXE randomly selected a branch to check, it could miss bugs in branches =
+it has not checked (if I'm understanding this correctly?) - in the worst-ca=
+se scenarios, attackers adversarially choose inputs. </pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that EXE cannot try all =
+branches, even for small programs,
+because there are exponentially many of them (as a function of the number o=
+f
+'if' statements the program has). Trying to run on all branches would resul=
+t in
+a program that was horrendously slow at best, and one that never terminated=
+ at
+worst.
+
+If EXE randomly selected a branch to check, we may pick a branch that was t=
+oo
+complex for STP to solve-- meaning that EXE wouldn't be able to analyze tha=
+t
+part of the program. A solution that randomly picked branches until we foun=
+d
+one that STP could solve would just lead to a less-efficient and less-effec=
+tive
+EXE.
+</pre></li>
+
+<li><pre class=3D"student-text">The tool would be effectively useless given=
+ the number of false positives that would be reported with this change.
+
+If branches were taken without first consulting STP to determine whether it=
+'s possible to reach the branch, then (a) the runtime would skyrocket, and =
+(b) there would be an overflow of false positives--that is, EXE-reported bu=
+gs that are not actually possible given concrete inputs to the checked prog=
+ram.
+</pre></li>
+
+<li><pre class=3D"student-text">Trying all branches unnecessarily would lea=
+d to exponential performance. Randomly selecting a branch to check means th=
+at it may not check the problematic branch.=20
+</pre></li>
+
+<li><pre class=3D"student-text">We note that the main goal is for EXE to ge=
+t to a bug/throw an error etc.=20
+If EXE didn't check with STP every single time it forked from a new constra=
+int, once it did branch enough to the point
+of finding a bug, the resulting problem to be solved (the set of constraint=
+s imposed on all the variables/symbols) would
+be considerably large (and we know that solving a satisfiability problem is=
+ hard and want to avoid adding to N the most we can).=20
+We constrast this with the strategy used in EXE, in which a branching would=
+ occur if and only if the existing set of constraints + the
+new constraint are satisfiable; since the left handside is solved, the prob=
+lem is much reduced, since the satisfiability tree=20
+has multiple branches cut. Now, if it were the case that EXE would branch j=
+ust randomly, we could easily miss bugs or errors. We must=20
+point out that most of those bugs are a result of a very specific set of co=
+nstraints/combinations of inputs and randomizing branching
+would easily miss such combinations.=20
+</pre></li>
+
+<li><pre class=3D"student-text">When EXE uses STP and finds out there there=
+ is not at least one solution for the current path=E2=80=99s constraints, t=
+his means that the path is impossible. Thus, EXE will stop executing it. So=
+, if EXE did not use STP and instead tried all branches, it would pointless=
+ly check for impossible paths (it would not longer terminate earlier on in =
+that case mentioned above), which would add more overhead and waste time.
+
+If EXE randomly selected a branch to check, this may result in EXE stopping=
+ when it shouldn=E2=80=99t (in the case where this chosen branch renders th=
+e path impossible, but there still exists at least one solution in STP for =
+the current path=E2=80=99s constraints =E2=80=94 it just wasn=E2=80=99t che=
+cked).</pre></li>
+
+<li><pre class=3D"student-text">Why exactly does the problem with doulbe po=
+inter dereferencing happen and what
+could they change to fix it?=20
+</pre></li>
+
+<li><pre class=3D"student-text">With no STP, EXE might generate a lot of er=
+rors that are false positives.
+It's possible some "hidden" invariant prevents some errors from occurring.
+
+If EXE randomly selected a branch, I expect it may take a very long time
+to find bugs.</pre></li>
+
+<li><pre class=3D"student-text">Without using STP, EXE would not know if th=
+e branch was currently invalid or not, and would continue branching into un=
+reachable states. Also, STP is what is used to find the input values for a =
+test case that would replicate going down an invalid path, which is one of =
+the most useful parts of EXE. Trying all branches would also take way too l=
+ong, and randomly selecting branches would either take way to long or not b=
+e exhaustive.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Zach Miller
+Lecture 12
+
+If EXE tried to run all branches in the code then three bad things might ha=
+ppen. First of all this could end up taking a huge amount of time. Second, =
+trying all branches doesn't give the same gaurantee as using STP; namley, s=
+imply trying every branch would not gaurantee that a bug is found if there =
+exists at least one way for it to happen given the current variables. Third=
+, since the program may grash on a particular value, and there may be many =
+variables, EXE would require additional computation to figure out with vari=
+able caused the crash.
+
+If EXE randomly picked a branch to search, plain and simple, there would be=
+ a lot of missed branches which could contain bugs.=20
+</pre></li>
+
+<li><pre class=3D"student-text">lec12
+
+If EXE did not use STP, EXE would have to try all branches,
+and would then spend an exponentially increasing amount of
+time testing for paths to which there is no solution.
+If EXE randomly chose a branch to check, EXE could miss=20
+branches that contain bugs.</pre></li>
+
+<li><pre class=3D"student-text">lec12
+
+If EXE did not use STP, but instead tried all branches it would really take=
+ forever, especially=20
+when dealing with large arrays.=20
+
+if EXE randomly selected branches, it could be missing the branches with th=
+e bugs to check.=20
+</pre></li>
+
+<li><pre class=3D"student-text">lec12.txt
+
+John C. McLaughlin
+March 19th 2018
+
+Question: Each time EXE adds a branch constraint it queries STP to check th=
+at there exists at least one solution for the current path's constraints. W=
+hat would go wrong if EXE did not use STP, and instead tried all branches? =
+What would go wrong if EXE randomly selected a branch to check?
+
+
+If EXE did not use STP to verify that there was a solution to the current p=
+ath's constraints then it could waste cycles exploring paths that are unrea=
+chable with the current path's symbolic constraints. If EXE tried all branc=
+hes, then there would be wasted cycles and there wouldn't be a gurantee tha=
+t for any bug that EXE encountered that there would be a concrete input tha=
+t mapped to each path.
+
+If EXE applied a random branch selection instead of what they describe (bes=
+t first search), then they would end up with a far less efficient explorati=
+on algorithm. In their testing they found best first search for the branch =
+decision lead to 90% code coverage in a fraction of the test cases needed b=
+y random selection to hit even 50% code coverage.
+</pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--yheLnTYP6E8vvjHRUQLCJAuKwcd0l4kdDRCAZDroa9------

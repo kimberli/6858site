@@ -1,0 +1,1154 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-answers/21
+Subject: Answers for lecture 21 - 6.858
+Date: Tue, 21 May 2018 01:45:41 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--nrwunrgTzTid6PNrz4QJt7ETFU7cBLOB6ebK2qMuvJ----"
+
+
+------MultipartBoundary--nrwunrgTzTid6PNrz4QJt7ETFU7cBLOB6ebK2qMuvJ----
+Content-Type: text/html
+Content-ID: <frame-1194-075e4190-1923-424a-b7d3-313dbf65de68@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-answers/21
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Answers for lecture 21 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Answers for lecture 21 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text"></pre></li>
+
+<li><pre class=3D"student-text">
+Lecture 21
+
+Describe what specific problem might arise if Bitcoin created new blocks mu=
+ch faster than its current design does---say, every 30 seconds.
+
+
+I think that bitcoin would become devalued, since the mining would be so mu=
+ch easier.</pre></li>
+
+<li><pre class=3D"student-text">If new blocks are created very often, then =
+it's more likely for two blocks to be created at the same time, which would=
+ create lots of temporary forks. Consensus would be an issue :/=20
+</pre></li>
+
+<li><pre class=3D"student-text">Too many transactions would be processed an=
+d the number of bitcoin would grow, reaching its limit much faster.</pre></=
+li>
+
+<li><pre class=3D"student-text"># Lecture 21: Bitcoin
+------------------------
+
+Describe what specific problem might arise if Bitcoin created new blocks
+much faster than its current design does---say, every 30 seconds.
+
+------------------------
+
+Currently, the proof-of-work mechanism is needed to give a global ordering =
+to
+newly mined blocks, and the computational overhead allows the time between =
+mined
+blocks to be controlled.
+
+This large computational/time overhead prohibits double-spending attacks.
+Lowering the time it takes to mine blocks will cause there to be more forks=
+ in
+the chain, as any latency between the discovery of a block and its receipt
+by all other nodes increases the possibility of a temporary fork.
+Additionally, if users could mine more quickly, it increases the chances th=
+at a party which
+controls a significant portion of the network could un-wrap previous layers=
+ of
+the blockchain to change past transactions and still have time to mine the =
+next
+block, thus forging transactions.
+
+This is why the original Bitcoin paper specified a 10 minute timeout on blo=
+ck
+mining.
+</pre></li>
+
+<li><pre class=3D"student-text">1) there might be race conditions where mul=
+tiple forks can lead to issues.=20
+2) I'm not sure if there is enough computational power for so many blocks=
+=20
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">5/5/18
+
+Lecture 21
+
+Question:
+
+Describe what specific problem might arise if Bitcoin created new blocks mu=
+ch faster than its current design does---say, every 30 seconds.
+
+Answer:
+
+If this were to occur, then a miner who controls a substantial part of the =
+network may abuse network latency in order to only
+broadcast his/her forks on the blockchain. This would allow that miner to i=
+ncrease their likelihood of receiving the bitcoin
+rewards.</pre></li>
+
+<li><pre class=3D"student-text">6.858 - Bitcoin
+
+If the computational puzzle took less than 30 seconds (or just less time in=
+ general),
+then we could be prone to Double spending attacks where attackers spend on =
+one branch,
+and then quickly spend on another branch and add transactions such that the=
+ new
+branch is valid. Even attackers owning lots of computational power cannot
+parallelize this so it's safe from attackers.=20
+</pre></li>
+
+<li><pre class=3D"student-text">&gt; Describe what specific problem might a=
+rise if Bitcoin created new blocks much faster than its current design does=
+---say, every 30 seconds.
+
+In order for a block to be acknowledged as mined it needs to be propagated=
+=20
+through the network. If we increase the frequency, we increase the likeliho=
+od
+of forks occuring, forks might be extended beyond a 1 block length, before
+they even have propogated throught the network, making rollback more likely
+and more costly.
+</pre></li>
+
+<li><pre class=3D"student-text">A faster block-time in bitcoin, i.e. 30 sec=
+onds, would lead to many orphaned blocks and could lead to many empty block=
+s. This is because such a block-time increases the likelyhood of forks betw=
+een blocks as blocks/transactions require significant real-world time to pr=
+opagate. Ethereum addresses this with Uncles.
+</pre></li>
+
+<li><pre class=3D"student-text">Answer to Bitcoin Question
+
+With shorter block times, there would be an increased number of forks as it=
+ would be quicker to generate a new chain, which would lead to larger incon=
+sistencies and less people willing to accept transactions as their block co=
+uld easily/quickly be overriden. Furthermore, a larger portion of the hashp=
+ower is wasted which leads to less security. </pre></li>
+
+<li><pre class=3D"student-text">As mentioned in the section "Impact on cons=
+ensus", a faster target mining time would lead to more frequent forks of th=
+e main chain. Given that forks come with some lost transactions, potentiall=
+y a large impact if a fork is long enough, increasing the rate of forks wou=
+ld lead to potential instability. Along with this, lower target mining time=
+ would increase the effect of network latency as the network would need to =
+update faster to keep up with the mining rate in order to keep some consens=
+us in the mining network.</pre></li>
+
+<li><pre class=3D"student-text">Because if the rate of solutions is too hig=
+h then miners would find redundant blocks before they can be propagated and=
+ there will be wasted blocks that give no Bitcoin reward.</pre></li>
+
+<li><pre class=3D"student-text">Bitcoin currently creates blocks about ever=
+y 10 minutes primarily for reasons of network latency. If blocks were gener=
+ated faster, miners would frequently find redundant blocks before they coul=
+d be propogated. If they were generated slower, it would increase the amoun=
+t of time that users need to wait for transaction confirmations.</pre></li>
+
+<li><pre class=3D"student-text">Bitcoin's rate of block generation is tuned=
+ to network latency. If the rate were much faster, this would result in muc=
+h more wasted work from miners who find blocks that have already been mined=
+ by other miners but have not yet propagated to the rest of the network.
+</pre></li>
+
+<li><pre class=3D"student-text">Blocks are mined every 10 minutes and not f=
+or a shorter time to avoid the issue of long forks caused by network latenc=
+y, as 10 minutes should give enough time to where this is not an issue.</pr=
+e></li>
+
+<li><pre class=3D"student-text">By making block creation easier, chains wou=
+ld become longer faster. It would be unclear which is the longest fork, and=
+ many of the found blocks would be invalidated anyway. This also means that=
+ some transactions will be slower.</pre></li>
+
+<li><pre class=3D"student-text">Creating new blocks faster would allow for =
+more transactions but it also means that by pooling resources, it is easier=
+ for the main chain to be compromised. Adding more blocks makes it difficul=
+t to avoid the effects of short term pooling of resource attacks.
+</pre></li>
+
+<li><pre class=3D"student-text">Currently blocks are generated approx once =
+every 10 minutes. If this was reduced to only about 30 seconds there would =
+be various consequences:
+- Number of miners would have to significantly increase to solve the hashes=
+ at such a reduced time
+- Generating a new solution every 30 seconds would increase the rate at whi=
+ch new bitcoins are mined, thus accelerating the pace at which we mine the =
+last bitcoin
+</pre></li>
+
+<li><pre class=3D"student-text">Describe what specific problem might arise =
+if Bitcoin created new blocks
+much faster than its current design does---say, every 30 seconds.
+
+That could lead to double spending vulnerability because the blockchain wil=
+l fork
+very easily and it will be very difficult for one chain to become longer th=
+an the other.
+</pre></li>
+
+<li><pre class=3D"student-text">Describe what specific problem might arise =
+if Bitcoin created new blocks much faster than its current design does---sa=
+y, every 30 seconds.
+
+A number of nasty things could arise from new blocks being created many tim=
+es faster than they currently do, but the paper specifically calls out the =
+fact that the choice of 10 minutes was motivated by a fear of frequent fork=
+s occurring if it was much less.</pre></li>
+
+<li><pre class=3D"student-text">Describe what specific problem might arise =
+if Bitcoin created new blocks much faster than its current design does---sa=
+y, every 30 seconds.
+
+Fairness isn't guaranteed as a miner holding mining power &gt; 1/3 of the t=
+otal might be able to mine ahead of time and withold blocks, effectively mi=
+ning unopposed. </pre></li>
+
+<li><pre class=3D"student-text">Describe what specific problem might arise =
+if Bitcoin created new blocks much faster than its current design does---sa=
+y, every 30 seconds.
+
+There would be a higher probability of forks thus increasing the probabilit=
+y of double spend attacks. Additionally, the speed in which blocks could be=
+ cconfirmed would not change since additional mining power has not been add=
+ed.resulting in slower transactions.
+</pre></li>
+
+<li><pre class=3D"student-text">Describe what specific problem might arise =
+if Bitcoin created new blocks much faster than its current design does---sa=
+y, every 30 seconds.
+
+This would mess up the mining incentivization and block reward system. Bloc=
+k rewards are created upon finding a valid block and solving the puzzle. It=
+ doesn't make sense to create blocks at a set pace like every 30 seconds.</=
+pre></li>
+
+<li><pre class=3D"student-text">Describe what specific problem might arise =
+if Bitcoin created new blocks much faster than its current design does---sa=
+y, every 30 seconds.
+
+Two problems. The network may be flooded with activity. A malicious user or=
+ group could rapidly fork the chain and cause a destabilization of consensu=
+s on the chain.</pre></li>
+
+<li><pre class=3D"student-text">Describe what specific problem might arise =
+if Bitcoin created new blocks much faster than its current design does---sa=
+y, every 30 seconds.
+
+
+Currently, new blocks are mined about every 10 minutes. Decreasing the time=
+ to mine would mean making the computational puzzle easier, and it would be=
+come more likely that the blockchain would fork more often. Additionally, m=
+iners would find redundant blocks more often because blocks would be mined =
+quicker, giving less time for them to propogate through the network. </pre>=
+</li>
+
+<li><pre class=3D"student-text">Describe what specific problem might arise =
+if Bitcoin created new blocks much faster than its current design does---sa=
+y, every 30 seconds.
+
+----
+
+If the block creation time is too fast, there could be frequent forks in th=
+e block-chain due to network latency. If there's not enough time for all th=
+e nodes in the network to accept a new block before another one is created,=
+ forks are much more likely.</pre></li>
+
+<li><pre class=3D"student-text">Describe what specific problem might arise =
+if Bitcoin created new blocks much faster than its current design does---sa=
+y, every 30 seconds.
+
+If this happens, then a lot of miners/computers are able to compute new blo=
+cks and try to append onto the blockchain. As a result, there will be many =
+more updates to the blockchain before miners are able to propogate their up=
+dated block chain to the others. Now, we have a lot of different block chai=
+ns with the same length. To resolve this, miners will be working on many di=
+fferent forks and in the end a lot of work will be for nothing, and it woul=
+d not be realized until after a long time because these chains can all grow=
+ very fast. It also allows an adversary to just make their own chain really=
+ fast to override the blockchain, if they start after a check point. Additi=
+onally it seems like a lot of bandwidth/energy will be used in discerning t=
+he correct blockchain. </pre></li>
+
+<li><pre class=3D"student-text">Describe what specific problem might arise =
+if Bitcoin created new blocks much faster than its current design does---sa=
+y, every 30 seconds.
+
+Temporary frequent forks can be created because the nodes are not aware of =
+the new block due to a network latency. Therefore, the overall transaction =
+proof time will increase, because all nodes will need to wait until the net=
+work becomes consistent.
+ </pre></li>
+
+<li><pre class=3D"student-text">Describe what specific problem might arise =
+if Bitcoin created new blocks much faster than its current design does---sa=
+y, every 30 seconds.
+
+There might be more forks in the blockchain from inconsistencies in which b=
+lock was added to the chain first. If blocks are added very quickly, then t=
+he cost of undoing history to make one consistent chain is higher.=20
+
+</pre></li>
+
+<li><pre class=3D"student-text">Describe what specific problem might arise =
+if Bitcoin created new blocks much faster than its current design does---sa=
+y, every 30 seconds.
+One problem that might arise if Bitcoin created new blocks much faster than=
+ teh current design is that if it were that fast, there would be a higher p=
+robability that two different people would find the block at the same time,=
+ or within seconds, though only one of them would propogate to have found i=
+t.  Further, it would lead to higher amount of fork inconsistency that node=
+s would then need to deal with and rectify more often.</pre></li>
+
+<li><pre class=3D"student-text">Effects of ncreasing the block creation tim=
+e -=20
+- Increased communication between nodes in the network. Bandwidth increases=
+.
+- More forks created. Hence, longer reorganization time needed.
+- More hashes are generated over the course of the entire generation proces=
+s. The security parameter of the hash function would hence have to be incre=
+ased to account for this. That in turn will increase the compute required t=
+o solve puzzles based on it.</pre></li>
+
+<li><pre class=3D"student-text">Firstly, having shorter intervals between b=
+locks would increase network traffic. Before, broadcasts about the addition=
+ of a block happened every 10 min. Under this scheme they occur 20 times mo=
+re frequently. So, the bandwidth required to support this system increases.
+
+Secondly, in the 10 minute system there was plenty of time for information =
+to propagate through the network and for honest nodes to agree on what the =
+longest chain is. With a 30 second goal, this may not be the case. Not only=
+ may 30 seconds be too short for a consensus, but 30 seconds is only the av=
+erage time. Some blocks may be mined instantaneously. As a result, consensu=
+s may not be achieved before a new block is mined in some part of the chain=
+, so many forks will be created that eventually have to be abandoned. This =
+is inefficient and makes the chain untrustworthy. A higher number of confir=
+mations (&gt; 6) would be required before a sale is considered final.
+</pre></li>
+
+<li><pre class=3D"student-text">Having a shorter block time could lead to m=
+ore forks and longer forks. This could be problematic because many users of=
+ bitcoin assume their transaction has been approved if an average of 6 bloc=
+ks have been added to the chain after it. If the block time is dropped to 3=
+0 seconds, users would have to see many more blocks added to the chain befo=
+re they could assume their transaction had been approved. Even then, the gu=
+arantee is lowered. This could lead to double spend attacks as well if a fo=
+rk grows really long over time. </pre></li>
+
+<li><pre class=3D"student-text">I think the main issue would be that when a=
+ node has solved the current puzzle and broadcasts the solution, it takes s=
+ome amount of time for that to reach all full nodes on the network and for =
+them to verify the solution. Having an expected 10 minutes per block added =
+means it's much less likely that two nodes will solve the puzzle so close i=
+n time that they're both broadcasting solutions at once and other nodes may=
+ see one or the other as having solved the puzzle first. With only 30 secon=
+ds between blocks, there would probably always be multiple solutions being =
+broadcast at once, and then the other nodes on the network have to decide t=
+o keep mining on one chain or another. This causes the blockchain to fork u=
+ntil one fork gets ahead of the others by enough that all nodes switch to i=
+t (the longer this takes, the more work is wasted on the forks that get aba=
+ndoned).</pre></li>
+
+<li><pre class=3D"student-text">I think the main issue would become consens=
+us. 30 seconds is much less time for the bitcoin userbase to decide on whic=
+h temporary fork will become generally accepted. It follows that there will=
+ be many temporary forks, and as a result, far less consensus.
+
+Another lesser problem would probably be inflation, as now there will be tw=
+enty times as many bitcoins created with each block (not counting transacti=
+on royalties).
+</pre></li>
+
+<li><pre class=3D"student-text">If Bitcoin blocks were created every 30 sec=
+onds, that drastically increases the probability of long forks happening in=
+ the blockchain. Network latency becomes significant in propogating informa=
+tion among the nodes, so that makes users a lot less confident about the 'l=
+ongest blockchain branch'. Consumer confidence in blockchain will decrease =
+because users aren't sure whether the coins are being double spent or not.=
+=20
+</pre></li>
+
+<li><pre class=3D"student-text">If Bitcoin created blocks faster than it do=
+es now (30 seconds compared to 10 minutes), the chain might fork a lot more=
+ than desired. When there are forks, the nodes need to reach consensus, whi=
+ch will take longer and be more difficult if there are a lot of forks. Also=
+, since the blockchain needs to be agreed by every node, if there are too m=
+any blocks, it will be even harder to broadcast to the entire network and r=
+each consensus. One of the bottlenecks to consensus is network latency, whi=
+ch can't be helped. It also helps prevent nodes from withholding blocks.
+</pre></li>
+
+<li><pre class=3D"student-text">If Bitcoin created blocks much faster than =
+its current design, then it would run into problems with network latency. S=
+ince it may take a while for new blocks to propagate through the P2P networ=
+k, a miner with a lot of computational power could mine a long chain unilat=
+erally, and then publish the blocks all at once to create a long chain that=
+ becomes the main chain.
+
+Even without a malicious user, forks would become much more common because =
+the variation between latencies in broadcast would be a significant portion=
+ of the time it takes to mine a block, meaning that many miners will mine a=
+ given block before any of the hear about others blocks through the peer-to=
+-peer network, leading to a plethora of forks.
+</pre></li>
+
+<li><pre class=3D"student-text">If Bitcoin created blocks too quickly, then=
+ forks would be more common (because
+of the higher probability that a miner will not hear a block before finding=
+ a
+competing one). If this were to happen, then some of the mining power in th=
+e
+network would be wasted, and thus 51% attacks would actually take less than=
+ 51%
+of the mining power.
+</pre></li>
+
+<li><pre class=3D"student-text">If Bitcoin created new blocks every 30 seco=
+nds, then the rate of solutions is too high and miners will frequently find=
+ redundant blocks before they can be propagated.  This will result in too m=
+any forks, and make it hard (impossible?) for the public to converge on a s=
+ingle longest path.
+</pre></li>
+
+<li><pre class=3D"student-text">If Bitcoin created new blocks faster than i=
+ts current design does, then the blockchain would become very long and ther=
+e would be a lot more forks because more valid blocks would be found at the=
+ same time. </pre></li>
+
+<li><pre class=3D"student-text">If Bitcoin created new blocks faster, the 6=
+-block confirmation rule would become less useful, but this is (relatively)=
+ easily fixed by clients increasing the number of subsequent blocks require=
+d to consider a transaction "confirmed". A bigger problem is that it become=
+s easier for an attacker with a lot of computational power to generate mult=
+iple, conflicting branches and execute a double-spending attack.</pre></li>
+
+<li><pre class=3D"student-text">If Bitcoin created new blocks much faster t=
+han it does now, it would be much
+easier for people to make blocks. More people would be incentivized to crea=
+te
+forks and mine off those for Bitcoins, which means that fewer people will m=
+ine
+the main chain. This decreases the strength of the consensus on the valid m=
+ain
+chain, decreasing its security.
+
+In a more general sense, if blocks could be mined much faster then Bitcoin =
+would
+run out of blocks much sooner than 2140. If no new Bitcoins can be created,
+there will be no incentive to mine and thus new transactions will not be
+validated as often, if at all.
+</pre></li>
+
+<li><pre class=3D"student-text">If Bitcoin created new blocks much faster t=
+han its current design (i.e. every 30 seconds), then miners would frequentl=
+y find redundant blocks before they can be propagated, leading to frequent =
+forks in the blockchain.=20
+
+In this scenario, a miner who is able to control a large portion of the net=
+work might be able to favor the broadcast of their own blocks, which would =
+increase the likelihood of their fork being the longest version of the cons=
+ensus blockchain and thus increasing their mining rewards.</pre></li>
+
+<li><pre class=3D"student-text">If Bitcoin created new blocks much faster t=
+han its current design does, multiple miners might end up mining the same b=
+lock. This would create several forks in the blockchain, and an attacker wh=
+o gains control of a substantial part of the network might be able to convi=
+nce other miners that his fork is the consensus blockchain, thereby dominat=
+ing the mining and getting more of the mining rewards.</pre></li>
+
+<li><pre class=3D"student-text">If Bitcoin created new blocks much faster t=
+han its current design does, then this would result in less stability. Spec=
+ifically, there would be an more frequent forks and more discarded blocks. =
+Formal proofs of Bitcoin's stability, such as those provided by LaViola and=
+ Garay et all, only hold under the assumption that communication latency is=
+ small compared to the expected time to discover a block.
+</pre></li>
+
+<li><pre class=3D"student-text">If Bitcoin created new blocks much faster t=
+han its current design, then the work done would be decreased, and it would=
+ be easier to have forged transactions in the blockchain.
+</pre></li>
+
+<li><pre class=3D"student-text">If Bitcoin created new blocks much faster t=
+han its current design, then there may be conflicts in the network. Say per=
+son A mines a block. It needs to reach every node in the network so that th=
+e decentralized agreement is in effect. However, if person B mines a block =
+a couple of seconds after and there is a conflict, then only one can be inc=
+luded in the blockchain which gets messy. The time delay makes sure the sec=
+urity information in propogated through the network.</pre></li>
+
+<li><pre class=3D"student-text">If Bitcoin created new blocks much faster t=
+han its current rate, it would be
+much more difficult to reach eventual consensus. Additionally, the flooding=
+ of
+new block information may exceed the capacity of the blockchain infrastruct=
+ure.
+</pre></li>
+
+<li><pre class=3D"student-text">If Bitcoin created new blocks much faster t=
+han the current design, this would increase the probability of different mi=
+ners mining a block at the same time and introducing a fork.</pre></li>
+
+<li><pre class=3D"student-text">If Bitcoin's block creation time was much s=
+horter than 10 minutes, let's say 30 seconds, it would create several probl=
+ems. With shorter time, more forks would be generated and each fork would a=
+lso be longer than it was before. Therefore, it would also increase the re-=
+organization time. Besides, easier proof of work would also increase the ba=
+ndwidth necessity over the network and more energy would be wasted.
+</pre></li>
+
+<li><pre class=3D"student-text">If bitcoin blocks are created too fast, the=
+re is more likely to be a conflict, resulting in many blockchain forks.</pr=
+e></li>
+
+<li><pre class=3D"student-text">If bitcoin created blocks more frequently, =
+then it would be more likely that two competing miners would find blocks ne=
+ar-simultaneously, and a miner with control over the network could give the=
+mselves a significant advantage in determining which block gets "accepted" =
+and results in the longer fork.
+</pre></li>
+
+<li><pre class=3D"student-text">If bitcoin created blocks much faster, it m=
+ight be easier for people with more compuational resources to be able to do=
+minate and refuse the transactions of others.</pre></li>
+
+<li><pre class=3D"student-text">If bitcoin created new blocks every 30s, th=
+ere might be too many forks and conflicting transactions could occur which =
+can be used to launch a double spending attack.=20
+</pre></li>
+
+<li><pre class=3D"student-text">If bitcoin created new blocks more frequent=
+ly there would be far more frequent forking of the chain, which would wreak=
+ havoc on consensus, and cause performance to tank due to the increased num=
+ber of messages which would need to be flooded.</pre></li>
+
+<li><pre class=3D"student-text">If bitcoin created new blocks more frequent=
+ly, then there'll be deeper forks and more transactions that may be non-per=
+manant.
+</pre></li>
+
+<li><pre class=3D"student-text">If bitcoin creates blocks every 30 seconds,=
+ then the currency would suffer from inflation.
+</pre></li>
+
+<li><pre class=3D"student-text">If bitcoin were to create new blocks faster=
+ than it currently does, it would result in more forks in the chain with mo=
+re side chains vying to be the longest chain. When this happens, there are =
+many transactions that are never really committed to a main chain.</pre></l=
+i>
+
+<li><pre class=3D"student-text">If blocks are mined more freequently, this =
+would be equivalent to raising the transaction limit. The issues with this =
+are described by the paper:
+
+" Once this limit is reached,
+transactions will effectively need to use their fees to bid for
+a scarce resource. This may raise the cost of using Bitcoin,
+potentially slowing adoption, yet increasing the revenue for
+miners. It may also lead users to rely on intermediaries
+who aggregate and settle transactions off-chain. The limit is
+artificial and the network=E2=80=99s bandwidth could likely sustain
+114
+an increase; on the other hand, increased transaction volume
+may exclude some participants who are bandwidth-limited.
+Several altcoins have raised this limit in their specification,
+though to our knowledge none has come close to actually
+utilizing this capacity so it remains unknown how it would
+affect operation of the system."
+</pre></li>
+
+<li><pre class=3D"student-text">If blocks were added faster, there would be=
+ much bigger issues with chains
+forking and then issues in determining consensus over the longest chain, si=
+nce
+you could have a bunch of blocks added quickly to different forks.=20
+</pre></li>
+
+<li><pre class=3D"student-text">If blocks were created every 30 seconds, ne=
+twork latency would be much more relevant. A new block would likely not pro=
+pagate throughout the network before the next one was found. This would cau=
+se many divergent blockchains to form, and disambiguating the forks would b=
+ecome much more difficult.</pre></li>
+
+<li><pre class=3D"student-text">If blocks were created much faster, then co=
+ins would be rewarded more quickly and currency creation increases drastica=
+lly.
+</pre></li>
+
+<li><pre class=3D"student-text">If blocks were created too quickly, then th=
+e rate of solutions is too high then
+miners will frequently find redundant blocks before they can be propagated.=
+=20
+
+</pre></li>
+
+<li><pre class=3D"student-text">If creating new blocks become faster / easi=
+er, then multiple miners might find the correct answer and the chain would =
+deal with many forks arising.
+</pre></li>
+
+<li><pre class=3D"student-text">If new blocks are created much faster, it w=
+ould be harder to guaranteee the stability of the longest chain, as it is m=
+ore likely to be overpassed by a deep fork.
+</pre></li>
+
+<li><pre class=3D"student-text">If new blocks were create much faster, ever=
+y 30 seconds for example, we would have a higher chance of multiple nodes c=
+reating temporary forks at the same time. This would undermine the stabilit=
+y of the Bitcoin since only one of the temporary forks would survive as the=
+ longest chain in the future.</pre></li>
+
+<li><pre class=3D"student-text">If new blocks were created every 30 seconds=
+, there would be more forks because of network latency, which could make re=
+aching agreement a lot harder. </pre></li>
+
+<li><pre class=3D"student-text">If new blocks were created much faster (e.g=
+. every 30s) instead of every 10min, the network might not have time to agr=
+ee on the current set of transactions to be put into the block, and many ne=
+wly proposed blocks would be rejected, and too many temporary forks might a=
+rise.
+</pre></li>
+
+<li><pre class=3D"student-text">If new blocks were created much faster, the=
+re would be far more forks than there are with only 10 minute creation time=
+, since it would be much more likely for two miners to solve the computatio=
+nal puzzle at the same time with 20 times more chances to do so (at 30 seco=
+nd blocks, for example).</pre></li>
+
+<li><pre class=3D"student-text">If the amount of time to create new blocks =
+was too fast, then=20
+much of the computational power of the miners would be wasted as it=20
+will take some amount of time to propogate the block. Before the=20
+block is propogated, the miners are competing against the block rather
+than on top of it, leading to wasted computation.</pre></li>
+
+<li><pre class=3D"student-text">If the block time is too low, then miners w=
+ill keep finding the same block because they won't have enough time to adve=
+rtise it.
+</pre></li>
+
+<li><pre class=3D"student-text">If the blocks are created too frequently, B=
+itcoins would end up with too many temporary forks which would hinder the c=
+onsensus of network. The network can also be flooded with too many transact=
+ions.</pre></li>
+
+<li><pre class=3D"student-text">If the challenges to solve were too easy (t=
+aking 30s vs 10 min) then there would be a lot of block chain forks that wo=
+uld need to be resolved often. Setting the goal at 10 minutes makes block c=
+hain collisions (too equally likely forks) less likely.
+</pre></li>
+
+<li><pre class=3D"student-text">If the creatation time is very small, nodes=
+ are required=20
+to synchronize with new blocks and they have to give up
+what they are calculating. Then most computation is wasted.</pre></li>
+
+<li><pre class=3D"student-text">If we create blocks much faster than every =
+10 minutes, the primary chain could fork much more frequently, since the li=
+kelihood two miners solve the puzzle simultaneously increases a lot.
+
+Additionally, a malicious actor could "favor broadcast of their own blocks,=
+" increasing the odds of them winning mining rewards disproportionately to =
+their computational power. While this can still happen in the 10-minute mod=
+el, the expected rewards increase is much smaller.
+</pre></li>
+
+<li><pre class=3D"student-text">In that scenario, we are under the risk of =
+specific chains growing considerably faster than others (slow times allow d=
+ispersion of information and confirmation to
+spread, and ensures a more "democratic" or "sparse" system in general). Thi=
+s means that arbitrary, wrong chains could end up growing and taking over c=
+orrect ones that=20
+couldn't catch up/didn't have time to have their chain confirmed/reproduced=
+. So bitcoin would basically fail in the integrity property
+</pre></li>
+
+<li><pre class=3D"student-text">Increasing frequency of Bitcoin block creat=
+ion without adjusting the value will lead to inflation.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Increasing the rate of generating new block=
+s can cause the following issues:
+1) Generating redundant blocks due to network latency - a lot of miners wil=
+l be able to simultaneously generate the same block.
+2) Devaluation of bitcoin. Miners get incented to mine due to the reward th=
+ey get. Easier rewards mean less value for bitcoin.
+3) Forking into different directions. If too many forks form, it would be h=
+ard to decide which one is legitimate. </pre></li>
+
+<li><pre class=3D"student-text">Information about each block has to propoga=
+te throughout the network so that a consensus can be reached on whether or =
+not the block was a valid block that represents the next step in the chain.=
+ If the time were reduced to 30 seconds there may not be enough time for th=
+e network to reach a true consensus and a bad block may be confirmed and in=
+serted into the chain, allowing for attacks like double transactions.
+</pre></li>
+
+<li><pre class=3D"student-text">It would become far more likely that Bitcoi=
+n would fork, as the message indicating a new block has been found would ha=
+ve an order of magnitude less time
+to propagate through the network.</pre></li>
+
+<li><pre class=3D"student-text">It would lead to more money being created, =
+causing inflation.
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 21
+
+Describe what specific problem might arise if Bitcoin created new blocks mu=
+ch faster than its current design does---say, every 30 seconds.
+
+Since the original 10 minutes interval between each block is arbitrary, cha=
+nging it a bit won't have much effect. But changing it to 30 seconds might =
+not be enough for the new block to reach majority miners. In that case, a s=
+ingle miner can just publish 6 incorrect blocks before majority converges o=
+n the correct branch and claim money for incorrect transactions.
+If we reduce the time interval between each block, we need to proportionall=
+y increase the number of blocks required to be sure that a transaction is p=
+ublished.</pre></li>
+
+<li><pre class=3D"student-text">Lecture 21 (Answer to Paper Question)
+
+Question:
+
+Describe what specific problem might arise if Bitcoin created new blocks mu=
+ch faster than its current design does---say, every 30 seconds.
+
+
+Clients would spend more time validating blocks, which requires more energy=
+ and more computational resources.</pre></li>
+
+<li><pre class=3D"student-text">Lecture 21: Sok Blockchain Reading Question
+
+The main problem that would arise from decreasing the blocktime to somethin=
+g like 30 seconds is the
+issue of chain forking, which translates to less security in the system. Wi=
+th lower a blocktime, more
+miners would solve blocks more frequently, and this would increase the prob=
+ability and frequency of
+multiple miners (whether malicious or not) confirming blocks and propagatin=
+g them throughout the network
+simultaneously. This issue means that forks would occur more often and be l=
+onger, which puts the system at
+risk of malicious users trying to double spend and validating their malicio=
+us activity through forks in the
+system. In addition, the system would be less efficient as a whole, wasting=
+ more computing power as an increase
+in the number of temporary forks would cause more miners to spend some time=
+ working on those forks until
+their node received an update message with the valid branch to work on.
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 22: Bitcoin
+5/7/18
+
+Describe what specific problem might arise if Bitcoin created new blocks mu=
+ch faster than its current design does---say, every 30=20
+seconds.
+
+Someone might be able to take control of a larger portion of the log then t=
+hey would have before and make their chain the longest, ignoring all the ot=
+her miners and grabbing all the coins.</pre></li>
+
+<li><pre class=3D"student-text">Not all the blocks would get propagated fas=
+t enough and there would be contention for determining the longest chain. M=
+oreover, this would allow people with a lot of computing power to potential=
+ly be able to rewrite history.
+</pre></li>
+
+<li><pre class=3D"student-text">Question: Describe what specific problem mi=
+ght arise if Bitcoin created new
+blocks much faster than its current design does---say, every 30 seconds.
+
+Answer:
+
+In this case, the Bitcoin network would run into temporary forks more
+frequently, since the speed at which newly generated blocks propagate throu=
+gh
+the network is limited by communication latency/bandwidth.
+</pre></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 21
+
+Describe what specific problem might arise if Bitcoin created new blocks mu=
+ch faster than its current design does---say, every 30 seconds.
+
+If bitcoin created new blocks at a faster rate, bitcoin would not be scalab=
+le. New miners need to download the whole block chain in order to mine, so =
+a block chain that grew at the rate of one block every 30 seconds would not=
+ be scalable. </pre></li>
+
+<li><pre class=3D"student-text">Requires increased bandwidth (inter node co=
+mmunication).
+More forks, longer forks, and longer re-org time.
+A greater portion of the raw hashpower is wasted, resulting in lower effect=
+ive security.
+
+from StackExchange.</pre></li>
+
+<li><pre class=3D"student-text">Suppose you are a business that wants to ac=
+cept a bitcoin transaction. You see a block that has been solved by a nearb=
+y miner, and other nodes around you accept the block. However, this block i=
+s still not safely on the chain, since the only valid chain is the longest =
+chain. In some distant part of the world, a colliding block (a block that a=
+ppends to the same block that your transaction appended) could have been ap=
+pended to the chain. If more miners decide to start mining this colliding b=
+lock than your block, more blocks will be appended to the colliding block, =
+and your block will no longer be on the chain.
+
+This is a very big problem with cryptocurrencies, and requires some finesse=
+ to solve. By setting the difficulty such that there is about 1 block mined=
+ every 10 minutes, the network has lots of time to reach consensus on colli=
+ding blocks, greatly decreasing the probability that a sequence of blocks t=
+hat one part of the network believes are valid are actually on a shorter fo=
+rk of the blockchain. If the rate increased to 1 block every 30 seconds, th=
+ese collisions would become much more common.</pre></li>
+
+<li><pre class=3D"student-text">The 10-minute target time is set to give a =
+new block time to propagate to the nodes in a network.
+
+If the time was less, first there would be more conflicts as people solved =
+the nonce problem at "about the same time", resulting in the creation of ma=
+ny forks, maybe never converging to one fork.
+
+Second, the integrity of bitcoin depends on all nodes recognizing the one t=
+rue blockchain, so if there were many nodes created a few seconds apart, no=
+des wouldn't be able to agree upon which is the one true blockchain and the=
+ integrity of bitcoin would be compromised.</pre></li>
+
+<li><pre class=3D"student-text">The authors say =E2=80=9Cany latency betwee=
+n the discovery of a block and its receipt by all other nodes increases the=
+ possibility of a temporary fork.=E2=80=9D  A faster block creation time wo=
+uld lead to more frequent forks and issues with consensus. </pre></li>
+
+<li><pre class=3D"student-text">The computational puzzle is set and adjuste=
+d so that, on average, it takes 10 minutes for a block to be added to the c=
+hain.  If this were lowered to 30 seconds, it would cause frequent forks of=
+ the chain, as (due to network latency), miners may not learn that a block =
+has been found, and submit their own valid block, causing a fork of the cha=
+in.
+</pre></li>
+
+<li><pre class=3D"student-text">The difficulty of solving the proof of work=
+ puzzle to add a block to the blockcahin is artificially increased such tha=
+t it takes approximately 10 minutes to add a block to the chain. This is do=
+ne so that if there are many more people adding blocks to the chain, the nu=
+mber of blocks does not explode. If the time were set to 30s instead of 10 =
+minutes, then it would not explode as badly as if there was no approximatel=
+y set time limit, but it would mean that more blocks are going into circula=
+tion 20 times faster. So, this would not only cause a lessening of the valu=
+e of a bitcoin, but would also lead to more duplicate transaction errors be=
+cause with the time between blocks being so short, there is more probabiity=
+ of blocks being accepted at the same time, thus causing a fork in the bloc=
+k chain, which can lead to inconsistent transactions.=20
+</pre></li>
+
+<li><pre class=3D"student-text">The frequency at which new blocks are creat=
+ed impacts the likelihood of frequent forking as miners will race to add ne=
+w blocks. Changing the complexity of the computational puzzle so that the f=
+requency of block creation is reduced to 30 seconds will likely result in s=
+ignificantly more forking -- there will be an increased chance that many fo=
+rks will be of similar length and miners won't converge on a single valid c=
+hain as the consensus blockchain.</pre></li>
+
+<li><pre class=3D"student-text">The main advantage of blocks that take a lo=
+ng time to create is to counteract latency.
+If blocks were created every 30 seconds, there will probably be a good deal=
+ of redundant
+blocks found by miners.</pre></li>
+
+<li><pre class=3D"student-text">The main reason for the difficulty of block=
+ mining to be set such that blocks are mined every 10 minutes is so that fo=
+rks are minimized. This is accounting for network latency or the time it ta=
+kes for all users on the network to hear about a certain mined block. If bl=
+ocks could be mined every 30 seconds, blocks would be mined faster than pro=
+pagated creating a large number of forks, thus making consensus a lot harde=
+r.
+</pre></li>
+
+<li><pre class=3D"student-text">The rate of new block is primarily dominate=
+d by network latency; If new blocks are found much faster, miners will not =
+have enough to time to propagate its newly found block to majority of users=
+. In this case, more forks conflicts between miners will occur and therefor=
+e reduce the overall profit of miners, thereby reducing the willingness of =
+mining. In general, the more miners, the more secure and decentralized a ne=
+twork bitcoin is.=20
+ </pre></li>
+
+<li><pre class=3D"student-text">The risk of forking the ledger and having c=
+onflicting transactions on competing branches increases since the verificat=
+ion process would become weaker. </pre></li>
+
+<li><pre class=3D"student-text">The setting is constrained primarily by net=
+work latency. If the rate of solutions is too high then miners will frequen=
+tly find redundant blocks before they can be propagated, causing more forks=
+ and instability. </pre></li>
+
+<li><pre class=3D"student-text">The specific problem that would arise if Bi=
+tcon created new blocks faster would be that there would be a greater numbe=
+r of
+potential forks in the chain, leading to more double spending attacks provi=
+ded the latency on the network is high enough
+to warrant concern about large numbers of forks.</pre></li>
+
+<li><pre class=3D"student-text">There are a few things that would happen:
+  1. The demand on the network would increase, since we would be publishing
+  significantly more blocks and thus requiring all miners to incorporate ne=
+w
+  blocks much more frequently. =20
+
+  2. The chance of two valid blocks being discovered simultaneously would
+  increase, meaning that we would have a much higher rate of disagreement o=
+n
+  the "longest" chain, causing a higher rate of forking/deeper forks before
+  consensus is reached.
+
+  3. Deeper forks means a block is "worth" less, i.e. we would want to requ=
+ire
+  a larger number of "confirmation" blocks before accepting a transaction a=
+s
+  published.
+
+  4. We would be creating a significantly larger number of Bitcoins, if we
+  didn't also adjust the reward for mining a block.
+
+The main thing to be concerned about is that if we didn't adjust other fact=
+ors
+in the system, e.g. how many confirmation blocks we require, then
+double-spending attacks are much more likely, and the load on the network i=
+s
+significantly higher.
+</pre></li>
+
+<li><pre class=3D"student-text">There will be a lot more forks occurring in=
+ the bitcoin network. Since blocks need time in order to propagate througho=
+ut the whole bitcoin network, if new blocks can be created much more easily=
+ (in say an average of 1 block per 30 seconds), there is a much higher chan=
+ce that different segments of the network might mine a block at around the =
+same time, resulting in a fork. Frequent forks make it difficult for the ne=
+twork to achieve consensus on the blockchain, which in turn makes it possib=
+le for double-spending attacks to occur.</pre></li>
+
+<li><pre class=3D"student-text">There will be too much flooding and there m=
+ay be issue with the relaying and transaction copying protocols. The full d=
+ata can be copied too many times.</pre></li>
+
+<li><pre class=3D"student-text">There would be more forks of the main chain=
+, and reaching Nakamoto consensus could become more of a problem.</pre></li=
+>
+
+<li><pre class=3D"student-text">They would not propagate to the rest of the=
+ network fast enough and there would be too many forks.</pre></li>
+
+<li><pre class=3D"student-text">This means that while a block is being prop=
+agated multiple solutions can be found. This leads to more forks and an inc=
+reased use of the netowrk.
+</pre></li>
+
+<li><pre class=3D"student-text">Users of bitcoin need times to reach consen=
+sus on the next block. These involve solving the hash puzzle and broadcasti=
+ng to other users etc. A 30-second-round is definitely not enough to comple=
+te all of these. Since user can't agree on the next block, the adversary ca=
+n easily perform attack such as double spending.
+</pre></li>
+
+<li><pre class=3D"student-text">With a shorter block creation time, the net=
+work will be more fragmented and there will be longer forks since new block=
+s will be flooding the network at a faster rate, inevitably leading to diff=
+erences in block awareness between nodes. It also has the simpler problem o=
+f requiring increased bandwidth for the network.</pre></li>
+
+<li><pre class=3D"student-text">lec21
+If bitcoin created new blocks faster than its current design,
+then there will be an increase in forks as the probablility
+of creating an equal length chain increases.  This would lead
+to an increase in double spending.</pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--nrwunrgTzTid6PNrz4QJt7ETFU7cBLOB6ebK2qMuvJ------

@@ -1,0 +1,1245 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-answers/16
+Subject: Answers for lecture 16 - 6.858
+Date: Tue, 21 May 2018 01:40:50 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--HvXW7FKXWVsmhLFChZSsK7X8wKAVOfxVxF0RC3EccS----"
+
+
+------MultipartBoundary--HvXW7FKXWVsmhLFChZSsK7X8wKAVOfxVxF0RC3EccS----
+Content-Type: text/html
+Content-ID: <frame-1182-865de4e9-c13b-49ec-ba6b-8cbb14c28732@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-answers/16
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Answers for lecture 16 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Answers for lecture 16 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text"></pre></li>
+
+<li><pre class=3D"student-text">History-based pinning might miss small chan=
+ges like a change to a single field in a server's certificate, depending . =
+However, DNS pinning allows clients to verify directly with the server whet=
+her or not the certificate is valid.
+</pre></li>
+
+<li><pre class=3D"student-text"># lecture 16
+------------------------------------
+Table 1 lists key pinning through DNS as achieving better defense against
+detecting MITM attacks than key pinning based on client history. Give an ex=
+ample
+of an MITM attack that can DNS key pinning can detect but key-pinning based=
+ on
+history won't. (A description of DANE is here.)
+------------------------------------
+
+History key pinning would be great if you were worried about being MITM-ed =
+while
+perhaps travelling or on an unknown network, and you're visiting a site you
+commonly visit. But, if the first time you visit a site is on this untruste=
+d
+network, then history-pinning can't prevent the attack. If you store the
+compromised key as the real key in your history, you've already been
+compromised. However, if the key was tied to DNS, you would have had to
+authenticate with the proper key the very first time you tried to resolve t=
+he
+domain name of the site, and then presumably each time your cache expires
+afterwards.
+
+With the history approach, you can't figure out if the first key is correct=
+,
+only if the key changes.
+</pre></li>
+
+<li><pre class=3D"student-text">6.858 - SSL + HTTP
+
+It seems that history key pinning is more for replay attack prevention. DNS
+key pinning is used to authenticate servers trying to spoof as cert auths,
+preventing MITM's from stealing client auths.=20
+</pre></li>
+
+<li><pre class=3D"student-text">A MITM attack could occur if an attacker co=
+uld replace a certificate with their own. Key pinning with history would no=
+t protect such an attack if the user hasn=E2=80=99t visited the site previo=
+usly, while with DNS it would (it=E2=80=99s not based on that history).</pr=
+e></li>
+
+<li><pre class=3D"student-text">A MITM attack on a new user that has never =
+visited a site and therefore has not pinned the server's public key will no=
+t be detected by client history key pinning. However dns key pinning can st=
+ill allow for this to be detected as the public key is stored in the dns en=
+try
+</pre></li>
+
+<li><pre class=3D"student-text">A MITM attack that DNS key pinning can dete=
+ct that key-pinning based on client history won't is if before the first ti=
+me a user visits a certain site, an adversary replaces the certificate with=
+ one of his own. Since the user has never visited the site before, key-pinn=
+ing based on history will trust this certificate instead of detecting the a=
+ttack. DANE would detect this because it wouldn't be signed by one of the a=
+pproved keys.</pre></li>
+
+<li><pre class=3D"student-text">A MITM attack that creates a fake certifica=
+te to impersonate a server would not be detected by key pinning based on hi=
+story.</pre></li>
+
+<li><pre class=3D"student-text">A MITM can intercept the certificate in the=
+ previous session and then send it over. Authentication based on this certi=
+ficate is therefore invalid. With DNS, however, the DNS still needs to be a=
+ccurate.</pre></li>
+
+<li><pre class=3D"student-text">A MITM can obtain and substitute a browser =
+acceptable certificate to attack a user. In this attack, client history bas=
+ed key pinning will not protect against this attack if the user has not vis=
+ited the website before. However, DNS-based key pinning will help against t=
+he attack because the certificates are in the name servers not the client h=
+istory.</pre></li>
+
+<li><pre class=3D"student-text">A MitM cannot be detected by key pinning ba=
+sed on history if this is the first time that you are visiting a domain. Th=
+is can be combined by somehow getting you to click on a very similar-lookin=
+g link which you think leads to your (for example) bank's page, while actua=
+lly being a new page. Then, as you've never visited the bad site before, hi=
+story pinning won't work.</pre></li>
+
+<li><pre class=3D"student-text">A pinning primitive based on client history=
+ remembers the last browser-acceptable public key encountered for a particu=
+lar site and warns the user if this information changes. This allows detect=
+ion of certificate substitution attacks, even if the adversary has somehow =
+obtained a browser-acceptable certificate=E2=80=94but only if the user has =
+visited the site previously. But if the user has not visited the side previ=
+ously, MITM attack won't be detectable by key-pinning based on history but =
+will be detectable by key pinning through DNS.
+</pre></li>
+
+<li><pre class=3D"student-text">According to Table 1, key pinning through D=
+NS achieves better defense against detecting MITM attacks than key pinning =
+based on client history.
+
+Key pinning based on history only detects ceritificate changes if the clien=
+t has previously visited the site, protecting against certificate substitut=
+ion attacks.
+
+DNS key pinning allows for detection of certificate changes even if the cli=
+ent HASN'T previously visited the site, as the client can look at a DNS rec=
+ord to validate ownership themselves via DNSSEC.
+</pre></li>
+
+<li><pre class=3D"student-text">According to the wikipedia article on MIME:
+
+"Trusting a large number of CAs might be a problem because any breached CA =
+could issue a certificate for any domain name. DANE enables the administrat=
+or of a domain name to certify the keys used in that domain's TLS clients o=
+r servers by storing them in the Domain Name System (DNS). DANE needs the D=
+NS records to be signed with DNSSEC for its security model to work`."
+
+As such, an adversary can construct attack where they could get a valid cer=
+tificate from a breached CA to take advantage and exploit.
+</pre></li>
+
+<li><pre class=3D"student-text">An MITM attack that key-pinning based on hi=
+story won't detect is if the attacker has fake certificates and is attackin=
+g during the client's first visit to a site.
+</pre></li>
+
+<li><pre class=3D"student-text">An adversary obtains a certificate from a v=
+ulnerable CA via social engineering or other means. A domain owner has spec=
+ified that this particular CA cannot issue certificates for a particular re=
+source.=20
+
+A user visits a website for the first time, and the adversary inserts thems=
+elves in the middle of the communication and demonstrates their CA-issued s=
+ubstitute certificate. In client-history key pinning, the client does not c=
+heck the DNS record and thus has no way to detect this MITM attack. In DNS =
+key pinning, the client is able to validate that the issuing CA is permitte=
+d to issue a certificate for this domain and resource, and thus detects thi=
+s MITM attack. </pre></li>
+
+<li><pre class=3D"student-text">An example would be a certificate substitut=
+ion attack for a website the user has not yet visited.  The client history =
+key pinning would not detect this attack if the adversary obtained a browse=
+r-acceptable certificate.  The DNS key pinning would be able to detect this=
+ attack, as DANE provides pinning for servers with their DNSSEC for clients=
+ to validate against.  This would prevent a substitution attack on a client=
+ by validating records in the DNSSEC.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Answer to Paper Question:
+
+The client manually verifies the first connection to the server for key pin=
+ning (TOFU). If the MITM establishes the first connection, the client trust=
+s all connections with the MITM. In comparison, DANE has the users pin thei=
+r public key in the DNNSEC record so that the public key can be verified ag=
+ainst the punned key in the DNSSEC record. This prevents a MITM from establ=
+ishing the first connection as the user can check against this record. </pr=
+e></li>
+
+<li><pre class=3D"student-text">Any MITM from a site that the user has not =
+visited can be detected by DNS key pinning, but is unable to be detected by=
+ key-pinning based on history because there is no history on that site to c=
+ompare to.
+</pre></li>
+
+<li><pre class=3D"student-text">Assume the primitive does not resolve the f=
+alse-reject error and leaves it to the client. If the client indicates to p=
+roceed, then a MITM attack can take place as an adversary can then simply i=
+mpersonate a server.
+
+</pre></li>
+
+<li><pre class=3D"student-text">Based on Table 1, it looks like key pinning=
+ based on client history requires blind trust on first use to be able to de=
+tect MITM attacks. Therefore, DNS key pinning would be able to detect a MIT=
+M attack taking place during the client's first connection to a particular =
+server, while client history key pinning would not be able to detect such a=
+n attack. Furthermore, client-history key pinning is unable to deal with up=
+datable pins, and will falsely reject a certificate if a server updates it =
+public key or switches CAs.
+
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">By using DNS pinning, we can protect websit=
+es that the client has not visited. If we only use client history, we can o=
+nly protect against attacks on websites the client has seen. With DNS pinni=
+ng, we can also protect against attacks on websites that are provide their =
+public key in their DNSSEC record.</pre></li>
+
+<li><pre class=3D"student-text">Certificate authorities aim to prove websit=
+es' authenticity to the client via certificates. How do certificates preven=
+t MITM attacks? For instance, we have client U (user), server G (google), a=
+nd MITM A (attacker). U sends requests to G. A intercepts the request and s=
+ends it to G. G responds to A. A then sends the information back to U. A is=
+ free to tamper with messages in either direction. </pre></li>
+
+<li><pre class=3D"student-text">Client history based key pinning will not b=
+e able to detect TLS stripping, i.e. downgrading from an HTTPS connection t=
+o a HTTP connection.
+DNS based key pinning however avoids this since the key is pinned in the se=
+rver-side DNS information, which are different for HTTP and HTTPS connectio=
+ns.</pre></li>
+
+<li><pre class=3D"student-text">Client history detection only works when a =
+certificate is created after someone has visited a site, whereas DNS key pi=
+nning doesn't require history, so a MITM attack on a site that hasn't been =
+visited before wouldn't be detected with the client history key pinning.</p=
+re></li>
+
+<li><pre class=3D"student-text">Client history key pinning detects certific=
+ate substitution attacks only if the user has visited the site previously. =
+DNS key pinning allows teh CA to look at a DNS record to validate ownership=
+ so they can validate ownership of a certificate even if the user has not v=
+isited the site previously.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Client history key pinning relies on the cl=
+ient having visited the site previously. If the attacker obtains a certific=
+ate before the=20
+client's first visit, then the client will trust the malicious certificate.=
+ DNS key pinning avoids this by having a DNSSEC record
+where servers pin their public key so that clients can validate against it.=
+</pre></li>
+
+<li><pre class=3D"student-text">Client history pinning is vulnerable to a M=
+ITM faking a certificate to
+a website that the client hasn't visited yet (i.e., perhaps a bank certific=
+ate).
+DNS pinning is resilient to this.</pre></li>
+
+<li><pre class=3D"student-text">Client history-based key pinning is a Trust=
+-on-First-Use (TOFU) mechanism, which requires the client to manually verif=
+y the authenticity of the first connection to the server. Should the first-=
+use connection be established with an MITM attacker, the client will trust =
+all further connections with the server. In contrast, the DANE protocol (DN=
+S key pinning) requires the entity to pin its public key in its DNSSEC reco=
+rd (the zone and its records are signed) so the public key is verified agai=
+nst the pinned key on the DNSSEC record before the connection is trusted. I=
+n this manner, DNS key pinning can prevent first-use attempts with a malici=
+ous adversary.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Client history-based key pinning is vulnera=
+ble because it is a blind TOFU
+protocol, whereas DANE is a Validate On Every Use protocol. For example, us=
+ing
+history-based key pinning, if there is no pinned certificate in the browser
+then an MITM pin would be accepted upon a client's visit to the site. This
+wouldn't happen using DANE, since the site provider would not have signed t=
+he
+MITM key, meaning the client would recognize the fraud.
+</pre></li>
+
+<li><pre class=3D"student-text">Client-History based certificate pinning re=
+lies trust in a users previous access to a site. If a MITM attack occurs wh=
+en a user has no previous visit to a given address, then the adversary coul=
+d insert their own public key which will then become trusted by the client.=
+ DNS key pinning fixes this issue by securely tying a public key tied to a =
+DNSSEC record signed by a nameserver. This allows a client to verify  publi=
+c keys with a trusted authority through DNSSEC.</pre></li>
+
+<li><pre class=3D"student-text">DANE proposes that servers pin their public=
+ key in their DSNNEC record for clients to validate against through DNS key=
+ pinning. This is stronger than key-pinning based on client history, becaus=
+e the client history just makes sure any of the previous browser-acceptable=
+ certificates seen for a particular site does not change. If the key was wr=
+ong to begin with or the client never visited the cite before it was compro=
+mised, only DNS key pinning would be able to detect that MITM attack by che=
+cking and verifying the server=E2=80=99s public key. </pre></li>
+
+<li><pre class=3D"student-text">DNS key pinning can also detects when the r=
+ogue CAs issue certificates without the permission of the domain holder.</p=
+re></li>
+
+<li><pre class=3D"student-text">DNS key pinning can detect MITM attacks on =
+targetting a website that the user has never visisted (or that he visits fr=
+om a freshly installed browser).
+</pre></li>
+
+<li><pre class=3D"student-text">DNS key pinning can detect a MITM attack wh=
+ere the attacker alters the contents of signed data since the client uses a=
+ CA to validate the server's key.
+</pre></li>
+
+<li><pre class=3D"student-text">DNS key pinning can detect against man in t=
+he middle attacks that involve sites a user has not visited previously. Thi=
+s is something that key pinning through client history cannot do. DNS does =
+this using DNSSEC, which gives clients the ability to validate records that=
+ are digitally signed by the name servers. </pre></li>
+
+<li><pre class=3D"student-text">DNS key pinning offers the security propert=
+y of updatable pins, while client
+history key pinning does not. Client history key pinning may "make false-re=
+ject
+errors if a server updates its public key, switches issuing CAs, or uses
+multiple certificates for the same host.", while DNS key pinning will not. =
+If
+a user has not visited a site before, key-pinning based on history will not=
+ be
+able to protect the user from a MITM attack, while key-pinning based on DNS
+could.
+</pre></li>
+
+<li><pre class=3D"student-text">DNS key pinning will detect a MITM attack w=
+here an attacker is issued a bogus
+certificate from a compromised CA the first time a user visits the website.=
+ DNS
+key pinning would detect this attack because it validates the site's public=
+ key
+against a public key recorded in the DNSSEC record. Client history key pinn=
+ing
+would fail to detect this since it is solely based on what sites the user h=
+as
+visited previously.
+</pre></li>
+
+<li><pre class=3D"student-text">DNS key pinning will detect an attack perfo=
+rmed on a website a client hasn't visited while key pinning based on client=
+ history won't. </pre></li>
+
+<li><pre class=3D"student-text">DNS key-pinning can detect when an adversar=
+y is impersonating a domain owner to a CA.
+</pre></li>
+
+<li><pre class=3D"student-text">DNS pinning using DANE can prevent attacks =
+that target the weakest CA in order
+to obtain a fraudulent certificate.
+</pre></li>
+
+<li><pre class=3D"student-text">Dane requires that a MITM gets approved by =
+a CA, and so will not allow an attack. On the other hand, if it is based on=
+ client history, a MITM that was already present will cause the browser to =
+warn the user of the MITM once the MITM leaves.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Danny Tang
+
+data1013
+
+4/16/18
+
+
+
+Lecture 16
+
+Question:
+
+Table 1 lists key pinning through DNS as achieving better defense against d=
+etecting MITM attacks than key pinning based on client history. Give an exa=
+mple of an MITM attack that can DNS key pinning can detect but key-pinning =
+based on history won't.
+
+Answer:
+
+A MITM could present a bad certificate on the first time that a user visits=
+ a site. DNS key pinning would prevent this because
+users (clients) could instead validate records by themselves instead of rel=
+ying on previous history and trusting whatever they
+see first.</pre></li>
+
+<li><pre class=3D"student-text">For a key-pinning depending on history: thi=
+s remembers the last browser-acceptable public key encountered from a site,=
+ and warns a user if this information change. The problem with this is a TO=
+FU (trust on first use) defense, which means that technically a malicious a=
+ctor could pretend to be that site as a MITM attack the first time a client=
+ looks for a site, and be authenticated forever.=20
+
+For a key-pinning based on DNS: servers pin their public key in the DNSSEC =
+record for clients to validate against. This also offers protections agains=
+t social engineering attakcs that impersonate a domain owner. In the scenar=
+io described above, the DNSSEC record that the client will check would prev=
+ent this from happening. </pre></li>
+
+<li><pre class=3D"student-text">For pinning to work based on client history=
+, a visitor must have visited the site previously, so that the browser has =
+saved that a public key corresponds to a site. For DNS pinning, a browser c=
+an use DNSSEC to validate that a public key belongs to a site, even if they=
+ have not visited it before.
+
+Thus, an attack that client history pinning doesn't protect against is one =
+where the user is visiting a site for the first time, but the attacker inte=
+rcepts the packets and acts as a man in the middle, instead giving the user=
+ their own public key. With DNSSEC pinning, the user would realize that a g=
+iven public key does not belong to the site they are trying to contact.</pr=
+e></li>
+
+<li><pre class=3D"student-text">Give an example of an MITM attack that can =
+DNS key pinning can detect but key-pinning based on history won't.
+
+DNS key pinning can detect an MITM attack in the case where the client is v=
+isiting a
+page for the first time so has no way record of the last browser-acceptable=
+ public key
+for the server, and where the attacker is able to manipulate the client=E2=
+=80=99s view of DNS,
+which could rely on a cache or local resolver.
+</pre></li>
+
+<li><pre class=3D"student-text">History based key-pinning only works if the=
+ user has visited the site before. It also has no way of distinguishing bet=
+ween an actual substitution based attack and legitimate change in the publi=
+c key.
+</pre></li>
+
+<li><pre class=3D"student-text">Honest Ahmed's Certificate Authority and Ca=
+rwash, an intermediate CA trusted by major browsers, is socially engineered=
+ into issuing Mallory a certificate for mit.edu.  Mallory sets up a fake MI=
+T wifi access point and presents her certificate to anyone who tries to acc=
+ess mit.edu webpages.  Browsers accessing mit.edu for the first time will a=
+ccept Mallory's certificate because they have no prior history to check it =
+against.
+
+With DNS key pinning, browsers would check Mallory's certificate against DN=
+SSEC records for mit.edu and detect the mismatch.
+</pre></li>
+
+<li><pre class=3D"student-text">I'm not sure which questions is supposed to=
+ be being answered here... The site for me shows every question from every =
+lecture and it's tough to tell.  Will update when more information becomes =
+available.</pre></li>
+
+<li><pre class=3D"student-text">If a MITM manipulates the cached DNS record=
+ while it is intercepting DNS lookups from a client, those cached records w=
+ill still be cached upon later lookups. For example, a rouge CA could serve=
+ invalid certificates, which in DANE would have been able to be circumvente=
+d by hosts.
+</pre></li>
+
+<li><pre class=3D"student-text">If a client tries to connect to a website, =
+like https://ilove6858.com, for the first time, a man-in-the-middle with a =
+browser-acceptable certificate for https://ilove6858.com could change the c=
+lient's first TLS handshake with https://ilove6858.com, and attempt to impe=
+rsonate https://ilove6858.com by providing their accepted certificate.
+If the client's browser implements key pinning on the client's history, the=
+ man-in-the-middle can go undetected, since the client has not previously s=
+een an acceptable certificate for https://ilove6858.com, so the man-in-the-=
+middle's certificate will still be accepted without warning.
+Instead, if the client's browser implements DNS key pinning, the man-in-the=
+-middle will be detected, since before the client initiates its handshake, =
+it will do a DNSSEC lookup for https://ilove6858.com and validate its certi=
+ficate before the handshake begins.
+Then, if the man-in-the-middle tries to put their certificate in the handsh=
+ake, the client's browser can detect that this certificate is different fro=
+m the one it saw from DNS, and throw a warning.</pre></li>
+
+<li><pre class=3D"student-text">If a domain name is assoicated with a diffe=
+rent IP address, the DNS pinning is able to detect this because it associat=
+es the certificate with the IP address. The local machine would be fooled i=
+nto accepting a certificate from the wrong machine (when it first connects =
+with this machine) becase the domain is associated with the MITM and not th=
+e true server.</pre></li>
+
+<li><pre class=3D"student-text">If a user has not visited a site before, a =
+compromised CA could issue a valid certificate for an adversary that the ad=
+versary could provide to the user, making the client history key pinning us=
+eless since the site had not been visited before. With DANE, the client cou=
+ld check against the public DNS record of the server's key in order to vali=
+date it, which prevents this bootstrapping attack.</pre></li>
+
+<li><pre class=3D"student-text">If the CA is hijacked for a small amount of=
+ time then they can use a different server to sign certificates and make cl=
+ients trust them. DNS will be able to detect the different server while nor=
+mal client history will just show the same domain name.</pre></li>
+
+<li><pre class=3D"student-text">If the MITM attack is on the website that t=
+he user has not visited before, history-based key pinning would have no way=
+ of detecting this attack because of non-existent history. However, DNS-bas=
+ed key pinning can still look up certificate information via DNS method.=20
+</pre></li>
+
+<li><pre class=3D"student-text">If the adversary attacks a client when the =
+client try to connect to a website for the first time, key-pinning based on=
+ history won't detect because these is no history records.
+</pre></li>
+
+<li><pre class=3D"student-text">If the certificate authority for a webpage =
+that is being visited for the first time is changed or invalid, DNS based k=
+ey-pinning will be able to catch it as long as its local cache hasn't been =
+poisoned. Since client-history based pinning looks at the last used key for=
+ the site, if there is no notion of a last key, it cannot validate the CA. =
+However, DNS based pinning looks at the DNS record to validate ownership.
+</pre></li>
+
+<li><pre class=3D"student-text">If the server updates its certificate (pins=
+), and an attacker performs MITM attack just after the update, history base=
+d key-pinning won't be able to tell the MITM because it had 1. it never rec=
+ieved this new key in the history 2. the server acks that it had changed th=
+e certificate. On the other hand, as long as the server's DNS didn't change=
+, DNS based key-pinning will be able to hand such "update pin" case.</pre><=
+/li>
+
+<li><pre class=3D"student-text">If the user has not visited a particular si=
+te, then Client History key pinning will not detect a certificate substitut=
+ion attack by a MITM.=20
+However, a certificate substitution attack would not work against DNS key p=
+inning, as the pinning compares DNS records rather than certificates.</pre>=
+</li>
+
+<li><pre class=3D"student-text">In DANE, the domain owner has to certify an=
+d pin the certificates associated to a domain from a fixed set of CAs. In c=
+lient-based pinning, the client trusts the certificate it sees on first use=
+. Thus, it would be vulnerable to a MITM attack with a certificate from a r=
+ogue CA on first use of a website, while DANE would prevent this attack bec=
+ause the rogue CA would not be authorized by the domain owner in the DNSSEC=
+ record.</pre></li>
+
+<li><pre class=3D"student-text">In a serverless architecture (i.e client-si=
+de history), an adversary could poison the client's DNS cache. If certifica=
+tes are stored in DNS (and verified through DNSSEC), then clients can valid=
+ate the public keys on their own end.
+</pre></li>
+
+<li><pre class=3D"student-text">In cases where the certificate authority is=
+ compromised key pinning through DNS works better.
+</pre></li>
+
+<li><pre class=3D"student-text">Jun Wan 991032935
+
+DNS key-pinning is more secure because servers pin their public key in thei=
+r DNSSEC record. And clients can validate the signature each time, which is=
+ unforgeable. If a user is visiting a new site (maybe after a history clean=
+), then the adversary could obtain some browser-acceptable certificate that=
+ history-based-key-pinning can not detect. However, with DNS-key-pinning, t=
+he public key of the site is already stored in advance. So DNS key-pinning =
+can detect the MITM attack.</pre></li>
+
+<li><pre class=3D"student-text">Key Pinning (client history) v Key Pinning =
+(DNS)
+Key pinning for client history remembers the last public key used for a web=
+site and issues a warning if that key changes, and so can detect certificat=
+e substitution attacks, but only if the user has been to that website befor=
+e.
+
+The DANE protocol requests for servers to pin their public key to their DNS=
+ record for validation.
+
+An attack that could be prevented by DNS key pinning but not client history=
+ key pinning is a certificate substitution attack (a changed public key) by=
+ a website the user is visiting for the first time. The public key change w=
+ould be flagged by the DNS pin, but not by the client history pin.</pre></l=
+i>
+
+<li><pre class=3D"student-text">Key Pinning through DNS (in particular, DNS=
+SEC) is more secure than key pinning based on client history because of TOF=
+U. Key Pinning on client history requires TOFU (Trust on First Use). An exa=
+mple of a MITM attack that DNS key pinning can detect but history key pinni=
+ng can't is if the first time the client accesses the web site, an attacker=
+ uses a MITM attack. The client will have to blindly trust the certificate,=
+ because there is no client history yet to compare against. Thus, the MITM =
+attack will succeed (for history pinning) if it's the first time the client=
+ accesses the site, but it won't work for DNS pinning.
+</pre></li>
+
+<li><pre class=3D"student-text">Key pinning based on Client history, by def=
+inition, uses the last accepted public key to compare with the received pub=
+lic key. However, if the client has never visited the site before, the chec=
+k wouldn't detect a MITM attack, since there is nothing to compare to. Usin=
+g DNS auth, however, the client would be able to detect MITM by validating =
+the PK with the one in the DNSSEC entry.</pre></li>
+
+<li><pre class=3D"student-text">Key pinning based on client history assumes=
+ Trust on First Use (TOFU).  In other words the browser needs to trust the =
+first connection with a site.  On the other hand DNS-based pinning fully co=
+ntrols the record validation process and would avoid a MITM attack where th=
+e first certificate exchange was compromised.  </pre></li>
+
+<li><pre class=3D"student-text">Key pinning based on client history cannot =
+detect a MITM attack if a client has never visited the site before, as ther=
+e will be no cient history to check against. DNS-based key pinning can dete=
+ct this, though
+</pre></li>
+
+<li><pre class=3D"student-text">Key pinning based on client history only wo=
+rks if the client has been to the site in question before; then they can re=
+member the previous browser-acceptable certificate seen from that site and =
+be concerned if a different certificate is used, even if it is browser-acce=
+ptable.
+
+Key pinning based on DNS records means that the server can pin their certif=
+icate to their DNS record, allowing the client to see the expected certific=
+ate even if they haven't visited that site before. Of course, this requires=
+ the DNS records to be secure, so this approach is used in combination with=
+ DNSSEC so that the DNS record is signed by the name server, and the client=
+ can validate it.</pre></li>
+
+<li><pre class=3D"student-text">Key pinning based on client history only wo=
+rks if you assume that the first certificate you get is trusted, because it=
+ compares subsequent certificates against the first one. Key pinning based =
+on DNS does not assume that the first communication is trusted.</pre></li>
+
+<li><pre class=3D"student-text">Key pinning based on client history remembe=
+rs the last browser-acceptable public key for a particular site and warns t=
+he user if this information changes. In key pinning based on DNS, servers p=
+in their public key in their DNSSEC record for clients to validate against.=
+ One possible MITM attack is one that impersonates a domain owner to a cert=
+ificate authority. Key pinning based on client history will not detect this=
+ because it sees a valid certificate authority, but key pinning based on DN=
+S wil detect this because the public key in the DNSSEC record will not be v=
+alid.</pre></li>
+
+<li><pre class=3D"student-text">Key pinning based on client history require=
+s trust of the previous certificate used to connect to an external server. =
+If the owner
+of a DNS name changes, the old owner may still retain a certificate that th=
+e client would then accept. Furthermore, client history
+requires trust of the first authentication made to a server, so if an attac=
+ker provides a different certificate on the first connection
+it will be accepted for every subsequent connection.
+
+Key pinning through DNS mitigates this, since certificate authentication ca=
+n become statelss relative to the client. Provided the DNS provider can
+not be tricked into packaging resolved names with a different certificate, =
+the issue of previously issued certificates or blind trust of first connect=
+ions
+are avoided. However, there stil remains the possibility of cache poisionin=
+g attacks.</pre></li>
+
+<li><pre class=3D"student-text">Key pinning based on client history would n=
+ot work for any MITM attack in which
+the user's browser has not visited the site previously. Thus, if an adversa=
+ry
+has obtained a browser-acceptable certificate, he could perform a certifica=
+te
+substitution attack when the user visits any new site. This is not an issue=
+ when
+key pinning with DNS, as the validation is done via public key pinned in th=
+e
+DNSSEC record.
+</pre></li>
+
+<li><pre class=3D"student-text">Key pinning based on client's browsing hist=
+ory is only affective at detecting MITM attacks on domains that the client =
+has already visited. If a client is visiting a domain for the first time, t=
+he key will be trusted, even if a MITM attack is taking place.
+
+With key pinning through DNS, any change to the key associated with a domai=
+n in a DNS record will cause the owner of the domain to be notified. No cli=
+ent is involved in this process; if a client trusts the owner of a domain t=
+o maintain the security of the website (which would include monitoring for =
+things like DNS notifications that the key is changing), then the client ca=
+n trust the key that is delivered by DANE, even if the client has never vis=
+ited the site before.</pre></li>
+
+<li><pre class=3D"student-text">Key pinning on client history fails to catc=
+h the man in the middle attack where the attacker controls the first certif=
+icate given. This
+requiring risk on "blind" trust on first use (TOFU) is not present with DAN=
+E, which pins on DNS keys</pre></li>
+
+<li><pre class=3D"student-text">Key pinning on client history requires the =
+user to have visited the site before. Key pinning on DNS additionally prote=
+cts against MITM attacks on first-time visits to domains.
+</pre></li>
+
+<li><pre class=3D"student-text">Key pinning through DNS will defend against=
+ MITM attacks for sites that the
+client has not visited yet (or has cleared history since visiting).
+</pre></li>
+
+<li><pre class=3D"student-text">Key pinning through DNS would be more robus=
+t against MITM attacks launched using a compromised CA. </pre></li>
+
+<li><pre class=3D"student-text">Key pinning through client history can only=
+ potentially stop MITM attacks if the client has visited the site that is v=
+ulnerable to the attack before, while DNS key pinning does not require this=
+. Thus a user visiting a new site, say signing up for a bank website, may b=
+e presented with a certificate for the site by some MITM that they will thi=
+nk is valid if they are using client history because there is no entry in t=
+heir history to compare it against, while if they were using DNS key pinnin=
+g they could look at the DNS record to verufy if the certificate issued is =
+valid.
+</pre></li>
+
+<li><pre class=3D"student-text">Key pinning with DNS can defend against MIT=
+M attacks, however cache poisoning attacks can still occur.
+</pre></li>
+
+<li><pre class=3D"student-text">Key-pinning based on client history success=
+fully detects a certificate substitution attack being used to access a part=
+icular site only if the user had previously visited the site. This suggests=
+ that if adversary tries to use a browser-acceptable certificate (e.g. by i=
+mpersonating a domain owner to a CA and generating a certificate) to access=
+ a site that the user hadn't accessed before, history-based key-pinning wou=
+ld not defend against this. However, DNS key pinning would, as a site could=
+ pin certificate attributes that CA's could cross-reference when generating=
+ certificates, so generation of illegimitate certificates would be hindered=
+. Furthermore, if DNSSEC is used, DNS-based key pinning would allow servers=
+ to pin keys in DNSSEC records for clients to validate against, meaning tha=
+t the client would be able to detect unvalidated records received from the =
+server during a MITM attack. So even if the user hadn't previously visited =
+a site before, client-side acceptance of a site record served given a subst=
+ituted certificate -- and illegimitate certificate generation to access the=
+ site in the first place -- would be thwarted by DNS-based key-pinning.</pr=
+e></li>
+
+<li><pre class=3D"student-text">Key-pinning based on history relies on a tr=
+ust-on-first-use policy (TOFU), whereas DNS key pinning builds on DNSSEC, a=
+nd follows a validate-on-every-use policy. DNS pinning can detect a first-u=
+se MITM attack, whereas client history key pinning cannot. In general, DNS =
+pinning is also more flexible and can be supported in a number of protocols=
+. A common example for DANE is email encryption (something that is not spec=
+ificied as a https protocol).
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 16
+
+Table 1 lists key pinning through DNS as achieving better defense against d=
+etecting MITM attacks than key pinning based on client history. Give an exa=
+mple of an MITM attack that can DNS key pinning can detect but key-pinning =
+based on history won't. (A description of DANE is here.)=20
+
+A DNS key pinning can detect a certificate substitution attack for any webs=
+ite as long as it works on DNSSEC. So if an adversary obtains a certificate=
+ for a domain it doesn't know, the client can validate it against the publi=
+c keys in the DNSSEC record.=20
+It also works for history based key pinning but only if the client has visi=
+ted the site sometime before and stored it's public key. If the client has =
+never visited the site before it will not detect this attack or if the adve=
+rsary has manipulated its client's cache.</pre></li>
+
+<li><pre class=3D"student-text">Lecture 16 (Answer to Paper Question)
+
+Question:
+
+Table 1 lists key pinning through DNS as achieving better defense against d=
+etecting MITM attacks than key pinning based on client history. Give an exa=
+mple of an MITM attack that can DNS key pinning can detect but key-pinning =
+based on history won't. (A description of DANE is here.)
+
+
+If a system implements key pinning based on client history, an attacker can=
+ execute a MITM attack when a user connect to a site for the first time. If=
+ a system implements key pinning through DNS, an attacker can't execute a M=
+ITM attack on first connection because the client can validate the public k=
+ey using DANE.
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 16: Certificates
+4/18/18
+
+Table 1 lists key pinning through DNS as achieving better defense against d=
+etecting MITM attacks than key pinning based on client history. Give an exa=
+mple of an MITM attack that can DNS key pinning can detect but key-pinning =
+based on history won't. (A description of DANE is here.)
+
+The user accesses a new site it has never been to before, and there is a MI=
+TM attack that pretends to have control over that DNS record.</pre></li>
+
+<li><pre class=3D"student-text">Lecture 16: SSL and HTTPS Reading Question
+
+If there were a MITM attack on a site that the user had not visited previou=
+sly, DNS key pinning would
+detect the MITM because it would keep track on the most up to date browser =
+acceptable public key at the
+DNS level, and would not require that a user visit the site in the past. Th=
+e new user, in effect, would
+arrive at the site and compare the latest package he is receiving with the =
+last acceptable public key that
+the DNS registered for that given site. If the package that the user just r=
+eceived does not fall in line
+with what the DNS server had stored as acceptable, then the user knows that=
+ there is a MITM attack going on.
+
+However, key pinning based on user history would only start to track the la=
+test browser acceptable public key
+when the user first visits the site. If a MITM attack is already under way =
+when the user first visits, then
+the user will have no way of noticing the attack and will fall victim.
+</pre></li>
+
+<li><pre class=3D"student-text">One example of a MITM attack that DNS key p=
+inning can detect but key-pinning based on history won't:  A user visits a =
+website for the first time, or otherwise clears all history / caches from t=
+heir browser for privacy reasons.  In this case, DNS key pinning based on h=
+istory will not work, but DNS key pinning will still stand a chance of work=
+ing.
+</pre></li>
+
+<li><pre class=3D"student-text">One example where dns key pinning would wor=
+k and client history key pinning
+would fail is when the user has not visited the site before. In this case,
+the user doesn't have an idea of what a valid certificate should be. As a=
+=20
+result, the MITM can maliciously trick the user into believing that it is
+the real website. On the other hand, by using DNS pinning, the certificate
+is directly associated with the DNS record. So, the user can know that the=
+=20
+certificate is legitimate despite not visiting the site before.
+</pre></li>
+
+<li><pre class=3D"student-text">One example would be a first-time MITM atta=
+ck to a website the user hasn't visited yet. Since the browser doesn't know=
+ the new website's public key, it relies on a CA. An improper certificate o=
+r compromised CA would allow the MITM to succeed. On the other hand, with D=
+NS key pinning, the browser would obtain its public key from the DNS instea=
+d, and realize that any malicious certificate wouldn't match the public key=
+.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Question: Table 1 lists key pinning through=
+ DNS as achieving better defense against detecting MITM attacks than key pi=
+nning based on client history. Give an example of an MITM attack that can D=
+NS key pinning can detect but key-pinning based on history won't. (A descri=
+ption of DANE is here.)
+
+Suppose a user wishes to access a website for the first time, then a MITM a=
+ttack would be able to intercept and relay a false cerificate which the use=
+r will then accept as the correct one. Instead of communciating with the ac=
+tual server, the user will think the adversary is real and send information=
+ over. DNS key pinning would be able to invalidate the false certificates a=
+nd records.</pre></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 16
+
+Table 1 lists key pinning through DNS as achieving better defense against d=
+etecting MITM attacks than key pinning based on client history. Give an exa=
+mple of an MITM attack that can DNS key pinning can detect but key-pinning =
+based on history won't. (A description of DANE is here.)
+
+Both protocols verify the certificate of a web page. Key pinning through DN=
+S provides the public keys for the clients to verify (similar to how CAs ve=
+rify). Key pinning through client history just compares the new certificate=
+ to the last certificate seen from that site and notes any changes. This do=
+es not allow verification of a new site because there is no old cert stored=
+ to compare against. So if a MITM is impersonating a new site, key pinning =
+through history will not detect it.</pre></li>
+
+<li><pre class=3D"student-text">Since client-history key pinning is inducti=
+ve, it doesn't work the first time a client attempts to view the certificat=
+e for a domain. DNS-based pinning doesn't have this limitation.</pre></li>
+
+<li><pre class=3D"student-text">Since key pinning based on client history r=
+equires there to be some history of interaction, if a client visits a new w=
+ebsite for the first time, a MITM attack could succeed by pretending to be =
+the CA. Key pinning with DNS will not encounter this problem due to DNSSEC.=
+</pre></li>
+
+<li><pre class=3D"student-text">Social engineering attack. The adversary ca=
+n impersonate
+a domain owner and ask CAs to generate a certificate for
+him. But since the DNS record is included, CAs can talk=20
+to each other to verify the identity of the domain owner
+by checking the DNS record.  </pre></li>
+
+<li><pre class=3D"student-text">Suppose an adversary obtains certificates f=
+or a domain d that he does not control. Then he could modify a TLS handshak=
+e meant for the domain d by replacing that domain's certificate with his ow=
+n. Say a user has never visited domain d before, but tries to access it for=
+ the first time. This MITM attack would still be detected by DNS key pinnin=
+g. However, the attack would not be detected by key pinning based on client=
+ history. Key pinning based on history requires blind trust on first use. <=
+/pre></li>
+
+<li><pre class=3D"student-text">Suppose an attacker has the private key of =
+one of the many trusted CAs, so he can fake a TLS certificate, but does not=
+ have any way of faking a DNSSEC record (realistic because the DNSSEC PKI i=
+s smaller and contains fewer trusted root CAs).
+Further suppose that a victim is visiting bank.com for the first time, and =
+that the attacker intercepts the request and serves a fake certificate for =
+bank.com.
+In this case, key pinning based on client history does not prevent the atta=
+ck, because the client has no history, but DNS key pinning does, because th=
+e client compares the public key of bank.com from the DNSSEC record with th=
+e public key given in the certificate provided by the attacker and would no=
+tice that they're not the same.
+</pre></li>
+
+<li><pre class=3D"student-text">Table 1 lists key pinning through DNS as ac=
+hieving better defense against
+detecting MITM attacks than key pinning based on client history. Give an ex=
+ample
+of an MITM attack that can DNS key pinning can detect but key-pinning based=
+ on
+history won't. (A description of DANE is here.)
+
+Key pinning through client history only protects against MITM in cases wher=
+e the
+client has previously been communicating with the correct server, and has h=
+ence
+received the correct key before. In cases where the very first client
+communication with a particularly website is MITM-ed, client history key-pi=
+nning
+wouldn't be useful, whereas DNS key-pinning would.
+</pre></li>
+
+<li><pre class=3D"student-text">Table 1 lists key pinning through DNS as ac=
+hieving better defense against detecting MITM attacks than key pinning base=
+d on client history. Give an example of an MITM attack that DNS key pinning=
+ can detect but key-pinning based on history won't.
+
+---
+
+Key pinning based on the client's history is not be able to detect any MITM=
+ attack for a site that the client hasn't visited before. DNS key pinning, =
+however, would be able to detect an illegitimate public key provided by a M=
+ITM whether the client had visited the site previously or not since the pub=
+lic key is tied to a digitally-signed DNS record.</pre></li>
+
+<li><pre class=3D"student-text">Table 1 lists key pinning through DNS as ac=
+hieving better defense against detecting MITM attacks than key pinning base=
+d on client history. Give an example of an MITM attack that can DNS key pin=
+ning can detect but key-pinning based on history won't.
+
+Key pinning based on history is vulnerable to a MITM attack from the outset=
+. Suppose the attacker keeps a cached version of a website the client is vi=
+siting for the first time. The client will then remember that certificate f=
+or that domain onwards. In the DNS version of key pinning, the client will =
+verify through DNSSEC records that they have the correct certificate, thus =
+the attacker will not be able to supply a locally cached version.
+</pre></li>
+
+<li><pre class=3D"student-text">Table 1 lists key pinning through DNS as ac=
+hieving better defense against detecting MITM attacks than key pinning base=
+d on client history. Give an example of an MITM attack that can DNS key pin=
+ning can detect but key-pinning based on history won't.
+
+Key pinning based on client history relies on trust on first use (TOFU). If=
+ there is a MITM from the first access, key pinning based on client history=
+ won't be able to detect the incorrect public key on the certificate. Howev=
+er, DNS based key pinning relies on DNSSEC authenticated records to include=
+ their public key for their certificate in their record, so even on the fir=
+st access a client can tell if they are accessing a site with the correct c=
+ertificate.
+
+</pre></li>
+
+<li><pre class=3D"student-text">Table 1 lists key pinning through DNS as ac=
+hieving better defense against detecting MITM attacks than key pinning base=
+d on client history. Give an example of an MITM attack that can DNS key pin=
+ning can detect but key-pinning based on history won't. (A description of D=
+ANE is here.)
+
+Answer:
+The adversary could intercept a request to some HTTPs site with the last br=
+owser-acceptable public key and inject some data into the request that pois=
+ons the dns cache in the client. However, the DNS based pinning checks the =
+DNS records for the public key, which avoids this attack.
+</pre></li>
+
+<li><pre class=3D"student-text">Table 1 lists key pinning through DNS as ac=
+hieving better defense against detecting MITM attacks than key pinning base=
+d on client history. Give an example of an MITM attack that can DNS key pin=
+ning can detect but key-pinning based on history won't. (A description of D=
+ANE is here.)
+
+Exploit a first use challenge and twick a user to "trust" a malicious site =
+by falcifying a DNS record, e.g. by placing a static route to a MITM. This =
+fact will stay unnoticed for a user. This trick won't work in case of key p=
+inning through DNS, because a certificate is attached to a DNS record inste=
+ad.
+   </pre></li>
+
+<li><pre class=3D"student-text">Table 1 lists key pinning through DNS as ac=
+hieving better defense against detecting MITM attacks than key pinning base=
+d on client history. Give an example of an MITM attack that can DNS key pin=
+ning can detect but key-pinning based on history won't. (A description of D=
+ANE is here.)
+One attack would be to change a certificate but leave the SubjectPublicKeyI=
+nfo (and some other fields potentially as well) as being the same.  This co=
+uld pass the client side key-pinning if only the SubjectPublicKeyInfo was a=
+ctually verified.  However, in the DNS case, the changes would be caught as=
+ having not been done by the original host.</pre></li>
+
+<li><pre class=3D"student-text">The first time a client connects to a site,=
+ they won't have any history on it, so no history-based pinning will be act=
+ive and an active network attacker could perform a MITM attack that downgra=
+des to an insecure connection. However, a DNS-based pinning strategy would =
+avoid this because the client would initially learn that the site requires =
+secure connections.
+</pre></li>
+
+<li><pre class=3D"student-text">The previous key-pinned certificate in hist=
+ory has expired, and a new false certificate is accepted by the client. In =
+the DNS case, the certificate can be securely updated by the prior certific=
+ate holder.=20
+</pre></li>
+
+<li><pre class=3D"student-text">The reading mentions that key-pinning based=
+ on history requires the client to take risk when accessing a site for the =
+first time. The client may unknowingly accesses and trusts a site that is a=
+lready known to be untrustworthy by the DNS server.</pre></li>
+
+<li><pre class=3D"student-text">The table lists "Updatable Pins" as an atta=
+ck which Key Pinning with DNS can detect but Key Pinning with History canno=
+t. One could perform a MITM attack by updating a server's public key to use=
+ multiple certificates for the same machine.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Using the client history for key pinning do=
+es not detect a Man in the Middle attack if it is the first time a user is =
+visiting that website. However, DNS-based pinning always detects MITM attac=
+ks.
+</pre></li>
+
+<li><pre class=3D"student-text">With key pinning in client history, it reme=
+mbers the last browser acceptable public key and checks that it is valid (o=
+r warns the user if it has changed). If we manage to manipulate information=
+ without affecting the public key (or retaining the same public key), we ca=
+n probably trick the user into believing that it is a trusted site.=20
+</pre></li>
+
+<li><pre class=3D"student-text">a MITM attack that DNS pinning can detect, =
+but not  key-pinning based on history would be a MITM attack enabled by a c=
+hange in domain ownership. If the previous owner of a domain has a valid ce=
+rt for the domain, history based pinning would still validate this certific=
+ate for MITM attacks, but DNS pinning would not.</pre></li>
+
+<li><pre class=3D"student-text">key-pinning based on client history clearly=
+ will never work properly if a man in the middle is there from the very beg=
+inning.
+Actually, if in a first instance a MITM is present and in a second time it =
+leaves, the browser will warn the user (even though
+*now* he is safe). This type of attack, however, can't be executed when it =
+comes to DANE, since a MITM would necessarily need
+to be approved by a CA that is itself regulated by a domain name authority.=
+ =20
+</pre></li>
+
+<li><pre class=3D"student-text">lec16
+
+If a client visits evil.com thinking that the website is
+a different, legitimate website, and the client has not
+visiting the legitimate website before, there is no client
+history to indicate that there is a MITM.  With DNS key
+pinning, evil.com can be identified as a MITM right away.</pre></li>
+
+<li><pre class=3D"student-text">lec16.txt
+
+John McLaughlin
+April 18, 2016
+
+
+Question:
+Table 1 lists key pinning through DNS as achieving better defense against d=
+etecting MITM attacks than key pinning based on client history. Give an exa=
+mple of an MITM attack that can DNS key pinning can detect but key-pinning =
+based on history won't. (A description of DANE is here.)
+
+An attacker could start a man in the middle attack against a victim before =
+the victim has ever visited the site being impersonated. With key pinning b=
+ased on client history, the victim would not have any way to know that the =
+site was being forged. With key pinning through DNS, the victim would valid=
+ate the key against an external resource and see that there was a mismatch.
+</pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--HvXW7FKXWVsmhLFChZSsK7X8wKAVOfxVxF0RC3EccS------

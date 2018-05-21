@@ -1,0 +1,874 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-questions/16
+Subject: Questions for lecture 16 - 6.858
+Date: Tue, 21 May 2018 01:40:31 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--oqkI7QeykJLNT3oMaEKdMUJM4Oz3VkaV09YeQ0NzAf----"
+
+
+------MultipartBoundary--oqkI7QeykJLNT3oMaEKdMUJM4Oz3VkaV09YeQ0NzAf----
+Content-Type: text/html
+Content-ID: <frame-1181-0e624343-93a2-45e7-b254-c6b862e4edf5@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-questions/16
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Questions for lecture 16 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Questions for lecture 16 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text">How many of the things in section 5C have b=
+een implemented and are in use in the "real world"?
+</pre></li>
+
+<li><pre class=3D"student-text">"HTTPS connec- tions to Facebook over multi=
+ple ISPs within Syria were MITMed
+with a Facebook certificate issued by the Syrian Telecom Ministry."
+
+How did the Syrian Telecom Ministry manage to issue a Facebook certificate?
+Also, since the Syrian Telecoom Ministry is not a browser-acceptable CA, ho=
+w
+did it get any browsers to trust it and accept the bad certificate (and hen=
+ce
+do MITM)?
+</pre></li>
+
+<li><pre class=3D"student-text">(pg. 515 in paper) - The paper says that th=
+e browser OperaMini openly proxies HTTPs connections for the purpose of com=
+pression between client and proxy. Didn't the paper also say that compressi=
+ng HTTP traffic over TLS is insecure. Why is this different?
+</pre></li>
+
+<li><pre class=3D"student-text">- What is an oracle attack?
+
+- What are EV and DV certificates? Extended Validation vs. Domain Validated=
+? Is one better than the other (the paper mentions downgrading to DV)?</pre=
+></li>
+
+<li><pre class=3D"student-text">1. Section IIIC describes an oracle attack =
+in which an adversary can figure out a pre-master secret by repeatedly send=
+ing separate handshakes with adaptively modified versions of the encrypted =
+pre-master secret. This takes about 1M queries. Couldn't the server figure =
+out what is going on and stop the attack?
+2. How do certificate requesters demonstrate control over domains to CAs?
+3. The paper describes security issues related to maintenance of Trust. The=
+ authors say that even if a fraudulent certificate is revoked, it might tak=
+e multiple days for this information to be available to clients, even with =
+OCSP, due to caching. Where exactly are these certificates cached? For secu=
+rity-critical requests, is there a way reject cached certificates and get t=
+he certificate from the CA itself? Or is this not allowed due to DDOS conce=
+rns?
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">1. What primitives in the paper become inef=
+fective if we assume that the adversary has access to the client's cache? <=
+/pre></li>
+
+<li><pre class=3D"student-text">6.858 - SSL + HTTPS
+
+Is DNSSEC fully deployed in the modern age? If so, what is preventing
+DNS servers from using it?
+</pre></li>
+
+<li><pre class=3D"student-text">&gt; NIST strongly recommends that primitiv=
+es hold the equivalent of 112 bits (symmetric) security strength and will r=
+equire this by 2014 [22] (e.g., phasing out 1024-bit RSA/DSA and 193-bit EC=
+DSA).
+ * Why is having a protocol with more bits (e.g. 1024-bit RSA) not as good =
+as having one with 112 bits of symmetric security strength? Is 1024-bit RSA=
+ 1024 bits of asymmetric security? If so, why are so many fewer bits of sym=
+metric security preferred?</pre></li>
+
+<li><pre class=3D"student-text">According to the paper, CAs can issue certi=
+ficates empowering other organizations to also be CAs.
+It seems like this just introduces more problems, since now there are more =
+CAs that could be vulnerable, and now browsers may have to validate chains =
+of certificates leading to a trust anchor.
+What purpose does this serve? Improved performance, since there can be more=
+ CAs to issue certificates?
+Bootstrapping new CAs as trusted via existing CAs? But then in this case, w=
+hy would Ford, Marks and Spencer, and the US Dept. of Homeland Security be =
+trusted as CAs, as mentioned in the paper?
+
+In a compact, haiku form:
+New problems arise
+when CAs make new CAs.
+Why do this at all?
+</pre></li>
+
+<li><pre class=3D"student-text">Are all the security issues discussed still=
+ problems? For example, parsing attacks seem realtively easy to solve since=
+ there seems to only be a finite number of parsing problems you could have.=
+=20
+</pre></li>
+
+<li><pre class=3D"student-text">Are blockchain technology be actively looke=
+d into for using to help increase DNS or CA servers security?</pre></li>
+
+<li><pre class=3D"student-text">Are there any notable differences in securi=
+ty implementation between mobile and web platforms?
+</pre></li>
+
+<li><pre class=3D"student-text">CA seem to create bottleneck since they are=
+ the sourse of certificates. Are there not protocols that confirm the authe=
+nticity of a server by asking other machines on the network? Like crownsouc=
+ing or block-chain, is there a means of verifing a machine based on a netwo=
+rk of clients machines verying they have the same certificate identifier?</=
+pre></li>
+
+<li><pre class=3D"student-text">Can websites (aka server) implement additio=
+nal security features on top of HTTPS/TLS to further decrease possibility o=
+f MITM or other attacks?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Can you elaborate on why MD5 is so bad? I g=
+uess I just don't really understand what a "meaningful" collision is and wh=
+y that's so relevant.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Can you explain the distinction b/w TLS and=
+ EV TLS?  At one point, the paper explained the concept of extended validat=
+ion (EV), and later it discusses the use of three delivery mechanisms (no T=
+LS, TLS, and EV TLS) for handling mixed content.  What is the difference b/=
+w TLS and EV TLS, and when would you choose one vs. the other?
+</pre></li>
+
+<li><pre class=3D"student-text">Considering that there are many different e=
+xperimental systems out for certificate verification, would it be practical=
+ for a state-level actor to obtain
+a trusted CA certificate and apply it broadly (i.e on all traffic travellin=
+g on an ISP) without some client likely detecting the MITM attack? Or would
+such techniques need to be applied narrowly to avoid detection?</pre></li>
+
+<li><pre class=3D"student-text">DANE-based key pinning relies on the chain =
+of trust for DNSSEC, which
+ultimately relies on DNS zone operators to be competent and
+well-behaved.  Why do we trust them more than CAs?  If it's because
+there's only a single operator for each zone, rather than a variety of
+operators with varying levels of competence, why is this better than
+shrinking the set of trusted CAs?
+</pre></li>
+
+<li><pre class=3D"student-text">DNSSEC is essential to DNS based key pinnin=
+g. Given this allows the creation of a secure record tied to a DNS name, wh=
+at other security applications does it have?</pre></li>
+
+<li><pre class=3D"student-text">Danny Tang
+data1013
+4/16/18
+
+Lecture 16
+
+How did the authors of this paper find all of these attacks? Is this a comp=
+ilation of issues presented in other works, or did they
+discover these themselves through testing?</pre></li>
+
+<li><pre class=3D"student-text">Did TACK ever take off, and if it didn't, w=
+hy didn't it? It says the TACK paper was published in 2012, which should be=
+ ample time to be adopted.
+</pre></li>
+
+<li><pre class=3D"student-text">Do SSL/HTTPS work any differently on mobile=
+ browsers compared to the browsers on my computer?
+</pre></li>
+
+<li><pre class=3D"student-text">Do certificate authorities have a jurisdict=
+ion of sites to manage? How is the namespace segmented in general if there =
+are multiple CAs that you can talk to? Is it fairly likely that multiple CA=
+s will have keys for a given common name?
+</pre></li>
+
+<li><pre class=3D"student-text">Do you think that widespread DANE deploymen=
+t is realistic? What about ongoing
+long term effort to deprecate normal unencrypted HTTP (first with HSTS, and
+eventually by issuing security warnings for all http sites)?
+</pre></li>
+
+<li><pre class=3D"student-text">Does key pinning through DNS assume that we=
+ implicitly put some of the trust in validating certificates through DNS se=
+rvers over CA servers? It seems that DNS attacks are more common than CA at=
+tacks, so this might make the validation process more vulnerable.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Each time a certificate for the same origin=
+ is signed by the certificate authority, is it signed with a different key?=
+ </pre></li>
+
+<li><pre class=3D"student-text">From what I can tell it seems like CAs are =
+still pretty widely used. Are there any key reasons why something like DANE=
+ isn't as popular?</pre></li>
+
+<li><pre class=3D"student-text">Given that there are so many security risks=
+ involving HTTPS, how feasible would it be to design and implement an entir=
+ely new system to replace HTTPS?</pre></li>
+
+<li><pre class=3D"student-text">Has the problem of certificate expiration b=
+een resolved? For example, if I was facebook and bought face.com, can I be =
+assured that no valid certificates exist for face.com that aren't mine, or =
+do I need to wait two years until they've all expired to be sure everything=
+ is ok?</pre></li>
+
+<li><pre class=3D"student-text">Have any of these described vulnerabilities=
+ been addressed since the paper was written in 2013?
+</pre></li>
+
+<li><pre class=3D"student-text">How big/prevalent of a problem is TLS strip=
+ping in the wild?  The paper says =E2=80=9CThe chief mechanism for preventi=
+ng TLS stripping is to make certain domains only support TLS and communicat=
+e this to clients with a pin.=E2=80=9D Is this effective in practice? </pre=
+></li>
+
+<li><pre class=3D"student-text">How common is it for new CAs to come into e=
+xistence and how easy is it to start one?</pre></li>
+
+<li><pre class=3D"student-text">How do open CAs like Let's Encrypt affect t=
+he trustworthiness of certificates?
+</pre></li>
+
+<li><pre class=3D"student-text">How do the human factors surrounding DNS wo=
+rk, particularly the root name servers? I can look up who runs them, but ho=
+w is their behavior decided? What has to happen to create a new domain and =
+propagate it across the servers?</pre></li>
+
+<li><pre class=3D"student-text">How does a security designer decide what fo=
+rm or forms of key pinning to use?
+(client history vs server vs key pinning vs DNS)
+
+</pre></li>
+
+<li><pre class=3D"student-text">How does my browser (or is it the OS?) know=
+ the root of the DNSSEC chain of trust? Does it have hardcoded DNSSEC root =
+public keys somewhere, similarly to root CA certificates?
+</pre></li>
+
+<li><pre class=3D"student-text">How does something become a trusted CA?=20
+</pre></li>
+
+<li><pre class=3D"student-text">How would an attacker compromise a CA to gi=
+ve false certificates?=20
+Is there a reason you would want to use all types of Key Pinning in unison?=
+ </pre></li>
+
+<li><pre class=3D"student-text">I find it interesting that the previous pap=
+er took the position that we can use
+DNS through TLS to get secure DNS without DNSSEC, but this paper suggests u=
+sing=20
+DNSSEC as a way to further secure TLS.=20
+
+In this paper, as with others we have read in the past, DNSSEC would seem t=
+o
+just solve the problem. So why hasn't more work been done to see it impleme=
+nted?
+</pre></li>
+
+<li><pre class=3D"student-text">I found it interesting when the reading men=
+tioned how the understandability of security warning messages did not affec=
+t the chance of users ignoring them. This seems to be a dangerous situation=
+ since more and more users without security knowledges are gaining access t=
+o technology. What do you think is the best solution for the security commu=
+nity moving forward e.g. trying to educate users or hiding security decisio=
+ns all together from users?</pre></li>
+
+<li><pre class=3D"student-text">I think I am confused on the architecture o=
+f CA, certificates, browsers, clients, and servers and how they relate and =
+talk to eachother.
+</pre></li>
+
+<li><pre class=3D"student-text">I think the MITM attack referred in this pa=
+per focus specifically on the certificate authentication. Is it possible fo=
+r the attacker to wait after the authentication finishes and then take over=
+ the communication channel? Or maybe everyone message sent between server a=
+nd client is encrypted such that adversary can not do that?</pre></li>
+
+<li><pre class=3D"student-text">I've been wondering this for a while, but i=
+f the HTTPS protocol is so effective, why is it not more widely adopted?
+
+</pre></li>
+
+<li><pre class=3D"student-text">III-B-1) mentioned poor PRG seeding in embe=
+dded devices specifically. Is there
+an inherent reason why embedded devices might be more prone to poor PRG see=
+ding?=20
+</pre></li>
+
+<li><pre class=3D"student-text">If DNSSEC is the thing that makes Key Pinni=
+ng (DNS) work, then if a client only uses DNS, this invalidates the Key Pin=
+ning protection? </pre></li>
+
+<li><pre class=3D"student-text">If a CA is somehow compromised, do browser =
+manufacturers have a quick way to
+revoke it from the list of trusted CAs built-in to the browser?
+</pre></li>
+
+<li><pre class=3D"student-text">In this paper, DNSSEC is seemingly used as =
+a black-box solution that allows DANE to work. Although I am aware there is=
+ controversy surrounding whether or not DNSSEC should be adopted, is it as =
+secure as the paper assumes and has it been adopted enough yet to the point=
+ where the use of DANE is viable?</pre></li>
+
+<li><pre class=3D"student-text">Is DNSSEC commonly deployed and used nowada=
+ys?
+</pre></li>
+
+<li><pre class=3D"student-text">Is crowd-sourcing actually a viable option?=
+ It seems like a neat idea, but could be subject to issues such as an adver=
+sary spoofing a large number of 'peers' to provide faulty data.</pre></li>
+
+<li><pre class=3D"student-text">Is having increasingly more CAs a bad thing=
+?</pre></li>
+
+<li><pre class=3D"student-text">Is it possible to perform a MITM attack on =
+the DNS level? Not only to avoid DNS Key Pinning, but also, possibly, redir=
+ecting the domain name to a different IP address?</pre></li>
+
+<li><pre class=3D"student-text">Is there any way to remove valid certificat=
+es for previous owners of a domain name? The paper mentions that the previo=
+us owner of fb.com could still have a valid certificate for it from when th=
+ey owned the domain and it would still work today even though the site is n=
+ow owned by Facebook. Is there any way to get rid of this potential certifi=
+cate or render it invalid?
+</pre></li>
+
+<li><pre class=3D"student-text">Is there any work trying to deal with the b=
+ack-compat issues that are at the root of things such as rollback attacks? =
+ Or has that been decided to be sort of a fundamental problem in the space?=
+</pre></li>
+
+<li><pre class=3D"student-text">It seems like CAs are quite a large securit=
+y vulnerability. Is it possible to
+design an internet system without CAs? Have you seen any papers that propos=
+e
+systems other than CAs for key management?
+</pre></li>
+
+<li><pre class=3D"student-text">Key pinning based on DNS seems like a good =
+idea, but DNSSEC does not seem to be widely used. What are the current solu=
+tions to improving security of CAs?</pre></li>
+
+<li><pre class=3D"student-text">Large number of trusted CAs raises the risk=
+ of compromise. Why should CAs be able to issue certificates empowering oth=
+er organizations to act as a CA? What are the privileges of those subCAs?
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 16 (Question About Paper)
+
+It seems like one of the biggest problem with HTTPS is the issuance of cert=
+ificates. Have researchers explored implementing a proof of work system (si=
+milar to bitcoin) to ensure that certificates are valid?
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 16: Certificates
+4/18/18
+
+I don't quite understand the section where they talk about Transitivity of =
+Trust. I says that there is in theory a chain of trust, but it says in prac=
+tice not all of the chain is verified, and browsers instead rely on anchors=
+?
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 16: My SSL and HTTPS Question
+
+How exactly does collision resistance deteriorate? For example, the paper m=
+entions that
+the MD5 hash function's resistance deteriorated over time from attacks, but=
+ what exactly
+does that mean and how exactly does it happen?
+
+Thank you!
+</pre></li>
+
+<li><pre class=3D"student-text">Many people view the internet as decentrali=
+zed, but if our security assumptions rely on trusted CAs is it really decen=
+tralized?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Question about Paper:
+
+Which level would be best to pin the public key for HPKP? Pinning it at the=
+ root be a bad idea, but is pinning it at the issued server certificate sec=
+ure enough? Are there revocation extensions in OCSP/CRL to revoke old publi=
+c keys that had their private key compromised?</pre></li>
+
+<li><pre class=3D"student-text">Question: Is it possible for blockchain tec=
+hnology to replace the need for certificate authorities?</pre></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 16
+
+What does it take to become a recognized CA? Could an attacker create a CA =
+to create valid certificates for itself?</pre></li>
+
+<li><pre class=3D"student-text">Since a lot of the keys are generated by th=
+e client instead of the server, and different clients have different RNGs o=
+f different security levels, do people do anything to account for this serv=
+erside?</pre></li>
+
+<li><pre class=3D"student-text">Slightly unrelated to the paper, but are th=
+ere any protocols that allow a DNS server to authenticate a client (rather =
+than the other way around)?
+</pre></li>
+
+<li><pre class=3D"student-text">Table 1 lists key pinning through DNS as ac=
+hieving better defense against detecting MITM attacks than key pinning base=
+d on client history. Give an example of an MITM attack that can DNS key pin=
+ning can detect but key-pinning based on history won't. (A description of D=
+ANE is here.)
+
+Key pinning through DNS offers a better means of defense in detecting MITM =
+attacks based than key pinning based on client history. For example, a clie=
+nt visits a website for the first time. If keys are pinned through DNS, the=
+ client can verify the website certificate's authenticity. If keys are pinn=
+ed through client history, the client can not verify the website certificat=
+e's authenticity.</pre></li>
+
+<li><pre class=3D"student-text">The article touched the sovereign key conce=
+pt. Self-sovereign identity is a hot topic, but can it be applied to domain=
+ certificates? It might address various challenges with the trust to CAs.  =
+</pre></li>
+
+<li><pre class=3D"student-text">The paper asks a question that I still don'=
+t understand after reading the paper -=20
+"If a CA does no more than look at a DNS record to validate ownership, then=
+ couldn't clients do it instead?"
+
+If this is the case, then why do we have CAs still at all? What benefits do=
+ CAs provide that necessitate their use? </pre></li>
+
+<li><pre class=3D"student-text">The paper briefly mentions at the end that =
+replacing the CA infrastructure (or
+at the very least, changing it significantly) may be a solution to many of =
+these
+issues moving forward. What has the direction of CAs been since this paper =
+was
+written?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper discusses further research and on=
+going discussion, are these still important areas of open research in HTTPS=
+ security and the certificate trust model?</pre></li>
+
+<li><pre class=3D"student-text">The paper discusses proposals that involve =
+different methods of key pinning, including CertLock, HPKP, TACK, and DANE.=
+ What is the status of these proposals now? Are they still just proposals, =
+have any been adopted widely?</pre></li>
+
+<li><pre class=3D"student-text">The paper lists "Human Element and the Secu=
+rity User Interface" as a persistant issue in security models. It also says=
+ that "Testing defaults, UI changes, and the wording of warning dialogues r=
+equires further research, as well as protocol =E2=80=98ceremony=E2=80=99 an=
+alysis that includes humans."
+
+It seems that blind trust by users and not wanting to read "things" is a hu=
+ge problem (e.g. like with the Facebook user data policies now). What are t=
+he sorts of research studies that the authors are mentioning? Is this actua=
+lly an active area of research?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions issues regarding confusi=
+ng user interfaces and HTTPS. What are some examples of other security syst=
+ems in which a poor user interface design affected the security of the syst=
+em?</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that Google Chrome curre=
+ntly pins some certificates for its own domains -- do other browsers use ke=
+y pinning? Are they
+automatically supported or do they require extensions?</pre></li>
+
+<li><pre class=3D"student-text">The paper states that intermediate CAs are =
+effectively as trusted as trust anchors, and that the U.S. Department of Ho=
+meland Security is one such anchor.  Does this mean that the DHS could tech=
+nically launch MITM attacks over HTTPS for any site?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper talks about how one possible atta=
+ck over HTTPS is to send pages back to the client over HTTP, for example on=
+ client login. Is there not some mechanism to prevent HTTP pages to be rela=
+yed back when on a website that is served over HTTPS?</pre></li>
+
+<li><pre class=3D"student-text">The paper's concluding remarks claim that r=
+eplacing the CA infrastructure is viewed as a way forward and that integrat=
+ion of the certificate trust model with DNS is evolving. Five years on sinc=
+e this paper was written, how much of this evolution has taken place, given=
+ the slow deployment of DNSSEC? Has the CA infrastructure changed/improved?=
+</pre></li>
+
+<li><pre class=3D"student-text">The papers we have been reading recently ar=
+e quite new (at least this one is from 2013). Why does it seem like we do n=
+ot suffer from the various vulnerabilities mentioned in the papers? Is it h=
+ard to actually implement the attacks, or are these attacks happening and I=
+ just am not aware enough?</pre></li>
+
+<li><pre class=3D"student-text">The potential usefulness of DNSSEC has come=
+ up repeatedly this semester-- so
+why is it that something that gets such frequent praise in systems/security
+courses still so undersupported? Is it the overhead that prevents it from b=
+eing
+worthwhile? DNSSEC is backwards-compatible, so it doesn't seem like it shou=
+ld
+be any harder to transition to than any other widespread protocol switch. D=
+oes
+DNSSEC have problems that make the transition not worthwhile, or is it that=
+ our
+current security methods are good enough that the slight additional securit=
+y
+isn't worth it?=20
+</pre></li>
+
+<li><pre class=3D"student-text">The table in the paper says that key pinnin=
+g through DNS works to detect MITM attacks, but are there any edge cases wh=
+ere this is not true?
+
+</pre></li>
+
+<li><pre class=3D"student-text">There are a lot of CA's that can issue cert=
+ificates to websites.  Is there a history of CA's abusing their power inten=
+tionally?  How does a CA become a CA and who determines whether they can be=
+come/continue to be a CA? =20
+</pre></li>
+
+<li><pre class=3D"student-text">There are some browser extensions that enfo=
+rce HTTPS to be used everywhere. Is there any downside to using something l=
+ike this? Is there any time HTTPS would not be desired?
+</pre></li>
+
+<li><pre class=3D"student-text">There has been several major security attac=
+ks in third world countries adversaries changing the certificates on users'=
+ browsers. Is there good alternative for current use of certificates to aut=
+horize entities?
+</pre></li>
+
+<li><pre class=3D"student-text">This paper mentions vulnerabilities in mobi=
+le browsers which do not fully enforce the full suite of security policies.=
+ What are some of the real-world attacks that have occurred on mobile devic=
+es?</pre></li>
+
+<li><pre class=3D"student-text">What caused the proliferation of certificat=
+e authorities? How are they created?</pre></li>
+
+<li><pre class=3D"student-text">What important information is obtained thro=
+ugh timing attacks? Just the length
+doesn't seem that important.
+</pre></li>
+
+<li><pre class=3D"student-text">What is a good reference for the flow of cl=
+ient pinning vs. DNS? </pre></li>
+
+<li><pre class=3D"student-text">What is cipher block chaining mode and what=
+'s CBC padding?
+</pre></li>
+
+<li><pre class=3D"student-text">What is the preferred method in practice of=
+ dealing with the various issues mentioned in the paper? In addition, the p=
+aper mentions
+studies	involving people's understanding of HTTPS, certificates and general=
+ web security. Up until I started studying at MIT, I had little to no idea
+what any of these terms meant, let alone whether or not I could tell if the=
+y were working. It seems unlikely that we will ever
+have a reasonably secure Internet without knowledge for the general public,=
+ but that knowledge is rarely disseminated. Would our web
+be more secure if exposure to its security properties were increased, or is=
+ it too large an effort to make a noticeable impact?</pre></li>
+
+<li><pre class=3D"student-text">What is the root of trust in DNSSEC? Why is=
+ the DNS system more trustworthy than a CA (so that it can be used for DANE=
+ pinning)?</pre></li>
+
+<li><pre class=3D"student-text">What key pinning exploits have happened rec=
+ently?</pre></li>
+
+<li><pre class=3D"student-text">What prevents the NSA/any governmental agen=
+cies from approaching researchers to ask researchers not to publish a disco=
+vered vulnerability and instead buy their vulnerabilites?=20
+</pre></li>
+
+<li><pre class=3D"student-text">What types of pinning are commonly used tod=
+ay?</pre></li>
+
+<li><pre class=3D"student-text">What's the incentive to become a CA and how=
+ to=20
+become a CA? Is there an organization handling=20
+CA application and allocation?</pre></li>
+
+<li><pre class=3D"student-text">What=EF=BF=BDs the biggest difference for c=
+ertificates on mobile?
+</pre></li>
+
+<li><pre class=3D"student-text">When do CAs use CRLs and when do they use O=
+CSP responders?</pre></li>
+
+<li><pre class=3D"student-text">When looking at authentication and encrypti=
+on security issues, how much usually stems from insufficient models of the =
+internet versus poor implementations?
+</pre></li>
+
+<li><pre class=3D"student-text">Which of the security suggestions in the pa=
+per have been successfully implemented?
+It seems difficult to force wide adoption of the new policies, which don't =
+seem
+backwards compatible.</pre></li>
+
+<li><pre class=3D"student-text">Which of these proposals have received adop=
+tion? It seems like a lot of these fixes make a lot of sense and don't seem=
+ too difficult to implement so why hasn't there been more progress in this =
+area?
+</pre></li>
+
+<li><pre class=3D"student-text">Who decides who can act as a CA? Is it by c=
+onsensus of browser organizations, or are there laws for it?</pre></li>
+
+<li><pre class=3D"student-text">Why are mobile browsers so much less focuse=
+d on warning users about certificate/connection details? It seems like they=
+ should provide the same if not more security precautions as browsers.</pre=
+></li>
+
+<li><pre class=3D"student-text">Why aren't more sophisticated cryptographic=
+ protocols used to address the problem of certification authorities? I'm th=
+inking specifically of Identity-Based Encryption. The CA could hold the mas=
+ter public and secret keys for the scheme, and any key under the IBE scheme=
+ could be verified without needing to talk to the certificate authority. Th=
+e only communication with the CA would be to issue new certificates to new =
+owners. Furthermore, the CA could build timestamps into the public keys tha=
+t it issues, so the browser should only accept public keys with timestamps =
+at or later than the latest timestamp it's seen. This was something that I =
+wondered when I learned about DNSSec in 6.033 and all the headaches over ho=
+w to verify that a public key really does belong to the machine it claims t=
+o belong to at the other end of the channel. For the problem of CA verifica=
+tion of domain names, an IBE scheme seems even more applicable...</pre></li=
+>
+
+<li><pre class=3D"student-text">Why did free certificate authority such as =
+Let's Encrypt take so long to appear? Do they yield  additional threats?
+</pre></li>
+
+<li><pre class=3D"student-text">Why does SSH use a "trust-on-first-use" cer=
+tificate model whereas TLS uses certificate chains? It seems like SSH's pro=
+tection is less secure against active MITM attacks.
+</pre></li>
+
+<li><pre class=3D"student-text">Why does combining a set of security primit=
+ives in Table 1 lead to the OR of the security properties offered but an AN=
+D on the Evaluation of Impact on HTTPS? Given that combining primitives lea=
+ds to more security properties but also a larger impact on HTTPS privacy, d=
+eployability, and usability, what combination of primitives is best (or wha=
+t is recommended)?
+</pre></li>
+
+<li><pre class=3D"student-text">Why does the paper assume a perfect TLS sys=
+tem (or one that cannot be exploited) -- is this a reasonable assumption?=
+=20
+</pre></li>
+
+<li><pre class=3D"student-text">Why not have some sort of bootstrapped comb=
+ination of key-pining policies?  </pre></li>
+
+<li><pre class=3D"student-text">Wouldn't DNS key pinning simply transfer th=
+e risk to the DNSSEC implementation? Is that an acceptable level of risk fo=
+r PKP?
+</pre></li>
+
+<li><pre class=3D"student-text">it is not particularly clear to me how DANE=
+ can work - the wikipedia page says that it is able to sign based on a doma=
+in name - so that those
+names act virtually as public keys? And in any case, it seems that CAs are =
+still major components of the system - even though now to a lesser degree -
+and that the original problem was not particularly solved (although it was =
+indeed contained).
+</pre></li>
+
+<li><pre class=3D"student-text">sq16
+
+How big of a problem is DNS name spoofing?  In a previous
+lecture I believe we discussed that there is less security
+in the DNS because additional security would simply slow
+the system down and would thus not be effective, but this
+paper makes DNS name spoofing seem like a very dangerous
+threat.</pre></li>
+
+<li><pre class=3D"student-text">sq16.txt
+
+With all these proposals the biggest issue seems not to be technical limita=
+tions but adoption rates, what organizations would have the sway to really =
+push for improved CA protocols?
+
+</pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--oqkI7QeykJLNT3oMaEKdMUJM4Oz3VkaV09YeQ0NzAf------

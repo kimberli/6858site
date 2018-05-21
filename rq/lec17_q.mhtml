@@ -1,0 +1,867 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-questions/17
+Subject: Questions for lecture 17 - 6.858
+Date: Tue, 21 May 2018 01:41:25 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--h0dnArLmFrwGyUJu8LnUijBmm0GLjukvrP2lj29RC0----"
+
+
+------MultipartBoundary--h0dnArLmFrwGyUJu8LnUijBmm0GLjukvrP2lj29RC0----
+Content-Type: text/html
+Content-ID: <frame-1183-63d039eb-d009-4677-94be-5ea770144f80@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-questions/17
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Questions for lecture 17 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Questions for lecture 17 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text">What are some general methods for finding d=
+ifferent types of spectre attacks?</pre></li>
+
+<li><pre class=3D"student-text">1. I'm trying to understand how the actions=
+ of other processes running on the same machine could affect this attack. F=
+or example, could a separate process that continuously causes the cache to =
+be evicted thwart an attacker? In general, if I didn't think I would be abl=
+e to stop speculative execution on the machine I am running, how could I ad=
+d to my program to avoid Spectre vulnerabilities? The paper seemed to sugge=
+st that directly disabling SE was the only solution.
+
+2. In section 5.1 they say "the branch predictor only appears to pay attent=
+ion to branch destination virtual addresses. The source address of the inst=
+ruction performing the jump...do not appear to matter." Any idea why this d=
+esign choice was made? It seems like much better predictions could be made =
+if this data was included, but is there some overarching generalization abo=
+ut programs that makes the actual mapping efficient?
+
+</pre></li>
+
+<li><pre class=3D"student-text">1. Most of the attacks discussed in the pap=
+er are based on uncleaned cache after abandoning speculative execution. Why=
+ can't we just clear the cache too after a false speculative execution?</pr=
+e></li>
+
+<li><pre class=3D"student-text">2.4 mentions when the victim access the cac=
+he line, but I wasn't sure the importance of knowing when it was accessed. =
+ Is that for the purpose of knowing whether or not it was a cache hit or ca=
+che miss + knowing what part of the branch was executed?</pre></li>
+
+<li><pre class=3D"student-text">6.858 - Spectre
+
+I like this attack because it relies on processor-level optimizations that =
+would be
+detrimental to go without, yet now dangerous to use. Are there other attack=
+s
+that take advantages of modern CPU level optimizations?
+</pre></li>
+
+<li><pre class=3D"student-text">Although hindsight is 20/20, it seems like =
+timing and cache issues like this should have been noticed by Intel or AMD =
+as security vulnerabilities. Was it thought that these branch prediction sy=
+stems were secure beforehand, or was it simply a matter of no one wanting t=
+o take the time to piece together a proper way to exploit the system? Did o=
+ther major timing exploits exist beforehand?</pre></li>
+
+<li><pre class=3D"student-text">Are chip designers completely overhauling t=
+heir architectures now?</pre></li>
+
+<li><pre class=3D"student-text">Are there actual practical situations in wh=
+ich an attacker can exploit with spectre? It seems like you would not be ab=
+le to detect cache hit accurately if the only thing an attacker can do is s=
+end requests to a server.</pre></li>
+
+<li><pre class=3D"student-text">Are there any known attacks in the wild usi=
+ng Spectre/Meltdown?
+</pre></li>
+
+<li><pre class=3D"student-text">Are there any known cases of people using t=
+he Spectre attack to create significant harm to commercial applications?</p=
+re></li>
+
+<li><pre class=3D"student-text">Are there cases where a processor frequentl=
+y mispredicts the outcome of many branch instructions, and because of this,=
+ performance is actually worse than not having speculative execution at all=
+? Could an attacker significantly slow the execution of a set of instructio=
+ns with carefully-crafted adversarial input that causes widespread mispredi=
+ction? </pre></li>
+
+<li><pre class=3D"student-text">At line 68 in Appendix A, the comment menti=
+ons that accesses to array2 are spaced out to prevent stride prediction. Wh=
+at is stride prediction, and how would it cause the Spectre attack to fail?
+Also, at line 90, the comment mentions that there is a "clear success" if s=
+ome conditions on results are satisfied. Is there any particular reason why=
+ these conditions are the way they are?
+
+In a compact, haiku form:
+The example code
+does without stride prediction.
+Why is this crucial?</pre></li>
+
+<li><pre class=3D"student-text">Can spectre attacks be prevented in similar=
+ ways to the kinds of attachs we did in lab 1, snce it also depends on out =
+of bounds indices? (e.g. stack canaries)
+</pre></li>
+
+<li><pre class=3D"student-text">Can the speculative attack which has been m=
+entioned be carried out with just one array? The paper's example talks of a=
+rray_1 and array_2 and cleverly uses array_2[k], where k =3D array_1[x] on =
+an out of bounds x. Can this be pulled off with just one array-read? Seems =
+hard.
+
+Also, shouldn't buffer overflow mechanisms discussed earlier in this class =
+directly be applicable within the speculative execution engine? Irrespectiv=
+e of it speculating an instruction's execution, shouldn't overflow mechanis=
+ms still hold?</pre></li>
+
+<li><pre class=3D"student-text">Could speculative execution bugs ever be us=
+ed to execute malicious code? Most of the use cases addressed in this paper=
+ seem to be about data leaks. </pre></li>
+
+<li><pre class=3D"student-text">Danny Tang
+data1013
+4/20/18
+
+Lecture 17
+
+How exactly does speculative execution "train" to predict what it thinks ar=
+e the most probable values for the current unknown values?</pre></li>
+
+<li><pre class=3D"student-text">Despite its generality, carrying out a Spec=
+tre attack seems quite complicated.
+Have any attacks been spotted in the wild that make use of it, and what sor=
+t of
+mitigation techniques have currently been deployed?
+</pre></li>
+
+<li><pre class=3D"student-text">Do Spectre attacks hold if during execution=
+ does not alter the cache but only use it for observation?
+</pre></li>
+
+<li><pre class=3D"student-text">Does Spectre require the victim's code to c=
+ontain that "* 512" in the double array access? What if the victim's code d=
+oes not have such double array access pattern? I think in general in a webb=
+rowser the javascript method in the paper will still work as one can inject=
+ JITed javscript code into sandboxes; but what if say the victim is a serve=
+r that simply takes formated requests, does not have such double array acce=
+ss pattern, or simply its program source code is not available, and does no=
+t allow arbitrary code execution?</pre></li>
+
+<li><pre class=3D"student-text">Does the number of lines of code and branch=
+es affect the run time of spectre? </pre></li>
+
+<li><pre class=3D"student-text">For a cloud computing provider like Amazon,=
+ what would be the best policy to adopt immediately after the Spectre vulne=
+rability has been found? Would disabling IBP in all VMs or disabling IBP in=
+ all processors be better? (Indirect Branch Prediction)</pre></li>
+
+<li><pre class=3D"student-text">For very specific attacks such as Spectre (=
+only works on certain processors,
+etc.), are these attacks usually found deliberately and how so if they are?
+</pre></li>
+
+<li><pre class=3D"student-text">From my understanding, I see Spectre is mor=
+e of an intrinsic flaw in speculative
+execution opened by the side channel of cache timing. If the CPU was to "un=
+do"
+all the effects on the cache during an incorrect bit of speculative executi=
+on,
+then you could not perform this side channel. Is this correct? And if so, i=
+s it
+just that this would be too expensive to perform?
+</pre></li>
+
+<li><pre class=3D"student-text">Given that all mitigation options mentioned=
+ in the paper seemed to directly affect the performance of the system, has =
+there been any recent changes that help to mitigate the danger of spectre a=
+ttacks?</pre></li>
+
+<li><pre class=3D"student-text">Given this seems to be an inherint flaw in =
+current branch prediction mechanisms, since this side-channel was discovere=
+d are most applications ok with the software mitigations discussed or is an=
+ architectural change needed to mitigate the exploit as well as preserve pe=
+rformance. In short, are the performance impacts from software fixes signif=
+icant enough that larger hardware changes are necessary?</pre></li>
+
+<li><pre class=3D"student-text">Has there been any practical attack carried=
+ out that leverages Spectre?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Have any large attacks been mounted with th=
+e newly discovered Spectre and Meltown exploits?
+</pre></li>
+
+<li><pre class=3D"student-text">Have any software fixes for Spectre been ro=
+lled out, e.g. in compilers? How
+common is it for a program to be actually vulnerable to leaking critical
+information in this way?
+</pre></li>
+
+<li><pre class=3D"student-text">Have there been any real-world attacks that=
+ have leveraged spectre or meltdown or does this remain a more theoretical =
+attack?
+</pre></li>
+
+<li><pre class=3D"student-text">Have there been efforts to make processors =
+that prevent this kind of attack at the hardware level? I imagine it would =
+be too performance-hurtful to remove the branch prediction execution entire=
+ly.</pre></li>
+
+<li><pre class=3D"student-text">Have there been instances where these attac=
+ks have been used in the real world and caused serious damage?</pre></li>
+
+<li><pre class=3D"student-text">How common are attacks on hardware vs softw=
+are?
+</pre></li>
+
+<li><pre class=3D"student-text">How complicated are branch predictors on ty=
+pical CPUs? Would using things like machine learning for detecting branches=
+ help in preventing speculative attacks?
+</pre></li>
+
+<li><pre class=3D"student-text">How did we get from "100KB of RAM is plenty=
+" to "give me more GB of RAM, give me all the hardware optimizations, my ap=
+plications are too slow"?  Are there obvious design improvements to modern =
+applications that would negate performance losses from disabling branch pre=
+diction, caching, and other optimizations to mitigate Spectre?  (eg, not wr=
+iting Electron apps that run an entire web browser stack and eat all your R=
+AM)
+</pre></li>
+
+<li><pre class=3D"student-text">How do applications today prevent these kin=
+d of Spectre Attacks?</pre></li>
+
+<li><pre class=3D"student-text">How do attackers access the side channels w=
+here the pre-executed branch code is stored for high levelmlanguages like J=
+avascript where much interpretation happens before made into machine code?
+
+Can you explain the speculative execution example for when there are no con=
+ditionals?
+
+How long does it take to mistrain a processor - how many instruction execut=
+ions?
+</pre></li>
+
+<li><pre class=3D"student-text">How exactly did the security patches that w=
+ere released after the announcement of spectre and meltdown go about mitiga=
+ting this security risk and to what extent are our computers still vulnerab=
+le to these exploits?</pre></li>
+
+<li><pre class=3D"student-text">How exactly do you search a large binary fo=
+r a gadget? It was a bit unclear to me...
+</pre></li>
+
+<li><pre class=3D"student-text">How fast were Spectre exploits fixed?</pre>=
+</li>
+
+<li><pre class=3D"student-text">How have people dealt with Spectre and Melt=
+down? Last I heard, vendors just removed speculative execution, which was a=
+ performance hit for many people...  </pre></li>
+
+<li><pre class=3D"student-text">How is branch prediction trained? In partic=
+ular, why is it possible for an attacker to mistrain a branch target predic=
+tor of a program using another one that targets the saame destination addre=
+ss?
+</pre></li>
+
+<li><pre class=3D"student-text">How is the value in cache read? I know they=
+ say that " This yields a memory comparison operation that, when called rep=
+eatedly, can solve for memory bytes as desired." Does this mean that each t=
+ime they are reading one bit?</pre></li>
+
+<li><pre class=3D"student-text">How soon did Intel, IBM, etc. respond to th=
+ese vulnerabilities, and how
+widely adopted are the patches? Is this an example of something that seems =
+bad/
+scary, but is actually OK in practice?
+</pre></li>
+
+<li><pre class=3D"student-text">How soon would it take for a bug like this =
+to be patched?  This paper is from 2018, so would this vulnerability have b=
+een fixed for the most part?
+</pre></li>
+
+<li><pre class=3D"student-text">How specifically would someone be able to d=
+etect a successful Spectre attack? It seems a lot more difficult to detect =
+than Meltdown.</pre></li>
+
+<li><pre class=3D"student-text">How well have the mitigations worked so far=
+ for Spectre?
+</pre></li>
+
+<li><pre class=3D"student-text">I am not sure about the answer to the lectu=
+re question, so I think it's probably a good idea to use this opportunity t=
+o ask about it.=20
+
+It's not clear to me how the attack in Appendix A actually reads sensitive =
+information, since array2 is allocated far beyond the indices that the vict=
+im function accesses, and one would essentially have to first find a buffer=
+ overflow attack to jump out of one allocation and into another. Is this co=
+rrect? Or can the code in Appendix A read outside of the bounds of array2?<=
+/pre></li>
+
+<li><pre class=3D"student-text">I don't quite understand why the secret val=
+ue k is useful
+for the example in Appendix A. Since there is a 'unused2'
+array, how does the attacker retrieve the value of k with only
+512-bytes aligned access?</pre></li>
+
+<li><pre class=3D"student-text">I heard that a recent paper countered this =
+attack by modifying the system hardware, making the time measurement indist=
+inguishable between cache-hits and non-cache-hits. However, this comes at t=
+he cost of reduced CPU performance. Do you think such method is meaningful/=
+realistic?</pre></li>
+
+<li><pre class=3D"student-text">I know that the authors of the paper contac=
+ted all relevant parties and companies, but isn't it dangerous to release a=
+ detailed
+description of attacks that still work on modern day hardware? It seems to =
+me that this type of attack is rather difficult
+to simply patch.</pre></li>
+
+<li><pre class=3D"student-text">I would like to see other specific Spectre =
+attacks in lecture.</pre></li>
+
+<li><pre class=3D"student-text">If the program is using baggy bounds, how d=
+oes this affect the exploit (which relies on out of bounds accesses)?
+</pre></li>
+
+<li><pre class=3D"student-text">In appendix A, there's a line of code:
+
+
+mix_i =3D ((i * 167) + 13) &amp; 255
+
+What is the significance of the numbers 167 and 13? I don't understand why =
+we choose these particular numbers to pick mix_i
+</pre></li>
+
+<li><pre class=3D"student-text">In listing 1, why is it important that arra=
+y2 isn't in the cache?</pre></li>
+
+<li><pre class=3D"student-text">In practice, wouldn't you need to be able t=
+o disassemble the code for this attack to work? How would this sort of thin=
+g work in the wild, where you couldn't easy disassemble things. How obtaini=
+ng sensitive information on someone else's binary work in real life?
+</pre></li>
+
+<li><pre class=3D"student-text">In section 5.2, how does the attacker map t=
+he 32-bit address into a smaller memory space? 2^32 is a very large number =
+of memory locations to probe, so unless the attacker can analyze one byte a=
+t a time (or something like that), it will be very difficult to actually fi=
+gure out the 32-bit value.=20
+
+How would the attacker figure out part of the 32-bit address to get the val=
+ue of the 32-bit integer?
+</pre></li>
+
+<li><pre class=3D"student-text">In the implementation, why do they loop thr=
+ough the combination of (5 actual values + 1 malitious value) 5 times?
+</pre></li>
+
+<li><pre class=3D"student-text">Is it possible to read the data from any pa=
+rt of the memory using the attack discussed in the paper?=20
+  </pre></li>
+
+<li><pre class=3D"student-text">Is speculative execution commonly used?
+</pre></li>
+
+<li><pre class=3D"student-text">Is speculative execution completely out now=
+ or is there a way to secure it and still reap the performance benefits?
+
+</pre></li>
+
+<li><pre class=3D"student-text">Is the vulnerability of an application to a=
+ttacks like Spectre affected by whether it stores its data on the public cl=
+oud vs a datacenter? </pre></li>
+
+<li><pre class=3D"student-text">Is there a way to fix this issue without co=
+mpletely doing away with or reimagining speculative execution? It seems
+like there are specific side-channel fixes, such as flushing the cache betw=
+een thread context changes, but for a "truly"
+secure system, it seems like a game of whack-a-mole in which failure result=
+s in compromising a large number of otherwise
+secure systems.</pre></li>
+
+<li><pre class=3D"student-text">Is there a way to isolate BTB in order to s=
+top adversaries from training it?</pre></li>
+
+<li><pre class=3D"student-text">Is there a way to make caches more robust s=
+o that some of these attacks can't be performed? It seems like that's the r=
+oot of the issue? Some way of detecting a timing attack and fuzzing the res=
+ults or something?
+</pre></li>
+
+<li><pre class=3D"student-text">It says that past work have demonstrated me=
+mory leak using BTB, branch misprediction, and caches. Why is this the big =
+paper? It seems like if so much work has been done on it, this seems like a=
+ relatively "obvious" and "simple" exploit to try. </pre></li>
+
+<li><pre class=3D"student-text">It seems that correctly written software is=
+ still vulnerable to some of these attacks. How does one defend against thi=
+s?</pre></li>
+
+<li><pre class=3D"student-text">It's cool that this bug has gone undetected=
+ for so long.  I wonder what other seemingly-benign features of lower-level=
+ software/firmware/bytecode have issues like this hiding in them.  My quest=
+ion is this, and probably not something you're able to answer, but, have pe=
+ople known attacks like Spectre were made possible by speculative execution=
+ and branch prediction and just sort of ignored it as unfeasible?  Or was t=
+his actually novel information?</pre></li>
+
+<li><pre class=3D"student-text">Lecture 17 (Question About Paper)
+
+It seems like the main security issue that Spectre attacks uncovered was th=
+at operating system don't have perfect process separation (we can read memo=
+ry that belongs to other processes through side channels). What solutions h=
+ave been proposed and/or implemented? Is the memory virtualization and page=
+ faults not enough?
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 17: CPU Timing Attacks
+4/23/18
+
+The paper says attackers must mistrain the processor so that it would take =
+the wrong branch at a specified condition, but what does it mean to "train"=
+ as processor? And how would you mistrain a procesor?
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 17: My Spectre Question
+
+The paper brought up the relationship between software and hardware develop=
+ers when it comes to building
+secure systems. What exactly is the current relationship between those two =
+parties, and has it evolved/
+is it evolving based on breach events over the past few years?
+
+Thank you!
+</pre></li>
+
+<li><pre class=3D"student-text">On the first google hit for `Spectre Meltdo=
+wn' (https://meltdownattack.com/), it says that Spectre is hard to fix usin=
+g software updates.  Is that because it is hard to turn off speculative exe=
+cution at the software level?  Or are they maybe referring to the fact that=
+ it's hard to fix it while maintaining speculative execution?
+</pre></li>
+
+<li><pre class=3D"student-text">On the perspective of performance, I think =
+the CPU is doing the right thing. Is it considered as a serious bug in CPU =
+design? What is the general plan to fix this issue? Should it be done in so=
+ftware level or hardware level?=20
+
+This attack seems very difficult and highly depends on the victim code. Is =
+there any tool to generate adversary code to attack real software?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Question about Paper
+
+Since each VM is mapped into its own memory space, does spectre also work a=
+cross VMs? Is it harder to use this version of Spectre to leak memory? From=
+ my understanding, Spectre works when the programs are in the same virtual =
+memory space. </pre></li>
+
+<li><pre class=3D"student-text">Question:=20
+Attacks like these seem very difficult to create without knowing the source=
+ code - how does an attacker find exploitable code that they can use to exe=
+cute an attack? In the examples they show using a bounds check, but without=
+ seeing the source code it seems very hard to find that check and figure ou=
+t exactly what input can be passed in to trigger an overflow path during th=
+e out-of-order speculative execution.</pre></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 17
+
+Has anyone actually demonstated an attack based on this exploit?</pre></li>
+
+<li><pre class=3D"student-text">Reading the "Mitigation" section, it seems =
+like there really aren't any good software solutions for these Spectre atta=
+cks? Has anything changed since this paper was published that makes Spectre=
+ attacks more difficult to implement?</pre></li>
+
+<li><pre class=3D"student-text">Recent patches seemed to have mitigated som=
+e of Spectre's vulnerabilities, but they come with a performance cost. Wher=
+e does the performance cost come from? Is it from checking speculative exec=
+ution better, or from better separating user memory?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Spectre Attack seems to be very interesting=
+ idea of exploiting the speculative execution. But are these attacks actual=
+ly used nowadays because they seem to be quite hard to exploit as it si str=
+ongly depended on calculating the cache access timing?
+</pre></li>
+
+<li><pre class=3D"student-text">Spectre and Meltdown both attracted signifi=
+cant press when the vulnerabilities were made public. Given that so much wo=
+rk needs to be done to successfully execute a Spectre/Meltdown attack (setu=
+p, branch prediction training, indirect branch training, execution completi=
+on), how feasible do such attacks seem on a widespread scale?
+
+The reading suggests that the attacks work by uncovering byte values on a b=
+yte-by-byte basis, suggesting that attacks would scale linearly with amount=
+ of memory that an attacker is trying to read. If this scaling is indeed li=
+near, at what point do Spectre/Meltdown become efficient/feasible from an a=
+ttack point of view.</pre></li>
+
+<li><pre class=3D"student-text">Spectre seems to be a hardware level issue.=
+ How do chip-makers patch this issue using software?
+</pre></li>
+
+<li><pre class=3D"student-text">Taken from Wikipedia
+"On March 15, 2018, Intel reported that it will redesign its CPU processors=
+ (performance
+losses to be determined) to help protect against the Spectre and related Me=
+ltdown vulnerabilities
+(especially, Spectre-V2 and Meltdown-V3, but not Spectre-V1), and expects t=
+o release the newly
+redesigned processors later in 2018."
+
+The paper mentioned a few mitigation options (e.g. inserting blocking instr=
+uctions, and
+disabling hyperthreading and flushing branch prediction state during contex=
+t switches etc.).
+However, they were described as not doable or not good for performance. Wha=
+t changes do you
+think Intel might try?
+</pre></li>
+
+<li><pre class=3D"student-text">The Spectre attack seems to rely on branch =
+prediction.
+In the example implementation, the authors run 5 training runs for each one=
+ macilious run.
+However it is not cleared on what basis the predictor makes its prediction.
+
+</pre></li>
+
+<li><pre class=3D"student-text">The appendix shows a sample code in which t=
+he attacker can directly modify the victim program by injecting malicious c=
+odes for mistraining. Can the attack be used to access memory on pre-existi=
+ng processes that the attacker cannot control (e.g. processes with another =
+UID)?=20
+</pre></li>
+
+<li><pre class=3D"student-text">The attacks presented in the paper require =
+knowing the address of secret data to be exfiltrated from the victim addres=
+s space. Why is this a reasonable assumption on modern systems with ASLR?</=
+pre></li>
+
+<li><pre class=3D"student-text">The authors said that they've disclosed a p=
+reliminary version of their results -- has anything been done to protect ag=
+ainst Spectre attacks since then? The paper is fairly recent -- in general,=
+ how far in advance do paper authors notify potential vulnerable parties be=
+fore publishing attacks?</pre></li>
+
+<li><pre class=3D"student-text">The discovery of a vulnerability of this re=
+gard that exploits hardware optimizations is extremely scary. How do people=
+ even think of exploiting hardware through the software in a manner like th=
+is?</pre></li>
+
+<li><pre class=3D"student-text">The indirect branches misprediction attack =
+in section 5 relies on the behavior of the indirect branches predictor, but=
+ I don't quite understand what it does (while I do understand what the if-b=
+ranch predictor does). In particular, what do they mean by "The branch pred=
+ictor maintains a cache that maps a jump histories to predicted jump destin=
+ations"?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper claims that a simple JavaScript i=
+s able to perform spectre attacks, and in particular, shows how simple
+a script can be to perform it. So, a number of questions: why have it publi=
+shed before anyone can address the problem? What is the scope=20
+of data that can be read? They showed that it is relatively easy to get a w=
+indows to sleep - but, in practice, what is the power of a given attacker?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper describes using many iterations t=
+o try to get the particular exploit to work. However, generally over time b=
+ranch prediction for a specific mem address improves. SO its most susceptib=
+le to mispredict early on. Why the need for so many iterations then? It wou=
+ld be arguable better to rerun the entire code multiple times bc that would=
+ provide better randomization for the mispredicts
+</pre></li>
+
+<li><pre class=3D"student-text">The paper discusses buffer overflows in spe=
+culative execution.  Is the code vulnerable to buffer overflows even if tec=
+hniques such as baggy bounds are used?  Or are techniques like baggy bounds=
+ only checked during "regular" execution rather than speculative execution =
+and if so, how do they still get away with it?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper does not seem to present many goo=
+d options that would prevent Spectre attacks. Was this vulnerability ever f=
+ixed? Are there currently protections against it? Has anyone ever hacked a =
+processor in practice using this type of attack?</pre></li>
+
+<li><pre class=3D"student-text">The paper mentioned that it was possible to=
+ use things like power draw and electromagnetic radiation to perform side c=
+hannel attacks, are there any examples of attacks like this in the wild?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions a couple strategies for =
+combating Spectre attacks, but is somewhat vague. Does combating speculativ=
+e execution attacks necessarily impose a performance penalty?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that KAISER has been wid=
+ely applied to mitigate Meltdown, but there is no well-known accepted fix f=
+or Spectre yet. It seems like the most obvious ways to patch Spectre would =
+severely hamper processor performance, and since Meltdown and Spectre are i=
+n the same class of vulnerabilities (unfortunate side effects of caching), =
+it seems like their patches should also be similar. How then does KAISER wo=
+rk without severely hampering performance, given that it is so widely-accep=
+ted?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions the practice of responsi=
+ble disclosure when talking about when they released versions of the paper =
+to companies to fix their
+issues before widespread release of the issues. How big of a time frame is =
+given for these issues to be resolved/have there been papers documenting
+problems released while the problems were being fixed?</pre></li>
+
+<li><pre class=3D"student-text">The spectre attack is fairly recent, but is=
+ there a known mitigation for the attack aside from using a chip that doesn=
+'t support speculative execution?
+</pre></li>
+
+<li><pre class=3D"student-text">This paper was written in 2018 so it's real=
+ly recent. Were Spectre attacks not generally known about before this paper=
+?</pre></li>
+
+<li><pre class=3D"student-text">What are other side channel attacks prevale=
+nt today?</pre></li>
+
+<li><pre class=3D"student-text">What are some ways to prevent speculative e=
+xecution attacks?
+</pre></li>
+
+<li><pre class=3D"student-text">What do the patches for Spectre and Meltdow=
+n do to mitigate the vulnerabilities?</pre></li>
+
+<li><pre class=3D"student-text">What exactly does "microarchitectural side =
+channel" mean?</pre></li>
+
+<li><pre class=3D"student-text">What is the benefit of branch prediction as=
+ opposed to the cost imposed by the risk of attacks? Are branch prediction =
+attacks commonly executed?</pre></li>
+
+<li><pre class=3D"student-text">What sort of fixes for Spectre are being im=
+plemented? In particular, does one still get performance gains from specula=
+tive execution if one has to actually revert _everything_ that could have b=
+een done speculatively? (including, e.g., clearing the caches)</pre></li>
+
+<li><pre class=3D"student-text">What was the general idea of how the privil=
+ege escalation vulnerabilities allowed for Meltdown attacks to be performed=
+?
+</pre></li>
+
+<li><pre class=3D"student-text">When would line 76 ever evaluate to false? =
+I don't see anywhere the mix_i equaling array1 values since array1 values o=
+nly range from 1 to 16. I'm not really understanding how these variables ar=
+e being calculated.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Why does the processor handle branch predic=
+tion in terms of virtual and not physical addresses? I know code could be r=
+emapped, but that seems relatively rare. Is there a reason not to put the B=
+TB on the other side of the MMU from the main pipeline?</pre></li>
+
+<li><pre class=3D"student-text">Why is it hard to prevent the cache from be=
+ing affected during speculative exectution? Why can't we change cache only =
+if it was successful, or why can't we revert it?</pre></li>
+
+<li><pre class=3D"student-text">Would symbolic execution also help prevent =
+the branching attaches and NaCl helps the indirect jump attacks the paper m=
+entioned?</pre></li>
+
+<li><pre class=3D"student-text">how is the standard for efficiency vs. secu=
+rity decided?
+</pre></li>
+
+<li><pre class=3D"student-text">sq17.txt
+
+John C. McLaughlin
+04/23/18
+
+Since the attack is largely focused on cloud computing environments, would =
+a possible defense be for cloud providers to simply give every virtual mach=
+ine its own CPU with the appropriate cache? What about its own core?=20
+
+</pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--h0dnArLmFrwGyUJu8LnUijBmm0GLjukvrP2lj29RC0------

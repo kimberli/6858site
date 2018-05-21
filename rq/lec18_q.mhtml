@@ -1,0 +1,839 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-questions/18
+Subject: Questions for lecture 18 - 6.858
+Date: Tue, 21 May 2018 01:42:17 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--jkImlBWrcM1hqHbUh6k8fhrvnpFDbDtLvYJz2tcPwx----"
+
+
+------MultipartBoundary--jkImlBWrcM1hqHbUh6k8fhrvnpFDbDtLvYJz2tcPwx----
+Content-Type: text/html
+Content-ID: <frame-1185-df1a4a00-5720-4347-ad41-4dd933ad1b99@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-questions/18
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Questions for lecture 18 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Questions for lecture 18 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text">
+How is it that the crawler never got IP blocked/banned by the servers they =
+were crawling?</pre></li>
+
+<li><pre class=3D"student-text">How exactly do people determine the locatio=
+n of a server? (Referencing the part where the authors mentioned how someth=
+ing was in China, another thing in Brazil, and another thing in Turkey.)
+
+</pre></li>
+
+<li><pre class=3D"student-text">"The crawler then performs recursive querie=
+s on these domains. It identifies
+the domains that resolve successfully and their authoritative domains, and
+filters out unregistered domains and domains with unreachable name servers.=
+"
+
+Why did the crawler filter out unregistered domains?
+</pre></li>
+
+<li><pre class=3D"student-text">- The paper discusses several elements of t=
+he spam value chain and illustrates it via a concrete example in Figure 1, =
+but does not really define it. Is it just the process started by engaging w=
+ith spam (e.g. clicking on a link)?
+
+- How do we define spam and differentiate it from basic marketing/advertisi=
+ng?</pre></li>
+
+<li><pre class=3D"student-text">1. I don't get the argument of intercepting=
+ spam marketing at the economic level. Isn't spamming legal? How can you th=
+en revoke their bank or payment priviliges?</pre></li>
+
+<li><pre class=3D"student-text">4/24/18
+
+Lecture 18
+
+It seems like the spammers making money is dependent on people actually buy=
+ing the products that the spammers advertise. What
+percentage of users actually click on the spam links, and what percentage o=
+f those users actually buy the product?</pre></li>
+
+<li><pre class=3D"student-text">6.858 - Spam
+
+Off paper, but curious - what research is there done for phising/fake websi=
+tes
+and advertisements?
+</pre></li>
+
+<li><pre class=3D"student-text">A few large affiliate programs (e.g. RxPrm,=
+ Mailn) seem to be responsible for most of the spam. Is it impractical to s=
+hut these affiliate programs down in foreign countries?
+</pre></li>
+
+<li><pre class=3D"student-text">A very interesting brand-new research "The =
+Business of the Dark Web" has been done recently by Cybersecurity at MIT Sl=
+oan. The research investigates cybercrime business models and value chains,=
+ as well as provides with explicit analysis of the economics of cybercrime.=
+ The research can be a good candidate for including into the course next ye=
+ar. https://ic3.mit.edu/wp-content/uploads/Business_of_the_Dark_Web.pdf
+
+  </pre></li>
+
+<li><pre class=3D"student-text">After this paper came out, was there discus=
+sion in regards to the ethics of the study?
+</pre></li>
+
+<li><pre class=3D"student-text">Are the adversaries in this case the spamme=
+rs, the anti spammers, or the researchers?
+</pre></li>
+
+<li><pre class=3D"student-text">Being that these spam entities are very unr=
+egulated, it seems easy for them to steal your credit card information or p=
+otentially phish users and steal information like passwords on top of selli=
+ng their product.  Is this a common practice by these spammers that also se=
+ll products as discussed in the paper? I could imagine a sketchy site selli=
+ng this data on the dark web or something of the sort.
+</pre></li>
+
+<li><pre class=3D"student-text">Could the span links discussed in the paper=
+ also be used for more nefarious
+things like XSS attacks?
+</pre></li>
+
+<li><pre class=3D"student-text">Deciding to buy a bunch of products for res=
+earch is not common. How was this received by the community?
+</pre></li>
+
+<li><pre class=3D"student-text">Do any operating systems have support to ch=
+eck for suspicious network activity themselves? For example, if they notice=
+ that network use suddenly spikes when the user is logged out, they could n=
+otify the user that a spam virus is likely on the computer. While this may =
+be harder to implement on a Windows system, on a unix system perhaps one co=
+uld make a priviledge separated network monitor that cannot be compromised =
+by a compromised OS.
+
+</pre></li>
+
+<li><pre class=3D"student-text">Do email service providers utilize informat=
+ion from web crawlers such as the one described in this paper in order to d=
+etect spam on top of (what I assume are) ML and heuristic methods?</pre></l=
+i>
+
+<li><pre class=3D"student-text">Do operators of the spam value chain make m=
+oney by essentially stealing it from users who click on their links? Or are=
+ they tricking the user into buying their product? I didn't quite understan=
+d where they make their money from.</pre></li>
+
+<li><pre class=3D"student-text">Due to varying legal structures internation=
+ally spam seems ill-defined. Is there a concrete legal definition for it in=
+ the US?
+</pre></li>
+
+<li><pre class=3D"student-text">For html clustering, is a fingerprint in th=
+is case a set of features that can be compared/operated on or just a number=
+?
+
+How do you obtain a VPN for a certain area?=20
+
+Why do DNS name providers allow people to register obvious "throw away" dom=
+ains used as initial landings for the spam pages?</pre></li>
+
+<li><pre class=3D"student-text">For the authors, the bottleneck in their st=
+udy is in the banks too, because they need to make purchases to know which =
+bank it was. So, is the sample size big enough to make figure 5c meaningful=
+?
+</pre></li>
+
+<li><pre class=3D"student-text">From an economic standpoint, is spam funded=
+ by a company maliciously something that happens too. For example, generall=
+y spam on a product make it seem less legitimate. So if a company like Amaz=
+on sponsored "spam" on an up and coming competitor is that something the up=
+ and comer cna protect against 1) in cases where it knows its Amazon 2) in =
+cases where it simply knows someone is paying ot produce this spam.
+</pre></li>
+
+<li><pre class=3D"student-text">Has anyone endeavoured to repeat such an ex=
+tensive study into the spam chain? Has the spam chain been researched furth=
+er / more recently? </pre></li>
+
+<li><pre class=3D"student-text">Has the prevalence of spam been reduced sin=
+ce this paper was published? Given that the writers of this paper were able=
+ to develop web crawling techniques to identify spam, have any new solution=
+s to prevent spam come from this? </pre></li>
+
+<li><pre class=3D"student-text">Has there been much of any legal or financi=
+al crackdown on spammers? This seems like a difficult law to pass, but it m=
+ay decrease spam.</pre></li>
+
+<li><pre class=3D"student-text">Has this project been (or can it be) realiz=
+ed into any software for warning users of potential spams such as a browser=
+ extension?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Has this research been used to create bette=
+r anti-spam software?
+
+</pre></li>
+
+<li><pre class=3D"student-text">Have any of the ideas from this paper (e.g.=
+ a financial blacklist) been implemented in the real world? Why is spam sti=
+ll a problem?
+</pre></li>
+
+<li><pre class=3D"student-text">Have there been any cases where spammers ha=
+ve tried to take the pirate bay approach, i.e boil down the essential infor=
+mation to a very small format so
+it could just be easily archived and spun back up on some obscure hosting c=
+onfiguration? It seems like developing some kind of generic site that could
+be easily scaled and linked to could make for a very impractical game of wh=
+ack-a-mole.</pre></li>
+
+<li><pre class=3D"student-text">Have there been any policy actions taken as=
+ a result of this analysis (e.g. increased regulation in the payment tier)?
+</pre></li>
+
+<li><pre class=3D"student-text">How can they tell that a spam feed comes fr=
+om a certain bot?  E.g., how do they identify samples from the Grum bot?
+</pre></li>
+
+<li><pre class=3D"student-text">How can this chain be shut down?</pre></li>
+
+<li><pre class=3D"student-text">How did the crawlers manage to stay secure =
+when the spam might have lead to possible malware?
+</pre></li>
+
+<li><pre class=3D"student-text">How did they get all the URLs used in this =
+study? They mentioned a botfarm environment -- how was this used to find UR=
+Ls?</pre></li>
+
+<li><pre class=3D"student-text">How do spammers source their email addresse=
+s? Compromising sites, using public
+lists from other compromised sites, user accounts of their own websites, bu=
+ying
+them from someone else who gets them in these ways, bruteforcing common ema=
+il
+address names...?
+</pre></li>
+
+<li><pre class=3D"student-text">How does fast flux work exactly for DNS? I =
+didn't understand that well in the paper.</pre></li>
+
+<li><pre class=3D"student-text">How does gmail filter spams that I can hard=
+ly recieve any
+email like this? Does it because Google owns the 8.8.8.8
+dns server?</pre></li>
+
+<li><pre class=3D"student-text">How does redirection prevent an ISP or Doma=
+in Registrar from identifying the final server? </pre></li>
+
+<li><pre class=3D"student-text">How does the crawler network handle javascr=
+ipt? Or even when the website is dynamic website(clicks are driven by javas=
+cript renderings)</pre></li>
+
+<li><pre class=3D"student-text">How effective are spam filters on modern em=
+ail clients (e.g. gmail)? Anecdotally, I rarely see spam in my inbox since =
+almost all of it is filtered, but I'm not sure whether spam filters have ha=
+d a significant effect on the profitability of spam marketing in general.
+</pre></li>
+
+<li><pre class=3D"student-text">How effective is the anti-spam measure hash=
+cash? Is it still used?
+</pre></li>
+
+<li><pre class=3D"student-text">How exactly did the feed collection aspect =
+of this research work? I didn't
+entirely understand that part. In particular, I'm not sure what they mean a=
+bout
+using a "Botfarm spam feed."=20
+</pre></li>
+
+<li><pre class=3D"student-text">How feasible would it be to set-up a browse=
+r-plugin that prevents transactions to these high-risk banks.</pre></li>
+
+<li><pre class=3D"student-text">How is GMail so effective at stopping spam?=
+ Is it because google works hard to maintain a blacklist of spammers or are=
+ they using some other techniques?
+</pre></li>
+
+<li><pre class=3D"student-text">How is this sort of phishing/spamming a via=
+ble business model/justify the upkeep of the spam websites? That is to say,=
+ what is the target demographic here? I would hope most if not all users wo=
+n't end up blindly entering credit card information for something they don'=
+t need or want, just because a website requests it.
+</pre></li>
+
+<li><pre class=3D"student-text">How much of a problem are spam emails now? =
+I guess this probably varies depending on one's email service provider, but=
+ I essentially never get any spam email, so I wonder if this is much of an =
+issue for others (although perhaps my spam filter is rather aggressive as I=
+ think some emails from mailing lists I'm on get sent there too, though I'v=
+e never noticed missing anything that mattered).</pre></li>
+
+<li><pre class=3D"student-text">How to spam filters filter out spam so effe=
+ctively? Is it based on keywords in the email?
+</pre></li>
+
+<li><pre class=3D"student-text">I am not sure that I understand the point o=
+f purchasing goods, considering they spent up to $277 on each individual me=
+rchant. This seems like a large amount of money to spend to gain informatio=
+n about the banks and vendors used in the transactions. They addressed the =
+ethics a bit, but was this paper thoroughly questioned after it came out ab=
+out this? Have other studies also concluded it was worth supporting the ven=
+dors and spending that much money for the information, or has it been large=
+ly deemed to be a bad call?</pre></li>
+
+<li><pre class=3D"student-text">I barely get any spam advertisements in my =
+inbox since they are usually filtered out. Do the email spam based advertis=
+ements pose as much impact on economy as other types of advertisements like=
+ click baits?</pre></li>
+
+<li><pre class=3D"student-text">I wonder why pharma is so prevelant in spam=
+? </pre></li>
+
+<li><pre class=3D"student-text">I'm always surprised by the continued preva=
+lence of spam mail. Another issue that has been rising recently is the prev=
+alence of spam phone calls. One particularly troubling and seemingly new as=
+pect of this problem is a spam caller's ability to impersonate another phon=
+e number. I have received calls from telemarketers, redialed the number, an=
+d got a regular person on the other end pick up and have no knowledge that =
+their phone number had been used to call me.=20
+
+I think people are much more susceptible to spam phone calls than spam mail=
+. What is the security model of the telephone system? What would it take fo=
+r an adversary to spoof a phone number? Where could one learn more about th=
+is?</pre></li>
+
+<li><pre class=3D"student-text">If the registrars (e.g. NauNet) that served=
+ domains for many spam programs were issued takedown requests, would that h=
+elp with the spam problem?</pre></li>
+
+<li><pre class=3D"student-text">In the URL extraction process, why are URLs=
+ with IPv4 addresses ignored?</pre></li>
+
+<li><pre class=3D"student-text">In the example spam chain (Section II, B), =
+the authors mention that for the particular Russian domain name, the name s=
+ervice machine is in China, and the site is hosted in Brazil.
+They also mention that payment service is through an IP in Turkey.
+Is there a particular reason why spam chains do this, as I would imagine th=
+at normal name resolution would rarely cross multiple international boundar=
+ies?
+I think it would be to cover their tracks, but I can't quite think of a con=
+crete defense that the spam chain operators would be worried about.
+
+In a compact, haiku form:
+I see that spammers=20
+think centralized isn't good,
+but I don't see why.</pre></li>
+
+<li><pre class=3D"student-text">Is it possible to combat spam by taking leg=
+al action against affiliates?</pre></li>
+
+<li><pre class=3D"student-text">Is spamming actually illegal in the US, giv=
+en that people are voluntarily providing their credit card information in e=
+xchange for a physical product that they will likely receive? Spamming almo=
+st just seems like less tasteful advertising, although I guess the ethics o=
+f advertising is also questionable. Is there any legislation in the US or a=
+broad that regulates spammers?
+</pre></li>
+
+<li><pre class=3D"student-text">It appears that spam advertising continues =
+today because it works. Why are people so susceptible to this type of adver=
+tising?
+</pre></li>
+
+<li><pre class=3D"student-text">It is not clear to me how domain registrars=
+ are still able to operate even after providing certification for
+spam operators. The paper reported about 900 registrars, which seems to be =
+pretty tackable given the size of=20
+the situation. Would this be mostly due to politics? The paper provided an =
+example of pharmaceutical spam
+supply chain in which Russia, Brazil and China are involved - if it is the =
+case that registrars are of national
+interest overall (I believe all of those countries might have countless reg=
+istrars anyway), then that would be an interesting constraint.
+Otherwise, I don't think the paper fully justifies the lack of action torwa=
+rds them.
+</pre></li>
+
+<li><pre class=3D"student-text">It's clear that these spammers use banks in=
+ other countries but is it known where many of these spammers actually live=
+/are from?</pre></li>
+
+<li><pre class=3D"student-text">Lecture 18 (Question About Paper)
+
+Have policymakers tried to stop spam by targetting the payment tier?
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 18: My Spam Value Chain Question
+
+How effective is crawling nowadays? I know that the internet is now riddled=
+ with the "I'm not a robot"
+checks, so has crawling become ineffective, or can that mechanism be subver=
+ted easily?
+
+Thank you!
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 18: Security Economics
+4/25/18
+
+The paper says to have credit card companies refuse transactions with spamm=
+ers, but why would they do this? The spammers don't seem to be breaking any=
+ laws (in the US there appears to be a CAN-SPAM act that protects them if t=
+heir spam accurately advertises their services), and customers are in fact =
+willingly buying this product. By refusing spammers, credit card companies =
+risk decreasing their number of transactions and annoying their customers, =
+especially if any merchant was incorrectly classified as a spammer. </pre><=
+/li>
+
+<li><pre class=3D"student-text">Once the data collection and processing wor=
+kflow has completed, what is the point of it? What
+can it be used for? What is the point of selective purchasing?
+</pre></li>
+
+<li><pre class=3D"student-text">Question about Paper:
+
+Where are the main spam-value chain operators located (is there a study, if=
+ it is even possible, done on this)? Furthemore, with gmail's spam filter, =
+is the spam economy making any changes (i.e. moving away from email spam) t=
+o generate profits?</pre></li>
+
+<li><pre class=3D"student-text">Question: What part of the spam is actually=
+ illegal? It seems like mostly it is just annoying, and to shut down any pa=
+rt of the pipeline you'd need to give a good reason because it seems like b=
+anks etc have some financial incentives to keep providing services to spamm=
+ers.</pre></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 18
+
+Is there any way for a bank to know that they are dealing with money from t=
+he spam industry, and if they do, what's the incentive for the bank to not =
+do business?</pre></li>
+
+<li><pre class=3D"student-text">Since their script clicks on basically all =
+links on spam sites, how did they not get a lot of viruses?</pre></li>
+
+<li><pre class=3D"student-text">Since we can track down the organizations c=
+omplicit with this spamming, what's stopping authorities from stopping the =
+spamming? For example, contacting the banks to shut down those accounts, et=
+c.
+</pre></li>
+
+<li><pre class=3D"student-text">So many questions this week!
+
+1) How do you pressure an ISP to take down a service?
+2) Is there anything inherently illegal about spamming?
+3) Why do spammers need to use re-direction strategies? How can something b=
+e blocked if you navigate their directly but not through redirection? Who d=
+oes the blocking?
+4) Why might card associations want to moderate the spam business?
+5) What is botnet harvested spam?
+</pre></li>
+
+<li><pre class=3D"student-text">Spam filters are quite accurate and easy to=
+ develop (given enough examples of spam). Have spam providers adapted in an=
+y significant ways? How hard does gmail have to work to stay on top of thin=
+gs?
+</pre></li>
+
+<li><pre class=3D"student-text">Spammers fulfill their orders so users don'=
+t complain to credit card companies and spammers' services don't get blackl=
+isted by card providers. What prevents spammers from fulfilling orders, but=
+ with low quality items or placebo pills, for example?
+</pre></li>
+
+<li><pre class=3D"student-text">The Abstract of the paper claims that the a=
+nti-spam is a multi-billion dollar
+industry, but this goes uncited. How does that industry work? Does this jus=
+t
+refer to people and businesses paying for good spam filters, or is there mo=
+re
+to it?
+</pre></li>
+
+<li><pre class=3D"student-text">The authors state that they were able to cr=
+awl nearly 15 million URLs and only were able to download correct web conte=
+nt for over six million of them due to things such as "... unreachable doma=
+ins, blacklisting, etc".  What is blacklisting in this context?  Spammers h=
+ave caught them and are blacklisting their IPs?  Spammers' sites are blackl=
+isted?  By whom?  </pre></li>
+
+<li><pre class=3D"student-text">The paper concludes that targeting the bank=
+s supporting spam is the most
+effective way to prevent it, and it seems fairly convincing to me. Given th=
+at
+this paper was written 7 years ago, however, have spammers found a way to
+circumvent this weakness?
+
+Also, would it make sense to pressure companies like VISA to prevent spam a=
+lso?
+It seems like they are often a critical part of the spam chain.</pre></li>
+
+<li><pre class=3D"student-text">The paper discusses takedown requests in re=
+lation to the spam network itself. However, does a similar process occur to=
+wards the affiliates that utilize spam networks to advertise? Given that th=
+e paper backtraces email spam to garner information on the spammer, I would=
+ believe the same would be possible for the seller.</pre></li>
+
+<li><pre class=3D"student-text">The paper mentions that "spam is ultimately=
+ supported by Western money" - do other countries have stricter ways of con=
+trolling spam? How?</pre></li>
+
+<li><pre class=3D"student-text">The paper notes that the most effective met=
+hod of limiting spam may be at the
+Payments level, but this requires a policy change to have effect. Are there
+other levels where a more practical intervention would be more effective th=
+an
+commonly deployed methods (spam filtering, etc.)?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper notes the questionable status of =
+legality for the services that spam operators provide in non-Western countr=
+ies.
+Have security researchers in non-Western countries been in the discussion o=
+ver the spam value chain? Do their views
+align more with the operators' views, Western views or a mix of both?</pre>=
+</li>
+
+<li><pre class=3D"student-text">The spam filters seem to be way more advanc=
+ed now. In my experience, I don't feel affected by spam (if I exclude promo=
+tions from the stores I shop). Why is it still considered to be a problem?<=
+/pre></li>
+
+<li><pre class=3D"student-text">They mention that possible policy actions w=
+ould be western pressure on countries that allow such practices. Has it bee=
+n done, and if yes, has anything come out of it ?
+</pre></li>
+
+<li><pre class=3D"student-text">This paper provides a lot of information as=
+ to the features of spam emails, their domain/url characteristic. I wonder =
+if anyone has used this information to create a good spam filter. And if so=
+, is the filter effective?</pre></li>
+
+<li><pre class=3D"student-text">This research paper is about eight years ol=
+d. Given the exponential growth of internet users (and existence of probabl=
+y significantly more accurate anti-spam classifiers today) -- has this pape=
+r become less applicable?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Was any work done to disrupt the bottleneck=
+ identified within the paper?</pre></li>
+
+<li><pre class=3D"student-text">Was it really necessary for them to purchas=
+e many of the products and actually analyze the products?  I could see wher=
+e knowing the banking information would be useful, but I wasn't as sure abo=
+ut actually analyzing products that were received.</pre></li>
+
+<li><pre class=3D"student-text">Was there any action generated by this pape=
+r? Did for example spam operators try to make their operations more difficu=
+lt to analyze or were any changes made to attempt to defend users from spam=
+?
+</pre></li>
+
+<li><pre class=3D"student-text">What are fast flux techniques?
+</pre></li>
+
+<li><pre class=3D"student-text">What are some of the ways that servers can =
+become "bulletproof"?
+</pre></li>
+
+<li><pre class=3D"student-text">What are some other ideas people propose fo=
+r spam intervention?
+</pre></li>
+
+<li><pre class=3D"student-text">What are the legal issues concerning the sp=
+ammers? Is spamming illegal? Or is it just the sale of illegal goods that i=
+s illegal? In other words, are they trying to prevent spammers from sending=
+ mass emails or are they trying to prevent spammers from selling illegal go=
+ods on the black market over email?
+</pre></li>
+
+<li><pre class=3D"student-text">What distinguishes =E2=80=9Cspam=E2=80=9D f=
+rom a non-spam online purchase?  The authors describe an online transaction=
+ pipeline as an example of the spam value chain.  But if I were to see an a=
+d for some product on Amazon, click on it and purchase the item, there woul=
+d be a similarly global transaction taking place though I wouldn=E2=80=99t =
+consider that spam.  Is it the act of presenting something under the guise =
+that it=E2=80=99s an =E2=80=9Cofficial=E2=80=9D product of some sort when i=
+t=E2=80=99s not? </pre></li>
+
+<li><pre class=3D"student-text">What does it mean that their purchases sett=
+led?</pre></li>
+
+<li><pre class=3D"student-text">What does it mean when they say they collec=
+ted URLS from botnet-harvested spam? How did they =E2=80=98harvest=E2=80=99=
+ this information?</pre></li>
+
+<li><pre class=3D"student-text">What does this mean? What are all these acr=
+onyms?
+
+"In each case, the crawler exhaustively enumerates all A, NS, SOA, CNAME, M=
+X, and TXT records linked to a particular domain."</pre></li>
+
+<li><pre class=3D"student-text">What is an MX Honeypot? Or a Seeded honey a=
+ccount?
+</pre></li>
+
+<li><pre class=3D"student-text">What is the purpose of the DNS crawler? I u=
+nderstand that the web crawler collects the web page content of the url in =
+question. The DNS crawler presumably collects all the IP addresses(or DNS r=
+ecords) associated with a domain. Is this the data that is fed to the web c=
+rawler?</pre></li>
+
+<li><pre class=3D"student-text">What strategies do DNS registrars implement=
+ to determine if they should shut down a site for being spam?
+</pre></li>
+
+<li><pre class=3D"student-text">What's the impetus to shut-down these spam =
+sites? They're clearly providing economic value.=20
+
+Online gambling is also tracked and shut down online. Why doesn't the gover=
+nment track purchases and shut-down illegal ones? On a similar note, how ex=
+actly is online gambling shut down in the US? Do the banks enforce it?</pre=
+></li>
+
+<li><pre class=3D"student-text">What's the main takeaway of this paper?  Th=
+e focus of this paper feels so different from everything else we've studied=
+ in the class so far, and I'm wondering how it fits in.
+</pre></li>
+
+<li><pre class=3D"student-text">When the paper authors refferred to botnet-=
+harvested spam, do they mean examining data sent by computers they have kno=
+wingly infected or something else?</pre></li>
+
+<li><pre class=3D"student-text">Where does the line between legitimate adve=
+rtising and spam get drawn? Does the data account for user-subscribed email=
+s/promotions? How does one factor for that?
+</pre></li>
+
+<li><pre class=3D"student-text">Why are some hosting sites able to offer "b=
+ulletproof" hosting that is not vulnerable to takedown requests? What do th=
+ey have that other hosting sites lack?</pre></li>
+
+<li><pre class=3D"student-text">Why do we want to intervene with businesses=
+ done via spam? We already have spam filtering, so what is wrong with busin=
+esses trying to get revenue via people who happen to choose to click on suc=
+h advertisements?</pre></li>
+
+<li><pre class=3D"student-text">Why does a site need to run its own nameser=
+vers? Once they have the domain name registered, wouldn't users be directed=
+ straight to their webservers by existing DNS infrastructure?</pre></li>
+
+<li><pre class=3D"student-text">Why does it seem like spammers are never pr=
+osecuted? It would probably be difficult to catch/convict international spa=
+m centers, but there seem to be a significant number originating in the US =
+that can keep doing their business without impediment.</pre></li>
+
+<li><pre class=3D"student-text">Why does the MegaD botnet in Table I yield =
+only 4 distinct domains?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Why would a spam affiliate need to operate =
+its own DNS server in addition to registering domains?</pre></li>
+
+<li><pre class=3D"student-text">Why would the crawler avoid IP address name=
+s? </pre></li>
+
+<li><pre class=3D"student-text">Why, as they note on page 9, would some mer=
+chants not allow email addresses from popular webmail services?
+</pre></li>
+
+<li><pre class=3D"student-text">Will there or should there be regulations t=
+o sending spam by companies to either advertise etc?</pre></li>
+
+<li><pre class=3D"student-text">With more targeted advertising platforms li=
+ke Google and Facebook, is spam still a revenue-generating business? The re=
+turns do not seem to justify the effort in evading anti-spam mechanisms.</p=
+re></li>
+
+<li><pre class=3D"student-text">Would be interesting to also compare phone =
+call spam as a an acquisition
+channel. After moving to the US I was quite surprised how prevalent that=20
+was.
+</pre></li>
+
+<li><pre class=3D"student-text">sq18
+
+Why is the majority of spam found in the study linked to
+pharmaceuticals?  Is the spam value chain trying to target
+the elderly as they are the demographic most likely to
+fall for spam, or is there another reason behind it?</pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--jkImlBWrcM1hqHbUh6k8fhrvnpFDbDtLvYJz2tcPwx------

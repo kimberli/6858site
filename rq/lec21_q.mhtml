@@ -1,0 +1,824 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-questions/21
+Subject: Questions for lecture 21 - 6.858
+Date: Tue, 21 May 2018 01:45:34 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--3BNWMs0w2braGFgqufzdScykRtevQUQ5YeV7A8YLzC----"
+
+
+------MultipartBoundary--3BNWMs0w2braGFgqufzdScykRtevQUQ5YeV7A8YLzC----
+Content-Type: text/html
+Content-ID: <frame-1194-42ed3ecd-1eec-4ad0-9a88-261ec3742182@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-questions/21
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Questions for lecture 21 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Questions for lecture 21 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text"></pre></li>
+
+<li><pre class=3D"student-text">
+What would it take to make bitcoin widely used as international currency?</=
+pre></li>
+
+<li><pre class=3D"student-text">"The size of the block reward is determined=
+ by a fixed schedule. Initially,
+each block created B50. This has since halved to B25, and is scheduled to
+halve roughly every four years until roughly 2140 at which point no new bit=
+coins
+will be created"
+
+Why does the size of the block reward need to decrease over time?
+</pre></li>
+
+<li><pre class=3D"student-text">1) How does merged mining for alt-coins wor=
+k? In particular, what does
+"root" mean in the following sentence?
+
+A popular approach is merged mining, whereby an alt-
+coin accepts blocks if their root is included in a valid Bitcoin
+block, thus enabling Bitcoin miners to mine blocks in the
+altcoin without performing any additional work.
+
+2) How much is the reward for mining one block in bitcoins and in dollars
+approximately, and how many CPU hours does it take to find one?
+</pre></li>
+
+<li><pre class=3D"student-text">1. How does Bitcoin achieves its worth? So,=
+ for example, for the first transaction, who decided the price of bitcoin o=
+r how was it decided?
+2. How did Bitcoin stop someone from overtaking the network by majority ini=
+tially when there were very few miners?</pre></li>
+
+<li><pre class=3D"student-text">1. The paper says that hard forks require n=
+ear-unanimity. I know that hard forks have occurred in practice; how was ne=
+ar-unanimity achieved?
+
+2. Do the developers of bitcoind have the ability to compromise Bitcoin if =
+they wanted to? How does Bitcoin promise to address this trust problem if i=
+t claims to require no central trusted party?</pre></li>
+
+<li><pre class=3D"student-text">5/5/18
+
+Lecture 21
+
+What was the cause of bitcoin's explosion in value about a half a year ago?=
+ Was it anything security related?</pre></li>
+
+<li><pre class=3D"student-text">6.858 - Bitcoin
+
+For bitcoin, what is generally the time complexity of the puzzle to be comp=
+uted?
+Is the monetary reward worth the effort to mine? How much is it on major ne=
+tworks?
+</pre></li>
+
+<li><pre class=3D"student-text">After 2140 when no new Bitcoin can be mined=
+, what will happen to Bitcoin as a
+whole? Wouldn't people stop mining due to lack of incentive, and therefore
+there would be no ability to maintain consensus and perform transactions?=
+=20
+</pre></li>
+
+<li><pre class=3D"student-text">After 2140, at which point Bitcoin will not=
+ be generated anymore, will the currency still be used? </pre></li>
+
+<li><pre class=3D"student-text">Any recommendations for something to read a=
+bout the economics of bitcoin? It seems like hype is by far the dominating =
+factor in its price, but I'd be curious to see about interplay with other e=
+ffects--eletricity price, GPU price, what's the effect of people misplacing=
+ flash drives with their wallet keys, etc.?</pre></li>
+
+<li><pre class=3D"student-text">Are their non random strategies to solving =
+the bitcoin puzzle?</pre></li>
+
+<li><pre class=3D"student-text">Are there any known mechanisms for "distrib=
+uted public ledger" systems (such as blockchains) that don't require consum=
+ing enormous amounts of computational resources?
+</pre></li>
+
+<li><pre class=3D"student-text">As bitcoin mining becomes more an more comp=
+utationally intensive with the number of miners, would larger corporations =
+with access to huge amounts of GPUs (ex. NVIDIA) start to invest greater re=
+sources into mining (compared to consumers mining with lower grade GPUs)? H=
+as this already started?
+</pre></li>
+
+<li><pre class=3D"student-text">Beside bitcoin, researchers had developed l=
+ots of other "coins". From a technical perspective, this is good because pe=
+ople are constantly making improvements and inventing new techniques. But d=
+oesn't it deny bitcoin's initiative as a digital currency. Now people are u=
+sing blockchain and bitcoin as an investment rather than a stable currency.=
+</pre></li>
+
+<li><pre class=3D"student-text">Bitcoin using their hashing proof-of-work m=
+ining as a way to randomly allow
+clients to mine blocks in a decentralized fashion. If I made a slightly les=
+s
+decentralized network, where the only centralized component is a magic serv=
+ice
+which transmits proovably random numbers at some time interval. Each miner =
+has a=20
+public numerical ID.
+
+If the miner receives the random number and it is equal to his ID, he can m=
+ine a=20
+block.=20
+
+Is this functionaly similar to how bitcoin currently works (other than the =
+need
+of the reliable RNG), or am I missing something?
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">Bitcoin was briefly back at $10,000 per coi=
+n. What has changed since 2015 that caused the value of a single coin to ju=
+mp that high?
+</pre></li>
+
+<li><pre class=3D"student-text">Do people mine other cryptocurrencies or ma=
+inly Bitcoin?
+</pre></li>
+
+<li><pre class=3D"student-text">Do you think lightning network is a reasona=
+ble solution in solving Bitcoin's issue with transaction speed and scaling?=
+</pre></li>
+
+<li><pre class=3D"student-text">Does the "seed nodes" for the P2P network o=
+f bitcoin introduce any centralization?</pre></li>
+
+<li><pre class=3D"student-text">Following the crash of bitcoin, has the foc=
+us of research in this area shifted to other cryptocurrencies?</pre></li>
+
+<li><pre class=3D"student-text">For Altcoins, I don't understand the Proof-=
+of-burn idea. Why does burning
+some quantity of bitcoins incentivize users to start using it?</pre></li>
+
+<li><pre class=3D"student-text">Has any work been done in establishing rewa=
+rds that explicitly reward long-term-stabilty?
+Have there been any significant changes to block chain since the publicatio=
+n of this paper?</pre></li>
+
+<li><pre class=3D"student-text">Has anyone measured how bad bitcoin is for =
+the environment, or what impact it can potentially have on people who *do n=
+ot* mine bitcoin (increased electricity costs, increased cloud compute cost=
+s)?
+</pre></li>
+
+<li><pre class=3D"student-text">Has bitcoin ever been controlled by a major=
+ity miner / colluding group?</pre></li>
+
+<li><pre class=3D"student-text">Have any of the ideas in the "Extending Fun=
+ctionality" section been implemented between the publication of this paper =
+and now?</pre></li>
+
+<li><pre class=3D"student-text">Have there been examples of altcoins that v=
+aried Bitcoin's magic parameters in a way that resulted in their system's c=
+ollapse?
+</pre></li>
+
+<li><pre class=3D"student-text">Have you been noticing my haikus?</pre></li=
+>
+
+<li><pre class=3D"student-text">How are lightweight devices like mobile pho=
+nes useful to Bitcoin as a whole? Isn't the system mostly dependent on the =
+computational power being shared amongst computers? As phones become more p=
+owerful, will the idea of Blockchain have to fundamentally shift?</pre></li=
+>
+
+<li><pre class=3D"student-text">How are upgrades to Bitcoin propagated to t=
+he other miners? Who determines these upgrades?</pre></li>
+
+<li><pre class=3D"student-text">How do the other types of cryptocurrency (e=
+thereum, litecoin, etc) differ from bitcoin in terms of security?</pre></li=
+>
+
+<li><pre class=3D"student-text">How do you ensure the miners only takes a s=
+et amount of fee when creating a block for other people=E2=80=99s transacti=
+ons?</pre></li>
+
+<li><pre class=3D"student-text">How do you protect against someone who can =
+compute inverse hashes much faster? For example, someone in 6.857 who can r=
+ecreate the entire blockchain because he has a faster algorithm that can co=
+mpute inverse hashes 100x faster than most people. Also are the hashes that=
+ bitcoin uses invertible with quantum computation?
+</pre></li>
+
+<li><pre class=3D"student-text">How does Etherium overcome a network latecy=
+ challenge, while it's block time is much less?  </pre></li>
+
+<li><pre class=3D"student-text">How exactly do the transaction scripts work=
+? The validation and execution processes seem a little hazy.</pre></li>
+
+<li><pre class=3D"student-text">How exactly does users hiding data in bitco=
+in work?</pre></li>
+
+<li><pre class=3D"student-text">How has the cryptographic currency field ch=
+anged since 2014? What are Bitcoin=E2=80=99s biggest competitors, and how d=
+o they differ?</pre></li>
+
+<li><pre class=3D"student-text">How might bitcoin change their hashing prot=
+ocol if it were discovered that there was a significant weakness in SHA-256=
+?
+</pre></li>
+
+<li><pre class=3D"student-text">How profitable is being a manager of a mini=
+ng pool?
+</pre></li>
+
+<li><pre class=3D"student-text">How will bitcoin maintain consistency witho=
+ut miners after 2040?</pre></li>
+
+<li><pre class=3D"student-text">I am confused on how transaction scripts wo=
+rk.</pre></li>
+
+<li><pre class=3D"student-text">I don't really understand who the miners ar=
+e and what the reward is for them. What does it mean they get the ent diffe=
+rent between all input and output transactions? I'm a little confused how t=
+hese reward transactions occur.=20
+</pre></li>
+
+<li><pre class=3D"student-text">I find the tension between the rat race of =
+miners and the notion of pools
+fascinating. Miners join pools to reduce their pay variance, but without
+competition many of the bitcoin properties break down. What would happen
+if the entire network is a pool? Each miners payout would be exactly
+proportional to the contributed compute power, but such a pool would
+effectivly be a controlling entity. I wonder if there are better ways
+of incetivicing miners, but reducing the need for pools
+</pre></li>
+
+<li><pre class=3D"student-text">I read somewhere about how bitcoin mining i=
+s now using an unsustainable amount of energy.=20
+How might bitcoin mining be made more energy efficient without compromising=
+ the beneficial effect of mining
+in the Bitcoin network?</pre></li>
+
+<li><pre class=3D"student-text">I've heard a common criticism of bitcoin is=
+ that mining pools cause the mining process to be somewhat decentralized. 8=
+ mining pools control the majority of the mining of bitcoin. Is this a big =
+security risk? If these pools combined, could they execute a 51% attack?</p=
+re></li>
+
+<li><pre class=3D"student-text">If transactions take a long time to be guar=
+anteeded, then doesn't this mean that you can't actually buy anything? Like=
+ it would be at a loss on the seller to give the buyer anything because the=
+ seller is not guaranteed to get the money. </pre></li>
+
+<li><pre class=3D"student-text">Is Nikolai Satoshi Nakamoto?
+</pre></li>
+
+<li><pre class=3D"student-text">Is cryptocurrency a fad that will eventuall=
+y die out?
+</pre></li>
+
+<li><pre class=3D"student-text">Is it possible to set up a malicious mining=
+ pool, for example a mining pool which tries to generate adversarial transa=
+ctions? How do miners trust mining pools?
+</pre></li>
+
+<li><pre class=3D"student-text">Is the 10 minute block creation time backed=
+ up by calculations and estimates that have held to be true, or is it just =
+a standard that was adopted early on and has never changed because of this?=
+ Are there groups that strongly advocate changing it?</pre></li>
+
+<li><pre class=3D"student-text">Is the growing size of the bitcoin ledger a=
+ problem? How many people use bitcoin wallets and is the failure of those s=
+ites a security probblem?</pre></li>
+
+<li><pre class=3D"student-text">Is there a specified algorithm for solving =
+the proof-of-work problem, or can anyone use whatever algorithm they want t=
+o solve the problem and potentially mine blocks faster than others?</pre></=
+li>
+
+<li><pre class=3D"student-text">Is there a way to measure the share of comp=
+utational power one entity mining Bitcoin has at any one moment?</pre></li>
+
+<li><pre class=3D"student-text">Is there actually any guarantee that the ma=
+jority of blocks are verified by good
+actors? How do we know that Bitcoin (or any other consensus-based currency)=
+ is
+not being controlled by a powerful entity (nation-state level)? Couldn't a
+powerful group create an altcoin where the truth of the transactions is act=
+ually
+centrally controlled, while appearing decentralized?
+</pre></li>
+
+<li><pre class=3D"student-text">Is there any system in place to ensure that=
+ people keep working on blocks even after blocks stop rewarding bitcoins?
+</pre></li>
+
+<li><pre class=3D"student-text">Is there other scenario when someone create=
+d something very new and powerful like Satoshi did, and chose to be anonymo=
+us?=20
+</pre></li>
+
+<li><pre class=3D"student-text">Is there some way to measure how much minin=
+g power a miner controls?</pre></li>
+
+<li><pre class=3D"student-text">It is not clear to me how the peer-to-peer =
+anonimity scheme is able to provide strong anonimity at all. It seems that =
+it might be able to reduce the set of potential sources of the transaction,=
+ but, as they describe, it doesn't seem to be a large enough of a network a=
+s to be untrackable or even to provide real anonimity of some form.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 21 (Question About Paper)
+
+I still don't understand how bitcoin prevents double spending. Suppose a ma=
+licious user transferred the same bitcoin to two addresses and both transac=
+tions haven't been added to the blockchain yet. What do miners do when they=
+ see these two transactions? Do they mark both as invalid and decide not to=
+ add them to the blockchain?
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 21: My SoK Blockchain Question
+
+I'm a bit confused on some of the proposed virtual mining schemes. I unders=
+tand proof of stake, as it
+would directly harm anyone attempting to attack a blockchain operating unde=
+r this scheme because they
+would need to invest heavily in the blockchain's tokens, so attacking the b=
+lockchain afterwards would
+depreciate all of the tokens that they collected to run the attack. However=
+, I'm a bit confused as to
+how the incentives work for the other virtual mining schemes. How exactly w=
+ould schemes like proof of
+coin age or proof of activity incentivize users to not be malicious?
+
+Thank you!
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 22: Bitcoin
+5/7/18
+
+The paper says to mine bitcoins, a sufficiently difficult computational pro=
+blem must be solved. How are these problems generated and is it possible to=
+ also add in some actual/real problems (like computing structure of a prote=
+in) that needs to solved in research so this computing power is not lost?</=
+pre></li>
+
+<li><pre class=3D"student-text">Miners in a pool work together to lower the=
+ variance of the rewards. Why don=E2=80=99t miners lie about every correctl=
+y figuring out the puzzle in order to gain a share of other people=E2=80=99=
+s work without ever contributing value.</pre></li>
+
+<li><pre class=3D"student-text">My understanding of the SPV protocol is tha=
+t these nodes assume that (1) the past (as dicted by the clients they conne=
+ct to) is correct and (2) only valid transactions will be (attempted to be)=
+ added to the main chain. I can see this as being a necessary feature for t=
+hese nodes to monitor the main chain, but does it actually add any security=
+ to the protocol? All they are doing is verifying the PoW is correct, but o=
+ther miners would have just as much, if not more, incentive to already chec=
+k that thoroughly.
+</pre></li>
+
+<li><pre class=3D"student-text">Not directly a computer security related qu=
+estion, but what benefit does bitcoin/cryptocurrencies bring? Apart from in=
+troducing the idea of a distributed concensus and not requiring a bank to o=
+perate it, I don't see how it is of any use.</pre></li>
+
+<li><pre class=3D"student-text">On a more general level, since interest on =
+cryptocurrencies grew, has research diverted from Bitcoin and instead focus=
+ed on other cryptocurrencies? Or has research on Bitcoin itself kept up ?=
+=20
+</pre></li>
+
+<li><pre class=3D"student-text">Once no more Bitcoins will be created by mi=
+ning, what will be the primary incentives for miners?
+</pre></li>
+
+<li><pre class=3D"student-text">Other than circumventing laws (related to m=
+oney laundering, securities fraud,
+etc.), do you think that cryptocurrencies have any compelling uses cases fo=
+r
+ordinary people?
+</pre></li>
+
+<li><pre class=3D"student-text">Question about Bitcoin
+
+Have there been attempts to shard the blockchain to make it more distribute=
+d/faster but yet still, secure?
+
+</pre></li>
+
+<li><pre class=3D"student-text">Question: Are hosted bitcoin wallets the mo=
+st common way people store their bitcoins? It seems to take care of a lot o=
+f the hard parts for the average user, but it also reduces security. What c=
+hanges can be made to bitcoin itself to make hosted wallets safer for the u=
+ser?</pre></li>
+
+<li><pre class=3D"student-text">Quinn Magendanz
+
+Lecture 21
+
+What maps bitcoin users to pk usernames, and is it possible to watch that t=
+o break anonymity.</pre></li>
+
+<li><pre class=3D"student-text">SHA-256 is presumed to be a secure hashing =
+scheme in the present and near-future, but if Bitcoin is projected to last =
+any significant amount of time (at least until 2140, judging by the block r=
+eward size halving schedule), is this still a valid assumption?  Would a br=
+eak for SHA-256 or sufficient computing power to render it obsolete lead to=
+ trivial mining difficulty?</pre></li>
+
+<li><pre class=3D"student-text">Since they are losing the race to other cur=
+rencies due to the long mining rate, why won't they reduce it?</pre></li>
+
+<li><pre class=3D"student-text">So generally the data is still stored on se=
+rvers. Which means there is some trusted entity. Is it possible to combine =
+ideas from SUNDR to this to at least detect if information is tampered with=
+ on these miners. I presume currently the best way to do it is to have mult=
+iple sources of consensus, but that also limits the sharding factor you cou=
+ld use down to road to improve performance.
+
+Also assuming people conduct very few transactions of their own. I am curio=
+us if there is a way to just store your transactions and prove that they ar=
+e valid somehow. Like what if there was long term distributed storage but a=
+lso faster smaller storage that contained like tid &gt; some hash. And a us=
+er could verify balance by checking the hash in the smaller storage.
+</pre></li>
+
+<li><pre class=3D"student-text">The Bitcoin paper mentions that if an annou=
+nced block contains invalid transactions, participants are meant to reject =
+it. What percentage of participants must reject it in order for the block t=
+o be considered invalid? What stops an adversary from creating enough users=
+ to garner enough votes to not reject it?</pre></li>
+
+<li><pre class=3D"student-text">The most important question: is it a bubble=
+?</pre></li>
+
+<li><pre class=3D"student-text">The most well-known use cases of Bitcoin th=
+ese days, from brokers trading Bitcoins to ransomware asking for Bitcoin pa=
+yments, are not really shedding a positive light on Bitcoins. What are some=
+ specific use cases today where Bitcoin is being used to help people (other=
+ than help them get rich)?</pre></li>
+
+<li><pre class=3D"student-text">The paper briefly mentions that it would be=
+ desirable to have "useful puzzles"
+instead of just burning energy on mining puzzles-- are there any promising
+proposals for how to adapt Bitcoin to do this, or any promising Bitcoin
+alternatives that do this? Why is it that the environmental impact if Bitco=
+in
+is hardly ever mentioned as a significant negative point in it's design?
+</pre></li>
+
+<li><pre class=3D"student-text">The paper brought up the existence of many =
+"altcoins" - a term I'd never heard of prior to reading this paper.  If the=
+se are spinoffs of bitcoin, how does mining these altcoins make money?  I'm=
+ confused as to how they add to the Bitcoin block chain and how they can be=
+ used.
+</pre></li>
+
+<li><pre class=3D"student-text">The paper discusses the major problems intr=
+oduced if a single miner or cooperating group of miners holds the majority =
+of mining power. The design of bitcoin mitigates this problem in its curren=
+t steady state where gaining majority mining power is infeasible. However, =
+how was this problem dealt with during bitcoin's early days? Was it that mi=
+ners just did not exploit this flaw due to bitcoin's low value at the time,=
+ or was there some systematic fix to this problem?</pre></li>
+
+<li><pre class=3D"student-text">The paper frequently mentions SPV and SPV p=
+roofs - what exactly are those? What should we know about SPV to understand=
+ the references to it in this paper?</pre></li>
+
+<li><pre class=3D"student-text">The paper says that 6 block confirmations i=
+s a fairly arbitrary number. Has there been any attempts to bound the proba=
+bility of a double spend given n block confirmations? How would one go abou=
+t thinking about this analysis? Does this probability increase as the diffi=
+culty is lowered (and block time decreased)?
+</pre></li>
+
+<li><pre class=3D"student-text">There seem to be several components of bitc=
+oin that are not fully decentralized (e.g., the need for governance to agre=
+e upon the transaction validity rules). In particular, it appears (in secti=
+on B, "network topology and discovery") that there are dedicated directory =
+servers to seed the discovery of peers.  My question is this - If someone g=
+ained control of these directory servers, what kind of attack could they ca=
+rry out, if any?
+</pre></li>
+
+<li><pre class=3D"student-text">This paper is about three years out of date=
+ now. As described in the paper, Bitcoin has a deflationary monetary policy=
+ -- it is more profitable to hoard the coin than it is to spend it (especia=
+lly given its recent volatility). That said, it has not been suffering from=
+ the "deflationary spiral" mentioned in the paper. Why?
+</pre></li>
+
+<li><pre class=3D"student-text">What are bitcoin prefixes and how does it m=
+ake the system centralized?
+</pre></li>
+
+<li><pre class=3D"student-text">What are the advantages of other coins like=
+ Litecoin?</pre></li>
+
+<li><pre class=3D"student-text">What are the security implications of large=
+ network partitions (say if a country's internet censor prevented transmiss=
+ion of broadcasts into and out of the country--or at least the majority of =
+the information flow)?
+</pre></li>
+
+<li><pre class=3D"student-text">What are the technical differences between =
+Bitcoin and other cryptocurrencies?=20
+</pre></li>
+
+<li><pre class=3D"student-text">What do the checkpoints do? How can hard-co=
+ded blockchain prefixes be included with the Bitcoin client? Does the Bitco=
+in client periodically take a snapshot of the longest chain, and hard-code =
+a prefix of that chain and force that prefix to exist in any future chain t=
+hat it accepts?
+
+The paper said that the block size fork was avoided, but it did fork in 201=
+7 to create Bitcoin Cash. If the (hard) fork was avoided in 2014, why did i=
+t happen in 2017?
+
+How do the "partial shares" in mining pools work? Why do partial shares pro=
+ve that the miner produced the actual block?
+</pre></li>
+
+<li><pre class=3D"student-text">What do you think about, e.g., proof of sta=
+ke or other methods instead of proof of (probable) work? It just seems like=
+ there's an awful lot of electricity "wasted" to mine bitcoin and similar c=
+ryptocurrencies; is there a way to avoid this while still having a secure b=
+lockchain and without giving all control over it to a small group of token-=
+affluent individuals? (the paper mentions a few "virtual mining" approaches=
+ but doesn't really say one way or another whether they might be secure. Th=
+ey also mentioned the nothing-at-stake problem which at least some (perhaps=
+ more recent) proof of stake methods address (e.g. Ether's where, I believe=
+, simulation attacks could result in a loss of one's token deposit)).</pre>=
+</li>
+
+<li><pre class=3D"student-text">What else, other than bitcoin, is blockchai=
+n used for?
+</pre></li>
+
+<li><pre class=3D"student-text">What happened with Bitcoin Cash? Was that a=
+ hard fork? </pre></li>
+
+<li><pre class=3D"student-text">What have been the major changes with Bitco=
+in since this paper was written/published in 2014/15?</pre></li>
+
+<li><pre class=3D"student-text">What is preventing bitcoin from becoming an=
+ actual form of currency? Where is it headed and/or what improvements have =
+made it big since the paper?
+</pre></li>
+
+<li><pre class=3D"student-text">What is the current adoption rate of Bitcoi=
+n, in terms of transaction volume?=20
+</pre></li>
+
+<li><pre class=3D"student-text">What is the current state of bitcoin (e.g. =
+notable groups involved, etc.)?
+</pre></li>
+
+<li><pre class=3D"student-text">What is the main differentiator between Bit=
+coin, Ethereum and all the other =E2=80=9Calt=E2=80=9D-coins? </pre></li>
+
+<li><pre class=3D"student-text">What's the role of op codes?
+</pre></li>
+
+<li><pre class=3D"student-text">When Bitcoin first came out and started get=
+ting buzz, there was a great conversation about all the places that Bitcoin=
+ could be used.  After it had its tank back in December, the mainstream dis=
+cussion on news about Bitcoin has really decreased.  Do you think it still =
+has the potential to be ingrained more widely into society, such as for con=
+tracts, or the potential for another form of cryptocurrency to take its pla=
+ce + become more ingrained in society?</pre></li>
+
+<li><pre class=3D"student-text">When discussing block confirmation, the pap=
+er mentions that if conflicting transactions are included in competing fork=
+s, then one may be included in the longest chain at the moment but will be =
+revoked if the competing forks surpasses it. Would this not be a potentiall=
+y common scenario? The paper claims that in the worst case, this can enable=
+ a double spending attack. How could a double spending attack be enabled if=
+, once a consensus is reached (or re-reached, on a new branch), that branch=
+'s transaction history becomes the valid one?</pre></li>
+
+<li><pre class=3D"student-text">When is the Algorand sale and how is distri=
+bution planned to unfold?
+</pre></li>
+
+<li><pre class=3D"student-text">When will this technology really be widely =
+used? What problems are there to solve?</pre></li>
+
+<li><pre class=3D"student-text">Who is Satoshi Nakamoto???
+
+Also, I always hear about how massive pools of Chinese miners can influence=
+ the bitcoin network, not enough to actually change past transactions, but =
+enough to have significant influence on the scarcity of BTC (just because t=
+hey have so much).=20
+
+Do you think this is a problem? The paper mentioned a 'deniable' proof of w=
+ork, were a miner can claim a reward without the knowledge of another (poss=
+ibly colluding) party. Do you think this will solve the problem of massive =
+miner pools? </pre></li>
+
+<li><pre class=3D"student-text">Why hasn't Bitcoin introduced smart contrac=
+ts yet? It seems like an essential component for cryptocurrencies.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Why is bitcoin winding down currency creati=
+on? Don't many real world
+currencies have steady amounts of creation and function just fine?</pre></l=
+i>
+
+<li><pre class=3D"student-text">Why is ethereum able to create blocks much =
+faster than bitcoin, despite the specific problem that might arise, as aske=
+d in the lecture question?
+</pre></li>
+
+<li><pre class=3D"student-text">Will the computation resources be wasted if=
+ all the bitcoins are mined? </pre></li>
+
+<li><pre class=3D"student-text">Would producing blocks quicker also have an=
+ effect of lack of convergence to a single branch?
+</pre></li>
+
+<li><pre class=3D"student-text">sq21
+How will bitcoin transactions be authenticated after bitcoin
+mining no longer yields a bitcoin reward?</pre></li>
+
+<li><pre class=3D"student-text">what do you think the future holds for bitc=
+oin and other blockchain technologies?
+</pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--3BNWMs0w2braGFgqufzdScykRtevQUQ5YeV7A8YLzC------

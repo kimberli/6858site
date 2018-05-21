@@ -1,0 +1,1585 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://6858.csail.mit.edu/lec-answers/14
+Subject: Answers for lecture 14 - 6.858
+Date: Tue, 21 May 2018 01:34:08 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--GEpUjsjRzOthXCoB2Yjb87TgRShbsJqWCTQjWwa5cV----"
+
+
+------MultipartBoundary--GEpUjsjRzOthXCoB2Yjb87TgRShbsJqWCTQjWwa5cV----
+Content-Type: text/html
+Content-ID: <frame-1169-cc087f0f-de7e-4cdf-81b7-49aa5666f43c@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://6858.csail.mit.edu/lec-answers/14
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+  <title>Answers for lecture 14 - 6.858</title>
+ =20
+  <style type=3D"text/css">
+form {
+  display: inline;   =20
+}
+   =20
+body {
+  color: #2E3436;
+  font-family: "Georgia","Liberation Serif","Droid Serif","Helvetica","Bits=
+tream Vera Serif","Serif";
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+#container {
+  display: block;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  min-height: 100%;
+  overflow: inherit;
+}
+
+.dlsubmit {
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -40px;
+}
+
+h2 {
+  color: #8BB827;
+  font-size: 20pt;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: -20px;
+}
+   =20
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn {
+  width: 150px;
+}
+
+.textbox {
+  background: none;
+}
+
+pre.student-text {
+  white-space: pre-wrap;
+}
+
+#shell {
+  border-left: 5px solid #DDDDDD;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#subguide {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#fileform {
+  background: none;
+  position: relative;
+  box-shadow: none;
+}
+
+/* a fancy submit style */
+input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: -moz-linear-gradient(center top , #FFFFFF, #E9E9E9) repeat sc=
+roll 0 0 padding-box transparent;
+  border-color: #DEDEDE #BBBBBB #BFBFBF #DEDEDE;
+  border-image: none;
+  border-radius: 11px 11px 11px 11px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #464646;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Grande",Tahoma,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  margin: 0 0.7em 0 0;
+  padding: 5px 10px 6px;
+  text-decoration: none;
+}
+   =20
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-collapse: collapse;
+  margin: 10px;
+  text-align: left;
+  width: 1000px;
+}
+   =20
+th {
+  border-bottom: 2px solid #6678B1;
+  font-weight: bold;
+  padding: 10px 8px;
+}
+
+.spanned {
+  border-bottom: none;
+  text-align: center;
+  padding: 0;
+}
+   =20
+td {
+  padding: 9px 3px 0;
+}
+
+#header {
+  background-color: #EEEEEE;
+  height: 30px;
+}
+
+#menu {
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline;
+}
+
+#menu a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  </style>
+ =20
+</head>
+<body>
+  <div id=3D"header">
+    <div id=3D"menu">
+      <a href=3D"http://pdos.csail.mit.edu/6.858">6.858</a>
+
+     =20
+      | <a href=3D"https://6858.csail.mit.edu/reset">New api-key</a>
+      | <a href=3D"https://6858.csail.mit.edu/logout">Logout</a>
+     =20
+     =20
+    </div>
+   =20
+  </div>
+ =20
+  <div id=3D"container">
+ =20
+<h1> 6.858: Answers for lecture 14 </h1>
+
+<ul>
+
+<li><pre class=3D"student-text">It seems to me that most things can be hand=
+led by encryption, firewalls, smart DOS detectors, etc.
+
+The attacks in the paper all relevant in the sense that people still think =
+about about these attacks and are concerned if adversaries manage to pull t=
+hem off, but it seems like people have come up with ways to either mitigate=
+ the damage (encrypting packets so MITM scenarios aren't bad) or make it ve=
+ry very hard to pull off the attacks in the paper.
+
+Some things that still seem to be a concern are DNS-related attacks, but I'=
+m not sure what the current status of DNSsec is...
+
+</pre></li>
+
+<li><pre class=3D"student-text">* What problems still exist
+TCP sequence number prediction is still an issue. As described in the paper=
+ no modern technology could completely mitigate it. Given the attacker can =
+reach the target server, the attacker just needs to know, guess or find out=
+ the sequence number at some point. Since the sequence number at some time =
+in the future is deterministic, the attacker can then pretend to be a trust=
+ed host since they can guess the sequence number the server sent to the tru=
+sted host.
+The paper discusses routing protocols such as RIP and EGP. If servers still=
+ use these outdated protocols they are vulnerable to the attacks discussed.
+The ICMP attacks presented in the paper are still relevant in relation to D=
+DoS attacks because as long as a target allows a connection from the attack=
+er it must process ICMP packets in some way even if it just ignores them. T=
+his means that given a sufficient number of packets ICMP is still a current=
+ problem in some cases meaning administrators must secure against certain m=
+essages in some way. In terms of routing information those attacks are like=
+ly irrelevant as some sort of authentication likely occurs in order to prev=
+ent routing information overwrites. The paper also discusses that these rou=
+ting messages may not even be useful in vulnerable situations.</pre></li>
+
+<li><pre class=3D"student-text">- DDOS attacks are still a problem, althoug=
+h they're more mitigated by CDNs.
+- TCP/IP sequence attacks haven't been solved.
+- Authentication servers aren't secure, such as those used in emails.
+- Systems built on humans are vulnerable to social engineering attacks.
+</pre></li>
+
+<li><pre class=3D"student-text">- DOS attacks still valid threats.
+- Various forms of sequence prediction attacks are still being found. I'm g=
+uessing these protocols have not been rigorously proved.</pre></li>
+
+<li><pre class=3D"student-text">- TCP sequence number attacks
+- Routing protocol attacks in order to eavesdrop/modify packets
+- Email phishing
+- DNS cache contamination attacks</pre></li>
+
+<li><pre class=3D"student-text">- TCP sequence number prediction is still r=
+elevant today.=20
+- RIPv1 is now deprecated, so using RIPv2 with authentication is more safe =
+against RIP attacks.=20
+- EGP is no longer relevant since EGP has been replaced by BGP, but BGP is =
+susceptible to attacks (BGP hijacking).=20
+- Source routing is not really relevant since source routing is almost alwa=
+ys disabled in ipv4.
+- Email authentication and encryption are still very relevant problems toda=
+y. Phishing is a vulnerability.
+- DNS is still widely used and thus relevant to security today.</pre></li>
+
+<li><pre class=3D"student-text">- TPC sequence number attacks are still an =
+issue.
+- DDoS attacks are still issue, although things like large CDNs have helped
+  mitigate the risks to small servers.
+- DNS still isn't secure; cache contamination attacks are still an issue.
+- Since BGP is still used it's still possible to advertise bogus routes, et=
+c.
+  to mount routing attacks.
+- Phishing attacks can still happen over TCP/IP, of course (the author talk=
+s
+  about phishing attacks-- I'm unsure whether it's appropriate to call them=
+ a
+  TCP/IP issue, though).
+- Session hijacking is still an issue, although common methods of HTTP cook=
+ie
+  theft are mitigated quite a lot by modern web frameworks.
+</pre></li>
+
+<li><pre class=3D"student-text">- allowing flooding attacks
+- inside attacks not being defended against by firewalls
+- routing attacks by intersecting packets and sending packets spoofed as be=
+ing a known host
+-spam email attacks: some with similar hosts like paypa1 and other just ran=
+dom ones
+</pre></li>
+
+<li><pre class=3D"student-text">- flooding the port with packets in the for=
+m of DoS attacks
+- Routing attacks
+- Email phising
+- DNS authentication</pre></li>
+
+<li><pre class=3D"student-text">1. A lot of the issues with setting up conn=
+ections are being addressed with SSL, so it seems any issues have moved to =
+a different protocol.=20
+
+2. I'm not sure if routing today is any more secure. I would assume that th=
+e identities of good servers are very well known and routing tables don't c=
+hange very often.
+
+3. Mail is still an issue. I don't think there are any standard ways to sec=
+ure it. Instead individual email service providers have developed their own=
+ solutions. Email is encrypted on their individual networks and spam is fil=
+tered out with heuristics. So assuming people are ok with the "centralizati=
+on" of email, I guess you could say that this problem is solved for the lay=
+ person. Of course given the publicity of email hacks perhaps having email =
+tied to so many other accounts is a huge detriment and a separate system wo=
+uld be better.
+
+4. I don't know much about the security of DNSSec but I have heard of it be=
+ing used today.
+
+5. Denial of Service attacks are still a large issue. I don't think they ca=
+n ever be solved, since servers exist to process requests, but there are "l=
+oopholes" in protocols that make DoS attacks easier to launch and these hav=
+e been patched, or are known.
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">1. Routing Information Protocol (RIP)
+2. Authentication Server
+3. Email protocols
+4. Authentication
+5. Encryption
+</pre></li>
+
+<li><pre class=3D"student-text">1. The TCP/IP protocol suites today still u=
+se addresses to identify machines, and these can easily be faked by hackers=
+.
+2. Implementation issue are likely still a source of security vulnerabiliti=
+es having to do with the TCP/IP protocol suite.
+3. The protocol still permits denial of service attacks.
+4. It is still possible to use fake source addresses, although this is less=
+ of an issue today.
+</pre></li>
+
+<li><pre class=3D"student-text">1. guessing the initial sequence number use=
+d to establish a TCP connection between two servers (no longer an issue bec=
+ause cryptographic methods)
+2. queue overflows caused by flooding a server to cause connection messages=
+ to be lost
+3. netstat listed open ports on the machine and current connections, giving=
+ the attacker a lot of info (no longer an issue)
+4. address based authentication is very vulnerable to attack
+5. denial of service attack needing 2^17 tries to guess the receive window =
+of a packet
+6. abuse of IP source routing
+7. routing information protocol attacks - typically, the routing informatio=
+n received is unchecked. attack is to claim a route to an unused host, inst=
+ead of the network, and then all packets would be sent to attacker.
+8. impersonate an exterior gateway
+9. The Internet Control Message Protocol (ICMP) is the basic network manage=
+ment tool of the TCP/IP protocol suite. Redirect attack=20
+10. Authentication Servers (prob no longer an issue)
+11. Finger protocol (firewalls protect against this)
+12. Email not being encrypted (no longer an issue)
+*******13. Spammers and phishers are still an issue today. This is because =
+Authentication can prove identity, but not whether someone should be able t=
+o send you an email.
+*******14. DNS malicious behavior is also still an issue, and DNS servers a=
+re a large target.</pre></li>
+
+<li><pre class=3D"student-text">6.858 - TCP/IP
+
+- The TCP Prediction attack looks like it's still applicable, as I found re=
+cent
+  (within the last year) articles on the internet, and seems like it could =
+be
+  an issue for servers not aware of the attack.
+
+- Source Routing is still an issue in the modern day, as it is a useful fea=
+ture
+  for communications but hard to detect.
+
+- Systems that rely partially on human security (email phising attacks, POP=
+, etc.)
+  still happen because people are gullible, probably.
+
+- I don't think DNS has changed dramatically in the last decade, so it's al=
+so vultnerable
+  to the attacks described in the paper
+</pre></li>
+
+<li><pre class=3D"student-text">A TCP sequence prediction attack can still =
+occur, though may encounter some obstacles.
+Routing attacks are now much harder to feasibly pull off due to some of the=
+ implemented protections mentioned in the article, such as firewalls.
+Use of authentication servers is much less frequent now and so this attack =
+is less likely to work.
+The "finger" service is still an especially large problem today, as it is p=
+ossible to amass large amounts of data on a user by looking at their online=
+ public profiles.
+DNS is still insecure, as not everyone runs DNSSEC, which too does not solv=
+e all problems. However, there is current progress towards reducing the imp=
+act of such an attack.</pre></li>
+
+<li><pre class=3D"student-text">A common motif in designing computer system=
+s is to first focus on designing something
+that's functional. It is only after you get it working that you start focus=
+ing on=20
+other ornaments, particularly security. The Internet routing problem follow=
+ed this=20
+pattern, thus routing attacks are still relevant today.
+</pre></li>
+
+<li><pre class=3D"student-text">All spoofing attacks that capitalize on the=
+ lack of source address verification are still prevalent and relevant today=
+, such as ARP spoofing, RIP spoofing (although handled in RIPng), ICMP spoo=
+fing, DNS and ICMP amplification attacks. It is also common for local netwo=
+rks to be vulnerable - such as Ethernet networks, are especially vulnerable=
+ to eavesdropping and
+host-spoofing due to lax physical access control.=20
+
+Networks that implement network-level authentication (NLA) are not suscepti=
+ble to such attacks. For example, the IPsec extension suite was developed i=
+n part to counter such attacks by authenticating at the machine level using=
+ AH (Authentication Headers). IPsec is part of the packet header for IPv6, =
+so it is easier for IPv6 network admins to implement as compared to IPv4 ne=
+tworks, which is comparably more cumbersome to implement such NLA using an =
+extension like IPsec-IKE-ISAKMP due to potential issues such as address tra=
+nslation challenges (NAT).</pre></li>
+
+<li><pre class=3D"student-text">Although EGP attacks can't happen anymore, =
+BGP attacks are still relevant. </pre></li>
+
+<li><pre class=3D"student-text">As mentioned in the paper =E2=80=9CThe Inte=
+rnet of 1989 was a much simpler=E2=80=94and much friendlier=E2=80=94place t=
+han it is today.=E2=80=9D I=E2=80=99m sure the same holds for the Internet =
+at the time this paper was written and today! The following a list of some =
+of the security problems described and whether or not they are still releva=
+nt (i.e. unresolved or resolved issues):
+
+- TCP sequence number attacks: resolved (solution in comments in section 2)
+- Routing:
+	- Source routing: resolved
+	- RIP attacks: unresolved
+	- EGP: became BGP, unresolved
+	- ICMP: resolved
+- Authentication server: resolved (modernized and used today=E2=80=A6)
+- Finger service: unresolved
+- Email: resolved
+- DNS: unresolved
+- FTP: unresolved
+- SNMP: unresolved
+- Remote Booting: resolved (DHCP authentication protocol)
+- ARP attacks: unresolved</pre></li>
+
+<li><pre class=3D"student-text">Attacks on the Domain Name System (DNS), su=
+ch as denial of service and cache contamination, are still relevant today.<=
+/pre></li>
+
+<li><pre class=3D"student-text">Attacks still relevant today:
+- DoS attacks in general - the remote booting attack in particular seems li=
+ke a problem we might still face today, along with broadcasting attacks
+- MITM eavesdropping of routing packets - depending on the network, could p=
+ossibly still eavesdrop on unencrypted data or learn passwords and other se=
+nsitive info via side channel attacks (side channel attacks not mentioned i=
+n paper)
+- the describe all sorts of routing problems .. I'm not sure how many would=
+ be solved today, but I feel like w/ the rise of IoT and ad hoc wireless ne=
+tworks, we're facing a lot of similar issues regarding route planning and a=
+uthentication
+- the paper discusses DNS vulnerabilities .. I'm not familiar enough with t=
+he protocols operating today but I feel like this might still be a problem?
+</pre></li>
+
+<li><pre class=3D"student-text">Attacks that are still relevant today inclu=
+des TCP package sequence number prediction, IP source routing, routing info=
+rmation protocol attacks, fake authentication servers etc.</pre></li>
+
+<li><pre class=3D"student-text">Authentication servers and addressed based =
+authentication still seem relevant today. Some apps may have trusted ip add=
+resses, which can then be abused if the ip address is the main authenticati=
+on method for that peice of software. I think private/public key authentica=
+tion does go a decent way to solving this, or using SSL for authentication.=
+ I also don't think that email has been secured since the paper was written=
+, i.e. encryption of message and header, and authentication of sender.</pre=
+></li>
+
+<li><pre class=3D"student-text">Basically every vulnerability is still plau=
+sible, but I'll list the most "relevant" by the metric of how much damage t=
+hey seem to cause:
+
+- source routing
+- email
+- dns
+</pre></li>
+
+<li><pre class=3D"student-text">DDoS attacks today may still utilize the fl=
+ooding of ports with TCP connection requests which was described in section=
+ 2 of the paper.</pre></li>
+
+<li><pre class=3D"student-text">DNS attacks still happen regularly.
+</pre></li>
+
+<li><pre class=3D"student-text">DOS attacks and DNS attacks are still relev=
+ant.</pre></li>
+
+<li><pre class=3D"student-text">Danny Tang
+
+data1013
+
+4/9/18
+
+
+
+Lecture 14
+
+Question:
+
+Steve Bellovin's ``A Look Back'' paper was published in 2004, over 10 years=
+ ago (and the paper itself is a retrospective on his earlier paper from 198=
+9). Which of the security problems in the TCP/IP protocol suite described i=
+n Steve Bellovin's paper are still relevant today?
+
+Answer:
+
+A few are: sequence number prediction attacks, firewalls don't protect agai=
+nst insider attacks, DoS, authentication servers being
+run by incompetent hosts, phishing, DNS resolver sequence number attacks, g=
+eneral issues with encrypting messages.</pre></li>
+
+<li><pre class=3D"student-text">Denial of Service attacks still exist in a =
+number of scenarios.
+DNS Cache poisoning attacks persist where an invalid response is sent for a=
+ DNS query
+BGP route hijacks are a common occurence - both arising from misconfigurati=
+ons as well as intentional route hijacking
+Many systems still use source routing - like ToR and onion routing protocol=
+s leaving them suscpectible to the attacks discussed here
+Email spam and hijacking still occurs despite increased authentication incl=
+uding 2FA.
+</pre></li>
+
+<li><pre class=3D"student-text">DoS attacks, routing attacks (including BGP=
+), lack of email authorization, DNS spoofing, ARP spoofing, rogue DHCP serv=
+ers, DHCP info leaking, misconfiguration/buggy implementation, password gue=
+ssing</pre></li>
+
+<li><pre class=3D"student-text">Electric Mail Spamming using fake email add=
+resses is still an issue today. Use of POP3 and IMAP4 without encryption ma=
+y be subject to man-in-the middle attacks. Finally an attack on the DNS ser=
+ver can provide the attacker with means of supplying a subverted machine's =
+IP address to any incoming requests. </pre></li>
+
+<li><pre class=3D"student-text">Email are still not authenticated (fake ema=
+il addresses can still be used by spammers, although you cant send email fr=
+om an email you don't own)
+</pre></li>
+
+<li><pre class=3D"student-text">Email is very vulnerable to attacks, even t=
+oday. DNS attacks are possible still since it does not authenticate anyone.=
+</pre></li>
+
+<li><pre class=3D"student-text">Finger-like services like whois, social net=
+works, and google still provide personal details that may exploit the wides=
+pread adoption of plain passwords. The issue of email spam and trusted send=
+ers is still an issue. DNS reflection, rebinding and cache poisoning attack=
+s are still pretty common. Widely adopted DNS services still have poor priv=
+acy.
+</pre></li>
+
+<li><pre class=3D"student-text">Firewalls are still in use today, but as th=
+e paper states, should be used with caution.
+There's still problems with email and phishing.
+Very similar DNS attacks still exists I believe.</pre></li>
+
+<li><pre class=3D"student-text">Here are three which I looked into or have =
+seen recently:
+
+ - TCP sequence prediction is less relevant in the last decade, since imple=
+mentations now generally generate secure unpredictable sequences (https://s=
+ecurity.stackexchange.com/questions/34427/tcp-sequence-prediction-and-its-p=
+rominence-in-modern-systems-networks).
+
+ - Routing attacks are still relevant today. A variety of attacks around 20=
+09: https://www.networkworld.com/article/2272520/lan-wan/six-worst-internet=
+-routing-attacks.html. An attack on Bitcoin mining pools using "BGP hijacki=
+ng" as recently as 2014: https://www.wired.com/2014/08/isp-bitcoin-theft/ (=
+attacker gained access to a staff user account at a Canadian ISP broadcaste=
+d a spoofed command that redirected traffic)
+
+ - DNS attacks are still very relevant: i.e., I recently saw an article on =
+DNS cache poisoning (https://www.kb.cert.org/vuls/id/800113 and http://unix=
+wiz.net/techtips/iguide-kaminsky-dns-vuln.html). </pre></li>
+
+<li><pre class=3D"student-text">I think a lot of these security problems ar=
+e still relevant today such as routing and authentication issues. There are=
+ attempts like Kerberos to improve security, but doesn=EF=BF=BDt completely=
+ solve it.
+</pre></li>
+
+<li><pre class=3D"student-text">I think some of the problems can now be par=
+tially prevented using SSL.
+However, some of the problems are still relevant today. Those include
+denial of service attacks, ARP attacks and routing attacks.</pre></li>
+
+<li><pre class=3D"student-text">Insider attacks that firewalls can't protec=
+t against, routing attacks, Password-guessing attacks based on information =
+made public about users online, email authorization/encryption, and many DN=
+S attacks
+</pre></li>
+
+<li><pre class=3D"student-text">It seems that many of the problems mentione=
+d in the protocol suite would still be a problem today. As TCP was not init=
+ially designed very securely, as even the creators
+noted that use of the TCP sequence numbers as security was ill-advised, tho=
+se relying on purely TCP for security will not be happy with the many probl=
+ems that exist
+with the protocol. One of the core problems mentioned by the paper, the aut=
+hentication of the sender and receiver, remains a problem today. In additio=
+n, solutions to
+the problems mentioned in the paper exist, but are the solutions are not un=
+iversally implemented nor when implemented, implemented correctly. </pre></=
+li>
+
+<li><pre class=3D"student-text">It seems that the security problems that ar=
+e still relevant today are:
+- TCP sequence numbers (perhaps prediction is hard, but security is still n=
+ot assured)
+- source routing -&gt; firewalls do not defend against insider attacks
+- authentication servers -&gt; primary use is auditing and not authenticati=
+on, but the security vulnerability still exists
+- e-mail -&gt; endpoints are not secure</pre></li>
+
+<li><pre class=3D"student-text">Jun Wan 991032935
+
+1. TCP Sequence Number Prediction Attack:=20
+   (1) If you know the sequence numbers of an active session, you can hijac=
+k it.
+   (2) The r-utilities are implicitly relying on TCP sequence numbers.
+   (3) The defense scheme has not been widely adopted. Instead, many implem=
+entations use random ISNs or (especially) random increments. This has obvio=
+us negative effects on the correctness of TCP in the presence of duplicate =
+packets.
+
+2. Routing Information Protocol Attack: this attack abuses the routing prot=
+ocols for eavesdropping and/or packet modification. While there are proposa=
+ls to solve this problem, nothing has been implemented; all of the proposed=
+ solutions have their drawbacks.
+
+3. Authentication Server: The authentication server was a bad idea which is=
+ still used today.
+
+4. Email Authentication: There is still no widely-deployed method of authen=
+ticating email. Authentication proves an identity, but it says nothing of w=
+hether or not that party is authorized to send you email.
+
+5. Denial of Service: still a crucial weak spot.
+
+6. Address Resolution Protocol Attack: In 2004, ARP attacks still work in w=
+ireless networks. It can also be used to defeat the presumed security prope=
+rties of Ethernet switches. I am not sure whether this still works nowadays=
+.</pre></li>
+
+<li><pre class=3D"student-text">Lecture 14
+
+Steve Bellovin's ``A Look Back'' paper was published in 2004, over 10 years=
+ ago (and the paper itself is a retrospective on his earlier paper from 198=
+9). Which of the security problems in the TCP/IP protocol suite described i=
+n Steve Bellovin's paper are still relevant today?
+
+I think source routing, although almost deprecated in most systems, is stil=
+l a vulnerability if any system supports it.=20
+A RIP attack can also happen in the current TCP/IP protocol but there are m=
+uch more defenses against it now.
+Faking email sources and phishing is still a huge issue. Most small scale e=
+mail service clients don't encrypt or authenticate.
+DoS attacks launched by spoofing DNS requests is still a security issue.
+
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 14
+---------------------------------------------------------------------------=
+----
+Steve Bellovin's ``A Look Back'' paper was published in 2004, over 10 years=
+ ago
+(and the paper itself is a retrospective on his earlier paper from 1989). W=
+hich
+of the security problems in the TCP/IP protocol suite described in Steve
+Bellovin's paper are still relevant today?
+---------------------------------------------------------------------------=
+----
+
+From my understanding DNS is still a huge hole in a secure internet. DNS ac=
+ts as
+a distributed DB, but the nodes and data in the DB are not crptographically
+secure, and can be spoofed by the right adversary. In fact, very recently I=
+'ve
+read articles pushing for DNS to happen over TLS so that it is encrypted at=
+ the
+very least. Optimally, a cryptographically secure solution such as DNSSEC o=
+r
+perhaps even a blockchain based solution.=20
+
+The paper talks specifically about DNS cache contamination attacks, which c=
+an be
+used to have DNS resolve different IPs to some host names.
+
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 14 (Answer to Paper Question)
+
+Question:
+
+Steve Bellovin's ``A Look Back'' paper was published in 2004, over 10 years=
+ ago (and the paper itself is a retrospective on his earlier paper from 198=
+9). Which of the security problems in the TCP/IP protocol suite described i=
+n Steve Bellovin's paper are still relevant today?
+
+
+It seems like TCP sequence number prediction attacks, source routing attack=
+s, and others can be prevented by updating the software running on servers,=
+ however, it doesn't seem like there are many solutions for DoS attacks. Fo=
+r example, I read about the Shrew DoS attack in some lecture notes from Pur=
+due, and after browsing the internet for a few minutes, I got the impressio=
+n that the detection of shrew attacks is still an open problem.
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 14: Network Security
+4/9/18
+
+Steve Bellovin's ``A Look Back'' paper was published in 2004, over 10 years=
+ ago (and the paper itself is a retrospective on his earlier paper from 198=
+9). Which of the security problems in the TCP/IP protocol suite described i=
+n Steve Bellovin's paper are still relevant today?
+
+- denial of service/flooding attacks
+- impersonating servers that are resetting/unavailable
+- attackers guessing codes when they aren't randomly generated
+- eavesdropping in the middle
+</pre></li>
+
+<li><pre class=3D"student-text">Lecture 14: TCP/IP Reading Question
+
+1) TCP Sequence Number Prediction: Not much of a problem anymore with moder=
+n operating systems being fixed
+to be able to generate safe numbers.
+
+2) Source Routing: Made obsolete by firewalls.
+
+3) Routing Information Protocol Attack: Still a threat today.
+
+4) Exterior Gateway Protocol: Still a threat as it has been replaced with B=
+order Gateway Protocols, which
+are more vulnerable and have been a source of increased number of attacks.
+
+5) The Internet Control Message Protocol: No longer a threat as the RFC 112=
+2 helped correct the vulnerability.
+
+6) The Authentication Server: Still a threat today.
+
+7) The Finger Service: Still a threat today.
+
+8) Electronic Mail: Still a threat today.
+
+9) The Domain Name System: Still a threat today.
+
+10) The File Transfer Protocol: Still a threat today.
+
+11) Simple Network Management Protocol: Still a threat today.
+
+12) Remote Booting: Still a threat today.
+
+13) Local Network Vulnerability: Still a threat today.
+</pre></li>
+
+<li><pre class=3D"student-text">Man-in-the-middle attacks with various form=
+s of spoofing are still a problem today. With the Snowden revelations, it i=
+s evident the threat model must be expanded to include an adversary with al=
+most unlimited control over the network. End-to-end encryption is much more=
+ common today, but not at the low levels (IP layer) examined in the paper. =
+Denial-of-service attacks are also common today, but they often rely on sen=
+ding massive volumes of traffic rather than exploiting bugs in the target.<=
+/pre></li>
+
+<li><pre class=3D"student-text">Many of the attacks mentioned in the paper =
+are still relevant and unsolved, like denial of service attacks. However, i=
+t seems that SNMP has been recently replaced by more secure network managem=
+ent protocols.</pre></li>
+
+<li><pre class=3D"student-text">Many of the security problems are still rel=
+evant today - For instance, DDoS attacks are still a common occurence, with=
+ the primary solution being the scale of servers like Cloudflare.  Others, =
+such as insecure protocols like finger and netstat, are less relevant today=
+.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Many of these protocols are now secure enou=
+gh to the point that the issues
+written in the paper are irrelevant today.
+
+DNS is still used for some man in the middle attacks, and DoS attacks can s=
+till
+occur via most of these protocols.
+</pre></li>
+
+<li><pre class=3D"student-text">Many of these specific attacks are no longe=
+r relevant, although routing attacks
+are still relevant today. However, in general it is very difficult to patch=
+ a
+lot of the fundamental issues with TCP/IP which is such a low-level protoco=
+l
+that it can't be changed too drastically without interfering with tons of
+existing systems.
+</pre></li>
+
+<li><pre class=3D"student-text">Most of the attacks in the paper are releva=
+nt today, but can be mitigated, since today we have encryption and cryptogr=
+aphic signatures. In particular,
+
+- DNS spoofing and cache poisoning isn't going to work because our browsers=
+ will check the certificate of the website, and ignore a fradulent website =
+that is posing as a legitimate one.
+
+- Passwords cannot be collected on TCP because passwords are always encrypt=
+ed via SSL.
+
+- End to end encryption guarantees that any data that is intercepted along =
+the links is unreadable to the attacker.
+
+- Cryptographic signatues on messages guarantee the integrity of the data. =
+The attacker cannot spoof a message because changing any bits invalidates t=
+he signature. In addition, replay attacks are prevented by including the se=
+quence number in the signature.
+
+- Email can also be encrypted end to end, and can be verified via PGP key s=
+igning and SPF records. However, it is still possible to spoof email addres=
+ses, and users may fall victim to phishing attacks if they only look at the=
+ sender (From: ) field and not the specific headers in the message.
+
+- We have SCP, which is more secure than FTP.
+
+- DOS attacks are still relevant today, and though load balancers and CDNs =
+try to mitigate that, it still poses somewhat of a problem.
+</pre></li>
+
+<li><pre class=3D"student-text">Most of the attacks remain relevant to this=
+ date.</pre></li>
+
+<li><pre class=3D"student-text">Most of the attacks still work.
+
+* TCP Sequence Number Prediction Attacks are still a problem -- although RF=
+C 6528 (introduced in 2012) improves the initial sequence numbers used for =
+TCP communication, which should hopefully make these attacks more difficult=
+.
+
+* As far as I'm aware, there currently isn't a good approach to dealing wit=
+h source routing attacks.=20
+
+* The RIP protocol is no longer used, so that is irrelevant.
+
+* The defenses against ICMP attacks mentioned in the paper should be suffic=
+ient.
+
+* TLS should fix the problems related to the "Authentication Server" sectio=
+n.
+
+* I haven't heard much about the `finger` service, so I assume that it is n=
+o longer commonly used?
+
+* Modern email protocols like SMTP and IMAP don't have the same vulnerabili=
+ties as POP
+
+* All of the DNS attacks mentioned in the paper are still relevant.
+
+* People generally use SFTP (FTP over an SSH tunnel) rather than just FTP.
+</pre></li>
+
+<li><pre class=3D"student-text">Most of the issues that the author pointed =
+in the Retrospective conclusion are still prelevant today - guessability, r=
+euse and leakage of passwords undermines almost any system. Second, the pri=
+velage separation is a big issue, since it's a very general concept. Also, =
+a lot of attacks seem to involve or cause port flooding / DoS of attacks, w=
+hich is, probably, even a bigger issue today than it was before.</pre></li>
+
+<li><pre class=3D"student-text">Most vulnerabilities might be still availab=
+le today,
+but some of them are no longer widely used. =20
+However, since TCP/IP is not designed to=20
+be secure protocol, several ones are very dangerous
+and hard to fix. 1. TCP sequency number vulnerability,
+attacker might either steal or predict the sequency=20
+number to impersonate a host. 2. IP, source routing.
+The attacker can change the routing path and read the
+packets. 3. DNS attacks. DNS is widely used but it's=20
+quite vulnerable. Attackers can contaminate the DNS
+to misdirect traffic. 4. FTP attacks like bounce attack.
+FTP is hard to secure but from my understanding, FTP
+is not as popular as it is before. </pre></li>
+
+<li><pre class=3D"student-text">One can use TCP sequence number prediction =
+to construct a TCP packet sequence without ever receiving any responses fro=
+m the server. This allowes spoofing a trusted host on a local network.
+</pre></li>
+
+<li><pre class=3D"student-text">Paper Question
+
+1. Spoofing attacks that make use of missing SAV (source address verificati=
+on) are common in today's security paradigms. If the receiver does not veri=
+fy who they are talking to, a malicious agent can make use of TCP to send m=
+alicious commands to the machine.=20
+
+2. MITM attacks are also still a problem where on local networks a maliciou=
+s agent can eavesdropp or spoof a host due to more relaxed PAC (physical ac=
+ces control). </pre></li>
+
+<li><pre class=3D"student-text">Potential Issues that still exist today (or=
+ don't):
+
+- TCP number prediction; It's not clear that anyone has implemented Bellovi=
+n's proposed solution. As a result, presumably protocols still "rely on TCP=
+ sequence numbers for security."
+- Source Routing attacks; these seem to be mostly taken care of via firewal=
+ls, unless the attacker is an inside the gateways, in which case this could=
+ still be a problem.
+- RIP exploits: According to Bellovin, this remains a problem without a rea=
+sonable solution. Simple defenses include filtering out bogus addresses and=
+ authentication of RIP packets. However, these aren't often used.
+- EGP exploits: No longer a problem, as EGP has been replaced with BGP. How=
+ever, BGP has its own, larger set of vulnerabilities.
+- ICMP exploits: easily corrected and not really a problem anymore accordin=
+g to Bellovin.
+- Authentication server based exploits: not really a problem anymore, as on=
+ly used for auditing, not authentication.
+- finger services: guessing a password to get user metadata is, according t=
+o Bellovin, an effective attack.
+- Email: Phishing remains still an effective attack.
+- DNS exploits: DNS problems still remain. Specifically, it is possible to =
+create fake DNS entries, and read entire DNS mappings to search for vulnera=
+bilities.
+- FTP is still a problem; cannot secure FTP data channels, and and arbitrar=
+y FTP server can *bounce* to third host, resulting in an attack upon them.
+- SNMP remains vulnerable because plain text passwords are bad.
+- RARP and TFTP have been replaced with DHCP, which is worse if the adversa=
+ry has access to the local server.
+</pre></li>
+
+<li><pre class=3D"student-text">Question: Steve Bellovin's ``A Look Back'' =
+paper was published in 2004, over 10 years ago (and the paper itself is a r=
+etrospective on his earlier paper from 1989). Which of the security problem=
+s in the TCP/IP protocol suite described in Steve Bellovin's paper are stil=
+l relevant today?
+
+TCP/IP is still vulnerable to the following attakcs: TCP sequence number gu=
+essing attacks, denial of service attacks to carry out TCP prediction attac=
+k (although I believe there has been a lot of work to combat DoS), routing =
+attacks including DoS, cache contamination and table poisioning, and listen=
+ing to traffic to router, what the paper calls "finger" service which is sc=
+raping data about user names, numbers, etc to guess passwords, email valdia=
+tion, and DNS attacks
+ICMP and redirect attacks still happen a bit but they are a lot easier to d=
+efend against.=20
+
+</pre></li>
+
+<li><pre class=3D"student-text">Quite a few security problems mentioned in =
+the paper are still relevant.=20
+
+Routing attacks using the Routing Information Protocol (RIP) allow an intru=
+der to redirect traffic from an internal address to the intruder's machine =
+instead. They're frequently used for spam attacks.=20
+
+Email is another common medium of attack for spam and phishing. Not only ca=
+n emails originate from almost-legitimate sources (paypa1.com for instance)=
+, they can occasionally be spoofed, so the from: field looks correct.=20
+
+DNS attacks are another weak link in the internet. Poisioned DNS servers ca=
+n return fake IP address for specified hostnames.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Relevant problems today from the paper incl=
+ude:
+
+* IP source spoofing for DoS attacks
+* Routing mechanism abuse (via "captive portals" for public wifi networks)
+* Lack of packet integrity over unencrypted connections
+* Lack of widespread email authentication
+</pre></li>
+
+<li><pre class=3D"student-text">Routing attacks are still a problem today. =
+If an ISP uses the Routing Information Protocol to broadcast false routing =
+information, it can create denial of service attacks or facilitate eavesdro=
+pping. There are still many attacks possible on an Authentication Server, s=
+uch as compromising authentication messages with routing attacks, or having=
+ a fake authentication server that always rejects, which is a denial of ser=
+vice attack. DNS attacks are still a problem, and the solution is to use DN=
+SsEc but deployment of that has been slow.</pre></li>
+
+<li><pre class=3D"student-text">Routing attacks are still relevant today. E=
+mail spammers are also a problem. As outlined in the paper, there are many =
+phishing attacks and fraudulent emails sent. DNS attacks also remain a prob=
+lem, domain servers are targets for DDoS attacks. FTP, SNMP and remote boot=
+ing attacks remain possible. Vulnerable local networks are also still a pro=
+blem and privileged ports remain targets.</pre></li>
+
+<li><pre class=3D"student-text">Routing attacks on HTTP (HTTPS solves most =
+authentication/verification problems here)
+RIP attacks -- I believe not everyone filters for bogus source addresses st=
+ill
+Denial of Service attacks (ICMP)
+Side channel information (Finger) still exists, though just a general issue=
+ with passwords
+Email vulnerabilities
+DNS (lack of verification)
+
+</pre></li>
+
+<li><pre class=3D"student-text">Routing information protocol attacks are st=
+ill possible through DNS cache poisoning, which would cause a malicious map=
+ping to be propagated to all machines who used that DNS machine as its host=
+ name resolver. In general, I feel like DNS security is pretty poor.</pre><=
+/li>
+
+<li><pre class=3D"student-text">Security problems in the TCP/IP protocol su=
+ite described in Steve Bellovin's paper that are still relevant today inclu=
+de sequence number guessing attacks,DNS attacks, and DOS attacks by confusi=
+ng the routing tables on host or gateway.
+</pre></li>
+
+<li><pre class=3D"student-text">Security problems such as weak passwords an=
+d phishing are still relevant, as are other simple problems such as the vul=
+nerability of local area networks to eavesdropping and host-spoofing. Routi=
+ng problems still exist, as do insider attacks. DNS is still vulnerable to =
+a number of attacks.
+</pre></li>
+
+<li><pre class=3D"student-text">Security problems that are still relevant: =
+TCP sequence number prediction, IP source routing, guessing sequence number=
+s, spying through DNS, eavesdropping on local network</pre></li>
+
+<li><pre class=3D"student-text">Sequence number prediction -&gt; Yes
+DOS attacks -&gt; Yes
+Source routing attacks -&gt; Yes
+Finger service -&gt; Yes
+Email impersonating -&gt; Yes
+DNS poisoning -&gt; Yes
+SNMP -&gt; Yes
+ARP attacks -&gt; Yes
+Vulnerability of local network -&gt; Yes
+
+</pre></li>
+
+<li><pre class=3D"student-text">Sequence number prediction is still a conce=
+rn such that systems today need to take care to randomize them. How a packe=
+t is routed is sstill important today. DNS is still a crucial part of the i=
+nternet and DNSSEC is still not widely used (&lt;20%). Bouncing is still a =
+common method of redirecting an attack or causing a DDoS.
+</pre></li>
+
+<li><pre class=3D"student-text">Sequence number prediction, routing informa=
+tion protocol attacks, FTP implementation, and authentication are still rel=
+evant today.</pre></li>
+
+<li><pre class=3D"student-text">Some of the security problems in the TCP/IP=
+ protocol suite that are still relevant today include: ICMP attacks, use of=
+ authentication servers (possibly without encryption), encryption in email,=
+ lack of encryption usage in POP/IMAP, vulnerabilities in BGP and its attac=
+k surface, DNS vulnerabilites (e.g. cache contamination) and slow deploymen=
+t of DNSSEC, inherent lack of security in FTP, and ARP vulnerabilities espe=
+cially in IPv4. Several others, such as the TCP sequence prediction vulnera=
+bilities, appear to have lessened in prominence as firewalls and more strin=
+gent configurations are implements, and some of the remaining vulnerabiliti=
+es can be mitigated through alternate approaches (e.g. using SSH-based tran=
+smission such as through SFTP instead of FTP). The importance of security c=
+onfigurations to ensure proper authentication and usage of encryption is st=
+ill very relevant today. </pre></li>
+
+<li><pre class=3D"student-text">Source routing attacks (as described in Sec=
+tion 3.1) and routing information protocal attacks (3.2) still remain threa=
+ts -- while RIP attacks are somewhat easier to defend against than the sour=
+ce routing attacks.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Source routing is still relevant today and =
+is supposedly difficult to address. Routing Information attacks and ICMP pr=
+oblems are also common today
+</pre></li>
+
+<li><pre class=3D"student-text">Steve Bellovin's ``A Look Back'' paper was =
+published in 2004, over 10 years ago
+(and the paper itself is a retrospective on his earlier paper from 1989). W=
+hich
+of the security problems in the TCP/IP protocol suite described in Steve
+Bellovin's paper are still relevant today?
+
+
+1) Internet routing attacks (e.g. false BGP broadcasting, etc.) are still
+relevant.
+
+2) As of today the majority of DNS queries are still carried out without
+authentication. Measures like DNSSEC have been proposed but none has seen w=
+ide
+use. So DNS security issues (e.g. DNS spoofing) are certainly still relevan=
+t.
+</pre></li>
+
+<li><pre class=3D"student-text">Steve Bellovin's ``A Look Back'' paper was =
+published in 2004, over 10 years ago (and the paper itself is a retrospecti=
+ve on his earlier paper from 1989).=20
+Which of the security problems in the TCP/IP protocol suite described in St=
+eve Bellovin's paper are still relevant today?
+
+Routing protocols still have very little authentication, instead focusing o=
+n recovering from down time and network changes rather than on validating t=
+he senders in the network.=20
+BGP is still a large attack space.=20
+TCP sequence numbers are still used in initiating handshakes.=20
+Firewalls still do not protect against attacks based inside the network or =
+compromised end user identity (impersonation), rather larger architectural =
+schemes like those described by Google are required.=20
+Man-in-the-Middle attacks are still a threat, which is why encrypting data =
+is important so raw passwords, etc can't be read from intercepted packets.=
+=20
+Various forms of password guessing to compromise users attacks (phishing sc=
+ams, etc) are still very common and highly successful despite infrastructur=
+al improvements.=20
+</pre></li>
+
+<li><pre class=3D"student-text">Steve Bellovin's ``A Look Back'' paper was =
+published in 2004, over 10 years ago (and the paper itself is a retrospecti=
+ve on his earlier paper from 1989). Which of the security problems in the T=
+CP/IP protocol suite described in Steve Bellovin's paper are still relevant=
+ today?
+
+	- DOS attacks with source routing are still relevant
+	- Phishing in email attacks
+	- A lot of systems today hold a lot of data on a user, similar as a finger=
+ service, which may be exposed to  attackers for further attacks
+	- Probing and listening on ports is still relevant
+	- People have inspect and modify traffic using BGP
+	- Spammers can use an IP address and then change
+=09
+</pre></li>
+
+<li><pre class=3D"student-text">Steve Bellovin's ``A Look Back'' paper was =
+published in 2004, over 10 years ago (and the paper itself is a retrospecti=
+ve on his earlier paper from 1989). Which of the security problems in the T=
+CP/IP protocol suite described in Steve Bellovin's paper are still relevant=
+ today?
+
+- TCP sequence numbers can still be exploited today. Attackers can guess a =
+sequence number and inject or corrupt data by injecting packets into the st=
+ream
+
+- DDOS via SYN and ACK flooding
+
+- No widely spread method of authenticating and encrypting email (arguably =
+https, but it is not necessarily ubiquitous and specific to email)
+</pre></li>
+
+<li><pre class=3D"student-text">Steve Bellovin's ``A Look Back'' paper was =
+published in 2004, over 10 years ago (and the paper itself is a retrospecti=
+ve on his earlier paper from 1989). Which of the security problems in the T=
+CP/IP protocol suite described in Steve Bellovin's paper are still relevant=
+ today?
+
+Answer: One specific problem Bellovin talked about in his paper was routing=
+ attacks. There are still many IP spoofing attacks that are used for things=
+ like DDoS attacks. It doesn't help that certain protocols like BGP aren't =
+well equipped to deal with these problems, so it is necessary to iterate. T=
+here's now BGP flowspec which will mitigate some of these concerns, but to =
+my knowledge it is not very well adopted yet.
+</pre></li>
+
+<li><pre class=3D"student-text">Steve Bellovin's ``A Look Back'' paper was =
+published in 2004, over 10 years ago (and the paper itself is a retrospecti=
+ve on his earlier paper from 1989). Which of the security problems in the T=
+CP/IP protocol suite described in Steve Bellovin's paper are still relevant=
+ today?
+
+Many of the problems with the TCP/IP protocol suite have been "solved" eith=
+er through "good-enough" heuristics, or actual technical fixes, such as the=
+ impending switch to IPv6 (hah!), but a bunch still remain.  Things like se=
+quence-number attacks are still possible due to ACK packets being returned =
+even if r-utilities rejects source-routed connections.  BGP is also still q=
+uite vulnerable to nation-state level attacks.  Mail-retrieval protocols ar=
+e still largely insecure, but are packed away deep enough in other layers o=
+f encryption that they're generally not of great concern.  DNS is still a p=
+retty big pain-spot, with DNS rebinding attacks still being a huge and easi=
+ly exploitable issue on the internet today.</pre></li>
+
+<li><pre class=3D"student-text">Steve Bellovin's ``A Look Back'' paper was =
+published in 2004, over 10 years ago (and the paper itself is a retrospecti=
+ve on his earlier paper from 1989). Which of the security problems in the T=
+CP/IP protocol suite described in Steve Bellovin's paper are still relevant=
+ today?
+
+TCP Sequence Number Prediction
+
+Maliciously taking advantage of routing patterns
+
+Phishing attacks/email authentication
+
+DNS server attacks
+
+Local network/MITM attacks
+
+</pre></li>
+
+<li><pre class=3D"student-text">Steve Bellovin's ``A Look Back'' paper was =
+published in 2004, over 10 years ago (and the paper itself is a retrospecti=
+ve on his earlier paper from 1989). Which of the security problems in the T=
+CP/IP protocol suite described in Steve Bellovin's paper are still relevant=
+ today?
+
+----
+
+Routing attacks (under the BGP protocol) seem to still be an issue (https:/=
+/securityintelligence.com/bgp-internet-routing-what-are-the-threats/). DNS =
+security still seems to be relevant although DNSsec provides a more secure =
+option. From what I could find on the Internet and from the paper, number s=
+equence prediction attacks and ICMP attacks are only relevant if someone is=
+ using outdated software.
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">Steve Bellovin's ``A Look Back'' paper was =
+published in 2004, over 10 years ago (and the paper itself is a retrospecti=
+ve on his earlier paper from 1989). Which of the security problems in the T=
+CP/IP protocol suite described in Steve Bellovin's paper are still relevant=
+ today?
+
+1. TCP sequence number attacks are somewhat from the past, since modern ope=
+rating systems were patched or designed to make ICNs unpredictable. However=
+, in the OT world we can find a lot of devices under the management of e.g.=
+ Win95 and NT operating systems, which can be vulnerable to the attacks. So=
+, I'd say, the game is not over yet.
+
+2. Source routing is still an IP feature and can be potentially exploited i=
+n flat networks.=20
+
+3. RIP-based attacks can still be valid. RIP often stays enabled in the net=
+works. RIP v2 supports authentication, but it's in clear text....=20
+
+4. EGP. I believe, this protocol was replaced by BGP, therefore, the relate=
+d problems aren't valid.
+
+5. ICMP attacks are something from the past, since the systems default sett=
+ings are usually set to not respond to ICMP requests or broadcasts.
+
+6. Mail protocols are still leaving plenty of doors for attacks.
+
+7. There's no list which can be longer and more dangerous than a list of DN=
+S attacks.
+
+8. FTP - it's an insecure protocol which is still widely used.
+
+9. SNMP - even the use of SNMP v3 doesn't guarantee security.=20
+
+10. DHCP attacks are still relevant. DHCP starvation &amp; and spoofing.=20
+
+11. TFTP is still avlive and kicking. Nothing can prevent from enabling it =
+in the system.
+
+12.  </pre></li>
+
+<li><pre class=3D"student-text">Still relevant are:
+-attacks using TCP packet sequence numbers
+-routing attacks
+-password guessing (though not with finger services)
+-email attacks, phishing in particular
+-DNS attacks - DNSsec has not been widely deployed and when we studied it i=
+n 033 we discussed several security vulnerabilities which is does not prote=
+ct
+</pre></li>
+
+<li><pre class=3D"student-text">Still relevant today is the potential for a=
+dversaries to simulate a connection from a client C to a server S by guessi=
+ng the ISN, even though today many clients use a random SN increment betwee=
+n connections. This has potential for denial-of-service attacks and hijacki=
+ng existing TCP connections.
+</pre></li>
+
+<li><pre class=3D"student-text">TCP Sequence Number Prediction attacks can =
+be generated by studying the way these numbers are generated by code.
+
+The paper mentions TCP reset attacks.
+
+Routing Information Protocol Attacks are still relevant.
+
+
+Email: All sorts of attacks by email still exist today: phishing, spamming,=
+ fake links, etc.
+
+DNS attacks, where servers fake being a DNS server and give false records, =
+can still happen for nodes that don't use DNSSec.
+
+FTP Bounce attacks are also still a problem.
+
+</pre></li>
+
+<li><pre class=3D"student-text">TCP Sequence Prediction attacks are still p=
+ossible, but in practice difficult to pull off.
+
+Source routing can still be exploited, but can be disabled in network confi=
+guration.
+
+The Routing Information Protocol has been deprecated, but certain old route=
+rs still use it and this vulnerability has been used in recent years to amp=
+lify DDoS attacks.
+
+ICMP can be exploited in "Smurf attacks", but this can be mitigated by disa=
+bling aspects of ICMP within a network.
+
+Phishing attacks and email spoofing are still very much a possibility in th=
+e modern internet.
+
+The Domain Name System can still be exploited in various ways, such as DNS =
+amplification for DoS attacks.</pre></li>
+
+<li><pre class=3D"student-text">TCP number sequence prediction can still be=
+ a problem
+Routing Information Protocol Attacks
+ICMP is sitll being used and there are probably still security holes in it
+FTP attacks are still a relevant security problem
+</pre></li>
+
+<li><pre class=3D"student-text">TCP sequence number attacks, and attacks vi=
+a RIP and BGP are still relevant today.</pre></li>
+
+<li><pre class=3D"student-text">TCP sequence number predication (although "=
+true" random increment generation has made it hard), source routing (althou=
+gh firewalls mostly solve this issue), RIP attacks, ICMP attacks (although =
+rarely of actual use), DNS attacks, ARP attacks.
+</pre></li>
+
+<li><pre class=3D"student-text">TCP sequence number prediction still seems =
+to be a problem since adoption of more secure ways of dealing with sequence=
+ numbers is slow.
+Though there have been some recent extensions of the DNS system (like DNSSE=
+C), it still remains vulnerable since it was not designed with security in =
+mind.
+</pre></li>
+
+<li><pre class=3D"student-text">TCP sequence number prediction, including i=
+ts variants forms on similar fields(i.e. a updating counter to alleviate MI=
+TM attacks), is still a problem, but mostly weakened by the growing standar=
+ds.
+Many tools mentioned in the software such as "r-utilities" are now crypto p=
+rotected so they are more secure in this sense.
+DDoS is still apparently relevant.=20
+The case mentioned in the paper where some attacker simulates a server in m=
+aintainence, should be irrelavent in today's setting(though I'm not sure ex=
+actly how).=20
+Source Routing is mostly vulneralbe with address based authentication. I th=
+ink the convention today have pretty well assumptions when information shou=
+ld be user authentaticated.=20
+EGP related attacks seems quite rare these days.
+Routing tabel attacks is also one possibility today.
+DNS attacks are still prevalent today, especially when organized attacks ar=
+e in the picture.
+The attacks mentioned about FTP are more or less a file system permission r=
+elated problem, for example, care needs to be taken when certain file shoul=
+d not be leaked when setting up the FTP routes. </pre></li>
+
+<li><pre class=3D"student-text">TCP sequence prediction attacks are still r=
+elevant today -- secure schemes are either incorrectly implemented, not wid=
+espread, or not performant enough. Routing attacks for eavesdropping and pa=
+cket modification are also relevant, even if by accident. Finally, the pape=
+r claims that DNS remainds a crucial weak spot in the Internet; not only is=
+ address-based authentication already weak, many implementations of the pro=
+tocol use name-based authentication.
+</pre></li>
+
+<li><pre class=3D"student-text">TCP sequence prediction attacks can still h=
+appen but are largely protected against using other information such as tim=
+ing difference or information from lower protocol layers. Source routing is=
+ also still a threat. Some solutions are being developed but none are able =
+to fully fix this problem. Routing information protocol attacks are still p=
+ossible on routers that still support routing information protocol.</pre></=
+li>
+
+<li><pre class=3D"student-text">TCP-sequence number attack still possible
+insider attacks bypassing firewalls
+RIP attacks
+BGP attack
+ICMP attack
+
+</pre></li>
+
+<li><pre class=3D"student-text">TCP/IP has retained a lot of it's previous =
+problems even today - we continue to build on this system design despite th=
+e fact that it wasn't designed for this kind of scale, so many solutions ar=
+e just layers built on top of this basic framework. TCP/UDP still have rese=
+rved ports, and network control mechanisms remain vulnerable.=20
+</pre></li>
+
+<li><pre class=3D"student-text">The DDOS attacks mentioned in the paper are=
+ heavily relevant in todays systems. Even though sequence numbers are gener=
+ated randomly, creating valid reset packets is still not a difficult task.
+</pre></li>
+
+<li><pre class=3D"student-text">The ICMP attacks used for Denial of Service=
+ are now protected against. The TCP/IP sequence number guessing has also be=
+en protected against. There are still risks with the Authentication Server =
+due to implementation. RIP is still a problem. because some routers still u=
+se RIPv1 apparently: https://www.pcworld.com/article/2943872/attackers-abus=
+e-legacy-routing-protocol-to-amplify-distributed-denialofservice-attacks.ht=
+ml
+
+DNS is also still vulnerable as DNSSEC still has issues.
+</pre></li>
+
+<li><pre class=3D"student-text">The denial of service attacks that Bellovin=
+ describes are still relevant today and (fairly) common. We also learned in=
+ 6.033 about how an ISP in Pakistan accidentally directed all Youtube traff=
+ic to a "banned" page (since the Pakistan govt had blocked Youtube), and wh=
+ile this instance wasn't an attack, it could have easily been one--so I gat=
+her that routing attacks are still a problem. I also think that DNS attacks=
+ remain common.</pre></li>
+
+<li><pre class=3D"student-text">The first attack the paper mentions is rega=
+rding ISN guessing. I think these attacks
+still do exist, but are not as effective due to encryption and adding bits =
+of randomness
+to the SN_s
+
+Next, the paper discusses many TCP routing attacks; most of these attacks a=
+re probably
+still relevant in current day as I think? routing protocol hasn't been chan=
+ged much.=20
+It's probably possible to encrypt all inter router communication, but it's =
+probably not
+true that this happens between all vulnerable routers.
+
+The problem with authentication servers probably still exists; the attacker=
+ is just=20
+pretending to be the server.
+
+DNS problems outlined are also probably still prevelant; because of the wid=
+espread use
+of the DNS system it's hard to make any big changes to it and have everyone=
+ adapt them.
+This means that it's more difficult to account for many problems such as ca=
+che pollution
+which would cause domain name resolution to resolve to a malicious server.
+
+
+</pre></li>
+
+<li><pre class=3D"student-text">The papers concern about "address-based aut=
+hentication" is arguably even more
+relevant now that the network itself is being viewed as increasingly malici=
+ous.
+
+Sadly, there has also been little progress on improving the security of ema=
+il.
+</pre></li>
+
+<li><pre class=3D"student-text">The routing attacks that try to impersonate=
+ idle machines on a network and abuse IP source address routing protocols a=
+re still relevant today.</pre></li>
+
+<li><pre class=3D"student-text">The routing problem is still relevant today=
+ because it is hard to detect and they even happen by accident, which indic=
+ates the potential level of serverity if they are maliciously targeted.=20
+</pre></li>
+
+<li><pre class=3D"student-text">The security problems in the TCP/IP protoco=
+l suite that are still relevant today include:
+- Denial of service attacks
+- Sequence number attacks
+- DNS attacks</pre></li>
+
+<li><pre class=3D"student-text">The security problems still relevant today =
+are routing attacks, authentication server attacks, password cracking, phis=
+hing and spamming, DNS attacks, and LAN spoofing and eavesdropping.
+</pre></li>
+
+<li><pre class=3D"student-text">The security problems that still exist are =
+the use of an authentication server, DNS vulnerabilities, anonymous FTP, an=
+d local network vulnerabilities like ARP attacks.=20
+</pre></li>
+
+<li><pre class=3D"student-text">The threat from insider attacks, the import=
+ance of not trusting TCP for security, routing attacks that disturb global =
+internet routing, services that provide large amounts of personal data on u=
+sers upon request, email phishing, and attacks from the local network, are =
+all still relevant.
+</pre></li>
+
+<li><pre class=3D"student-text">There are a fair number of attacks that are=
+ still relevant. For one, it just seems that TCP sequence numbers should no=
+t be relied on for security,=20
+although there are roundabout ways to secure them, they have not achieved w=
+ide adoption. Firewalls secure networks against external attacks, but=20
+internal routing attacks and source IP spoofing are quite common. Email aut=
+hentication is still problematic, and really not that useful since it=20
+can rely on humans misreading. DNS provides little to no authentication inf=
+rastructure, and cache contamination can expose bugs. SMTP simply has to=20
+be implemented over a secure protocol, it really can=E2=80=99t be relied on=
+ over an unsecured connection.</pre></li>
+
+<li><pre class=3D"student-text">There are a few security problems in the TC=
+P/IP protocol suite that are stil relevant today. Sequence number attacks o=
+ver TCP are not really relevant any more if one generates per-session seque=
+nces securely. Still, there are other types of connections -- like UDP -- t=
+hat have the same problem, e.g. DNS queries can be spoofed. SYN flooding is=
+ also still a problem. SYN flooding and DOS (or DDOS) attacks are still app=
+licabe if the server does not have a good protections plan or sufficient re=
+sources for allocation (like Googe's security). A third persistent issue is=
+ E-mail. How do we authenticate and verify the *identity* of users (not jus=
+t credentials)? Phishing, spamming, and fake accounts are still (very!) rel=
+evant problems.
+</pre></li>
+
+<li><pre class=3D"student-text">Things that are still not fixed:
+
+TCP Sequence Number Prediction
+Routing Information Protocol Attacks
+Authentication Server
+DNS
+
+</pre></li>
+
+<li><pre class=3D"student-text">Though some security problems associated wi=
+th the TCP/IP protocal have been fixed, or at least improved since the 80s,=
+ IP spoofing is still a security flaw in these protocals, which were not or=
+iginally developed with intense computer security in mind.
+</pre></li>
+
+<li><pre class=3D"student-text">Vulnerabilities TCP still has today:
+- authentication servers are only secure if the client host is secure. Furt=
+hermore, if the host is down, a sequence number attack can be used.
+- sequence number attacks, though there are ways to mitigate the issue
+</pre></li>
+
+<li><pre class=3D"student-text">Which of the security problems in the TCP/I=
+P protocol suite described in Steve Bellovin's paper are still relevant tod=
+ay?
+
+The security problems in the TCP/IP protocol suite that are still relevant =
+today include:
+1. TCP sequence number attacks
+2. source routing (these type of attacks are mostly prevented by firewalls,=
+ except for insider attacks)
+3. Routing Information Protocol Attacks (abusing the routing protocols for =
+eavesdropping and/or packet modification)=20
+4. Password guessing via =E2=80=9Cfinger services=E2=80=9D=20
+5. Email fraud
+6. Attack a DNS server to spy on users</pre></li>
+
+<li><pre class=3D"student-text">While some of the attacks described here ar=
+e no longer viable, attacks on the
+BGP protocol are possible because ASes can advertise about prefixes they do=
+n't
+actually own, similar to DNS. It's hard to fix these problems because the
+protocols were not designed with security infrastructure in mind, so it is
+difficult to add anything on top of them and have it widely accepted.
+</pre></li>
+
+<li><pre class=3D"student-text">lec14
+
+DoS attacks are mentioned in the paper and are still very
+relevant today.  Spoofing of routing still remains relevant
+as well.</pre></li>
+
+<li><pre class=3D"student-text">lec14 RQ
+
+I think DNS attacks are still current today.=20
+Password-guessing and authentification is still a current problem
+</pre></li>
+
+<li><pre class=3D"student-text">routing attacks
+</pre></li>
+
+<li><pre class=3D"student-text">the paper addresses a number of problems wi=
+th TCP/IP; interestingly, most of those problems have never been
+fixed, but have had only some set solutions that don't really get to the ro=
+ot of them. Denial of Service
+attacks are probably the most emblematic of those, and, although several me=
+thods have been developed to handle them,
+they are still a major problem in several situations. Routing seems to be a=
+nother major source of attacks, and, even considering
+the multiple layers of protocols over routing. TCP sequence number attacks,=
+ also described in the paper, is well described and known yet
+seems not to be handled by the standard internet protocols - "Unfortunately=
+, the developers of the BSD Unix TCP/IP stack didn=E2=80=99t adhere to thes=
+e recommendations", I found
+in a website describing recommendations to avoid those attacks.
+</pre></li>
+
+</ul>
+
+
+  </div>
+
+</body></html>
+------MultipartBoundary--GEpUjsjRzOthXCoB2Yjb87TgRShbsJqWCTQjWwa5cV------

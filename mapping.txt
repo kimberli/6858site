@@ -2,3 +2,8 @@ http://www.phrack.com/issues.html?issue=49&id=14#article readings/phrack_stack_s
 https://cloud.google.com/security/security-design/ readings/google_infra_sec.mhtml
 https://cloud.google.com/security/ readings/google_sec.mhtml
 https://www.ftc.gov/news-events/blogs/techftc/2016/03/time-rethink-mandatory-password-changes readings/password_changes.mhtml
+http://owens.mit.edu/sfx_local?bookid=47716&rft.genre=book&sid=Barton:Books24x7 readings/tangled_web.pdf
+https://blog.torproject.org/blog/top-changes-tor-2004-design-paper-part-1 readings/tor-changes.mhtml
+https://blog.torproject.org/blog/top-changes-tor-2004-design-paper-part-2 readings/tor-changes2.mhtml
+https://blog.torproject.org/blog/top-changes-tor-2004-design-paper-part-3 readings/tor-changes3.mhtml
+lec/l23-mit-ist.pptx lec/l23-mit-ist.pdf
